@@ -1,0 +1,15 @@
+'ILab.RQ001.taskOut_false' does not depend on any axioms
+'ILab.RQ001.update_q' does not depend on any axioms
+'ILab.RQ001.update_p' does not depend on any axioms
+'ILab.RQ001.taskEq_iff_q_eq' depends on axioms: [propext]
+'ILab.RQ001.updatedQ_injective_in_p' depends on axioms: [propext]
+'ILab.RQ001.state_eq_of_q_and_updated_q_eq' depends on axioms: [propext]
+'ILab.RQ001.fullEq_iff_eq' depends on axioms: [propext]
+'ILab.RQ001.fullEq_implies_taskEq' depends on axioms: [propext]
+'ILab.RQ001.x00_taskEq_x01' depends on axioms: [propext]
+'ILab.RQ001.x00_not_fullEq_x01' depends on axioms: [propext]
+'ILab.RQ001.strict_refinement' depends on axioms: [propext]
+'ILab.RQ001.taskClass_eq_iff_taskEq' depends on axioms: [propext]
+'ILab.RQ001.no_update_descends' does not depend on any axioms
+'ILab.RQ001.state_cases' depends on axioms: [propext]
+'ILab.RQ001.card_state' depends on axioms: [propext, Classical.choice, Quot.sound]

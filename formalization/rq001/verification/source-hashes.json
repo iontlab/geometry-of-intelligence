@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ILab.RQ001.FourStateQuotient",
+    "sha256": "CB7132277F70879040917C06EE0CD1D9508438C1C543D5130156195F17FC8482",
+    "paperMapping": "M3.1 — four-state task/update-aware refinement; M3.2 — failure of descent. Exact task/full quotient cardinality equations are not separate named Lean theorems."
+  },
+  {
+    "name": "ILab.RQ001.CapabilityOrder",
+    "sha256": "D3C5E69AD2C7BDB14C3FDDD1B39388AA8D24502DFE91D600E73EF8CC41DDE1D9",
+    "paperMapping": "M1.1 — capability preorder / quotient structure; part of M1.2 — monotonicity implies extensionality only."
+  },
+  {
+    "name": "ILab.RQ001.SymmetryObstruction",
+    "sha256": "B17E16126A44018F1D44A24A40BD58B7607829D8537857DA77CAE167766A2351",
+    "paperMapping": "M5.1 — transitive-action invariant-subset obstruction."
+  },
+  {
+    "name": "ILab.RQ001.TransformationSufficientQuotient",
+    "sha256": "E04891B0FB52C7A9E6C7A67A35006A3D4C428B0E80119001CDAF649BD93858C3",
+    "paperMapping": "M4.1 — transformation-sufficient quotient functor and full universal property."
+  }
+]
