@@ -1,0 +1,20 @@
+'ILab.RQ001.Cap' does not depend on any axioms
+'ILab.RQ001.CapLE' does not depend on any axioms
+'ILab.RQ001.capLE_refl' does not depend on any axioms
+'ILab.RQ001.capLE_trans' does not depend on any axioms
+'ILab.RQ001.CapEq' does not depend on any axioms
+'ILab.RQ001.capEq_iff_mutual' depends on axioms: [propext, Quot.sound]
+'ILab.RQ001.capSetoid' does not depend on any axioms
+'ILab.RQ001.CapQuot' does not depend on any axioms
+'ILab.RQ001.quotCap' does not depend on any axioms
+'ILab.RQ001.QuotCapLE' does not depend on any axioms
+'ILab.RQ001.quotCapLE_refl' does not depend on any axioms
+'ILab.RQ001.quotCapLE_trans' does not depend on any axioms
+'ILab.RQ001.quotCapLE_antisymm' depends on axioms: [propext, Quot.sound]
+'ILab.RQ001.capQuotPartialOrder' depends on axioms: [propext, Quot.sound]
+'ILab.RQ001.quotCap_injective' depends on axioms: [propext, Quot.sound]
+'ILab.RQ001.quotCap_range' depends on axioms: [propext, Quot.sound]
+'ILab.RQ001.CapabilityMonotone' does not depend on any axioms
+'ILab.RQ001.CapabilityExtensional' does not depend on any axioms
+'ILab.RQ001.capabilityMonotone_implies_extensional' depends on axioms: [propext, Quot.sound]
+PASS: scanned 163 ILab.RQ001 declarations across both modules; no project axioms or admitted expressions.
