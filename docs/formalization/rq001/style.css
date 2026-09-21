@@ -1,4 +1,15 @@
 /* Artifact-local tokens matched to the live iLab DokuWiki skin, 2026-09-21. */
+/* Declaration-view extension: preserve the existing graph and page skin. */
+[hidden]{display:none!important}
+.detail-tabs{display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;border-bottom:1px solid var(--line);padding-bottom:8px}
+.detail-tabs button{flex:1;padding:8px 9px;font-size:12px}
+.detail-tabs [aria-selected=true]{color:var(--cyan);border-color:var(--cyan);background:#14323b}
+#detail [role=tabpanel]{min-width:0}#detail [role=tabpanel]>a{font-size:13px}
+#detail .mathematics-body p{color:var(--ink);line-height:1.8}
+#detail .mathematics-body .math-provenance{color:var(--muted);font-size:11px;border-top:1px solid var(--line);padding-top:12px;margin-top:20px}
+.mathematics-body{min-width:0}.math-equation{overflow-x:auto;max-width:100%;padding-block:4px}
+.mathematics-body mjx-container{max-width:100%}.mathematics-body mjx-container[display=true]{overflow-x:auto;overflow-y:hidden;padding-block:4px}
+.universal-property{border-left:2px solid var(--cyan);padding-left:12px;margin-block:16px}
 :root{color-scheme:dark;--bg:#0b1117;--surface:#111922;--raised:#151f2a;--ink:#e8edf2;--muted:#9aa8b6;--line:#263341;--cyan:#22c7d9;--orange:#ff6a4d;--code:#c8e8ee;--mono:"Cascadia Code",SFMono-Regular,Consolas,"Liberation Mono",monospace}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
