@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "provenance": "Human-authored mathematical presentation mapped to verified Lean declarations.",
+  "editorialBasis": "Published RQ-001 Phase-I Research Note and user-supplied presentations, checked against the live note on 2026-09-21. Concise supporting presentations describe components of those results; they are not automatically extracted from Lean. No formal dependency edges are defined here.",
+  "source": "https://iontlab.org/doku.php?id=research:rq001_phase_i",
+  "sourceTitle": "RQ-001 — Phase I: Frame-Relative Structure in the Search for an Intelligence Criterion",
+  "sourceAuthor": "Roman D. Stehling",
+  "sourceLicense": "CC BY-SA 4.0",
+  "results": {
+    "capability": {
+      "label": "Proposition 1",
+      "title": "Capability order",
+      "anchor": "proposition_1_capability_order",
+      "statement": [
+        "Let \\(\\mathcal R\\) be a set of system realizations, \\(\\mathcal C\\) a set of challenges, and \\(\\models\\) an explicitly specified success relation. Define",
+        "\\[\\operatorname{Cap}(S)=\\{c\\in\\mathcal C:S\\models c\\}.\\]",
+        "\\[S\\preceq T\\iff\\operatorname{Cap}(S)\\subseteq\\operatorname{Cap}(T).\\]",
+        "Then \\(\\preceq\\) is a preorder. Mutual dominance is equality of capability sets. Quotienting realizations by equality of capability sets yields a partial order, naturally identified with the family of realized capability sets ordered by inclusion."
+      ],
+      "proof": [
+        "Reflexivity and transitivity follow from inclusion. If both inclusions hold, the capability sets are equal. Therefore the induced relation on equivalence classes is antisymmetric. The map",
+        "\\[[S]\\longmapsto\\operatorname{Cap}(S)\\]",
+        "is well-defined and identifies the quotient with the realized capability profiles."
+      ],
+      "limitation": "No intelligence predicate is used in this construction."
+    },
+    "monotonicity": {
+      "label": "Conditional consequence",
+      "title": "Capability monotonicity implies extensionality",
+      "anchor": "conditional_consequence_monotonicity_and_a_possible_frontier",
+      "statement": [
+        "Suppose a binary attribution \\(I\\) is monotone under capability dominance:",
+        "\\[S\\preceq T\\text{ and }I(S)\\implies I(T).\\]",
+        "If \\(\\operatorname{Cap}(S)=\\operatorname{Cap}(T)\\), then \\(I(S)\\iff I(T)\\)."
+      ],
+      "proof": ["Equality of capability sets gives both \\(S\\preceq T\\) and \\(T\\preceq S\\). Apply monotonicity in both directions."],
+      "limitation": "This theorem does NOT establish that intelligence is capability-monotone."
+    },
+    "refinement": {
+      "label": "Proposition 2",
+      "title": "Strict refinement by update probes",
+      "anchor": "proposition_2_strict_refinement_by_update_probes",
+      "statement": [
+        "Admit all four states as initial conditions:",
+        "\\[X=\\{x_{q,p}:q,p\\in\\{0,1\\}\\}.\\]",
+        "For ordinary task input \\(u\\), \\(y=u\\oplus q\\) and the state is unchanged. For update input \\(\\ell\\), the output is the common symbol \\(\\bot\\) and",
+        "\\[\\delta(x_{q,p},\\ell)=x_{q\\oplus p,p}.\\]",
+        "Task-only behavioral equivalence has the two classes",
+        "\\[C_0=\\{x_{0,0},x_{0,1}\\},\\]",
+        "\\[C_1=\\{x_{1,0},x_{1,1}\\}.\\]",
+        "When update-sensitive probes are admitted, all four states are distinguishable. Hence",
+        "\\[\\approx_{\\mathrm{update}}\\;\\subsetneq\\;\\approx_{\\mathrm{task}}.\\]"
+      ],
+      "proof": [
+        "Task inputs leave the state unchanged and depend only on \\(q\\). Thus states with the same \\(q\\) are task equivalent; task input \\(0\\) distinguishes different \\(q\\) values.",
+        "For states with the same \\(q\\) but different \\(p\\), apply update \\(\\ell\\) and then task input \\(0\\). Their subsequent task outputs differ. Therefore the enriched probe language distinguishes every pair, including states that the task-only language identifies."
+      ],
+      "limitation": "The exact quotient-cardinality equations in the paper are not separate named Lean theorems. The corresponding named Lean results are taskEq_iff_q_eq, fullEq_iff_eq, strict_refinement and card_state. No separate quotient-cardinality verification claim is made here."
+    },
+    "descent": {
+      "label": "Proposition 3",
+      "title": "Failure of descent",
+      "anchor": "proposition_3_failure_of_descent",
+      "statement": [
+        "The update map \\(U_\\ell(x_{q,p})=x_{q\\oplus p,p}\\) does not induce a well-defined map on the task quotient. Equivalently, there is no map",
+        "\\[\\overline U_\\ell:X/{\\approx_{\\mathrm{task}}}\\longrightarrow X/{\\approx_{\\mathrm{task}}}\\]",
+        "such that",
+        "\\[\\overline U_\\ell\\circ q_{\\mathrm{task}}=q_{\\mathrm{task}}\\circ U_\\ell.\\]"
+      ],
+      "proof": [
+        "Initially \\(x_{0,0}\\approx_{\\mathrm{task}}x_{0,1}\\). But after the update,",
+        "\\[U_\\ell(x_{0,0})=x_{0,0},\\qquad U_\\ell(x_{0,1})=x_{1,1}.\\]",
+        "These successors have different task behavior. Therefore the update is not constant on task-equivalence classes after projection to the task quotient, and cannot descend to that quotient."
+      ]
+    },
+    "symmetry": {
+      "label": "Proposition 5",
+      "title": "Structure-free deterministic selection",
+      "anchor": "proposition_5_structure-free_deterministic_selection",
+      "statement": [
+        "Let a group \\(G\\) act transitively on a nonempty set \\(V\\). Let \\(R\\subseteq V\\) be invariant under the action. Then",
+        "\\[R=\\varnothing\\quad\\text{or}\\quad R=V.\\]"
+      ],
+      "proof": [
+        "Assume \\(v\\in R\\). For arbitrary \\(w\\in V\\), transitivity gives some \\(g\\in G\\) with \\(g\\cdot v=w\\). Invariance gives \\(v\\in R\\iff g\\cdot v\\in R\\). Hence \\(w\\in R\\). Therefore if \\(R\\) contains one point, it contains every point. Otherwise it is empty."
+      ],
+      "interpretation": "A completely symmetric set of candidates cannot support a nontrivial deterministic invariant selection without additional symmetry-breaking structure.",
+      "limitation": "This does NOT establish that symmetry breaking is intelligence."
+    },
+    "quotient": {
+      "label": "Theorem 4",
+      "title": "Transformation-sufficient quotient",
+      "anchor": "theorem_4_transformation-sufficient_quotient",
+      "statement": [
+        "Let \\(E\\) be a small category and let \\(X:E\\to\\mathbf{Set}\\) be a functor. For each object \\(d\\), let \\(F_d\\) be an indexed family of retained tests \\(f:X(d)\\to Y_f\\). For \\(x,x'\\in X(e)\\), define",
+        "\\[\\begin{aligned}x\\approx_e x'\\quad\\iff\\quad&\\forall d,\\;\\forall\\varphi:e\\to d,\\\\&\\forall f\\in F_d,\\\\&f(X(\\varphi)(x))=f(X(\\varphi)(x')).\\end{aligned}\\]",
+        "Set \\(Q(e)=X(e)/{\\approx_e}\\). Then",
+        "\\[Q(\\varphi)([x])=[X(\\varphi)(x)]\\]",
+        "defines a functor \\(Q:E\\to\\mathbf{Set}\\). The quotient maps form a natural transformation \\(q:X\\Rightarrow Q\\). Every retained local test factors through \\(q\\).",
+        "Furthermore, let \\(a:X\\Rightarrow Z\\) be a pointwise-surjective natural abstraction through which every retained local test factors. Then there exists a unique natural transformation \\(h:Z\\Rightarrow Q\\) such that \\(a\\gg h=q\\)."
+      ],
+      "universalProperty": "\\[\\exists!\\,h:Z\\Rightarrow Q,\\qquad a\\gg h=q.\\]",
+      "notation": "Here a ≫ h means h composed after a, matching the Lean composition convention.",
+      "proof": [
+        "First, \\(\\approx_e\\) is an equivalence relation: it is an intersection of kernels.",
+        "If \\(x\\approx_e x'\\) and \\(\\varphi:e\\to d\\), then for every \\(\\psi:d\\to k\\) and retained test \\(f\\) at \\(k\\), functoriality gives",
+        "\\[X(\\psi)(X(\\varphi)(x))=X(\\psi\\circ\\varphi)(x),\\]",
+        "and similarly for \\(x'\\). The transformed tests agree, so \\(X(\\varphi)(x)\\approx_d X(\\varphi)(x')\\). Thus \\(Q(\\varphi)\\) is well-defined. Functor identity and composition laws descend from those of \\(X\\).",
+        "The quotient maps are natural, and the identity morphism at \\(e\\) ensures that every local retained test factors through \\(q_e\\).",
+        "For the universal property, suppose \\(a_e(x)=a_e(x')\\). Naturality of \\(a\\) implies equality after every future transformation. Because every retained test factors through \\(a\\), every transformed test agrees. Hence \\(x\\approx_e x'\\).",
+        "Define \\(h_e(a_e(x))=[x]\\). Pointwise surjectivity gives existence; the kernel implication makes this well-defined. Naturality follows from naturality of \\(a\\) and \\(q\\). Surjectivity also gives uniqueness. Hence \\(\\exists!\\,h:Z\\Rightarrow Q,\\;a\\gg h=q\\)."
+      ],
+      "interpretation": "This theorem establishes coherent transformation-relative abstraction.",
+      "limitation": "It does NOT establish that intelligence itself is categorical. It does NOT justify Higher Category Theory."
+    }
+  },
+  "declarations": {
+    "ILab.RQ001.capQuotPartialOrder": {"result":"capability","role":"principal"},
+    "ILab.RQ001.capLE_refl": {"result":"capability","role":"supporting","statement":["Capability dominance is reflexive: \\(S\\preceq S\\), by reflexivity of set inclusion."]},
+    "ILab.RQ001.capLE_trans": {"result":"capability","role":"supporting","statement":["Capability dominance is transitive: \\(S\\preceq T\\) and \\(T\\preceq U\\) imply \\(S\\preceq U\\), by transitivity of set inclusion."]},
+    "ILab.RQ001.capEq_iff_mutual": {"result":"capability","role":"supporting","statement":["\\[\\operatorname{Cap}(S)=\\operatorname{Cap}(T)\\iff(S\\preceq T\\text{ and }T\\preceq S).\\]"]},
+    "ILab.RQ001.quotCapLE_antisymm": {"result":"capability","role":"supporting","statement":["On the capability quotient, mutual dominance implies equality of equivalence classes. This is antisymmetry of the induced order."]},
+    "ILab.RQ001.quotCap_injective": {"result":"capability","role":"supporting","statement":["The well-defined map \\([S]\\mapsto\\operatorname{Cap}(S)\\) is injective: equal capability sets define the same quotient class."]},
+    "ILab.RQ001.quotCap_range": {"result":"capability","role":"supporting","statement":["The image of \\([S]\\mapsto\\operatorname{Cap}(S)\\) is exactly the family of capability profiles realized by the original systems."]},
+    "ILab.RQ001.capabilityMonotone_implies_extensional": {"result":"monotonicity","role":"principal"},
+    "ILab.RQ001.strict_refinement": {"result":"refinement","role":"principal"},
+    "ILab.RQ001.no_update_descends": {"result":"descent","role":"principal"},
+    "ILab.RQ001.transitive_invariant_eq_empty_or_univ": {"result":"symmetry","role":"principal"},
+    "ILab.RQ001.invariant_membership_iff": {"result":"symmetry","role":"supporting","statement":["Under the transitive-action and invariance assumptions of Proposition 5, any two candidates have the same membership status: \\(v\\in R\\iff w\\in R\\)."]},
+    "ILab.RQ001.transitive_invariant_nonempty_eq_univ": {"result":"symmetry","role":"supporting","statement":["Under the transitive-action and invariance assumptions of Proposition 5, if \\(R\\) is nonempty then \\(R=V\\)."]},
+    "ILab.RQ001.no_nonempty_proper_invariant": {"result":"symmetry","role":"supporting","statement":["Under a transitive action, there is no nonempty proper invariant subset of \\(V\\)."]},
+    "ILab.RQ001.transformation_sufficient_quotient_universal": {"result":"quotient","role":"principal"},
+    "ILab.RQ001.TransformEq": {"result":"quotient","role":"supporting","statement":["In the setting of Theorem 4, \\(x\\approx_e x'\\) means that for every \\(\\varphi:e\\to d\\) and retained test \\(f\\in F_d\\), \\(f(X(\\varphi)(x))=f(X(\\varphi)(x'))\\)."]},
+    "ILab.RQ001.transformEq_map": {"result":"quotient","role":"supporting","statement":["Transformation-sufficient equivalence is preserved by transport: if \\(x\\approx_e x'\\) and \\(\\varphi:e\\to d\\), then \\(X(\\varphi)(x)\\approx_d X(\\varphi)(x')\\)."]},
+    "ILab.RQ001.transformationQuotientFunctor": {"result":"quotient","role":"supporting","statement":["Quotient classes transport functorially:","\\[Q(\\varphi)([x])=[X(\\varphi)(x)].\\]"]},
+    "ILab.RQ001.transformationQuotientNatTrans": {"result":"quotient","role":"supporting","statement":["The canonical quotient maps form a natural transformation \\(q:X\\Rightarrow Q\\)."]},
+    "ILab.RQ001.probe_factors_through_quotient": {"result":"quotient","role":"supporting","statement":["Every retained local test \\(f:X(e)\\to Y_f\\) factors through \\(q_e\\). The identity arrow makes it constant on the equivalence classes."]},
+    "ILab.RQ001.nat_kernel_le_transformEq": {"result":"quotient","role":"supporting","statement":["If every retained local test factors through the natural abstraction \\(a:X\\Rightarrow Z\\), then \\(a_e(x)=a_e(x')\\) implies \\(x\\approx_e x'\\). Naturality gives agreement after every transformation."]},
+    "ILab.RQ001.quotientFactorNatTrans": {"result":"quotient","role":"supporting","statement":["Under the pointwise-surjectivity and retained-test factorization assumptions of Theorem 4, \\(h_e(a_e(x))=[x]\\) defines a natural transformation \\(h:Z\\Rightarrow Q\\)."]},
+    "ILab.RQ001.quotientFactor_triangle": {"result":"quotient","role":"supporting","statement":["Under the hypotheses of Theorem 4, the universal factor satisfies \\(a\\gg h=q\\)."]},
+    "ILab.RQ001.quotientFactor_unique": {"result":"quotient","role":"supporting","statement":["Under the hypotheses of Theorem 4, the factor \\(h:Z\\Rightarrow Q\\) satisfying \\(a\\gg h=q\\) is unique, by pointwise surjectivity of \\(a\\)."]}
+  }
+}
