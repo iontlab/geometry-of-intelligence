@@ -1,6 +1,9 @@
 /* Artifact-local tokens matched to the live iLab DokuWiki skin, 2026-09-21. */
 /* Declaration-view extension: preserve the existing graph and page skin. */
 [hidden]{display:none!important}
+.graph-modes{display:flex;flex-wrap:wrap;gap:8px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.graph-modes [aria-pressed=true]{color:var(--cyan);border-color:var(--cyan);background:#14323b}
+#mode-description{flex-basis:100%;font-size:12px;color:var(--muted);margin:2px 0 0}
 .detail-tabs{display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;border-bottom:1px solid var(--line);padding-bottom:8px}
 .detail-tabs button{flex:1;padding:8px 9px;font-size:12px}
 .detail-tabs [aria-selected=true]{color:var(--cyan);border-color:var(--cyan);background:#14323b}
