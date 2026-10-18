@@ -158,5 +158,10 @@
     "name": "ILab.MathematicsLearning.YonedaAdjunction",
     "sha256": "77B6AD9AF71DA3C1C9C7E0D22DEC8E84487A629BDD48084E321EB9F0B2BC4158",
     "paperMapping": "Primary 2.3, the non-assigned part of 2.6, 2.7, 3.1 and 3.4–3.7: definitions, non-exercise consequences and equivalence criterion. Assigned Yoneda/adjunction correspondence proofs are withheld."
+  },
+  {
+    "name": "ILab.MathematicsLearning.YonedaConstruction",
+    "sha256": "DD35764E7FD3E7DA52A0EAF9585BBEC61953D5A91D480D37D633836D55B91C22",
+    "paperMapping": "Theorem 2.1, page 9: author-supplied evaluation at identity and candidate component functions on exact small-set carriers. Only defining formulas are checked; candidate naturality, mutual inverseness and naturality in c,F remain assigned. The complete Yoneda theorem is not verified here."
   }
 ]

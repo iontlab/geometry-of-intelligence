@@ -12,13 +12,13 @@ The introduction also anticipates later higher/synthetic foundations. No univale
 
 ===== Compiler evidence =====
 
-The clean Lean 4.34.0 build completed successfully with 8960 jobs. The compiler audit covers **781 declarations in 32 learning modules**, including **392 authored declarations**, with **3836 direct compiler-derived project dependencies**. These are implementation counts, not source coverage counts.
+The clean Lean 4.34.0 build completed successfully with 8961 jobs. The compiler audit covers **785 declarations in 33 learning modules**, including **396 authored declarations**, with **3884 direct compiler-derived project dependencies**. These are implementation counts, not source coverage counts.
 
 The only permitted foundational dependencies are ''propext'', ''Classical.choice'' and ''Quot.sound''. No admitted expressions or project-added axioms are accepted. The manuscript’s existence of the three nested set-universes remains an explicit hypothesis.
 
-Exact checked Lean source commit: ''0070c175806aa22b8227c86af53c5ca78bdb8d34''. Mathlib revision: ''5ed2965256430c3649e86755f9576b54eca72435''. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Source and convention distinctions]].
+Exact checked Lean source commit: ''28baa9ea38c0a6c3c88aa10dc09614cc565ede6c''. Mathlib revision: ''5ed2965256430c3649e86755f9576b54eca72435''. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Source and convention distinctions]].
 
-[[https://github.com/iontlab/geometry-of-intelligence/tree/codex/source-faithful-native-manuscript/formalization/mathematics-learning/verification|Build log, compiler audit, source hashes and declaration mappings]] · [[https://github.com/iontlab/geometry-of-intelligence/blob/codex/source-faithful-native-manuscript/docs/mathematics-learning/original/native/source-audit.json|Exact source-to-Lean correspondence and pending prerequisites]].
+[[https://github.com/iontlab/geometry-of-intelligence/tree/main/formalization/mathematics-learning/verification|Build log, compiler audit, source hashes and declaration mappings]] · [[https://github.com/iontlab/geometry-of-intelligence/blob/main/docs/mathematics-learning/original/native/source-audit.json|Exact source-to-Lean correspondence and pending prerequisites]].
 
 ===== Original manuscript and interactive QA =====
 
@@ -28,10 +28,12 @@ All **47 controls passed all five layers: 235 panel checks**. The Mathematics la
 
 All **17 obsolete facsimile media URLs return HTTP 404** after verified replacement. The original PDF remains available with unchanged SHA-256 ''5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc''.
 
-[[https://github.com/iontlab/geometry-of-intelligence/tree/codex/source-faithful-native-manuscript/docs/mathematics-learning/native-publication-evidence|Current live source, rendering, panel, asset and media-removal evidence]].
+[[https://github.com/iontlab/geometry-of-intelligence/tree/main/docs/mathematics-learning/native-publication-evidence|Current live source, rendering, panel, asset and media-removal evidence]].
 
 ===== Teaching boundary =====
 
 All 17 assignment markers across 15 numbered source items retain their original status. Independently generated assigned-exercise solutions are withheld from current Lean exports, panels and graph mappings. Original author-provided proof portions remain verbatim. Historical wiki revisions and Git commits remain historical records.
 
 Back: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source coverage]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Reading path]] · [[https://iontlab.org/formalization/mathematics-learning/|Interactive graph]]
+
+Theorem 2.1 now has four checked partial declarations: evaluation alpha maps to alpha_c(id_c), the candidate component function f maps to F(f)(u), and their two defining equations. The candidate is represented only by component functions. Its naturality, mutual inverseness with evaluation, and naturality in c and F remain assigned exercises. The complete Yoneda theorem is not verified. The 29 fully formalized / 15 exercise-affected item counts are unchanged.

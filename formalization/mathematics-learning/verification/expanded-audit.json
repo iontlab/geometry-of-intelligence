@@ -2,15 +2,15 @@
   "schema_version": 1,
   "clean_build_command": "lake clean rq001; lake build",
   "extract_command": "lake env lean tools/ExtractLearningGraph.lean",
-  "compiled_declarations": 781,
-  "compiled_sha256": "1b1c045f05a06a5f744dfcf7f938979cd6c38b0b9af20c2d5d2befa483bcb285",
-  "clean_build_log_sha256": "1977b8863ac9776212ee088b707c20f0ce1211c85cc49f9574703047971a266d",
+  "compiled_declarations": 785,
+  "compiled_sha256": "6eb6876e7de22eae8042207e9b2589bd4a7c01c1110c6ba97110a44f2d18c463",
+  "clean_build_log_sha256": "ef8e9f2bfc02caf530f1f3940f22cbceb564576f1d24971249728e62ced9a353",
   "allowed_axioms": [
     "propext",
     "Classical.choice",
     "Quot.sound"
   ],
-  "scope": "Non-exercise material only; see exercise-exclusions.json and obligations.json.",
+  "scope": "Non-exercise results and author-supplied construction data only; assigned checks remain withheld. See exercise-exclusions.json and obligations.json.",
   "modules": [
     {
       "name": "ILab.MathematicsLearning.BasicCategoryTheory",
@@ -171,6 +171,11 @@
       "name": "ILab.MathematicsLearning.YonedaAdjunction",
       "path": "ILab/MathematicsLearning/YonedaAdjunction.lean",
       "sha256": "77b6ad9af71da3c1c9c7e0d22dec8e84487a629bdd48084e321eb9f0b2bc4158"
+    },
+    {
+      "name": "ILab.MathematicsLearning.YonedaConstruction",
+      "path": "ILab/MathematicsLearning/YonedaConstruction.lean",
+      "sha256": "dd35764e7fd3e7da52a0eaf9585bbec61953d5a91d480d37d633836d55b91c22"
     }
   ]
 }

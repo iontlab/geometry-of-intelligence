@@ -298,6 +298,10 @@ ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_4: Classical.cho
 ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_5: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_6: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetCategory.unique_inverse: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.yonedaEvaluation: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetFreeVectors.basisVector: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetFreeVectors.basisVector_injective: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetFreeVectors.carrier: Classical.choice, Quot.sound, propext

@@ -26,6 +26,7 @@ summary={'source_ref':g['sourceRef'],'lean':'4.34.0','mathlib_revision':'5ed2965
  'compiled_declarations':len(g['nodes']),'authored_declarations':len(mapping),'direct_edges':len(g['edges']),
  'source_modules':g['modules'],'numbered_source_items':44,'fully_formalized':s['fully_formalized'],
  'exercise_affected_items':15,'pending_eligible_items':s['pending_eligible_items'],
+ 'partial_construction_items':[r['key'] for r in s['items'] if r['status']=='partial_construction'],
  'foundational_axioms':['propext','Classical.choice','Quot.sound'],'clean_build_jobs':jobs,'build_status':f'Clean build succeeded ({jobs} jobs), followed by compiler extraction and axiom audit.',
  'source_fidelity_audit':'../../../docs/mathematics-learning/original/native/source-audit.json','completion':False}
 write(V/'audit-summary.json',summary)
