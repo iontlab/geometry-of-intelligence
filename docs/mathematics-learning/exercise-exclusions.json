@@ -1,0 +1,124 @@
+{
+  "source_sha256": "5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc",
+  "pages_audited": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "assignment_markers": 17,
+  "numbered_items": 15,
+  "policy": "Preserve statements, numbering and attribution; withhold assigned solutions in prose, Lean and graphs. Retain unrelated foundational mathematics.",
+  "assignments": [
+    {
+      "item": "1.14",
+      "page": 6,
+      "excluded_scope": "full proof",
+      "occurrences": 1
+    },
+    {
+      "item": "1.15",
+      "page": 6,
+      "excluded_scope": "category well-definedness",
+      "occurrences": 1
+    },
+    {
+      "item": "1.17",
+      "page": 7,
+      "excluded_scope": "opposite category well-definedness",
+      "occurrences": 1
+    },
+    {
+      "item": "1.19",
+      "page": 7,
+      "excluded_scope": "representable functor well-definedness",
+      "occurrences": 1
+    },
+    {
+      "item": "1.21",
+      "page": 8,
+      "excluded_scope": "postcomposition transformation well-definedness",
+      "occurrences": 1
+    },
+    {
+      "item": "1.23",
+      "page": 8,
+      "excluded_scope": "functor category well-definedness",
+      "occurrences": 1
+    },
+    {
+      "item": "1.24",
+      "page": 8,
+      "excluded_scope": "full proof",
+      "occurrences": 1
+    },
+    {
+      "item": "1.26",
+      "page": 8,
+      "excluded_scope": "full strict category isomorphism proof and naturality",
+      "occurrences": 1
+    },
+    {
+      "item": "1.28",
+      "page": 9,
+      "excluded_scope": "pre/postcomposition functor well-definedness",
+      "occurrences": 1
+    },
+    {
+      "item": "2.1",
+      "page": 9,
+      "excluded_scope": "candidate naturality; mutual inverse and naturality checks",
+      "occurrences": 2
+    },
+    {
+      "item": "2.2",
+      "page": 9,
+      "excluded_scope": "Yoneda functor well-definedness",
+      "occurrences": 1
+    },
+    {
+      "item": "2.4",
+      "page": 10,
+      "excluded_scope": "full proof",
+      "occurrences": 1
+    },
+    {
+      "item": "2.5",
+      "page": 10,
+      "excluded_scope": "both assertions: full proof",
+      "occurrences": 1
+    },
+    {
+      "item": "2.6",
+      "page": 10,
+      "excluded_scope": "embedded invertibility iff opposite invertibility only",
+      "occurrences": 1
+    },
+    {
+      "item": "3.3",
+      "page": 12,
+      "excluded_scope": "hom functions inverse/natural; constructed unit/counit natural and triangle laws",
+      "occurrences": 2
+    }
+  ],
+  "non_exercises_preserved": [
+    "1.11 source proof",
+    "1.13 examples",
+    "1.25 terminal category",
+    "2.7 source proof",
+    "3.1 definition",
+    "3.2 examples",
+    "3.7 Proof. Next time. (author deferral)",
+    "3.8 walking isomorphism",
+    "3.9 source proof"
+  ]
+}
