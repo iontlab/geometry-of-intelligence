@@ -1,0 +1,7 @@
+/.gitattributes text eol=lf
+ILab/MathematicsLearning/*.lean text eol=lf
+tools/ExtractLearningGraph.lean text eol=lf
+tools/build-learning-graph.mjs text eol=lf
+docs/formalization/mathematics-learning/* text eol=lf
+docs/mathematics-learning/* text eol=lf
+formalization/mathematics-learning/** text eol=lf

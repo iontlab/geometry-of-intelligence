@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:verification",
+  "provenance": "Independently written iLab educational statements and proofs with AI assistance. Source item mappings are editorial metadata, not compiler-derived conclusions. See the linked lesson for attribution and assumptions.",
+  "results": {
+    "laws": {
+      "label": "Primary 1.5 · identity laws",
+      "title": "Identities do not change a composite",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "statement": [
+        "For composable arrows \\(f:X\\to Y\\) and \\(g:Y\\to Z\\),",
+        "\\[(1_Z\\circ g)\\circ(f\\circ 1_X)=g\\circ f.\\]"
+      ],
+      "proof": [
+        "The exact Lean statement inserts an identity before f and an identity after g. Apply the left and right identity laws. Associativity identifies the ordinary composition notation."
+      ],
+      "limitation": "A small consequence of the category laws supplied by the Category instance; it does not construct every category example in the lesson."
+    },
+    "inverse": {
+      "label": "Primary 1.11 · inverse uniqueness",
+      "title": "A right inverse and a left inverse agree",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "statement": [
+        "Let \\(f:X\\to Y\\), \\(g,h:Y\\to X\\), with \\(f\\circ g=1_Y\\) and \\(h\\circ f=1_X\\). Then \\(g=h\\)."
+      ],
+      "proof": [
+        "\\[g=1_X\\circ g=(h\\circ f)\\circ g=h\\circ(f\\circ g)=h.\\]",
+        "The lesson writes the symmetric choice of left/right-inverse names. Both formulations imply uniqueness of a two-sided inverse."
+      ],
+      "limitation": "Arbitrary independent object and hom universes; the hypotheses are inverse equations, not set-universe axioms."
+    },
+    "functor": {
+      "label": "Primary 1.14 · functors preserve isomorphisms",
+      "title": "Transport both inverse equations through a functor",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "statement": [
+        "If \\(F:C\\to D\\) is a functor and \\(e:X\\cong Y\\), its mapped forward and inverse arrows give \\(FX\\cong FY\\)."
+      ],
+      "proof": [
+        "Functoriality takes each composite to the composite of the images, and takes an identity to an identity. Apply this to both inverse equations. The bundled result agrees with Mathlib’s Functor.mapIso."
+      ],
+      "limitation": "The Lean result concerns ordinary functors. It does not claim every functor reflects isomorphisms."
+    },
+    "naturality": {
+      "label": "Primary 1.20 / 1.23 · vertical naturality",
+      "title": "Stacking compatible squares preserves naturality",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "statement": [
+        "For \\(\\alpha:F\\Rightarrow G\\), \\(\\beta:G\\Rightarrow H\\), and \\(f:X\\to Y\\),",
+        "\\[(\\beta_Y\\circ\\alpha_Y)\\circ F(f)=H(f)\\circ(\\beta_X\\circ\\alpha_X).\\]"
+      ],
+      "proof": [
+        "Use associativity to apply the naturality of α and then of β. Regrouping gives the required equation. The separate component theorem checks that Mathlib’s functor-category composition is componentwise."
+      ],
+      "limitation": "This checks vertical composition, not a formal proof of all whiskering or Yoneda statements."
+    },
+    "walking": {
+      "label": "Primary 3.4 / 3.8 / 3.9 · finite equivalence",
+      "title": "Two isomorphic rooms are equivalent to one room",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "statement": [
+        "Let \\(\\mathbf1\\) have one object and \\(\\mathbb I\\) two objects, with one arrow for each ordered pair. The functor \\(J:\\mathbf1\\to\\mathbb I\\) choosing north has an explicit quasi-inverse."
+      ],
+      "proof": [
+        "Collapse both rooms to the single room. The composite in the one-room category is the identity. The other composite is naturally isomorphic to the identity by the unique arrow from north to each room. All required equalities hold because hom types are singletons. Mathlib also checks the triangle condition."
+      ],
+      "limitation": "This concrete adjoint equivalence does not formalize Theorem 3.7 for arbitrary fully faithful, essentially surjective functors."
+    },
+    "surjectivity": {
+      "label": "Primary 3.6 / 3.9 · essential versus literal surjectivity",
+      "title": "Every room is isomorphic to an image",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "statement": [
+        "For each room Y, there is an isomorphism from the image of OneRoom.only under includeRoom to Y."
+      ],
+      "proof": [
+        "The image is north. The explicitly defined roomIso north Y gives the required isomorphism, for either target object Y."
+      ],
+      "limitation": "The formal essential-surjectivity witness is explicit: Nonempty (includeRoom.obj OneRoom.only ≅ Y). It does not use an unproved general equivalence criterion."
+    },
+    "cardinality": {
+      "label": "Primary 3.8 · two-object example",
+      "title": "The two rooms are distinct objects",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "statement": [
+        "The finite object type Room has cardinality \\(2\\)."
+      ],
+      "proof": [
+        "The instance enumerates north and south and proves completeness by cases. The cardinality proposition is checked by Lean’s ordinary decision procedure."
+      ],
+      "limitation": "Cardinality of the object type is not an invariant of categorical equivalence."
+    },
+    "components": {
+      "label": "Primary 1.23 · vertical components",
+      "title": "Composition is computed componentwise",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "statement": [
+        "For natural transformations \\(\\alpha:F\\Rightarrow G\\), \\(\\beta:G\\Rightarrow H\\), and any object \\(X\\), the component of the vertical composite is \\(\\beta_X\\circ\\alpha_X\\)."
+      ],
+      "proof": [
+        "In the existing Mathlib functor-category instance, the component of composition is defined as composition of the two components. Lean checks this equation by reflexivity."
+      ],
+      "limitation": "This equation describes the component. The separate composite_naturality theorem checks the naturality square."
+    },
+    "nonsurjective": {
+      "label": "Primary 3.6 / 3.9 · literal surjectivity fails",
+      "title": "The inclusion misses the south object",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "statement": [
+        "The object function of includeRoom is not surjective."
+      ],
+      "proof": [
+        "The sole source object maps to north. A putative preimage of south would therefore identify the two distinct constructors; case analysis rules this out."
+      ],
+      "limitation": "This is failure of literal object surjectivity. A separate theorem supplies essential-surjectivity witnesses."
+    }
+  },
+  "declarations": {
+    "ILab.MathematicsLearning.identity_padded_composite": {
+      "result": "laws",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.inverse_unique": {
+      "result": "inverse",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.mappedIso": {
+      "result": "functor",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.mapped_inverse_left": {
+      "result": "functor",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.mapped_inverse_right": {
+      "result": "functor",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.mappedIso_eq_mapIso": {
+      "result": "functor",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.composite_naturality": {
+      "result": "naturality",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.vertical_composite_component": {
+      "result": "components",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.walkingEquivalence": {
+      "result": "walking",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.roomIso": {
+      "result": "walking",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.includeRoom": {
+      "result": "walking",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.collapseRoom": {
+      "result": "walking",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.inclusion_not_surjective": {
+      "result": "nonsurjective",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.inclusion_essentially_surjective": {
+      "result": "surjectivity",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.room_cardinality": {
+      "result": "cardinality",
+      "role": "principal"
+    }
+  }
+}

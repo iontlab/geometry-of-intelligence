@@ -1,0 +1,12 @@
+[
+  {
+    "name": "ILab.MathematicsLearning.BasicCategoryTheory",
+    "sha256": "C50DE7CD6C392746E2861C232398CD9225E48A396AE124AFA9725352F3A5AED1",
+    "paperMapping": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+  },
+  {
+    "name": "ILab.MathematicsLearning.WalkingIsomorphism",
+    "sha256": "306750071687EEC2491400B86E52DD30C734A843C0DF3D88DE4434CFC36CE6CA",
+    "paperMapping": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+  }
+]

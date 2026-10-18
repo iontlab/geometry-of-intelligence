@@ -1,0 +1,104 @@
+{
+  "target": "public_html/formalization/mathematics-learning/",
+  "existing_target": "absent in authenticated WebFTP preflight",
+  "replacement_of_existing_files": false,
+  "source_ref": "5f45eee29afa3c7507eb9a56bb132ccb92260e68",
+  "artifact_commit": "1bcff3dd09455c57d22e492cae1aa82e0e081e29",
+  "files": [
+    {
+      "path": "public_html/formalization/mathematics-learning/app.js",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/app.js",
+      "bytes": 5125,
+      "sha256": "ecfa531e1772a900b686fc6434396c693af729a5c839d9a178c5ed1094feed51",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "ecfa531e1772a900b686fc6434396c693af729a5c839d9a178c5ed1094feed51",
+      "matches_committed_artifact": true
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/blueprint-view.js",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/blueprint-view.js",
+      "bytes": 2135,
+      "sha256": "7bdc94492c7ca8584773b43d1956837d4a60e10881d96c26c8147f1aadbdbee0",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "7bdc94492c7ca8584773b43d1956837d4a60e10881d96c26c8147f1aadbdbee0",
+      "matches_committed_artifact": true
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/BLUEPRINT.md",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/BLUEPRINT.md",
+      "bytes": 2042,
+      "sha256": "c98b602c6119fd7272f63ec5bc1c1d3ab12ca23b319a739e1969bf3c4758e5b6",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "c98b602c6119fd7272f63ec5bc1c1d3ab12ca23b319a739e1969bf3c4758e5b6",
+      "matches_committed_artifact": true
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/compiled.json",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/compiled.json",
+      "bytes": 35945,
+      "sha256": "886bdf672c7ac6002ab64df44ea44d2e14e39233b433d8185df8842ca3b9ec93",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "886bdf672c7ac6002ab64df44ea44d2e14e39233b433d8185df8842ca3b9ec93",
+      "matches_committed_artifact": true
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/data.json",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/data.json",
+      "bytes": 147836,
+      "sha256": "48d592adff2003a3ea2169b75453d7b638822b1a235be4c71fb6f2c9e6384fa8",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "48d592adff2003a3ea2169b75453d7b638822b1a235be4c71fb6f2c9e6384fa8",
+      "matches_committed_artifact": true
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/index.html",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/index.html",
+      "bytes": 5749,
+      "sha256": "3f387405e24c163aa7cff7d631c3e6b3582fd756ce66343d214b1629f2db815c",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "3f387405e24c163aa7cff7d631c3e6b3582fd756ce66343d214b1629f2db815c",
+      "matches_committed_artifact": true
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/mathematics-view.js",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/mathematics-view.js",
+      "bytes": 7311,
+      "sha256": "b1115ce85bf1f6671cbfb140450e01a06f0562e17def286c3db65b13db950978",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "b1115ce85bf1f6671cbfb140450e01a06f0562e17def286c3db65b13db950978",
+      "matches_committed_artifact": true
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/mathematics.json",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/mathematics.json",
+      "bytes": 9394,
+      "sha256": "513cc9ce544d5f299ae240be77013941b8c3809b30ad3e763cfe36d2be81a96c",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "513cc9ce544d5f299ae240be77013941b8c3809b30ad3e763cfe36d2be81a96c",
+      "matches_committed_artifact": true
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/style.css",
+      "public_url": "https://iontlab.org/formalization/mathematics-learning/style.css",
+      "bytes": 7693,
+      "sha256": "82492b16ae55cf29b223de7bafbfc80fca32fc7a2575490c8f191c4bf45c4921",
+      "unix_mode": "0644",
+      "http_status": 200,
+      "public_sha256": "82492b16ae55cf29b223de7bafbfc80fca32fc7a2575490c8f191c4bf45c4921",
+      "matches_committed_artifact": true
+    }
+  ],
+  "directory_unix_mode": "0755",
+  "package": "mathematics-learning-install-20261018-r2.zip",
+  "packaging_correction": "Initial package encoded 0600 file modes and public readback returned 403. Corrected package explicitly sets public static files to 0644 and only the new learning directory to 0755; file content hashes are unchanged.",
+  "verified_utc": "2026-10-18T06:30:23.832377+00:00",
+  "publication": "verified live; authenticated Hetzner WebFTP extraction from private account Home"
+}
