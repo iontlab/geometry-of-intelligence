@@ -1,0 +1,84 @@
+==== 1.3. Functors between strict categories ====
+
+**Definition 1.12.** Given strict categories \(\mathcal C\) and \(\mathcal D\), a **functor** \(F:\mathcal C\to\mathcal D\) consists of:
+
+  * a function \(\operatorname{Ob}(\mathcal C)\to\operatorname{Ob}(\mathcal D)\) sending an object \(x\in\mathcal C\) to an object \(Fx\in\mathcal D\);
+  * for all objects \(x,y\in\mathcal C\), a function \(\mathcal C(x,y)\to\mathcal D(Fx,Fy)\) sending a morphism \(f:x\to y\) in \(\mathcal C\) to a morphism \(Ff:Fx\to Fy\) in \(\mathcal D\);
+
+satisfying the following axioms:
+
+  * \(F\) preserves identities: for each object \(x\in\mathcal C\),
+
+$$F(\operatorname{id}_x)=\operatorname{id}_{Fx};$$
+
+  * \(F\) preserves composites: for all morphisms \(f:x\to y\) and \(g:y\to z\) in \(\mathcal C\),
+
+$$F(g\circ f)=Fg\circ Ff.$$
+
+//Example 1.13.// We have the following examples of functors.
+
+  * The forgetful functors \(U:\mathcal{Set}_{\bullet}\to\mathcal{Set}\), \(U:\mathcal{Vect}_k\to\mathcal{Set}\) and \(U:\mathcal{Top}\to\mathcal{Set}\) sending a pointed set, a \(k\)-vector space, or a topological space to its underlying set.
+  * The functor \((-)_+:\mathcal{Set}\to\mathcal{Set}_{\bullet}\) which freely adjoins a basepoint to a set \(S\), namely \(S_+:=(S\amalg\{*\},*)\).
+  * The functor \(\bigoplus_{(-)}k:\mathcal{Set}\to\mathcal{Vect}_k\) which sends a set \(S\) to the \(k\)-vector space with basis \(S\), namely \(\bigoplus_S k\).
+  * The discrete topology functor \(D:\mathcal{Set}\to\mathcal{Top}\) equipping a set \(S\) with the discrete topology, namely \((S,\mathcal P(S))\), where \(\mathcal P(S)\) is the set of subsets of \(S\).
+  * The indiscrete topology functor \(I:\mathcal{Set}\to\mathcal{Top}\) equipping a set \(S\) with the indiscrete topology, namely \((S,\{\emptyset,S\})\).
+
+**Proposition 1.14.** //Let \(F:\mathcal C\to\mathcal D\) be a functor between strict categories. Then \(F\) preserves isomorphisms, i.e., if \(f\) is an isomorphism in \(\mathcal C\), then \(Ff\) is an isomorphism in \(\mathcal D\).//
+
+//Proof.// Exercise. \(\square\)
+
+**Construction 1.15.** There is a strict category \(\mathcal{Cat}_s\) with
+
+  * object set \(\operatorname{Ob}(\mathcal{Cat}_s)\) consisting of the small strict categories;
+  * for all objects \(\mathcal C,\mathcal D\in\mathcal{Cat}_s\), hom set \(\mathcal{Cat}_s(\mathcal C,\mathcal D)\) consisting of the functors \(\mathcal C\to\mathcal D\);
+  * for each object \(\mathcal C\in\mathcal{Cat}_s\), **identity functor** \(\operatorname{id}_{\mathcal C}:\mathcal C\to\mathcal C\) acting as the identity on objects and on morphisms;
+  * for all morphisms \(F:\mathcal C\to\mathcal D\) and \(G:\mathcal D\to\mathcal E\) in \(\mathcal{Cat}_s\), **composite functor** \(GF:\mathcal C\to\mathcal E\) sending
+    * an object \(x\in\mathcal C\) to the object \(G(F(x))\in\mathcal E\);
+    * a morphism \(f:x\to y\) in \(\mathcal C\) to the morphism \(G(F(f)):G(F(x))\to G(F(y))\) in \(\mathcal E\).
+
+This is a well-defined strict category (Exercise).
+
+Similarly, there is a huge strict category \(\mathcal{CAT}_s\) of (large) strict categories and functors.
+
+//Remark 1.16.// The strict category \(\mathcal{Cat}_s\) of small strict categories and functors defines an object of \(\mathcal{CAT}_s\). As for the other examples, the strict category \(\mathcal{Cat}_s\) is locally small, but not small.
+
+**Construction 1.17.** Given a strict category \(\mathcal C\), there is a strict category \(\mathcal C^{\mathrm{op}}\), called the **opposite strict category** of \(\mathcal C\), with
+
+  * object set \(\operatorname{Ob}(\mathcal C)\);
+  * for all objects \(x,y\in\mathcal C\), hom set
+
+$$\mathcal C^{\mathrm{op}}(x,y):=\mathcal C(y,x);$$
+
+given a morphism \(f:y\to x\) in \(\mathcal C\), we write \(f^{\mathrm{op}}:x\to y\) for the corresponding morphism in \(\mathcal C^{\mathrm{op}}\);
+
+  * for each object \(x\in\mathcal C\), identity morphism \((\operatorname{id}_x)^{\mathrm{op}}\);
+  * for all morphisms \(f^{\mathrm{op}}:x\to y\) and \(g^{\mathrm{op}}:y\to z\) in \(\mathcal C^{\mathrm{op}}\), composite morphism
+
+$$g^{\mathrm{op}}\circ f^{\mathrm{op}}:=(f\circ g)^{\mathrm{op}}:x\to z.$$
+
+This is a well-defined strict category (Exercise).
+
+//Remark 1.18.// A **contravariant functor** from \(\mathcal C\) to \(\mathcal D\) is a functor \(F:\mathcal C^{\mathrm{op}}\to\mathcal D\). It consists of
+
+  * a function \(\operatorname{Ob}(\mathcal C)\to\operatorname{Ob}(\mathcal D)\) sending an object \(x\in\mathcal C\) to an object \(Fx\in\mathcal D\);
+  * for all objects \(x,y\in\mathcal C\), a function \(\mathcal C(x,y)\to\mathcal D(Fy,Fx)\) sending a morphism \(f:x\to y\) in \(\mathcal C\) to a morphism \(Ff:Fy\to Fx\) in \(\mathcal D\);
+
+satisfying the following axioms:
+
+  * \(F\) preserves identities;
+  * \(F\) preserves compositions: for all morphisms \(f:x\to y\) and \(g:y\to z\) in \(\mathcal C\),
+
+$$F(g\circ f)=Ff\circ Fg.$$
+
+**Construction 1.19.** Let \(\mathcal C\) be a locally small strict category and \(c\in\mathcal C\) be an object. There is a functor
+
+$$\mathcal C(-,c):\mathcal C^{\mathrm{op}}\to\mathcal{Set},$$
+
+called the **representable functor** at \(c\), sending:
+
+  * an object \(x\in\mathcal C\) to the (small) set of morphisms \(\mathcal C(x,c)\);
+  * a morphism \(f:x\to y\) in \(\mathcal C\) to the function
+
+$$f^*:\mathcal C(y,c)\to\mathcal C(x,c),\quad(g:y\to c)\mapsto(gf:x\to c).$$
+
+This is a well-defined functor (Exercise).

@@ -1,0 +1,2934 @@
+{
+  "schema": 1,
+  "source_sha256": "5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc",
+  "review": "AI-authored source alignment; no independent human review claimed",
+  "records": [
+    {
+      "key": "1.1",
+      "kind": "Definition",
+      "source_section": "1.1 Size issues",
+      "original_number": "1.1",
+      "source_pages": [
+        4
+      ],
+      "lesson": "size",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "source_proof_status": "definition",
+      "dependencies": [],
+      "topic": "Set-universe closure: naturals, subsets, powersets, indexed unions",
+      "mathematics": "A set-universe U contains ℕ, contains every subset of each of its members, contains the power set of each member, and contains ⋃ᵢ Aᵢ whenever I ∈ U and Aᵢ ∈ U for every i ∈ I.",
+      "proof": "This is a definition. Existence of such universes is a separate assumption.",
+      "plain": "A universe is a collection of sets closed under the operations the notes will use. Subset closure and power-set closure are different conditions: one includes each subset, the other includes the set of all subsets.",
+      "story": "Mira keeps a library of sets. Its charter admits the natural numbers, every subcollection of a catalogued set, a catalogue of all those subcollections, and unions of catalogued families whose index set is also catalogued.",
+      "limit": "The library is a set of sets with exact closure conditions, not an actual physical collection. The charter does not prove that a library satisfying it exists.",
+      "obligations": [
+        {
+          "id": "1.1.1",
+          "statement": "Encode the four set-universe closure conditions",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.SetUniverse"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.1.2",
+          "statement": "Naturals belong to the universe",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.SetUniverse.naturals"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.1.3",
+          "statement": "Subset closure",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.SetUniverse.subsets"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.1.4",
+          "statement": "Power-set closure",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.SetUniverse.powersets"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.1.5",
+          "statement": "Indexed-union closure",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.SetUniverse.unions"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SetUniverse"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.2",
+      "kind": "Remark",
+      "source_section": "1.1 Size issues",
+      "original_number": "1.2",
+      "source_pages": [
+        4
+      ],
+      "lesson": "size",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "source_proof_status": "argument supplied",
+      "dependencies": [
+        "1.1"
+      ],
+      "topic": "Russell argument: a universe is not its own member",
+      "mathematics": "If U is closed under subsets of its members, then U ∉ U. Under U ∈ U the separation set R = {A ∈ U | A ∉ A} is a member of U; its defining condition at R yields R ∈ R ↔ R ∉ R.",
+      "proof": "Assume U ∈ U. Subset closure gives R ∈ U. Substitute R into the separation condition and derive a contradiction. Only subset closure is used in this argument.",
+      "plain": "The contradiction concerns a set that would contain itself while supporting this separation construction. It is not a ban on talking about collections from a larger universe.",
+      "story": "Mira supposes the whole library is itself a listed book. She forms the subcatalogue of listed books that do not list themselves. The charter makes that subcatalogue a listed book too. Asking whether it lists itself forces both answers to contradict their defining rule.",
+      "limit": "Self-listing represents membership, not ordinary book citation. The argument needs a precise separation set and closure hypothesis.",
+      "obligations": [
+        {
+          "id": "1.2.1",
+          "statement": "Prove non-self-membership using separation and subset closure",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.universe_not_member"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.universe_not_member"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.3",
+      "kind": "Convention",
+      "source_section": "1.1 Size issues",
+      "original_number": "1.3",
+      "source_pages": [
+        4
+      ],
+      "lesson": "size",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "source_proof_status": "assumption",
+      "dependencies": [
+        "1.1"
+      ],
+      "topic": "Three nested set-universes and membership assumptions",
+      "mathematics": "Assume three set-universes Uₛ ⊆ Uₗ ⊆ Uₕ, together with Uₛ ∈ Uₗ and Uₗ ∈ Uₕ. Inclusion and membership are distinct relations.",
+      "proof": "The source adopts these conditions as a convention; it does not derive universe existence.",
+      "plain": "The notes reserve three size levels. The larger collection contains every member of the smaller one and also contains that smaller collection as a single set.",
+      "story": "Mira has a small library, a larger library and an archive. Each next collection includes the earlier books and also catalogues the entire earlier library as one object.",
+      "limit": "Lean's type-universe hierarchy is not itself this set-membership statement. A faithful set-theoretic encoding must keep the existence assumptions explicit.",
+      "obligations": [
+        {
+          "id": "1.3.1",
+          "statement": "Package the three universe hypotheses and membership/inclusion assumptions without postulating a project axiom",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.UniverseHierarchy"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.UniverseHierarchy"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.4",
+      "kind": "Definition",
+      "source_section": "1.1 Size issues",
+      "original_number": "1.4",
+      "source_pages": [
+        4
+      ],
+      "lesson": "size",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.3"
+      ],
+      "topic": "Small, large and huge sets",
+      "mathematics": "Relative to the three assumed universes, small sets are members of Uₛ, large sets are members of Uₗ, and huge sets are members of Uₕ.",
+      "proof": "Terminology defined by membership; the inclusions imply small ⇒ large ⇒ huge.",
+      "plain": "Size is relative to the fixed universes. It is a membership classification, not a claim that a small set has few elements.",
+      "story": "Mira labels a set by the catalogues admitting it. A book in the small catalogue also appears in the larger ones, even if it describes infinitely many things.",
+      "limit": "The labels are mathematical universe membership, not numerical bounds or memory limits.",
+      "obligations": [
+        {
+          "id": "1.4.1",
+          "statement": "Define small membership",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.IsSmallSet"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.4.2",
+          "statement": "Define large membership",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.IsLargeSet"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.4.3",
+          "statement": "Define huge membership",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.IsHugeSet"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.4.4",
+          "statement": "Small implies large",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.smallSet_is_large"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.4.5",
+          "statement": "Large implies huge",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.largeSet_is_huge"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.IsSmallSet",
+        "ILab.MathematicsLearning.IsLargeSet",
+        "ILab.MathematicsLearning.IsHugeSet",
+        "ILab.MathematicsLearning.smallSet_is_large",
+        "ILab.MathematicsLearning.largeSet_is_huge"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.5",
+      "kind": "Definition",
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.5",
+      "source_pages": [
+        5
+      ],
+      "lesson": "categories",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.4"
+      ],
+      "topic": "Objects, hom sets, identities, typed composition, unit and associativity laws",
+      "mathematics": "A strict category has objects, a hom set C(x,y) for each pair, identities 1ₓ and typed composition. For f:x→y, g:y→z, h:z→t, f∘1ₓ=f, 1ᵧ∘f=f, and (h∘g)∘f=h∘(g∘f). Object and hom sets satisfy the source's large-set bounds.",
+      "proof": "The laws are part of the category structure, not propositions about every arbitrary graph.",
+      "plain": "Giving arrows alone is insufficient: composition and identities must be specified and must obey the laws.",
+      "story": "Mira's route book supplies a neutral permit at each town and a combined permit for every composable pair. Regrouping a chain must produce the same entry.",
+      "limit": "Arrows need not be functions or journeys. Mathlib categories use type universes; the set-universe existence assumptions remain separate.",
+      "obligations": [
+        {
+          "id": "1.5.1",
+          "statement": "Checked category structure",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.StrictCategory"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.5.2",
+          "statement": "Left identity",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.categoryLeftIdentity"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.5.3",
+          "statement": "Right identity",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.categoryRightIdentity"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.5.4",
+          "statement": "Associativity",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.categoryAssociativity"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.StrictCategory",
+        "ILab.MathematicsLearning.categoryLeftIdentity",
+        "ILab.MathematicsLearning.categoryRightIdentity",
+        "ILab.MathematicsLearning.categoryAssociativity"
+      ],
+      "formalization_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed"
+    },
+    {
+      "key": "1.6",
+      "kind": "Remark",
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.6",
+      "source_pages": [
+        5
+      ],
+      "lesson": "categories",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "source_proof_status": "convention",
+      "dependencies": [
+        "1.5"
+      ],
+      "topic": "Large object and hom sets; huge strict categories",
+      "mathematics": "The default strict categories have large object and hom sets; huge strict categories use huge object and hom sets instead.",
+      "proof": "This is a size convention, not an additional composition law.",
+      "plain": "The same category laws apply at either size. The convention controls which categories can be objects of later categories of categories.",
+      "story": "The route-book charter is unchanged when Mira moves a collection into a larger archive; only the permitted size changes.",
+      "limit": "A hierarchy of Lean types is an implementation of size management, not a proof of the source's membership conventions.",
+      "obligations": [
+        {
+          "id": "1.6.1",
+          "statement": "Check category objects at independent object and morphism type-universe levels",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.StrictCategory"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.StrictCategory"
+      ],
+      "formalization_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed"
+    },
+    {
+      "key": "1.7",
+      "kind": "Definition",
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.7",
+      "source_pages": [
+        5
+      ],
+      "lesson": "categories",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.4",
+        "1.5"
+      ],
+      "topic": "Small versus locally small categories",
+      "mathematics": "A strict category is locally small if each hom set is small. It is small if it is locally small and its object set is small.",
+      "proof": "These are definitions. Smallness implies local smallness directly.",
+      "plain": "Local smallness bounds the arrows between a fixed pair. It says nothing by itself about the size of the whole collection of objects.",
+      "story": "Each pair of towns has a small permit catalogue, although the full atlas may contain too many towns for the small archive.",
+      "limit": "Here small means relative universe size, not finite.",
+      "obligations": [
+        {
+          "id": "1.7.1",
+          "statement": "Map local smallness to a checked Mathlib interface",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.LocallySmallCategory"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.7.2",
+          "statement": "Map small categories to a checked interface",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.SmallStrictCategory"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.LocallySmallCategory",
+        "ILab.MathematicsLearning.SmallStrictCategory"
+      ],
+      "formalization_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed"
+    },
+    {
+      "key": "1.8",
+      "kind": "Example",
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.8",
+      "source_pages": [
+        5
+      ],
+      "lesson": "categories",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "source_proof_status": "examples",
+      "dependencies": [
+        "1.5",
+        "1.7"
+      ],
+      "topic": "Set, pointed Set, vector spaces, Top; locally small but not small",
+      "mathematics": "Sets with functions, pointed sets with point-preserving functions, vector spaces over a fixed small field with linear maps, and topological spaces with continuous maps form locally small strict categories. Under the source's universe convention their object collections are not small.",
+      "proof": "Identities and composition preserve each specified structure. Hom sets are contained in function sets. The size claim is an additional foundational obligation, separate from the category instances.",
+      "plain": "The allowed maps determine the category. The same underlying functions are not automatically valid maps of every kind of structure.",
+      "story": "Mira compares four route books: arbitrary transfers, transfers preserving a marked place, linear transfers, and continuous transfers. Each book has its own admissibility rule, preserved by joining transfers.",
+      "limit": "The analogy does not prove closure or the non-smallness claims. These require separate mathematical checks.",
+      "obligations": [
+        {
+          "id": "1.8.1",
+          "statement": "Sets forms a category",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.setsCategory"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.2",
+          "statement": "Pointed sets forms a category",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pointedSetsCategory"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.3",
+          "statement": "Vector spaces forms a category",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.vectorSpacesCategory"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.4",
+          "statement": "Topological spaces forms a category",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.spacesCategory"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.5",
+          "statement": "Sets is locally small",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.sets_locally_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.6",
+          "statement": "Pointed sets is locally small",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pointed_locally_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.7",
+          "statement": "Vector spaces is locally small",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.vector_spaces_locally_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.8",
+          "statement": "Topological spaces is locally small",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.spaces_locally_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.9",
+          "statement": "Sets is not small in the type-universe formulation",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.sets_not_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.10",
+          "statement": "Pointed sets is not small in the type-universe formulation",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pointed_sets_not_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.11",
+          "statement": "Vector spaces is not small in the type-universe formulation",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.vector_spaces_not_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.12",
+          "statement": "Topological spaces is not small in the type-universe formulation",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.spaces_not_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.8.13",
+          "statement": "In the explicit ZFC formulation, the collection of U-small sets is not U-small",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.collection_of_small_sets_not_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.setsCategory",
+        "ILab.MathematicsLearning.pointedSetsCategory",
+        "ILab.MathematicsLearning.vectorSpacesCategory",
+        "ILab.MathematicsLearning.spacesCategory",
+        "ILab.MathematicsLearning.sets_locally_small",
+        "ILab.MathematicsLearning.pointed_locally_small",
+        "ILab.MathematicsLearning.vector_spaces_locally_small",
+        "ILab.MathematicsLearning.spaces_locally_small",
+        "ILab.MathematicsLearning.sets_not_small",
+        "ILab.MathematicsLearning.pointed_sets_not_small",
+        "ILab.MathematicsLearning.vector_spaces_not_small",
+        "ILab.MathematicsLearning.spaces_not_small",
+        "ILab.MathematicsLearning.collection_of_small_sets_not_small"
+      ],
+      "formalization_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed"
+    },
+    {
+      "key": "1.9",
+      "kind": "Definition",
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.9",
+      "source_pages": [
+        5
+      ],
+      "lesson": "categories",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.5"
+      ],
+      "topic": "Isomorphism, inverse and isomorphic objects",
+      "mathematics": "An arrow f:x→y is invertible if there exists g:y→x with g∘f=1ₓ and f∘g=1ᵧ. Objects are isomorphic if such an arrow exists.",
+      "proof": "Definition; a bundled isomorphism contains the inverse and both equations.",
+      "plain": "An inverse must work on both sides and must be a morphism in the same category.",
+      "story": "A golden permit comes with a return permit whose two round trips are certified neutral.",
+      "limit": "An isomorphism need not be equality of objects. One certified round trip is insufficient.",
+      "obligations": [
+        {
+          "id": "1.9.1",
+          "statement": "Bundled isomorphism",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.Isomorphism"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.9.2",
+          "statement": "IsIso iff existence of a two-sided inverse",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.invertible_iff_two_sided_inverse"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.9.3",
+          "statement": "Object isomorphism as nonempty isomorphism type",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.ObjectsIsomorphic"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.Isomorphism",
+        "ILab.MathematicsLearning.invertible_iff_two_sided_inverse",
+        "ILab.MathematicsLearning.ObjectsIsomorphic"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.10",
+      "kind": "Example",
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.10",
+      "source_pages": [
+        5
+      ],
+      "lesson": "categories",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "source_proof_status": "examples",
+      "dependencies": [
+        "1.8",
+        "1.9"
+      ],
+      "topic": "Bijections, pointed bijections, linear bijections and homeomorphisms",
+      "mathematics": "Isomorphisms in Set are bijections; in pointed Set they are point-preserving bijections; in Vectₖ they are bijective linear maps; in Top they are homeomorphisms.",
+      "proof": "Two inverse morphisms give inverse functions. Conversely, the inverse of a bijection preserves the point or linear structure when the forward map does. For topology, inverse continuity is required and is part of a homeomorphism.",
+      "plain": "Bijectivity alone works for the first three examples with their stated structures. A continuous bijection alone need not be a topological isomorphism.",
+      "story": "Mira can reverse a transfer only if its return obeys the same book's rules. The continuous-transfer book explicitly checks the return's continuity too.",
+      "limit": "The story is not a reason to infer inverse continuity. Each category needs its own equivalence between the two descriptions.",
+      "obligations": [
+        {
+          "id": "1.10.1",
+          "statement": "Set isomorphisms iff bijections",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.setIsoIffBijective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.10.2",
+          "statement": "Pointed isomorphisms iff pointed bijections",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pointed_iso_iff_bijective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.10.3",
+          "statement": "Linear isomorphisms iff linear bijections",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.vector_iso_iff_bijective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.10.4",
+          "statement": "Topological isomorphisms iff homeomorphisms",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.topIsoIffHomeomorphism"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.setIsoIffBijective",
+        "ILab.MathematicsLearning.pointed_iso_iff_bijective",
+        "ILab.MathematicsLearning.vector_iso_iff_bijective",
+        "ILab.MathematicsLearning.topIsoIffHomeomorphism"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.11",
+      "kind": "Proposition",
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.11",
+      "source_pages": [
+        5
+      ],
+      "lesson": "categories",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "source_proof_status": "proof supplied",
+      "dependencies": [
+        "1.9"
+      ],
+      "topic": "Uniqueness of the inverse",
+      "mathematics": "A morphism in a strict category has at most one two-sided inverse.",
+      "proof": "If g and h are inverses of f, then g=g∘1ᵧ=g∘(f∘h)=(g∘f)∘h=1ₓ∘h=h.",
+      "plain": "Associativity lets the same three-arrow expression cancel in two ways, so the proposed inverses must agree.",
+      "story": "Two clerks offer return permits for one golden permit. Mira inserts a neutral round trip, regroups it, and removes the other neutral round trip. The route book identifies the two returns.",
+      "limit": "The argument uses both inverse equations and category laws, not just common endpoints.",
+      "obligations": [
+        {
+          "id": "1.11.1",
+          "statement": "Uniqueness of two-sided inverse",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.inverse_unique"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.inverse_unique"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.12",
+      "kind": "Definition",
+      "source_section": "1.3 Functors",
+      "original_number": "1.12",
+      "source_pages": [
+        6
+      ],
+      "lesson": "functors",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.5"
+      ],
+      "topic": "Functor object/map data and preservation laws",
+      "mathematics": "A functor F:C→D gives an object function and maps C(x,y)→D(Fx,Fy), satisfying F(1ₓ)=1_Fx and F(g∘f)=Fg∘Ff.",
+      "proof": "These equations define functoriality.",
+      "plain": "A functor translates an entire category while preserving its identity and composition operations.",
+      "story": "Fern translates towns and permits, including neutral permits and every combined entry, consistently.",
+      "limit": "A functor need not be injective, surjective or invertible.",
+      "obligations": [
+        {
+          "id": "1.12.1",
+          "statement": "Functor data",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.CategoryFunctor"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.12.2",
+          "statement": "Preservation of identity",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.functorIdentityLaw"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.12.3",
+          "statement": "Preservation of composition",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.functorCompositionLaw"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.CategoryFunctor",
+        "ILab.MathematicsLearning.functorIdentityLaw",
+        "ILab.MathematicsLearning.functorCompositionLaw"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.13",
+      "kind": "Example",
+      "source_section": "1.3 Functors",
+      "original_number": "1.13",
+      "source_pages": [
+        6
+      ],
+      "lesson": "functors",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "source_proof_status": "examples",
+      "dependencies": [
+        "1.8",
+        "1.12"
+      ],
+      "topic": "Forgetful, added basepoint, free vector space, discrete and indiscrete functors",
+      "mathematics": "There are forgetful functors from pointed sets, vector spaces and topological spaces to sets; a functor adjoining a new basepoint; a free-vector-space functor S↦⊕ₛ k; and discrete and indiscrete topology functors from sets to spaces.",
+      "proof": "Each construction specifies its action on functions and preserves identities and composites. Free linear extension sends each basis vector to the basis vector indexed by its image.",
+      "plain": "Forgetting discards structure. The other functors supply particular structures uniformly on sets and functions.",
+      "story": "Mira either erases a book's special rules or equips an ordinary list with a new marked entry, a basis, or one of two extreme topologies. Every relabelling must extend consistently.",
+      "limit": "These are seven distinct functors. Their adjunction properties are additional results in 3.2.",
+      "obligations": [
+        {
+          "id": "1.13.1",
+          "statement": "Pointed forgetful functor",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.forgetPoint"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.13.2",
+          "statement": "Vector-space forgetful functor",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.forgetVector"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.13.3",
+          "statement": "Topological forgetful functor",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.forgetTopology"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.13.4",
+          "statement": "Free basepoint functor",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.addBasepoint"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.13.5",
+          "statement": "Free vector-space functor",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.freeVectorSpace",
+            "ILab.MathematicsLearning.freeVectorMapOnBasis"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.13.6",
+          "statement": "Discrete topology functor",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.discreteTopology"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.13.7",
+          "statement": "Indiscrete topology functor",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.indiscreteTopology"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.forgetPoint",
+        "ILab.MathematicsLearning.forgetVector",
+        "ILab.MathematicsLearning.forgetTopology",
+        "ILab.MathematicsLearning.addBasepoint",
+        "ILab.MathematicsLearning.freeVectorSpace",
+        "ILab.MathematicsLearning.freeVectorMapOnBasis",
+        "ILab.MathematicsLearning.discreteTopology",
+        "ILab.MathematicsLearning.indiscreteTopology"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.14",
+      "kind": "Proposition",
+      "source_section": "1.3 Functors",
+      "original_number": "1.14",
+      "source_pages": [
+        6
+      ],
+      "lesson": "functors",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "source_proof_status": "proof left as exercise",
+      "dependencies": [
+        "1.9",
+        "1.12"
+      ],
+      "topic": "Functors preserve isomorphisms",
+      "mathematics": "Every functor preserves isomorphisms: if f has inverse g, then Ff has inverse Fg.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "The statement says functors preserve the property of being invertible. Its proof is assigned to the reader.",
+      "story": "Mira reads that a translator sends reversible permits to reversible permits. The exercise asks her to justify that guarantee; this story does not provide the argument.",
+      "limit": "Preservation does not imply reflection of isomorphisms.",
+      "obligations": [
+        {
+          "id": "1.14.1",
+          "statement": "Assigned full proof — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.14",
+        "page": 6,
+        "excluded_scope": "full proof",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "1.15",
+      "kind": "Construction",
+      "source_section": "1.3 Functors",
+      "original_number": "1.15",
+      "source_pages": [
+        6
+      ],
+      "lesson": "functors",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "source_proof_status": "construction; laws left as exercise",
+      "dependencies": [
+        "1.3",
+        "1.12"
+      ],
+      "topic": "Categories of small and large strict categories; identity/composite functors",
+      "mathematics": "Small strict categories and functors form Catₛ; the corresponding large categories form a huge CATₛ. Identity functors act identically, and (G∘F)(x)=G(Fx), (G∘F)(f)=G(Ff).",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "The construction lists categories as objects and functors as arrows. The reader is assigned to verify its laws.",
+      "story": "Mira organizes whole route books into an atlas, using translators as links between books. The atlas charter is stated here; checking its laws remains the assigned exercise.",
+      "limit": "This construction has new universe requirements. Equality of functors here is stronger than natural isomorphism.",
+      "obligations": [
+        {
+          "id": "1.15.1",
+          "statement": "Assigned category well-definedness — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.15",
+        "page": 6,
+        "excluded_scope": "category well-definedness",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "1.16",
+      "kind": "Remark",
+      "source_section": "1.3 Functors",
+      "original_number": "1.16",
+      "source_pages": [
+        6
+      ],
+      "lesson": "functors",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "source_proof_status": "remark",
+      "dependencies": [
+        "1.7",
+        "1.15"
+      ],
+      "topic": "Size of Cat_s and membership in CAT_s",
+      "mathematics": "Catₛ is an object of CATₛ. Catₛ is locally small but not small under the fixed set-universe convention.",
+      "proof": "The object and functor collections require the larger universe. Local smallness and non-smallness must be assessed separately.",
+      "plain": "A catalogue can be too large to list itself at its own level while fitting into the next level.",
+      "story": "Mira's small-book catalogue fits inside the larger archive, although it is not itself a small book.",
+      "limit": "Type-level universe bounds alone do not establish the source's set-theoretic non-smallness statement.",
+      "obligations": [
+        {
+          "id": "1.16.1",
+          "statement": "Bundled category of small categories at next universe",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.smallCategoriesAsLargerObject"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.16.2",
+          "statement": "Local smallness of small-category functors",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.small_categories_locally_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        },
+        {
+          "id": "1.16.3",
+          "statement": "Non-smallness of Catₛ",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.small_categories_not_small"
+          ],
+          "scope": "A typed ordinary-category formulation. Lean type-universe bounds are not literal membership in the source’s three ZFC set-universes."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.smallCategoriesAsLargerObject",
+        "ILab.MathematicsLearning.small_categories_locally_small",
+        "ILab.MathematicsLearning.small_categories_not_small"
+      ],
+      "formalization_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed"
+    },
+    {
+      "key": "1.17",
+      "kind": "Construction",
+      "source_section": "1.3 Functors",
+      "original_number": "1.17",
+      "source_pages": [
+        6,
+        7
+      ],
+      "lesson": "functors",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "source_proof_status": "construction; laws left as exercise",
+      "dependencies": [
+        "1.5"
+      ],
+      "topic": "Opposite category and reversed composition",
+      "mathematics": "Cᵒᵖ has the same objects with Cᵒᵖ(x,y)=C(y,x). Identities are unchanged and composition reverses order: gᵒᵖ∘fᵒᵖ=(f∘g)ᵒᵖ.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "The opposite category keeps objects and reverses arrow direction. The construction data are stated; its laws are an assigned check.",
+      "story": "Mira reads the route book with each permit facing the opposite way. The rulebook for composing these reversed permits is stated, and checking it is left to the reader.",
+      "limit": "This does not make arrows invertible inside C. The reversed arrows live in a different category.",
+      "obligations": [
+        {
+          "id": "1.17.1",
+          "statement": "Assigned opposite category well-definedness — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.17",
+        "page": 7,
+        "excluded_scope": "opposite category well-definedness",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "1.18",
+      "kind": "Remark",
+      "source_section": "1.3 Functors",
+      "original_number": "1.18",
+      "source_pages": [
+        7
+      ],
+      "lesson": "functors",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "source_proof_status": "remark",
+      "dependencies": [
+        "1.12",
+        "1.17"
+      ],
+      "topic": "Contravariant functors as functors from the opposite",
+      "mathematics": "A contravariant functor C→D means a functor Cᵒᵖ→D. It sends f:x→y to Ff:Fy→Fx, preserves identities and reverses the order in a composite.",
+      "proof": "Apply ordinary functor laws to Cᵒᵖ and the opposite composition formula.",
+      "plain": "Contravariance is ordinary functoriality after reversing the source arrows.",
+      "story": "Fern translates Mira's reversed route book. A route from x to y therefore becomes a permit from the image of y to the image of x.",
+      "limit": "The direction change is part of the specified domain; it is not arbitrary reversal by an ordinary covariant functor.",
+      "obligations": [
+        {
+          "id": "1.18.1",
+          "statement": "Contravariant object/map types",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.ContravariantFunctor"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.18.2",
+          "statement": "Contravariant identity and composition equations",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.functorIdentityLaw",
+            "ILab.MathematicsLearning.contravariant_composition"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.ContravariantFunctor",
+        "ILab.MathematicsLearning.functorIdentityLaw",
+        "ILab.MathematicsLearning.contravariant_composition"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.19",
+      "kind": "Construction",
+      "source_section": "1.3 Functors",
+      "original_number": "1.19",
+      "source_pages": [
+        7
+      ],
+      "lesson": "functors",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "source_proof_status": "construction; laws left as exercise",
+      "dependencies": [
+        "1.7",
+        "1.12",
+        "1.17"
+      ],
+      "topic": "Contravariant hom functor C(-,c); precomposition",
+      "mathematics": "For a locally small C and c∈C, h_c=C(−,c):Cᵒᵖ→Set maps x to C(x,c) and f:x→y to precomposition (g:y→c)↦g∘f.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "For a fixed target, the representable records arrows arriving there and acts by precomposition. Verifying that this defines a functor is assigned.",
+      "story": "Mira collects permits arriving at one fixed tower. The source tells her how an earlier route changes that collection; the exercise asks her to check the rulebook.",
+      "limit": "The lists are hom sets, and precomposition need not be injective or surjective.",
+      "obligations": [
+        {
+          "id": "1.19.1",
+          "statement": "Assigned representable functor well-definedness — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.19",
+        "page": 7,
+        "excluded_scope": "representable functor well-definedness",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "1.20",
+      "kind": "Definition",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.20",
+      "source_pages": [
+        7
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.12"
+      ],
+      "topic": "Component types and naturality square",
+      "mathematics": "A natural transformation α:F⇒G has components αₓ:Fx→Gx such that Gf∘αₓ=αᵧ∘Ff for every f:x→y.",
+      "proof": "The commuting-square equation is the naturality condition.",
+      "plain": "Comparisons at different objects must fit every arrow, not merely be chosen independently.",
+      "story": "Mira compares two translators at each town. Translating a route and then comparing must equal comparing first and then translating it with the other translator.",
+      "limit": "Components need not be isomorphisms, and one checked square does not replace the condition for every arrow.",
+      "obligations": [
+        {
+          "id": "1.20.1",
+          "statement": "Natural transformation components",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.NaturalTransformation"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.20.2",
+          "statement": "Naturality equation",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.naturalityEquation"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.NaturalTransformation",
+        "ILab.MathematicsLearning.naturalityEquation"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.21",
+      "kind": "Construction",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.21",
+      "source_pages": [
+        7,
+        8
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "construction; naturality left as exercise",
+      "dependencies": [
+        "1.19",
+        "1.20"
+      ],
+      "topic": "Postcomposition natural transformation C(-,f)",
+      "mathematics": "For f:c→d, postcomposition defines h_f:h_c⇒h_d with (h_f)ₓ(g)=f∘g.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "A map between targets gives the stated postcomposition functions between their representables. Their naturality is the assigned check.",
+      "story": "Mira has a route from one tower to another and a stated rule for changing incoming-permit catalogues. The compatibility certificate is left as the assigned task.",
+      "limit": "The comparison is uniform over all source objects. Arbitrary functions between the hom sets need not be natural.",
+      "obligations": [
+        {
+          "id": "1.21.1",
+          "statement": "Assigned postcomposition transformation well-definedness — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.21",
+        "page": 8,
+        "excluded_scope": "postcomposition transformation well-definedness",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "1.22",
+      "kind": "Definition",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.22",
+      "source_pages": [
+        8
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.9",
+        "1.20"
+      ],
+      "topic": "Componentwise natural isomorphism",
+      "mathematics": "A natural transformation is a natural isomorphism when each of its components is an isomorphism.",
+      "proof": "This defines the componentwise condition; Proposition 1.24 connects it to invertibility in the functor category.",
+      "plain": "Invertible comparisons must still be natural; unrelated objectwise isomorphisms are insufficient.",
+      "story": "Mira's comparison permits are all golden, and they already obey every route test.",
+      "limit": "Having isomorphic image objects does not alone supply a natural family.",
+      "obligations": [
+        {
+          "id": "1.22.1",
+          "statement": "Componentwise isomorphism predicate",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.ComponentwiseNaturalIsomorphism"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.22.2",
+          "statement": "Bundled natural isomorphism has invertible components",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.ComponentwiseNaturalIsomorphism"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.ComponentwiseNaturalIsomorphism"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.23",
+      "kind": "Construction",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.23",
+      "source_pages": [
+        8
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "construction; laws left as exercise",
+      "dependencies": [
+        "1.20"
+      ],
+      "topic": "Functor category, identity and vertical composition",
+      "mathematics": "Fun(C,D) has functors as objects and natural transformations as arrows. Identity components are identities and (β∘α)ₓ=βₓ∘αₓ.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "The functor category has functors as objects and natural transformations as arrows. The source states component formulas and assigns the category checks.",
+      "story": "Mira makes a catalogue whose entries are translators and whose permits compare translators. The proposed identity and composition rules are listed; their validation remains an exercise.",
+      "limit": "This is vertical composition. Precomposition and postcomposition are additional constructions in 1.28.",
+      "obligations": [
+        {
+          "id": "1.23.1",
+          "statement": "Assigned functor category well-definedness — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.23",
+        "page": 8,
+        "excluded_scope": "functor category well-definedness",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "1.24",
+      "kind": "Proposition",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.24",
+      "source_pages": [
+        8
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "proof left as exercise",
+      "dependencies": [
+        "1.22",
+        "1.23"
+      ],
+      "topic": "Componentwise isomorphisms are exactly functor-category isomorphisms",
+      "mathematics": "A natural transformation is invertible as a morphism of Fun(C,D) if and only if every component is invertible.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "The claim identifies invertibility in the functor category with invertibility of all components. The equivalence is stated without its assigned proof.",
+      "story": "Mira reads two tests for whether a comparison ledger is reversible: one for the whole ledger and one for every town. The proposition says the tests agree; explaining why is the exercise.",
+      "limit": "The original naturality hypothesis is essential. This does not make arbitrary choices of isomorphisms natural.",
+      "obligations": [
+        {
+          "id": "1.24.1",
+          "statement": "Assigned full proof — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.24",
+        "page": 8,
+        "excluded_scope": "full proof",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "1.25",
+      "kind": "Construction",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.25",
+      "source_pages": [
+        8
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "construction",
+      "dependencies": [
+        "1.5"
+      ],
+      "topic": "Terminal strict category [0]",
+      "mathematics": "The terminal strict category [0] has one object and exactly one morphism, its identity.",
+      "proof": "The unique possible composition satisfies all category laws.",
+      "plain": "There is no choice of object or arrow in [0]. It provides a categorical way to select an object elsewhere.",
+      "story": "Mira makes a route book with one room and only its stay-here permit.",
+      "limit": "A one-object category can have many arrows; [0] specifically has just one.",
+      "obligations": [
+        {
+          "id": "1.25.1",
+          "statement": "One-object category",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.TerminalCategory",
+            "ILab.MathematicsLearning.OneRoom"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.25.2",
+          "statement": "Unique morphism",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.oneRoomCategory"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.25.3",
+          "statement": "Terminality among categories",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.functorToTerminal",
+            "ILab.MathematicsLearning.functorToTerminal_unique"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.TerminalCategory",
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.functorToTerminal",
+        "ILab.MathematicsLearning.functorToTerminal_unique"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.26",
+      "kind": "Proposition",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.26",
+      "source_pages": [
+        8
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "proof left as exercise",
+      "dependencies": [
+        "1.23",
+        "1.25"
+      ],
+      "topic": "Evaluation isomorphism Fun([0],C) with C; naturality in C",
+      "mathematics": "For a strict category C, there is an isomorphism of strict categories Fun([0],C) ≅ C, natural in C. The source labels its proof as an exercise.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "The statement asserts a strict category isomorphism between diagrams shaped by the terminal category and C, natural in C. This is stronger than merely an equivalence; its proof is assigned.",
+      "story": "Mira reads that the category of one-room diagrams has the same strict category structure as the original route book, compatibly with translations. The exercise is to justify this claim; no reconstruction is supplied here.",
+      "limit": "The claim is a strict category isomorphism, with naturality; an equivalence alone is a weaker formalization.",
+      "obligations": [
+        {
+          "id": "1.26.1",
+          "statement": "Assigned full strict category isomorphism proof and naturality — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.26",
+        "page": 8,
+        "excluded_scope": "full strict category isomorphism proof and naturality",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "1.27",
+      "kind": "Remark",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.27",
+      "source_pages": [
+        8
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "remark",
+      "dependencies": [
+        "1.26"
+      ],
+      "topic": "Objects as functors from [0]",
+      "mathematics": "An object c of C corresponds to a unique functor [0]→C selecting c.",
+      "proof": "The object image is prescribed, and preservation of identity forces the only arrow image.",
+      "plain": "Selecting an object can be expressed as giving a functor from the terminal category.",
+      "story": "Mira fills a one-room template with the name c. Its only permit must be translated to c's stay-here permit, leaving no further choice.",
+      "limit": "Uniqueness is for a fixed selected object in a strict presentation.",
+      "obligations": [
+        {
+          "id": "1.27.1",
+          "statement": "Functor selecting any object",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.selectObject"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "1.27.2",
+          "statement": "Uniqueness for fixed object image",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.terminal_functor_unique"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.selectObject",
+        "ILab.MathematicsLearning.terminal_functor_unique"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "1.28",
+      "kind": "Construction",
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.28",
+      "source_pages": [
+        8,
+        9
+      ],
+      "lesson": "natural_transformations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "source_proof_status": "construction; laws left as exercise",
+      "dependencies": [
+        "1.20",
+        "1.23"
+      ],
+      "topic": "Precomposition and postcomposition functors; whiskering",
+      "mathematics": "For F:C→D, precomposition gives F*:Fun(D,E)→Fun(C,E), with α mapped to components α_Fx. Postcomposition gives F*:Fun(E,C)→Fun(E,D), with α mapped to components F(αₓ); the source distinguishes these by subscript versus superscript.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "Precomposition changes diagram inputs; postcomposition changes their outputs. Their specified effects on components are retained, while the functor checks are assigned.",
+      "story": "Mira can change the route book supplied to a diagram or translate the diagram’s output. The two desks have different input and output types. Checking their stated rules is left to the reader.",
+      "limit": "The two constructions have different types and directions; their similar notation must not conflate them.",
+      "obligations": [
+        {
+          "id": "1.28.1",
+          "statement": "Assigned pre/postcomposition functor well-definedness — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "1.28",
+        "page": 9,
+        "excluded_scope": "pre/postcomposition functor well-definedness",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "2.1",
+      "kind": "Theorem",
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.1",
+      "source_pages": [
+        9
+      ],
+      "lesson": "yoneda",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "source_proof_status": "proof outline; checks left as exercises",
+      "dependencies": [
+        "1.19",
+        "1.20"
+      ],
+      "topic": "Contravariant Yoneda bijection, evaluation at identity and naturality in c,F",
+      "mathematics": "For locally small C, c∈C and F:Cᵒᵖ→Set, Nat(h_c,F) ≃ F(c). The forward function is α↦α_c(1_c); the inverse sends u to the transformation with αᵘₓ(f)=F(f)(u). The bijection is natural in c and F.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "Yoneda identifies natural transformations out of a representable with elements at its representing object. The source-supplied functions are retained; their assigned checks are withheld.",
+      "story": "Mira reads that compatible labels on every incoming permit correspond to a label at the tower itself. This explains the correspondence being claimed, without solving the checks assigned by the lecturers.",
+      "limit": "Compatibility with every earlier route is essential. The theorem concerns set-valued contravariant functors, not arbitrary independent labels.",
+      "obligations": [
+        {
+          "id": "2.1.1",
+          "statement": "Assigned candidate naturality; mutual inverse and naturality checks — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "2.1",
+        "page": 9,
+        "excluded_scope": "candidate naturality; mutual inverse and naturality checks",
+        "occurrences": 2
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "2.2",
+      "kind": "Construction",
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.2",
+      "source_pages": [
+        9
+      ],
+      "lesson": "yoneda",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "source_proof_status": "construction; laws left as exercise",
+      "dependencies": [
+        "1.19",
+        "1.21"
+      ],
+      "topic": "Yoneda functor on objects and morphisms",
+      "mathematics": "The Yoneda functor y_C:C→Fun(Cᵒᵖ,Set) sends c to h_c and f:c→d to the postcomposition transformation h_f.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "Yoneda packages objects and maps into their incoming-map profiles. Verifying the stated construction is assigned.",
+      "story": "Mira records each town by its full incoming-permit catalogue and each route by the specified change of catalogues. The construction’s compatibility checks remain the exercise.",
+      "limit": "This construction does not by itself state full faithfulness; that is 2.4.",
+      "obligations": [
+        {
+          "id": "2.2.1",
+          "statement": "Assigned Yoneda functor well-definedness — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "2.2",
+        "page": 9,
+        "excluded_scope": "Yoneda functor well-definedness",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "2.3",
+      "kind": "Definition",
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.3",
+      "source_pages": [
+        9
+      ],
+      "lesson": "yoneda",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.12"
+      ],
+      "topic": "Fully faithful means bijective on each hom set",
+      "mathematics": "F:C→D is fully faithful when, for every x,y, its map C(x,y)→D(Fx,Fy) is bijective.",
+      "proof": "Definition; equivalently each map is both injective and surjective.",
+      "plain": "Every arrow between image objects comes from exactly one source arrow. This does not require all target objects to be images.",
+      "story": "Fern's translation preserves a perfect one-to-one correspondence between permits for every pair of translated towns, although other towns may remain elsewhere in the kingdom.",
+      "limit": "Full faithfulness controls hom sets, not object surjectivity.",
+      "obligations": [
+        {
+          "id": "2.3.1",
+          "statement": "Full and Faithful iff hom-map bijective",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.fullyFaithfulIffBijective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "2.3.2",
+          "statement": "Hom equivalence under full faithfulness",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.fullyFaithfulHomEquiv"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.fullyFaithfulIffBijective",
+        "ILab.MathematicsLearning.fullyFaithfulHomEquiv"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "2.4",
+      "kind": "Corollary",
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.4",
+      "source_pages": [
+        10
+      ],
+      "lesson": "yoneda",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "source_proof_status": "proof left as exercise",
+      "dependencies": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ],
+      "topic": "Yoneda is fully faithful",
+      "mathematics": "The Yoneda functor is fully faithful.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "Full faithfulness says the Yoneda map is bijective on each hom set. Its proof is assigned and is not supplied here.",
+      "story": "Mira reads that the profile catalogue retains exactly the permits between each pair of towns. The claim concerns arrows between fixed objects; its justification remains the exercise.",
+      "limit": "Full faithfulness does not say every presheaf is representable.",
+      "obligations": [
+        {
+          "id": "2.4.1",
+          "statement": "Assigned full proof — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "2.4",
+        "page": 10,
+        "excluded_scope": "full proof",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "2.5",
+      "kind": "Proposition",
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.5",
+      "source_pages": [
+        10
+      ],
+      "lesson": "yoneda",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "source_proof_status": "proof left as exercise",
+      "dependencies": [
+        "1.14",
+        "2.3"
+      ],
+      "topic": "Fully faithful functors reflect isomorphisms and object isomorphism",
+      "mathematics": "A fully faithful F reflects isomorphisms. Moreover, x and y are isomorphic if and only if Fx and Fy are isomorphic.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "Full faithfulness detects invertible arrows and detects when two objects are isomorphic. These are the stated conclusions; the assigned proof is withheld.",
+      "story": "Mira reads that a fully faithful translation detects which permits and which pairs of towns are reversible. The exercise asks her to establish these conclusions; no lifting procedure is given here.",
+      "limit": "Both fullness and faithfulness matter. The conclusion concerns objects whose images are being compared.",
+      "obligations": [
+        {
+          "id": "2.5.1",
+          "statement": "Assigned both assertions: full proof — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "2.5",
+        "page": 10,
+        "excluded_scope": "both assertions: full proof",
+        "occurrences": 1
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "2.6",
+      "kind": "Corollary",
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.6",
+      "source_pages": [
+        10
+      ],
+      "lesson": "yoneda",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "source_proof_status": "proof supplied; opposite-isomorphism check left as exercise",
+      "dependencies": [
+        "1.24",
+        "2.4",
+        "2.5"
+      ],
+      "topic": "Detect isomorphisms by all incoming or outgoing hom-set maps",
+      "mathematics": "For f:c→d, the following are equivalent: f is invertible; postcomposition C(x,c)→C(x,d) is bijective for every x; precomposition C(d,x)→C(c,x) is bijective for every x.",
+      "proof": "The authors use full faithfulness of Yoneda and Proposition 1.24 for the incoming-map comparison, then pass to the opposite category for the outgoing-map comparison. They explicitly assign the invertibility equivalence for f and f.op as an exercise; that step is withheld.",
+      "plain": "A map is reversible exactly when every incoming probe, or every outgoing probe, sees it as a bijection.",
+      "story": "Mira tests whether a permit is reversible by how it acts on every arrival, or on every departure. The statement requires every possible test object. The embedded exercise about reversing arrow direction is left unsolved.",
+      "limit": "The quantifier is over all objects. A few selected probes need not detect invertibility.",
+      "obligations": [
+        {
+          "id": "2.6.1",
+          "statement": "IsIso iff every postcomposition map is bijective",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.isoIffPostcompositionBijective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "2.6.2",
+          "statement": "IsIso iff every precomposition map is bijective",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.isoIffPrecompositionBijective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "2.6.3",
+          "statement": "IsIso iff opposite arrow is IsIso",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "2.6",
+        "page": 10,
+        "excluded_scope": "embedded invertibility iff opposite invertibility only",
+        "occurrences": 1
+      },
+      "lean_declarations": [
+        "ILab.MathematicsLearning.isoIffPostcompositionBijective",
+        "ILab.MathematicsLearning.isoIffPrecompositionBijective"
+      ],
+      "formalization_status": "Non-exercise hom-bijection criterion checked; embedded opposite-invertibility exercise withheld"
+    },
+    {
+      "key": "2.7",
+      "kind": "Corollary",
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.7",
+      "source_pages": [
+        10
+      ],
+      "lesson": "yoneda",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "source_proof_status": "proof supplied",
+      "dependencies": [
+        "1.24",
+        "2.4",
+        "2.5"
+      ],
+      "topic": "Objects are isomorphic iff their representables are naturally isomorphic",
+      "mathematics": "Objects x,y of a locally small category are isomorphic if and only if h_x and h_y are naturally isomorphic.",
+      "proof": "Apply preservation and reflection of object isomorphisms to the fully faithful Yoneda functor, using the componentwise characterization of natural isomorphisms.",
+      "plain": "The complete incoming-map profile determines an object up to isomorphism, including how all probes transform.",
+      "story": "Mira compares two towns' incoming-permit catalogues by a reversible, route-compatible correspondence. Yoneda reconstructs a reversible permit between the towns.",
+      "limit": "Unstructured bijections between individual hom sets do not suffice; the correspondence must be natural.",
+      "obligations": [
+        {
+          "id": "2.7.1",
+          "statement": "Isomorphism of objects iff isomorphism of representable functors",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.yoneda_object_iso_iff"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.yoneda_object_iso_iff"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.1",
+      "kind": "Definition",
+      "source_section": "3.1 Adjunctions",
+      "original_number": "3.1",
+      "source_pages": [
+        11
+      ],
+      "lesson": "adjunctions",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.20",
+        "1.28"
+      ],
+      "topic": "Left/right adjoints, unit, counit and both triangle identities",
+      "mathematics": "An adjunction L:C⇄D:R has unit η:Id_C⇒R∘L and counit ε:L∘R⇒Id_D satisfying ε_Lx∘Lηₓ=1_Lx and Rεᵧ∘η_Ry=1_Ry.",
+      "proof": "The two triangle identities are part of the definition, alongside naturality of unit and counit.",
+      "plain": "The unit and counit compare the two round trips with the starting objects. The triangles make these comparisons compatible with each adjoint.",
+      "story": "Mira has two translation desks and comparison permits for translating out and back. Each triangle says a particular round trip followed by its comparison is the neutral permit.",
+      "limit": "Units and counits need not be invertible. An adjunction is generally weaker than an equivalence.",
+      "obligations": [
+        {
+          "id": "3.1.1",
+          "statement": "Unit natural transformation",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.adjunctionUnit"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.1.2",
+          "statement": "Counit natural transformation",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.adjunctionCounit"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.1.3",
+          "statement": "Unit naturality",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.adjunction_unit_naturality"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.1.4",
+          "statement": "Counit naturality",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.adjunction_counit_naturality"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.1.5",
+          "statement": "Left triangle identity",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.adjunctionLeftTriangle"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.1.6",
+          "statement": "Right triangle identity",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.adjunctionRightTriangle"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.adjunctionUnit",
+        "ILab.MathematicsLearning.adjunctionCounit",
+        "ILab.MathematicsLearning.adjunction_unit_naturality",
+        "ILab.MathematicsLearning.adjunction_counit_naturality",
+        "ILab.MathematicsLearning.adjunctionLeftTriangle",
+        "ILab.MathematicsLearning.adjunctionRightTriangle"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.2",
+      "kind": "Example",
+      "source_section": "3.1 Adjunctions",
+      "original_number": "3.2",
+      "source_pages": [
+        11
+      ],
+      "lesson": "adjunctions",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "source_proof_status": "examples",
+      "dependencies": [
+        "1.13",
+        "3.1"
+      ],
+      "topic": "Added-basepoint/free-vector and discrete/indiscrete adjunctions",
+      "mathematics": "Adjoining a basepoint is left adjoint to forgetting it. Free vector space is left adjoint to its forgetful functor. Discrete topology is left adjoint to the underlying-set functor, which is left adjoint to indiscrete topology.",
+      "proof": "A pointed map from S with a new basepoint is determined by an arbitrary function on S; a linear map from the free space is determined on basis vectors. Every map from a discrete space is continuous, as is every map into an indiscrete space. These correspondences are natural.",
+      "plain": "Each universal construction makes structured maps correspond exactly to simpler underlying functions.",
+      "story": "Mira equips a plain list with precisely the rules needed so that choosing a structured transfer amounts to choosing an ordinary transfer. The discrete and indiscrete desks solve opposite directions of this task.",
+      "limit": "There are four distinct adjunctions with specified directions. Forgetting structure is not generally invertible.",
+      "obligations": [
+        {
+          "id": "3.2.1",
+          "statement": "Free-basepoint adjunction",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.basepointAdjunction"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.2.2",
+          "statement": "Free-vector-space adjunction",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.vectorSpaceAdjunction"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.2.3",
+          "statement": "Discrete/underlying-set adjunction",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.discreteAdjunction"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.2.4",
+          "statement": "Underlying-set/indiscrete adjunction",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.indiscreteAdjunction"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.basepointAdjunction",
+        "ILab.MathematicsLearning.vectorSpaceAdjunction",
+        "ILab.MathematicsLearning.discreteAdjunction",
+        "ILab.MathematicsLearning.indiscreteAdjunction"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.3",
+      "kind": "Theorem",
+      "source_section": "3.1 Adjunctions",
+      "original_number": "3.3",
+      "source_pages": [
+        12
+      ],
+      "lesson": "adjunctions",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "source_proof_status": "proof outline; inverse/naturality/triangle checks left as exercises",
+      "dependencies": [
+        "3.1"
+      ],
+      "topic": "Natural hom-set bijections equivalent to unit/counit adjunctions",
+      "mathematics": "Functors L:C→D and R:D→C admit an adjunction exactly when there are bijections D(Lx,y)≃C(x,Ry), natural in x and y. Forward transposition sends g to Rg∘ηₓ; inverse transposition sends f to εᵧ∘Lf.",
+      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "plain": "The theorem relates unit/counit adjunction data to hom-set bijections natural in both variables. The source gives formulas but assigns the inverse, naturality and triangle checks.",
+      "story": "Mira sees two descriptions of one request: a permit from Lx to y or from x to Ry. The correspondence must respect changes at either endpoint. The exercise is to check the stated formulas, and its solution is withheld.",
+      "limit": "Independent bijections for each pair of objects are insufficient without naturality in both variables.",
+      "obligations": [
+        {
+          "id": "3.3.1",
+          "statement": "Assigned hom functions inverse/natural; constructed unit/counit natural and triangle laws — solution withheld",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "The lecturers assign this proof or construction check. Statements and source-supplied data remain; no solution is published."
+        }
+      ],
+      "exercise_exclusion": {
+        "item": "3.3",
+        "page": 12,
+        "excluded_scope": "hom functions inverse/natural; constructed unit/counit natural and triangle laws",
+        "occurrences": 2
+      },
+      "lean_declarations": [],
+      "formalization_status": "Assigned exercise solution withheld; source statement retained"
+    },
+    {
+      "key": "3.4",
+      "kind": "Definition",
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.4",
+      "source_pages": [
+        12
+      ],
+      "lesson": "equivalences",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.15",
+        "1.22"
+      ],
+      "topic": "Equivalence via quasi-inverse and natural isomorphisms",
+      "mathematics": "F:C→D is an equivalence if there is G:D→C and natural isomorphisms Id_C≅G∘F and F∘G≅Id_D. The source does not require triangle identities in this definition.",
+      "proof": "This is the quasi-inverse definition. Its relation to Mathlib's bundled adjoint equivalence requires the upgrade in 3.5.",
+      "plain": "The two translations undo one another up to coherent isomorphism, rather than literal equality.",
+      "story": "Mira translates a route book out and back. The returned town may have another name, but compatible golden permits identify it with the original.",
+      "limit": "Do not silently add triangle identities to the source definition or replace natural isomorphisms by unrelated objectwise ones.",
+      "obligations": [
+        {
+          "id": "3.4.1",
+          "statement": "Encode quasi-inverse data without triangle requirement",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.QuasiInverseData"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.4.2",
+          "statement": "Map a Mathlib equivalence to this data",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.equivalenceToQuasiInverse"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.4.3",
+          "statement": "Upgrade source data to bundled equivalence",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.quasiInverseToEquivalence"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.QuasiInverseData",
+        "ILab.MathematicsLearning.equivalenceToQuasiInverse",
+        "ILab.MathematicsLearning.quasiInverseToEquivalence"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.5",
+      "kind": "Example",
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.5",
+      "source_pages": [
+        12
+      ],
+      "lesson": "equivalences",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "source_proof_status": "examples",
+      "dependencies": [
+        "3.1",
+        "3.4"
+      ],
+      "topic": "Strict isomorphisms and adjoint equivalences imply equivalences",
+      "mathematics": "A strict isomorphism of categories is an equivalence. If an adjunction has invertible unit and counit, both adjoint functors are equivalences.",
+      "proof": "Turn equality of composite functors into identity natural isomorphisms. For an adjunction with invertible unit and counit, the two functors are quasi-inverses; reversing the natural isomorphisms gives the opposite direction.",
+      "plain": "Strict inverses and invertible adjunction comparisons are two ways to obtain equivalences.",
+      "story": "Mira can certify equivalence either with translations that return exactly the original book, or with adjoint desks whose comparison permits are all golden.",
+      "limit": "A general adjunction does not have invertible comparisons.",
+      "obligations": [
+        {
+          "id": "3.5.1",
+          "statement": "Strict category isomorphism gives equivalence",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.categoryIsoToEquivalence"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.5.2",
+          "statement": "Adjunction with invertible unit/counit gives left equivalence",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.adjunctionToEquivalence"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.5.3",
+          "statement": "Same gives right equivalence",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.adjunctionToEquivalence"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.categoryIsoToEquivalence",
+        "ILab.MathematicsLearning.adjunctionToEquivalence"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.6",
+      "kind": "Definition",
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.6",
+      "source_pages": [
+        12
+      ],
+      "lesson": "equivalences",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "source_proof_status": "definition",
+      "dependencies": [
+        "1.9",
+        "1.12"
+      ],
+      "topic": "Essential surjectivity up to object isomorphism",
+      "mathematics": "F:C→D is essentially surjective when for every d∈D there exist c∈C and an isomorphism Fc≅d.",
+      "proof": "Definition; the witness is an object and an isomorphism, not an equality.",
+      "plain": "Every target object has a representative up to isomorphism among the image objects.",
+      "story": "Mira's catalogue may omit a town's literal name, but it must name a town connected to it by a golden permit.",
+      "limit": "Essential surjectivity is weaker than surjectivity of the object function.",
+      "obligations": [
+        {
+          "id": "3.6.1",
+          "statement": "Essential-surjectivity predicate",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.EssentiallySurjective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.6.2",
+          "statement": "Witness formulation",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.essentially_surjective_iff"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.EssentiallySurjective",
+        "ILab.MathematicsLearning.essentially_surjective_iff"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.7",
+      "kind": "Theorem",
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.7",
+      "source_pages": [
+        12
+      ],
+      "lesson": "equivalences",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "source_proof_status": "statement only; proof deferred to later lecture",
+      "dependencies": [
+        "2.3",
+        "3.4",
+        "3.6"
+      ],
+      "topic": "Equivalence iff fully faithful and essentially surjective",
+      "mathematics": "A functor is an equivalence if and only if it is fully faithful and essentially surjective.",
+      "proof": "The source postpones its proof. Independently: an equivalence supplies hom bijections and image representatives. Conversely choose a representative and isomorphism for every target object; full faithfulness uniquely transports arrows between representatives, producing a quasi-inverse and natural isomorphisms. The choice and universe assumptions must remain explicit.",
+      "plain": "The criterion combines complete control of arrows between image objects with enough objects up to isomorphism.",
+      "story": "Fern's translation accounts uniquely for every permit between image towns, and every target town has an isomorphic representative. Mira chooses those representatives and uses the unique permit preimages to build a return translator.",
+      "limit": "The converse uses representative choices. This is an ordinary category theorem; the synthetic foundational setting is not formalized by it.",
+      "obligations": [
+        {
+          "id": "3.7.1",
+          "statement": "Equivalence implies fully faithful",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.7.2",
+          "statement": "Equivalence implies essentially surjective",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.7.3",
+          "statement": "Fully faithful plus essentially surjective constructs equivalence",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.7.4",
+          "statement": "Iff in source quasi-inverse sense",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.8",
+      "kind": "Construction",
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.8",
+      "source_pages": [
+        13
+      ],
+      "lesson": "equivalences",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "source_proof_status": "construction",
+      "dependencies": [
+        "1.5",
+        "1.9"
+      ],
+      "topic": "Walking isomorphism: two objects, singleton hom sets",
+      "mathematics": "The walking isomorphism I has objects 0 and 1 and exactly one morphism in each hom set. Its nonidentity arrows are mutually inverse.",
+      "proof": "There is exactly one possible composite with any endpoints, so the category laws and inverse equations hold.",
+      "plain": "This category has two distinct objects with no categorical distinction up to isomorphism.",
+      "story": "Mira has north and south rooms and exactly one approved permit between every ordered pair. Going out and back gives the only possible self-permit, the identity.",
+      "limit": "Distinct objects remain distinct in the object set even though they are isomorphic.",
+      "obligations": [
+        {
+          "id": "3.8.1",
+          "statement": "Two-object type",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.Room"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.8.2",
+          "statement": "Singleton homs and category laws",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.roomCategory"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.8.3",
+          "statement": "Explicit inverse arrows",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.roomIso"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.8.4",
+          "statement": "Two-object cardinality",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.room_cardinality"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.roomIso",
+        "ILab.MathematicsLearning.room_cardinality"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.9",
+      "kind": "Proposition",
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.9",
+      "source_pages": [
+        13
+      ],
+      "lesson": "equivalences",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "source_proof_status": "proof supplied; essential-surjectivity line incomplete as printed",
+      "dependencies": [
+        "1.25",
+        "3.7",
+        "3.8"
+      ],
+      "topic": "Inclusion of object 0 from [0] into the walking isomorphism is an equivalence",
+      "mathematics": "The functor [0]→I selecting 0 is an equivalence.",
+      "proof": "Its unique hom map is a bijection. Every target object is isomorphic to 0: use the identity for 0 and the specified isomorphism for 1. Alternatively collapse I to [0] and construct the two natural isomorphisms directly.",
+      "plain": "The source's brief proof must cover both target objects. The inclusion misses one literal object but reaches its isomorphism class.",
+      "story": "Mira represents both rooms by north. The stay-here permit covers north, and the golden north-to-south permit covers south. The one-room model recovers the category up to equivalence.",
+      "limit": "The source proof's printed reference to 0≅0 alone does not account for object 1; the independent explanation explicitly supplies that second case.",
+      "obligations": [
+        {
+          "id": "3.9.1",
+          "statement": "Selecting inclusion functor",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.includeRoom"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.9.2",
+          "statement": "Full faithfulness",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.walking_inclusion_full",
+            "ILab.MathematicsLearning.walking_inclusion_faithful"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.9.3",
+          "statement": "Essential surjectivity for both objects",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.inclusion_essentially_surjective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.9.4",
+          "statement": "Explicit equivalence",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.walkingEquivalence"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "3.9.5",
+          "statement": "Failure of literal object surjectivity",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.inclusion_not_surjective"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.walking_inclusion_full",
+        "ILab.MathematicsLearning.walking_inclusion_faithful",
+        "ILab.MathematicsLearning.inclusion_essentially_surjective",
+        "ILab.MathematicsLearning.walkingEquivalence",
+        "ILab.MathematicsLearning.inclusion_not_surjective"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "intro.what",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        1
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [],
+      "topic": "What an infinity-category means informally",
+      "mathematics": "An infinity-category is introduced informally through objects, arrows and higher arrows, with weakly coherent composition. This introductory description is not a complete formal definition.",
+      "proof": "No proof-bearing formal definition is asserted in this introductory passage.",
+      "plain": "The opening motivates a setting in which relations between maps are themselves part of the structure.",
+      "story": "Mira's route book now records comparisons between permits and comparisons between those comparisons, without declaring a final formal charter.",
+      "limit": "The picture is motivation. An ordinary Lean category does not encode the full higher structure.",
+      "obligations": [],
+      "lean_declarations": [],
+      "formalization_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model"
+    },
+    {
+      "key": "intro.higher_morphisms",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        1,
+        2
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.what"
+      ],
+      "topic": "Objects, arrows, higher parallel morphisms",
+      "mathematics": "The introductory hierarchy consists of objects, morphisms between objects, 2-morphisms between parallel morphisms, and higher morphisms between parallel morphisms of the preceding dimension.",
+      "proof": "This is an informal description of dimensions, not a completed axiom system.",
+      "plain": "At each level, comparisons have endpoints at the previous level.",
+      "story": "Mira compares two permits with the same endpoints, then compares two such comparisons, and continues the ledger to higher levels.",
+      "limit": "No finite tower of ordinary arrows is claimed to formalize all dimensions.",
+      "obligations": [],
+      "lean_declarations": [],
+      "formalization_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model"
+    },
+    {
+      "key": "intro.invertibility",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        2
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.higher_morphisms"
+      ],
+      "topic": "Weak invertibility above dimension one; coherent unit/associativity",
+      "mathematics": "In the intended infinity-category setting, k-morphisms for k≥2 are invertible in a weak sense, and units and associativity hold through compatible higher identifications.",
+      "proof": "The exact weak structures and their axioms are deferred in the source.",
+      "plain": "Higher identifications replace some strict equations, but those identifications must themselves fit together.",
+      "story": "Mira allows regrouping certificates rather than identical route entries, and then requires certificates comparing the different ways of using those certificates.",
+      "limit": "Lean's proof-irrelevant equality does not provide the intended higher identity structure; no ordinary analogue is a proof of this synthetic claim.",
+      "obligations": [
+        {
+          "id": "intro.invertibility.1",
+          "statement": "Represent the stated all-dimensional weak coherence in the intended foundations",
+          "status": "requires different foundations or a specified higher-category model",
+          "declarations": [],
+          "scope": "Lean is proof-irrelevant; these notes only announce the intended higher foundations. No all-dimensional coherence or univalence theorem is claimed."
+        }
+      ],
+      "lean_declarations": [],
+      "formalization_status": "Requires the intended higher foundations/model"
+    },
+    {
+      "key": "intro.paths",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        2
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.invertibility"
+      ],
+      "topic": "Paths and homotopies fixing endpoints/boundaries",
+      "mathematics": "For a topological space, points, paths, endpoint-fixing homotopies and higher boundary-fixing homotopies motivate the fundamental infinity-groupoid. Path concatenation is associative and unital up to homotopy; reversal is an inverse up to homotopy.",
+      "proof": "The source sketches the construction. The one-dimensional homotopy laws have ordinary topological formalizations; the full infinite construction requires a precise higher model.",
+      "plain": "Concatenating parameterized paths in different groupings changes the parameterization, but a homotopy relates the results.",
+      "story": "Mira redraws journeys continuously while keeping the endpoints fixed. A journey out and back can be contracted, and different timing conventions can be deformed into one another.",
+      "limit": "A homotopy is a specified continuous deformation. This does not make the parameterized paths literally equal or formalize all higher coherence.",
+      "obligations": [
+        {
+          "id": "intro.paths.1",
+          "statement": "Associativity up to endpoint-fixed homotopy",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pathCompositionAssociativity"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.paths.2",
+          "statement": "Left identity up to homotopy",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pathLeftIdentity"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.paths.3",
+          "statement": "Right identity up to homotopy",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pathRightIdentity"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.paths.4",
+          "statement": "First inverse homotopy",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pathLeftInverse"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.paths.5",
+          "statement": "Second inverse homotopy",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.pathRightInverse"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.paths.6",
+          "statement": "Full all-dimensional groupoid in a precise higher model",
+          "status": "requires different foundations or a specified higher-category model",
+          "declarations": [],
+          "scope": "Lean is proof-irrelevant; these notes only announce the intended higher foundations. No all-dimensional coherence or univalence theorem is claimed."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.pathCompositionAssociativity",
+        "ILab.MathematicsLearning.pathLeftIdentity",
+        "ILab.MathematicsLearning.pathRightIdentity",
+        "ILab.MathematicsLearning.pathLeftInverse",
+        "ILab.MathematicsLearning.pathRightInverse"
+      ],
+      "formalization_status": "Partially checked; higher-foundation obligation remains"
+    },
+    {
+      "key": "intro.groupoids",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        2
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.paths"
+      ],
+      "topic": "Infinity-groupoids have invertible one-morphisms too",
+      "mathematics": "An infinity-groupoid is an infinity-category in which the 1-morphisms are also weakly invertible; the path example has this feature.",
+      "proof": "Terminology for the intended higher setting; path reversal motivates invertibility.",
+      "plain": "The extra condition concerns arrows between objects, since higher arrows were already weakly invertible.",
+      "story": "Every route in Mira's path ledger has a reversible return up to deformation, as well as higher comparisons.",
+      "limit": "A strict groupoid or the fundamental 1-groupoid records only a truncation, not the full infinity-groupoid.",
+      "obligations": [],
+      "lean_declarations": [],
+      "formalization_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model"
+    },
+    {
+      "key": "intro.models",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        2
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.what"
+      ],
+      "topic": "Quasicategories and complete Segal spaces versus axiomatic approaches",
+      "mathematics": "Quasicategories and complete Segal spaces are cited as concrete approaches; the course proposes an axiomatic synthetic approach instead.",
+      "proof": "This is methodological context, with references rather than a theorem comparing models.",
+      "plain": "Different formal languages can present higher categories. The notes announce which approach the course will use.",
+      "story": "Mira compares different blueprints for describing a city before choosing a charter based on its structural behavior.",
+      "limit": "No equivalence of models is stated or proved in these pages.",
+      "obligations": [],
+      "lean_declarations": [],
+      "formalization_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model"
+    },
+    {
+      "key": "intro.hott",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        2,
+        3
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.groupoids"
+      ],
+      "topic": "Types as infinity-groupoids in homotopy type theory",
+      "mathematics": "In the intended homotopy type theory, types carry terms and iterated identity types and behave as infinity-groupoids.",
+      "proof": "This describes the intended foundations; those foundations are not Lean's proof-irrelevant equality theory.",
+      "plain": "Identifications can carry information and can themselves be compared.",
+      "story": "Mira records not only that two names identify the same object, but also which identification was chosen and how identifications compare.",
+      "limit": "Replacing these identity types by Lean Eq erases the higher information and would not prove the stated claim.",
+      "obligations": [
+        {
+          "id": "intro.hott.1",
+          "statement": "Interpret types as infinity-groupoids in the intended homotopical foundations",
+          "status": "requires different foundations or a specified higher-category model",
+          "declarations": [],
+          "scope": "Lean is proof-irrelevant; these notes only announce the intended higher foundations. No all-dimensional coherence or univalence theorem is claimed."
+        }
+      ],
+      "lean_declarations": [],
+      "formalization_status": "Requires the intended higher foundations/model"
+    },
+    {
+      "key": "intro.identity",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        2
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.hott"
+      ],
+      "topic": "Iterated identity types and identifications",
+      "mathematics": "For x,y:X, an identity type x=y can have terms p,q, whose identifications form another identity type p=q, and this iteration continues.",
+      "proof": "The passage describes the syntax and interpretation of homotopy type theory.",
+      "plain": "The distinction is between saying that an equality holds and retaining structured identifications as objects of further study.",
+      "story": "Mira keeps certificates of identification, then certificates comparing those certificates.",
+      "limit": "Lean propositions are proof-irrelevant. Its iterated equality cannot be presented as the nontrivial higher identity structure of HoTT.",
+      "obligations": [
+        {
+          "id": "intro.identity.1",
+          "statement": "Faithful non-proof-irrelevant iterated identity structure",
+          "status": "requires different foundations or a specified higher-category model",
+          "declarations": [],
+          "scope": "Lean is proof-irrelevant; these notes only announce the intended higher foundations. No all-dimensional coherence or univalence theorem is claimed."
+        }
+      ],
+      "lean_declarations": [],
+      "formalization_status": "Requires the intended higher foundations/model"
+    },
+    {
+      "key": "intro.sip",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        3
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.identity"
+      ],
+      "topic": "Indiscernibility, transport and Structure Identity Principle",
+      "mathematics": "Equality allows substitution of properties and transport of structures. The intended structure identity principle relates identities of groups to group isomorphisms. Existence of an element of order two is isomorphism-invariant; presentation-specific statements about the identity being the number 0 need not be. The source compares the cyclic group on {0,1} with the multiplicative group {1,−1}.",
+      "proof": "Equality transport is available in ordinary dependent type theory. Group isomorphisms preserve multiplication, the identity and element order. The structure identity principle requires the intended univalent/homotopical setting.",
+      "plain": "Ordinary equality supports substitution. Isomorphism preserves structural properties, but not every statement about how a structure was represented as sets.",
+      "story": "Two clerks encode the same two-state group with different labels. An element of order two survives translation, while the printed name of the identity can change. Mira distinguishes a change of labels from a change of group structure.",
+      "limit": "Group isomorphism is not automatically equality of Lean's bundled groups. A proof of order invariance does not prove the structure identity principle.",
+      "obligations": [
+        {
+          "id": "intro.sip.1",
+          "statement": "Transport predicates across equality",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.equality_substitution"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.sip.2",
+          "statement": "Transport dependent data across equality",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.equality_transport"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.sip.3",
+          "statement": "Group isomorphisms preserve existence of an element of order two",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.order_two_invariant"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.sip.4",
+          "statement": "Explicit cyclic-two/sign-group isomorphism and different identity labels",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.cyclicTwoSigns",
+            "ILab.MathematicsLearning.cyclic_two_zero_maps_to_one",
+            "ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "intro.sip.5",
+          "statement": "Structure identity principle in the intended foundations",
+          "status": "requires different foundations or a specified higher-category model",
+          "declarations": [],
+          "scope": "Lean is proof-irrelevant; these notes only announce the intended higher foundations. No all-dimensional coherence or univalence theorem is claimed."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.equality_substitution",
+        "ILab.MathematicsLearning.equality_transport",
+        "ILab.MathematicsLearning.order_two_invariant",
+        "ILab.MathematicsLearning.cyclicTwoSigns",
+        "ILab.MathematicsLearning.cyclic_two_zero_maps_to_one",
+        "ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one"
+      ],
+      "formalization_status": "Partially checked; higher-foundation obligation remains"
+    },
+    {
+      "key": "intro.synthetic",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        3
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.sip",
+        "intro.models"
+      ],
+      "topic": "Synthetic categories and noninvertible morphisms; distinct foundations",
+      "mathematics": "The synthetic approach extends the intended type theory to include noninvertible morphisms and studies the structural behavior of categories axiomatically.",
+      "proof": "The specific extended type theory and axioms are announced for later parts of the course.",
+      "plain": "The opening describes a research language to be developed, not an already supplied Lean axiom system.",
+      "story": "Mira plans a richer charter that can speak both of reversible identifications and of genuinely one-way permits.",
+      "limit": "No new project axioms should be invented to make this informal announcement look checked.",
+      "obligations": [],
+      "lean_declarations": [],
+      "formalization_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model"
+    },
+    {
+      "key": "intro.course",
+      "kind": "unnumbered",
+      "source_section": "Introduction",
+      "original_number": null,
+      "source_pages": [
+        3
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "announced for future lectures",
+      "dependencies": [
+        "intro.synthetic"
+      ],
+      "topic": "Future-only HoTT foundations, localisations, fibrations, Kan extensions, limits/colimits",
+      "mathematics": "Later course topics are announced: foundations, localisations, fibrations, Yoneda, Kan extensions, limits and colimits. Their general synthetic development is not part of this 13-page installment.",
+      "proof": "A syllabus announcement has no proof obligation.",
+      "plain": "These names indicate where the course is going. This learning project follows only the supplied installment.",
+      "story": "Mira reads the titles of future chapters before studying the route-book rules actually provided today.",
+      "limit": "Mentioning a later topic does not justify adding a separate formalization program for it here.",
+      "obligations": [],
+      "lean_declarations": [],
+      "formalization_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model"
+    },
+    {
+      "key": "strict.motivation",
+      "kind": "unnumbered",
+      "source_section": "Strict category theory",
+      "original_number": null,
+      "source_pages": [
+        4
+      ],
+      "lesson": "foundations",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "intro.synthetic"
+      ],
+      "topic": "Ordinary is called strict; equality-sensitive constructions motivate higher setting",
+      "mathematics": "The source calls ordinary categories strict and motivates higher foundations partly by constructions that depend on equality of object presentations rather than equivalence.",
+      "proof": "Motivational context; the walking-isomorphism example later supplies a concrete distinction.",
+      "plain": "Literal object data can change even when two categories describe equivalent structure.",
+      "story": "Mira compares two differently labelled ledgers that encode the same pattern of permits.",
+      "limit": "This is not a theorem that every equality-sensitive construction is invalid; the specific invariance requirement must be stated.",
+      "obligations": [],
+      "lean_declarations": [],
+      "formalization_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model"
+    },
+    {
+      "key": "equivalences.motivation",
+      "kind": "unnumbered",
+      "source_section": "3 Adjunctions and equivalences",
+      "original_number": null,
+      "source_pages": [
+        11
+      ],
+      "lesson": "equivalences",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "source_proof_status": "introductory explanation",
+      "dependencies": [
+        "1.9",
+        "3.4"
+      ],
+      "topic": "Equality, isomorphism and equivalence-sensitive invariance",
+      "mathematics": "Equality, isomorphism and equivalence of strict categories are distinct notions. The one-object category and walking isomorphism are equivalent despite having different numbers of objects.",
+      "proof": "The explicit functors and natural isomorphisms are given in items 3.8–3.9; the object sets have cardinalities one and two.",
+      "plain": "Equivalence permits redundant isomorphic objects. A strict isomorphism of categories would require inverse object functions.",
+      "story": "Mira's two-room ledger and one-room model have different numbers of names but equivalent permit structure.",
+      "limit": "The distinction concerns object presentations and categorical equivalence, not equality of the chosen object sets.",
+      "obligations": [
+        {
+          "id": "equivalences.motivation.1",
+          "statement": "One-object category has object cardinality one",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.one_room_cardinality"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        },
+        {
+          "id": "equivalences.motivation.2",
+          "statement": "Walking isomorphism is not strictly isomorphic to the one-object category",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.walking_not_strictly_isomorphic"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.one_room_cardinality",
+        "ILab.MathematicsLearning.walking_not_strictly_isomorphic"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    },
+    {
+      "key": "3.5.adjoint_upgrade",
+      "kind": "unnumbered",
+      "source_section": "3 Adjunctions and equivalences",
+      "original_number": null,
+      "source_pages": [
+        12
+      ],
+      "lesson": "equivalences",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "source_proof_status": "cited to Riehl 4.3.6; not proved in primary",
+      "dependencies": [
+        "3.5"
+      ],
+      "topic": "Every ordinary equivalence can be upgraded to an adjoint equivalence",
+      "mathematics": "Every equivalence in the source's quasi-inverse sense can be promoted to an adjoint equivalence.",
+      "proof": "The source cites this fact without using it. In ordinary category theory one can modify the unit or counit to obtain the triangle identities while retaining quasi-inverse functors.",
+      "plain": "Arbitrary natural isomorphisms witnessing a quasi-inverse need not already satisfy the triangles. An upgrade supplies coherent choices.",
+      "story": "Mira already has reversible round-trip comparisons. She adjusts the certificates so the two special triangle journeys agree with the neutral permits.",
+      "limit": "Do not assume the original comparison isomorphisms already satisfy the triangle identities.",
+      "obligations": [
+        {
+          "id": "3.5.adjoint_upgrade.1",
+          "statement": "Upgrade arbitrary quasi-inverse natural isomorphisms to adjoint-equivalence data",
+          "status": "checked in the stated Lean formulation",
+          "declarations": [
+            "ILab.MathematicsLearning.quasiInverseToEquivalence"
+          ],
+          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+        }
+      ],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.quasiInverseToEquivalence"
+      ],
+      "formalization_status": "Checked definition/hypotheses or proof in the stated Lean formulation"
+    }
+  ]
+}

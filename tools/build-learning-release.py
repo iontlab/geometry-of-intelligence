@@ -27,6 +27,8 @@ data=read(GRAPH/'data.json');nodes={n['id']:n for n in data['nodes']}
 modules={m['name']:m for m in data['modules']}
 seed=read(EX/'registry.v0.1.json')
 math=read(GRAPH/'mathematics.json')
+native_hash=digest((EX/'native-source.json').read_bytes())
+math['native_source_sha256']=native_hash
 old_keys={'laws','inverse','walking','surjectivity','cardinality','nonsurjective'}
 old_sources={'laws':['1.5'],'inverse':['1.11'],'walking':['3.9','3.8','3.4'],
              'surjectivity':['3.9','3.6'],'nonsurjective':['3.9','3.6'],'cardinality':['3.8']}
@@ -136,6 +138,8 @@ for key in old_keys:
     source_key=old_sources[key][0]
     math['results'][key]['source']=items[source_key]['public_url']
     math['results'][key]['anchor']=source_tuples[source_key]['anchor']
+    math['results'][key]['native_key']=source_key
+    math['results'][key]['limitation']='This retained declaration is independent supporting mathematics. Complete original-item verification is determined by the source audit and the Source statement selector.'
 
 for r in inventory:
     ids=[n for n in r['lean_declarations'] if n not in math['declarations']]
@@ -143,6 +147,7 @@ for r in inventory:
     assert all(nodes[n]['authored'] for n in ids)
     key='source.'+r['key']
     math['results'][key]={'label':'Primary '+r['key'],'title':r['topic'],
+        'native_key':r['key'],
         'source':r['public_url'],'anchor':source_tuples[r['key']]['anchor'],
         'statement':[r['mathematics']], 'proof':[r['proof']],
         'limitation':r['formalization_status']+'. '+r['limit']+' Each referenced signature specifies the precise checked formulation.'}
@@ -187,6 +192,7 @@ for name,m in math['declarations'].items():
     records.append(record)
 
 reg={'schema_version':'explanation-content-draft-1','content_format':{'version':'plain-text-blocks-1'},
+    'native_source_sha256':native_hash,
     'repository':{'commit':data['sourceRef']},
     'graph':{'data_sha256':digest((GRAPH/'data.json').read_bytes()),'mathematics_sha256':math_hash},
     'release':{'enabled':True,'publication_authorized':True},'records':records}

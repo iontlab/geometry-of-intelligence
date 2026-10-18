@@ -1,0 +1,81 @@
+==== 3. Adjunctions and equivalences ====
+
+We now turn to two important concepts in strict category theory, namely //adjunctions// and //equivalences//. Adjunctions provide a way to describe universal constructions and organize them into functors. Equivalences express when two strict categories should be thought of as being the “same”.
+
+From a categorical point of view, two isomorphic objects should be interchangeable, even if they are not equal. However, an isomorphism of strict categories requires a bijection between the sets of objects, making it too restrictive for this purpose. Equivalences provide a weakening of the notion of isomorphism between strict categories and capture the intended notion of sameness: they detect objects only up to isomorphism, rather than up to equality.
+
+A fundamental difficulty with the set-theoretic description of strict categories is that equality and isomorphism of objects remain distinct notions. Consequently, properties and constructions can depend on literal equalities between objects and fail to be well-behaved with respect to isomorphisms. We will illustrate this with examples of properties and constructions that are not invariant under replacing objects by isomorphic ones or strict categories by equivalent ones. Further examples will appear in the following sections.
+
+The synthetic approach will address this foundational issue by not allowing a distinction between equality and isomorphism of objects, so that invariance under isomorphism is built into the theory. Similarly, the appropriate notion of isomorphism between synthetic categories will generalize that of an equivalence between strict categories.
+
+==== 3.1. Adjunctions ====
+
+**Definition 3.1.** Given strict categories \(\mathcal C\) and \(\mathcal D\), an **adjunction** between \(\mathcal C\) and \(\mathcal D\) consists of:
+
+  * a functor \(L:\mathcal C\to\mathcal D\), called the **left adjoint**;
+  * a functor \(R:\mathcal D\to\mathcal C\), called the **right adjoint**;
+  * a natural transformation \(\eta:\operatorname{id}_{\mathcal C}\Rightarrow RL\), called the **unit**;
+  * a natural transformation \(\varepsilon:LR\Rightarrow\operatorname{id}_{\mathcal D}\), called the **counit**;
+
+such that, for all objects \(x\in\mathcal C\) and \(y\in\mathcal D\), the following triangles commute in \(\mathcal D\) and \(\mathcal C\), respectively:
+
+<tikzjax>
+\begin{document}
+\begin{tikzpicture}[>=stealth]
+\node (Lx) at (0,0) {$Lx$}; \node (LRLx) at (2.5,0) {$LRLx$}; \node (Lxb) at (2.5,-1.6) {$Lx$};
+\draw[->] (Lx) -- node[above] {$L(\eta_x)$} (LRLx);
+\draw[->] (LRLx) -- node[right] {$\varepsilon_{Lx}$} (Lxb);
+\draw[->] (Lx) -- node[below left] {$\mathrm{id}_{Lx}$} (Lxb);
+\node (Ry) at (5,0) {$Ry$}; \node (RLRy) at (7.5,0) {$RLRy$}; \node (Ryb) at (7.5,-1.6) {$Ry$};
+\draw[->] (Ry) -- node[above] {$\eta_{Ry}$} (RLRy);
+\draw[->] (RLRy) -- node[right] {$R(\varepsilon_y)$} (Ryb);
+\draw[->] (Ry) -- node[below left] {$\mathrm{id}_{Ry}$} (Ryb);
+\end{tikzpicture}
+\end{document}
+</tikzjax>
+
+We write \(L:\mathcal C\rightleftarrows\mathcal D:R\) or \(L\dashv R\) for such an adjunction.
+
+//Example 3.2.// We have the following examples of adjunctions between strict categories.
+
+  * The free-forgetful adjunctions
+
+$$(-)_+:\mathcal{Set}\rightleftarrows\mathcal{Set}_{\bullet}:U\quad\text{and}\quad\bigoplus_{(-)}k:\mathcal{Set}\rightleftarrows\mathcal{Vect}_k:U.$$
+
+  * The discrete-forgetful and forgetful-indiscrete adjunctions
+
+$$D:\mathcal{Set}\rightleftarrows\mathcal{Top}:U\quad\text{and}\quad U:\mathcal{Top}\rightleftarrows\mathcal{Set}:I.$$
+
+See Example 1.13 for the definition of the functors involved.
+
+**Theorem 3.3** (Adjunctions representably)**.** //Given functors \(L:\mathcal C\to\mathcal D\) and \(R:\mathcal D\to\mathcal C\) between strict categories, there is a unit and a counit making the pair \((L,R)\) into an adjunction \(L\dashv R\) if and only if, for all objects \(x\in\mathcal C\) and \(y\in\mathcal D\), there is a bijection//
+
+$$\mathcal D(Lx,y)\cong\mathcal C(x,Ry)$$
+
+//which is natural in \(x\) and \(y\).//
+
+//Proof.// Given an adjunction \(L\dashv R\), the unit \(\eta:\operatorname{id}_{\mathcal C}\Rightarrow RL\) induces a function
+
+$$\mathcal D(Lx,y)\xrightarrow{R}\mathcal C(RLx,Ry)\xrightarrow{(\eta_x)^*}\mathcal C(x,Ry),\quad(g:Lx\to y)\mapsto R(g)\circ\eta_x,$$
+
+and the counit \(\varepsilon:LR\Rightarrow\operatorname{id}_{\mathcal D}\) induces a function
+
+$$\mathcal C(x,Ry)\xrightarrow{L}\mathcal D(Lx,LRy)\xrightarrow{(\varepsilon_y)_*}\mathcal D(Lx,y),\quad(f:x\to Ry)\mapsto\varepsilon_y\circ L(f).$$
+
+These are mutually inverse and natural in \(x\) and \(y\) (Exercise).
+
+Conversely, suppose that, for all objects \(x\in\mathcal C\) and \(y\in\mathcal D\), we are given natural bijections
+
+$$\varphi_{x,y}:\mathcal D(Lx,y)\cong\mathcal C(x,Ry).$$
+
+Define \(\eta:\operatorname{id}_{\mathcal C}\Rightarrow RL\) whose component at an object \(x\in\mathcal C\) is given by
+
+$$\eta_x:=\varphi_{x,Lx}(\operatorname{id}_{Lx}):x\to RLx.$$
+
+Define \(\varepsilon:LR\Rightarrow\operatorname{id}_{\mathcal D}\) whose component at an object \(y\in\mathcal D\) is given by the morphism
+
+$$\varepsilon_y:=\varphi^{-1}_{Ry,y}(\operatorname{id}_{Ry}):LRy\to y.$$
+
+These are well-defined natural transformations satisfying the triangle identities (Exercise).
+
+This proves that \(L\dashv R\) is an adjunction. \(\square\)

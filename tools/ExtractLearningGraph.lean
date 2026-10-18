@@ -7,6 +7,8 @@ import ILab.MathematicsLearning.YonedaAdjunction
 import ILab.MathematicsLearning.TerminalCategory
 import ILab.MathematicsLearning.PathAndIdentity
 import ILab.MathematicsLearning.SourceLaws
+import ILab.MathematicsLearning.SmallSetsCategory
+import ILab.MathematicsLearning.FiniteSetCategories
 
 open Lean in
 run_cmd do

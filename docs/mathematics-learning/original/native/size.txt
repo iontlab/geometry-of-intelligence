@@ -1,0 +1,28 @@
+==== 1.1. Size issues ====
+
+Russell’s paradox tells us that the collection of all sets is not a set. To handle this issue, we will work with three nested universes of sets.
+
+**Definition 1.1.** A **set-universe** is a set \(\mathcal U\) whose elements are sets satisfying the following properties:
+
+  * (Infinite) the set of natural number \(\mathbb N\in\mathcal U\).
+  * (Subset closure) if \(A\in\mathcal U\) and \(B\subseteq A\), then \(B\in\mathcal U\);
+  * (Power set closure) if \(A\in\mathcal U\), then its power set \(\mathcal P(A)\in\mathcal U\);
+  * (Union closure) if \(I\in\mathcal U\) and \(A_i\in\mathcal U\), for each \(i\in I\), then \(\bigcup_{i\in I}A_i\in\mathcal U\).
+
+//Remark 1.2.// A similar proof to Russell’s paradox applies here to show that \(\mathcal U\notin\mathcal U\). By contradiction, suppose that \(\mathcal U\in\mathcal U\). Then we can form the subset of \(\mathcal U\)
+
+$$R:=\{A\in\mathcal U\mid A\notin A\}\subseteq\mathcal U$$
+
+and, by hypothesis, we have that \(R\in\mathcal U\). But this gives a contradiction since we have that \(R\in R\) if and only if \(R\notin R\).
+
+**Convention 1.3.** We will assume that there exist set-universes
+
+$$\mathcal U_{\mathrm{small}}\subseteq\mathcal U_{\mathrm{large}}\subseteq\mathcal U_{\mathrm{huge}}$$
+
+such that \(\mathcal U_{\mathrm{small}}\in\mathcal U_{\mathrm{large}}\) and \(\mathcal U_{\mathrm{large}}\in\mathcal U_{\mathrm{huge}}\).
+
+**Definition 1.4.** We introduce the following terminology.
+
+  * A **set** or a **small set** is an element of \(\mathcal U_{\mathrm{small}}\).
+  * A **large set** is an element of \(\mathcal U_{\mathrm{large}}\).
+  * A **huge set** is an element of \(\mathcal U_{\mathrm{huge}}\).

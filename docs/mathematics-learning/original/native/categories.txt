@@ -1,0 +1,53 @@
+==== 1.2. Strict categories ====
+
+**Definition 1.5.** A **strict category** \(\mathcal C\) consists of
+
+  * a large set \(\operatorname{Ob}(\mathcal C)\) of **objects** \(x,y,z,\ldots\);
+  * for all objects \(x,y\in\mathcal C\), a large set \(\mathcal C(x,y)\) of **morphisms** \(f:x\to y\) from \(x\) to \(y\);
+  * for each object \(x\in\mathcal C\), an **identity morphism** \(\operatorname{id}_x:x\to x\);
+  * for all morphisms \(f:x\to y\) and \(g:y\to z\) in \(\mathcal C\), a **composite morphism** \(g\circ f:x\to z\); we also write simply \(gf\) for the composite;
+
+satisfying the following axioms:
+
+  * composition is unital: for each morphism \(f:x\to y\),
+
+$$f\circ\operatorname{id}_x=f\quad\text{and}\quad\operatorname{id}_y\circ f=f;$$
+
+  * composition is associative: for all morphisms \(f:x\to y\), \(g:y\to z\), and \(h:z\to t\) in \(\mathcal C\),
+
+$$(h\circ g)\circ f=h\circ(g\circ f).$$
+
+//Remark 1.6.// By convention, a strict category has a large set of objects, which we refer to simply as its **object set**, and large sets of morphisms, which we refer to simply as its **hom sets**.
+
+We will also consider **huge strict categories** with huge sets of objects and of morphisms.
+
+**Definition 1.7.** A strict category \(\mathcal C\) is
+
+  * **locally small** if, for all objects \(x,y\in\mathcal C\), the hom set \(\mathcal C(x,y)\) is small;
+  * **small** if its object set is small and it is locally small.
+
+//Example 1.8.// We have the following examples of strict categories.
+
+  * The strict category \(\mathcal{Set}\) of sets and functions.
+  * The strict category \(\mathcal{Set}_{\bullet}\) of pointed sets and basepoint-preserving functions.
+  * For a field \(k\), the strict category \(\mathcal{Vect}_k\) of \(k\)-vector spaces and \(k\)-linear maps.
+  * The strict category \(\mathcal{Top}\) of topological spaces and continuous functions.
+
+All these strict categories are locally small, but not small.
+
+**Definition 1.9.** Let \(\mathcal C\) be a strict category. A morphism \(f:x\to y\) in \(\mathcal C\) is an **isomorphism** if there is a morphism \(g:y\to x\) in \(\mathcal C\) such that \(g\circ f=\operatorname{id}_x\) and \(f\circ g=\operatorname{id}_y\). We write \(f:x\overset{\cong}{\longrightarrow}y\) or \(f:x\cong y\). We call \(g\) an **inverse** of \(f\).
+
+We say that two objects \(x\) and \(y\) in \(\mathcal C\) are **isomorphic** if there is an isomorphism \(f:x\overset{\cong}{\longrightarrow}y\) in \(\mathcal C\). We write \(x\cong y\).
+
+//Example 1.10.// The strict categories in Example 1.8 have the following isomorphisms.
+
+  * An isomorphism in \(\mathcal{Set}\) is a bijection.
+  * An isomorphism in \(\mathcal{Set}_{\bullet}\) is a basepoint-preserving bijection.
+  * An isomorphism in \(\mathcal{Vect}_k\) is a linear bijection.
+  * An isomorphism in \(\mathcal{Top}\) is a homeomorphism.
+
+**Proposition 1.11.** //Let \(\mathcal C\) be a strict category. An isomorphism \(f:x\to y\) in \(\mathcal C\) has a unique inverse, which we denote by \(f^{-1}:y\to x\).//
+
+//Proof.// Suppose that \(g,h:y\to x\) are two inverses of \(f\) in \(\mathcal C\). Then
+
+$$g=g\circ\operatorname{id}_y=g\circ(f\circ h)=(g\circ f)\circ h=\operatorname{id}_x\circ h=h.\quad\square$$

@@ -1,22 +1,25 @@
-✔ [8774/8931] Built ILab.MathematicsLearning.BasicCategoryTheory (5.6s)
-✔ [8925/8937] Built ILab.MathematicsLearning.SetUniverses (5.8s)
-✔ [8926/8937] Built ILab.MathematicsLearning.YonedaAdjunction (5.0s)
-✔ [8927/8937] Built ILab.MathematicsLearning.WalkingIsomorphism (5.9s)
-✔ [8928/8937] Built ILab.MathematicsLearning.CategoryConstructions (7.1s)
-✔ [8929/8937] Built ILab.MathematicsLearning.PathAndIdentity (7.6s)
-✔ [8930/8937] Built ILab.MathematicsLearning.TerminalCategory (5.3s)
-✔ [8931/8937] Built ILab.MathematicsLearning.CategorySize (6.2s)
-✔ [8932/8937] Built ILab.MathematicsLearning.SourceLaws (6.3s)
-✔ [8933/8937] Built ILab.RQ001.CapabilityOrder (14s)
-⚠ [8934/8937] Built ILab.RQ001.FourStateQuotient (15s)
-warning: ILab/RQ001/FourStateQuotient.lean:64:4: try 'simp' instead of 'simpa'
-
-Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [8935/8937] Built ILab.RQ001.SymmetryObstruction (15s)
+✔ [6670/6836] Built ILab.MathematicsLearning.BasicCategoryTheory (5.7s)
+✔ [7022/7203] Built ILab.MathematicsLearning.SetUniverses (6.3s)
+✔ [7023/7203] Built ILab.MathematicsLearning.YonedaAdjunction (6.3s)
+✔ [7326/7482] Built ILab.MathematicsLearning.WalkingIsomorphism (6.2s)
+✔ [8592/8731] Built ILab.MathematicsLearning.CategoryConstructions (7.4s)
+✔ [8929/8943] Built ILab.MathematicsLearning.PathAndIdentity (8.9s)
+✔ [8930/8943] Built ILab.MathematicsLearning.SetFunctions (5.5s)
+✔ [8931/8943] Built ILab.MathematicsLearning.TerminalCategory (5.6s)
+✔ [8932/8943] Built ILab.MathematicsLearning.CategorySize (6.6s)
+✔ [8933/8943] Built ILab.MathematicsLearning.SourceLaws (6.7s)
+✔ [8934/8943] Built ILab.MathematicsLearning.SetUniverseClosure (5.1s)
+✔ [8935/8943] Built ILab.MathematicsLearning.SetCategories (7.1s)
+✔ [8936/8943] Built ILab.RQ001.CapabilityOrder (17s)
+⚠ [8937/8943] Built ILab.RQ001.SymmetryObstruction (17s)
 warning: ILab/RQ001/SymmetryObstruction.lean:97:4: Try `simp at hne` instead of `simpa using hne`
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [8936/8937] Built ILab.RQ001.TransformationSufficientQuotient (15s)
+⚠ [8938/8943] Built ILab.RQ001.FourStateQuotient (17s)
+warning: ILab/RQ001/FourStateQuotient.lean:64:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8939/8943] Built ILab.RQ001.TransformationSufficientQuotient (17s)
 warning: ILab/RQ001/TransformationSufficientQuotient.lean:131:6: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
@@ -32,4 +35,7 @@ Note: This linter can be disabled with `set_option linter.unnecessarySimpa false
 warning: ILab/RQ001/TransformationSufficientQuotient.lean:255:14: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-Build completed successfully (8937 jobs).
+✔ [8940/8943] Built ILab.MathematicsLearning.SetCategoryEquivalences (5.6s)
+✔ [8941/8943] Built ILab.MathematicsLearning.SmallSetsCategory (5.7s)
+✔ [8942/8943] Built ILab.MathematicsLearning.FiniteSetCategories (4.9s)
+Build completed successfully (8943 jobs).

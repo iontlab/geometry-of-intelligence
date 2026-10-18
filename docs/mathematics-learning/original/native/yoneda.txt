@@ -1,0 +1,90 @@
+==== 2. Yoneda lemma ====
+
+We now turn to one of the fundamental results of category theory, the //Yoneda lemma//. An important consequence of this result is that an object in a strict category is determined, up to isomorphism, by its representable functor. Hence we can understand an object (up to isomorphism) through its relationships with other objects. It also highlights the central role of the strict category \(\mathcal{Set}\) in strict category theory. For instance, we can detect isomorphisms in a strict category by proving that certain functions of sets are bijections.
+
+**Theorem 2.1** (Yoneda lemma)**.** //Let \(\mathcal C\) be a locally small strict category. For all objects \(c\in\mathcal C\) and functors \(F:\mathcal C^{\mathrm{op}}\to\mathcal{Set}\), there is a bijection of sets//
+
+$$\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})(\mathcal C(-,c),F)\cong Fc$$
+
+//which is natural in both \(c\) and \(F\).//
+
+//Proof.// Evaluation at the identity morphism defines a function
+
+$$\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})(\mathcal C(-,c),F)\to Fc,\quad(\alpha:\mathcal C(-,c)\Rightarrow F)\mapsto\alpha_c(\operatorname{id}_c),$$
+
+where \(\alpha_c:\mathcal C(c,c)\to Fc\) is the function given by the component of \(\alpha\) at \(c\).
+
+Next, consider the function
+
+$$Fc\to\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})(\mathcal C(-,c),F),\quad u\mapsto\alpha_u$$
+
+sending an element \(u\in Fc\) to \(\alpha_u:\mathcal C(-,c)\Rightarrow F\) with component at an object \(x\in\mathcal C\) given by the function
+
+$$(\alpha_u)_x:\mathcal C(x,c)\to Fx,\quad(f:x\to c)\mapsto Ff(u),$$
+
+where \(Ff:Fc\to Fx\) is the function given by the image of \(f\) under \(F\). This is a well-defined natural transformation (Exercise).
+
+These functions are mutually inverse and natural in \(c\) and \(F\) (Exercise). \(\square\)
+
+**Construction 2.2.** Let \(\mathcal C\) be a locally small strict category. There is a functor
+
+$$\mathsf y_{\mathcal C}:\mathcal C\to\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})$$
+
+called the **Yoneda functor**, sending
+
+  * an object \(c\in\mathcal C\) to the representable functor \(\mathcal C(-,c):\mathcal C^{\mathrm{op}}\to\mathcal{Set}\);
+  * a morphism \(f:c\to d\) in \(\mathcal C\) to the natural transformation \(\mathcal C(-,f):\mathcal C(-,c)\Rightarrow\mathcal C(-,d)\).
+
+This is well-defined (Exercise).
+
+**Definition 2.3.** A functor \(F:\mathcal C\to\mathcal D\) between strict categories is **fully faithful** if, for all objects \(x,y\in\mathcal C\), the induced function
+
+$$\mathcal C(x,y)\to\mathcal D(Fx,Fy)$$
+
+is a bijection of sets.
+
+**Corollary 2.4.** //Let \(\mathcal C\) be a locally small strict category. The Yoneda functor//
+
+$$\mathsf y_{\mathcal C}:\mathcal C\to\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})$$
+
+//is fully faithful.//
+
+//Proof.// Exercise. \(\square\)
+
+**Proposition 2.5.** //Let \(F:\mathcal C\to\mathcal D\) be a fully faithful functor. Then \(F\) reflects isomorphisms, i.e., if \(f\) is a morphism in \(\mathcal C\) such that \(Ff\) is an isomorphism in \(\mathcal D\), then \(f\) is an isomorphism in \(\mathcal C\).//
+
+//Moreover, two objects \(x,y\in\mathcal C\) are isomorphic if and only if their images \(Fx,Fy\in\mathcal D\) are isomorphic.//
+
+//Proof.// Exercise. \(\square\)
+
+**Corollary 2.6.** //Let \(\mathcal C\) be a locally small strict category. The following are equivalent for a morphism \(f:c\to d\) in \(\mathcal C\).//
+
+//(i) The morphism \(f\) is an isomorphism in \(\mathcal C\).//
+
+//(ii) For all objects \(x\in\mathcal C\), the induced function//
+
+$$f_*:\mathcal C(x,c)\to\mathcal C(x,d)$$
+
+//is a bijection of sets.//
+
+//(iii) For all objects \(x\in\mathcal C\), the induced function//
+
+$$f^*:\mathcal C(d,x)\to\mathcal C(c,x)$$
+
+//is a bijection of sets.//
+
+//Proof.// Since the Yoneda functor \(\mathsf y_{\mathcal C}:\mathcal C\to\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})\) is fully faithful, it preserves and reflects isomorphisms. Hence the morphism \(f:c\to d\) is an isomorphism in \(\mathcal C\) if and only if the natural transformation \(\mathcal C(-,f):\mathcal C(-,c)\Rightarrow\mathcal C(-,d)\) is an isomorphism in \(\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})\). By Proposition 1.24, this holds if and only if it is a natural isomorphism, i.e., for every object \(x\in\mathcal C\), the induced morphism
+
+$$f_*:\mathcal C(x,c)\to\mathcal C(x,d)$$
+
+is an isomorphism in \(\mathcal{Set}\). This proves that (i) and (ii) are equivalent.
+
+Next, observe that \(f\) is an isomorphism in \(\mathcal C\) if and only if \(f^{\mathrm{op}}:d\to c\) is an isomorphism in \(\mathcal C^{\mathrm{op}}\) (Exercise). Then the equivalence between (i) and (ii) for \(\mathcal C^{\mathrm{op}}\) implies that \(f^{\mathrm{op}}\) is an isomorphism in \(\mathcal C^{\mathrm{op}}\) if and only if, for every object \(x\in\mathcal C\), the induced morphism
+
+$$f^{\mathrm{op}}_*=f^*:\mathcal C^{\mathrm{op}}(x,d)=\mathcal C(d,x)\to\mathcal C(c,x)=\mathcal C^{\mathrm{op}}(x,c)$$
+
+is an isomorphism in \(\mathcal{Set}\). This proves that (i) and (iii) are equivalent. \(\square\)
+
+**Corollary 2.7.** //Let \(\mathcal C\) be a locally small strict category. Two objects \(x,y\in\mathcal C\) are isomorphic if and only if their representable functors \(\mathcal C(-,x)\) and \(\mathcal C(-,y)\) are naturally isomorphic.//
+
+//Proof.// This follows from the preceding proposition applied to the fully faithful Yoneda functor, together with Proposition 1.24. \(\square\)

@@ -1,0 +1,56 @@
+==== 3.2. Equivalences of strict categories ====
+
+Recall that a functor \(F:\mathcal C\to\mathcal D\) between strict categories is an isomorphism in \(\mathcal{CAT}_s\) if there is a functor \(G:\mathcal D\to\mathcal C\) such that \(GF=\operatorname{id}_{\mathcal C}\) and \(FG=\operatorname{id}_{\mathcal D}\).
+
+Since we have a notion of morphisms between functors, namely the natural transformations, we can weaken the notion of sameness between strict categories as follows.
+
+**Definition 3.4.** A functor \(F:\mathcal C\to\mathcal D\) between strict categories is an **equivalence** if there is a functor \(G:\mathcal D\to\mathcal C\) and natural isomorphisms \(\eta:\operatorname{id}_{\mathcal C}\overset{\cong}{\Longrightarrow}GF\) and \(\varepsilon:FG\overset{\cong}{\Longrightarrow}\operatorname{id}_{\mathcal D}\).
+
+//Example 3.5.// The following classes of functors give special cases of equivalences.
+
+  * Any isomorphism in \(\mathcal{CAT}_s\) is an equivalence of strict categories.
+  * Given an adjunction \(L\dashv R\) such that the unit and the counit are natural isomorphisms, then both \(L\) and \(R\) are equivalences of strict categories; we refer to this as an **adjoint equivalence**.
+
+Fact: every equivalence of strict categories can be promoted to an adjoint equivalence; see [Rie16, Corollary 4.3.6]. We won’t use this fact in this course.
+
+**Definition 3.6.** A functor \(F:\mathcal C\to\mathcal D\) between strict categories is **essentially surjective** if, for all objects \(d\in\mathcal D\), there is an object \(c\in\mathcal C\) and an isomorphism \(\varphi:Fc\overset{\cong}{\longrightarrow}d\) in \(\mathcal D\).
+
+**Theorem 3.7** (Fundamental Theorem)**.** //A functor \(F:\mathcal C\to\mathcal D\) between strict categories is an equivalence if and only if it is essentially surjective on objects and fully faithful.//
+
+//Proof.// Next time. \(\square\)
+
+**Construction 3.8.** The **walking isomorphism** is the strict category \(\mathcal I:=\{0\cong1\}\) with two objects \(0\) and \(1\), whose only morphisms are the identities and mutually inverse isomorphisms \(f:0\to1\) and \(f^{-1}:1\to0\). Observe that the hom sets of \(\mathcal I\) are all singletons.
+
+**Proposition 3.9.** //The functor \(0:[0]\to\mathcal I\) is an equivalence of strict categories.//
+
+//Proof.// It is surjective on objects up to isomorphisms, since \(0\cong0\) in \(\mathcal I\), and it is fully faithful since, for the unique object \(*\in[0]\), we have a bijection
+
+$$[0](*,*)=\{\operatorname{id}_*\}\overset{\cong}{\longrightarrow}\{\operatorname{id}_0\}=\mathcal I(0,0).\quad\square$$
+
+==== References ====
+
+[CCNW21] Bastiaan Cnossen, Denis-Charles Cisinski, Kim Nguyen, and Tashi Walde, //Synthetic category theory//, available [[https://drive.google.com/file/d/1lKaq7watGGl3xvjqw9qHjm6SDPFJ2-0o/view|here]], 2021.
+
+[Joy08] André Joyal, //The theory of quasi-categories and its applications//, available [[http://mat.uab.cat/~kock/crm/hocat/advanced-course/Quadern45-2.pdf|here]], 2008.
+
+[Lur09] Jacob Lurie, //Higher topos theory//, Annals of Mathematics Studies, vol. 170, Princeton University Press, Princeton, NJ, 2009. MR 2522659
+
+[Ras23] Nima Rasekh, //Yoneda Lemma for Simplicial Spaces//, Appl. Categ. Structures **31** (2023), no. 4, 27. MR 4616631
+
+[Rez01] Charles Rezk, //A model for the homotopy theory of homotopy theory//, Trans. Amer. Math. Soc. **353** (2001), no. 3, 973–1007. MR 1804411
+
+[Rie16] Emily Riehl, //Category theory in context//, Aurora Dover Modern Math Originals, Dover Publications, Inc., Mineola, NY, 2016. MR 4727501
+
+[Rij25] Egbert Rijke, //Introduction to homotopy type theory//, Cambridge Studies in Advanced Mathematics, vol. 219, Cambridge University Press, 2025.
+
+[Riv25] Michele Riva, //A type theory for synthetic categories//, available [[https://elearning.uni-regensburg.de/pluginfile.php/4742062/course/section/964050/DirectedSyntax.pdf?time=1761054803423|here]], 2025.
+
+[Uni13] The Univalent Foundations Program, //Homotopy type theory: Univalent foundations of mathematics//, available [[https://homotopytypetheory.org/book|here]], 2013.
+
+Fachbereich Mathematik, Universität Hamburg, Hamburg, Germany
+
+//Email address:// lyne.moser@uni-hamburg.de
+
+Fakultät für Mathematik, Universität Regensburg, Regensburg, Germany
+
+//Email address:// tashi.walde@ur.de
