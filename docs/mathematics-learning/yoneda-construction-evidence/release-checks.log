@@ -1,0 +1,55 @@
+COMMAND: C:\Users\roman\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe tools/record-learning-audit.py ..\yoneda-partial-20261018\clean-build.log
+Recorded the successful 33-module build and 785-declaration audit. Declaration counts do not measure source fidelity.
+
+COMMAND: node tools/build-learning-graph.mjs
+PASS: 785 compiled declarations; 396 authored nodes; 3884 direct project-local edges; all source hashes and axiom dependencies checked.
+
+COMMAND: C:\Users\roman\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe tools/audit-source-fidelity.py
+44 numbered source items: 29 faithfully formalized; 15 exercise-affected; no eligible numbered item pending. Later higher axioms remain explicitly deferred; release completion requires fresh live QA.
+
+COMMAND: C:\Users\roman\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe tools/update-yoneda-construction-release.py
+PASS: 58 source items, 39 graph records, 47 inline controls; all existing narratives and source bindings preserved.
+
+COMMAND: C:\Users\roman\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe tools/refresh-learning-verification.py
+Refreshed 396 authored declaration mappings; 14 protected live assets and protected repository paths unchanged.
+
+COMMAND: C:\Users\roman\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe tools/check-learning-exercise-scope.py
+PASS: all 13 pages tracked; 17 assignments / 15 items; 56 withheld authored exports absent; 785 compiled declarations and 58 source records respect the exercise boundary.
+
+COMMAND: C:\Users\roman\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe tools/check-yoneda-construction.py
+PASS: exactly four new construction/formula declarations; all 781 existing declarations, other source-item audits, manuscript bindings, expanded narratives and RQ-001 preserved; all three 2.1 exercise checks remain open.
+
+COMMAND: node tools/check-learning-release.mjs
+PASS: 58 unique source bindings, 39 exact graph bindings, 47 inline controls, release hashes and all 3884 compiled edges.
+
+COMMAND: node tools/test-learning-inline-links.mjs
+PASS fresh URL selects Plain
+PASS fresh URL selects Story
+PASS fresh URL selects Mathematics
+PASS fresh URL selects Lean
+PASS fresh URL selects Verification
+PASS manual button keeps the existing Mathematics default
+PASS reject invalid selector ilab_explain=missing&view=plain
+PASS reject invalid selector ilab_explain=1.1&view=unknown
+PASS reject invalid selector ilab_explain=1.1&view=__proto__
+PASS reject invalid selector ilab_explain=1.1
+PASS reject invalid selector view=story
+PASS reject attestation mismatch revision
+PASS reject attestation mismatch raw_sha256
+PASS reject attestation mismatch fragment_sha256
+PASS reject attestation mismatch registry_sha256
+PASS reject attestation mismatch release
+PASS reject attestation mismatch render_contract
+PASS reject attestation mismatch role
+PASS reject attestation mismatch keys
+PASS wait for MathJax and TikZ before initialization
+PASS wait for selected layer rendering before scrolling
+PASS stale freshness fails closed
+PASS later stale binding revokes the panel and disables controls
+PASS history navigation selects an existing layer
+PASS anchor navigation reopens the requested inline panel
+PASS unrelated chapter anchors keep normal navigation
+PASS returning to the page rechecks the binding and restores a deep link
+PASS source mutation permanently revokes auto and manual opening
+28 inline-navigation and fail-closed checks passed.
+

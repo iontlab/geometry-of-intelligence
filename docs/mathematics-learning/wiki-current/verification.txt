@@ -24,11 +24,11 @@ Exact checked Lean source commit: ''28baa9ea38c0a6c3c88aa10dc09614cc565ede6c''. 
 
 All eight saved chapter sources match the reviewed native drafts byte-for-byte. The native reading projection preserves every original word, formula, punctuation mark and diagram specification; only the existing heading style is applied to statement labels. All original proofs, partial proofs, exercise markers, “Proof. Next time.”, bibliography, affiliations and the original AI-use disclosure remain.
 
-All **47 controls passed all five layers: 235 panel checks**. The Mathematics layer displays exact original passages. Lean and Verification use the current source audit and checked signatures. The 18 deployed learning assets match their upload hashes. Native MathJax rendering has no reported formula errors in the eight chapter captures.
+All **47 controls passed all five layers: 235 panel checks**. The Mathematics layer displays exact original passages. Lean and Verification use the current source audit and checked signatures. Release r12 also passes 195 graph-layer checks and 116 source-narrative checks. All 45 monitored live asset hashes match expectations: seven updated assets and 38 unchanged assets; all eight chapter bindings remain unchanged and fresh. Native MathJax rendering has no reported formula errors in the eight chapter captures.
 
 All **17 obsolete facsimile media URLs return HTTP 404** after verified replacement. The original PDF remains available with unchanged SHA-256 ''5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc''.
 
-[[https://github.com/iontlab/geometry-of-intelligence/tree/main/docs/mathematics-learning/native-publication-evidence|Current live source, rendering, panel, asset and media-removal evidence]].
+[[https://github.com/iontlab/geometry-of-intelligence/tree/codex/yoneda-authored-constructions/docs/mathematics-learning/yoneda-construction-evidence|Current partial-Yoneda release and live verification evidence]]. Earlier native-publication evidence retains the source-rendering and media-removal record.
 
 ===== Teaching boundary =====
 

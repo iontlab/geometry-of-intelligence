@@ -1,0 +1,977 @@
+[
+  {
+    "key": "explain.mathematics-learning.laws",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.laws",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.laws",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.laws",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.laws",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.inverse",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.inverse",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.inverse",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.inverse",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.inverse",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.walking",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.walking",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.walking",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.walking",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.walking",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.nonsurjective",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.nonsurjective",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.nonsurjective",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.nonsurjective",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.nonsurjective",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.surjectivity",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.surjectivity",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.surjectivity",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.surjectivity",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.surjectivity",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.cardinality",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.cardinality",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.cardinality",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.cardinality",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.cardinality",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.1",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.1",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.1",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.1",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.1",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.2",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.2",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.2",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.2",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.2",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.3",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.3",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.3",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.3",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.3",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.4",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.4",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.4",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.4",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.4",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.5",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.5",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.5",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.5",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.5",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.7",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.7",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.7",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.7",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.7",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.8",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.8",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.8",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.8",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.8",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.9",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.9",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.9",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.9",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.9",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.10",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.10",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.10",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.10",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.10",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.11",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.11",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.11",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.11",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.11",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.12",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.12",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.12",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.12",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.12",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.13",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.13",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.13",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.13",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.13",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.16",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.16",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.16",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.16",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.16",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.18",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.18",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.18",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.18",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.18",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.20",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.20",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.20",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.20",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.20",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.22",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.22",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.22",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.22",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.22",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.25",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.25",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.25",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.25",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.25",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.27",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.27",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.27",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.27",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.1.27",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.3",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.3",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.3",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.3",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.3",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.6",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.6",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.6",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.6",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.6",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.7",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.7",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.7",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.7",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.7",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.1",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.1",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.1",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.1",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.1",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.2",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.2",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.2",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.2",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.2",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.4",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.4",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.4",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.4",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.4",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.5",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.5",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.5",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.5",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.5",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.6",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.6",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.6",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.6",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.6",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.7",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.7",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.7",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.7",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.7",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.8",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.8",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.8",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.8",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.8",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.9",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.9",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.9",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.9",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.3.9",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.paths",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.paths",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.paths",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.paths",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.paths",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.sip",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.sip",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.sip",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.sip",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.intro.sip",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.equivalences.motivation",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.equivalences.motivation",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.equivalences.motivation",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.equivalences.motivation",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.equivalences.motivation",
+    "layer": "Verification",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.1",
+    "layer": "Mathematics",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.1",
+    "layer": "Plain",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.1",
+    "layer": "Story",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.1",
+    "layer": "Lean",
+    "pass": true
+  },
+  {
+    "key": "explain.mathematics-learning.graph.2.1",
+    "layer": "Verification",
+    "pass": true
+  }
+]

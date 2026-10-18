@@ -1,0 +1,57 @@
+Theorem 2.1 (Yoneda lemma).
+
+Verified author-supplied construction steps; complete Yoneda theorem not verified; assigned checks remain open
+
+A function on already given natural transformations; the formula readback is definitional.
+
+Only the family of component functions is constructed, not a natural transformation.
+
+Open: no proof or completed construction exported.
+
+ILab.MathematicsLearning.SetCategory.yonedaEvaluation
+(H : ILab.MathematicsLearning.UniverseHierarchy) →
+  (C : ILab.MathematicsLearning.SetCategory H.large) →
+    (hC : ILab.MathematicsLearning.SetCategory.IsLocallySmall H.small C) →
+      (F : CategoryTheory.Functor C.Objectᵒᵖ (ILab.MathematicsLearning.smallSetsCategory H).Object) →
+        (c : C.Object) →
+          (ILab.MathematicsLearning.SetCategory.representableInSmallSets H C hC c ⟶ F) →
+            ↥↑(F.obj (Opposite.op c)).member
+
+ILab.MathematicsLearning.YonedaConstruction
+
+Checked source · pinned commit ↗Open this declaration in the graph ↗
+ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent
+(H : ILab.MathematicsLearning.UniverseHierarchy) →
+  (C : ILab.MathematicsLearning.SetCategory H.large) →
+    (F : CategoryTheory.Functor C.Objectᵒᵖ (ILab.MathematicsLearning.smallSetsCategory H).Object) →
+      (c : C.Object) → ↥↑(F.obj (Opposite.op c)).member → (x : C.Object) → (x ⟶ c) → ↥↑(F.obj (Opposite.op x)).member
+
+ILab.MathematicsLearning.YonedaConstruction
+
+Checked source · pinned commit ↗Open this declaration in the graph ↗
+ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula
+∀ (H : ILab.MathematicsLearning.UniverseHierarchy) (C : ILab.MathematicsLearning.SetCategory H.large)
+  (hC : ILab.MathematicsLearning.SetCategory.IsLocallySmall H.small C)
+  (F : CategoryTheory.Functor C.Objectᵒᵖ (ILab.MathematicsLearning.smallSetsCategory H).Object) (c : C.Object)
+  (α : ILab.MathematicsLearning.SetCategory.representableInSmallSets H C hC c ⟶ F),
+  ILab.MathematicsLearning.SetCategory.yonedaEvaluation H C hC F c α =
+    (ILab.MathematicsLearning.SetFunction.funsEquiv
+          ↑((ILab.MathematicsLearning.SetCategory.representableInSmallSets H C hC c).obj (Opposite.op c)).member
+          ↑(F.obj (Opposite.op c)).member).symm
+      (α.app (Opposite.op c)) (C.identity c.member)
+
+ILab.MathematicsLearning.YonedaConstruction
+
+Checked source · pinned commit ↗Open this declaration in the graph ↗
+ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula
+∀ (H : ILab.MathematicsLearning.UniverseHierarchy) (C : ILab.MathematicsLearning.SetCategory H.large)
+  (F : CategoryTheory.Functor C.Objectᵒᵖ (ILab.MathematicsLearning.smallSetsCategory H).Object) (c : C.Object)
+  (u : ↥↑(F.obj (Opposite.op c)).member) (x : C.Object) (f : x ⟶ c),
+  ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent H C F c u x f =
+    (ILab.MathematicsLearning.SetFunction.funsEquiv ↑(F.obj (Opposite.op c)).member
+          ↑(F.obj (Opposite.op x)).member).symm
+      (F.map f.op) u
+
+ILab.MathematicsLearning.YonedaConstruction
+
+Checked source · pinned commit ↗Open this declaration in the graph ↗Exact chapter statement · pinned edition ↗

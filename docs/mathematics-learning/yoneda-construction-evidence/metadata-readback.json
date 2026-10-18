@@ -1,0 +1,14 @@
+[
+  {
+    "page": "coverage",
+    "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:coverage&do=export_raw",
+    "sha256": "cb027dc80b798a4835154038f5b4ba42426c33e0f5ec281b3b7c0632f0ee29d5",
+    "matches_saved_metadata": true
+  },
+  {
+    "page": "verification",
+    "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:verification&do=export_raw",
+    "sha256": "7a9af318b4964b3465b189b1accdaf31844acc2021202cf8ef0f55d9d15cadfe",
+    "matches_saved_metadata": true
+  }
+]
