@@ -102,5 +102,8 @@
     "walking_equivalence_plain_source_anchor": "proposition_39",
     "all_47_inline_statement_bindings_passed": true,
     "plain_story_passed_all_eight_chapters": true
-  }
+  },
+  "artifact_commit": "9ad9b996b547ce205f7e59f5ff55431ebe57c6c4",
+  "pull_request": "https://github.com/iontlab/geometry-of-intelligence/pull/7",
+  "all_deployed_files_match_artifact_commit": true
 }

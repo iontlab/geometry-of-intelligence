@@ -1,0 +1,134 @@
+[
+    {
+        "test": "exact current source and fragment receive learning assets",
+        "pass": true
+    },
+    {
+        "test": "original fragment is preserved as an exact prefix",
+        "pass": true
+    },
+    {
+        "test": "modified fragment is withheld",
+        "pass": true
+    },
+    {
+        "test": "renamed anchor is withheld",
+        "pass": true
+    },
+    {
+        "test": "duplicate anchor is withheld",
+        "pass": true
+    },
+    {
+        "test": "unknown role is withheld",
+        "pass": true
+    },
+    {
+        "test": "changed source hash is withheld",
+        "pass": true
+    },
+    {
+        "test": "same bytes with new revision are withheld",
+        "pass": true
+    },
+    {
+        "test": "withhold edit",
+        "pass": true
+    },
+    {
+        "test": "withhold preview",
+        "pass": true
+    },
+    {
+        "test": "withhold revisions",
+        "pass": true
+    },
+    {
+        "test": "withhold diff",
+        "pass": true
+    },
+    {
+        "test": "withhold export_raw",
+        "pass": true
+    },
+    {
+        "test": "withhold export_xhtml",
+        "pass": true
+    },
+    {
+        "test": "historical show is withheld",
+        "pass": true
+    },
+    {
+        "test": "ACL denial is preserved",
+        "pass": true
+    },
+    {
+        "test": "RQ-001 never enters learning handler",
+        "pass": true
+    },
+    {
+        "test": "POST is withheld",
+        "pass": true
+    },
+    {
+        "test": "freshness endpoint returns exact revision and digest",
+        "pass": true
+    },
+    {
+        "test": "endpoint rejects unrelated IDs",
+        "pass": true
+    },
+    {
+        "test": "endpoint rejects malformed nonce",
+        "pass": true
+    },
+    {
+        "test": "endpoint respects ACL",
+        "pass": true
+    },
+    {
+        "test": "release off withholds UI",
+        "pass": true
+    },
+    {
+        "test": "release off disables freshness",
+        "pass": true
+    },
+    {
+        "test": "registry hash mismatch withholds UI",
+        "pass": true
+    },
+    {
+        "test": "registry hash mismatch disables freshness",
+        "pass": true
+    },
+    {
+        "test": "restored fixture works",
+        "pass": true
+    },
+    {
+        "test": "anonymous cannot request editor capture",
+        "pass": true
+    },
+    {
+        "test": "editor digest capture preserves exact fragment prefix",
+        "pass": true
+    },
+    {
+        "test": "editor capture contains exact server fragment digest",
+        "pass": true
+    },
+    {
+        "test": "editor capture contains no source text or explanation loader",
+        "pass": true
+    },
+    {
+        "test": "reader cannot request editor capture",
+        "pass": true
+    },
+    {
+        "test": "capture remains outside RQ-001",
+        "pass": true
+    }
+]

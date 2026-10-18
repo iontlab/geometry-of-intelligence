@@ -43,7 +43,7 @@ New work includes the ZFSet universe predicates and Russell consequence, source-
 
 The graph has **428 direct compiled project-local edges**. Blueprint: **109 mapped declarations / 70 visible edges**. Authored view: **116 declarations / 80 visible edges**. Full view: **225 declarations / 428 edges**. There are no invented conceptual or shortcut edges.
 
-Exact checked Lean source commit: `ace59a04225eb98a769edb1943378d33a91aa204`. Branch: `codex/mathematics-learning-parity`. [Nine public module readbacks](expanded-public-source-readback.json) match the audited hashes. Release assets and final Git identifiers are recorded in `expanded-release-provenance.json`.
+Exact checked Lean source commit: `ace59a04225eb98a769edb1943378d33a91aa204`. Branch: `codex/mathematics-learning-parity`. Expanded release: [PR #7](https://github.com/iontlab/geometry-of-intelligence/pull/7). Exact deployed artifact commit: `9ad9b996b547ce205f7e59f5ff55431ebe57c6c4`. [Nine public module readbacks](expanded-public-source-readback.json) match the audited hashes. Release assets and final Git identifiers are recorded in `expanded-release-provenance.json`.
 
 [Clean build](../../formalization/mathematics-learning/verification/expanded-clean-build.log) · [Audit summary](../../formalization/mathematics-learning/verification/audit-summary.json) · [Source hash lock](../../formalization/mathematics-learning/verification/expanded-audit.json) · [Reproduction instructions](../../formalization/mathematics-learning/verification/VERIFICATION.md)
 
