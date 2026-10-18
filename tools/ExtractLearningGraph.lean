@@ -39,6 +39,7 @@ run_cmd do
       ("id", toJson name.toString), ("kind", toJson kind),
       ("module", toJson mod), ("signature", toJson signature.pretty),
       ("dependencies", toJson (localDeps.map Name.toString)),
+      ("externalDependencies", toJson ((deps.filter (fun n => !(`ILab.MathematicsLearning |>.isPrefixOf n))).toList.eraseDups.toArray.map Name.toString)),
       ("axioms", toJson ((axioms.map Name.toString).qsort (· < ·)))]
   IO.FS.writeFile "docs/formalization/mathematics-learning/compiled.json" (Json.pretty (toJson nodes))
   logInfo m!"PASS: extracted and audited {nodes.size} project declarations from compiled Lean types and values."
