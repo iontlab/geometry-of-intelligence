@@ -1,0 +1,77 @@
+[
+  {
+    "id": "ILab.MathematicsLearning.identity_padded_composite",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.identity_padded_composite"
+  },
+  {
+    "id": "ILab.MathematicsLearning.inverse_unique",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.inverse_unique"
+  },
+  {
+    "id": "ILab.MathematicsLearning.mappedIso",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.mappedIso"
+  },
+  {
+    "id": "ILab.MathematicsLearning.mapped_inverse_left",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.mapped_inverse_left"
+  },
+  {
+    "id": "ILab.MathematicsLearning.mapped_inverse_right",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.mapped_inverse_right"
+  },
+  {
+    "id": "ILab.MathematicsLearning.mappedIso_eq_mapIso",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.mappedIso_eq_mapIso"
+  },
+  {
+    "id": "ILab.MathematicsLearning.composite_naturality",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.composite_naturality"
+  },
+  {
+    "id": "ILab.MathematicsLearning.vertical_composite_component",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.vertical_composite_component"
+  },
+  {
+    "id": "ILab.MathematicsLearning.walkingEquivalence",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.walkingEquivalence"
+  },
+  {
+    "id": "ILab.MathematicsLearning.roomIso",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.roomIso"
+  },
+  {
+    "id": "ILab.MathematicsLearning.includeRoom",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.includeRoom"
+  },
+  {
+    "id": "ILab.MathematicsLearning.collapseRoom",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.collapseRoom"
+  },
+  {
+    "id": "ILab.MathematicsLearning.inclusion_not_surjective",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.inclusion_not_surjective"
+  },
+  {
+    "id": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.inclusion_essentially_surjective"
+  },
+  {
+    "id": "ILab.MathematicsLearning.room_cardinality",
+    "errors": 0,
+    "heading": "ILab.MathematicsLearning.room_cardinality"
+  }
+]

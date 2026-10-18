@@ -1,0 +1,418 @@
+{
+  "timestamp_utc": "2026-10-18T06:30:47.210175+00:00",
+  "protected_assets": [
+    {
+      "name": "start",
+      "status": 200,
+      "sha256": "a424c8b02df49fd0fb981e99a55932a85f2326bc5fa91417e3fd68621444af77",
+      "only_change": "one Mathematics Learning link in existing Foundations Map row",
+      "passed": true
+    },
+    {
+      "name": "math:start",
+      "status": 200,
+      "sha256": "708405fb13547166fec43cccd1c5057c8f6d304149002e539d0e7edf00a6e202",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "conventions:rendering",
+      "status": 200,
+      "sha256": "b8ad65b58e35749077ae568bf14f043873628c546720eb90c4a5405c1ad9b683",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "conventions:notation",
+      "status": 200,
+      "sha256": "65964f4af213d3e9e9b26eaef73d50784eb346eb694d0b15f06804ee5405932f",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "gi:status",
+      "status": 200,
+      "sha256": "b4a8576c8b0a72ebb7082d476be1a64fca1f86b4051b3b6b7b3faddcb4c3c2e2",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "research:rq001_phase_i",
+      "status": 200,
+      "sha256": "545f4d7f7ae469609bed1ad1d6cc280fb7b303d87a18e582cf165a2551da838e",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "roadmap",
+      "status": 200,
+      "sha256": "2884f955519a43812b548379e7d09d3085fda0ad8daec8c652122d74a9ddd1b8",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "gi:program_statement",
+      "status": 200,
+      "sha256": "fc56a555c140f803e08484e22524f87155b617ec262023ffa654bfd3f7730ee2",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "implementations:start",
+      "status": 200,
+      "sha256": "d06273196df2a3f6d54124092c7c8c0b1fa2f5f99e64cced735c4920512e0d05",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "implementations:lean",
+      "status": 200,
+      "sha256": "d28607a0be0a4e07a16bc377b57fe9436d39d9cdd77abcf103e598a3776c3386",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "math:grammar",
+      "status": 200,
+      "sha256": "024fe275b9bf8a2000f53ce35cf8f959ca895cf57e5dce58718e9d25a47aa300",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "math:geometry",
+      "status": 200,
+      "sha256": "c7cccaaa0a2b087e6c5a10353ba5671e8fc8877ef917ee5f55ffc1861ff1d2a0",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "math:dynamics",
+      "status": 200,
+      "sha256": "8861546506bb191e78b06b6d2511a6021856a7f0121016c4272d47acbf771b23",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "math:equivalence",
+      "status": 200,
+      "sha256": "0f9ce54201dd7c97a16ee466d0da9662702c5dd5c7748961eeddea21e04411ad",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "sidebar",
+      "status": "not a pre-existing page; excluded"
+    },
+    {
+      "name": "graph__index.html",
+      "status": 200,
+      "sha256": "80c3ada5d3f6445086ca92db50202a218f41e9434efcdccf91ebcb27bfc077db",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "graph__app.js",
+      "status": 200,
+      "sha256": "9b48ffa5314b62203206cd53ba5d1101d2e4921b1ecf30d08c6aa1583f3eb18a",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "graph__mathematics-view.js",
+      "status": 200,
+      "sha256": "2abb425f083d3c43f9752eea65839b18c5fc21388be11697c6d9a27351b91f09",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "graph__blueprint-view.js",
+      "status": 200,
+      "sha256": "7361e84117c3e25c900f75aec9eb828467784623edf74a9fe7b76b09ee1352bc",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "graph__mathematics.json",
+      "status": 200,
+      "sha256": "c568abc878bca21441ff6b91caf2aeb0f0728f2f070cae720f9684701a18e009",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "graph__data.json",
+      "status": 200,
+      "sha256": "4f1901870e2e68ab82931bf16655bc4bf90869bd965faf856eb25ff05218c385",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "graph__style.css",
+      "status": 200,
+      "sha256": "68d701715daa26680076f2232c5e84d9f5479d88847634bde47fb513cce84cfa",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "graph__BLUEPRINT.md",
+      "status": 200,
+      "sha256": "279c5fae3ca52dc951c01cd070b792f305a2813cfee42a9991b349e70e2295d6",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "explanations__registry.v0.1.json",
+      "status": 200,
+      "sha256": "2a7e63dda2b1c92c4c812881bb10521874228b7d62eaa2d318f23a6b39cd19dd",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "explanations__release.json",
+      "status": 200,
+      "sha256": "0ab9da00e637dad22fbb9d44f9bf95944ac1912c33af89c80d029f9c4b6d8078",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "explanations__binding.json",
+      "status": 200,
+      "sha256": "ee52e8f7ec7b798d6429e7732def87f38230b800623f478f14dd7dc33fa15fc9",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "explanations__wiki-adapter.js",
+      "status": 200,
+      "sha256": "b0bf8c448a9c9b82c2ac73c15b1b5eb1b243304975d83dc140adf76aee15d263",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "explanations__renderer.js",
+      "status": 200,
+      "sha256": "bf4a63f4cc608bcc1bcc77203ceb565f7b0f672067763de4d98e72b173079d7b",
+      "baseline_match": true,
+      "passed": true
+    },
+    {
+      "name": "explanations__graph-adapter.js",
+      "status": 200,
+      "sha256": "dfeb1bc9fc7003602961c2c902768d67a6e62d0f31fb263c222f48e76a0e64e0",
+      "baseline_match": true,
+      "passed": true
+    }
+  ],
+  "new_and_modified_pages": [
+    {
+      "id": "mathematics_learning:algebra:start",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:algebra:start",
+      "status": 200,
+      "sha256": "451eb2cfe4ae3e421c8f2fb094d4d9153a0a7e41c9eeb425bff72063df1b8313",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:start",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:start",
+      "status": 200,
+      "sha256": "6e79660ec434bab0119b17b5c32c76cd8315f50ac40abed76570c04c73aa7542",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "status": 200,
+      "sha256": "958a9d63e57f20235854894d9364dfb5967d0039470e22404fd3f20d109519a5",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "status": 200,
+      "sha256": "bb17c4a243980b0369bf96781f121cdbae47f77b4844e47175f930179bca6292",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:coverage",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:coverage",
+      "status": 200,
+      "sha256": "472a670d0921737025cc56e2ee4d84dee22051d0a03943be31a942f837c75900",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "status": 200,
+      "sha256": "5885a6f192e8446a98684b3a1f54a7e8b2eb099628759c55b5fb95adbccac333",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "status": 200,
+      "sha256": "20eba2d5eef657821efd6b23e10aa8972f0061c73860586b027791e804492432",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "status": 200,
+      "sha256": "c0948578822c83f27a564562b3f956ae3ba6c8db8df915a5dced1ddd6417dbb4",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "status": 200,
+      "sha256": "e7b1795a7cf49b9f839739325f5352d168835b5858350df8b18eca1b71919477",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "status": 200,
+      "sha256": "89e0d440685d4a4a7fad50bb1f0329fae689641199ae16a82732928b694f73b7",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:sources",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:sources",
+      "status": 200,
+      "sha256": "994b1af12eab84e49270a43dcc443acc3e9bd7229a91bde7e317b1ecb8d0f792",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:start",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:start",
+      "status": 200,
+      "sha256": "ff8919cfb25c78228645c67d4fd2cc127cfa0811946eb160f879a1ef34155863",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:verification",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:verification",
+      "status": 200,
+      "sha256": "7d2f7900e2a56549e1dc0128469750a455394e640fb81abed300435df8a70ff6",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "status": 200,
+      "sha256": "17c305d3423846b2b20ca3daf89755bd7ec5b056088c8a44a528a34ec921ffd2",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:start",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:start",
+      "status": 200,
+      "sha256": "0fd3bb3b682aeea30e9f5d9c921f191ba37eabe87e97effe810c908f10bb15b3",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "mathematics_learning:topology:start",
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:topology:start",
+      "status": 200,
+      "sha256": "6a735f7f557e87078dee57f9760f478bef6e7643d4b67372ce970313e32f1a41",
+      "matches_prepared_source": true
+    },
+    {
+      "id": "start",
+      "url": "https://iontlab.org/doku.php?id=start",
+      "status": 200,
+      "sha256": "a424c8b02df49fd0fb981e99a55932a85f2326bc5fa91417e3fd68621444af77",
+      "matches_prepared_source": true
+    }
+  ],
+  "existing_math_topics": [
+    {
+      "id": "math:equivalence",
+      "url": "https://iontlab.org/doku.php?id=math:equivalence",
+      "status": 200,
+      "sha256": "0f9ce54201dd7c97a16ee466d0da9662702c5dd5c7748961eeddea21e04411ad",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:07"
+      ]
+    },
+    {
+      "id": "math:infty",
+      "url": "https://iontlab.org/doku.php?id=math:infty",
+      "status": 200,
+      "sha256": "04b93edbc6d46c50cc6665312eb275b47a6ac8d19f1f6c96d28d746dd1877fd6",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:08"
+      ]
+    },
+    {
+      "id": "math:sheaves",
+      "url": "https://iontlab.org/doku.php?id=math:sheaves",
+      "status": 200,
+      "sha256": "1fefc426478f9f0acdbb7c5c2e082efd4fe42b74c49a6fc8a7a403534e4ad32a",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:08"
+      ]
+    },
+    {
+      "id": "math:groupoids",
+      "url": "https://iontlab.org/doku.php?id=math:groupoids",
+      "status": 200,
+      "sha256": "2e06763ad604da1471fe3e89f479ca02396e5306b798ee97fd00cbbf0ee5a5bd",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:05"
+      ]
+    },
+    {
+      "id": "math:topos",
+      "url": "https://iontlab.org/doku.php?id=math:topos",
+      "status": 200,
+      "sha256": "137b40545f99b37d0faeb881a29531ff27caab204daf667b3e6e1be4472153a5",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:08"
+      ]
+    },
+    {
+      "id": "math:moduli",
+      "url": "https://iontlab.org/doku.php?id=math:moduli",
+      "status": 200,
+      "sha256": "cabbf75acecfacf73a371c61ce017b3b4f1f7960b14d84dc602c331302ac1ed3",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:08"
+      ]
+    },
+    {
+      "id": "math:deformation",
+      "url": "https://iontlab.org/doku.php?id=math:deformation",
+      "status": 200,
+      "sha256": "5a4669c38df5e82ea04ff5a836a042789a7c0167176b0f5b782b59b636c27f56",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:08"
+      ]
+    },
+    {
+      "id": "math:geometry",
+      "url": "https://iontlab.org/doku.php?id=math:geometry",
+      "status": 200,
+      "sha256": "c7cccaaa0a2b087e6c5a10353ba5671e8fc8877ef917ee5f55ffc1861ff1d2a0",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:08"
+      ]
+    },
+    {
+      "id": "math:dynamics",
+      "url": "https://iontlab.org/doku.php?id=math:dynamics",
+      "status": 200,
+      "sha256": "8861546506bb191e78b06b6d2511a6021856a7f0121016c4272d47acbf771b23",
+      "date_metadata": [],
+      "rendered_times": [
+        "2026/09/22 13:08"
+      ]
+    }
+  ]
+}

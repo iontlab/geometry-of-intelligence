@@ -1,0 +1,130 @@
+[
+  {
+    "id": "mathematics_learning:algebra:start",
+    "math": 0,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Algebra"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:start",
+    "math": 0,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Higher Category Theory"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+    "math": 56,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Adjunctions: a natural correspondence of maps"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+    "math": 28,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Categories and isomorphisms"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:coverage",
+    "math": 2,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Synthetic Category Theory — coverage and proof status"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+    "math": 57,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Equivalences and the walking isomorphism"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+    "math": 11,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Orientation: ordinary, higher and synthetic categories"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+    "math": 60,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Functors and representable functors"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+    "math": 60,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Natural transformations and functor categories"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+    "math": 23,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Size and universes"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:sources",
+    "math": 5,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Synthetic Category Theory — sources and conventions"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:start",
+    "math": 0,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Synthetic Category Theory"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:verification",
+    "math": 1,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Selected ordinary-category formalization — verification"
+  },
+  {
+    "id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+    "math": 70,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Yoneda: an object through its maps"
+  },
+  {
+    "id": "mathematics_learning:start",
+    "math": 0,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Mathematics Learning"
+  },
+  {
+    "id": "mathematics_learning:topology:start",
+    "math": 0,
+    "mathErrors": 0,
+    "missingLinks": [],
+    "pageOverflow": false,
+    "title": "Topology"
+  }
+]
