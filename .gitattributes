@@ -4,6 +4,8 @@ tools/ExtractLearningGraph.lean text eol=lf
 tools/build-learning-graph.mjs text eol=lf
 docs/formalization/mathematics-learning/** text eol=lf
 docs/mathematics-learning/** text eol=lf
+docs/mathematics-learning/original/*.pdf binary
+docs/mathematics-learning/original/*.png binary
 docs/mathematics-learning/wiki-current/*.txt whitespace=-blank-at-eol
 docs/formalization/mathematics-learning/explanations/fixtures/*.txt whitespace=-blank-at-eol
 integrations/dokuwiki/ilabexplain/*.php text eol=lf
