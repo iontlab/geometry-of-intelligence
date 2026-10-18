@@ -45,13 +45,25 @@ assert not any(forbidden(d) for n in nodes for d in n['dependencies'])
 records = load(DOCS / 'obligations.json')['records']
 assert len(records) == 58
 for r in records:
-    if r['key'] in assigned - {'2.6'}:
+    if r['key'] in assigned - {'2.1','2.6'}:
         assert not r['lean_declarations'], r['key']
         assert all(o['status'] == 'assigned exercise solution withheld' and not o['declarations'] for o in r['obligations']), r['key']
         assert 'solution withheld' in r['proof'].lower(), r['key']
     if r['key'] == '2.6':
         assert r['obligations'][-1]['status'] == 'assigned exercise solution withheld'
         assert not r['obligations'][-1]['declarations']
+    if r['key'] == '2.1':
+        prefix='ILab.MathematicsLearning.SetCategory.'
+        expected={prefix+n for n in ['yonedaEvaluation','yonedaCandidateComponent','yonedaEvaluation_formula','yonedaCandidateComponent_formula']}
+        assert set(r['lean_declarations']) == expected
+        assert len(r['obligations']) == 5
+        assert all(o['status']=='Verified author-supplied construction step' for o in r['obligations'][:2])
+        assert all(o['status']=='assigned exercise solution withheld' and not o['declarations'] for o in r['obligations'][2:])
+        assert 'complete Yoneda theorem not verified' in r['formalization_status']
+        partial=[n for n in nodes if n['module']=='ILab.MathematicsLearning.YonedaConstruction']
+        assert {n['id'] for n in partial} == expected
+        # No hidden completed Yoneda construction or library exercise theorem.
+        assert all(not any(t in d.lower() for t in ['yonedaequiv','yonedalemma','yonedaequivalence']) for n in partial for d in n['externalDependencies'])
     assert not any(forbidden(n) for n in r['lean_declarations'])
 
 registry = load(GRAPH / 'explanations/registry.v0.1.json')
