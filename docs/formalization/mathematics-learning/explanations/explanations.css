@@ -27,3 +27,17 @@
 .ilab-native-source svg[version="1.1"] {max-width:100%;height:auto;}
 .ilab-native-source svg[version="1.1"] [fill="#000"],.ilab-native-source svg[version="1.1"] [fill="black"] {fill:currentColor;}
 .ilab-native-source svg[version="1.1"] [stroke="#000"],.ilab-native-source svg[version="1.1"] [stroke="black"] {stroke:currentColor;}
+
+/* Original manuscript only: reserve layout space for enlarged TikZ vectors. */
+#dokuwiki__content .page:has(> #ilab-learning-binding) .level3 > svg[version="1.1"]:not(.ilab-explain *) {
+  width:auto;
+  height:auto;
+  zoom:1.5;
+  max-width:100%;
+}
+/* Undo the theme's fixed SVG height for display math and standalone QEDs. */
+#dokuwiki__content .page:has(> #ilab-learning-binding) .level3 mjx-container[display="true"] > svg:not(.ilab-explain *),
+#dokuwiki__content .page:has(> #ilab-learning-binding) .level3 mjx-container > svg:has(> g > g[data-mml-node="math"] > g[data-mml-node="mi"]:only-child > use[data-c="25FB"]):not(.ilab-explain *) {
+  width:auto;
+  height:auto;
+}
