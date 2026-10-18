@@ -76,5 +76,13 @@ theorem functions_mem {A B : ZFSet.{u}} (hA : A ∈ U) (hB : B ∈ U) :
     ZFSet.funs A B ∈ U :=
   hU.subsets _ (hU.powersets _ (hU.product_mem hA hB)) _ ZFSet.sep_subset
 
+theorem range_mem {I : ZFSet.{u}} (hI : I ∈ U)
+    (f : I → ZFSet.{u}) (hf : ∀ i, f i ∈ U) : ZFSet.range f ∈ U := by
+  have he : ZFSet.range f = ZFSet.iUnion (fun i => ({f i} : ZFSet.{u})) := by
+    ext x
+    simp [eq_comm]
+  rw [he]
+  exact hU.unions I hI _ (fun i => hU.singleton_mem (hf i))
+
 end SetUniverse
 end ILab.MathematicsLearning
