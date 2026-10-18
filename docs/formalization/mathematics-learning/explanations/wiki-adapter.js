@@ -3,7 +3,7 @@
 (async()=>{
  const X=window.ILabExplain,S=window.ILabLearningStatement,binding=document.getElementById('ilab-learning-binding');
  if(!X||!S||!binding)return;
- let panel,trigger,generation=0,valid=true,mutated=false;const controls=[];
+ let panel,trigger,generation=0,valid=true,mutated=false;const controls=[],openers=[];
  const close=(focus=false)=>{generation++;panel?.remove();panel=null;if(focus&&trigger?.isConnected)trigger.focus({preventScroll:true});};
  const revoke=()=>{valid=false;close();controls.forEach(c=>c.disabled=true);};
  try{
@@ -33,17 +33,41 @@
    }
    const wrap=X.element('div');wrap.className='ilab-explain';
    const b=X.element('button','Explain '+r.source.item_label);b.type='button';wrap.append(b);targets[i].after(wrap);controls.push(b);
-   b.onclick=async()=>{close();trigger=b;const ticket=++generation;
+   const open=async(view='Mathematics',navigate=false)=>{close();trigger=b;const ticket=++generation;
     try{if(!valid)return;await X.fresh(state,r);if(ticket!==generation||!valid)return;
      panel=X.element('section');panel.className='ilab-explain ilab-explain-panel';panel.setAttribute('role','region');panel.setAttribute('aria-label','Explanation: '+r.source.heading_text);panel.tabIndex=-1;
      const bar=X.element('div'),body=X.element('div'),exit=X.element('button','Close');exit.type='button';exit.onclick=()=>close(true);body.id='ilab-learning-pane';body.setAttribute('role','tabpanel');body.tabIndex=0;
      panel.append(bar,exit,body);wrap.after(panel);
-     X.tabs(['Mathematics','Plain','Story','Lean','Verification'],bar,async(name,id)=>{
+     let ready;
+     const names=['Mathematics','Plain','Story','Lean','Verification'];
+     const tabs=X.tabs(names,bar,(name,id)=>{
       body.setAttribute('aria-labelledby',id);const selected=++generation;
-      try{await X.fresh(state,r);if(!valid||selected!==generation)return;await S.render(body,r,name,state,()=>valid&&selected===generation&&body.isConnected);}catch(error){console.warn('Learning explanation could not be verified',error);if(selected===generation)revoke();}
-     },'ilab-learning');panel.focus({preventScroll:true});
+      ready=(async()=>{
+       try{await X.fresh(state,r);if(!valid||selected!==generation)return;await S.render(body,r,name,state,()=>valid&&selected===generation&&body.isConnected);}catch(error){console.warn('Learning explanation could not be verified',error);if(selected===generation)revoke();}
+      })();
+     },'ilab-learning');
+     if(view!=='Mathematics')tabs[names.indexOf(view)].click();
+     const selected=generation;await ready;
+     if(!valid||selected!==generation||!body.isConnected)return;
+     panel.focus({preventScroll:true});
+     if(navigate)targets[i].scrollIntoView({block:'start',behavior:'auto'});
     }catch{revoke();}
    };
+   b.onclick=()=>open();openers.push(open);
+  }
+  // URL input selects only an already verified source record and existing tab.
+  // No URL parameter can supply content, a source revision, or a binding override.
+  async function openRequested(){
+   if(!valid)return;
+   const url=new URL(location.href),params=url.searchParams;
+   if(!params.has('ilab_explain'))return;
+   const views={plain:'Plain',story:'Story',mathematics:'Mathematics',lean:'Lean',verification:'Verification'};
+   const index=records.findIndex(r=>r.source.item_key===params.get('ilab_explain'));
+   const key=params.get('view');
+   if(params.get('id')!==token.page_id||index<0||!Object.hasOwn(views,key)){close();return;}
+   // A reader following a different chapter anchor must remain at that anchor.
+   if(url.hash&&url.hash!=='#'+records[index].source.anchor)return;
+   await openers[index](views[key],true);
   }
   new MutationObserver(ms=>{
    // MathJax can edit a text node and then detach it in the same observer batch.
@@ -60,6 +84,8 @@
    return changed;
   })){mutated=true;revoke();}}).observe(page,{subtree:true,childList:true,characterData:true,attributes:true});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)revoke();else resume();});window.addEventListener('pageshow',resume);window.addEventListener('focus',resume);window.addEventListener('offline',revoke);
-  async function resume(){revoke();try{await X.fresh(state,records[0]);if(mutated)return;valid=true;controls.forEach(c=>c.disabled=false);}catch{}}
+  window.addEventListener('popstate',openRequested);window.addEventListener('hashchange',openRequested);
+  async function resume(){revoke();const ticket=generation;try{await X.fresh(state,records[0]);if(mutated||ticket!==generation)return;valid=true;controls.forEach(c=>c.disabled=false);await openRequested();}catch{}}
+  await openRequested();
  }catch{revoke();}
 })();
