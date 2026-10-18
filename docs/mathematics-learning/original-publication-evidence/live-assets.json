@@ -1,0 +1,114 @@
+[
+  {
+    "file": "p01-foundations.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p01-foundations.png",
+    "sha256": "5d070f315a2458bc14c4ab183e3ecebd2956e2080a8381c8d3b456aa94368066",
+    "exact": true
+  },
+  {
+    "file": "p02-foundations.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p02-foundations.png",
+    "sha256": "d20a51b80776db57be388b607c5cd8976a9680e58bf7b9dd28e74ec2fcbcdbd7",
+    "exact": true
+  },
+  {
+    "file": "p03-foundations.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p03-foundations.png",
+    "sha256": "3be7e5b127c1bf16ab4a371d35e30f0bea54bfcbbbd7aeb21d2cecbf89194672",
+    "exact": true
+  },
+  {
+    "file": "p04-foundations.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p04-foundations.png",
+    "sha256": "ea6ada07f1bd4132cd262da0aa456565579c3bec8adb5ba3746aae17a6d72f84",
+    "exact": true
+  },
+  {
+    "file": "p04-size.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p04-size.png",
+    "sha256": "d643177ab6945365be8cdc19a505e44f1dbdb2836cd985b01cea5ac0748c8159",
+    "exact": true
+  },
+  {
+    "file": "p05-categories.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p05-categories.png",
+    "sha256": "e90fc048e2f7300d92fbc30612a10424b5a36d54fab1fe51f683a0febfbdda80",
+    "exact": true
+  },
+  {
+    "file": "p06-functors.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p06-functors.png",
+    "sha256": "6e99aa4bda03fccab5a6bc56a0c0cc686308f67c8449b1283b5a29d803a5151b",
+    "exact": true
+  },
+  {
+    "file": "p07-functors.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p07-functors.png",
+    "sha256": "ffb5b50a4fcdb456c3b15b9f688661823347635e8cc1b37b6e28075dd60737f5",
+    "exact": true
+  },
+  {
+    "file": "p07-natural_transformations.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p07-natural_transformations.png",
+    "sha256": "1074d9dc65f2824e67ea88b739a650e1f3c4097a424a5a0be1b7023ce0a0f00f",
+    "exact": true
+  },
+  {
+    "file": "p08-natural_transformations.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p08-natural_transformations.png",
+    "sha256": "249a84de6646e30c02c2e9b534e6eff47678f7f2846fdba4184f69d8824f51eb",
+    "exact": true
+  },
+  {
+    "file": "p09-natural_transformations.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p09-natural_transformations.png",
+    "sha256": "bbf88deb765e7f1a793735e2e79bf791321a6e37edb492385a061dc23793bec4",
+    "exact": true
+  },
+  {
+    "file": "p09-yoneda.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p09-yoneda.png",
+    "sha256": "966156547efa0cc3c8f2f99ef28760e60e2eeb888992c95c5762332e478aac64",
+    "exact": true
+  },
+  {
+    "file": "p10-yoneda.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p10-yoneda.png",
+    "sha256": "6a9846d9e07bbc29f2539142e7460cfec77d86f3e5581ba51fe505c2bc06ffa1",
+    "exact": true
+  },
+  {
+    "file": "p11-adjunctions.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p11-adjunctions.png",
+    "sha256": "60d4eb805f57f1e0e6cf6e19aecb5902a2d1192880619683ebda6b1690d55873",
+    "exact": true
+  },
+  {
+    "file": "p12-adjunctions.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p12-adjunctions.png",
+    "sha256": "bc5c7bf1e442dce1516a5d29804256986e9ccbbf453485971313c9997f11ab98",
+    "exact": true
+  },
+  {
+    "file": "p12-equivalences.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p12-equivalences.png",
+    "sha256": "b137462ba9e58188098767aa400bdf930abaa216a7f298b2439bf60e8e0ef6c1",
+    "exact": true
+  },
+  {
+    "file": "p13-equivalences.png",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:p13-equivalences.png",
+    "sha256": "1a3d4426b2c72a7b9f622801c38a71d3eb623186005ecb669b7969bfdbc94c9e",
+    "exact": true
+  },
+  {
+    "file": "moser-walde-13-pages.pdf",
+    "url": "https://iontlab.org/lib/exe/fetch.php?media=mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf",
+    "sha256": "5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc",
+    "exact": true
+  },
+  {
+    "binding_assets_exact": 3,
+    "source_and_start_exact": 2
+  }
+]

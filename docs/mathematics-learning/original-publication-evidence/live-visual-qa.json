@@ -1,0 +1,161 @@
+[
+  {
+    "chapter": "foundations",
+    "images": [
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 1, foundations",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=5e8e27&media=mathematics_learning:synthetic_category_theory:original:p01-foundations.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 2, foundations",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=d4c129&media=mathematics_learning:synthetic_category_theory:original:p02-foundations.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 3, foundations",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=ee6e02&media=mathematics_learning:synthetic_category_theory:original:p03-foundations.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 4, foundations",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=f38cdb&media=mathematics_learning:synthetic_category_theory:original:p04-foundations.png"
+      }
+    ]
+  },
+  {
+    "chapter": "size",
+    "images": [
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 4, size",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=cb0ceb&media=mathematics_learning:synthetic_category_theory:original:p04-size.png"
+      }
+    ]
+  },
+  {
+    "chapter": "categories",
+    "images": [
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 5, categories",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=2f32e6&media=mathematics_learning:synthetic_category_theory:original:p05-categories.png"
+      }
+    ]
+  },
+  {
+    "chapter": "functors",
+    "images": [
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 6, functors",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=353968&media=mathematics_learning:synthetic_category_theory:original:p06-functors.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 7, functors",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=1bc24c&media=mathematics_learning:synthetic_category_theory:original:p07-functors.png"
+      }
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "images": [
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 7, natural transformations",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=74b36a&media=mathematics_learning:synthetic_category_theory:original:p07-natural_transformations.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 8, natural transformations",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=fad225&media=mathematics_learning:synthetic_category_theory:original:p08-natural_transformations.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 9, natural transformations",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=26d2b1&media=mathematics_learning:synthetic_category_theory:original:p09-natural_transformations.png"
+      }
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "images": [
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 9, yoneda",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=53af0f&media=mathematics_learning:synthetic_category_theory:original:p09-yoneda.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 10, yoneda",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=d531ed&media=mathematics_learning:synthetic_category_theory:original:p10-yoneda.png"
+      }
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "images": [
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 11, adjunctions",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=ea123a&media=mathematics_learning:synthetic_category_theory:original:p11-adjunctions.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 12, adjunctions",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=20cdc4&media=mathematics_learning:synthetic_category_theory:original:p12-adjunctions.png"
+      }
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "images": [
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 12, equivalences",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=998306&media=mathematics_learning:synthetic_category_theory:original:p12-equivalences.png"
+      },
+      {
+        "alt": "Moser–Walde original manuscript, PDF page 13, equivalences",
+        "displayWidth": 1000,
+        "loaded": true,
+        "naturalWidth": 1000,
+        "src": "https://iontlab.org/lib/exe/fetch.php?w=1000&tok=361f4c&media=mathematics_learning:synthetic_category_theory:original:p13-equivalences.png"
+      }
+    ]
+  }
+]

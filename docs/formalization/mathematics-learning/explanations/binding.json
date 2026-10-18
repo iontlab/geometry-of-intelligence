@@ -4,98 +4,98 @@
   "boundary": "Exact whole TPL_CONTENT_DISPLAY fragment, with separate anonymous and editor digests; no normalization.",
   "pages": {
     "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences": {
-      "revision": 1792311118,
-      "raw_sha256": "a1f9af2f0ad460046bb5a0500b268d75bd48d36c608751d70fcd3ae6bd65ace7",
+      "revision": 1792316885,
+      "raw_sha256": "7f35b84c411576aa5cbff2d83a026ca8ec32d1442e14ff2ec9a7385cae284002",
       "fragments": {
         "anonymous": [
-          "731e1ffc6b68586738c3588bf19a9dd151bd196d7ce8f475475a380a8a3dbb17"
+          "8b6bccfea69996b09231040e698518e79a33d8108b6b2ee2c55b90eb08be3d2d"
         ],
         "editor": [
-          "b6f06a35f333dbfc2eb11778c2e54c5d70c7d6defadf576b519b64d467963646"
+          "2db4ed5a2ccab37a3fe846238d48827d0e0f7a82ef6e9d1e3c1fc9c94b5366a2"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations": {
-      "revision": 1792310982,
-      "raw_sha256": "b52817392fb4767c048633b724430622acf6cf6bdd954aea2807d1879e7606ea",
+      "revision": 1792316856,
+      "raw_sha256": "52bf41a26009bd963257010abb2d6cb535dad2efc03b6cd0efccd4ce19db1905",
       "fragments": {
         "anonymous": [
-          "eeb12d3d7f0dbf52a85ab46f9f5e099b1e6b9a36c2f732a74bcc47aa4cbea41a"
+          "181d130a68db41e59227ed32375bec2d32644962855f4caa7129e9aee5045bad"
         ],
         "editor": [
-          "d1f0e57970c89df4b84a2d98dbd190499f75bb61c9b475bcf489ab17eecce347"
+          "b81200743832219a79c11b5838d5664e7d20d2eb22e16b0acc36b7621c893a84"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:size": {
-      "revision": 1792310994,
-      "raw_sha256": "833fd8d42e8a044b396177c14845b8076a17263de0d7c808b89517a783507528",
+      "revision": 1792316873,
+      "raw_sha256": "03dfaaf51664ebf9cf427fd070cd86ab867985b2b735a210c3a0137c7cb86f47",
       "fragments": {
         "anonymous": [
-          "a5da86d31e707467263a57f9d64d1566a89f9553ca544359541cc096472184bf"
+          "265ac673bf34e0785cdb91a3bb7fed9b76f1aaf1547d2700312ad38e11e48267"
         ],
         "editor": [
-          "35783d60f229314a7c40cef824116e9dbdc6b10b4e944d5a89d36258d17eea0b"
+          "81e8acdf087c3b5f4bb06a069029e4929ff9c9fe5f9fda2ffc3dfdad11ca3afe"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:categories": {
-      "revision": 1792311007,
-      "raw_sha256": "36b2ad3074dac3844c9df12793cd77678eafe883617223ac8b84d3ae3e377e39",
+      "revision": 1792316874,
+      "raw_sha256": "285db7645bad3494cf46deab437e6a88c35cffda13d6daef8f309c9036275933",
       "fragments": {
         "anonymous": [
-          "b1764859886f34229ded856a39724c9f1a932fadfda10f907b0456e481cdc634"
+          "e2c9c34109819fb2680a9be6e0665910e31a1d9f9797364dc053eceea814738a"
         ],
         "editor": [
-          "b68a9cc76101e75cc46126e2cb82e4e1822c4bf09bba2ae057b6b74bcb82e61d"
+          "b1c940e683d38c343dd679189259e6104ed524c56c086266d2d524d120ac572d"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:functors": {
-      "revision": 1792311043,
-      "raw_sha256": "ba17657dd00b5c22b83ee7f81e7e674cfd775813f8295f07d3091c546b434754",
+      "revision": 1792316876,
+      "raw_sha256": "ae64fcef21d7a5971a75d81c4079961c3385a65ed22928d9bbd7ba231b06e025",
       "fragments": {
         "anonymous": [
-          "f09c27dcaf39dd720b2adac16215a4df3a9de32059c7e8fa12280b2ac932bf36"
+          "f1066a12dec7fc7a751bab8f1be7cfd94d8a866bdc04f352d45536b54227d2da"
         ],
         "editor": [
-          "da73c02018db6dead638a42ca144f1cfc2c57fb026db295e93e1d75f870e3e4c"
+          "d6cfeb2f856cf5671eabcfa087bae4f1a54c55a9417fe50776dee3eac8994205"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations": {
-      "revision": 1792311057,
-      "raw_sha256": "0c700d18418e1ee55ade4ceb518e2091c01fdf0c4f4ebed9cd15e1b54dbff669",
+      "revision": 1792316872,
+      "raw_sha256": "1414f66327dbd4e945df829b9d66859213786b98a418963cd5ea4b2c32644102",
       "fragments": {
         "anonymous": [
-          "fe15881674dd421bbbd64547eb2d69976edd40fa5fda9a9c3c2d60dc4eedcc7d"
+          "e6d459b356133582d0ff2edff6b35c9bf1f931f231379c75713d264bed72f09a"
         ],
         "editor": [
-          "1de137bdbd631d420052589ab31cba8184deff9a9a76c671ae604788e78eeab8"
+          "7df45d0e254b62ee49dfff2a6ae3eb5eff3acda25931d2b91d812121690d67be"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda": {
-      "revision": 1792311094,
-      "raw_sha256": "974b1691ac513ba6bfc84d7ab0adc66464c41d8ec8cd078fb4fcb5092ac3346c",
+      "revision": 1792316882,
+      "raw_sha256": "753a28080ec782f31572d1b95c06e54c0272d50e4a44fbc5c3497a500e9579f2",
       "fragments": {
         "anonymous": [
-          "882ccf7be3a0e9b9d644e5920a24fb3b8f3e796d3d553db82dbcba00d455f02d"
+          "d0eec7fb9563e4a454773e2838ec334a8a5bbc1a70377d8495d29ad50523c084"
         ],
         "editor": [
-          "535d46d78fb62ad1a649782d284fb10ba664e3e328df8d46f6bc068b0d020609"
+          "db285ab16d110b62811a2ca078d428d42faf80dc1e63e9357adbee98a97dd271"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions": {
-      "revision": 1792311111,
-      "raw_sha256": "632562d3b5fc00fdc0e5da28e2ea4114291e3c0f3070b2f04b8f6dd61bfb153d",
+      "revision": 1792316883,
+      "raw_sha256": "eb91a95ce8dd5252f33cda5c7ac44686a84ecd282fb145f09fb0facbe71412e1",
       "fragments": {
         "anonymous": [
-          "f4228429f54e368c3f25b198472a9e28b6732df6c1b0e80a859ddbc94833a9d0"
+          "5313cc740eb08c9247c02e625b8e32e26665873a2c571bd37e2a194b92b10277"
         ],
         "editor": [
-          "580a2e125528325aa33d8f86436b58437e815cb6a54cf0f7b06c0c6c9e4e565e"
+          "05f1cf00107ae7cc8649e63336f8a6c09582ae43b49373249574f3b6d182b377"
         ]
       }
     }

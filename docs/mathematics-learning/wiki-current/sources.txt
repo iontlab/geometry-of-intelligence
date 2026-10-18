@@ -1,0 +1,44 @@
+====== Synthetic Category Theory — sources and conventions ======
+
+**[Draft] · Bibliographic and foundational guide.**
+
+===== Primary source =====
+
+//Lecture Notes: Synthetic Category Theory//, **Lyne Moser and Tashi Walde**, 13 PDF pages, supplied course installment. The course is taught in parallel at Universität Hamburg and Universität Regensburg. Our page references mean PDF page numbers, which agree with the printed numbering in this file.
+
+  * [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser — official Universität Hamburg profile]].
+  * [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde — official Universität Regensburg directory]], with an author homepage linked there: [[https://sites.google.com/view/tashi-walde/|Tashi Walde]].
+
+**Authorized original manuscript:** {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Complete original 13-page PDF}}. The site owner explicitly confirmed publication clearance on 18 October 2026. The original is reproduced as primary reading in facsimile excerpts across the existing eight chapters; the complete PDF preserves selectable text and original hyperlinks. SHA-256: ''5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc''.
+
+The primary source controls coverage, numbering and the first installment's scope. It introduces the higher/synthetic motivation, then develops ordinary categories, functors, natural transformations, Yoneda, adjunctions and equivalences. Its later course announcements are not additional completed source material.
+
+===== Supplementary references =====
+
+**Denis-Charles Cisinski, Bastiaan Cnossen and Tashi Walde**, //Synthetic Category Theory, Volume I: Foundations//, book project in progress, Regensburg, **18 September 2026**, 583 PDF pages. This supplied version names three authors. Its preface acknowledges Kim Nguyen's contributions to earlier drafts; the primary notes' historical bibliography does not change the current volume's author list. SHA-256: ''c58d88b027579f04aa5fd76731e2782753794c83d060a7556acf014ab4bccf31''.
+
+We use its introduction and basic vocabulary to clarify what is synthetic, not to import its whole theory into this first lesson. Relevant comparisons include PDF pp. 13, 24–25 (printed pp. 4, 15–16) and the distinction between strong surjectivity and ordinary essential surjectivity at PDF p. 191 (printed p. 182). Its evolving foundational language is not itself a completed machine formalization.
+
+**Emily Riehl**, //Category Theory in Context//, supplied second edition, 299 PDF pages. The copyright page identifies it as adapted from the 2016 first edition. SHA-256: ''e4779f34ff0432508f1105912f39a84af3c64799b969507325c80e27c2d994dd''.
+
+We use the ordinary-category definitions and examples in Chapter 1, Yoneda in §2.2, and adjunctions in §§4.1–4.3. For orientation, printed p. 3 is PDF p. 23; printed p. 61 is PDF p. 81. Riehl's Theorem 1.5.9 explicitly states the choice assumption for constructing a quasi-inverse; Corollary 4.3.6 explains upgrading an equivalence to an adjoint equivalence. These are supplementary checks, not proofs attributed to the primary notes.
+
+===== Conventions that must stay distinct =====
+
+^ Topic ^ Convention used here ^ Comparison and boundary ^
+| Category | An ordinary category in the strict lessons, called a //strict category// by Moser–Walde. | Their unqualified later //category// refers to the synthetic infinity-setting. Riehl's basic //category// is ordinary. |
+| Composition | \(g\circ f\) means first \(f\), then \(g\). | Lean writes the same composite as ''f ≫ g''. Likewise ''F ⋙ G'' means first F, then G. |
+| Size | The primary's three nested set-universes; default object and hom sets are large. | Lean object and morphism universe levels are independent type-universe parameters. They do not constitute a proof that the primary's set-universes exist. |
+| Yoneda | \(C(-,c):C^{op}\to\mathbf{Set}\), the contravariant form. | Riehl's Theorem 2.2.4 first presents the covariant form \(C(c,-)\); dualize the domain category, not the target Set. |
+| Adjunction | Unit and counit with triangle identities, then the hom-bijection theorem. | Riehl begins with a specified hom-bijection natural in both variables; the two formulations are equivalent. |
+| Equivalence | Quasi-inverse and natural isomorphisms; triangles are not part of primary Definition 3.4. | Mathlib's bundled ''Equivalence'' includes a triangle condition. An ordinary equivalence can be adjusted to an adjoint equivalence; arbitrary chosen unit/counit isomorphisms need not already satisfy triangles. |
+| Essential surjectivity | Every target object is isomorphic to an image object. | In the supplementary synthetic draft, strong surjectivity supplies coherent section data on groupoid cores. Do not replace this by a bare ordinary existential assertion. |
+| Equality | Ordinary equality differs from isomorphism. | HoTT identity types and the Structure Identity Principle require their specified foundational setting; Lean's proof-irrelevant equality is not a HoTT identity space. |
+
+===== Rights, authorship and review =====
+
+All three source files were opened in the execution environment, their page counts verified, and their hashes matched to the supplied manifest. The primary Moser–Walde manuscript is now published with user-confirmed clearance. The two supplementary books remain private reference files. Copyright in the primary manuscript remains with its original rights holders; the wiki-wide license does not apply to it, and no right to relicense it is asserted.
+
+The lesson prose, stories, additional examples and supplemental arguments are iLab educational work prepared with AI assistance. Source alignment and mathematical review are recorded separately from Lean checking. No independent human review or author endorsement is claimed.
+
+Back: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Synthetic Category Theory]] · [[:mathematics_learning:higher_category_theory:start|Higher Category Theory]]

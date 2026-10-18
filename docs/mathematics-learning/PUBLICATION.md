@@ -1,4 +1,29 @@
-# Mathematics Learning publication — non-exercise release
+# Mathematics Learning publication — original manuscript and non-exercise explanations
+
+## Original manuscript publication — 18 October 2026
+
+The site owner explicitly confirmed publication clearance and authorized publication of the original Moser–Walde manuscript. All 13 pages are now reproduced as **primary reading in 17 lossless facsimile excerpts across the existing eight chapters**. This is an image facsimile edition, not a manually retyped HTML transcription. The unchanged original PDF is linked in every chapter and retains selectable text and original hyperlinks. The existing independent iLab material remains supplementary. Copyright remains with the original rights holders; the manuscript is explicitly excluded from the wiki-wide license.
+
+| Existing chapter | Original source included | Live status |
+| --- | --- | --- |
+| [Orientation / Foundations](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations) | pp. 1–3 and the opening of p. 4, through the introduction to First definitions | Published |
+| [Size and Universes](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size) | p. 4, §1.1, items 1.1–1.4 | Published |
+| [Categories and Isomorphisms](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories) | p. 5, §1.2, items 1.5–1.11 | Published |
+| [Functors and Representable Functors](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors) | p. 6 and opening of p. 7, §1.3, items 1.12–1.19 | Published |
+| [Natural Transformations and Functor Categories](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations) | remainder of p. 7, p. 8 and opening of p. 9, §1.4, items 1.20–1.28 | Published |
+| [Yoneda Lemma](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda) | remainder of p. 9 and p. 10, §2, items 2.1–2.7 | Published |
+| [Adjunctions](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions) | p. 11 and opening of p. 12, §3 introduction and §3.1, items 3.1–3.3 | Published |
+| [Equivalences of Categories](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences) | remainder of p. 12 and p. 13, §3.2, items 3.4–3.9, references and author affiliations | Published |
+
+The title, contents, original author AI-use disclosure, all wording, formulas, diagrams, original proofs and proof outlines, exercise instructions, bibliography and affiliations are preserved. Original source typos or incomplete arguments are not silently corrected. Independently generated assigned-exercise solutions remain excluded from the supplementary material, Lean exports and graphs. Republishing an author-provided proof outline does not supply the checks that the authors left as exercises.
+
+The [source manifest](original/manifest.json) records the unchanged PDF SHA-256 `5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc`, all 17 excerpt hashes and exact page/pixel intervals. At 144 dpi, reassembling each page from the chapter excerpts gives **zero differing pixels on all 13 pages**. No character crosses a chapter boundary. All 13 source pages were visually reviewed, all 17 excerpts loaded in the live chapters, and public media readback matched every prepared image and the unchanged PDF byte-for-byte.
+
+Release `learning-original-20261018-r1` refreshes the existing exact-source contract: 58 source records and 37 graph records, including 47 inline controls. Statement anchors, explanation content, proof exclusions, formal mappings, signatures, source commit, mathematical graph data and all 428 compiled edges are unchanged. All 47 controls were exercised through all five tabs; the **235 completed panel renders** were checked against exact statement/proof text, Plain/Story blocks, Lean statuses, chapter hashes/revisions and pinned links. All eight anonymous pages carry valid refreshed binding tokens. The live graph's five layers and Proposition 1.26's withholding message and pinned chapter link were verified. No PHP, plugin, Lean source, dependency or RQ-001 implementation changed. The previous release's 24 non-binding public assets still match their recorded hashes.
+
+[Live panel validation](original-publication-evidence/live-validation-summary.json) · [Binding validation](original-publication-evidence/binding-validation.json) · [Public media and binding readback](original-publication-evidence/live-assets.json) · [Anonymous bindings and protected asset regression](original-publication-evidence/regression.json) · [Live original-material images](original-publication-evidence/live-visual-qa.json).
+
+## Earlier non-exercise formalization release
 
 Published through the existing authenticated DokuWiki and Hetzner WebFTP workflow on 18 October 2026. The eight approved lessons are preserved. The public interface now follows the actual deployed RQ-001 five-layer implementation, including Plain and Story. Full formalization of all synthetic/higher claims in the primary is not asserted.
 
@@ -53,4 +78,4 @@ The RQ-001 compiler audit reproduced all **202 declarations byte-for-byte**, and
 
 Five source obligations require a specified higher model or different foundations: all-dimensional weak coherence (introduction p. 1); the full fundamental infinity-groupoid (pp. 1–2); types as infinity-groupoids (pp. 2–3); non-proof-irrelevant iterated identities (p. 2); and the Structure Identity Principle (p. 3). The checked path groupoid is an ordinary truncation. These boundaries, the type-universe formulation limits and universe-existence assumptions remain explicit; comprehensive verification of the full 13-page source is not claimed.
 
-An official public URL and full-text republication authorization for the exact primary PDF remain unverified. The published text is independent source-ordered exposition with attribution; no private PDF or full extract was uploaded. Supplementary books remain supplementary. Independent human mathematical review is not claimed.
+At the earlier non-exercise release, authorization was unresolved and the chapters contained independent exposition only. The original-manuscript publication above supersedes that presentation and rights status on the basis of the user's explicit clearance confirmation. Supplementary books remain private references. Independent human mathematical review is not claimed.

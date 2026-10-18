@@ -1,0 +1,19 @@
+{
+  "controls": 47,
+  "populated_exact_layer_panels": 235,
+  "chapters": {
+    "natural_transformations": 9,
+    "yoneda": 7,
+    "categories": 7,
+    "functors": 8,
+    "adjunctions": 3,
+    "equivalences": 7,
+    "foundations": 2,
+    "size": 4
+  },
+  "all_math_statement_and_proof_statuses_match": true,
+  "all_plain_and_story_blocks_match": true,
+  "all_lean_statuses_match": true,
+  "all_verification_revisions_and_hashes_match": true,
+  "all_pinned_links_match": true
+}

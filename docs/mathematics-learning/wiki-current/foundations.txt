@@ -1,8 +1,38 @@
 ====== Orientation: ordinary, higher and synthetic categories ======
 
+===== Original lecture notes — primary reading =====
+
+//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The facsimiles below reproduce the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
+
+{{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Open the complete original 13-page PDF (selectable text and original links)}}
+
+The original text is the primary reading. The iLab Story, Plain Language, Mathematics, Lean and Verification sections below are supplementary. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
+
+[[#story_fairy_tale|Story / Fairy Tale]] · [[#plain_language|Plain Language]] · [[#mathematics|Mathematics and statement controls]] · [[#lean|Lean]] · [[#verification|Verification]]
+
+**Original PDF page 1 — complete page.**
+
+{{:mathematics_learning:synthetic_category_theory:original:p01-foundations.png?1000|Moser–Walde original manuscript, PDF page 1, foundations}}
+
+**Original PDF page 2 — complete page.**
+
+{{:mathematics_learning:synthetic_category_theory:original:p02-foundations.png?1000|Moser–Walde original manuscript, PDF page 2, foundations}}
+
+**Original PDF page 3 — complete page.**
+
+{{:mathematics_learning:synthetic_category_theory:original:p03-foundations.png?1000|Moser–Walde original manuscript, PDF page 3, foundations}}
+
+**Original PDF page 4 — continues in the next chapter.**
+
+{{:mathematics_learning:synthetic_category_theory:original:p04-foundations.png?1000|Moser–Walde original manuscript, PDF page 4, foundations}}
+
+===== Supplementary iLab explanations =====
+
+The following independent educational content is supplementary to the authors’ original manuscript above. Its verification claims apply only to the specifically mapped Lean declarations.
+
 **[Draft] · First lesson · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, introduction pp. 1–3 and ordinary-category motivation p. 4.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Formalization status is item-specific; see Lean and Verification**.
 
-**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. An official public link to this exact primary PDF has not been verified.
+**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. The authorized original PDF is available in the primary reading above.
 
 ===== Story / Fairy Tale =====
 
