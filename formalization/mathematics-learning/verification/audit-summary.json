@@ -1,32 +1,28 @@
 {
-  "timestamp_utc": "2026-10-18T06:20:45.998133+00:00",
-  "source_ref": "5f45eee29afa3c7507eb9a56bb132ccb92260e68",
+  "source_ref": "2481cbf1b85e35c29f0f71c5aa4cf5edd353c724",
   "lean": "4.34.0",
   "mathlib_revision": "5ed2965256430c3649e86755f9576b54eca72435",
-  "clean_build_exit_code": 0,
   "audit_exit_code": 0,
-  "compiled_declarations": 73,
-  "authored_declarations": 20,
-  "direct_edges": 237,
-  "blueprint_declarations": 15,
-  "blueprint_edges": 7,
-  "authored_edges": 34,
-  "self_edges": 0,
-  "foundational_axioms": [
-    "Classical.choice",
-    "Quot.sound",
-    "propext"
-  ],
+  "compiled_declarations": 65,
+  "authored_declarations": 14,
+  "direct_edges": 232,
+  "blueprint_declarations": 9,
   "source_modules": [
     {
       "name": "ILab.MathematicsLearning.BasicCategoryTheory",
-      "sha256": "C50DE7CD6C392746E2861C232398CD9225E48A396AE124AFA9725352F3A5AED1",
-      "paperMapping": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      "sha256": "08CF73F17C8C8A3F06BAA4A96B5755BD370ED3D7DD6B8BA4E272A68CDA279C0A",
+      "paperMapping": "Primary 1.5 and 1.11: non-exercise identity laws and inverse uniqueness. Assigned exercise solutions are withheld."
     },
     {
       "name": "ILab.MathematicsLearning.WalkingIsomorphism",
       "sha256": "306750071687EEC2491400B86E52DD30C734A843C0DF3D88DE4434CFC36CE6CA",
       "paperMapping": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
     }
-  ]
+  ],
+  "foundational_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "build_status": "Rebuild succeeded after exercise exclusions. Prior clean-build log is historical; a new comprehensive clean build will accompany the expanded non-exercise release."
 }

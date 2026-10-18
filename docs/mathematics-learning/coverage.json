@@ -340,17 +340,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "lean_declarations": [
-        "ILab.MathematicsLearning.mapped_inverse_left",
-        "ILab.MathematicsLearning.mapped_inverse_right",
-        "ILab.MathematicsLearning.mappedIso",
-        "ILab.MathematicsLearning.mappedIso_eq_mapIso"
-      ]
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.14",
+        "page": 6,
+        "excluded_scope": "full proof",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "1.3 Functors",
@@ -370,12 +371,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.15",
+        "page": 6,
+        "excluded_scope": "category well-definedness",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "1.3 Functors",
@@ -420,12 +427,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.17",
+        "page": 7,
+        "excluded_scope": "opposite category well-definedness",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "1.3 Functors",
@@ -471,12 +484,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.19",
+        "page": 7,
+        "excluded_scope": "representable functor well-definedness",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -500,9 +519,7 @@
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": [
-        "ILab.MathematicsLearning.composite_naturality"
-      ]
+      "lean_declarations": []
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -523,12 +540,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.21",
+        "page": 8,
+        "excluded_scope": "postcomposition transformation well-definedness",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -572,15 +595,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": [
-        "ILab.MathematicsLearning.composite_naturality",
-        "ILab.MathematicsLearning.vertical_composite_component"
-      ]
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.23",
+        "page": 8,
+        "excluded_scope": "functor category well-definedness",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -600,12 +626,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.24",
+        "page": 8,
+        "excluded_scope": "full proof",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -652,12 +684,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.26",
+        "page": 8,
+        "excluded_scope": "full strict category isomorphism proof and naturality",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -702,12 +740,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "1.28",
+        "page": 9,
+        "excluded_scope": "pre/postcomposition functor well-definedness",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "2 Yoneda lemma",
@@ -727,12 +771,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "2.1",
+        "page": 9,
+        "excluded_scope": "candidate naturality; mutual inverse and naturality checks",
+        "occurrences": 2
+      }
     },
     {
       "source_section": "2 Yoneda lemma",
@@ -752,12 +802,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "2.2",
+        "page": 9,
+        "excluded_scope": "Yoneda functor well-definedness",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "2 Yoneda lemma",
@@ -802,12 +858,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "2.4",
+        "page": 10,
+        "excluded_scope": "full proof",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "2 Yoneda lemma",
@@ -827,12 +889,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "2.5",
+        "page": 10,
+        "excluded_scope": "both assertions: full proof",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "2 Yoneda lemma",
@@ -853,12 +921,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "2.6",
+        "page": 10,
+        "excluded_scope": "embedded invertibility iff opposite invertibility only",
+        "occurrences": 1
+      }
     },
     {
       "source_section": "2 Yoneda lemma",
@@ -953,12 +1027,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Assigned exercise solutions withheld; statements retained",
+      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
-      "lean_declarations": []
+      "lean_declarations": [],
+      "exercise_exclusion": {
+        "item": "3.3",
+        "page": 12,
+        "excluded_scope": "hom functions inverse/natural; constructed unit/counit natural and triangle laws",
+        "occurrences": 2
+      }
     },
     {
       "source_section": "3.2 Equivalences",

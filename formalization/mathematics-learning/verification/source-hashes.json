@@ -1,8 +1,8 @@
 [
   {
     "name": "ILab.MathematicsLearning.BasicCategoryTheory",
-    "sha256": "C50DE7CD6C392746E2861C232398CD9225E48A396AE124AFA9725352F3A5AED1",
-    "paperMapping": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+    "sha256": "08CF73F17C8C8A3F06BAA4A96B5755BD370ED3D7DD6B8BA4E272A68CDA279C0A",
+    "paperMapping": "Primary 1.5 and 1.11: non-exercise identity laws and inverse uniqueness. Assigned exercise solutions are withheld."
   },
   {
     "name": "ILab.MathematicsLearning.WalkingIsomorphism",

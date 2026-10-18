@@ -33,7 +33,6 @@ ILab.MathematicsLearning.Room.south.sizeOf_spec: none
 ILab.MathematicsLearning.collapseRoom: none
 ILab.MathematicsLearning.collapseRoom._proof_1: none
 ILab.MathematicsLearning.collapseRoom._proof_2: none
-ILab.MathematicsLearning.composite_naturality: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.identity_padded_composite: none
 ILab.MathematicsLearning.includeRoom: none
 ILab.MathematicsLearning.includeRoom._proof_1: none
@@ -46,12 +45,6 @@ ILab.MathematicsLearning.instDecidableEqRoom: none
 ILab.MathematicsLearning.instDecidableEqRoom._proof_1: none
 ILab.MathematicsLearning.instDecidableEqRoom._proof_2: none
 ILab.MathematicsLearning.inverse_unique: none
-ILab.MathematicsLearning.mappedIso: none
-ILab.MathematicsLearning.mappedIso._proof_1: none
-ILab.MathematicsLearning.mappedIso._proof_2: none
-ILab.MathematicsLearning.mappedIso_eq_mapIso: Classical.choice, Quot.sound, propext
-ILab.MathematicsLearning.mapped_inverse_left: none
-ILab.MathematicsLearning.mapped_inverse_right: none
 ILab.MathematicsLearning.oneRoomCategory: none
 ILab.MathematicsLearning.oneRoomCategory._proof_1: none
 ILab.MathematicsLearning.oneRoomCategory._proof_2: none
@@ -64,7 +57,6 @@ ILab.MathematicsLearning.roomIso: none
 ILab.MathematicsLearning.roomIso._proof_1: none
 ILab.MathematicsLearning.roomIso._proof_2: none
 ILab.MathematicsLearning.room_cardinality: Classical.choice, Quot.sound, propext
-ILab.MathematicsLearning.vertical_composite_component: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.walkingEquivalence: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.walkingEquivalence._proof_1: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.walkingEquivalence._proof_2: Classical.choice, Quot.sound, propext

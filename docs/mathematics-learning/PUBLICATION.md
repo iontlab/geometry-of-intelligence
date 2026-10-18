@@ -1,3 +1,5 @@
+> Publication correction, 18 October 2026: assigned exercise solutions are withdrawn. The current release retains 14 authored / 65 compiled declarations. Earlier counts below describe the historical initial release. See [exercise exclusions](exercise-exclusions.json) and the current verification record.
+
 # Mathematics Learning — publication report
 
 Published and live-checked on 18 October 2026. The sole subsection name is **Higher Category Theory**; **Synthetic Category Theory** is the first learning project inside it.

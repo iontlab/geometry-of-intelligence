@@ -29,31 +29,6 @@
       ],
       "limitation": "Arbitrary independent object and hom universes; the hypotheses are inverse equations, not set-universe axioms."
     },
-    "functor": {
-      "label": "Primary 1.14 · functors preserve isomorphisms",
-      "title": "Transport both inverse equations through a functor",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "statement": [
-        "If \\(F:C\\to D\\) is a functor and \\(e:X\\cong Y\\), its mapped forward and inverse arrows give \\(FX\\cong FY\\)."
-      ],
-      "proof": [
-        "Functoriality takes each composite to the composite of the images, and takes an identity to an identity. Apply this to both inverse equations. The bundled result agrees with Mathlib’s Functor.mapIso."
-      ],
-      "limitation": "The Lean result concerns ordinary functors. It does not claim every functor reflects isomorphisms."
-    },
-    "naturality": {
-      "label": "Primary 1.20 / 1.23 · vertical naturality",
-      "title": "Stacking compatible squares preserves naturality",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "statement": [
-        "For \\(\\alpha:F\\Rightarrow G\\), \\(\\beta:G\\Rightarrow H\\), and \\(f:X\\to Y\\),",
-        "\\[(\\beta_Y\\circ\\alpha_Y)\\circ F(f)=H(f)\\circ(\\beta_X\\circ\\alpha_X).\\]"
-      ],
-      "proof": [
-        "Use associativity to apply the naturality of α and then of β. Regrouping gives the required equation. The separate component theorem checks that Mathlib’s functor-category composition is componentwise."
-      ],
-      "limitation": "This checks vertical composition, not a formal proof of all whiskering or Yoneda statements."
-    },
     "walking": {
       "label": "Primary 3.4 / 3.8 / 3.9 · finite equivalence",
       "title": "Two isomorphic rooms are equivalent to one room",
@@ -90,18 +65,6 @@
       ],
       "limitation": "Cardinality of the object type is not an invariant of categorical equivalence."
     },
-    "components": {
-      "label": "Primary 1.23 · vertical components",
-      "title": "Composition is computed componentwise",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "statement": [
-        "For natural transformations \\(\\alpha:F\\Rightarrow G\\), \\(\\beta:G\\Rightarrow H\\), and any object \\(X\\), the component of the vertical composite is \\(\\beta_X\\circ\\alpha_X\\)."
-      ],
-      "proof": [
-        "In the existing Mathlib functor-category instance, the component of composition is defined as composition of the two components. Lean checks this equation by reflexivity."
-      ],
-      "limitation": "This equation describes the component. The separate composite_naturality theorem checks the naturality square."
-    },
     "nonsurjective": {
       "label": "Primary 3.6 / 3.9 · literal surjectivity fails",
       "title": "The inclusion misses the south object",
@@ -122,30 +85,6 @@
     },
     "ILab.MathematicsLearning.inverse_unique": {
       "result": "inverse",
-      "role": "principal"
-    },
-    "ILab.MathematicsLearning.mappedIso": {
-      "result": "functor",
-      "role": "principal"
-    },
-    "ILab.MathematicsLearning.mapped_inverse_left": {
-      "result": "functor",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.mapped_inverse_right": {
-      "result": "functor",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.mappedIso_eq_mapIso": {
-      "result": "functor",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.composite_naturality": {
-      "result": "naturality",
-      "role": "principal"
-    },
-    "ILab.MathematicsLearning.vertical_composite_component": {
-      "result": "components",
       "role": "principal"
     },
     "ILab.MathematicsLearning.walkingEquivalence": {
