@@ -1,0 +1,66 @@
+Theorem 2.1 (Yoneda lemma).
+
+Verified author-supplied construction steps; complete Yoneda theorem not verified; assigned checks remain open
+
+A function on already given natural transformations; the formula readback is definitional.
+
+Only the family of component functions is constructed, not a natural transformation.
+
+Open: no proof or completed construction exported.
+
+ILab.MathematicsLearning.SetCategory.yonedaEvaluation
+
+Verified author-supplied construction step only. The complete Yoneda theorem is not verified here. Candidate naturality, mutual inverseness, and naturality in c and F remain assigned exercises.
+
+Compiler-derived axiom dependencies: Classical.choice, Quot.sound, propext
+
+Direct project dependencies: ILab.MathematicsLearning.SetCategory, ILab.MathematicsLearning.SetCategory.IsLocallySmall, ILab.MathematicsLearning.SetCategory.Object, ILab.MathematicsLearning.SetCategory.Object.member, ILab.MathematicsLearning.SetCategory.identity, ILab.MathematicsLearning.SetCategory.instCategoryObject, ILab.MathematicsLearning.SetCategory.objects, ILab.MathematicsLearning.SetCategory.representableInSmallSets, ILab.MathematicsLearning.SetFunction.funsEquiv, ILab.MathematicsLearning.UniverseHierarchy, ILab.MathematicsLearning.UniverseHierarchy.large, ILab.MathematicsLearning.UniverseHierarchy.small, ILab.MathematicsLearning.smallSetsCategory
+
+Checked source · pinned commit ↗Open this declaration in the graph ↗
+ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent
+
+Verified author-supplied construction step only. The complete Yoneda theorem is not verified here. Candidate naturality, mutual inverseness, and naturality in c and F remain assigned exercises.
+
+Compiler-derived axiom dependencies: Classical.choice, Quot.sound, propext
+
+Direct project dependencies: ILab.MathematicsLearning.SetCategory, ILab.MathematicsLearning.SetCategory.Object, ILab.MathematicsLearning.SetCategory.Object.member, ILab.MathematicsLearning.SetCategory.instCategoryObject, ILab.MathematicsLearning.SetCategory.objects, ILab.MathematicsLearning.SetFunction.funsEquiv, ILab.MathematicsLearning.UniverseHierarchy, ILab.MathematicsLearning.UniverseHierarchy.large, ILab.MathematicsLearning.UniverseHierarchy.small, ILab.MathematicsLearning.smallSetsCategory
+
+Checked source · pinned commit ↗Open this declaration in the graph ↗
+ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula
+
+Verified author-supplied construction step only. The complete Yoneda theorem is not verified here. Candidate naturality, mutual inverseness, and naturality in c and F remain assigned exercises.
+
+Compiler-derived axiom dependencies: Classical.choice, Quot.sound, propext
+
+Direct project dependencies: ILab.MathematicsLearning.SetCategory, ILab.MathematicsLearning.SetCategory.IsLocallySmall, ILab.MathematicsLearning.SetCategory.Object, ILab.MathematicsLearning.SetCategory.Object.member, ILab.MathematicsLearning.SetCategory.identity, ILab.MathematicsLearning.SetCategory.instCategoryObject, ILab.MathematicsLearning.SetCategory.objects, ILab.MathematicsLearning.SetCategory.representableInSmallSets, ILab.MathematicsLearning.SetCategory.yonedaEvaluation, ILab.MathematicsLearning.SetFunction.funsEquiv, ILab.MathematicsLearning.UniverseHierarchy, ILab.MathematicsLearning.UniverseHierarchy.large, ILab.MathematicsLearning.UniverseHierarchy.small, ILab.MathematicsLearning.smallSetsCategory
+
+Checked source · pinned commit ↗Open this declaration in the graph ↗
+ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula
+
+Verified author-supplied construction step only. The complete Yoneda theorem is not verified here. Candidate naturality, mutual inverseness, and naturality in c and F remain assigned exercises.
+
+Compiler-derived axiom dependencies: Classical.choice, Quot.sound, propext
+
+Direct project dependencies: ILab.MathematicsLearning.SetCategory, ILab.MathematicsLearning.SetCategory.Object, ILab.MathematicsLearning.SetCategory.Object.member, ILab.MathematicsLearning.SetCategory.instCategoryObject, ILab.MathematicsLearning.SetCategory.objects, ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent, ILab.MathematicsLearning.SetFunction.funsEquiv, ILab.MathematicsLearning.UniverseHierarchy, ILab.MathematicsLearning.UniverseHierarchy.large, ILab.MathematicsLearning.UniverseHierarchy.small, ILab.MathematicsLearning.smallSetsCategory
+
+Checked source · pinned commit ↗Open this declaration in the graph ↗Source-to-Lean fidelity audit ↗
+
+Lean 4.34.0 · Mathlib v4.34.0 · revision 5ed2965256430c3649e86755f9576b54eca72435
+
+Primary PDF SHA-256: 5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc
+
+Bound chapter revision: 1792321143
+
+Bound chapter SHA-256: f19439164a36ca7575581f6d82a6d6144f1b22ca5bea9f9782d7f6c4e8e3f3ed
+
+2.1.evaluation · Verified author-supplied construction step · Evaluation at the identity: alpha maps to alpha_c(id_c).
+
+2.1.components · Verified author-supplied construction step · For u in F(c), the component at x sends f:x -> c to F(f)(u).
+
+2.1.candidate_naturality · assigned exercise solution withheld · Check that the candidate components form a well-defined natural transformation.
+
+2.1.mutual_inverse · assigned exercise solution withheld · Check that evaluation and the proposed inverse are mutually inverse.
+
+2.1.parameter_naturality · assigned exercise solution withheld · Check naturality in both c and F.
+
+Exact chapter statement · pinned edition ↗

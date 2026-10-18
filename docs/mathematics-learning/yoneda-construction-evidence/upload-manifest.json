@@ -1,0 +1,44 @@
+[
+  {
+    "path": "docs/formalization/mathematics-learning/compiled.json",
+    "url": "https://iontlab.org/formalization/mathematics-learning/compiled.json",
+    "sha256": "6eb6876e7de22eae8042207e9b2589bd4a7c01c1110c6ba97110a44f2d18c463",
+    "bytes": 850837
+  },
+  {
+    "path": "docs/formalization/mathematics-learning/data.json",
+    "url": "https://iontlab.org/formalization/mathematics-learning/data.json",
+    "sha256": "3eb79e1732e7cd69e8836209ac5b686004d813e7167e4c08769f287f408f7899",
+    "bytes": 2395502
+  },
+  {
+    "path": "docs/formalization/mathematics-learning/explanations/registry.v0.1.json",
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/registry.v0.1.json",
+    "sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+    "bytes": 472463
+  },
+  {
+    "path": "docs/formalization/mathematics-learning/explanations/release.json",
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/release.json",
+    "sha256": "81ee869ae381b9c342409890eb4dc7e333bbe2db95cdd83e81beeac5db40de5f",
+    "bytes": 255
+  },
+  {
+    "path": "docs/formalization/mathematics-learning/index.html",
+    "url": "https://iontlab.org/formalization/mathematics-learning/index.html",
+    "sha256": "d9d9697c13dec056e8453e4c854d2f46cf2d772c269d88d848999cb2812918a8",
+    "bytes": 6792
+  },
+  {
+    "path": "docs/formalization/mathematics-learning/mathematics.json",
+    "url": "https://iontlab.org/formalization/mathematics-learning/mathematics.json",
+    "sha256": "80de8d6bed2453aee6b880927a11336d92459c9324c5388884fc3c7a0bf30c65",
+    "bytes": 56770
+  },
+  {
+    "path": "docs/formalization/mathematics-learning/source-audit.json",
+    "url": "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+    "sha256": "6c84a0d2052053499b74100b6e7fee31d9706f263eaa20350d7f75c977f4a49c",
+    "bytes": 49974
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "release": "learning-native-20261018-yoneda-partial-r12",
+  "source_commit": "28baa9ea38c0a6c3c88aa10dc09614cc565ede6c",
+  "release_commit": "6eed7abaaa6cc5fbf4f7f0045551d5964a1763d9",
+  "merge_commit": "408c1c230c44096f8c7ceed7252d986a401c669f",
+  "pull_request": "https://github.com/iontlab/geometry-of-intelligence/pull/14",
+  "publication": "Authenticated Codex internal browser: Hetzner WebFTP ZIP extraction and DokuWiki metadata editor",
+  "verified": [
+    "evaluation alpha -> alpha_c(id_c)",
+    "candidate component f -> F(f)(u)",
+    "two definitional formula equations"
+  ],
+  "open": [
+    "candidate well-defined natural transformation / naturality",
+    "mutual inverseness",
+    "naturality in c and F"
+  ],
+  "complete_yoneda_theorem_verified": false,
+  "clean_build_jobs": 8961,
+  "compiler_declarations": 785,
+  "existing_declarations_unchanged": 781,
+  "authored_declarations": 396,
+  "modules": 33,
+  "direct_dependencies": 3884,
+  "wiki_layer_checks": 235,
+  "graph_layer_checks": 195,
+  "source_narrative_checks": 116,
+  "new_declaration_scope_checks": 4,
+  "inline_navigation_checks": 28,
+  "live_asset_hashes": 45,
+  "changed_assets": 7,
+  "unchanged_assets": 38,
+  "fresh_unchanged_chapter_bindings": 8,
+  "existing_96_narratives_preserved": true,
+  "rq001_unchanged": true
+}

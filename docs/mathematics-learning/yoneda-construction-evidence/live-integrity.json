@@ -1,0 +1,496 @@
+{
+  "files": [
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/index.html",
+      "sha256": "d9d9697c13dec056e8453e4c854d2f46cf2d772c269d88d848999cb2812918a8",
+      "bytes": 6813,
+      "verified": true,
+      "unchanged": false
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/style.css",
+      "sha256": "9b790769a5685826894abdf808c4eb7245ff8c3c331892b769e3e110ad35aa03",
+      "bytes": 7759,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/app.js",
+      "sha256": "11686f3e0900d82a92ef10f022686ccc2ffbcc52a6124af4c9d506f7398e3fce",
+      "bytes": 9859,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/blueprint-view.js",
+      "sha256": "44e1921cda03e6701b7c3a394f2af7c654361b07efe8d916802f43c95627c3eb",
+      "bytes": 2752,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/mathematics-view.js",
+      "sha256": "9a1925ba816ba793074f33d8e093d5cf53a4d5b3fd6a12893ebc398c60d7249b",
+      "bytes": 10571,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/data.json",
+      "sha256": "3eb79e1732e7cd69e8836209ac5b686004d813e7167e4c08769f287f408f7899",
+      "bytes": 2371992,
+      "verified": true,
+      "unchanged": false
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/compiled.json",
+      "sha256": "6eb6876e7de22eae8042207e9b2589bd4a7c01c1110c6ba97110a44f2d18c463",
+      "bytes": 842846,
+      "verified": true,
+      "unchanged": false
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/mathematics.json",
+      "sha256": "80de8d6bed2453aee6b880927a11336d92459c9324c5388884fc3c7a0bf30c65",
+      "bytes": 54499,
+      "verified": true,
+      "unchanged": false
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "sha256": "6c84a0d2052053499b74100b6e7fee31d9706f263eaa20350d7f75c977f4a49c",
+      "bytes": 49268,
+      "verified": true,
+      "unchanged": false
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/renderer.js",
+      "sha256": "2fc4039fa968257c8d843cc964059c0f4649d2a7d1dbdd6bbfb6c614a49ba79c",
+      "bytes": 7574,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/graph-adapter.js",
+      "sha256": "dc6d563837c3c3f9365d615773312425981580c25d481827fd3931b5b7d742aa",
+      "bytes": 3285,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/statement-adapter.js",
+      "sha256": "cc7b704972b2265490b13178d6d9e6d94ff96a76b8c5924599ef820b20546d31",
+      "bytes": 6340,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/wiki-adapter.js",
+      "sha256": "054589d8d927f565cba6531cad649a86c2e434db8ec4f9a5542462191389eb40",
+      "bytes": 6915,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/explanations.css",
+      "sha256": "27ffaf50ca88d24c0f70c07c8706193b8e10277e3ccde0a0a2dac9d0569c540f",
+      "bytes": 3160,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/registry.v0.1.json",
+      "sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+      "bytes": 323660,
+      "verified": true,
+      "unchanged": false
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/release.json",
+      "sha256": "81ee869ae381b9c342409890eb4dc7e333bbe2db95cdd83e81beeac5db40de5f",
+      "bytes": 249,
+      "verified": true,
+      "unchanged": false
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/binding.json",
+      "sha256": "ab9c29d302532cfee86030672ac5cbdf7c465d9169e73494da9ceef0341756dc",
+      "bytes": 3947,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/mathematics-learning/explanations/native-source.json",
+      "sha256": "68998832029dc49021a7e5c08a0c79306f6002ebf4c1729f437178b0f3deb8ae",
+      "bytes": 89131,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/index.html",
+      "sha256": "80c3ada5d3f6445086ca92db50202a218f41e9434efcdccf91ebcb27bfc077db",
+      "bytes": 5429,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/app.js",
+      "sha256": "9b48ffa5314b62203206cd53ba5d1101d2e4921b1ecf30d08c6aa1583f3eb18a",
+      "bytes": 6143,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/mathematics-view.js",
+      "sha256": "2abb425f083d3c43f9752eea65839b18c5fc21388be11697c6d9a27351b91f09",
+      "bytes": 9720,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/blueprint-view.js",
+      "sha256": "7361e84117c3e25c900f75aec9eb828467784623edf74a9fe7b76b09ee1352bc",
+      "bytes": 2219,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/style.css",
+      "sha256": "68d701715daa26680076f2232c5e84d9f5479d88847634bde47fb513cce84cfa",
+      "bytes": 7694,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/mathematics.json",
+      "sha256": "c568abc878bca21441ff6b91caf2aeb0f0728f2f070cae720f9684701a18e009",
+      "bytes": 13721,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/data.json",
+      "sha256": "4f1901870e2e68ab82931bf16655bc4bf90869bd965faf856eb25ff05218c385",
+      "bytes": 333413,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/renderer.js",
+      "sha256": "bf4a63f4cc608bcc1bcc77203ceb565f7b0f672067763de4d98e72b173079d7b",
+      "bytes": 7741,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/graph-adapter.js",
+      "sha256": "dfeb1bc9fc7003602961c2c902768d67a6e62d0f31fb263c222f48e76a0e64e0",
+      "bytes": 2526,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/wiki-adapter.js",
+      "sha256": "b0bf8c448a9c9b82c2ac73c15b1b5eb1b243304975d83dc140adf76aee15d263",
+      "bytes": 5339,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/explanations.css",
+      "sha256": "a70ad76aac0c1191da5fe40837ee205d684d9300a6a7a5fbe8e993958e4d8dd6",
+      "bytes": 2096,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/registry.v0.1.json",
+      "sha256": "2a7e63dda2b1c92c4c812881bb10521874228b7d62eaa2d318f23a6b39cd19dd",
+      "bytes": 123236,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/binding.json",
+      "sha256": "ee52e8f7ec7b798d6429e7732def87f38230b800623f478f14dd7dc33fa15fc9",
+      "bytes": 553,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/release.json",
+      "sha256": "0ab9da00e637dad22fbb9d44f9bf95944ac1912c33af89c80d029f9c4b6d8078",
+      "bytes": 225,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:start&do=export_raw",
+      "sha256": "4eff69df4ebc775f9ac5dcb693c8e040c9bbae4a44d981a318cc9c56133bfb7d",
+      "bytes": 3965,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:start&do=export_raw",
+      "sha256": "6e79660ec434bab0119b17b5c32c76cd8315f50ac40abed76570c04c73aa7542",
+      "bytes": 2661,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:start&do=export_raw",
+      "sha256": "8d22d0d19e6be2ddc2721c24d215fb21cd7a2f67e7bce2c165342706338e4b0c",
+      "bytes": 4452,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=research:rq001_phase_i&do=export_raw",
+      "sha256": "545f4d7f7ae469609bed1ad1d6cc280fb7b303d87a18e582cf165a2551da838e",
+      "bytes": 32025,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&do=export_raw",
+      "sha256": "02bf962ea2ff21ee20f974478a21553f2dfd86c97281d03f575d4c0c4558a2e4",
+      "bytes": 13002,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&do=export_raw",
+      "sha256": "5489d230f204f04596262ccc53ee8b85e63f9e0cb59a7681687c8fce3a139830",
+      "bytes": 3002,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&do=export_raw",
+      "sha256": "2a048f7e3043a447e743f00cd64c170a867689333ba12e78dea95996137b3de0",
+      "bytes": 4527,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&do=export_raw",
+      "sha256": "927321af0105a66cc29dee97b53a39ec81b73c2634caf117cd237c334647b9f7",
+      "bytes": 6783,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&do=export_raw",
+      "sha256": "41e08155cbb69dc0e476f14bdf7d08803df1ea15fdbdc8e62bc5817edcd78984",
+      "bytes": 6426,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&do=export_raw",
+      "sha256": "f19439164a36ca7575581f6d82a6d6144f1b22ca5bea9f9782d7f6c4e8e3f3ed",
+      "bytes": 6873,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&do=export_raw",
+      "sha256": "cfcb5112d5da54bf836e37b27ad83b8d5ed3f8c18ad5be2aa3c0f83065c54f6e",
+      "bytes": 6686,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&do=export_raw",
+      "sha256": "5c548afd6637e736b3235cae8f4d8aae4a465b4f8316f2e9729942d2b6f5aa5f",
+      "bytes": 5658,
+      "verified": true,
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/doku.php?id=start&do=export_raw",
+      "sha256": "a95e2290d528bc8521257e7782135e6b6ff75578df1b2d726b92ecb16d09b011",
+      "bytes": 4607,
+      "verified": true,
+      "unchanged": true
+    }
+  ],
+  "bindings": [
+    {
+      "page": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "binding": {
+        "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+        "revision": 1792334056,
+        "raw_sha256": "02bf962ea2ff21ee20f974478a21553f2dfd86c97281d03f575d4c0c4558a2e4",
+        "fragment_sha256": "ec8a1d31b0aa7c3694a6facdd87b973ec17eabc9d97d2290c7df35b1cbcf82dd",
+        "role": "anonymous",
+        "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+        "release": "learning-native-20261018-yoneda-partial-r12",
+        "render_contract": "learning-exact-fragment-1",
+        "keys": [
+          "explain.mathematics-learning.source.intro.paths",
+          "explain.mathematics-learning.source.intro.sip"
+        ]
+      },
+      "freshness_verified": true
+    },
+    {
+      "page": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "binding": {
+        "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+        "revision": 1792321131,
+        "raw_sha256": "5489d230f204f04596262ccc53ee8b85e63f9e0cb59a7681687c8fce3a139830",
+        "fragment_sha256": "f7c53e03602b3b324e98f2c695f95e26e07c03b7b78b20ba57e344d460d77f15",
+        "role": "anonymous",
+        "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+        "release": "learning-native-20261018-yoneda-partial-r12",
+        "render_contract": "learning-exact-fragment-1",
+        "keys": [
+          "explain.mathematics-learning.source.1.1",
+          "explain.mathematics-learning.source.1.2",
+          "explain.mathematics-learning.source.1.3",
+          "explain.mathematics-learning.source.1.4"
+        ]
+      },
+      "freshness_verified": true
+    },
+    {
+      "page": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "binding": {
+        "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+        "revision": 1792321132,
+        "raw_sha256": "2a048f7e3043a447e743f00cd64c170a867689333ba12e78dea95996137b3de0",
+        "fragment_sha256": "e53755ff5c52bafd98875440b0d4d0f5cac26b5ee07ac8fd90ddd14451fb392f",
+        "role": "anonymous",
+        "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+        "release": "learning-native-20261018-yoneda-partial-r12",
+        "render_contract": "learning-exact-fragment-1",
+        "keys": [
+          "explain.mathematics-learning.source.1.5",
+          "explain.mathematics-learning.source.1.6",
+          "explain.mathematics-learning.source.1.7",
+          "explain.mathematics-learning.source.1.8",
+          "explain.mathematics-learning.source.1.9",
+          "explain.mathematics-learning.source.1.10",
+          "explain.mathematics-learning.source.1.11"
+        ]
+      },
+      "freshness_verified": true
+    },
+    {
+      "page": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "binding": {
+        "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+        "revision": 1792321134,
+        "raw_sha256": "927321af0105a66cc29dee97b53a39ec81b73c2634caf117cd237c334647b9f7",
+        "fragment_sha256": "45b17bf9b01fa203e33a14eb71b2f6b7e47c1a5d6987dbea4a0a8afb74cf1e80",
+        "role": "anonymous",
+        "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+        "release": "learning-native-20261018-yoneda-partial-r12",
+        "render_contract": "learning-exact-fragment-1",
+        "keys": [
+          "explain.mathematics-learning.source.1.12",
+          "explain.mathematics-learning.source.1.13",
+          "explain.mathematics-learning.source.1.14",
+          "explain.mathematics-learning.source.1.15",
+          "explain.mathematics-learning.source.1.16",
+          "explain.mathematics-learning.source.1.17",
+          "explain.mathematics-learning.source.1.18",
+          "explain.mathematics-learning.source.1.19"
+        ]
+      },
+      "freshness_verified": true
+    },
+    {
+      "page": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "binding": {
+        "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+        "revision": 1792321142,
+        "raw_sha256": "41e08155cbb69dc0e476f14bdf7d08803df1ea15fdbdc8e62bc5817edcd78984",
+        "fragment_sha256": "f9ee66e8836b3e469c8c2c9227ff57e1f2380d7912314b6470cd30f6668d358b",
+        "role": "anonymous",
+        "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+        "release": "learning-native-20261018-yoneda-partial-r12",
+        "render_contract": "learning-exact-fragment-1",
+        "keys": [
+          "explain.mathematics-learning.source.1.20",
+          "explain.mathematics-learning.source.1.21",
+          "explain.mathematics-learning.source.1.22",
+          "explain.mathematics-learning.source.1.23",
+          "explain.mathematics-learning.source.1.24",
+          "explain.mathematics-learning.source.1.25",
+          "explain.mathematics-learning.source.1.26",
+          "explain.mathematics-learning.source.1.27",
+          "explain.mathematics-learning.source.1.28"
+        ]
+      },
+      "freshness_verified": true
+    },
+    {
+      "page": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "binding": {
+        "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+        "revision": 1792321143,
+        "raw_sha256": "f19439164a36ca7575581f6d82a6d6144f1b22ca5bea9f9782d7f6c4e8e3f3ed",
+        "fragment_sha256": "75c3190a443b64133e79c8ba3d9d7428c6759a5b2c5f66c7e0fdfb43fc3fb02a",
+        "role": "anonymous",
+        "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+        "release": "learning-native-20261018-yoneda-partial-r12",
+        "render_contract": "learning-exact-fragment-1",
+        "keys": [
+          "explain.mathematics-learning.source.2.1",
+          "explain.mathematics-learning.source.2.2",
+          "explain.mathematics-learning.source.2.3",
+          "explain.mathematics-learning.source.2.4",
+          "explain.mathematics-learning.source.2.5",
+          "explain.mathematics-learning.source.2.6",
+          "explain.mathematics-learning.source.2.7"
+        ]
+      },
+      "freshness_verified": true
+    },
+    {
+      "page": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "binding": {
+        "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+        "revision": 1792321145,
+        "raw_sha256": "cfcb5112d5da54bf836e37b27ad83b8d5ed3f8c18ad5be2aa3c0f83065c54f6e",
+        "fragment_sha256": "225e7d905ad19172a9885de88dc5cd46f3a02531df3ef72e26edd996913da3cb",
+        "role": "anonymous",
+        "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+        "release": "learning-native-20261018-yoneda-partial-r12",
+        "render_contract": "learning-exact-fragment-1",
+        "keys": [
+          "explain.mathematics-learning.source.3.1",
+          "explain.mathematics-learning.source.3.2",
+          "explain.mathematics-learning.source.3.3"
+        ]
+      },
+      "freshness_verified": true
+    },
+    {
+      "page": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "binding": {
+        "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+        "revision": 1792321128,
+        "raw_sha256": "5c548afd6637e736b3235cae8f4d8aae4a465b4f8316f2e9729942d2b6f5aa5f",
+        "fragment_sha256": "3eb0f341facc8d233947a8591c02e8ee203ee9fd57ea1226737149da843004c4",
+        "role": "anonymous",
+        "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+        "release": "learning-native-20261018-yoneda-partial-r12",
+        "render_contract": "learning-exact-fragment-1",
+        "keys": [
+          "explain.mathematics-learning.source.3.4",
+          "explain.mathematics-learning.source.3.5",
+          "explain.mathematics-learning.source.3.6",
+          "explain.mathematics-learning.source.3.7",
+          "explain.mathematics-learning.source.3.8",
+          "explain.mathematics-learning.source.3.9",
+          "explain.mathematics-learning.source.3.5.adjoint_upgrade"
+        ]
+      },
+      "freshness_verified": true
+    }
+  ]
+}
