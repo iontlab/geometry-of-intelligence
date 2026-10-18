@@ -4,14 +4,14 @@
   "boundary": "Exact whole TPL_CONTENT_DISPLAY fragment, with separate anonymous and editor digests; no normalization.",
   "pages": {
     "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations": {
-      "revision": 1792321129,
-      "raw_sha256": "a80b3365917584fb9230353a7539be3ba34d831a6f7f26676d8e02f487e26b36",
+      "revision": 1792334056,
+      "raw_sha256": "02bf962ea2ff21ee20f974478a21553f2dfd86c97281d03f575d4c0c4558a2e4",
       "fragments": {
         "anonymous": [
-          "c912ad7f7d294cf66aa8b08ec5523ceed5ab952b35c71677d7bcd706118d3596"
+          "ec8a1d31b0aa7c3694a6facdd87b973ec17eabc9d97d2290c7df35b1cbcf82dd"
         ],
         "editor": [
-          "30cefab7596b4187d267ae375fe46caecd3e0ca66efb2026b0c88807ce7c3f44"
+          "01cbcfd2b84696f5953a2da0a9727addecfca3417618526cf2b444a81dde85f7"
         ]
       }
     },
