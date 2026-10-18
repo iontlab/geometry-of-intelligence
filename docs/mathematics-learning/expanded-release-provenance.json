@@ -1,0 +1,109 @@
+{
+  "source_commit": "ace59a04225eb98a769edb1943378d33a91aa204",
+  "branch": "codex/mathematics-learning-parity",
+  "release": "learning-non-exercise-20261018-r2",
+  "registry_sha256": "d5e513178f4d68e6c62743d0134bf180eb301081223edfab3c1205fce37d9c71",
+  "data_sha256": "7abaaab0f95a0ca44cdeeff08a676f1330a854da7c677bbe501223dbdb46cc9b",
+  "mathematics_sha256": "2e274e20b6d9cbbb10f8a233414f0525f7537ef5099240cdcd6829f868e8b34a",
+  "public_files": [
+    {
+      "path": "public_html/formalization/mathematics-learning/app.js",
+      "sha256": "11686f3e0900d82a92ef10f022686ccc2ffbcc52a6124af4c9d506f7398e3fce",
+      "bytes": 9859
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/blueprint-view.js",
+      "sha256": "44e1921cda03e6701b7c3a394f2af7c654361b07efe8d916802f43c95627c3eb",
+      "bytes": 2752
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/compiled.json",
+      "sha256": "29b5e6f30792e410993473f934f5ce36075e763b6d2ec754b52aedc28688b81e",
+      "bytes": 172721
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/data.json",
+      "sha256": "7abaaab0f95a0ca44cdeeff08a676f1330a854da7c677bbe501223dbdb46cc9b",
+      "bytes": 466706
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/index.html",
+      "sha256": "150a3316f68ecb3a3a3826f95a97f35c4ba3419ee8ec052b55fbd1b4bd8b72df",
+      "bytes": 6555
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/mathematics-view.js",
+      "sha256": "05dc082a2a425298e2f46e820a1cdf53d47cada3f06275cbb0756a1f20140954",
+      "bytes": 10124
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/mathematics.json",
+      "sha256": "2e274e20b6d9cbbb10f8a233414f0525f7537ef5099240cdcd6829f868e8b34a",
+      "bytes": 47510
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/style.css",
+      "sha256": "9b790769a5685826894abdf808c4eb7245ff8c3c331892b769e3e110ad35aa03",
+      "bytes": 7759
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/explanations/binding.json",
+      "sha256": "9dce42135e583cc8fcdd42d4ca9e0b0a788e87dd5be7c9666a912cc4c8f9c056",
+      "bytes": 3947
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/explanations/explanations.css",
+      "sha256": "a70ad76aac0c1191da5fe40837ee205d684d9300a6a7a5fbe8e993958e4d8dd6",
+      "bytes": 2096
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/explanations/graph-adapter.js",
+      "sha256": "dc6d563837c3c3f9365d615773312425981580c25d481827fd3931b5b7d742aa",
+      "bytes": 3285
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/explanations/registry.v0.1.json",
+      "sha256": "d5e513178f4d68e6c62743d0134bf180eb301081223edfab3c1205fce37d9c71",
+      "bytes": 313380
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/explanations/release.json",
+      "sha256": "91c505b1e32e59799055a0c2bd9837fc8f53608d07d96bb9f97501e8da3df63b",
+      "bytes": 245
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/explanations/renderer.js",
+      "sha256": "2fc4039fa968257c8d843cc964059c0f4649d2a7d1dbdd6bbfb6c614a49ba79c",
+      "bytes": 7574
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/explanations/statement-adapter.js",
+      "sha256": "88d74b5a408d31faae69e9eea94815978d7b10ec19df71d700a8ec71614f7b98",
+      "bytes": 3314
+    },
+    {
+      "path": "public_html/formalization/mathematics-learning/explanations/wiki-adapter.js",
+      "sha256": "d98b6f63fd37b0d95db7effc7fd03f72cbd483458847d54091098fce86bcba13",
+      "bytes": 3846
+    },
+    {
+      "path": "public_html/lib/plugins/ilabexplain/action.php",
+      "sha256": "dfbe659b113f49001751dc340c935a8ee0f9169fbeff12715f4eac3272416b91",
+      "bytes": 15900
+    },
+    {
+      "path": "public_html/lib/plugins/ilabexplain/learning.php",
+      "sha256": "4612985e2e23acb56d0532eaf2a6b28247e90727034f3d63a366e99558133d91",
+      "bytes": 6330
+    }
+  ],
+  "final_refinement_checks": {
+    "item_1_8_type_universe_scope_visible_in_live_verification": true,
+    "walking_equivalence_plain_source_anchor": "proposition_39",
+    "all_47_inline_statement_bindings_passed": true,
+    "plain_story_passed_all_eight_chapters": true
+  },
+  "artifact_commit": "9ad9b996b547ce205f7e59f5ff55431ebe57c6c4",
+  "pull_request": "https://github.com/iontlab/geometry-of-intelligence/pull/7",
+  "all_deployed_files_match_artifact_commit": true
+}

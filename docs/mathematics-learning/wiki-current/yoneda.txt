@@ -1,6 +1,6 @@
 ====== Yoneda: an object through its maps ======
 
-**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §2, items 2.1–2.7, pp. 9–10.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Not formalized**.
+**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §2, items 2.1–2.7, pp. 9–10.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Formalization status is item-specific; see Lean and Verification**.
 
 **Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. An official public link to this exact primary PDF has not been verified.
 
@@ -22,7 +22,9 @@ For an independent example in sets, let the test object be the two labels \(\{\m
 
 ===== Mathematics =====
 
-Assume \(C\) is locally small, and write \(h_c=C(-,c)\). A presheaf here means a functor \(F:C^{op}\to\mathbf{Set}\). **Theorem 2.1** gives
+==== Theorem 2.1 ====
+
+Assume \(C\) is locally small, and write \(h_c=C(-,c)\). A presheaf here means a functor \(F:C^{op}\to\mathbf{Set}\). The theorem gives
 
 $$\operatorname{Nat}(h_c,F)\cong F(c).$$
 
@@ -30,19 +32,31 @@ The source specifies evaluation \(\alpha\mapsto\alpha_c(1_c)\) and the candidate
 
 The collection of natural transformations may initially be formed in a larger universe when \(C\) is not small. This bijection gives a small-set representative for this particular collection. It does not assert that every hom collection in the whole presheaf category of a large category is small.
 
-**Construction 2.2.** The Yoneda functor \(y_C:C\to\mathrm{Fun}(C^{op},\mathbf{Set})\) sends \(c\) to \(h_c\) and \(q:c\to d\) to the postcomposition transformation \(h_q\). **Its well-definedness is assigned as an exercise (p. 9); the solution is withheld.**
+==== Construction 2.2 ====
 
-**Definition 2.3.** A functor \(F:C\to D\) is fully faithful when \(C(c,d)\to D(Fc,Fd)\) is bijective for each pair \(c,d\). This does not require injectivity on objects.
+The Yoneda functor \(y_C:C\to\mathrm{Fun}(C^{op},\mathbf{Set})\) sends \(c\) to \(h_c\) and \(q:c\to d\) to the postcomposition transformation \(h_q\). **Its well-definedness is assigned as an exercise (p. 9); the solution is withheld.**
 
-**Corollary 2.4.** The Yoneda functor is fully faithful. **Assigned proof (p. 10): solution withheld.**
+==== Definition 2.3 ====
 
-**Proposition 2.5.** A fully faithful functor reflects isomorphisms: if \(F(f)\) is invertible, so is \(f\). Moreover, \(x\cong y\) if and only if \(Fx\cong Fy\). **Assigned proof (p. 10): solution withheld.**
+A functor \(F:C\to D\) is fully faithful when \(C(c,d)\to D(Fc,Fd)\) is bijective for each pair \(c,d\). This does not require injectivity on objects.
 
-**Corollary 2.6.** For \(f:c\to d\) in a locally small category, the following are equivalent: \(f\) is invertible; every postcomposition function \(C(x,c)\to C(x,d)\) is bijective; every precomposition function \(C(d,x)\to C(c,x)\) is bijective.
+==== Corollary 2.4 ====
+
+The Yoneda functor is fully faithful. **Assigned proof (p. 10): solution withheld.**
+
+==== Proposition 2.5 ====
+
+A fully faithful functor reflects isomorphisms: if \(F(f)\) is invertible, so is \(f\). Moreover, \(x\cong y\) if and only if \(Fx\cong Fy\). **Assigned proof (p. 10): solution withheld.**
+
+==== Corollary 2.6 ====
+
+For \(f:c\to d\) in a locally small category, the following are equivalent: \(f\) is invertible; every postcomposition function \(C(x,c)\to C(x,d)\) is bijective; every precomposition function \(C(d,x)\to C(c,x)\) is bijective.
 
 The authors derive the first comparison using full faithfulness of Yoneda and Proposition 1.24. They obtain the outgoing-map comparison by passing to the opposite category. **Inside that argument they assign the equivalence between invertibility of \(f\) and of \(f^{op}\) as an exercise (p. 10). That proof is withheld.** The other stated reasoning remains attributed to the authors; no replacement proof of the assigned step is supplied.
 
-**Corollary 2.7.** Full faithfulness of Yoneda and Proposition 2.5 give
+==== Corollary 2.7 ====
+
+Full faithfulness of Yoneda and Proposition 2.5 give
 
 $$c\cong d\quad\Longleftrightarrow\quad h_c\cong h_d\ \text{naturally}.$$
 
@@ -50,10 +64,10 @@ $$c\cong d\quad\Longleftrightarrow\quad h_c\cong h_d\ \text{naturally}.$$
 
 ===== Lean =====
 
-Mathlib provides ordinary Yoneda machinery, but a library's existence is not an audit of a lesson. This lesson is **Not formalized**. No checked synthetic Yoneda theorem is asserted, and no illustrative story edge is a proof dependency.
+The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Assigned solutions are withheld for 2.1, 2.2, 2.4, 2.5, 2.6. 
 
 ===== Verification =====
 
-The primary's contravariant convention is retained. Riehl §2.2 (Theorem 2.2.4, PDF pp. 81–83) begins with the covariant form and supplies a useful check on variance and naturality. The statement explanations and coloring example are independently written. Exercise solutions formerly included in this lesson have been withdrawn; embedded exercises are distinguished from the non-exercise statements and author-provided reasoning.
+The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions|Adjunctions]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

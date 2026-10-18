@@ -1,8 +1,11 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 const root = new URL('../', import.meta.url);
-const modules = ["BasicCategoryTheory", "WalkingIsomorphism"];
-const hashes = ["08CF73F17C8C8A3F06BAA4A96B5755BD370ED3D7DD6B8BA4E272A68CDA279C0A", "306750071687EEC2491400B86E52DD30C734A843C0DF3D88DE4434CFC36CE6CA"];
+const audit = JSON.parse(fs.readFileSync(new URL('formalization/mathematics-learning/verification/expanded-audit.json',root),'utf8'));
+const modules = audit.modules.map(m=>m.name.split('.').at(-1));
+const hashes = audit.modules.map(m=>m.sha256.toUpperCase());
+const compiledBytes = fs.readFileSync(new URL('docs/formalization/mathematics-learning/compiled.json',root));
+if(crypto.createHash('sha256').update(compiledBytes).digest('hex')!==audit.compiled_sha256)throw new Error('Compiled audit changed');
 const metadata = new Map();
 for (const [i,mod] of modules.entries()) {
   const file = `ILab/MathematicsLearning/${mod}.lean`;
@@ -10,8 +13,10 @@ for (const [i,mod] of modules.entries()) {
   const hash = crypto.createHash('sha256').update(bytes).digest('hex').toUpperCase();
   if(hash !== hashes[i]) throw new Error(`Verified source changed: ${file}`);
   const source = bytes.toString('utf8');
-  if(/\b(sorry|admit|axiom|native_decide|sorryAx)\b/.test(source)) throw new Error(`Prohibited token: ${file}`);
-  for(const match of source.matchAll(/^(?:@\[[^\n]*?\]\s*)?(structure|inductive|def|abbrev|instance|theorem|lemma)\s+(\w+)/gm)) {
+  // Compiler auditing is authoritative. This additional source check ignores prose comments.
+  const code=source.replace(/\/-[\s\S]*?-\//g,'').replace(/--[^\n]*/g,'');
+  if(/\b(sorry|admit|axiom|native_decide|sorryAx)\b/.test(code)) throw new Error(`Prohibited token: ${file}`);
+  for(const match of source.matchAll(/^(?:@\[[^\n]*?\]\s*)?(?:noncomputable\s+)?(structure|inductive|def|abbrev|instance|theorem|lemma)\s+(\w+)/gm)) {
     const name = `ILab.MathematicsLearning.${match[2]}`;
     metadata.set(name,{source:file,line:source.slice(0,match.index).split('\n').length,sourceKind:match[1]});
   }
@@ -23,7 +28,14 @@ const sourceRef = process.env.SOURCE_REF;
 if (!/^[0-9a-f]{40}$/.test(sourceRef || '')) throw new Error('SOURCE_REF must be the exact verified source commit');
 const mappings = {
   BasicCategoryTheory:'Primary 1.5 and 1.11: non-exercise identity laws and inverse uniqueness. Assigned exercise solutions are withheld.',
-  WalkingIsomorphism:'Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion.'
+  WalkingIsomorphism:'Primary 1.25, 3.4, 3.8 and 3.9: one-object and two-object singleton-hom categories, an explicit adjoint equivalence and two-object cardinality.',
+  SetUniverses:'Primary 1.1–1.4: ZFSet universe closure assumptions and consequences. Introduction: equality substitution and transport. Universe existence is assumed, not proved.',
+  CategoryConstructions:'Primary 1.5–1.13, 1.18, 1.20, 1.22, 3.2 and 3.5: ordinary definitions, examples and supplied laws. Assigned construction checks are withheld.',
+  CategorySize:'Primary 1.4, 1.8 and 1.16: type-universe size and local smallness. These are explicitly scoped type-theoretic formulations, not a literal ZFSet encoding of all categories.',
+  YonedaAdjunction:'Primary 2.3, the non-assigned part of 2.6, 2.7, 3.1 and 3.4–3.7: definitions, non-exercise consequences and equivalence criterion. Assigned Yoneda/adjunction correspondence proofs are withheld.',
+  TerminalCategory:'Primary 1.25, 1.27, 3.8 and 3.9: terminal category and finite example. The strict evaluation isomorphism assigned in 1.26 is withheld.',
+  PathAndIdentity:'Introduction: endpoint-fixed path homotopies, their ordinary fundamental groupoid, and group invariants. This does not construct the full infinity-groupoid or prove univalence.',
+  SourceLaws:'Primary 1.9, 1.18, 3.1 and 3.6: definitions and their supplied laws; no assigned exercise construction checks.'
 };
 for(const n of raw) {
   if(!n.id.startsWith('ILab.MathematicsLearning.')) throw new Error('Out-of-scope node');
@@ -46,7 +58,7 @@ for(const id of metadata.keys()) if(!ids.has(id)) throw new Error(`Authored decl
 const data = {
   schemaVersion:1,
   title:'Mathematics Learning — Ordinary Category Theory',
-  scope:'Selected non-exercise ordinary-category results and a finite example are Lean-verified. Assigned exercise solutions are withheld. The full lecture notes, Synthetic Category Theory, infinity-category theory, HoTT and universe existence are not formalized here.',
+  scope:'Non-exercise ordinary-category material and explicit foundational formulations are checked. Assigned exercise solutions are withheld. The complete source inventory records formulation limits; full higher/synthetic foundations and universe existence are not proved.',
   disclaimer:'The graph displays formal declaration dependencies and verification metadata. Graph position or centrality does not indicate mathematical importance, novelty, or intelligence relevance.',
   lean:'4.34.0',leanCommit:'293d5d0c0c3f3dded4688b3ccd6a33939ac5102b',mathlib:'v4.34.0',mathlibRevision:'5ed2965256430c3649e86755f9576b54eca72435',
   extraction:'Direct constant references in compiled declaration types and values; no transitive reduction, conceptual edges, or bridging across hidden nodes. Generated declarations are hidden by default. Mathlib/external references are excluded.',

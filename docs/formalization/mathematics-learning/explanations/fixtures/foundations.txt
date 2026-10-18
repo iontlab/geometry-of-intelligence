@@ -1,0 +1,65 @@
+====== Orientation: ordinary, higher and synthetic categories ======
+
+**[Draft] · First lesson · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, introduction pp. 1–3 and ordinary-category motivation p. 4.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Formalization status is item-specific; see Lean and Verification**.
+
+**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. An official public link to this exact primary PDF has not been verified.
+
+===== Story / Fairy Tale =====
+
+Mira is the keeper of a kingdom's route book. Each town has an entry, each permitted journey has a name, and the book says how two journeys join. For ordinary bookkeeping she treats a three-stage journey as the same composite however she groups its stages.
+
+The royal mapmaker notices that actual paths contain more information. Two walks may bend around a pond differently. A ribbon stretched between them can describe a deformation from one walk to the other. Two ribbons may themselves be deformed, and the mapmaker can keep a record of those comparisons too.
+
+Mira first learns the simpler route-book rules. Later she will learn a language in which comparisons and comparisons between comparisons belong to the description from the beginning. Learning that later language does not mean pretending that every one-way road has a reverse.
+
+**Story key:** towns stand for objects; journeys for arrows; ribbons suggest higher identifications. **Where the analogy stops:** literal timed paths do not obey strict associativity or strict unit laws under the usual parametrized concatenation. The topological example uses homotopies and coherence; an ordinary category instead has exact equations. Physical transport does not supply a general categorical model automatically.
+
+===== Plain Language =====
+
+A category begins with things and composable maps between them. A higher category also records comparisons between maps, comparisons between those comparisons, and so on. In this course, an infinity-category means the \((\infty,1)\) kind: dimensions two and above are invertible in an appropriate weak sense; one-dimensional maps need not be.
+
+For a space, points can be objects and paths can be arrows. A path can be reversed, but travelling out and back usually gives a path that is deformable to standing still, rather than literally the constant path. This example has invertibility even at dimension one and motivates an infinity-groupoid.
+
+There are different ways to make this precise. Quasicategories and complete Segal spaces are concrete models. An axiomatic or synthetic treatment starts from specified operations and principles and asks what follows. Neither approach makes the necessary coherence conditions disappear.
+
+The first installment deliberately starts with ordinary categories. You need not learn fibrations or Kan extensions to begin it. The later course overview mentions those topics, together with localisations, limits and colimits, as future work.
+
+===== Mathematics =====
+
+==== Informal higher-dimensional picture ====
+
+ There are objects \(x,y\), arrows \(f:x\to y\), 2-morphisms between parallel arrows, and higher morphisms between parallel lower ones. Composition is unital and associative up to specified invertible higher comparisons, with further coherence. This paragraph is motivation, not a complete definition of an infinity-category.
+
+==== Topological motivation ====
+
+ For a space \(X\), use points, paths, endpoint-fixing homotopies, and homotopies fixing the preceding boundaries at higher levels. Reversal supplies inverses up to homotopy. Reparametrizing concatenated paths explains why ordinary path concatenation is associative only up to homotopy. These facts motivate the fundamental infinity-groupoid; no full model construction is being proved here.
+
+==== Identity types and transport ====
+
+ In homotopy type theory, if \(x,y:X\), the expression \(x=_X y\) is a type. Terms \(p,q:x=_X y\) can themselves have an identity type \(p=q\). A dependent family \(P:X\to\mathcal U\) transports data from \(P(x)\) to \(P(y)\) along an identification. In ordinary set-based mathematics equality does not retain this hierarchy of identification data.
+
+==== Structure Identity Principle ====
+
+ In the appropriate univalent setting, identifications of suitably defined structures correspond to their structure-preserving equivalences. For groups, this relates the identity type of groups to group isomorphisms. This principle is not a theorem of arbitrary type theory and is not obtained merely by changing notation from sets to types.
+
+The primary compares the isomorphic groups \((\{0,1\},+\bmod 2)\) and \((\{1,-1\},\cdot)\). Having an element of order two is invariant under group isomorphism. Having the particular number \(0\) as identity depends on the chosen presentation: it holds for the first group but not the second.
+
+For an independent example, a two-element group may be presented as the permutations of two tokens or as integers modulo two. The assertion that every element squares to the identity is structural; the assertion that an element's underlying representation is a particular ordered pair is presentation-dependent. The structure must be distinguished from the chosen encoding.
+
+==== Synthetic foundations ====
+
+ The primary notes propose extending HoTT to speak about noninvertible morphisms. The supplementary September draft instead presents primitives and coherence in ordinary mathematical language: categories, functors, animae and natural isomorphisms. It explicitly describes its foundational language as evolving (PDF pp. 24–25). The primary's planned type-theoretic foundation and the draft's presentation must not be identified without further work.
+
+==== Boundary of this lesson ====
+
+ Objects, paths, identity types and the synthetic motivation are explained here. The actual axioms and later constructions are announced by the source, not developed in these 13 pages. The next lessons use ordinary categories, exact composition equations, and the primary's set-universe assumptions.
+
+===== Lean =====
+
+The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Lean type universes are distinguished from the source’s explicit set-universe assumptions. Higher identity types, univalence and full synthetic foundations are not asserted as Lean theorems. 
+
+===== Verification =====
+
+The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+
+Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:size|Size and universes]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

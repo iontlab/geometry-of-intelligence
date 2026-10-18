@@ -1,14 +1,15 @@
-# Mathematics Learning graph provenance
+# Learning graph and explanation provenance
 
-This is the existing RQ-001 static graph implementation, with only dataset location, namespace prefix, group names, explanatory labels and lesson links adapted. `style.css` retains the original style rules; new artifact text uses LF line endings. The rendering, layout, filtering, search, zoom, inspector tabs, keyboard behavior and compiler-edge selection are unchanged. `mathematics-view.js` permits each curated result to link to its canonical DokuWiki lesson.
+The existing RQ-001 viewer and its actual deployed five-layer renderer were inspected before adaptation; the live assets differ from the older repository copy. The learning viewer reuses that behavior, with learning-only source bindings and a scoped extension of the existing `ilabexplain` plugin approved by the user. RQ-001 handlers and live assets are preserved.
 
-The two original graph modes remain distinct:
+- Mathematical Blueprint: 109 mapped declarations and 70 direct visible compiler edges.
+- Full Lean Graph: 116 authored declarations and 80 visible edges initially; 225 compiled declarations and 428 edges with generated declarations enabled.
+- Five-layer graph explanations: 37 principal results. Supporting declarations link explicitly to their main result. Technical helpers receive only meaningful layers.
+- Source inspector: all 58 source items, including assigned statements with their solutions withheld. These records are not invented graph nodes.
+- Wiki: 47 inline controls across the existing eight lessons, bound to actual headings and exact source revisions.
 
-- Mathematical Blueprint: 9 curated declaration mappings and 6 direct visible compiler edges. `mathematics.json` is independently authored educational prose with AI assistance; it is not compiler output.
-- Full Lean Graph: 14 authored declarations and 33 visible edges initially. The generated-declaration toggle exposes all 65 compiled declarations and 232 raw local edges. The existing renderer does not draw self edges (0 in the raw data).
+Every graph edge is a direct constant reference extracted from a compiled Lean type or value. Hidden nodes are not bridged by fictional edges. External references are retained in the downloadable data and audited transitively for foundational axioms, but are not drawn as project-local nodes.
 
-Every edge is a direct constant reference from a compiled type or value. Hiding nodes does not invent replacement paths. External Mathlib references are excluded from the visualization; their transitive axiom dependencies are audited. A sparse graph is not missing a conceptual arrow: mathematical relationships are not automatically direct Lean dependencies.
+`mathematics.json` and the explanation registry are independently authored teaching metadata. The graph adapter matches exact signatures, source hashes, commit IDs and dataset hashes. The wiki adapter requires server attestation of the exact page fragment and the current raw-source digest. Publication authorization does not claim independent human editorial review. Stale or inconsistent bindings fail closed.
 
-The sibling `tools/ExtractLearningGraph.lean` retains every original compiler check. `tools/build-learning-graph.mjs` retains source-hash and metadata checks and adds exact-commit and curated-ID validation. Original RQ-001 tools and data are untouched. New declarations live only in `ILab.MathematicsLearning` in the same Lake project.
-
-Serve this directory via HTTP for local inspection. Production deployment is the existing authenticated Hetzner WebFTP procedure into `public_html/formalization/mathematics-learning/`. Committing `docs/` is not a deployment. No PDFs, private source extracts, hosting credentials, wiki configuration, RQ-001 files or new server code are included.
+Local preview uses only public-source fixtures. Production freshness uses the approved learning status handler. Deployment uses WebFTP; `docs/` is not an automatic publication service. No private PDFs, full extracted source texts, credentials or unrelated hosting configuration are included.

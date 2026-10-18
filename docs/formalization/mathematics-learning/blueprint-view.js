@@ -4,8 +4,15 @@ const modeElement = id => document.getElementById(id);
 let graphMode = new URLSearchParams(location.search).get('view') === 'lean' ? 'lean' : 'blueprint';
 let blueprintIds = new Set();
 const blueprintGroups = {
-  'ILab.MathematicsLearning.BasicCategoryTheory': 'Ordinary category laws and naturality',
-  'ILab.MathematicsLearning.WalkingIsomorphism': 'A finite walking isomorphism'
+  'ILab.MathematicsLearning.BasicCategoryTheory': 'Identity laws and inverse uniqueness',
+  'ILab.MathematicsLearning.WalkingIsomorphism': 'A finite walking isomorphism',
+  'ILab.MathematicsLearning.SetUniverses': 'Set universes and equality transport',
+  'ILab.MathematicsLearning.CategoryConstructions': 'Categories, functors and adjunction examples',
+  'ILab.MathematicsLearning.CategorySize': 'Size and local smallness',
+  'ILab.MathematicsLearning.YonedaAdjunction': 'Non-exercise Yoneda consequences and equivalences',
+  'ILab.MathematicsLearning.TerminalCategory': 'Terminal category and finite object counts',
+  'ILab.MathematicsLearning.PathAndIdentity': 'Paths up to homotopy and group invariance',
+  'ILab.MathematicsLearning.SourceLaws': 'Definitions and their supplied laws'
 };
 function updateGraphModeControls() {
   modeElement('mode-blueprint').setAttribute('aria-pressed', String(graphMode === 'blueprint'));

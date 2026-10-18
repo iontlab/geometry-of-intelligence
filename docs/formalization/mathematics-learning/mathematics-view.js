@@ -1,8 +1,8 @@
 'use strict';
 // Authored educational presentations are separate from compiled graph/audit metadata.
-const authoredMathematics = fetch('mathematics.json?release=20261018-exercise-exclusion', {cache:'no-store'}).then(r => {
+const authoredMathematics = fetch('mathematics.json',{cache:'no-store'}).then(r => {
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
-  return r.json();
+  return r.arrayBuffer().then(buffer=>{window.ILabExplainGraph?.loaded('mathematics',buffer);return JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(buffer))});
 }).catch(() => null);
 let mathRenderer;
 function loadMathRenderer() {
@@ -30,8 +30,9 @@ function addParagraphs(parent, paragraphs) {
     parent.append(p);
   }
 }
-async function showDeclaration(n) {
+async function showDeclaration(n,requestedExplanation=null) {
   const request = ++detailRequest, panel = $('detail');
+  panel.dataset.inspector='declaration';
   if (window.MathJax?.typesetClear) window.MathJax.typesetClear([panel]);
   panel.replaceChildren(html('div', 'DECLARATION INSPECTOR'), html('h2', n.id));
   panel.firstChild.className = 'detail-label';
@@ -39,29 +40,35 @@ async function showDeclaration(n) {
   const metadata = await authoredMathematics;
   if (request !== detailRequest) return;
   const mapping = metadata?.declarations[n.id], result = mapping && metadata.results[mapping.result];
-  const names = result ? ['Mathematics', 'Lean', 'Verification'] : ['Lean', 'Verification'];
+  let explanation=null;
+  // Optional services never delay the original technical views.
+  const names = result ? ['Mathematics','Lean','Verification'] : ['Lean','Verification'];
   const tabs = html('div'); tabs.className = 'detail-tabs'; tabs.setAttribute('role', 'tablist');
   tabs.setAttribute('aria-label', 'Declaration views'); panel.append(tabs);
-  const panes = names.map(name => {
+  function makePane(name) {
     const pane = html('section'); pane.id = 'declaration-'+name.toLowerCase();
     pane.setAttribute('role', 'tabpanel'); pane.setAttribute('aria-labelledby', pane.id+'-tab');
-    pane.tabIndex = 0; panel.append(pane); return pane;
-  });
-  const buttons = names.map((name, i) => {
-    const b = html('button', name); b.type = 'button'; b.id = panes[i].id+'-tab';
-    b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', panes[i].id);
-    b.onclick = () => activate(i);
+    pane.tabIndex = 0; if(['Plain','Story'].includes(name))pane.classList.add('ilab-explain'); pane.hidden=true; panel.append(pane); return pane;
+  }
+  const panes=names.map(makePane);
+  function makeButton(name,pane) {
+    const b = html('button', name); b.type = 'button'; b.id = pane.id+'-tab';
+    if(['Plain','Story'].includes(name))b.classList.add('ilab-explain'); b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', pane.id);
+    b.onclick = () => { activate(names.indexOf(name)); const u=new URL(location.href);u.searchParams.delete('statement');u.searchParams.set('declaration',n.id);u.searchParams.set('layer',name.toLowerCase());history.replaceState(null,'',u); };
     b.onkeydown = e => {
-      let next;
-      if (e.key === 'ArrowRight') next = (i+1)%names.length;
-      if (e.key === 'ArrowLeft') next = (i+names.length-1)%names.length;
-      if (e.key === 'Home') next = 0;
-      if (e.key === 'End') next = names.length-1;
+      let next; const live=buttons.filter(b=>b.isConnected),position=live.indexOf(b),at=n=>buttons.indexOf(live[n]);
+      if (e.key === 'ArrowRight') next = at((position+1)%live.length);
+      if (e.key === 'ArrowLeft') next = at((position+live.length-1)%live.length);
+      if (e.key === 'Home') next = at(0);
+      if (e.key === 'End') next = at(live.length-1);
       if (next !== undefined) { e.preventDefault(); activate(next); buttons[next].focus(); }
     };
     tabs.append(b); return b;
-  });
+  }
+  const buttons=names.map((name,i)=>makeButton(name,panes[i]));
   function activate(index) {
+    if(['Plain','Story'].includes(names[index])&&!window.ILabExplainGraph?.isCurrent(explanation)){index=0;}
+    if(['Plain','Story'].includes(names[index]))window.ILabExplainGraph.render(panes[index],explanation,names[index]);
     buttons.forEach((b, i) => { b.setAttribute('aria-selected', String(i===index)); b.tabIndex=i===index?0:-1; panes[i].hidden=i!==index; });
   }
   const lean = panes[names.indexOf('Lean')];
@@ -77,7 +84,26 @@ async function showDeclaration(n) {
     li.append(b); ul.append(li);
   }
   audit.append(n.dependencies.length ? ul : html('p','None.'), html('h3','Axiom dependencies'), html('p', n.axioms.length?n.axioms.join(', '):'None.'), html('p','Foundational Lean axioms are not project-added assumptions.'), html('h3','Lesson mapping — authored metadata'), html('p',n.paperMapping.text), html('p',n.paperMapping.provenance), sourceLink(n));
-  activate(0);
+  activate(names.includes(requestedExplanation)?names.indexOf(requestedExplanation):0);
+  // Attach only to this still-current selection, preserving its active technical tab and focus.
+  window.ILabExplainGraph?.selection(n,data,metadata,requestedExplanation).then(context=>{
+    if(request!==detailRequest||!panel.isConnected||!window.ILabExplainGraph.isCurrent(context))return;
+    explanation=context;
+    if(context.kind==='supporting') {
+      const notice=html('div');notice.className='ilab-explain ilab-explain-context';
+      notice.append(html('p','Plain and Story explain the main result: '+context.r.source.heading_text+'.'));
+      const action=html('button','Explain main result →');action.type='button';action.onclick=()=>window.ILabExplainGraph.navigate(context);notice.append(action);tabs.after(notice);return;
+    }
+    for(const [offset,name] of ['Plain','Story'].entries()){
+      const i=1+offset;names.splice(i,0,name);const pane=makePane(name);panes.splice(i,0,pane);
+      const button=makeButton(name,pane);buttons.splice(i,0,button);tabs.insertBefore(button,buttons[i+1]);
+      panel.insertBefore(pane,panes[i+1]);button.tabIndex=-1;button.setAttribute('aria-selected','false');
+    }
+    tabs.classList.add('ilab-explain','ilab-explain-five');panel.classList.add('ilab-explain-inspector');
+    if(context.s.preview){const notice=html('p',window.ILabExplain.notice);notice.className='ilab-explain ilab-explain-notice';tabs.before(notice);}
+    context.cleanup=()=>{if(buttons.some((b,i)=>['Plain','Story'].includes(names[i])&&b.getAttribute('aria-selected')==='true'))activate(0);};
+    if(['Plain','Story'].includes(requestedExplanation))activate(names.indexOf(requestedExplanation));
+  }).catch(()=>{});
   if (!result) return;
   const math = panes[0], loading = html('p','Rendering mathematics…'); loading.setAttribute('role','status');
   const body = html('div'); body.className='mathematics-body'; body.hidden=true;
@@ -92,7 +118,7 @@ async function showDeclaration(n) {
   }
   if(result.limitation)addParagraphs(body,[result.limitation]);
   const provenance=html('p',metadata.provenance);provenance.className='math-provenance';body.append(provenance);
-  const paper=html('a',`Published learning lesson · ${result.label} ↗`);paper.href=(result.source || metadata.source)+(result.anchor?'#'+result.anchor:'');paper.target='_blank';paper.rel='noopener';body.append(paper);
+  const paper=html('a',`Published lesson · ${result.label} ↗`);paper.href=(result.source||metadata.source)+(result.anchor?'#'+result.anchor:'');paper.target='_blank';paper.rel='noopener';body.append(paper);
   if (mapping.role==='supporting') {
     const principal=Object.entries(metadata.declarations).find(([,m])=>m.result===mapping.result&&m.role==='principal')?.[0];
     if(principal){const p=html('p'),b=html('button','Read full statement and proof');b.type='button';b.onclick=()=>select(principal);p.append(b);body.append(p);}
@@ -105,5 +131,5 @@ async function showDeclaration(n) {
     if(request!==detailRequest){window.MathJax.typesetClear([body]);return;}
     if(body.querySelector('mjx-merror,[data-mjx-error]'))throw new Error('Formula rendering failed');
     loading.remove();body.hidden=false;
-  }).catch(()=>{if(request===detailRequest){loading.textContent='Mathematics could not render. Read the published learning lesson; Lean and Verification remain available.';const link=paper.cloneNode(true);math.append(link);}});
+  }).catch(()=>{if(request===detailRequest){loading.textContent='Mathematics could not render. Read the published lesson; Lean and Verification remain available.';const link=paper.cloneNode(true);math.append(link);}});
 }

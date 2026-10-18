@@ -1,0 +1,588 @@
+{
+  "1.1": {
+    "mathematics": "A set-universe U contains ℕ, contains every subset of each of its members, contains the power set of each member, and contains ⋃ᵢ Aᵢ whenever I ∈ U and Aᵢ ∈ U for every i ∈ I.",
+    "proof": "This is a definition. Existence of such universes is a separate assumption.",
+    "plain": "A universe is a collection of sets closed under the operations the notes will use. Subset closure and power-set closure are different conditions: one includes each subset, the other includes the set of all subsets.",
+    "story": "Mira keeps a library of sets. Its charter admits the natural numbers, every subcollection of a catalogued set, a catalogue of all those subcollections, and unions of catalogued families whose index set is also catalogued.",
+    "limit": "The library is a set of sets with exact closure conditions, not an actual physical collection. The charter does not prove that a library satisfying it exists.",
+    "obligations": [
+      "Encode the four closure conditions for ZFSet",
+      "Check each closure projection under the universe hypothesis"
+    ]
+  },
+  "1.2": {
+    "mathematics": "If U is closed under subsets of its members, then U ∉ U. Under U ∈ U the separation set R = {A ∈ U | A ∉ A} is a member of U; its defining condition at R yields R ∈ R ↔ R ∉ R.",
+    "proof": "Assume U ∈ U. Subset closure gives R ∈ U. Substitute R into the separation condition and derive a contradiction. Only subset closure is used in this argument.",
+    "plain": "The contradiction concerns a set that would contain itself while supporting this separation construction. It is not a ban on talking about collections from a larger universe.",
+    "story": "Mira supposes the whole library is itself a listed book. She forms the subcatalogue of listed books that do not list themselves. The charter makes that subcatalogue a listed book too. Asking whether it lists itself forces both answers to contradict their defining rule.",
+    "limit": "Self-listing represents membership, not ordinary book citation. The argument needs a precise separation set and closure hypothesis.",
+    "obligations": [
+      "Prove non-self-membership using separation and subset closure"
+    ]
+  },
+  "1.3": {
+    "mathematics": "Assume three set-universes Uₛ ⊆ Uₗ ⊆ Uₕ, together with Uₛ ∈ Uₗ and Uₗ ∈ Uₕ. Inclusion and membership are distinct relations.",
+    "proof": "The source adopts these conditions as a convention; it does not derive universe existence.",
+    "plain": "The notes reserve three size levels. The larger collection contains every member of the smaller one and also contains that smaller collection as a single set.",
+    "story": "Mira has a small library, a larger library and an archive. Each next collection includes the earlier books and also catalogues the entire earlier library as one object.",
+    "limit": "Lean's type-universe hierarchy is not itself this set-membership statement. A faithful set-theoretic encoding must keep the existence assumptions explicit.",
+    "obligations": [
+      "Package the three universe hypotheses and membership/inclusion assumptions without postulating a project axiom"
+    ]
+  },
+  "1.4": {
+    "mathematics": "Relative to the three assumed universes, small sets are members of Uₛ, large sets are members of Uₗ, and huge sets are members of Uₕ.",
+    "proof": "Terminology defined by membership; the inclusions imply small ⇒ large ⇒ huge.",
+    "plain": "Size is relative to the fixed universes. It is a membership classification, not a claim that a small set has few elements.",
+    "story": "Mira labels a set by the catalogues admitting it. A book in the small catalogue also appears in the larger ones, even if it describes infinitely many things.",
+    "limit": "The labels are mathematical universe membership, not numerical bounds or memory limits.",
+    "obligations": [
+      "Define small, large and huge membership",
+      "Derive the two inclusions of size predicates"
+    ]
+  },
+  "1.5": {
+    "mathematics": "A strict category has objects, a hom set C(x,y) for each pair, identities 1ₓ and typed composition. For f:x→y, g:y→z, h:z→t, f∘1ₓ=f, 1ᵧ∘f=f, and (h∘g)∘f=h∘(g∘f). Object and hom sets satisfy the source's large-set bounds.",
+    "proof": "The laws are part of the category structure, not propositions about every arbitrary graph.",
+    "plain": "Giving arrows alone is insufficient: composition and identities must be specified and must obey the laws.",
+    "story": "Mira's route book supplies a neutral permit at each town and a combined permit for every composable pair. Regrouping a chain must produce the same entry.",
+    "limit": "Arrows need not be functions or journeys. Mathlib categories use type universes; the set-universe existence assumptions remain separate.",
+    "obligations": [
+      "Checked category structure",
+      "Left identity",
+      "Right identity",
+      "Associativity"
+    ]
+  },
+  "1.6": {
+    "mathematics": "The default strict categories have large object and hom sets; huge strict categories use huge object and hom sets instead.",
+    "proof": "This is a size convention, not an additional composition law.",
+    "plain": "The same category laws apply at either size. The convention controls which categories can be objects of later categories of categories.",
+    "story": "The route-book charter is unchanged when Mira moves a collection into a larger archive; only the permitted size changes.",
+    "limit": "A hierarchy of Lean types is an implementation of size management, not a proof of the source's membership conventions.",
+    "obligations": [
+      "Check category objects at independent object and morphism type-universe levels"
+    ]
+  },
+  "1.7": {
+    "mathematics": "A strict category is locally small if each hom set is small. It is small if it is locally small and its object set is small.",
+    "proof": "These are definitions. Smallness implies local smallness directly.",
+    "plain": "Local smallness bounds the arrows between a fixed pair. It says nothing by itself about the size of the whole collection of objects.",
+    "story": "Each pair of towns has a small permit catalogue, although the full atlas may contain too many towns for the small archive.",
+    "limit": "Here small means relative universe size, not finite.",
+    "obligations": [
+      "Map local smallness to a checked Mathlib interface",
+      "Map small categories to a checked interface"
+    ]
+  },
+  "1.8": {
+    "mathematics": "Sets with functions, pointed sets with point-preserving functions, vector spaces over a fixed small field with linear maps, and topological spaces with continuous maps form locally small strict categories. Under the source's universe convention their object collections are not small.",
+    "proof": "Identities and composition preserve each specified structure. Hom sets are contained in function sets. The size claim is an additional foundational obligation, separate from the category instances.",
+    "plain": "The allowed maps determine the category. The same underlying functions are not automatically valid maps of every kind of structure.",
+    "story": "Mira compares four route books: arbitrary transfers, transfers preserving a marked place, linear transfers, and continuous transfers. Each book has its own admissibility rule, preserved by joining transfers.",
+    "limit": "The analogy does not prove closure or the non-smallness claims. These require separate mathematical checks.",
+    "obligations": [
+      "Category of types/sets",
+      "Category of pointed types",
+      "Category of vector spaces",
+      "Category of topological spaces",
+      "Local smallness of all four",
+      "Non-smallness of all four in the stated universe sense"
+    ]
+  },
+  "1.9": {
+    "mathematics": "An arrow f:x→y is invertible if there exists g:y→x with g∘f=1ₓ and f∘g=1ᵧ. Objects are isomorphic if such an arrow exists.",
+    "proof": "Definition; a bundled isomorphism contains the inverse and both equations.",
+    "plain": "An inverse must work on both sides and must be a morphism in the same category.",
+    "story": "A golden permit comes with a return permit whose two round trips are certified neutral.",
+    "limit": "An isomorphism need not be equality of objects. One certified round trip is insufficient.",
+    "obligations": [
+      "Bundled isomorphism",
+      "IsIso iff existence of a two-sided inverse",
+      "Object isomorphism as nonempty isomorphism type"
+    ]
+  },
+  "1.10": {
+    "mathematics": "Isomorphisms in Set are bijections; in pointed Set they are point-preserving bijections; in Vectₖ they are bijective linear maps; in Top they are homeomorphisms.",
+    "proof": "Two inverse morphisms give inverse functions. Conversely, the inverse of a bijection preserves the point or linear structure when the forward map does. For topology, inverse continuity is required and is part of a homeomorphism.",
+    "plain": "Bijectivity alone works for the first three examples with their stated structures. A continuous bijection alone need not be a topological isomorphism.",
+    "story": "Mira can reverse a transfer only if its return obeys the same book's rules. The continuous-transfer book explicitly checks the return's continuity too.",
+    "limit": "The story is not a reason to infer inverse continuity. Each category needs its own equivalence between the two descriptions.",
+    "obligations": [
+      "Set isomorphisms iff bijections",
+      "Pointed isomorphisms iff pointed bijections",
+      "Linear isomorphisms iff linear bijections",
+      "Topological isomorphisms iff homeomorphisms"
+    ]
+  },
+  "1.11": {
+    "mathematics": "A morphism in a strict category has at most one two-sided inverse.",
+    "proof": "If g and h are inverses of f, then g=g∘1ᵧ=g∘(f∘h)=(g∘f)∘h=1ₓ∘h=h.",
+    "plain": "Associativity lets the same three-arrow expression cancel in two ways, so the proposed inverses must agree.",
+    "story": "Two clerks offer return permits for one golden permit. Mira inserts a neutral round trip, regroups it, and removes the other neutral round trip. The route book identifies the two returns.",
+    "limit": "The argument uses both inverse equations and category laws, not just common endpoints.",
+    "obligations": [
+      "Uniqueness of two-sided inverse"
+    ]
+  },
+  "1.12": {
+    "mathematics": "A functor F:C→D gives an object function and maps C(x,y)→D(Fx,Fy), satisfying F(1ₓ)=1_Fx and F(g∘f)=Fg∘Ff.",
+    "proof": "These equations define functoriality.",
+    "plain": "A functor translates an entire category while preserving its identity and composition operations.",
+    "story": "Fern translates towns and permits, including neutral permits and every combined entry, consistently.",
+    "limit": "A functor need not be injective, surjective or invertible.",
+    "obligations": [
+      "Functor data",
+      "Preservation of identity",
+      "Preservation of composition"
+    ]
+  },
+  "1.13": {
+    "mathematics": "There are forgetful functors from pointed sets, vector spaces and topological spaces to sets; a functor adjoining a new basepoint; a free-vector-space functor S↦⊕ₛ k; and discrete and indiscrete topology functors from sets to spaces.",
+    "proof": "Each construction specifies its action on functions and preserves identities and composites. Free linear extension sends each basis vector to the basis vector indexed by its image.",
+    "plain": "Forgetting discards structure. The other functors supply particular structures uniformly on sets and functions.",
+    "story": "Mira either erases a book's special rules or equips an ordinary list with a new marked entry, a basis, or one of two extreme topologies. Every relabelling must extend consistently.",
+    "limit": "These are seven distinct functors. Their adjunction properties are additional results in 3.2.",
+    "obligations": [
+      "Pointed forgetful functor",
+      "Vector-space forgetful functor",
+      "Topological forgetful functor",
+      "Free basepoint functor",
+      "Free vector-space functor",
+      "Discrete topology functor",
+      "Indiscrete topology functor"
+    ]
+  },
+  "1.14": {
+    "mathematics": "Every functor preserves isomorphisms: if f has inverse g, then Ff has inverse Fg.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "The statement says functors preserve the property of being invertible. Its proof is assigned to the reader.",
+    "story": "Mira reads that a translator sends reversible permits to reversible permits. The exercise asks her to justify that guarantee; this story does not provide the argument.",
+    "limit": "Preservation does not imply reflection of isomorphisms.",
+    "obligations": [
+      "Assigned full proof — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.14",
+      "page": 6,
+      "excluded_scope": "full proof",
+      "occurrences": 1
+    }
+  },
+  "1.15": {
+    "mathematics": "Small strict categories and functors form Catₛ; the corresponding large categories form a huge CATₛ. Identity functors act identically, and (G∘F)(x)=G(Fx), (G∘F)(f)=G(Ff).",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "The construction lists categories as objects and functors as arrows. The reader is assigned to verify its laws.",
+    "story": "Mira organizes whole route books into an atlas, using translators as links between books. The atlas charter is stated here; checking its laws remains the assigned exercise.",
+    "limit": "This construction has new universe requirements. Equality of functors here is stronger than natural isomorphism.",
+    "obligations": [
+      "Assigned category well-definedness — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.15",
+      "page": 6,
+      "excluded_scope": "category well-definedness",
+      "occurrences": 1
+    }
+  },
+  "1.16": {
+    "mathematics": "Catₛ is an object of CATₛ. Catₛ is locally small but not small under the fixed set-universe convention.",
+    "proof": "The object and functor collections require the larger universe. Local smallness and non-smallness must be assessed separately.",
+    "plain": "A catalogue can be too large to list itself at its own level while fitting into the next level.",
+    "story": "Mira's small-book catalogue fits inside the larger archive, although it is not itself a small book.",
+    "limit": "Type-level universe bounds alone do not establish the source's set-theoretic non-smallness statement.",
+    "obligations": [
+      "Bundled category of small categories at next universe",
+      "Local smallness of small-category functors",
+      "Non-smallness of Catₛ"
+    ]
+  },
+  "1.17": {
+    "mathematics": "Cᵒᵖ has the same objects with Cᵒᵖ(x,y)=C(y,x). Identities are unchanged and composition reverses order: gᵒᵖ∘fᵒᵖ=(f∘g)ᵒᵖ.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "The opposite category keeps objects and reverses arrow direction. The construction data are stated; its laws are an assigned check.",
+    "story": "Mira reads the route book with each permit facing the opposite way. The rulebook for composing these reversed permits is stated, and checking it is left to the reader.",
+    "limit": "This does not make arrows invertible inside C. The reversed arrows live in a different category.",
+    "obligations": [
+      "Assigned opposite category well-definedness — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.17",
+      "page": 7,
+      "excluded_scope": "opposite category well-definedness",
+      "occurrences": 1
+    }
+  },
+  "1.18": {
+    "mathematics": "A contravariant functor C→D means a functor Cᵒᵖ→D. It sends f:x→y to Ff:Fy→Fx, preserves identities and reverses the order in a composite.",
+    "proof": "Apply ordinary functor laws to Cᵒᵖ and the opposite composition formula.",
+    "plain": "Contravariance is ordinary functoriality after reversing the source arrows.",
+    "story": "Fern translates Mira's reversed route book. A route from x to y therefore becomes a permit from the image of y to the image of x.",
+    "limit": "The direction change is part of the specified domain; it is not arbitrary reversal by an ordinary covariant functor.",
+    "obligations": [
+      "Contravariant object/map types",
+      "Contravariant identity and composition equations"
+    ]
+  },
+  "1.19": {
+    "mathematics": "For a locally small C and c∈C, h_c=C(−,c):Cᵒᵖ→Set maps x to C(x,c) and f:x→y to precomposition (g:y→c)↦g∘f.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "For a fixed target, the representable records arrows arriving there and acts by precomposition. Verifying that this defines a functor is assigned.",
+    "story": "Mira collects permits arriving at one fixed tower. The source tells her how an earlier route changes that collection; the exercise asks her to check the rulebook.",
+    "limit": "The lists are hom sets, and precomposition need not be injective or surjective.",
+    "obligations": [
+      "Assigned representable functor well-definedness — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.19",
+      "page": 7,
+      "excluded_scope": "representable functor well-definedness",
+      "occurrences": 1
+    }
+  },
+  "1.20": {
+    "mathematics": "A natural transformation α:F⇒G has components αₓ:Fx→Gx such that Gf∘αₓ=αᵧ∘Ff for every f:x→y.",
+    "proof": "The commuting-square equation is the naturality condition.",
+    "plain": "Comparisons at different objects must fit every arrow, not merely be chosen independently.",
+    "story": "Mira compares two translators at each town. Translating a route and then comparing must equal comparing first and then translating it with the other translator.",
+    "limit": "Components need not be isomorphisms, and one checked square does not replace the condition for every arrow.",
+    "obligations": [
+      "Natural transformation components",
+      "Naturality equation"
+    ]
+  },
+  "1.21": {
+    "mathematics": "For f:c→d, postcomposition defines h_f:h_c⇒h_d with (h_f)ₓ(g)=f∘g.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "A map between targets gives the stated postcomposition functions between their representables. Their naturality is the assigned check.",
+    "story": "Mira has a route from one tower to another and a stated rule for changing incoming-permit catalogues. The compatibility certificate is left as the assigned task.",
+    "limit": "The comparison is uniform over all source objects. Arbitrary functions between the hom sets need not be natural.",
+    "obligations": [
+      "Assigned postcomposition transformation well-definedness — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.21",
+      "page": 8,
+      "excluded_scope": "postcomposition transformation well-definedness",
+      "occurrences": 1
+    }
+  },
+  "1.22": {
+    "mathematics": "A natural transformation is a natural isomorphism when each of its components is an isomorphism.",
+    "proof": "This defines the componentwise condition; Proposition 1.24 connects it to invertibility in the functor category.",
+    "plain": "Invertible comparisons must still be natural; unrelated objectwise isomorphisms are insufficient.",
+    "story": "Mira's comparison permits are all golden, and they already obey every route test.",
+    "limit": "Having isomorphic image objects does not alone supply a natural family.",
+    "obligations": [
+      "Componentwise isomorphism predicate",
+      "Bundled natural isomorphism has invertible components"
+    ]
+  },
+  "1.23": {
+    "mathematics": "Fun(C,D) has functors as objects and natural transformations as arrows. Identity components are identities and (β∘α)ₓ=βₓ∘αₓ.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "The functor category has functors as objects and natural transformations as arrows. The source states component formulas and assigns the category checks.",
+    "story": "Mira makes a catalogue whose entries are translators and whose permits compare translators. The proposed identity and composition rules are listed; their validation remains an exercise.",
+    "limit": "This is vertical composition. Precomposition and postcomposition are additional constructions in 1.28.",
+    "obligations": [
+      "Assigned functor category well-definedness — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.23",
+      "page": 8,
+      "excluded_scope": "functor category well-definedness",
+      "occurrences": 1
+    }
+  },
+  "1.24": {
+    "mathematics": "A natural transformation is invertible as a morphism of Fun(C,D) if and only if every component is invertible.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "The claim identifies invertibility in the functor category with invertibility of all components. The equivalence is stated without its assigned proof.",
+    "story": "Mira reads two tests for whether a comparison ledger is reversible: one for the whole ledger and one for every town. The proposition says the tests agree; explaining why is the exercise.",
+    "limit": "The original naturality hypothesis is essential. This does not make arbitrary choices of isomorphisms natural.",
+    "obligations": [
+      "Assigned full proof — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.24",
+      "page": 8,
+      "excluded_scope": "full proof",
+      "occurrences": 1
+    }
+  },
+  "1.25": {
+    "mathematics": "The terminal strict category [0] has one object and exactly one morphism, its identity.",
+    "proof": "The unique possible composition satisfies all category laws.",
+    "plain": "There is no choice of object or arrow in [0]. It provides a categorical way to select an object elsewhere.",
+    "story": "Mira makes a route book with one room and only its stay-here permit.",
+    "limit": "A one-object category can have many arrows; [0] specifically has just one.",
+    "obligations": [
+      "One-object category",
+      "Unique morphism",
+      "Terminality among categories"
+    ]
+  },
+  "1.26": {
+    "mathematics": "For a strict category C, there is an isomorphism of strict categories Fun([0],C) ≅ C, natural in C. The source labels its proof as an exercise.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "The statement asserts a strict category isomorphism between diagrams shaped by the terminal category and C, natural in C. This is stronger than merely an equivalence; its proof is assigned.",
+    "story": "Mira reads that the category of one-room diagrams has the same strict category structure as the original route book, compatibly with translations. The exercise is to justify this claim; no reconstruction is supplied here.",
+    "limit": "The claim is a strict category isomorphism, with naturality; an equivalence alone is a weaker formalization.",
+    "obligations": [
+      "Assigned full strict category isomorphism proof and naturality — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.26",
+      "page": 8,
+      "excluded_scope": "full strict category isomorphism proof and naturality",
+      "occurrences": 1
+    }
+  },
+  "1.27": {
+    "mathematics": "An object c of C corresponds to a unique functor [0]→C selecting c.",
+    "proof": "The object image is prescribed, and preservation of identity forces the only arrow image.",
+    "plain": "Selecting an object can be expressed as giving a functor from the terminal category.",
+    "story": "Mira fills a one-room template with the name c. Its only permit must be translated to c's stay-here permit, leaving no further choice.",
+    "limit": "Uniqueness is for a fixed selected object in a strict presentation.",
+    "obligations": [
+      "Functor selecting any object",
+      "Uniqueness for fixed object image"
+    ]
+  },
+  "1.28": {
+    "mathematics": "For F:C→D, precomposition gives F*:Fun(D,E)→Fun(C,E), with α mapped to components α_Fx. Postcomposition gives F*:Fun(E,C)→Fun(E,D), with α mapped to components F(αₓ); the source distinguishes these by subscript versus superscript.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "Precomposition changes diagram inputs; postcomposition changes their outputs. Their specified effects on components are retained, while the functor checks are assigned.",
+    "story": "Mira can change the route book supplied to a diagram or translate the diagram’s output. The two desks have different input and output types. Checking their stated rules is left to the reader.",
+    "limit": "The two constructions have different types and directions; their similar notation must not conflate them.",
+    "obligations": [
+      "Assigned pre/postcomposition functor well-definedness — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "1.28",
+      "page": 9,
+      "excluded_scope": "pre/postcomposition functor well-definedness",
+      "occurrences": 1
+    }
+  },
+  "2.1": {
+    "mathematics": "For locally small C, c∈C and F:Cᵒᵖ→Set, Nat(h_c,F) ≃ F(c). The forward function is α↦α_c(1_c); the inverse sends u to the transformation with αᵘₓ(f)=F(f)(u). The bijection is natural in c and F.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "Yoneda identifies natural transformations out of a representable with elements at its representing object. The source-supplied functions are retained; their assigned checks are withheld.",
+    "story": "Mira reads that compatible labels on every incoming permit correspond to a label at the tower itself. This explains the correspondence being claimed, without solving the checks assigned by the lecturers.",
+    "limit": "Compatibility with every earlier route is essential. The theorem concerns set-valued contravariant functors, not arbitrary independent labels.",
+    "obligations": [
+      "Assigned candidate naturality; mutual inverse and naturality checks — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "2.1",
+      "page": 9,
+      "excluded_scope": "candidate naturality; mutual inverse and naturality checks",
+      "occurrences": 2
+    }
+  },
+  "2.2": {
+    "mathematics": "The Yoneda functor y_C:C→Fun(Cᵒᵖ,Set) sends c to h_c and f:c→d to the postcomposition transformation h_f.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "Yoneda packages objects and maps into their incoming-map profiles. Verifying the stated construction is assigned.",
+    "story": "Mira records each town by its full incoming-permit catalogue and each route by the specified change of catalogues. The construction’s compatibility checks remain the exercise.",
+    "limit": "This construction does not by itself state full faithfulness; that is 2.4.",
+    "obligations": [
+      "Assigned Yoneda functor well-definedness — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "2.2",
+      "page": 9,
+      "excluded_scope": "Yoneda functor well-definedness",
+      "occurrences": 1
+    }
+  },
+  "2.3": {
+    "mathematics": "F:C→D is fully faithful when, for every x,y, its map C(x,y)→D(Fx,Fy) is bijective.",
+    "proof": "Definition; equivalently each map is both injective and surjective.",
+    "plain": "Every arrow between image objects comes from exactly one source arrow. This does not require all target objects to be images.",
+    "story": "Fern's translation preserves a perfect one-to-one correspondence between permits for every pair of translated towns, although other towns may remain elsewhere in the kingdom.",
+    "limit": "Full faithfulness controls hom sets, not object surjectivity.",
+    "obligations": [
+      "Full and Faithful iff hom-map bijective",
+      "Hom equivalence under full faithfulness"
+    ]
+  },
+  "2.4": {
+    "mathematics": "The Yoneda functor is fully faithful.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "Full faithfulness says the Yoneda map is bijective on each hom set. Its proof is assigned and is not supplied here.",
+    "story": "Mira reads that the profile catalogue retains exactly the permits between each pair of towns. The claim concerns arrows between fixed objects; its justification remains the exercise.",
+    "limit": "Full faithfulness does not say every presheaf is representable.",
+    "obligations": [
+      "Assigned full proof — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "2.4",
+      "page": 10,
+      "excluded_scope": "full proof",
+      "occurrences": 1
+    }
+  },
+  "2.5": {
+    "mathematics": "A fully faithful F reflects isomorphisms. Moreover, x and y are isomorphic if and only if Fx and Fy are isomorphic.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "Full faithfulness detects invertible arrows and detects when two objects are isomorphic. These are the stated conclusions; the assigned proof is withheld.",
+    "story": "Mira reads that a fully faithful translation detects which permits and which pairs of towns are reversible. The exercise asks her to establish these conclusions; no lifting procedure is given here.",
+    "limit": "Both fullness and faithfulness matter. The conclusion concerns objects whose images are being compared.",
+    "obligations": [
+      "Assigned both assertions: full proof — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "2.5",
+      "page": 10,
+      "excluded_scope": "both assertions: full proof",
+      "occurrences": 1
+    }
+  },
+  "2.6": {
+    "mathematics": "For f:c→d, the following are equivalent: f is invertible; postcomposition C(x,c)→C(x,d) is bijective for every x; precomposition C(d,x)→C(c,x) is bijective for every x.",
+    "proof": "The authors use full faithfulness of Yoneda and Proposition 1.24 for the incoming-map comparison, then pass to the opposite category for the outgoing-map comparison. They explicitly assign the invertibility equivalence for f and f.op as an exercise; that step is withheld.",
+    "plain": "A map is reversible exactly when every incoming probe, or every outgoing probe, sees it as a bijection.",
+    "story": "Mira tests whether a permit is reversible by how it acts on every arrival, or on every departure. The statement requires every possible test object. The embedded exercise about reversing arrow direction is left unsolved.",
+    "limit": "The quantifier is over all objects. A few selected probes need not detect invertibility.",
+    "obligations": [
+      "IsIso iff every postcomposition map is bijective",
+      "IsIso iff every precomposition map is bijective",
+      "IsIso iff opposite arrow is IsIso"
+    ],
+    "exercise_exclusion": {
+      "item": "2.6",
+      "page": 10,
+      "excluded_scope": "embedded invertibility iff opposite invertibility only",
+      "occurrences": 1
+    }
+  },
+  "2.7": {
+    "mathematics": "Objects x,y of a locally small category are isomorphic if and only if h_x and h_y are naturally isomorphic.",
+    "proof": "Apply preservation and reflection of object isomorphisms to the fully faithful Yoneda functor, using the componentwise characterization of natural isomorphisms.",
+    "plain": "The complete incoming-map profile determines an object up to isomorphism, including how all probes transform.",
+    "story": "Mira compares two towns' incoming-permit catalogues by a reversible, route-compatible correspondence. Yoneda reconstructs a reversible permit between the towns.",
+    "limit": "Unstructured bijections between individual hom sets do not suffice; the correspondence must be natural.",
+    "obligations": [
+      "Isomorphism of objects iff isomorphism of representable functors"
+    ]
+  },
+  "3.1": {
+    "mathematics": "An adjunction L:C⇄D:R has unit η:Id_C⇒R∘L and counit ε:L∘R⇒Id_D satisfying ε_Lx∘Lηₓ=1_Lx and Rεᵧ∘η_Ry=1_Ry.",
+    "proof": "The two triangle identities are part of the definition, alongside naturality of unit and counit.",
+    "plain": "The unit and counit compare the two round trips with the starting objects. The triangles make these comparisons compatible with each adjoint.",
+    "story": "Mira has two translation desks and comparison permits for translating out and back. Each triangle says a particular round trip followed by its comparison is the neutral permit.",
+    "limit": "Units and counits need not be invertible. An adjunction is generally weaker than an equivalence.",
+    "obligations": [
+      "Adjunction unit and counit",
+      "Both naturality equations",
+      "Left triangle",
+      "Right triangle"
+    ]
+  },
+  "3.2": {
+    "mathematics": "Adjoining a basepoint is left adjoint to forgetting it. Free vector space is left adjoint to its forgetful functor. Discrete topology is left adjoint to the underlying-set functor, which is left adjoint to indiscrete topology.",
+    "proof": "A pointed map from S with a new basepoint is determined by an arbitrary function on S; a linear map from the free space is determined on basis vectors. Every map from a discrete space is continuous, as is every map into an indiscrete space. These correspondences are natural.",
+    "plain": "Each universal construction makes structured maps correspond exactly to simpler underlying functions.",
+    "story": "Mira equips a plain list with precisely the rules needed so that choosing a structured transfer amounts to choosing an ordinary transfer. The discrete and indiscrete desks solve opposite directions of this task.",
+    "limit": "There are four distinct adjunctions with specified directions. Forgetting structure is not generally invertible.",
+    "obligations": [
+      "Free-basepoint adjunction",
+      "Free-vector-space adjunction",
+      "Discrete/underlying-set adjunction",
+      "Underlying-set/indiscrete adjunction"
+    ]
+  },
+  "3.3": {
+    "mathematics": "Functors L:C→D and R:D→C admit an adjunction exactly when there are bijections D(Lx,y)≃C(x,Ry), natural in x and y. Forward transposition sends g to Rg∘ηₓ; inverse transposition sends f to εᵧ∘Lf.",
+    "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+    "plain": "The theorem relates unit/counit adjunction data to hom-set bijections natural in both variables. The source gives formulas but assigns the inverse, naturality and triangle checks.",
+    "story": "Mira sees two descriptions of one request: a permit from Lx to y or from x to Ry. The correspondence must respect changes at either endpoint. The exercise is to check the stated formulas, and its solution is withheld.",
+    "limit": "Independent bijections for each pair of objects are insufficient without naturality in both variables.",
+    "obligations": [
+      "Assigned hom functions inverse/natural; constructed unit/counit natural and triangle laws — solution withheld"
+    ],
+    "exercise_exclusion": {
+      "item": "3.3",
+      "page": 12,
+      "excluded_scope": "hom functions inverse/natural; constructed unit/counit natural and triangle laws",
+      "occurrences": 2
+    }
+  },
+  "3.4": {
+    "mathematics": "F:C→D is an equivalence if there is G:D→C and natural isomorphisms Id_C≅G∘F and F∘G≅Id_D. The source does not require triangle identities in this definition.",
+    "proof": "This is the quasi-inverse definition. Its relation to Mathlib's bundled adjoint equivalence requires the upgrade in 3.5.",
+    "plain": "The two translations undo one another up to coherent isomorphism, rather than literal equality.",
+    "story": "Mira translates a route book out and back. The returned town may have another name, but compatible golden permits identify it with the original.",
+    "limit": "Do not silently add triangle identities to the source definition or replace natural isomorphisms by unrelated objectwise ones.",
+    "obligations": [
+      "Encode quasi-inverse data without triangle requirement",
+      "Map a Mathlib equivalence to this data",
+      "Upgrade source data to bundled equivalence"
+    ]
+  },
+  "3.5": {
+    "mathematics": "A strict isomorphism of categories is an equivalence. If an adjunction has invertible unit and counit, both adjoint functors are equivalences.",
+    "proof": "Turn equality of composite functors into identity natural isomorphisms. For an adjunction with invertible unit and counit, the two functors are quasi-inverses; reversing the natural isomorphisms gives the opposite direction.",
+    "plain": "Strict inverses and invertible adjunction comparisons are two ways to obtain equivalences.",
+    "story": "Mira can certify equivalence either with translations that return exactly the original book, or with adjoint desks whose comparison permits are all golden.",
+    "limit": "A general adjunction does not have invertible comparisons.",
+    "obligations": [
+      "Strict category isomorphism gives equivalence",
+      "Adjunction with invertible unit/counit gives left equivalence",
+      "Same gives right equivalence"
+    ]
+  },
+  "3.6": {
+    "mathematics": "F:C→D is essentially surjective when for every d∈D there exist c∈C and an isomorphism Fc≅d.",
+    "proof": "Definition; the witness is an object and an isomorphism, not an equality.",
+    "plain": "Every target object has a representative up to isomorphism among the image objects.",
+    "story": "Mira's catalogue may omit a town's literal name, but it must name a town connected to it by a golden permit.",
+    "limit": "Essential surjectivity is weaker than surjectivity of the object function.",
+    "obligations": [
+      "Essential-surjectivity predicate",
+      "Witness formulation"
+    ]
+  },
+  "3.7": {
+    "mathematics": "A functor is an equivalence if and only if it is fully faithful and essentially surjective.",
+    "proof": "The source postpones its proof. Independently: an equivalence supplies hom bijections and image representatives. Conversely choose a representative and isomorphism for every target object; full faithfulness uniquely transports arrows between representatives, producing a quasi-inverse and natural isomorphisms. The choice and universe assumptions must remain explicit.",
+    "plain": "The criterion combines complete control of arrows between image objects with enough objects up to isomorphism.",
+    "story": "Fern's translation accounts uniquely for every permit between image towns, and every target town has an isomorphic representative. Mira chooses those representatives and uses the unique permit preimages to build a return translator.",
+    "limit": "The converse uses representative choices. This is an ordinary category theorem; the synthetic foundational setting is not formalized by it.",
+    "obligations": [
+      "Equivalence implies fully faithful",
+      "Equivalence implies essentially surjective",
+      "Fully faithful plus essentially surjective constructs equivalence",
+      "Iff in source quasi-inverse sense"
+    ]
+  },
+  "3.8": {
+    "mathematics": "The walking isomorphism I has objects 0 and 1 and exactly one morphism in each hom set. Its nonidentity arrows are mutually inverse.",
+    "proof": "There is exactly one possible composite with any endpoints, so the category laws and inverse equations hold.",
+    "plain": "This category has two distinct objects with no categorical distinction up to isomorphism.",
+    "story": "Mira has north and south rooms and exactly one approved permit between every ordered pair. Going out and back gives the only possible self-permit, the identity.",
+    "limit": "Distinct objects remain distinct in the object set even though they are isomorphic.",
+    "obligations": [
+      "Two-object type",
+      "Singleton homs and category laws",
+      "Explicit inverse arrows",
+      "Two-object cardinality"
+    ]
+  },
+  "3.9": {
+    "mathematics": "The functor [0]→I selecting 0 is an equivalence.",
+    "proof": "Its unique hom map is a bijection. Every target object is isomorphic to 0: use the identity for 0 and the specified isomorphism for 1. Alternatively collapse I to [0] and construct the two natural isomorphisms directly.",
+    "plain": "The source's brief proof must cover both target objects. The inclusion misses one literal object but reaches its isomorphism class.",
+    "story": "Mira represents both rooms by north. The stay-here permit covers north, and the golden north-to-south permit covers south. The one-room model recovers the category up to equivalence.",
+    "limit": "The source proof's printed reference to 0≅0 alone does not account for object 1; the independent explanation explicitly supplies that second case.",
+    "obligations": [
+      "Selecting inclusion functor",
+      "Full faithfulness",
+      "Essential surjectivity for both objects",
+      "Explicit equivalence",
+      "Failure of literal object surjectivity"
+    ]
+  }
+}
