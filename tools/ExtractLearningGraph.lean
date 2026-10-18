@@ -16,6 +16,7 @@ import ILab.MathematicsLearning.SmallCategoryUniverse
 import ILab.MathematicsLearning.ConcreteGroupPresentations
 import ILab.MathematicsLearning.SetCategoryPresentation
 import ILab.MathematicsLearning.YonedaConstruction
+import ILab.MathematicsLearning.SourceConstructionData
 
 open Lean in
 run_cmd do
