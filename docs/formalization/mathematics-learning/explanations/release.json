@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "publication_authorized": true,
-  "release": "learning-native-20261018-contents-r10",
+  "release": "learning-native-20261018-explanations-r11",
   "render_contract": "learning-exact-fragment-1",
-  "registry_sha256": "8002203e17db00503739b361c551ac5d3a8d4d411bd0b06bd9d53e754d723095"
+  "registry_sha256": "6b70d68012a5ced8e1ba823b724281dad39a3cddcd35ad348ab3121bf3ed92f0"
 }
