@@ -26,7 +26,7 @@ audit = {'schema_version': 1, 'clean_build_command': 'lake clean rq001; lake bui
          'compiled_sha256': hashlib.sha256(compiled.read_bytes()).hexdigest(),
          'clean_build_log_sha256': hashlib.sha256(log).hexdigest(),
          'allowed_axioms': ['propext', 'Classical.choice', 'Quot.sound'],
-         'scope': 'Non-exercise material only; see exercise-exclusions.json and obligations.json.',
+         'scope': 'Non-exercise results and author-supplied construction data only; assigned checks remain withheld. See exercise-exclusions.json and obligations.json.',
          'modules': rows}
 (out / 'expanded-clean-build.log').write_bytes(log)
 (out / 'expanded-audit.json').write_text(json.dumps(audit, indent=2) + '\n', encoding='utf-8', newline='\n')

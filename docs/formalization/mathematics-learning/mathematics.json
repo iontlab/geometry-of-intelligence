@@ -536,6 +536,20 @@
         "The explicit functors and natural isomorphisms are given in items 3.8–3.9; the object sets have cardinalities one and two."
       ],
       "limitation": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed. The exact set-coded one-object and two-object categories are equivalent but have no strictly inverse functors; strict inverses imply an actual object bijection. Prospective synthetic equality-isomorphism principles await later axioms. Each referenced signature specifies the precise checked formulation."
+    },
+    "source.2.1": {
+      "label": "Primary 2.1 · partial construction",
+      "title": "Yoneda: author-supplied evaluation and candidate components",
+      "native_key": "2.1",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "anchor": "theorem_21_yoneda_lemma",
+      "statement": [
+        "For locally small C, c∈C and F:Cᵒᵖ→Set, Nat(h_c,F) ≃ F(c). The forward function is α↦α_c(1_c); the inverse sends u to the transformation with αᵘₓ(f)=F(f)(u). The bijection is natural in c and F."
+      ],
+      "proof": [
+        "The authors explicitly define evaluation alpha maps to alpha_c(id_c), and candidate components (alpha_u)_x(f)=F(f)(u). These functions and their defining formulas are checked on the source small-set carriers. Assigned exercise solution withheld: naturality of the candidate family, mutual inverseness, and naturality in c and F. No completed candidate natural transformation or Yoneda bijection is exported."
+      ],
+      "limitation": "Verified author-supplied construction steps; complete Yoneda theorem not verified; assigned checks remain open. Verified author-supplied construction steps on the original small-set carriers: evaluation alpha_c(id_c), and the candidate component functions f maps to F(f)(u), with definitional formula readbacks. The candidate is only a family of functions, not a completed natural transformation. Its naturality, mutual inverseness, and naturality in c and F remain assigned exercises; the complete Yoneda theorem is not verified here. The existing representable and set-function bridge are reused as prerequisites, not counted as newly solved exercises."
     }
   },
   "declarations": {
@@ -977,6 +991,22 @@
     },
     "ILab.MathematicsLearning.walking_not_strictly_isomorphic_sets": {
       "result": "source.equivalences.motivation",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.yonedaEvaluation": {
+      "result": "source.2.1",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent": {
+      "result": "source.2.1",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula": {
+      "result": "source.2.1",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula": {
+      "result": "source.2.1",
       "role": "supporting"
     }
   },

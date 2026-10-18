@@ -1169,17 +1169,51 @@
       ],
       "topic": "Contravariant Yoneda bijection, evaluation at identity and naturality in c,F",
       "mathematics": "For locally small C, c∈C and F:Cᵒᵖ→Set, Nat(h_c,F) ≃ F(c). The forward function is α↦α_c(1_c); the inverse sends u to the transformation with αᵘₓ(f)=F(f)(u). The bijection is natural in c and F.",
-      "proof": "Assigned exercise solution withheld. Source statements, numbering and attribution are retained; no Lean proof, proof sketch, or solution walkthrough is published.",
+      "proof": "The authors explicitly define evaluation alpha maps to alpha_c(id_c), and candidate components (alpha_u)_x(f)=F(f)(u). These functions and their defining formulas are checked on the source small-set carriers. Assigned exercise solution withheld: naturality of the candidate family, mutual inverseness, and naturality in c and F. No completed candidate natural transformation or Yoneda bijection is exported.",
       "plain": "Yoneda identifies natural transformations out of a representable with elements at its representing object. The source-supplied functions are retained; their assigned checks are withheld.",
       "story": "Mira reads that compatible labels on every incoming permit correspond to a label at the tower itself. This explains the correspondence being claimed, without solving the checks assigned by the lecturers.",
-      "limit": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "limit": "Verified author-supplied construction steps on the original small-set carriers: evaluation alpha_c(id_c), and the candidate component functions f maps to F(f)(u), with definitional formula readbacks. The candidate is only a family of functions, not a completed natural transformation. Its naturality, mutual inverseness, and naturality in c and F remain assigned exercises; the complete Yoneda theorem is not verified here. The existing representable and set-function bridge are reused as prerequisites, not counted as newly solved exercises.",
       "obligations": [
         {
-          "id": "2.1.source",
-          "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+          "id": "2.1.evaluation",
+          "statement": "Evaluation at the identity: alpha maps to alpha_c(id_c).",
+          "status": "Verified author-supplied construction step",
+          "declarations": [
+            "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+            "ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula"
+          ],
+          "scope": "A function on already given natural transformations; the formula readback is definitional."
+        },
+        {
+          "id": "2.1.components",
+          "statement": "For u in F(c), the component at x sends f:x -> c to F(f)(u).",
+          "status": "Verified author-supplied construction step",
+          "declarations": [
+            "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent",
+            "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula"
+          ],
+          "scope": "Only the family of component functions is constructed, not a natural transformation."
+        },
+        {
+          "id": "2.1.candidate_naturality",
+          "statement": "Check that the candidate components form a well-defined natural transformation.",
           "status": "assigned exercise solution withheld",
           "declarations": [],
-          "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+          "scope": "Open: no proof or completed construction exported."
+        },
+        {
+          "id": "2.1.mutual_inverse",
+          "statement": "Check that evaluation and the proposed inverse are mutually inverse.",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "Open: no proof or completed construction exported."
+        },
+        {
+          "id": "2.1.parameter_naturality",
+          "statement": "Check naturality in both c and F.",
+          "status": "assigned exercise solution withheld",
+          "declarations": [],
+          "scope": "Open: no proof or completed construction exported."
         }
       ],
       "exercise_exclusion": {
@@ -1188,8 +1222,13 @@
         "excluded_scope": "candidate naturality; mutual inverse and naturality checks",
         "occurrences": 2
       },
-      "lean_declarations": [],
-      "formalization_status": "Assigned exercise solution withheld; original text retained"
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+        "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent",
+        "ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula",
+        "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula"
+      ],
+      "formalization_status": "Verified author-supplied construction steps; complete Yoneda theorem not verified; assigned checks remain open"
     },
     {
       "key": "2.2",

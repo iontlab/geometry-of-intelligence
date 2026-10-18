@@ -15,6 +15,7 @@ import ILab.MathematicsLearning.SetRepresentableIsomorphism
 import ILab.MathematicsLearning.SmallCategoryUniverse
 import ILab.MathematicsLearning.ConcreteGroupPresentations
 import ILab.MathematicsLearning.SetCategoryPresentation
+import ILab.MathematicsLearning.YonedaConstruction
 
 open Lean in
 run_cmd do

@@ -841,12 +841,17 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solution withheld; original text retained",
+      "lean_status": "Verified author-supplied construction steps; complete Yoneda theorem not verified; assigned checks remain open",
       "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+        "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent",
+        "ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula",
+        "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula"
+      ],
       "exercise_exclusion": {
         "item": "2.1",
         "page": 9,

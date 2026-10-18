@@ -77,7 +77,8 @@
       "item": "2.1",
       "page": 9,
       "excluded_scope": "candidate naturality; mutual inverse and naturality checks",
-      "occurrences": 2
+      "occurrences": 2,
+      "retained_authored_scope": "Evaluation alpha_c(id_c) and candidate component functions f maps to F(f)(u), with only their defining formulas checked. No completed candidate natural transformation or bijection is exported."
     },
     {
       "item": "2.2",

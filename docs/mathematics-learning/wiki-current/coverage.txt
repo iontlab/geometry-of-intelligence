@@ -66,7 +66,7 @@ Fourteen editorial groups cover the unnumbered introduction and remarks. They ar
 
 | Construction 1.28 | 8, 9 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations#construction_128|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.28&layer=verification|Assigned exercise solution withheld; original text retained]] |
 
-| Theorem 2.1 | 9 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda#theorem_21_yoneda_lemma|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=2.1&layer=verification|Assigned exercise solution withheld; original text retained]] |
+| Theorem 2.1 | 9 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda#theorem_21_yoneda_lemma|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=2.1&layer=verification|Verified author-supplied constructions only; complete theorem not verified; assigned checks remain open]] |
 
 | Construction 2.2 | 9 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda#construction_22|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=2.2&layer=verification|Assigned exercise solution withheld; original text retained]] |
 

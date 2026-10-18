@@ -677,9 +677,14 @@
       "source_native_file": "original/native/yoneda.txt",
       "source_line": 5,
       "source_sha256": "35d26a197012e55a997ee80c067d4676a02c82801f89187df28cd7f594c177aa",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+        "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent",
+        "ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula",
+        "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula"
+      ],
+      "correspondence": "Verified author-supplied construction steps on the original small-set carriers: evaluation alpha_c(id_c), and the candidate component functions f maps to F(f)(u), with definitional formula readbacks. The candidate is only a family of functions, not a completed natural transformation. Its naturality, mutual inverseness, and naturality in c and F remain assigned exercises; the complete Yoneda theorem is not verified here. The existing representable and set-function bridge are reused as prerequisites, not counted as newly solved exercises.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },

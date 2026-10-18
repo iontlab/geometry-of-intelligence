@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "publication_authorized": true,
-  "release": "learning-native-20261018-explanations-r11",
+  "release": "learning-native-20261018-yoneda-partial-r12",
   "render_contract": "learning-exact-fragment-1",
-  "registry_sha256": "6b70d68012a5ced8e1ba823b724281dad39a3cddcd35ad348ab3121bf3ed92f0"
+  "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190"
 }

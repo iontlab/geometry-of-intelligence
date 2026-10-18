@@ -69,6 +69,10 @@ for item in source:
             names='SetCategory.postcomposition_bijections_detect_isomorphism'
             status='mixed_exercise'
             reason='The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized.'
+        if key=='2.1':
+            names='SetCategory.yonedaEvaluation SetCategory.yonedaCandidateComponent SetCategory.yonedaEvaluation_formula SetCategory.yonedaCandidateComponent_formula'
+            status='partial_construction'
+            reason='Verified author-supplied construction steps on the original small-set carriers: evaluation alpha_c(id_c), and the candidate component functions f maps to F(f)(u), with definitional formula readbacks. The candidate is only a family of functions, not a completed natural transformation. Its naturality, mutual inverseness, and naturality in c and F remain assigned exercises; the complete Yoneda theorem is not verified here. The existing representable and set-function bridge are reused as prerequisites, not counted as newly solved exercises.'
     elif key in full:
         names,reason=full[key];status='fully_formalized'
     else:
@@ -86,7 +90,7 @@ chapter_counts={}
 for chapter in ['foundations','size','categories','functors','natural_transformations','yoneda','adjunctions','equivalences']:
     subset=[r for r in rows if r['chapter']==chapter]
     chapter_counts[chapter]={'numbered_items':len(subset),**{k:sum(r['status']==k for r in subset) for k in ['fully_formalized','exercise_withheld','pending']}}
-    chapter_counts[chapter]['exercise_withheld']+=sum(r['status']=='mixed_exercise' for r in subset)
+    chapter_counts[chapter]['exercise_withheld']+=sum(r['status'] in ['mixed_exercise','partial_construction'] for r in subset)
 save(D/'original/native/source-audit.json',{
  'source_pdf_sha256':hashlib.sha256((D/'original/moser-walde-13-pages.pdf').read_bytes()).hexdigest(),
  'review':'Source-first editorial correspondence checked against the manuscript; no independent human review or compiler proof of prose equivalence claimed.',
@@ -100,7 +104,7 @@ for prev in old['records']:
     r=dict(prev); key=r['key']
     row=next((x for x in rows if x['key']==key),None)
     if row:
-        r['formalization_status']={'fully_formalized':'Faithfully formalized and compiler-verified in the source set-universe representation','pending':'Incomplete original source obligation','exercise_withheld':'Assigned exercise solution withheld; original text retained','mixed_exercise':'Author-proved (i) iff (ii) verified; embedded exercise solution withheld'}[row['status']]
+        r['formalization_status']={'fully_formalized':'Faithfully formalized and compiler-verified in the source set-universe representation','pending':'Incomplete original source obligation','exercise_withheld':'Assigned exercise solution withheld; original text retained','mixed_exercise':'Author-proved (i) iff (ii) verified; embedded exercise solution withheld','partial_construction':'Verified author-supplied construction steps; complete Yoneda theorem not verified; assigned checks remain open'}[row['status']]
         r['lean_declarations']=row['declarations']
         r['limit']=row['correspondence']
         r['obligations']=[{'id':key+'.source','statement':row['correspondence'],
@@ -109,6 +113,12 @@ for prev in old['records']:
         if key=='2.6':
             r['obligations'][0]['status']='Author-proved (i) iff (ii) verified on exact source hom sets'
             r['obligations'].append({'id':key+'.exercise','statement':'The opposite-invertibility step is assigned by the authors.','status':'assigned exercise solution withheld','declarations':[],'scope':'No independently generated solution or complete three-way proof is published.'})
+        if key=='2.1':
+            r['proof']='The authors explicitly define evaluation alpha maps to alpha_c(id_c), and candidate components (alpha_u)_x(f)=F(f)(u). These functions and their defining formulas are checked on the source small-set carriers. Assigned exercise solution withheld: naturality of the candidate family, mutual inverseness, and naturality in c and F. No completed candidate natural transformation or Yoneda bijection is exported.'
+            r['obligations']=[
+              {'id':'2.1.evaluation','statement':'Evaluation at the identity: alpha maps to alpha_c(id_c).','status':'Verified author-supplied construction step','declarations':[P+'SetCategory.yonedaEvaluation',P+'SetCategory.yonedaEvaluation_formula'],'scope':'A function on already given natural transformations; the formula readback is definitional.'},
+              {'id':'2.1.components','statement':'For u in F(c), the component at x sends f:x -> c to F(f)(u).','status':'Verified author-supplied construction step','declarations':[P+'SetCategory.yonedaCandidateComponent',P+'SetCategory.yonedaCandidateComponent_formula'],'scope':'Only the family of component functions is constructed, not a natural transformation.'},
+              *[{'id':'2.1.'+k,'statement':s,'status':'assigned exercise solution withheld','declarations':[],'scope':'Open: no proof or completed construction exported.'} for k,s in [('candidate_naturality','Check that the candidate components form a well-defined natural transformation.'),('mutual_inverse','Check that evaluation and the proposed inverse are mutually inverse.'),('parameter_naturality','Check naturality in both c and F.')]]]
     else:
         # Existing contextual declarations are retained, explicitly as support.
         r['formalization_status']='Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed'
