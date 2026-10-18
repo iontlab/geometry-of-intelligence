@@ -1,25 +1,29 @@
-✔ [6670/6836] Built ILab.MathematicsLearning.BasicCategoryTheory (5.7s)
-✔ [7022/7203] Built ILab.MathematicsLearning.SetUniverses (6.3s)
-✔ [7023/7203] Built ILab.MathematicsLearning.YonedaAdjunction (6.3s)
-✔ [7326/7482] Built ILab.MathematicsLearning.WalkingIsomorphism (6.2s)
-✔ [8592/8731] Built ILab.MathematicsLearning.CategoryConstructions (7.4s)
-✔ [8929/8943] Built ILab.MathematicsLearning.PathAndIdentity (8.9s)
-✔ [8930/8943] Built ILab.MathematicsLearning.SetFunctions (5.5s)
-✔ [8931/8943] Built ILab.MathematicsLearning.TerminalCategory (5.6s)
-✔ [8932/8943] Built ILab.MathematicsLearning.CategorySize (6.6s)
-✔ [8933/8943] Built ILab.MathematicsLearning.SourceLaws (6.7s)
-✔ [8934/8943] Built ILab.MathematicsLearning.SetUniverseClosure (5.1s)
-✔ [8935/8943] Built ILab.MathematicsLearning.SetCategories (7.1s)
-✔ [8936/8943] Built ILab.RQ001.CapabilityOrder (17s)
-⚠ [8937/8943] Built ILab.RQ001.SymmetryObstruction (17s)
+✔ [8923/8960] Built ILab.MathematicsLearning.BasicCategoryTheory (5.5s)
+✔ [8925/8960] Built ILab.MathematicsLearning.SetUniverses (5.8s)
+✔ [8926/8960] Built ILab.MathematicsLearning.YonedaAdjunction (5.9s)
+✔ [8927/8960] Built ILab.MathematicsLearning.WalkingIsomorphism (5.9s)
+✔ [8928/8960] Built ILab.MathematicsLearning.CategoryConstructions (7.0s)
+✔ [8929/8960] Built ILab.MathematicsLearning.PathAndIdentity (7.5s)
+✔ [8930/8960] Built ILab.MathematicsLearning.SetFunctions (5.3s)
+✔ [8931/8960] Built ILab.MathematicsLearning.TerminalCategory (5.4s)
+✔ [8932/8960] Built ILab.MathematicsLearning.CategorySize (6.5s)
+✔ [8933/8960] Built ILab.MathematicsLearning.SourceLaws (6.6s)
+✔ [8934/8960] Built ILab.MathematicsLearning.ConcreteGroupPresentations (6.9s)
+✔ [8935/8960] Built ILab.MathematicsLearning.SetUniverseClosure (4.9s)
+✔ [8936/8960] Built ILab.MathematicsLearning.SetCategories (5.7s)
+✔ [8937/8960] Built ILab.RQ001.CapabilityOrder (15s)
+⚠ [8938/8960] Built ILab.RQ001.SymmetryObstruction (15s)
 warning: ILab/RQ001/SymmetryObstruction.lean:97:4: Try `simp at hne` instead of `simpa using hne`
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [8938/8943] Built ILab.RQ001.FourStateQuotient (17s)
+✔ [8939/8960] Built ILab.MathematicsLearning.SetIndexedFamilies (4.6s)
+⚠ [8940/8960] Built ILab.RQ001.FourStateQuotient (15s)
 warning: ILab/RQ001/FourStateQuotient.lean:64:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [8939/8943] Built ILab.RQ001.TransformationSufficientQuotient (17s)
+✔ [8941/8960] Built ILab.MathematicsLearning.SetOption (4.7s)
+✔ [8942/8960] Built ILab.MathematicsLearning.SetSubsets (4.7s)
+⚠ [8943/8960] Built ILab.RQ001.TransformationSufficientQuotient (16s)
 warning: ILab/RQ001/TransformationSufficientQuotient.lean:131:6: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
@@ -35,7 +39,20 @@ Note: This linter can be disabled with `set_option linter.unnecessarySimpa false
 warning: ILab/RQ001/TransformationSufficientQuotient.lean:255:14: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-✔ [8940/8943] Built ILab.MathematicsLearning.SetCategoryEquivalences (5.6s)
-✔ [8941/8943] Built ILab.MathematicsLearning.SmallSetsCategory (5.7s)
-✔ [8942/8943] Built ILab.MathematicsLearning.FiniteSetCategories (4.9s)
-Build completed successfully (8943 jobs).
+✔ [8944/8960] Built ILab.MathematicsLearning.SetCategoryEquivalences (5.9s)
+✔ [8945/8960] Built ILab.MathematicsLearning.SetCategoryModels (5.9s)
+✔ [8946/8960] Built ILab.MathematicsLearning.SmallSetsCategory (6.1s)
+✔ [8947/8960] Built ILab.MathematicsLearning.FiniteSetCategories (6.2s)
+✔ [8948/8960] Built ILab.MathematicsLearning.SetCategoryCodes (6.1s)
+✔ [8949/8960] Built ILab.MathematicsLearning.SmallPointedSets (6.3s)
+✔ [8950/8960] Built ILab.MathematicsLearning.SmallTopologicalSpaces (6.3s)
+✔ [8951/8960] Built ILab.MathematicsLearning.SmallVectorSpaces (6.7s)
+✔ [8952/8960] Built ILab.MathematicsLearning.SetCategoryPresentation (5.8s)
+✔ [8953/8960] Built ILab.MathematicsLearning.SetFunctorCodes (5.9s)
+✔ [8954/8960] Built ILab.MathematicsLearning.SmallPointedAdjunction (5.9s)
+✔ [8955/8960] Built ILab.MathematicsLearning.SetFreeVectors (5.9s)
+✔ [8956/8960] Built ILab.MathematicsLearning.SmallCategoryUniverse (5.8s)
+✔ [8957/8960] Built ILab.MathematicsLearning.SetRepresentableIsomorphism (5.9s)
+✔ [8958/8960] Built ILab.MathematicsLearning.SmallTopologicalAdjunctions (5.0s)
+✔ [8959/8960] Built ILab.MathematicsLearning.SmallVectorAdjunction (6.1s)
+Build completed successfully (8960 jobs).

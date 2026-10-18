@@ -25,8 +25,19 @@ def forbidden(name):
     return any(name == d or name.startswith(d + '.') for d in denied)
 
 for path in (ROOT / 'ILab/MathematicsLearning').glob('*.lean'):
-    for name in re.findall(r'^(?:noncomputable\s+)?(?:structure|inductive|def|abbrev|instance|theorem|lemma)\s+(\w+)', path.read_text(encoding='utf-8'), re.M):
-        assert not forbidden('ILab.MathematicsLearning.' + name), (path, name)
+    scopes=[]
+    for line in path.read_text(encoding='utf-8').splitlines():
+        ns=re.match(r'^namespace\s+([\w.]+)',line)
+        if ns:
+            scopes.append(ns[1]);continue
+        if re.match(r'^(?:noncomputable\s+)?section(?:\s|$)',line):
+            scopes.append('');continue
+        if re.match(r'^end(?:\s|$)',line):
+            scopes.pop();continue
+        declaration=re.match(r'^(?:@\[[^\n]*?\]\s*)?(?:(?:private|noncomputable)\s+)*(?:structure|inductive|def|abbrev|instance|theorem|lemma)\s+([\w.]+)',line)
+        if declaration:
+            name='.'.join([s for s in scopes if s]+[declaration[1]])
+            assert not forbidden(name), (path, name)
 
 nodes = load(GRAPH / 'compiled.json')
 assert not any(forbidden(n['id']) for n in nodes)

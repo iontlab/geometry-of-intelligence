@@ -288,26 +288,44 @@
       "proof": "Identities and composition preserve each specified structure. Hom sets are contained in function sets. The size claim is an additional foundational obligation, separate from the category instances.",
       "plain": "The allowed maps determine the category. The same underlying functions are not automatically valid maps of every kind of structure.",
       "story": "Mira compares four route books: arbitrary transfers, transfers preserving a marked place, linear transfers, and continuous transfers. Each book has its own admissibility rule, preserved by joining transfers.",
-      "limit": "Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections.",
+      "limit": "All four categories use actual small ZFC carriers and structure-preserving function graphs. Injective pointed/topology/vector codes give large object sets; all hom sets belong to the small universe. Proved operation-preserving hom bijections justify the Mathlib models. Every exact object collection is proved not small. The coefficient field is small under the source convention that sets are small unless otherwise specified.",
       "obligations": [
         {
           "id": "1.8.source",
-          "statement": "Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections.",
-          "status": "Incomplete original source obligation",
+          "statement": "All four categories use actual small ZFC carriers and structure-preserving function graphs. Injective pointed/topology/vector codes give large object sets; all hom sets belong to the small universe. Proved operation-preserving hom bijections justify the Mathlib models. Every exact object collection is proved not small. The coefficient field is small under the source convention that sets are small unless otherwise specified.",
+          "status": "Faithfully formalized and compiler-verified in the source set-universe representation",
           "declarations": [
             "ILab.MathematicsLearning.smallSetsCategory",
             "ILab.MathematicsLearning.smallSets_locallySmall",
-            "ILab.MathematicsLearning.smallSets_not_small"
+            "ILab.MathematicsLearning.smallSets_not_small",
+            "ILab.MathematicsLearning.SmallPointedSets.category",
+            "ILab.MathematicsLearning.SmallPointedSets.locallySmall",
+            "ILab.MathematicsLearning.SmallPointedSets.not_small",
+            "ILab.MathematicsLearning.SmallVectorSpaces.category",
+            "ILab.MathematicsLearning.SmallVectorSpaces.locallySmall",
+            "ILab.MathematicsLearning.SmallVectorSpaces.not_small",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.category",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.not_small"
           ],
-          "scope": "Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections."
+          "scope": "All four categories use actual small ZFC carriers and structure-preserving function graphs. Injective pointed/topology/vector codes give large object sets; all hom sets belong to the small universe. Proved operation-preserving hom bijections justify the Mathlib models. Every exact object collection is proved not small. The coefficient field is small under the source convention that sets are small unless otherwise specified."
         }
       ],
       "lean_declarations": [
         "ILab.MathematicsLearning.smallSetsCategory",
         "ILab.MathematicsLearning.smallSets_locallySmall",
-        "ILab.MathematicsLearning.smallSets_not_small"
+        "ILab.MathematicsLearning.smallSets_not_small",
+        "ILab.MathematicsLearning.SmallPointedSets.category",
+        "ILab.MathematicsLearning.SmallPointedSets.locallySmall",
+        "ILab.MathematicsLearning.SmallPointedSets.not_small",
+        "ILab.MathematicsLearning.SmallVectorSpaces.category",
+        "ILab.MathematicsLearning.SmallVectorSpaces.locallySmall",
+        "ILab.MathematicsLearning.SmallVectorSpaces.not_small",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.category",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.not_small"
       ],
-      "formalization_status": "Incomplete original source obligation"
+      "formalization_status": "Faithfully formalized and compiler-verified in the source set-universe representation"
     },
     {
       "key": "1.9",
@@ -369,22 +387,28 @@
       "proof": "Two inverse morphisms give inverse functions. Conversely, the inverse of a bijection preserves the point or linear structure when the forward map does. For topology, inverse continuity is required and is part of a homeomorphism.",
       "plain": "Bijectivity alone works for the first three examples with their stated structures. A continuous bijection alone need not be a topological isomorphism.",
       "story": "Mira can reverse a transfer only if its return obeys the same book's rules. The continuous-transfer book explicitly checks the return's continuity too.",
-      "limit": "Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8.",
+      "limit": "The four tests apply to the actual Example 1.8 set-coded morphisms: bijections, point-preserving bijections, linear bijections, and homeomorphisms. Fully faithful model bridges preserve the exact underlying functions and inverse equations.",
       "obligations": [
         {
           "id": "1.10.source",
-          "statement": "Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8.",
-          "status": "Incomplete original source obligation",
+          "statement": "The four tests apply to the actual Example 1.8 set-coded morphisms: bijections, point-preserving bijections, linear bijections, and homeomorphisms. Fully faithful model bridges preserve the exact underlying functions and inverse equations.",
+          "status": "Faithfully formalized and compiler-verified in the source set-universe representation",
           "declarations": [
-            "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective"
+            "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+            "ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective",
+            "ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism"
           ],
-          "scope": "Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8."
+          "scope": "The four tests apply to the actual Example 1.8 set-coded morphisms: bijections, point-preserving bijections, linear bijections, and homeomorphisms. Fully faithful model bridges preserve the exact underlying functions and inverse equations."
         }
       ],
       "lean_declarations": [
-        "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective"
+        "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism"
       ],
-      "formalization_status": "Incomplete original source obligation"
+      "formalization_status": "Faithfully formalized and compiler-verified in the source set-universe representation"
     },
     {
       "key": "1.11",
@@ -483,18 +507,40 @@
       "proof": "Each construction specifies its action on functions and preserves identities and composites. Free linear extension sends each basis vector to the basis vector indexed by its image.",
       "plain": "Forgetting discards structure. The other functors supply particular structures uniformly on sets and functions.",
       "story": "Mira either erases a book's special rules or equips an ordinary list with a new marked entry, a basis, or one of two extreme topologies. Every relabelling must extend consistently.",
-      "limit": "The forgetful, added-basepoint, free-vector-space, discrete and indiscrete functors need set-coded object/hom implementations and operation-preserving correspondences. Existing type-universe examples alone do not close this item.",
+      "limit": "All seven functors operate on the exact set-coded categories. Forgetful functors retain the carrier and graph. The adjoined point is the Option-equivalent disjoint-point set; free vectors are actual graphs of finitely supported coefficient functions with a proved linear equivalence to the direct sum. Discrete and indiscrete open sets are proved exactly P(S) and {empty,S}. Commuting model isomorphisms certify the object and arrow correspondences.",
       "obligations": [
         {
           "id": "1.13.source",
-          "statement": "The forgetful, added-basepoint, free-vector-space, discrete and indiscrete functors need set-coded object/hom implementations and operation-preserving correspondences. Existing type-universe examples alone do not close this item.",
-          "status": "Incomplete original source obligation",
-          "declarations": [],
-          "scope": "The forgetful, added-basepoint, free-vector-space, discrete and indiscrete functors need set-coded object/hom implementations and operation-preserving correspondences. Existing type-universe examples alone do not close this item."
+          "statement": "All seven functors operate on the exact set-coded categories. Forgetful functors retain the carrier and graph. The adjoined point is the Option-equivalent disjoint-point set; free vectors are actual graphs of finitely supported coefficient functions with a proved linear equivalence to the direct sum. Discrete and indiscrete open sets are proved exactly P(S) and {empty,S}. Commuting model isomorphisms certify the object and arrow correspondences.",
+          "status": "Faithfully formalized and compiler-verified in the source set-universe representation",
+          "declarations": [
+            "ILab.MathematicsLearning.SmallPointedSets.forget",
+            "ILab.MathematicsLearning.SmallVectorSpaces.forget",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.forget",
+            "ILab.MathematicsLearning.SmallPointedSets.addPoint",
+            "ILab.MathematicsLearning.SmallVectorSpaces.free",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens",
+            "ILab.MathematicsLearning.SetFreeVectors.linearEquiv"
+          ],
+          "scope": "All seven functors operate on the exact set-coded categories. Forgetful functors retain the carrier and graph. The adjoined point is the Option-equivalent disjoint-point set; free vectors are actual graphs of finitely supported coefficient functions with a proved linear equivalence to the direct sum. Discrete and indiscrete open sets are proved exactly P(S) and {empty,S}. Commuting model isomorphisms certify the object and arrow correspondences."
         }
       ],
-      "lean_declarations": [],
-      "formalization_status": "Incomplete original source obligation"
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SmallPointedSets.forget",
+        "ILab.MathematicsLearning.SmallVectorSpaces.forget",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.forget",
+        "ILab.MathematicsLearning.SmallPointedSets.addPoint",
+        "ILab.MathematicsLearning.SmallVectorSpaces.free",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens",
+        "ILab.MathematicsLearning.SetFreeVectors.linearEquiv"
+      ],
+      "formalization_status": "Faithfully formalized and compiler-verified in the source set-universe representation"
     },
     {
       "key": "1.14",
@@ -597,18 +643,32 @@
       "proof": "The object and functor collections require the larger universe. Local smallness and non-smallness must be assessed separately.",
       "plain": "A catalogue can be too large to list itself at its own level while fitting into the next level.",
       "story": "Mira's small-book catalogue fits inside the larger archive, although it is not itself a small book.",
-      "limit": "Needs set codes for all small categories and their functors, hom-set membership in the small universe, non-smallness of the exact object collection, and the huge-category inclusion. Construction 1.15 category-law exercise must remain withheld.",
+      "limit": "Injective ZFC codes retain complete category and functor data. A proved bijection includes every source-small strict category, not a skeleton. Functor codes lie in an explicit small function-set bound; the category object collection is large and not small. Its complete code is an object of the huge category of large categories. Existing Mathlib Cat laws are reused internally through the general model bridge; no independent solution of the assigned 1.15 category-law checks is exported.",
       "obligations": [
         {
           "id": "1.16.source",
-          "statement": "Needs set codes for all small categories and their functors, hom-set membership in the small universe, non-smallness of the exact object collection, and the huge-category inclusion. Construction 1.15 category-law exercise must remain withheld.",
-          "status": "Incomplete original source obligation",
-          "declarations": [],
-          "scope": "Needs set codes for all small categories and their functors, hom-set membership in the small universe, non-smallness of the exact object collection, and the huge-category inclusion. Construction 1.15 category-law exercise must remain withheld."
+          "statement": "Injective ZFC codes retain complete category and functor data. A proved bijection includes every source-small strict category, not a skeleton. Functor codes lie in an explicit small function-set bound; the category object collection is large and not small. Its complete code is an object of the huge category of large categories. Existing Mathlib Cat laws are reused internally through the general model bridge; no independent solution of the assigned 1.15 category-law checks is exported.",
+          "status": "Faithfully formalized and compiler-verified in the source set-universe representation",
+          "declarations": [
+            "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+            "ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes",
+            "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall",
+            "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small",
+            "ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv",
+            "ILab.MathematicsLearning.SetCategory.functorCodeEquiv"
+          ],
+          "scope": "Injective ZFC codes retain complete category and functor data. A proved bijection includes every source-small strict category, not a skeleton. Functor codes lie in an explicit small function-set bound; the category object collection is large and not small. Its complete code is an object of the huge category of large categories. Existing Mathlib Cat laws are reused internally through the general model bridge; no independent solution of the assigned 1.15 category-law checks is exported."
         }
       ],
-      "lean_declarations": [],
-      "formalization_status": "Incomplete original source obligation"
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv",
+        "ILab.MathematicsLearning.SetCategory.functorCodeEquiv"
+      ],
+      "formalization_status": "Faithfully formalized and compiler-verified in the source set-universe representation"
     },
     {
       "key": "1.17",
@@ -1311,14 +1371,23 @@
       "proof": "The authors use full faithfulness of Yoneda and Proposition 1.24 for the incoming-map comparison, then pass to the opposite category for the outgoing-map comparison. They explicitly assign the invertibility equivalence for f and f.op as an exercise; that step is withheld.",
       "plain": "A map is reversible exactly when every incoming probe, or every outgoing probe, sees it as a bijection.",
       "story": "Mira tests whether a permit is reversible by how it acts on every arrival, or on every departure. The statement requires every possible test object. The embedded exercise about reversing arrow direction is left unsolved.",
-      "limit": "The embedded opposite-invertibility step is assigned. Original complete portions and the exercise marker remain. No completed assigned proof is mapped.",
+      "limit": "The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized.",
       "obligations": [
         {
           "id": "2.6.source",
-          "statement": "The embedded opposite-invertibility step is assigned. Original complete portions and the exercise marker remain. No completed assigned proof is mapped.",
+          "statement": "The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized.",
+          "status": "Author-proved (i) iff (ii) verified on exact source hom sets",
+          "declarations": [
+            "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism"
+          ],
+          "scope": "The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized."
+        },
+        {
+          "id": "2.6.exercise",
+          "statement": "The opposite-invertibility step is assigned by the authors.",
           "status": "assigned exercise solution withheld",
           "declarations": [],
-          "scope": "The embedded opposite-invertibility step is assigned. Original complete portions and the exercise marker remain. No completed assigned proof is mapped."
+          "scope": "No independently generated solution or complete three-way proof is published."
         }
       ],
       "exercise_exclusion": {
@@ -1327,8 +1396,10 @@
         "excluded_scope": "embedded invertibility iff opposite invertibility only",
         "occurrences": 1
       },
-      "lean_declarations": [],
-      "formalization_status": "Assigned exercise solution withheld; original text retained"
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism"
+      ],
+      "formalization_status": "Author-proved (i) iff (ii) verified; embedded exercise solution withheld"
     },
     {
       "key": "2.7",
@@ -1352,18 +1423,28 @@
       "proof": "Apply preservation and reflection of object isomorphisms to the fully faithful Yoneda functor, using the componentwise characterization of natural isomorphisms.",
       "plain": "The complete incoming-map profile determines an object up to isomorphism, including how all probes transform.",
       "story": "Mira compares two towns' incoming-permit catalogues by a reversible, route-compatible correspondence. Yoneda reconstructs a reversible permit between the towns.",
-      "limit": "The ordinary Mathlib Yoneda result is retained as independent support. Still needs a representation theorem for the actual small-set-valued representables and their natural isomorphisms, preserving the source universe domains without publishing the assigned 1.19/2.1/2.4 solutions.",
+      "limit": "Representables take values in the actual small hom sets and their arrows are literally the graphs of source precomposition. The proved model correspondence transports natural isomorphisms in both directions. The conclusion uses the source componentwise two-sided-inverse definition. Mathlib Yoneda is reused internally for this non-exercise corollary; no independent proofs of the assigned 1.19/2.1/2.4 exercises are supplied.",
       "obligations": [
         {
           "id": "2.7.source",
-          "statement": "The ordinary Mathlib Yoneda result is retained as independent support. Still needs a representation theorem for the actual small-set-valued representables and their natural isomorphisms, preserving the source universe domains without publishing the assigned 1.19/2.1/2.4 solutions.",
-          "status": "Incomplete original source obligation",
-          "declarations": [],
-          "scope": "The ordinary Mathlib Yoneda result is retained as independent support. Still needs a representation theorem for the actual small-set-valued representables and their natural isomorphisms, preserving the source universe domains without publishing the assigned 1.19/2.1/2.4 solutions."
+          "statement": "Representables take values in the actual small hom sets and their arrows are literally the graphs of source precomposition. The proved model correspondence transports natural isomorphisms in both directions. The conclusion uses the source componentwise two-sided-inverse definition. Mathlib Yoneda is reused internally for this non-exercise corollary; no independent proofs of the assigned 1.19/2.1/2.4 exercises are supplied.",
+          "status": "Faithfully formalized and compiler-verified in the source set-universe representation",
+          "declarations": [
+            "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+            "ILab.MathematicsLearning.SetCategory.representable_object",
+            "ILab.MathematicsLearning.SetCategory.representable_map",
+            "ILab.MathematicsLearning.SetCategory.representable_model"
+          ],
+          "scope": "Representables take values in the actual small hom sets and their arrows are literally the graphs of source precomposition. The proved model correspondence transports natural isomorphisms in both directions. The conclusion uses the source componentwise two-sided-inverse definition. Mathlib Yoneda is reused internally for this non-exercise corollary; no independent proofs of the assigned 1.19/2.1/2.4 exercises are supplied."
         }
       ],
-      "lean_declarations": [],
-      "formalization_status": "Incomplete original source obligation"
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+        "ILab.MathematicsLearning.SetCategory.representable_object",
+        "ILab.MathematicsLearning.SetCategory.representable_map",
+        "ILab.MathematicsLearning.SetCategory.representable_model"
+      ],
+      "formalization_status": "Faithfully formalized and compiler-verified in the source set-universe representation"
     },
     {
       "key": "3.1",
@@ -1428,18 +1509,28 @@
       "proof": "A pointed map from S with a new basepoint is determined by an arbitrary function on S; a linear map from the free space is determined on basis vectors. Every map from a discrete space is continuous, as is every map into an indiscrete space. These correspondences are natural.",
       "plain": "Each universal construction makes structured maps correspond exactly to simpler underlying functions.",
       "story": "Mira equips a plain list with precisely the rules needed so that choosing a structured transfer amounts to choosing an ordinary transfer. The discrete and indiscrete desks solve opposite directions of this task.",
-      "limit": "The four actual example adjunctions require the pending structured-set categories and functors from 1.8/1.13, including the exact free-vector-space carrier and source universe bounds.",
+      "limit": "All four unit/counit adjunctions are on the actual Example 1.8 categories and Example 1.13 functors. The library adjunctions are restricted only after fully faithful hom correspondences and both commuting model squares have been proved. Free-vector, disjoint-point and topology carriers satisfy the source universe bounds. No general assigned 3.3 hom-bijection proof is exported.",
       "obligations": [
         {
           "id": "3.2.source",
-          "statement": "The four actual example adjunctions require the pending structured-set categories and functors from 1.8/1.13, including the exact free-vector-space carrier and source universe bounds.",
-          "status": "Incomplete original source obligation",
-          "declarations": [],
-          "scope": "The four actual example adjunctions require the pending structured-set categories and functors from 1.8/1.13, including the exact free-vector-space carrier and source universe bounds."
+          "statement": "All four unit/counit adjunctions are on the actual Example 1.8 categories and Example 1.13 functors. The library adjunctions are restricted only after fully faithful hom correspondences and both commuting model squares have been proved. Free-vector, disjoint-point and topology carriers satisfy the source universe bounds. No general assigned 3.3 hom-bijection proof is exported.",
+          "status": "Faithfully formalized and compiler-verified in the source set-universe representation",
+          "declarations": [
+            "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+            "ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction",
+            "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction"
+          ],
+          "scope": "All four unit/counit adjunctions are on the actual Example 1.8 categories and Example 1.13 functors. The library adjunctions are restricted only after fully faithful hom correspondences and both commuting model squares have been proved. Free-vector, disjoint-point and topology carriers satisfy the source universe bounds. No general assigned 3.3 hom-bijection proof is exported."
         }
       ],
-      "lean_declarations": [],
-      "formalization_status": "Incomplete original source obligation"
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+        "ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction"
+      ],
+      "formalization_status": "Faithfully formalized and compiler-verified in the source set-universe representation"
     },
     {
       "key": "3.3",
@@ -2033,61 +2124,41 @@
       "proof": "Equality transport is available in ordinary dependent type theory. Group isomorphisms preserve multiplication, the identity and element order. The structure identity principle requires the intended univalent/homotopical setting.",
       "plain": "Ordinary equality supports substitution. Isomorphism preserves structural properties, but not every statement about how a structure was represented as sets.",
       "story": "Two clerks encode the same two-state group with different labels. An element of order two survives translation, while the printed name of the identity can change. Mira distinguishes a change of labels from a change of group structure.",
-      "limit": "Group isomorphism is not automatically equality of Lean's bundled groups. A proof of order invariance does not prove the structure identity principle.",
+      "limit": "The concrete integer carriers {0,1} and {1,-1}, their exact operations and different numerical identities are represented by proved equivalences. Order-two invariance and equality transport are checked. The higher Structure Identity Principle itself awaits the authors’ later univalent foundations.",
       "obligations": [
         {
-          "id": "intro.sip.1",
-          "statement": "Transport predicates across equality",
-          "status": "checked in the stated Lean formulation",
+          "id": "intro.sip.concrete",
+          "statement": "The two printed integer-carrier groups are isomorphic, but only the first has numerical identity zero; order-two existence is invariant under group isomorphism. Equality transports predicates and structures.",
+          "status": "Precisely specified ordinary mathematical assertions verified",
           "declarations": [
-            "ILab.MathematicsLearning.equality_substitution"
+            "ILab.MathematicsLearning.order_two_invariant",
+            "ILab.MathematicsLearning.equality_substitution",
+            "ILab.MathematicsLearning.equality_transport",
+            "ILab.MathematicsLearning.ConcreteGroupPresentations.presentationIso",
+            "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_multiplication",
+            "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_multiplication",
+            "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_identity",
+            "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity_ne_zero"
           ],
-          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+          "scope": "The concrete integer carriers {0,1} and {1,-1}, their exact operations and different numerical identities are represented by proved equivalences. Order-two invariance and equality transport are checked. The higher Structure Identity Principle itself awaits the authors’ later univalent foundations."
         },
         {
-          "id": "intro.sip.2",
-          "statement": "Transport dependent data across equality",
-          "status": "checked in the stated Lean formulation",
-          "declarations": [
-            "ILab.MathematicsLearning.equality_transport"
-          ],
-          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
-        },
-        {
-          "id": "intro.sip.3",
-          "statement": "Group isomorphisms preserve existence of an element of order two",
-          "status": "checked in the stated Lean formulation",
-          "declarations": [
-            "ILab.MathematicsLearning.order_two_invariant"
-          ],
-          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
-        },
-        {
-          "id": "intro.sip.4",
-          "statement": "Explicit cyclic-two/sign-group isomorphism and different identity labels",
-          "status": "checked in the stated Lean formulation",
-          "declarations": [
-            "ILab.MathematicsLearning.cyclicTwoSigns",
-            "ILab.MathematicsLearning.cyclic_two_zero_maps_to_one",
-            "ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one"
-          ],
-          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
-        },
-        {
-          "id": "intro.sip.5",
-          "statement": "Structure identity principle in the intended foundations",
-          "status": "requires different foundations or a specified higher-category model",
+          "id": "intro.sip.higher",
+          "statement": "Group identifications correspond to group isomorphisms in the intended higher identity types.",
+          "status": "Awaits later source definitions and univalent foundations",
           "declarations": [],
-          "scope": "Lean is proof-irrelevant; these notes only announce the intended higher foundations. No all-dimensional coherence or univalence theorem is claimed."
+          "scope": "No ordinary Lean equality replacement or invented axiom is used."
         }
       ],
       "lean_declarations": [
+        "ILab.MathematicsLearning.order_two_invariant",
         "ILab.MathematicsLearning.equality_substitution",
         "ILab.MathematicsLearning.equality_transport",
-        "ILab.MathematicsLearning.order_two_invariant",
-        "ILab.MathematicsLearning.cyclicTwoSigns",
-        "ILab.MathematicsLearning.cyclic_two_zero_maps_to_one",
-        "ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one"
+        "ILab.MathematicsLearning.ConcreteGroupPresentations.presentationIso",
+        "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_multiplication",
+        "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_multiplication",
+        "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_identity",
+        "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity_ne_zero"
       ],
       "formalization_status": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed"
     },
@@ -2188,30 +2259,31 @@
       "proof": "The explicit functors and natural isomorphisms are given in items 3.8–3.9; the object sets have cardinalities one and two.",
       "plain": "Equivalence permits redundant isomorphic objects. A strict isomorphism of categories would require inverse object functions.",
       "story": "Mira's two-room ledger and one-room model have different numbers of names but equivalent permit structure.",
-      "limit": "The distinction concerns object presentations and categorical equivalence, not equality of the chosen object sets.",
+      "limit": "The exact set-coded one-object and two-object categories are equivalent but have no strictly inverse functors; strict inverses imply an actual object bijection. Prospective synthetic equality-isomorphism principles await later axioms.",
       "obligations": [
         {
-          "id": "equivalences.motivation.1",
-          "statement": "One-object category has object cardinality one",
-          "status": "checked in the stated Lean formulation",
+          "id": "equivalences.motivation.strict",
+          "statement": "Strict inverse functors give a bijection of object sets; equivalent categories need not have one.",
+          "status": "Verified on the exact set-coded categories",
           "declarations": [
-            "ILab.MathematicsLearning.one_room_cardinality"
+            "ILab.MathematicsLearning.walking_inclusion_equivalence",
+            "ILab.MathematicsLearning.strict_inverse_object_bijective",
+            "ILab.MathematicsLearning.walking_not_strictly_isomorphic_sets"
           ],
-          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+          "scope": "The exact set-coded one-object and two-object categories are equivalent but have no strictly inverse functors; strict inverses imply an actual object bijection. Prospective synthetic equality-isomorphism principles await later axioms."
         },
         {
-          "id": "equivalences.motivation.2",
-          "statement": "Walking isomorphism is not strictly isomorphic to the one-object category",
-          "status": "checked in the stated Lean formulation",
-          "declarations": [
-            "ILab.MathematicsLearning.walking_not_strictly_isomorphic"
-          ],
-          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+          "id": "equivalences.motivation.synthetic",
+          "statement": "The intended synthetic foundation builds in invariance under isomorphism.",
+          "status": "Prospective source description; later axioms awaited",
+          "declarations": [],
+          "scope": "No missing synthetic foundations are invented."
         }
       ],
       "lean_declarations": [
-        "ILab.MathematicsLearning.one_room_cardinality",
-        "ILab.MathematicsLearning.walking_not_strictly_isomorphic"
+        "ILab.MathematicsLearning.walking_inclusion_equivalence",
+        "ILab.MathematicsLearning.strict_inverse_object_bijective",
+        "ILab.MathematicsLearning.walking_not_strictly_isomorphic_sets"
       ],
       "formalization_status": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed"
     },
@@ -2238,13 +2310,13 @@
       "limit": "Do not assume the original comparison isomorphisms already satisfy the triangle identities.",
       "obligations": [
         {
-          "id": "3.5.adjoint_upgrade.1",
-          "statement": "Upgrade arbitrary quasi-inverse natural isomorphisms to adjoint-equivalence data",
-          "status": "checked in the stated Lean formulation",
+          "id": "3.5.adjoint_upgrade.source",
+          "statement": "Every source equivalence can be promoted to an adjoint equivalence.",
+          "status": "Faithfully formalized with the source set-universe bounds; included in item 3.5, not counted twice",
           "declarations": [
-            "ILab.MathematicsLearning.quasiInverseToEquivalence"
+            "ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint"
           ],
-          "scope": "Exact checked data/law or an explicitly scoped Mathlib reuse. Construction fields and equivalence inverse laws are part of the referenced signatures/data."
+          "scope": "The source quasi-inverse is promoted on the same set-coded categories."
         }
       ],
       "lean_declarations": [

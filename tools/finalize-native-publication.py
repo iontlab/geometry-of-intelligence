@@ -28,9 +28,20 @@ pdf_hash=hashlib.sha256(urllib.request.urlopen(pdf,timeout=30).read()).hexdigest
 assert pdf_hash==old_manifest['source_pdf_sha256']
 write(E/'media-removal.json',{'removed':removed,'retained_pdf':pdf,'pdf_sha256':pdf_hash})
 qa=load(W/'rendered/final-panel-qa.json')
+release=load(R/'docs/formalization/mathematics-learning/explanations/release.json')['release']
 assert len(qa)==235 and len({(r['chapter'],r['control']) for r in qa})==47
 assert all(r['text'].strip() and r['errors']==0 for r in qa)
-write(E/'panel-qa.json',[{k:r[k] for k in ['chapter','control','layer','errors','links']} for r in qa])
+assert all(r['release']==release for r in qa)
+write(E/'panel-qa.json',[{k:r[k] for k in ['chapter','control','layer','errors','links','release']} for r in qa])
+graph_layers=load(E/'graph-layers.json')
+graph_records=load(R/'docs/formalization/mathematics-learning/explanations/registry.v0.1.json')['records']
+assert len(graph_layers)==5*sum(r['kind']=='graph-result' for r in graph_records)
+assert all(r['release']==release and r['contentPresent'] and r['errors']==0 for r in graph_layers)
+graph_links=load(E/'graph-deep-links.json')
+expected_links={u for r in qa if r['layer']=='Verification' for u in r['links']
+  if u.startswith('https://iontlab.org/formalization/mathematics-learning/?declaration=')}
+assert {r['url'] for r in graph_links}==expected_links
+assert all(r['selected'] and r['auditDisplayed'] and r['release']==release for r in graph_links)
 captures=load(W/'rendered/editor-bindings.json')
 assert len(captures)==8 and all(c['facsimiles']==0 and not c['mathErrors'] for c in captures)
 write(E/'native-render-qa.json',[{k:c[k] for k in ['page_id','revision','raw_sha256','mathCount','mathErrors','facsimiles']}|{'vector_diagrams':len(c['diagrams'])} for c in captures])

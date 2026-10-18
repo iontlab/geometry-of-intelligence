@@ -48,7 +48,24 @@ const mappings = {
   SetUniverseClosure:'Products and function sets derived from exactly the four stated set-universe assumptions.',
   SmallSetsCategory:'Example 1.8 and 1.10, Set case only: all small ZFC sets, actual function sets, local smallness, non-smallness and bijective isomorphisms.',
   SetCategoryEquivalences:'Exact set-coded formulations of 3.1 and 3.4–3.7, including both equivalences of an adjoint equivalence and the adjoint upgrade.',
-  FiniteSetCategories:'Exact finite set-coded terminal category, walking isomorphism, object-selection uniqueness and inclusion equivalence.'
+  FiniteSetCategories:'Exact finite set-coded terminal category, walking isomorphism, object-selection uniqueness and inclusion equivalence.',
+  SetCategoryModels:'General operation-preserving correspondence between specified ZFC object/hom codes and modeled categories; explicit fully faithful functor restrictions.',
+  SetOption:'Disjoint addition of a distinguished point, with explicit Option equivalence and source-universe bound.',
+  SmallPointedSets:'Actual pointed small-set category, exact morphism graphs, size bounds, non-smallness, isomorphism test and forgetful functor.',
+  SmallPointedAdjunction:'The add-basepoint functor and unit/counit adjunction on the actual small-set categories, with proved commuting model squares.',
+  SetSubsets:'Bijective correspondence between subsets of membership types and actual ZFC subsets.',
+  SmallTopologicalSpaces:'All small topological spaces encoded by their carrier and open-set family; continuous graph morphisms, size bounds and homeomorphism test.',
+  SmallTopologicalAdjunctions:'Exact discrete, forgetful and indiscrete functors; stated open-set families and both source adjunctions.',
+  SmallVectorSpaces:'All vector-space structures on small ZFC sets, injective operation codes, linear graphs and the bijective isomorphism criterion.',
+  SetFreeVectors:'Actual finitely supported coefficient graphs, their source-universe bounds and proved linear correspondence to the direct sum.',
+  SmallVectorAdjunction:'Free and forgetful vector functors, their exact adjunction and non-smallness of the vector-space object collection.',
+  SetRepresentableIsomorphism:'Non-exercise Corollary 2.7 with actual small-set-valued representables and componentwise natural isomorphisms; library prerequisites reused internally.',
+  SetIndexedFamilies:'ZFC graphs of indexed set families, injectivity and closure under the source universe assumptions.',
+  SetCategoryCodes:'Injective complete category codes with actual universe bounds and data-preserving restriction/enlargement.',
+  SetFunctorCodes:'Injective exact functor codes in an explicit small bounding set.',
+  SmallCategoryUniverse:'Remark 1.16: all source-small categories, small functor hom sets, non-small object collection, and exact huge-category inclusion.',
+  ConcreteGroupPresentations:'Introduction: actual integer carriers {0,1} and {1,-1}, addition modulo two versus multiplication, isomorphism and unequal numerical identities.',
+  SetCategoryPresentation:'Introduction to equivalences: strict inverse functors require an object bijection; the exact singleton and walking-isomorphism categories are not strictly isomorphic.'
 };
 for(const n of raw) {
   if(!n.id.startsWith('ILab.MathematicsLearning.')) throw new Error('Out-of-scope node');

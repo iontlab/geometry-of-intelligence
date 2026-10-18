@@ -1,10 +1,10 @@
 [
   {
     "path": "public_html/formalization/mathematics-learning/index.html",
-    "sha256": "173bfa3d0e893cd29ba8baabdcfc95d1eb01afa51d455b91fa21a37e642e5190",
-    "bytes": 6690,
+    "sha256": "91f6770a506f7e1d3bf6dfa3881583fc2a6fb09e48ff358b90f287fb81c403e6",
+    "bytes": 6813,
     "url": "https://iontlab.org/formalization/mathematics-learning/index.html",
-    "live_sha256": "173bfa3d0e893cd29ba8baabdcfc95d1eb01afa51d455b91fa21a37e642e5190",
+    "live_sha256": "91f6770a506f7e1d3bf6dfa3881583fc2a6fb09e48ff358b90f287fb81c403e6",
     "verified": true
   },
   {
@@ -41,34 +41,34 @@
   },
   {
     "path": "public_html/formalization/mathematics-learning/data.json",
-    "sha256": "0fb3810a6ecc68a3dc851658dc2314bbb7972b166215079fccf55ab220070629",
-    "bytes": 1188191,
+    "sha256": "3f3749d51bd3cffbc2010e47528e029cbb7e0c7fda2a045f4c9ca9d97917120c",
+    "bytes": 2371992,
     "url": "https://iontlab.org/formalization/mathematics-learning/data.json",
-    "live_sha256": "0fb3810a6ecc68a3dc851658dc2314bbb7972b166215079fccf55ab220070629",
+    "live_sha256": "3f3749d51bd3cffbc2010e47528e029cbb7e0c7fda2a045f4c9ca9d97917120c",
     "verified": true
   },
   {
     "path": "public_html/formalization/mathematics-learning/compiled.json",
-    "sha256": "4d0ad625c2dcdc758203685740c6253ff8bbf3f9e4c8cd2a339574293ad783e3",
-    "bytes": 425843,
+    "sha256": "1b1c045f05a06a5f744dfcf7f938979cd6c38b0b9af20c2d5d2befa483bcb285",
+    "bytes": 842846,
     "url": "https://iontlab.org/formalization/mathematics-learning/compiled.json",
-    "live_sha256": "4d0ad625c2dcdc758203685740c6253ff8bbf3f9e4c8cd2a339574293ad783e3",
+    "live_sha256": "1b1c045f05a06a5f744dfcf7f938979cd6c38b0b9af20c2d5d2befa483bcb285",
     "verified": true
   },
   {
     "path": "public_html/formalization/mathematics-learning/mathematics.json",
-    "sha256": "45fac6039ec16d124739b90c9134e19514b03d40812afc012204943377eb0343",
-    "bytes": 41726,
+    "sha256": "9370026f0dbba2c9673faf37558060c00991501846113c0f5e89ef5d00f0288d",
+    "bytes": 54499,
     "url": "https://iontlab.org/formalization/mathematics-learning/mathematics.json",
-    "live_sha256": "45fac6039ec16d124739b90c9134e19514b03d40812afc012204943377eb0343",
+    "live_sha256": "9370026f0dbba2c9673faf37558060c00991501846113c0f5e89ef5d00f0288d",
     "verified": true
   },
   {
     "path": "public_html/formalization/mathematics-learning/source-audit.json",
-    "sha256": "8b50b52ad4bf298bd5e4c00be5c86e83b619636e7bbfbb0c826e6e163b9e378e",
-    "bytes": 45336,
+    "sha256": "443417e9a475728494b34d9901aae542580030a11e34473a8256973b8e3ebe12",
+    "bytes": 49268,
     "url": "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
-    "live_sha256": "8b50b52ad4bf298bd5e4c00be5c86e83b619636e7bbfbb0c826e6e163b9e378e",
+    "live_sha256": "443417e9a475728494b34d9901aae542580030a11e34473a8256973b8e3ebe12",
     "verified": true
   },
   {
@@ -113,18 +113,18 @@
   },
   {
     "path": "public_html/formalization/mathematics-learning/explanations/registry.v0.1.json",
-    "sha256": "d9c64b3425051e5a272d9005645774fe2aff0575c8af3094e61d1671f0d286cb",
-    "bytes": 293891,
+    "sha256": "58e95f74283d28a1338d2534188ef15784ab859a0c4a201f27589eccc6a4524e",
+    "bytes": 323660,
     "url": "https://iontlab.org/formalization/mathematics-learning/explanations/registry.v0.1.json",
-    "live_sha256": "d9c64b3425051e5a272d9005645774fe2aff0575c8af3094e61d1671f0d286cb",
+    "live_sha256": "58e95f74283d28a1338d2534188ef15784ab859a0c4a201f27589eccc6a4524e",
     "verified": true
   },
   {
     "path": "public_html/formalization/mathematics-learning/explanations/release.json",
-    "sha256": "6fbe6891fa2c9192555f4e1d2b094494643a26d0d82d472918f5fd2d88db032f",
-    "bytes": 245,
+    "sha256": "862f179952d3dc273fd4ac6a546e5d96ca0ebdff636c66c6d4e5b3fb60455896",
+    "bytes": 248,
     "url": "https://iontlab.org/formalization/mathematics-learning/explanations/release.json",
-    "live_sha256": "6fbe6891fa2c9192555f4e1d2b094494643a26d0d82d472918f5fd2d88db032f",
+    "live_sha256": "862f179952d3dc273fd4ac6a546e5d96ca0ebdff636c66c6d4e5b3fb60455896",
     "verified": true
   },
   {

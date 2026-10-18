@@ -4,19 +4,19 @@ The mathematical specification is Lyne Moser and Tashi Walde’s complete 13-pag
 
 ===== Current source coverage =====
 
-**23 of 44 numbered original items are fully and faithfully formalized; 15 are affected by assigned exercises, and 6 eligible items remain incomplete.**
+**29 of 44 numbered original items are fully and faithfully formalized; 15 are affected by assigned exercises, and 0 eligible items remain incomplete.**
 
-The incomplete items are 1.8, 1.10, 1.13, 1.16, 2.7 and 3.2. Their precise missing set-coded constructions and correspondence proofs are recorded in [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|the coverage page]] and the [[https://iontlab.org/formalization/mathematics-learning/source-audit.json|source-to-Lean fidelity audit]]. Valid earlier type-universe mathematics is retained as independent supporting work and is not counted as a faithful formalization of different set-universe objects.
+Every eligible numbered item is now represented in the manuscript’s set-universe framework. The exact structured-set categories, seven example functors, four adjunctions, category-universe bounds and small-set-valued representable correspondence are recorded in [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|the coverage page]] and the [[https://iontlab.org/formalization/mathematics-learning/source-audit.json|source-to-Lean fidelity audit]]. Valid earlier type-universe mathematics remains separately identified supporting work.
 
 The introduction also anticipates later higher/synthetic foundations. No univalence or full higher-coherence theorem is claimed; no missing author axioms have been invented.
 
 ===== Compiler evidence =====
 
-The clean Lean 4.34.0 build completed successfully with 8943 jobs. The compiler audit covers **449 declarations in 15 learning modules**, including **188 authored declarations**, with **1686 direct compiler-derived project dependencies**. These are implementation counts, not source coverage counts.
+The clean Lean 4.34.0 build completed successfully with 8960 jobs. The compiler audit covers **781 declarations in 32 learning modules**, including **392 authored declarations**, with **3836 direct compiler-derived project dependencies**. These are implementation counts, not source coverage counts.
 
 The only permitted foundational dependencies are ''propext'', ''Classical.choice'' and ''Quot.sound''. No admitted expressions or project-added axioms are accepted. The manuscript’s existence of the three nested set-universes remains an explicit hypothesis.
 
-Exact checked Lean source commit: ''0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88''. Mathlib revision: ''5ed2965256430c3649e86755f9576b54eca72435''. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Source and convention distinctions]].
+Exact checked Lean source commit: ''0070c175806aa22b8227c86af53c5ca78bdb8d34''. Mathlib revision: ''5ed2965256430c3649e86755f9576b54eca72435''. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Source and convention distinctions]].
 
 [[https://github.com/iontlab/geometry-of-intelligence/tree/codex/source-faithful-native-manuscript/formalization/mathematics-learning/verification|Build log, compiler audit, source hashes and declaration mappings]] · [[https://github.com/iontlab/geometry-of-intelligence/blob/codex/source-faithful-native-manuscript/docs/mathematics-learning/original/native/source-audit.json|Exact source-to-Lean correspondence and pending prerequisites]].
 

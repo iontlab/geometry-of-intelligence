@@ -2,7 +2,7 @@
   {
     "page": "start",
     "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:start",
-    "sha256": "dfafab7f11349cef8136b9fa0705f075ec9c2656adad3f5787f5437f5fbdf345",
+    "sha256": "8d22d0d19e6be2ddc2721c24d215fb21cd7a2f67e7bce2c165342706338e4b0c",
     "prepared_bytes_match": true
   },
   {
@@ -14,13 +14,13 @@
   {
     "page": "coverage",
     "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:coverage",
-    "sha256": "fa6cd3b4dac0cd6170572716a65780e3e1217905ca04ced302aafc096e4182be",
+    "sha256": "edcb0f1209aae823b0cb467a4d242d97481716ee62aac9dc7beeee4e745b2234",
     "prepared_bytes_match": true
   },
   {
     "page": "verification",
     "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:verification",
-    "sha256": "ec0bbd040b05f55568eb48392409255587e20581afa008acecb8c0707109fa61",
+    "sha256": "7d96ce94851a1b22d98cef9a49767bd1bacd4a5994e177eb070885ae03ada989",
     "prepared_bytes_match": true
   }
 ]

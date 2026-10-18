@@ -2,9 +2,9 @@
   "schema_version": 1,
   "clean_build_command": "lake clean rq001; lake build",
   "extract_command": "lake env lean tools/ExtractLearningGraph.lean",
-  "compiled_declarations": 449,
-  "compiled_sha256": "4d0ad625c2dcdc758203685740c6253ff8bbf3f9e4c8cd2a339574293ad783e3",
-  "clean_build_log_sha256": "7f6de550a3f521e1612e33698b87d89bfe044013a78f6602bd8238ce94ac0c3e",
+  "compiled_declarations": 781,
+  "compiled_sha256": "1b1c045f05a06a5f744dfcf7f938979cd6c38b0b9af20c2d5d2befa483bcb285",
+  "clean_build_log_sha256": "1977b8863ac9776212ee088b707c20f0ce1211c85cc49f9574703047971a266d",
   "allowed_axioms": [
     "propext",
     "Classical.choice",
@@ -28,6 +28,11 @@
       "sha256": "bbeda1ad9497ee2fc1640f0d44b9bd0854df4aaa36e949a7d05943a4aa66e9c4"
     },
     {
+      "name": "ILab.MathematicsLearning.ConcreteGroupPresentations",
+      "path": "ILab/MathematicsLearning/ConcreteGroupPresentations.lean",
+      "sha256": "59508db0d00ca156a3b4e95cf657f04fb9ba076657f5478f264bfb2d6f746383"
+    },
+    {
       "name": "ILab.MathematicsLearning.FiniteSetCategories",
       "path": "ILab/MathematicsLearning/FiniteSetCategories.lean",
       "sha256": "ff588678555e16e1feeb29a7811083d36e4af7e6746191e5a4ed8227afdc7537"
@@ -43,9 +48,29 @@
       "sha256": "d91aafceba1ad0e6aae96ad256b539c0a3f49431ce153731669a7dbb5aed2a5c"
     },
     {
+      "name": "ILab.MathematicsLearning.SetCategoryCodes",
+      "path": "ILab/MathematicsLearning/SetCategoryCodes.lean",
+      "sha256": "a980a432aea5bc3a78c572a9723a31f50f9bef47158217a3b3095a3bfdf08d9b"
+    },
+    {
       "name": "ILab.MathematicsLearning.SetCategoryEquivalences",
       "path": "ILab/MathematicsLearning/SetCategoryEquivalences.lean",
       "sha256": "092a2a950e12697bb4df8db41e1d5734f27b4ca9782b6996d35532989c40e555"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SetCategoryModels",
+      "path": "ILab/MathematicsLearning/SetCategoryModels.lean",
+      "sha256": "149b0c68e938a3f645748c10591f8837d55ea5c7a705f957636c95e2ab6977fe"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SetCategoryPresentation",
+      "path": "ILab/MathematicsLearning/SetCategoryPresentation.lean",
+      "sha256": "921f9551ce344e19e7927ef997a61e37e36b5f87144facfc5446927bb0e11149"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SetFreeVectors",
+      "path": "ILab/MathematicsLearning/SetFreeVectors.lean",
+      "sha256": "b5ae37a27b84ee9e1bfc5ab96664190c0b93787968a8dee360f605ab326cad6a"
     },
     {
       "name": "ILab.MathematicsLearning.SetFunctions",
@@ -53,9 +78,34 @@
       "sha256": "7cbc35515ee90538dadeb8c996d2da2e63666cb672c458e2cbdf3c030d35bbad"
     },
     {
+      "name": "ILab.MathematicsLearning.SetFunctorCodes",
+      "path": "ILab/MathematicsLearning/SetFunctorCodes.lean",
+      "sha256": "2d1f6164d5866318c27e7494cc84f49904b3231cc0ce5cec56fe1f061b1f7f54"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SetIndexedFamilies",
+      "path": "ILab/MathematicsLearning/SetIndexedFamilies.lean",
+      "sha256": "5370a589b8abff5edeb7e8a5b22f09444e6bb2c9070a29d5af03a10d75ce3ba8"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SetOption",
+      "path": "ILab/MathematicsLearning/SetOption.lean",
+      "sha256": "7ead5ec16a3d454dcce108fa8d66f5dbd445f7d16b7fb6b77fb2f1e6256b6c8e"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SetRepresentableIsomorphism",
+      "path": "ILab/MathematicsLearning/SetRepresentableIsomorphism.lean",
+      "sha256": "2f5b8b50a7baa143d94dc73541cd562b2c75fa54572c9f49fb243ad27700d857"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SetSubsets",
+      "path": "ILab/MathematicsLearning/SetSubsets.lean",
+      "sha256": "83a47a5dcd490dacdb66d64544bdc5ea5e80de0fd40ba49195bb98b3eb3442f2"
+    },
+    {
       "name": "ILab.MathematicsLearning.SetUniverseClosure",
       "path": "ILab/MathematicsLearning/SetUniverseClosure.lean",
-      "sha256": "3aacc995c5ea5deceb705a0a9e3e9af8f18ce38b3c36a7a3f0e598e04da1a4d0"
+      "sha256": "3d6fc789e77372c23ac20695a0cc3964d77bedd1cb7e320152d8eb49b5cb2903"
     },
     {
       "name": "ILab.MathematicsLearning.SetUniverses",
@@ -63,9 +113,44 @@
       "sha256": "b567608955ba989ebc96b7ee1038c80a06d9f381bd63aa24ddfb2fd6d9c43de4"
     },
     {
+      "name": "ILab.MathematicsLearning.SmallCategoryUniverse",
+      "path": "ILab/MathematicsLearning/SmallCategoryUniverse.lean",
+      "sha256": "06970112c9a3aee225771eafc2f12361e268a3e8ca8a87053bcae9ed9e9b0bcb"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SmallPointedAdjunction",
+      "path": "ILab/MathematicsLearning/SmallPointedAdjunction.lean",
+      "sha256": "0e6dcf034eafaa8cc57104221f5e7bbbf9bf075ec4e764a6b59b0b0a0a6c9a36"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SmallPointedSets",
+      "path": "ILab/MathematicsLearning/SmallPointedSets.lean",
+      "sha256": "fa39b8a434b822983447ae30ecba5ad43ab0cab2cb112e897c8902252adebc02"
+    },
+    {
       "name": "ILab.MathematicsLearning.SmallSetsCategory",
       "path": "ILab/MathematicsLearning/SmallSetsCategory.lean",
       "sha256": "df0d4f5874b9a009df797163d2518efebfde21109a529782258b97805233616a"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SmallTopologicalAdjunctions",
+      "path": "ILab/MathematicsLearning/SmallTopologicalAdjunctions.lean",
+      "sha256": "f838084870a1fb2e9cc4211afdca5cafbcb90e80e6069079ccf19fa67d9d5aec"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SmallTopologicalSpaces",
+      "path": "ILab/MathematicsLearning/SmallTopologicalSpaces.lean",
+      "sha256": "857913b5bc4452a53a000a59df28420e31e5edf083be79f0601258945b4904ca"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SmallVectorAdjunction",
+      "path": "ILab/MathematicsLearning/SmallVectorAdjunction.lean",
+      "sha256": "746492c40ec6f840d9a223de527a8ba036baeef85299d425cfad6511f105c0b6"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SmallVectorSpaces",
+      "path": "ILab/MathematicsLearning/SmallVectorSpaces.lean",
+      "sha256": "2950022198616e31c364ba28d096ad95290bb3c1d01a5350754874a6a0cb77fe"
     },
     {
       "name": "ILab.MathematicsLearning.SourceLaws",

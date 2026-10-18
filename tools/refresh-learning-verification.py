@@ -1,11 +1,12 @@
 """Regenerate current declaration evidence from the compiler-backed graph."""
 from pathlib import Path
-import json,hashlib,concurrent.futures,urllib.request,subprocess
+import json,hashlib,concurrent.futures,urllib.request,subprocess,re
 R=Path(__file__).resolve().parents[1];D=R/'docs/mathematics-learning';G=R/'docs/formalization/mathematics-learning'
 V=R/'formalization/mathematics-learning/verification';E=D/'native-publication-evidence'
 load=lambda p:json.loads(p.read_text(encoding='utf8'))
 write=lambda p,v:p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 g=load(G/'data.json');s=load(D/'original/native/source-audit.json');a=load(V/'expanded-audit.json')
+jobs=int(re.search(r'Build completed successfully \((\d+) jobs\)',(V/'expanded-clean-build.log').read_text(encoding='utf8'))[1])
 assert len(g['nodes'])==a['compiled_declarations']
 for m in a['modules']:assert hashlib.sha256((R/m['path']).read_bytes()).hexdigest()==m['sha256']
 inventory=load(D/'obligations.json')['records']
@@ -25,7 +26,7 @@ summary={'source_ref':g['sourceRef'],'lean':'4.34.0','mathlib_revision':'5ed2965
  'compiled_declarations':len(g['nodes']),'authored_declarations':len(mapping),'direct_edges':len(g['edges']),
  'source_modules':g['modules'],'numbered_source_items':44,'fully_formalized':s['fully_formalized'],
  'exercise_affected_items':15,'pending_eligible_items':s['pending_eligible_items'],
- 'foundational_axioms':['propext','Classical.choice','Quot.sound'],'build_status':'Clean build succeeded (8943 jobs), followed by compiler extraction and axiom audit.',
+ 'foundational_axioms':['propext','Classical.choice','Quot.sound'],'clean_build_jobs':jobs,'build_status':f'Clean build succeeded ({jobs} jobs), followed by compiler extraction and axiom audit.',
  'source_fidelity_audit':'../../../docs/mathematics-learning/original/native/source-audit.json','completion':False}
 write(V/'audit-summary.json',summary)
 baseline=[r for r in load(D/'expanded-live-assets-readback.json') if r['group'] in ['rq001','explanations']]

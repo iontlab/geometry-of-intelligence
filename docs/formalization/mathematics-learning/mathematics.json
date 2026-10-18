@@ -185,7 +185,7 @@
       "proof": [
         "Identities and composition preserve each specified structure. Hom sets are contained in function sets. The size claim is an additional foundational obligation, separate from the category instances."
       ],
-      "limitation": "Incomplete original source obligation. Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. All four categories use actual small ZFC carriers and structure-preserving function graphs. Injective pointed/topology/vector codes give large object sets; all hom sets belong to the small universe. Proved operation-preserving hom bijections justify the Mathlib models. Every exact object collection is proved not small. The coefficient field is small under the source convention that sets are small unless otherwise specified. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.9": {
       "label": "Primary 1.9",
@@ -213,7 +213,7 @@
       "proof": [
         "Two inverse morphisms give inverse functions. Conversely, the inverse of a bijection preserves the point or linear structure when the forward map does. For topology, inverse continuity is required and is part of a homeomorphism."
       ],
-      "limitation": "Incomplete original source obligation. Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The four tests apply to the actual Example 1.8 set-coded morphisms: bijections, point-preserving bijections, linear bijections, and homeomorphisms. Fully faithful model bridges preserve the exact underlying functions and inverse equations. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.11": {
       "label": "Primary 1.11",
@@ -242,6 +242,34 @@
         "These equations define functoriality."
       ],
       "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The object function, every hom function and both laws are explicit; a proved two-way data equivalence relates these to Mathlib functors on the identical object/hom members. Each referenced signature specifies the precise checked formulation."
+    },
+    "source.1.13": {
+      "label": "Primary 1.13",
+      "title": "Forgetful, added basepoint, free vector space, discrete and indiscrete functors",
+      "native_key": "1.13",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "anchor": "example_113",
+      "statement": [
+        "There are forgetful functors from pointed sets, vector spaces and topological spaces to sets; a functor adjoining a new basepoint; a free-vector-space functor S↦⊕ₛ k; and discrete and indiscrete topology functors from sets to spaces."
+      ],
+      "proof": [
+        "Each construction specifies its action on functions and preserves identities and composites. Free linear extension sends each basis vector to the basis vector indexed by its image."
+      ],
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. All seven functors operate on the exact set-coded categories. Forgetful functors retain the carrier and graph. The adjoined point is the Option-equivalent disjoint-point set; free vectors are actual graphs of finitely supported coefficient functions with a proved linear equivalence to the direct sum. Discrete and indiscrete open sets are proved exactly P(S) and {empty,S}. Commuting model isomorphisms certify the object and arrow correspondences. Each referenced signature specifies the precise checked formulation."
+    },
+    "source.1.16": {
+      "label": "Primary 1.16",
+      "title": "Size of Cat_s and membership in CAT_s",
+      "native_key": "1.16",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "anchor": "remark_116",
+      "statement": [
+        "Catₛ is an object of CATₛ. Catₛ is locally small but not small under the fixed set-universe convention."
+      ],
+      "proof": [
+        "The object and functor collections require the larger universe. Local smallness and non-smallness must be assessed separately."
+      ],
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Injective ZFC codes retain complete category and functor data. A proved bijection includes every source-small strict category, not a skeleton. Functor codes lie in an explicit small function-set bound; the category object collection is large and not small. Its complete code is an object of the huge category of large categories. Existing Mathlib Cat laws are reused internally through the general model bridge; no independent solution of the assigned 1.15 category-law checks is exported. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.18": {
       "label": "Primary 1.18",
@@ -327,6 +355,34 @@
       ],
       "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Exactly bijectivity of every hom function on the source object and morphism members. Each referenced signature specifies the precise checked formulation."
     },
+    "source.2.6": {
+      "label": "Primary 2.6",
+      "title": "Detect isomorphisms by all incoming or outgoing hom-set maps",
+      "native_key": "2.6",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "anchor": "corollary_26",
+      "statement": [
+        "For f:c→d, the following are equivalent: f is invertible; postcomposition C(x,c)→C(x,d) is bijective for every x; precomposition C(d,x)→C(c,x) is bijective for every x."
+      ],
+      "proof": [
+        "The authors use full faithfulness of Yoneda and Proposition 1.24 for the incoming-map comparison, then pass to the opposite category for the outgoing-map comparison. They explicitly assign the invertibility equivalence for f and f.op as an exercise; that step is withheld."
+      ],
+      "limitation": "Author-proved (i) iff (ii) verified; embedded exercise solution withheld. The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized. Each referenced signature specifies the precise checked formulation."
+    },
+    "source.2.7": {
+      "label": "Primary 2.7",
+      "title": "Objects are isomorphic iff their representables are naturally isomorphic",
+      "native_key": "2.7",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "anchor": "corollary_27",
+      "statement": [
+        "Objects x,y of a locally small category are isomorphic if and only if h_x and h_y are naturally isomorphic."
+      ],
+      "proof": [
+        "Apply preservation and reflection of object isomorphisms to the fully faithful Yoneda functor, using the componentwise characterization of natural isomorphisms."
+      ],
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Representables take values in the actual small hom sets and their arrows are literally the graphs of source precomposition. The proved model correspondence transports natural isomorphisms in both directions. The conclusion uses the source componentwise two-sided-inverse definition. Mathlib Yoneda is reused internally for this non-exercise corollary; no independent proofs of the assigned 1.19/2.1/2.4 exercises are supplied. Each referenced signature specifies the precise checked formulation."
+    },
     "source.3.1": {
       "label": "Primary 3.1",
       "title": "Left/right adjoints, unit, counit and both triangle identities",
@@ -340,6 +396,20 @@
         "The two triangle identities are part of the definition, alongside naturality of unit and counit."
       ],
       "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Mathlib Adjunction has precisely the unit, counit, and two component triangle equations; here it is instantiated only on the faithfully represented set-coded categories and functors. Each referenced signature specifies the precise checked formulation."
+    },
+    "source.3.2": {
+      "label": "Primary 3.2",
+      "title": "Added-basepoint/free-vector and discrete/indiscrete adjunctions",
+      "native_key": "3.2",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "anchor": "example_32",
+      "statement": [
+        "Adjoining a basepoint is left adjoint to forgetting it. Free vector space is left adjoint to its forgetful functor. Discrete topology is left adjoint to the underlying-set functor, which is left adjoint to indiscrete topology."
+      ],
+      "proof": [
+        "A pointed map from S with a new basepoint is determined by an arbitrary function on S; a linear map from the free space is determined on basis vectors. Every map from a discrete space is continuous, as is every map into an indiscrete space. These correspondences are natural."
+      ],
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. All four unit/counit adjunctions are on the actual Example 1.8 categories and Example 1.13 functors. The library adjunctions are restricted only after fully faithful hom correspondences and both commuting model squares have been proved. Free-vector, disjoint-point and topology carriers satisfy the source universe bounds. No general assigned 3.3 hom-bijection proof is exported. Each referenced signature specifies the precise checked formulation."
     },
     "source.3.4": {
       "label": "Primary 3.4",
@@ -451,7 +521,7 @@
       "proof": [
         "Equality transport is available in ordinary dependent type theory. Group isomorphisms preserve multiplication, the identity and element order. The structure identity principle requires the intended univalent/homotopical setting."
       ],
-      "limitation": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed. Group isomorphism is not automatically equality of Lean's bundled groups. A proof of order invariance does not prove the structure identity principle. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed. The concrete integer carriers {0,1} and {1,-1}, their exact operations and different numerical identities are represented by proved equivalences. Order-two invariance and equality transport are checked. The higher Structure Identity Principle itself awaits the authors’ later univalent foundations. Each referenced signature specifies the precise checked formulation."
     },
     "source.equivalences.motivation": {
       "label": "Primary equivalences.motivation",
@@ -465,7 +535,7 @@
       "proof": [
         "The explicit functors and natural isomorphisms are given in items 3.8–3.9; the object sets have cardinalities one and two."
       ],
-      "limitation": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed. The distinction concerns object presentations and categorical equivalence, not equality of the chosen object sets. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed. The exact set-coded one-object and two-object categories are equivalent but have no strictly inverse functors; strict inverses imply an actual object bijection. Prospective synthetic equality-isomorphism principles await later axioms. Each referenced signature specifies the precise checked formulation."
     }
   },
   "declarations": {
@@ -553,6 +623,42 @@
       "result": "source.1.8",
       "role": "supporting"
     },
+    "ILab.MathematicsLearning.SmallPointedSets.category": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallPointedSets.locallySmall": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallPointedSets.not_small": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallVectorSpaces.category": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallVectorSpaces.locallySmall": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallVectorSpaces.not_small": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.category": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.not_small": {
+      "result": "source.1.8",
+      "role": "supporting"
+    },
     "ILab.MathematicsLearning.SetCategory.IsIsomorphism": {
       "result": "source.1.9",
       "role": "principal"
@@ -565,6 +671,18 @@
       "result": "source.1.10",
       "role": "principal"
     },
+    "ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective": {
+      "result": "source.1.10",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective": {
+      "result": "source.1.10",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism": {
+      "result": "source.1.10",
+      "role": "supporting"
+    },
     "ILab.MathematicsLearning.SetCategory.unique_inverse": {
       "result": "source.1.11",
       "role": "principal"
@@ -575,6 +693,70 @@
     },
     "ILab.MathematicsLearning.SetCategory.functorEquiv": {
       "result": "source.1.12",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallPointedSets.forget": {
+      "result": "source.1.13",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SmallVectorSpaces.forget": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.forget": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallPointedSets.addPoint": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallVectorSpaces.free": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetFreeVectors.linearEquiv": {
+      "result": "source.1.13",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject": {
+      "result": "source.1.16",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes": {
+      "result": "source.1.16",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall": {
+      "result": "source.1.16",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small": {
+      "result": "source.1.16",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv": {
+      "result": "source.1.16",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.functorCodeEquiv": {
+      "result": "source.1.16",
       "role": "supporting"
     },
     "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor": {
@@ -625,6 +807,26 @@
       "result": "source.2.3",
       "role": "principal"
     },
+    "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism": {
+      "result": "source.2.6",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff": {
+      "result": "source.2.7",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.representable_object": {
+      "result": "source.2.7",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.representable_map": {
+      "result": "source.2.7",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.representable_model": {
+      "result": "source.2.7",
+      "role": "supporting"
+    },
     "ILab.MathematicsLearning.SetCategory.SourceAdjunction": {
       "result": "source.3.1",
       "role": "principal"
@@ -635,6 +837,22 @@
     },
     "ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle": {
       "result": "source.3.1",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction": {
+      "result": "source.3.2",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction": {
+      "result": "source.3.2",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction": {
+      "result": "source.3.2",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction": {
+      "result": "source.3.2",
       "role": "supporting"
     },
     "ILab.MathematicsLearning.SetCategory.IsEquivalence": {
@@ -721,35 +939,43 @@
       "result": "source.intro.paths",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.equality_substitution": {
+    "ILab.MathematicsLearning.order_two_invariant": {
       "result": "source.intro.sip",
       "role": "principal"
+    },
+    "ILab.MathematicsLearning.equality_substitution": {
+      "result": "source.intro.sip",
+      "role": "supporting"
     },
     "ILab.MathematicsLearning.equality_transport": {
       "result": "source.intro.sip",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.order_two_invariant": {
+    "ILab.MathematicsLearning.ConcreteGroupPresentations.presentationIso": {
       "result": "source.intro.sip",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.cyclicTwoSigns": {
+    "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_multiplication": {
       "result": "source.intro.sip",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.cyclic_two_zero_maps_to_one": {
+    "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_multiplication": {
       "result": "source.intro.sip",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one": {
+    "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_identity": {
       "result": "source.intro.sip",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.one_room_cardinality": {
+    "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity_ne_zero": {
+      "result": "source.intro.sip",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.strict_inverse_object_bijective": {
       "result": "source.equivalences.motivation",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.walking_not_strictly_isomorphic": {
+    "ILab.MathematicsLearning.walking_not_strictly_isomorphic_sets": {
       "result": "source.equivalences.motivation",
       "role": "supporting"
     }

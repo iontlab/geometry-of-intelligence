@@ -4,45 +4,24 @@ The complete Moser–Walde manuscript is now native DokuWiki text, MathJax mathe
 
 The original wording, notation, numbering, diagrams, proofs, partial proofs, 17 exercise markers, “Proof. Next time.”, references, affiliations and author AI-use disclosure are retained. Mathematics panels reproduce exact original passages. Statement labels use the established heading style. The eight chapter URLs, navigation and visual design are preserved.
 
-**The overall formalization goal remains incomplete:** 23 of 44 numbered items are faithfully formalized, 15 are exercise-affected, and six eligible source items require further work. Compilation totals do not establish source fidelity. Independent human review is not claimed.
+**29 of 44 numbered items are faithfully formalized; 15 are exercise-affected; 0 eligible numbered items remain pending.** Prospective higher foundations are explicitly deferred. Compilation totals do not establish source fidelity. Independent human review is not claimed.
 
 | Chapter | Native original | Numbered items | Fully formalized | Exercise-affected | Eligible pending |
-
 |---|---|---:|---:|---:|---:|
-
 | [Orientation / Foundations](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations) | Complete, verified | 0 | 0 | 0 | 0 |
-
 | [Size and Universes](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size) | Complete, verified | 4 | 4 | 0 | 0 |
-
-| [Categories and Isomorphisms](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories) | Complete, verified | 7 | 5 | 0 | 2 |
-
-| [Functors and Representable Functors](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors) | Complete, verified | 8 | 2 | 4 | 2 |
-
+| [Categories and Isomorphisms](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories) | Complete, verified | 7 | 7 | 0 | 0 |
+| [Functors and Representable Functors](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors) | Complete, verified | 8 | 4 | 4 | 0 |
 | [Natural Transformations and Functor Categories](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations) | Complete, verified | 9 | 4 | 5 | 0 |
-
-| [Yoneda Lemma](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda) | Complete, verified | 7 | 1 | 5 | 1 |
-
-| [Adjunctions](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions) | Complete, verified | 3 | 1 | 1 | 1 |
-
+| [Yoneda Lemma](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda) | Complete, verified | 7 | 2 | 5 | 0 |
+| [Adjunctions](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions) | Complete, verified | 3 | 2 | 1 | 0 |
 | [Equivalences of Categories](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences) | Complete, verified | 6 | 6 | 0 | 0 |
 
 ## Exact source-to-Lean coverage
 
 The [source audit](original/native/source-audit.json) records every exact numbered item, original location and text hash, faithful declarations, correspondence and remaining prerequisites. [All authored signatures and source mappings](../../formalization/mathematics-learning/verification/declaration-mapping.json) are compiler-derived. Fourteen editorial passage groups cover the unnumbered introduction and remarks; they are not additional numbered theorems.
 
-Outstanding eligible original items:
-
-- **1.8** — Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections.
-
-- **1.10** — Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8.
-
-- **1.13** — The forgetful, added-basepoint, free-vector-space, discrete and indiscrete functors need set-coded object/hom implementations and operation-preserving correspondences. Existing type-universe examples alone do not close this item.
-
-- **1.16** — Needs set codes for all small categories and their functors, hom-set membership in the small universe, non-smallness of the exact object collection, and the huge-category inclusion. Construction 1.15 category-law exercise must remain withheld.
-
-- **2.7** — The ordinary Mathlib Yoneda result is retained as independent support. Still needs a representation theorem for the actual small-set-valued representables and their natural isomorphisms, preserving the source universe domains without publishing the assigned 1.19/2.1/2.4 solutions.
-
-- **3.2** — The four actual example adjunctions require the pending structured-set categories and functors from 1.8/1.13, including the exact free-vector-space carrier and source universe bounds.
+No eligible numbered item remains pending.
 
 The introduction’s all-dimensional coherence, full fundamental infinity-groupoid, higher identity types and Structure Identity Principle await the intended later foundations. No missing axioms are invented. The existing ordinary path/groupoid and equality results remain explicitly limited supporting work.
 
@@ -50,9 +29,11 @@ Assigned solutions remain withheld for **1.14, 1.15, 1.17, 1.19, 1.21, 1.23, 1.2
 
 ## Build and provenance
 
-Checked Lean source commit: [`0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88`](https://github.com/iontlab/geometry-of-intelligence/commit/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88). Branch: `codex/source-faithful-native-manuscript`. Lean 4.34.0 and Mathlib revision `5ed2965256430c3649e86755f9576b54eca72435` are unchanged.
+Checked Lean source commit: [`0070c175806aa22b8227c86af53c5ca78bdb8d34`](https://github.com/iontlab/geometry-of-intelligence/commit/0070c175806aa22b8227c86af53c5ca78bdb8d34). Branch: `codex/source-faithful-native-manuscript`. Lean 4.34.0 and Mathlib revision `5ed2965256430c3649e86755f9576b54eca72435` are unchanged.
 
-The clean build completed with **8943 jobs**. The compiler audit covers **449 declarations in 15 modules**, including **188 authored declarations** and **1686 direct project dependencies**. The allowed foundational dependencies remain `propext`, `Classical.choice`, `Quot.sound`; no admitted expressions or project-added axioms are accepted. The source hierarchy’s existence remains an explicit assumption.
+The clean build completed with **8960 jobs**. The compiler audit covers **781 declarations, 392 authored declarations, 3836 direct local dependencies, 32 modules**. The allowed foundational dependencies remain `propext`, `Classical.choice`, `Quot.sound`; no admitted expressions or project-added axioms are accepted. The source hierarchy’s existence remains an explicit assumption.
+
+[Publication PR #9](https://github.com/iontlab/geometry-of-intelligence/pull/9). The source commit above pins every checked declaration; subsequent release commits record deployment evidence.
 
 [Clean build log](../../formalization/mathematics-learning/verification/expanded-clean-build.log) · [Compiler audit and source hash lock](../../formalization/mathematics-learning/verification/expanded-audit.json) · [Current audit summary](../../formalization/mathematics-learning/verification/audit-summary.json) · [Reproduction](../../formalization/mathematics-learning/verification/VERIFICATION.md).
 
@@ -60,7 +41,7 @@ The clean build completed with **8943 jobs**. The compiler audit covers **449 de
 
 - Eight public chapter sources exactly match the reviewed native drafts and authenticated editor digests. The original text projection is unchanged by heading formatting.
 
-- **47 controls × five layers = 235 successful panel checks**. All **60 distinct declaration verification deep links** exposed by the chapter panels select the corresponding audited graph entry. The theorem graph’s five layers also pass.
+- **47 controls × five layers = 235 successful panel checks**. All **99 distinct declaration verification deep links** exposed by the chapter panels select the corresponding audited graph entry. All 38 graph explanation records passed five layers each: **190 additional checks**.
 
 - All 18 learning assets match the upload hashes. Current chapter captures show zero MathJax errors and zero facsimile images.
 

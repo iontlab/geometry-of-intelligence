@@ -5,6 +5,7 @@ R=Path(__file__).resolve().parents[1];D=R/'docs/mathematics-learning';W=D/'wiki-
 load=lambda p:json.loads(p.read_text(encoding='utf8'))
 audit=load(D/'original/native/source-audit.json')
 graph=load(R/'docs/formalization/mathematics-learning/data.json')
+verification_audit=load(R/'formalization/mathematics-learning/verification/audit-summary.json')
 records=load(D/'obligations.json')['records']
 registry=load(R/'docs/formalization/mathematics-learning/explanations/registry.v0.1.json')
 bindings={r['source']['item_key']:r['source'] for r in registry['records'] if r['kind']=='source-item'}
@@ -19,6 +20,7 @@ start=re.sub(r'Each lesson retains.*?A grouped lesson may cover several source i
 start=start.replace('Theorem 3.7 is stated in the primary notes with its proof deferred; the equivalences lesson labels its additional proof sketch accordingly.',
  'Theorem 3.7 retains the original “Proof. Next time.” Its separately checked Lean proof is available through the supplementary control.')
 start=re.sub(r'\*\*The non-exercise release checks.*?Full formalization of the entire source is not claimed\.\*\*',status,start)
+start=re.sub(r'\*\*\d+ of 44 numbered original items are fully and faithfully formalized;.*?\*\*',status,start)
 (W/'start.txt').write_text(start,encoding='utf8')
 sources=(W/'sources.txt').read_text(encoding='utf8').replace('primary reading in facsimile excerpts','primary reading as native text, typeset mathematics and vector diagrams')
 sources=sources.replace('The lesson prose, stories, additional examples and supplemental arguments are iLab educational work prepared with AI assistance.',
@@ -36,6 +38,7 @@ for r in records:
     b=bindings[r['key']]
     coverage.append(f"| {r['kind']} {r['key']} | {', '.join(map(str,r['source_pages']))} | [[:{b['page_id']}#{b['anchor']}|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement={r['key']}&layer=verification|{r['formalization_status']}]] |")
 coverage+=['===== Incomplete eligible items =====']
+if not pending:coverage.append('No eligible numbered item remains incomplete. The prospective higher foundations and assigned exercises are distinguished below.')
 for r in audit['items']:
     if r['status']=='pending':coverage.append(f"  * **{r['key']}**: {r['correspondence']}")
 # Accept the audit's explicit status vocabulary without silently omitting gaps.
@@ -58,13 +61,13 @@ The mathematical specification is Lyne Moser and Tashi Walde’s complete 13-pag
 
 {status}
 
-The incomplete items are 1.8, 1.10, 1.13, 1.16, 2.7 and 3.2. Their precise missing set-coded constructions and correspondence proofs are recorded in [[:{base}coverage|the coverage page]] and the [[https://iontlab.org/formalization/mathematics-learning/source-audit.json|source-to-Lean fidelity audit]]. Valid earlier type-universe mathematics is retained as independent supporting work and is not counted as a faithful formalization of different set-universe objects.
+Every eligible numbered item is now represented in the manuscript’s set-universe framework. The exact structured-set categories, seven example functors, four adjunctions, category-universe bounds and small-set-valued representable correspondence are recorded in [[:{base}coverage|the coverage page]] and the [[https://iontlab.org/formalization/mathematics-learning/source-audit.json|source-to-Lean fidelity audit]]. Valid earlier type-universe mathematics remains separately identified supporting work.
 
 The introduction also anticipates later higher/synthetic foundations. No univalence or full higher-coherence theorem is claimed; no missing author axioms have been invented.
 
 ===== Compiler evidence =====
 
-The clean Lean 4.34.0 build completed successfully with 8943 jobs. The compiler audit covers **449 declarations in 15 learning modules**, including **188 authored declarations**, with **1686 direct compiler-derived project dependencies**. These are implementation counts, not source coverage counts.
+The clean Lean 4.34.0 build completed successfully with {verification_audit['clean_build_jobs']} jobs. The compiler audit covers **{len(graph['nodes'])} declarations in {len(graph['modules'])} learning modules**, including **{sum(n['authored'] for n in graph['nodes'])} authored declarations**, with **{len(graph['edges'])} direct compiler-derived project dependencies**. These are implementation counts, not source coverage counts.
 
 The only permitted foundational dependencies are ''propext'', ''Classical.choice'' and ''Quot.sound''. No admitted expressions or project-added axioms are accepted. The manuscript’s existence of the three nested set-universes remains an explicit hypothesis.
 

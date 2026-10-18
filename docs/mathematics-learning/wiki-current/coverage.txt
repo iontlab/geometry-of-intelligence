@@ -2,7 +2,7 @@
 
 The complete original manuscript is the main reading content of the existing eight chapters. All five explanation layers are supplementary panels. Mathematics reproduces the original statements verbatim.
 
-**23 of 44 numbered original items are fully and faithfully formalized; 15 are affected by assigned exercises, and 6 eligible items remain incomplete.**
+**29 of 44 numbered original items are fully and faithfully formalized; 15 are affected by assigned exercises, and 0 eligible items remain incomplete.**
 
 Fourteen editorial groups cover the unnumbered introduction and remarks. They are passage references, not newly invented source theorems. Compilation counts do not measure source fidelity.
 
@@ -24,23 +24,23 @@ Fourteen editorial groups cover the unnumbered introduction and remarks. They ar
 
 | Definition 1.7 | 5 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:categories#definition_17|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.7&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
-| Example 1.8 | 5 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:categories#example_18|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.8&layer=verification|Incomplete original source obligation]] |
+| Example 1.8 | 5 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:categories#example_18|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.8&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
 | Definition 1.9 | 5 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:categories#definition_19|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.9&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
-| Example 1.10 | 5 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:categories#example_110|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.10&layer=verification|Incomplete original source obligation]] |
+| Example 1.10 | 5 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:categories#example_110|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.10&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
 | Proposition 1.11 | 5 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:categories#proposition_111|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.11&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
 | Definition 1.12 | 6 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors#definition_112|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.12&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
-| Example 1.13 | 6 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors#example_113|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.13&layer=verification|Incomplete original source obligation]] |
+| Example 1.13 | 6 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors#example_113|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.13&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
 | Proposition 1.14 | 6 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors#proposition_114|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.14&layer=verification|Assigned exercise solution withheld; original text retained]] |
 
 | Construction 1.15 | 6 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors#construction_115|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.15&layer=verification|Assigned exercise solution withheld; original text retained]] |
 
-| Remark 1.16 | 6 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors#remark_116|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.16&layer=verification|Incomplete original source obligation]] |
+| Remark 1.16 | 6 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors#remark_116|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.16&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
 | Construction 1.17 | 6, 7 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors#construction_117|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=1.17&layer=verification|Assigned exercise solution withheld; original text retained]] |
 
@@ -76,13 +76,13 @@ Fourteen editorial groups cover the unnumbered introduction and remarks. They ar
 
 | Proposition 2.5 | 10 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda#proposition_25|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=2.5&layer=verification|Assigned exercise solution withheld; original text retained]] |
 
-| Corollary 2.6 | 10 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda#corollary_26|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=2.6&layer=verification|Assigned exercise solution withheld; original text retained]] |
+| Corollary 2.6 | 10 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda#corollary_26|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=2.6&layer=verification|Author-proved (i) iff (ii) verified; embedded exercise solution withheld]] |
 
-| Corollary 2.7 | 10 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda#corollary_27|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=2.7&layer=verification|Incomplete original source obligation]] |
+| Corollary 2.7 | 10 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda#corollary_27|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=2.7&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
 | Definition 3.1 | 11 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions#definition_31|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=3.1&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
-| Example 3.2 | 11 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions#example_32|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=3.2&layer=verification|Incomplete original source obligation]] |
+| Example 3.2 | 11 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions#example_32|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=3.2&layer=verification|Faithfully formalized and compiler-verified in the source set-universe representation]] |
 
 | Theorem 3.3 | 12 | [[:mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions#theorem_33_adjunctions_representably|Original text]] | [[https://iontlab.org/formalization/mathematics-learning/?statement=3.3&layer=verification|Assigned exercise solution withheld; original text retained]] |
 
@@ -100,17 +100,7 @@ Fourteen editorial groups cover the unnumbered introduction and remarks. They ar
 
 ===== Incomplete eligible items =====
 
-  * **1.8**: Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections.
-
-  * **1.10**: Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8.
-
-  * **1.13**: The forgetful, added-basepoint, free-vector-space, discrete and indiscrete functors need set-coded object/hom implementations and operation-preserving correspondences. Existing type-universe examples alone do not close this item.
-
-  * **1.16**: Needs set codes for all small categories and their functors, hom-set membership in the small universe, non-smallness of the exact object collection, and the huge-category inclusion. Construction 1.15 category-law exercise must remain withheld.
-
-  * **2.7**: The ordinary Mathlib Yoneda result is retained as independent support. Still needs a representation theorem for the actual small-set-valued representables and their natural isomorphisms, preserving the source universe domains without publishing the assigned 1.19/2.1/2.4 solutions.
-
-  * **3.2**: The four actual example adjunctions require the pending structured-set categories and functors from 1.8/1.13, including the exact free-vector-space carrier and source universe bounds.
+No eligible numbered item remains incomplete. The prospective higher foundations and assigned exercises are distinguished below.
 
 ===== Assigned exercises =====
 

@@ -2,9 +2,9 @@
   "source_pdf_sha256": "5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc",
   "review": "Source-first editorial correspondence checked against the manuscript; no independent human review or compiler proof of prose equivalence claimed.",
   "numbered_items": 44,
-  "fully_formalized": 23,
+  "fully_formalized": 29,
   "exercise_affected_items": 15,
-  "pending_eligible_items": 6,
+  "pending_eligible_items": 0,
   "completion": false,
   "chapter_counts": {
     "foundations": {
@@ -21,15 +21,15 @@
     },
     "categories": {
       "numbered_items": 7,
-      "fully_formalized": 5,
+      "fully_formalized": 7,
       "exercise_withheld": 0,
-      "pending": 2
+      "pending": 0
     },
     "functors": {
       "numbered_items": 8,
-      "fully_formalized": 2,
+      "fully_formalized": 4,
       "exercise_withheld": 4,
-      "pending": 2
+      "pending": 0
     },
     "natural_transformations": {
       "numbered_items": 9,
@@ -39,15 +39,15 @@
     },
     "yoneda": {
       "numbered_items": 7,
-      "fully_formalized": 1,
+      "fully_formalized": 2,
       "exercise_withheld": 5,
-      "pending": 1
+      "pending": 0
     },
     "adjunctions": {
       "numbered_items": 3,
-      "fully_formalized": 1,
+      "fully_formalized": 2,
       "exercise_withheld": 1,
-      "pending": 1
+      "pending": 0
     },
     "equivalences": {
       "numbered_items": 6,
@@ -218,13 +218,22 @@
       "source_native_file": "original/native/categories.txt",
       "source_line": 29,
       "source_sha256": "360d55445914f0307bc424db1822ea64a02337e2ca2bdf6ba4fc82925c6e8042",
-      "status": "pending",
+      "status": "fully_formalized",
       "declarations": [
         "ILab.MathematicsLearning.smallSetsCategory",
         "ILab.MathematicsLearning.smallSets_locallySmall",
-        "ILab.MathematicsLearning.smallSets_not_small"
+        "ILab.MathematicsLearning.smallSets_not_small",
+        "ILab.MathematicsLearning.SmallPointedSets.category",
+        "ILab.MathematicsLearning.SmallPointedSets.locallySmall",
+        "ILab.MathematicsLearning.SmallPointedSets.not_small",
+        "ILab.MathematicsLearning.SmallVectorSpaces.category",
+        "ILab.MathematicsLearning.SmallVectorSpaces.locallySmall",
+        "ILab.MathematicsLearning.SmallVectorSpaces.not_small",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.category",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.not_small"
       ],
-      "correspondence": "Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections.",
+      "correspondence": "All four categories use actual small ZFC carriers and structure-preserving function graphs. Injective pointed/topology/vector codes give large object sets; all hom sets belong to the small universe. Proved operation-preserving hom bijections justify the Mathlib models. Every exact object collection is proved not small. The coefficient field is small under the source convention that sets are small unless otherwise specified.",
       "prior_independent_declarations": [
         "ILab.MathematicsLearning.setsCategory",
         "ILab.MathematicsLearning.pointedSetsCategory",
@@ -275,11 +284,14 @@
       "source_native_file": "original/native/categories.txt",
       "source_line": 42,
       "source_sha256": "11d90b1c82b9b85fe8542d91628a9a2c57d5d062375aa81f6c1c4ff2dfcdaac6",
-      "status": "pending",
+      "status": "fully_formalized",
       "declarations": [
-        "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective"
+        "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism"
       ],
-      "correspondence": "Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8.",
+      "correspondence": "The four tests apply to the actual Example 1.8 set-coded morphisms: bijections, point-preserving bijections, linear bijections, and homeomorphisms. Fully faithful model bridges preserve the exact underlying functions and inverse equations.",
       "prior_independent_declarations": [
         "ILab.MathematicsLearning.setIsoIffBijective",
         "ILab.MathematicsLearning.pointed_iso_iff_bijective",
@@ -341,9 +353,20 @@
       "source_native_file": "original/native/functors.txt",
       "source_line": 18,
       "source_sha256": "8558d934dc1e90aa57caaef2be17d08ddd5d80f4b8e3b7cdaa63ba08d776847f",
-      "status": "pending",
-      "declarations": [],
-      "correspondence": "The forgetful, added-basepoint, free-vector-space, discrete and indiscrete functors need set-coded object/hom implementations and operation-preserving correspondences. Existing type-universe examples alone do not close this item.",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SmallPointedSets.forget",
+        "ILab.MathematicsLearning.SmallVectorSpaces.forget",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.forget",
+        "ILab.MathematicsLearning.SmallPointedSets.addPoint",
+        "ILab.MathematicsLearning.SmallVectorSpaces.free",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens",
+        "ILab.MathematicsLearning.SetFreeVectors.linearEquiv"
+      ],
+      "correspondence": "All seven functors operate on the exact set-coded categories. Forgetful functors retain the carrier and graph. The adjoined point is the Option-equivalent disjoint-point set; free vectors are actual graphs of finitely supported coefficient functions with a proved linear equivalence to the direct sum. Discrete and indiscrete open sets are proved exactly P(S) and {empty,S}. Commuting model isomorphisms certify the object and arrow correspondences.",
       "prior_independent_declarations": [
         "ILab.MathematicsLearning.forgetPoint",
         "ILab.MathematicsLearning.forgetVector",
@@ -398,9 +421,16 @@
       "source_native_file": "original/native/functors.txt",
       "source_line": 43,
       "source_sha256": "b87f69bedc6d5c13cc0b725fa2534d5d48e06947aa033f03c4da9ec60be6e21d",
-      "status": "pending",
-      "declarations": [],
-      "correspondence": "Needs set codes for all small categories and their functors, hom-set membership in the small universe, non-smallness of the exact object collection, and the huge-category inclusion. Construction 1.15 category-law exercise must remain withheld.",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv",
+        "ILab.MathematicsLearning.SetCategory.functorCodeEquiv"
+      ],
+      "correspondence": "Injective ZFC codes retain complete category and functor data. A proved bijection includes every source-small strict category, not a skeleton. Functor codes lie in an explicit small function-set bound; the category object collection is large and not small. Its complete code is an object of the huge category of large categories. Existing Mathlib Cat laws are reused internally through the general model bridge; no independent solution of the assigned 1.15 category-law checks is exported.",
       "prior_independent_declarations": [
         "ILab.MathematicsLearning.smallCategoriesAsLargerObject",
         "ILab.MathematicsLearning.small_categories_locally_small",
@@ -732,9 +762,11 @@
       "source_native_file": "original/native/yoneda.txt",
       "source_line": 60,
       "source_sha256": "6e99c2600ef1fd7f27ad69e481e1a00b5e91107bf5b14a166307fc812613767d",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "The embedded opposite-invertibility step is assigned. Original complete portions and the exercise marker remain. No completed assigned proof is mapped.",
+      "status": "mixed_exercise",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism"
+      ],
+      "correspondence": "The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized.",
       "prior_independent_declarations": [
         "ILab.MathematicsLearning.isoIffPostcompositionBijective",
         "ILab.MathematicsLearning.isoIffPrecompositionBijective"
@@ -751,9 +783,14 @@
       "source_native_file": "original/native/yoneda.txt",
       "source_line": 88,
       "source_sha256": "b6e137750fe7d5d83c13e0cc0b490b52c1107e559583071d739d3101727060a4",
-      "status": "pending",
-      "declarations": [],
-      "correspondence": "The ordinary Mathlib Yoneda result is retained as independent support. Still needs a representation theorem for the actual small-set-valued representables and their natural isomorphisms, preserving the source universe domains without publishing the assigned 1.19/2.1/2.4 solutions.",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+        "ILab.MathematicsLearning.SetCategory.representable_object",
+        "ILab.MathematicsLearning.SetCategory.representable_map",
+        "ILab.MathematicsLearning.SetCategory.representable_model"
+      ],
+      "correspondence": "Representables take values in the actual small hom sets and their arrows are literally the graphs of source precomposition. The proved model correspondence transports natural isomorphisms in both directions. The conclusion uses the source componentwise two-sided-inverse definition. Mathlib Yoneda is reused internally for this non-exercise corollary; no independent proofs of the assigned 1.19/2.1/2.4 exercises are supplied.",
       "prior_independent_declarations": [
         "ILab.MathematicsLearning.yoneda_object_iso_iff"
       ],
@@ -796,9 +833,14 @@
       "source_native_file": "original/native/adjunctions.txt",
       "source_line": 39,
       "source_sha256": "d86adbb58a516e6044ee9b751500572bc766d6a22bcd81210637e2a0a8f64da4",
-      "status": "pending",
-      "declarations": [],
-      "correspondence": "The four actual example adjunctions require the pending structured-set categories and functors from 1.8/1.13, including the exact free-vector-space carrier and source universe bounds.",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+        "ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction"
+      ],
+      "correspondence": "All four unit/counit adjunctions are on the actual Example 1.8 categories and Example 1.13 functors. The library adjunctions are restricted only after fully faithful hom correspondences and both commuting model squares have been proved. Free-vector, disjoint-point and topology carriers satisfy the source universe bounds. No general assigned 3.3 hom-bijection proof is exported.",
       "prior_independent_declarations": [
         "ILab.MathematicsLearning.basepointAdjunction",
         "ILab.MathematicsLearning.vectorSpaceAdjunction",

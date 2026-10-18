@@ -37,14 +37,21 @@ full={
  '3.8':('walkingSetCategory walkingZero walkingOne walking_zero_ne_one walking_objects walking_hom_singleton walkingSetIso','Two distinct ZFC object codes, exactly those two objects, literal singleton hom sets, identities and mutually inverse arrows.'),
  '3.9':('includeWalkingZero walking_inclusion_equivalence','The actual singleton-to-walking-isomorphism inclusion is proved an equivalence in the source definition. The printed 0≅0 in the original prose is retained, not silently corrected.'),
 }
-pending={
- '1.8':('smallSetsCategory smallSets_locallySmall smallSets_not_small','Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections.'),
- '1.10':('smallSets_isomorphism_iff_bijective','Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8.'),
- '1.13':('','The forgetful, added-basepoint, free-vector-space, discrete and indiscrete functors need set-coded object/hom implementations and operation-preserving correspondences. Existing type-universe examples alone do not close this item.'),
- '1.16':('','Needs set codes for all small categories and their functors, hom-set membership in the small universe, non-smallness of the exact object collection, and the huge-category inclusion. Construction 1.15 category-law exercise must remain withheld.'),
- '2.7':('','The ordinary Mathlib Yoneda result is retained as independent support. Still needs a representation theorem for the actual small-set-valued representables and their natural isomorphisms, preserving the source universe domains without publishing the assigned 1.19/2.1/2.4 solutions.'),
- '3.2':('','The four actual example adjunctions require the pending structured-set categories and functors from 1.8/1.13, including the exact free-vector-space carrier and source universe bounds.'),
-}
+full.update({
+ '1.8':('smallSetsCategory smallSets_locallySmall smallSets_not_small SmallPointedSets.category SmallPointedSets.locallySmall SmallPointedSets.not_small SmallVectorSpaces.category SmallVectorSpaces.locallySmall SmallVectorSpaces.not_small SmallTopologicalSpaces.category SmallTopologicalSpaces.locallySmall SmallTopologicalSpaces.not_small',
+   'All four categories use actual small ZFC carriers and structure-preserving function graphs. Injective pointed/topology/vector codes give large object sets; all hom sets belong to the small universe. Proved operation-preserving hom bijections justify the Mathlib models. Every exact object collection is proved not small. The coefficient field is small under the source convention that sets are small unless otherwise specified.'),
+ '1.10':('smallSets_isomorphism_iff_bijective SmallPointedSets.isomorphism_iff_bijective SmallVectorSpaces.isomorphism_iff_bijective SmallTopologicalSpaces.isomorphism_iff_homeomorphism',
+   'The four tests apply to the actual Example 1.8 set-coded morphisms: bijections, point-preserving bijections, linear bijections, and homeomorphisms. Fully faithful model bridges preserve the exact underlying functions and inverse equations.'),
+ '1.13':('SmallPointedSets.forget SmallVectorSpaces.forget SmallTopologicalSpaces.forget SmallPointedSets.addPoint SmallVectorSpaces.free SmallTopologicalSpaces.discrete SmallTopologicalSpaces.indiscrete SmallTopologicalSpaces.discrete_opens SmallTopologicalSpaces.indiscrete_opens SetFreeVectors.linearEquiv',
+   'All seven functors operate on the exact set-coded categories. Forgetful functors retain the carrier and graph. The adjoined point is the Option-equivalent disjoint-point set; free vectors are actual graphs of finitely supported coefficient functions with a proved linear equivalence to the direct sum. Discrete and indiscrete open sets are proved exactly P(S) and {empty,S}. Commuting model isomorphisms certify the object and arrow correspondences.'),
+ '1.16':('SmallCategoryUniverse.smallCategoriesAsHugeObject SmallCategoryUniverse.hugeObject_decodes SmallCategoryUniverse.smallCategories_locallySmall SmallCategoryUniverse.smallCategories_not_small SmallCategoryUniverse.smallObjectEquiv SetCategory.functorCodeEquiv',
+   'Injective ZFC codes retain complete category and functor data. A proved bijection includes every source-small strict category, not a skeleton. Functor codes lie in an explicit small function-set bound; the category object collection is large and not small. Its complete code is an object of the huge category of large categories. Existing Mathlib Cat laws are reused internally through the general model bridge; no independent solution of the assigned 1.15 category-law checks is exported.'),
+ '2.7':('SetCategory.representable_objects_isomorphic_iff SetCategory.representable_object SetCategory.representable_map SetCategory.representable_model',
+   'Representables take values in the actual small hom sets and their arrows are literally the graphs of source precomposition. The proved model correspondence transports natural isomorphisms in both directions. The conclusion uses the source componentwise two-sided-inverse definition. Mathlib Yoneda is reused internally for this non-exercise corollary; no independent proofs of the assigned 1.19/2.1/2.4 exercises are supplied.'),
+ '3.2':('SmallPointedSets.addPointAdjunction SmallVectorSpaces.freeAdjunction SmallTopologicalSpaces.discreteAdjunction SmallTopologicalSpaces.indiscreteAdjunction',
+   'All four unit/counit adjunctions are on the actual Example 1.8 categories and Example 1.13 functors. The library adjunctions are restricted only after fully faithful hom correspondences and both commuting model squares have been proved. Free-vector, disjoint-point and topology carriers satisfy the source universe bounds. No general assigned 3.3 hom-bijection proof is exported.'),
+})
+pending={}
 assigned={a['item'] for a in load(D/'exercise-exclusions.json')['assignments']}
 nodes={n['id']:n for n in load(G/'compiled.json')}
 old=load(D/'obligations.json')
@@ -58,6 +65,10 @@ for item in source:
     if key in assigned:
         names='';status='exercise_withheld'
         reason=('The embedded opposite-invertibility step is assigned. Original complete portions and the exercise marker remain. No completed assigned proof is mapped.' if key=='2.6' else 'Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.')
+        if key=='2.6':
+            names='SetCategory.postcomposition_bijections_detect_isomorphism'
+            status='mixed_exercise'
+            reason='The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized.'
     elif key in full:
         names,reason=full[key];status='fully_formalized'
     else:
@@ -70,15 +81,16 @@ for item in source:
       'status':status,'declarations':declarations,'correspondence':reason,
       'prior_independent_declarations':prev['lean_declarations'],
       'prior_mapping_assessment':'Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained.'})
-assert len(rows)==44 and len(full)==23 and len(pending)==6 and len(assigned)==15
+assert len(rows)==44 and len(full)==29 and len(pending)==0 and len(assigned)==15
 chapter_counts={}
 for chapter in ['foundations','size','categories','functors','natural_transformations','yoneda','adjunctions','equivalences']:
     subset=[r for r in rows if r['chapter']==chapter]
     chapter_counts[chapter]={'numbered_items':len(subset),**{k:sum(r['status']==k for r in subset) for k in ['fully_formalized','exercise_withheld','pending']}}
+    chapter_counts[chapter]['exercise_withheld']+=sum(r['status']=='mixed_exercise' for r in subset)
 save(D/'original/native/source-audit.json',{
  'source_pdf_sha256':hashlib.sha256((D/'original/moser-walde-13-pages.pdf').read_bytes()).hexdigest(),
  'review':'Source-first editorial correspondence checked against the manuscript; no independent human review or compiler proof of prose equivalence claimed.',
- 'numbered_items':44,'fully_formalized':23,'exercise_affected_items':15,'pending_eligible_items':6,
+ 'numbered_items':44,'fully_formalized':len(full),'exercise_affected_items':15,'pending_eligible_items':len(pending),
  'completion':False,'chapter_counts':chapter_counts,'items':rows,
  'unnumbered':'Fourteen interface passage groups are retained separately. Introductory higher identity types, univalence, all-dimensional coherence and the proposed synthetic extension await the authors’ later axioms. They are not replaced by Lean Eq or ordinary categories.'})
 
@@ -88,18 +100,33 @@ for prev in old['records']:
     r=dict(prev); key=r['key']
     row=next((x for x in rows if x['key']==key),None)
     if row:
-        r['formalization_status']={'fully_formalized':'Faithfully formalized and compiler-verified in the source set-universe representation','pending':'Incomplete original source obligation','exercise_withheld':'Assigned exercise solution withheld; original text retained'}[row['status']]
+        r['formalization_status']={'fully_formalized':'Faithfully formalized and compiler-verified in the source set-universe representation','pending':'Incomplete original source obligation','exercise_withheld':'Assigned exercise solution withheld; original text retained','mixed_exercise':'Author-proved (i) iff (ii) verified; embedded exercise solution withheld'}[row['status']]
         r['lean_declarations']=row['declarations']
         r['limit']=row['correspondence']
         r['obligations']=[{'id':key+'.source','statement':row['correspondence'],
           'status':'assigned exercise solution withheld' if key in assigned else r['formalization_status'],
           'declarations':row['declarations'],'scope':row['correspondence']}]
+        if key=='2.6':
+            r['obligations'][0]['status']='Author-proved (i) iff (ii) verified on exact source hom sets'
+            r['obligations'].append({'id':key+'.exercise','statement':'The opposite-invertibility step is assigned by the authors.','status':'assigned exercise solution withheld','declarations':[],'scope':'No independently generated solution or complete three-way proof is published.'})
     else:
         # Existing contextual declarations are retained, explicitly as support.
         r['formalization_status']='Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed'
         if key=='3.5.adjoint_upgrade':
             r['lean_declarations']=[P+'SetCategory.equivalence_promotes_to_adjoint']
             r['formalization_status']='Faithfully formalized with the source set-universe bounds; included in item 3.5, not counted twice'
+            r['obligations']=[{'id':key+'.source','statement':'Every source equivalence can be promoted to an adjoint equivalence.','status':r['formalization_status'],'declarations':r['lean_declarations'],'scope':'The source quasi-inverse is promoted on the same set-coded categories.'}]
+        if key=='intro.sip':
+            r['lean_declarations']=[P+n for n in ('order_two_invariant equality_substitution equality_transport ConcreteGroupPresentations.presentationIso ConcreteGroupPresentations.zeroOne_multiplication ConcreteGroupPresentations.signs_multiplication ConcreteGroupPresentations.zeroOne_identity ConcreteGroupPresentations.signs_identity_ne_zero').split()]
+            r['limit']='The concrete integer carriers {0,1} and {1,-1}, their exact operations and different numerical identities are represented by proved equivalences. Order-two invariance and equality transport are checked. The higher Structure Identity Principle itself awaits the authors’ later univalent foundations.'
+            r['obligations']=[{'id':key+'.concrete','statement':'The two printed integer-carrier groups are isomorphic, but only the first has numerical identity zero; order-two existence is invariant under group isomorphism. Equality transports predicates and structures.','status':'Precisely specified ordinary mathematical assertions verified','declarations':r['lean_declarations'],'scope':r['limit']},
+              {'id':key+'.higher','statement':'Group identifications correspond to group isomorphisms in the intended higher identity types.','status':'Awaits later source definitions and univalent foundations','declarations':[],'scope':'No ordinary Lean equality replacement or invented axiom is used.'}]
+        if key=='equivalences.motivation':
+            r['lean_declarations']=[P+n for n in ('walking_inclusion_equivalence strict_inverse_object_bijective walking_not_strictly_isomorphic_sets').split()]
+            r['limit']='The exact set-coded one-object and two-object categories are equivalent but have no strictly inverse functors; strict inverses imply an actual object bijection. Prospective synthetic equality-isomorphism principles await later axioms.'
+            r['obligations']=[{'id':key+'.strict','statement':'Strict inverse functors give a bijection of object sets; equivalent categories need not have one.','status':'Verified on the exact set-coded categories','declarations':r['lean_declarations'],'scope':r['limit']},
+              {'id':key+'.synthetic','statement':'The intended synthetic foundation builds in invariance under isomorphism.','status':'Prospective source description; later axioms awaited','declarations':[],'scope':'No missing synthetic foundations are invented.'}]
+    assert all(n in nodes for n in r['lean_declarations']), (key,r['lean_declarations'])
     current.append(r)
 save(D/'obligations.json',{**old,'records':current,'source_fidelity_audit':'original/native/source-audit.json'})
 coverage=load(D/'coverage.json')
@@ -107,4 +134,4 @@ for row in coverage['records']:
     r=next(r for r in current if r['key']==row['key'])
     row['lean_status']=r['formalization_status'];row['lean_declarations']=r['lean_declarations']
 save(D/'coverage.json',coverage)
-print('44 numbered source items: 23 fully formalized; 15 exercise-affected; 6 eligible items pending. Overall objective remains incomplete.')
+print('44 numbered source items: 29 faithfully formalized; 15 exercise-affected; no eligible numbered item pending. Later higher axioms remain explicitly deferred; release completion requires fresh live QA.')
