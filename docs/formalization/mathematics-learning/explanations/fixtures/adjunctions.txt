@@ -2,85 +2,100 @@
 
 ===== Original lecture notes — primary reading =====
 
-//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The facsimiles below reproduce the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
+//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The native text below reproduces the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
 
 {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Open the complete original 13-page PDF (selectable text and original links)}}
 
-The original text is the primary reading. The iLab Story, Plain Language, Mathematics, Lean and Verification sections below are supplementary. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
+The original text is the primary reading. The Explain controls beside the original passages open the supplementary Story / Fairy Tale, Plain Language, Mathematics, Lean and Verification layers. Mathematics reproduces the exact original statement. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
 
-[[#story_fairy_tale|Story / Fairy Tale]] · [[#plain_language|Plain Language]] · [[#mathematics|Mathematics and statement controls]] · [[#lean|Lean]] · [[#verification|Verification]]
 
-**Original PDF page 11 — complete page.**
+==== 3. Adjunctions and equivalences ====
 
-{{:mathematics_learning:synthetic_category_theory:original:p11-adjunctions.png?1000|Moser–Walde original manuscript, PDF page 11, adjunctions}}
+We now turn to two important concepts in strict category theory, namely //adjunctions// and //equivalences//. Adjunctions provide a way to describe universal constructions and organize them into functors. Equivalences express when two strict categories should be thought of as being the “same”.
 
-**Original PDF page 12 — continues in the next chapter.**
+From a categorical point of view, two isomorphic objects should be interchangeable, even if they are not equal. However, an isomorphism of strict categories requires a bijection between the sets of objects, making it too restrictive for this purpose. Equivalences provide a weakening of the notion of isomorphism between strict categories and capture the intended notion of sameness: they detect objects only up to isomorphism, rather than up to equality.
 
-{{:mathematics_learning:synthetic_category_theory:original:p12-adjunctions.png?1000|Moser–Walde original manuscript, PDF page 12, adjunctions}}
+A fundamental difficulty with the set-theoretic description of strict categories is that equality and isomorphism of objects remain distinct notions. Consequently, properties and constructions can depend on literal equalities between objects and fail to be well-behaved with respect to isomorphisms. We will illustrate this with examples of properties and constructions that are not invariant under replacing objects by isomorphic ones or strict categories by equivalent ones. Further examples will appear in the following sections.
 
-===== Supplementary iLab explanations =====
+The synthetic approach will address this foundational issue by not allowing a distinction between equality and isomorphism of objects, so that invariance under isomorphism is built into the theory. Similarly, the appropriate notion of isomorphism between synthetic categories will generalize that of an equivalence between strict categories.
 
-The following independent educational content is supplementary to the authors’ original manuscript above. Its verification claims apply only to the specifically mapped Lean declarations.
+==== 3.1. Adjunctions ====
 
-**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §3.1, items 3.1–3.3, pp. 11–12.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Formalization status is item-specific; see Lean and Verification**.
+==== Definition 3.1. ====
 
-**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. The authorized original PDF is available in the primary reading above.
+Given strict categories \(\mathcal C\) and \(\mathcal D\), an **adjunction** between \(\mathcal C\) and \(\mathcal D\) consists of:
 
-**Teaching scope:** Statements and source numbering are retained. Proofs and construction checks assigned as exercises by Lyne Moser and Tashi Walde are intentionally withheld, including Lean solutions and explanatory walkthroughs.
+  * a functor \(L:\mathcal C\to\mathcal D\), called the **left adjoint**;
+  * a functor \(R:\mathcal D\to\mathcal C\), called the **right adjoint**;
+  * a natural transformation \(\eta:\operatorname{id}_{\mathcal C}\Rightarrow RL\), called the **unit**;
+  * a natural transformation \(\varepsilon:LR\Rightarrow\operatorname{id}_{\mathcal D}\), called the **counit**;
 
-===== Story / Fairy Tale =====
+such that, for all objects \(x\in\mathcal C\) and \(y\in\mathcal D\), the following triangles commute in \(\mathcal D\) and \(\mathcal C\), respectively:
 
-Mira's workshop accepts a list of symbols and builds all finite formal combinations of them. The royal accountant can either specify a rule for every completed combination or simply choose where each original symbol goes. The workshop's rules extend the second choice uniquely to the first.
+<tikzjax>
+\begin{document}
+\begin{tikzpicture}[>=stealth]
+\node (Lx) at (0,0) {$Lx$}; \node (LRLx) at (2.5,0) {$LRLx$}; \node (Lxb) at (2.5,-1.6) {$Lx$};
+\draw[->] (Lx) -- node[above] {$L(\eta_x)$} (LRLx);
+\draw[->] (LRLx) -- node[right] {$\varepsilon_{Lx}$} (Lxb);
+\draw[->] (Lx) -- node[below left] {$\mathrm{id}_{Lx}$} (Lxb);
+\node (Ry) at (5,0) {$Ry$}; \node (RLRy) at (7.5,0) {$RLRy$}; \node (Ryb) at (7.5,-1.6) {$Ry$};
+\draw[->] (Ry) -- node[above] {$\eta_{Ry}$} (RLRy);
+\draw[->] (RLRy) -- node[right] {$R(\varepsilon_y)$} (Ryb);
+\draw[->] (Ry) -- node[below left] {$\mathrm{id}_{Ry}$} (Ryb);
+\end{tikzpicture}
+\end{document}
+</tikzjax>
 
-There are two ways to describe the same instruction, and changing the list or the receiving workshop respects the translation. The workshop and accountant have an adjunction. They have not become interchangeable: forgetting a workshop's structure and freely rebuilding it can produce a different object.
+We write \(L:\mathcal C\rightleftarrows\mathcal D:R\) or \(L\dashv R\) for such an adjunction.
 
-**Story key:** freely building is a left adjoint, forgetting is a right adjoint, and extension/restriction is the hom correspondence. **Where the analogy stops:** not every adjunction is a free/forgetful construction; “best” is not a definition. Units and counits are not generally isomorphisms.
+==== Example 3.2. ====
 
-===== Plain Language =====
+We have the following examples of adjunctions between strict categories.
 
-An adjunction matches maps of two different shapes. A map from the freely generated vector space on \(S\) to \(V\) is determined by the image of each basis label. Thus linear maps \(k^{(S)}\to V\) correspond to functions \(S\to U(V)\). This is a bijection of maps, not a claim that the objects \(k^{(S)}\) and \(S\) are equal.
+  * The free-forgetful adjunctions
 
-Naturality means that reindexing the input or mapping the output commutes with the correspondence. Choosing an unrelated bijection of hom sets for every pair of objects would not establish an adjunction.
+$$(-)_+:\mathcal{Set}\rightleftarrows\mathcal{Set}_{\bullet}:U\quad\text{and}\quad\bigoplus_{(-)}k:\mathcal{Set}\rightleftarrows\mathcal{Vect}_k:U.$$
 
-===== Mathematics =====
+  * The discrete-forgetful and forgetful-indiscrete adjunctions
 
-==== Definition 3.1 ====
+$$D:\mathcal{Set}\rightleftarrows\mathcal{Top}:U\quad\text{and}\quad U:\mathcal{Top}\rightleftarrows\mathcal{Set}:I.$$
 
-An adjunction \(L\dashv R\), with \(L:C\to D\), \(R:D\to C\), includes natural transformations \(\eta:1_C\Rightarrow RL\) and \(\varepsilon:LR\Rightarrow1_D\) satisfying
+See Example 1.13 for the definition of the functors involved.
 
-$$\varepsilon_{Lx}\circ L(\eta_x)=1_{Lx},\qquad R(\varepsilon_y)\circ\eta_{Ry}=1_{Ry}.$$
+==== Theorem 3.3 (Adjunctions representably). ====
 
-The first composite is \(Lx\to LRLx\to Lx\) in \(D\); the second is \(Ry\to RLRy\to Ry\) in \(C\). These triangle identities express that translating a map there and back returns it unchanged.
+//Given functors \(L:\mathcal C\to\mathcal D\) and \(R:\mathcal D\to\mathcal C\) between strict categories, there is a unit and a counit making the pair \((L,R)\) into an adjunction \(L\dashv R\) if and only if, for all objects \(x\in\mathcal C\) and \(y\in\mathcal D\), there is a bijection//
 
-==== Example 3.2 ====
+$$\mathcal D(Lx,y)\cong\mathcal C(x,Ry)$$
 
-* \((-)_{+}\dashv U:\mathbf{Set}_*\to\mathbf{Set}\): a pointed map \(S\sqcup\{*\}\to(X,x_0)\) is uniquely specified by its values on \(S\); the extra point must go to \(x_0\). The unit includes \(S\) into its enlargement. The counit sends the newly added point to the existing basepoint and keeps the original elements.
-  * \(k^{(-)}\dashv U:\mathbf{Vect}_k\to\mathbf{Set}\): a function \(S\to U(V)\) extends uniquely by finite linear combinations. The unit sends \(s\) to \(e_s\); the counit evaluates a formal linear combination of vectors in \(V\).
-  * \(D\dashv U:\mathbf{Top}\to\mathbf{Set}\): every function from a discrete space is continuous, so \(\mathbf{Top}(D(S),X)\cong\mathbf{Set}(S,U(X))\).
-  * The adjunction \(U\dashv I\), with \(U:\mathbf{Top}\to\mathbf{Set}\) and \(I:\mathbf{Set}\to\mathbf{Top}\): every function into an indiscrete space is continuous, so \(\mathbf{Set}(U(X),S)\cong\mathbf{Top}(X,I(S))\).
+//which is natural in \(x\) and \(y\).//
 
-Thus the topology examples form \(D\dashv U\dashv I\). For the last two, the hom correspondences leave the underlying functions unchanged, so naturality follows from function composition. In the first two, restriction/extension commutes with reindexing generators and postcomposing structure-preserving maps. These explanations verify why the displayed pairs are adjunctions.
+//Proof.// Given an adjunction \(L\dashv R\), the unit \(\eta:\operatorname{id}_{\mathcal C}\Rightarrow RL\) induces a function
 
-==== Theorem 3.3 ====
+$$\mathcal D(Lx,y)\xrightarrow{R}\mathcal C(RLx,Ry)\xrightarrow{(\eta_x)^*}\mathcal C(x,Ry),\quad(g:Lx\to y)\mapsto R(g)\circ\eta_x,$$
 
-An adjunction structure on \((L,R)\) is equivalently a family of bijections
+and the counit \(\varepsilon:LR\Rightarrow\operatorname{id}_{\mathcal D}\) induces a function
 
-$$\Phi_{x,y}:D(Lx,y)\cong C(x,Ry)$$
+$$\mathcal C(x,Ry)\xrightarrow{L}\mathcal D(Lx,LRy)\xrightarrow{(\varepsilon_y)_*}\mathcal D(Lx,y),\quad(f:x\to Ry)\mapsto\varepsilon_y\circ L(f).$$
 
-natural contravariantly in \(x\) and covariantly in \(y\). Hom collections are taken in an adequate universe; smallness of all of \(C,D\) is not being asserted.
+These are mutually inverse and natural in \(x\) and \(y\) (Exercise).
 
-The source gives the functions \(g\mapsto R(g)\eta_x\) and \(f\mapsto\varepsilon_yL(f)\). In the converse direction it specifies \(\eta_x=\Phi_{x,Lx}(1_{Lx})\) and \(\varepsilon_y=\Phi^{-1}_{Ry,y}(1_{Ry})\).
+Conversely, suppose that, for all objects \(x\in\mathcal C\) and \(y\in\mathcal D\), we are given natural bijections
 
-**Two embedded exercise assignments (p. 12) ask for the mutual inverse and naturality checks, and for naturality and triangle identities of the constructed unit and counit. Those proofs and their Lean solutions are intentionally withheld.** The formulas above are source-supplied data, not solutions of those assignments.
+$$\varphi_{x,y}:\mathcal D(Lx,y)\cong\mathcal C(x,Ry).$$
 
-Riehl's Definition 4.1.1 starts from the hom-bijection formulation. The primary starts from unit and counit. This difference is a choice of presentation, resolved by the theorem, rather than two incompatible meanings of adjunction.
+Define \(\eta:\operatorname{id}_{\mathcal C}\Rightarrow RL\) whose component at an object \(x\in\mathcal C\) is given by
 
-===== Lean =====
+$$\eta_x:=\varphi_{x,Lx}(\operatorname{id}_{Lx}):x\to RLx.$$
 
-The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Assigned solutions are withheld for 3.3. 
+Define \(\varepsilon:LR\Rightarrow\operatorname{id}_{\mathcal D}\) whose component at an object \(y\in\mathcal D\) is given by the morphism
 
-===== Verification =====
+$$\varepsilon_y:=\varphi^{-1}_{Ry,y}(\operatorname{id}_{Ry}):LRy\to y.$$
 
-The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+These are well-defined natural transformations satisfying the triangle identities (Exercise).
+
+This proves that \(L\dashv R\) is an adjunction. \(\square\)
+
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences|Equivalences]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

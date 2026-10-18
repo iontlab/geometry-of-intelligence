@@ -9,7 +9,7 @@
   * [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser — official Universität Hamburg profile]].
   * [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde — official Universität Regensburg directory]], with an author homepage linked there: [[https://sites.google.com/view/tashi-walde/|Tashi Walde]].
 
-**Authorized original manuscript:** {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Complete original 13-page PDF}}. The site owner explicitly confirmed publication clearance on 18 October 2026. The original is reproduced as primary reading in facsimile excerpts across the existing eight chapters; the complete PDF preserves selectable text and original hyperlinks. SHA-256: ''5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc''.
+**Authorized original manuscript:** {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Complete original 13-page PDF}}. The site owner explicitly confirmed publication clearance on 18 October 2026. The original is reproduced as primary reading as native text, typeset mathematics and vector diagrams across the existing eight chapters; the complete PDF preserves selectable text and original hyperlinks. SHA-256: ''5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc''.
 
 The primary source controls coverage, numbering and the first installment's scope. It introduces the higher/synthetic motivation, then develops ordinary categories, functors, natural transformations, Yoneda, adjunctions and equivalences. Its later course announcements are not additional completed source material.
 
@@ -28,7 +28,7 @@ We use the ordinary-category definitions and examples in Chapter 1, Yoneda in §
 ^ Topic ^ Convention used here ^ Comparison and boundary ^
 | Category | An ordinary category in the strict lessons, called a //strict category// by Moser–Walde. | Their unqualified later //category// refers to the synthetic infinity-setting. Riehl's basic //category// is ordinary. |
 | Composition | \(g\circ f\) means first \(f\), then \(g\). | Lean writes the same composite as ''f ≫ g''. Likewise ''F ⋙ G'' means first F, then G. |
-| Size | The primary's three nested set-universes; default object and hom sets are large. | Lean object and morphism universe levels are independent type-universe parameters. They do not constitute a proof that the primary's set-universes exist. |
+| Size | The primary's three nested set-universes; default object and hom sets are large. | The source-faithful layer uses actual ZFC object and hom sets in the stated set-universes, with proved bridges to Mathlib categories. Universe existence remains the authors’ explicit assumption. |
 | Yoneda | \(C(-,c):C^{op}\to\mathbf{Set}\), the contravariant form. | Riehl's Theorem 2.2.4 first presents the covariant form \(C(c,-)\); dualize the domain category, not the target Set. |
 | Adjunction | Unit and counit with triangle identities, then the hom-bijection theorem. | Riehl begins with a specified hom-bijection natural in both variables; the two formulations are equivalent. |
 | Equivalence | Quasi-inverse and natural isomorphisms; triangles are not part of primary Definition 3.4. | Mathlib's bundled ''Equivalence'' includes a triangle condition. An ordinary equivalence can be adjusted to an adjoint equivalence; arbitrary chosen unit/counit isomorphisms need not already satisfy triangles. |
@@ -39,6 +39,6 @@ We use the ordinary-category definitions and examples in Chapter 1, Yoneda in §
 
 All three source files were opened in the execution environment, their page counts verified, and their hashes matched to the supplied manifest. The primary Moser–Walde manuscript is now published with user-confirmed clearance. The two supplementary books remain private reference files. Copyright in the primary manuscript remains with its original rights holders; the wiki-wide license does not apply to it, and no right to relicense it is asserted.
 
-The lesson prose, stories, additional examples and supplemental arguments are iLab educational work prepared with AI assistance. Source alignment and mathematical review are recorded separately from Lean checking. No independent human review or author endorsement is claimed.
+The main chapter text is the original authors’ manuscript. Story and Plain Language panels are supplementary iLab educational work prepared with AI assistance; the Mathematics panel reproduces the exact original passage. Source alignment and mathematical review are recorded separately from Lean checking. No independent human review or author endorsement is claimed.
 
 Back: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Synthetic Category Theory]] · [[:mathematics_learning:higher_category_theory:start|Higher Category Theory]]

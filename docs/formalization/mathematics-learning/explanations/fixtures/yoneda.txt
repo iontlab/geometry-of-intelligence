@@ -2,94 +2,117 @@
 
 ===== Original lecture notes — primary reading =====
 
-//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The facsimiles below reproduce the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
+//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The native text below reproduces the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
 
 {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Open the complete original 13-page PDF (selectable text and original links)}}
 
-The original text is the primary reading. The iLab Story, Plain Language, Mathematics, Lean and Verification sections below are supplementary. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
+The original text is the primary reading. The Explain controls beside the original passages open the supplementary Story / Fairy Tale, Plain Language, Mathematics, Lean and Verification layers. Mathematics reproduces the exact original statement. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
 
-[[#story_fairy_tale|Story / Fairy Tale]] · [[#plain_language|Plain Language]] · [[#mathematics|Mathematics and statement controls]] · [[#lean|Lean]] · [[#verification|Verification]]
 
-**Original PDF page 9 — continued below the preceding chapter.**
+==== 2. Yoneda lemma ====
 
-{{:mathematics_learning:synthetic_category_theory:original:p09-yoneda.png?1000|Moser–Walde original manuscript, PDF page 9, yoneda}}
+We now turn to one of the fundamental results of category theory, the //Yoneda lemma//. An important consequence of this result is that an object in a strict category is determined, up to isomorphism, by its representable functor. Hence we can understand an object (up to isomorphism) through its relationships with other objects. It also highlights the central role of the strict category \(\mathcal{Set}\) in strict category theory. For instance, we can detect isomorphisms in a strict category by proving that certain functions of sets are bijections.
 
-**Original PDF page 10 — complete page.**
+==== Theorem 2.1 (Yoneda lemma). ====
 
-{{:mathematics_learning:synthetic_category_theory:original:p10-yoneda.png?1000|Moser–Walde original manuscript, PDF page 10, yoneda}}
+//Let \(\mathcal C\) be a locally small strict category. For all objects \(c\in\mathcal C\) and functors \(F:\mathcal C^{\mathrm{op}}\to\mathcal{Set}\), there is a bijection of sets//
 
-===== Supplementary iLab explanations =====
+$$\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})(\mathcal C(-,c),F)\cong Fc$$
 
-The following independent educational content is supplementary to the authors’ original manuscript above. Its verification claims apply only to the specifically mapped Lean declarations.
+//which is natural in both \(c\) and \(F\).//
 
-**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §2, items 2.1–2.7, pp. 9–10.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Formalization status is item-specific; see Lean and Verification**.
+//Proof.// Evaluation at the identity morphism defines a function
 
-**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. The authorized original PDF is available in the primary reading above.
+$$\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})(\mathcal C(-,c),F)\to Fc,\quad(\alpha:\mathcal C(-,c)\Rightarrow F)\mapsto\alpha_c(\operatorname{id}_c),$$
 
-**Teaching scope:** Statements and source numbering are retained. Proofs and construction checks assigned as exercises by Lyne Moser and Tashi Walde are intentionally withheld, including Lean solutions and explanatory walkthroughs.
+where \(\alpha_c:\mathcal C(c,c)\to Fc\) is the function given by the component of \(\alpha\) at \(c\).
 
-===== Story / Fairy Tale =====
+Next, consider the function
 
-Mira asks a scribe to stamp every permit arriving at the tower. The scribe has a rule for transporting stamps backwards along routes, and every stamp assignment must respect that rule. Mira discovers that one choice determines the whole assignment: the stamp on the tower's remain-here permit. A permit arriving from any other town must receive the stamp obtained by transporting that choice along the permit.
+$$Fc\to\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})(\mathcal C(-,c),F),\quad u\mapsto\alpha_u$$
 
-She then compares two towers by comparing all their incoming permits. If those comparisons respect every change of departure town and are reversible, the towers themselves have reversible permits between them. A list of counts alone would not provide that conclusion.
+sending an element \(u\in Fc\) to \(\alpha_u:\mathcal C(-,c)\Rightarrow F\) with component at an object \(x\in\mathcal C\) given by the function
 
-**Story key:** incoming permits form a representable; the stamp system is a presheaf; a compatible assignment is a natural transformation. **Where the analogy stops:** “all relationships” means the full hom-functor with its action on maps, not a finite survey, a numerical similarity score, or just matching cardinalities.
+$$(\alpha_u)_x:\mathcal C(x,c)\to Fx,\quad(f:x\to c)\mapsto Ff(u),$$
 
-===== Plain Language =====
+where \(Ff:Fc\to Fx\) is the function given by the image of \(f\) under \(F\). This is a well-defined natural transformation (Exercise).
 
-Yoneda says that a natural rule assigning data to every map into an object is determined by one piece of data at that object. Naturality forces the rest. This turns an apparently enormous family of choices into one element of a set.
+These functions are mutually inverse and natural in \(c\) and \(F\) (Exercise). \(\square\)
 
-For an independent example in sets, let the test object be the two labels \(\{\mathrm{red},\mathrm{blue}\}\), and let the data assigned to a set \(X\) be its subsets. A map \(f:X\to\{\mathrm{red},\mathrm{blue}\}\) colors \(X\). Choosing a subset of the label set determines a natural rule: keep exactly the points whose colors lie in that subset. The four choices give “keep none,” “keep red,” “keep blue,” and “keep all.” Yoneda explains why these exhaust all rules compatible with inverse images along every function.
+==== Construction 2.2. ====
 
-===== Mathematics =====
+Let \(\mathcal C\) be a locally small strict category. There is a functor
 
-==== Theorem 2.1 ====
+$$\mathsf y_{\mathcal C}:\mathcal C\to\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})$$
 
-Assume \(C\) is locally small, and write \(h_c=C(-,c)\). A presheaf here means a functor \(F:C^{op}\to\mathbf{Set}\). The theorem gives
+called the **Yoneda functor**, sending
 
-$$\operatorname{Nat}(h_c,F)\cong F(c).$$
+  * an object \(c\in\mathcal C\) to the representable functor \(\mathcal C(-,c):\mathcal C^{\mathrm{op}}\to\mathcal{Set}\);
+  * a morphism \(f:c\to d\) in \(\mathcal C\) to the natural transformation \(\mathcal C(-,f):\mathcal C(-,c)\Rightarrow\mathcal C(-,d)\).
 
-The source specifies evaluation \(\alpha\mapsto\alpha_c(1_c)\) and the candidate inverse with components \(\alpha^u_x(f)=F(f)(u)\). **Two embedded exercise assignments (p. 9) ask for naturality of the candidate and for mutual inverse and naturality checks in \(c,F\). These solutions are withheld.**
+This is well-defined (Exercise).
 
-The collection of natural transformations may initially be formed in a larger universe when \(C\) is not small. This bijection gives a small-set representative for this particular collection. It does not assert that every hom collection in the whole presheaf category of a large category is small.
+==== Definition 2.3. ====
 
-==== Construction 2.2 ====
+A functor \(F:\mathcal C\to\mathcal D\) between strict categories is **fully faithful** if, for all objects \(x,y\in\mathcal C\), the induced function
 
-The Yoneda functor \(y_C:C\to\mathrm{Fun}(C^{op},\mathbf{Set})\) sends \(c\) to \(h_c\) and \(q:c\to d\) to the postcomposition transformation \(h_q\). **Its well-definedness is assigned as an exercise (p. 9); the solution is withheld.**
+$$\mathcal C(x,y)\to\mathcal D(Fx,Fy)$$
 
-==== Definition 2.3 ====
+is a bijection of sets.
 
-A functor \(F:C\to D\) is fully faithful when \(C(c,d)\to D(Fc,Fd)\) is bijective for each pair \(c,d\). This does not require injectivity on objects.
+==== Corollary 2.4. ====
 
-==== Corollary 2.4 ====
+//Let \(\mathcal C\) be a locally small strict category. The Yoneda functor//
 
-The Yoneda functor is fully faithful. **Assigned proof (p. 10): solution withheld.**
+$$\mathsf y_{\mathcal C}:\mathcal C\to\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})$$
 
-==== Proposition 2.5 ====
+//is fully faithful.//
 
-A fully faithful functor reflects isomorphisms: if \(F(f)\) is invertible, so is \(f\). Moreover, \(x\cong y\) if and only if \(Fx\cong Fy\). **Assigned proof (p. 10): solution withheld.**
+//Proof.// Exercise. \(\square\)
 
-==== Corollary 2.6 ====
+==== Proposition 2.5. ====
 
-For \(f:c\to d\) in a locally small category, the following are equivalent: \(f\) is invertible; every postcomposition function \(C(x,c)\to C(x,d)\) is bijective; every precomposition function \(C(d,x)\to C(c,x)\) is bijective.
+//Let \(F:\mathcal C\to\mathcal D\) be a fully faithful functor. Then \(F\) reflects isomorphisms, i.e., if \(f\) is a morphism in \(\mathcal C\) such that \(Ff\) is an isomorphism in \(\mathcal D\), then \(f\) is an isomorphism in \(\mathcal C\).//
 
-The authors derive the first comparison using full faithfulness of Yoneda and Proposition 1.24. They obtain the outgoing-map comparison by passing to the opposite category. **Inside that argument they assign the equivalence between invertibility of \(f\) and of \(f^{op}\) as an exercise (p. 10). That proof is withheld.** The other stated reasoning remains attributed to the authors; no replacement proof of the assigned step is supplied.
+//Moreover, two objects \(x,y\in\mathcal C\) are isomorphic if and only if their images \(Fx,Fy\in\mathcal D\) are isomorphic.//
 
-==== Corollary 2.7 ====
+//Proof.// Exercise. \(\square\)
 
-Full faithfulness of Yoneda and Proposition 2.5 give
+==== Corollary 2.6. ====
 
-$$c\cong d\quad\Longleftrightarrow\quad h_c\cong h_d\ \text{naturally}.$$
+//Let \(\mathcal C\) be a locally small strict category. The following are equivalent for a morphism \(f:c\to d\) in \(\mathcal C\).//
 
-“Naturally” is essential: unrelated bijections at individual test objects are not the hypothesis. More generally \(F\) is representable when there is an object \(c\) and a natural isomorphism \(h_c\cong F\); such a representing object is determined up to isomorphism.
+//(i) The morphism \(f\) is an isomorphism in \(\mathcal C\).//
 
-===== Lean =====
+//(ii) For all objects \(x\in\mathcal C\), the induced function//
 
-The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Assigned solutions are withheld for 2.1, 2.2, 2.4, 2.5, 2.6. 
+$$f_*:\mathcal C(x,c)\to\mathcal C(x,d)$$
 
-===== Verification =====
+//is a bijection of sets.//
 
-The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+//(iii) For all objects \(x\in\mathcal C\), the induced function//
+
+$$f^*:\mathcal C(d,x)\to\mathcal C(c,x)$$
+
+//is a bijection of sets.//
+
+//Proof.// Since the Yoneda functor \(\mathsf y_{\mathcal C}:\mathcal C\to\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})\) is fully faithful, it preserves and reflects isomorphisms. Hence the morphism \(f:c\to d\) is an isomorphism in \(\mathcal C\) if and only if the natural transformation \(\mathcal C(-,f):\mathcal C(-,c)\Rightarrow\mathcal C(-,d)\) is an isomorphism in \(\operatorname{Fun}(\mathcal C^{\mathrm{op}},\mathcal{Set})\). By Proposition 1.24, this holds if and only if it is a natural isomorphism, i.e., for every object \(x\in\mathcal C\), the induced morphism
+
+$$f_*:\mathcal C(x,c)\to\mathcal C(x,d)$$
+
+is an isomorphism in \(\mathcal{Set}\). This proves that (i) and (ii) are equivalent.
+
+Next, observe that \(f\) is an isomorphism in \(\mathcal C\) if and only if \(f^{\mathrm{op}}:d\to c\) is an isomorphism in \(\mathcal C^{\mathrm{op}}\) (Exercise). Then the equivalence between (i) and (ii) for \(\mathcal C^{\mathrm{op}}\) implies that \(f^{\mathrm{op}}\) is an isomorphism in \(\mathcal C^{\mathrm{op}}\) if and only if, for every object \(x\in\mathcal C\), the induced morphism
+
+$$f^{\mathrm{op}}_*=f^*:\mathcal C^{\mathrm{op}}(x,d)=\mathcal C(d,x)\to\mathcal C(c,x)=\mathcal C^{\mathrm{op}}(x,c)$$
+
+is an isomorphism in \(\mathcal{Set}\). This proves that (i) and (iii) are equivalent. \(\square\)
+
+==== Corollary 2.7. ====
+
+//Let \(\mathcal C\) be a locally small strict category. Two objects \(x,y\in\mathcal C\) are isomorphic if and only if their representable functors \(\mathcal C(-,x)\) and \(\mathcal C(-,y)\) are naturally isomorphic.//
+
+//Proof.// This follows from the preceding proposition applied to the fully faithful Yoneda functor, together with Proposition 1.24. \(\square\)
+
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions|Adjunctions]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

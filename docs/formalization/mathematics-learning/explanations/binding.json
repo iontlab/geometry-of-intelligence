@@ -3,99 +3,99 @@
   "freshness_endpoint": "ilabexplain_learning_status",
   "boundary": "Exact whole TPL_CONTENT_DISPLAY fragment, with separate anonymous and editor digests; no normalization.",
   "pages": {
-    "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences": {
-      "revision": 1792316885,
-      "raw_sha256": "7f35b84c411576aa5cbff2d83a026ca8ec32d1442e14ff2ec9a7385cae284002",
-      "fragments": {
-        "anonymous": [
-          "8b6bccfea69996b09231040e698518e79a33d8108b6b2ee2c55b90eb08be3d2d"
-        ],
-        "editor": [
-          "2db4ed5a2ccab37a3fe846238d48827d0e0f7a82ef6e9d1e3c1fc9c94b5366a2"
-        ]
-      }
-    },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations": {
-      "revision": 1792316856,
-      "raw_sha256": "52bf41a26009bd963257010abb2d6cb535dad2efc03b6cd0efccd4ce19db1905",
+      "revision": 1792321129,
+      "raw_sha256": "a80b3365917584fb9230353a7539be3ba34d831a6f7f26676d8e02f487e26b36",
       "fragments": {
         "anonymous": [
-          "181d130a68db41e59227ed32375bec2d32644962855f4caa7129e9aee5045bad"
+          "c912ad7f7d294cf66aa8b08ec5523ceed5ab952b35c71677d7bcd706118d3596"
         ],
         "editor": [
-          "b81200743832219a79c11b5838d5664e7d20d2eb22e16b0acc36b7621c893a84"
+          "30cefab7596b4187d267ae375fe46caecd3e0ca66efb2026b0c88807ce7c3f44"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:size": {
-      "revision": 1792316873,
-      "raw_sha256": "03dfaaf51664ebf9cf427fd070cd86ab867985b2b735a210c3a0137c7cb86f47",
+      "revision": 1792321131,
+      "raw_sha256": "5489d230f204f04596262ccc53ee8b85e63f9e0cb59a7681687c8fce3a139830",
       "fragments": {
         "anonymous": [
-          "265ac673bf34e0785cdb91a3bb7fed9b76f1aaf1547d2700312ad38e11e48267"
+          "f7c53e03602b3b324e98f2c695f95e26e07c03b7b78b20ba57e344d460d77f15"
         ],
         "editor": [
-          "81e8acdf087c3b5f4bb06a069029e4929ff9c9fe5f9fda2ffc3dfdad11ca3afe"
+          "27b883c62102f4c30abcbfc3a44a9398839118e9e08ab1168166ac671a5d5c17"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:categories": {
-      "revision": 1792316874,
-      "raw_sha256": "285db7645bad3494cf46deab437e6a88c35cffda13d6daef8f309c9036275933",
+      "revision": 1792321132,
+      "raw_sha256": "2a048f7e3043a447e743f00cd64c170a867689333ba12e78dea95996137b3de0",
       "fragments": {
         "anonymous": [
-          "e2c9c34109819fb2680a9be6e0665910e31a1d9f9797364dc053eceea814738a"
+          "e53755ff5c52bafd98875440b0d4d0f5cac26b5ee07ac8fd90ddd14451fb392f"
         ],
         "editor": [
-          "b1c940e683d38c343dd679189259e6104ed524c56c086266d2d524d120ac572d"
+          "573a4c84168944f0c18c71548e6d3ebce0cb8a03ba6415d8adcfab43a935855d"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:functors": {
-      "revision": 1792316876,
-      "raw_sha256": "ae64fcef21d7a5971a75d81c4079961c3385a65ed22928d9bbd7ba231b06e025",
+      "revision": 1792321134,
+      "raw_sha256": "927321af0105a66cc29dee97b53a39ec81b73c2634caf117cd237c334647b9f7",
       "fragments": {
         "anonymous": [
-          "f1066a12dec7fc7a751bab8f1be7cfd94d8a866bdc04f352d45536b54227d2da"
+          "45b17bf9b01fa203e33a14eb71b2f6b7e47c1a5d6987dbea4a0a8afb74cf1e80"
         ],
         "editor": [
-          "d6cfeb2f856cf5671eabcfa087bae4f1a54c55a9417fe50776dee3eac8994205"
+          "81397b6dd995898c9cb0b7529f1d26aac578be26b2cf2a1990db57bb79163052"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations": {
-      "revision": 1792316872,
-      "raw_sha256": "1414f66327dbd4e945df829b9d66859213786b98a418963cd5ea4b2c32644102",
+      "revision": 1792321142,
+      "raw_sha256": "41e08155cbb69dc0e476f14bdf7d08803df1ea15fdbdc8e62bc5817edcd78984",
       "fragments": {
         "anonymous": [
-          "e6d459b356133582d0ff2edff6b35c9bf1f931f231379c75713d264bed72f09a"
+          "f9ee66e8836b3e469c8c2c9227ff57e1f2380d7912314b6470cd30f6668d358b"
         ],
         "editor": [
-          "7df45d0e254b62ee49dfff2a6ae3eb5eff3acda25931d2b91d812121690d67be"
+          "d676e1f637c2807bb1c7f3525a07a255cc47d19df8b1bc5f8ebe528073f8dd14"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda": {
-      "revision": 1792316882,
-      "raw_sha256": "753a28080ec782f31572d1b95c06e54c0272d50e4a44fbc5c3497a500e9579f2",
+      "revision": 1792321143,
+      "raw_sha256": "f19439164a36ca7575581f6d82a6d6144f1b22ca5bea9f9782d7f6c4e8e3f3ed",
       "fragments": {
         "anonymous": [
-          "d0eec7fb9563e4a454773e2838ec334a8a5bbc1a70377d8495d29ad50523c084"
+          "75c3190a443b64133e79c8ba3d9d7428c6759a5b2c5f66c7e0fdfb43fc3fb02a"
         ],
         "editor": [
-          "db285ab16d110b62811a2ca078d428d42faf80dc1e63e9357adbee98a97dd271"
+          "095584a8ab412e1699574d2efc45bd1210bf9ae3c064911dfb48cefe873f5a04"
         ]
       }
     },
     "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions": {
-      "revision": 1792316883,
-      "raw_sha256": "eb91a95ce8dd5252f33cda5c7ac44686a84ecd282fb145f09fb0facbe71412e1",
+      "revision": 1792321145,
+      "raw_sha256": "cfcb5112d5da54bf836e37b27ad83b8d5ed3f8c18ad5be2aa3c0f83065c54f6e",
       "fragments": {
         "anonymous": [
-          "5313cc740eb08c9247c02e625b8e32e26665873a2c571bd37e2a194b92b10277"
+          "225e7d905ad19172a9885de88dc5cd46f3a02531df3ef72e26edd996913da3cb"
         ],
         "editor": [
-          "05f1cf00107ae7cc8649e63336f8a6c09582ae43b49373249574f3b6d182b377"
+          "2b3b6cf1351c57e581c8548c31738b1eec5f9dcf2d78bd401645b76fd0ff1ef9"
+        ]
+      }
+    },
+    "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences": {
+      "revision": 1792321128,
+      "raw_sha256": "5c548afd6637e736b3235cae8f4d8aae4a465b4f8316f2e9729942d2b6f5aa5f",
+      "fragments": {
+        "anonymous": [
+          "3eb0f341facc8d233947a8591c02e8ee203ee9fd57ea1226737149da843004c4"
+        ],
+        "editor": [
+          "3e776b5d612ceada2997353f60599a58471b409b7d753d6b78dec0330c28e9da"
         ]
       }
     }

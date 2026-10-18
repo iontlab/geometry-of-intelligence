@@ -2,100 +2,80 @@
 
 ===== Original lecture notes — primary reading =====
 
-//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The facsimiles below reproduce the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
+//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The native text below reproduces the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
 
 {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Open the complete original 13-page PDF (selectable text and original links)}}
 
-The original text is the primary reading. The iLab Story, Plain Language, Mathematics, Lean and Verification sections below are supplementary. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
+The original text is the primary reading. The Explain controls beside the original passages open the supplementary Story / Fairy Tale, Plain Language, Mathematics, Lean and Verification layers. Mathematics reproduces the exact original statement. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
 
-[[#story_fairy_tale|Story / Fairy Tale]] · [[#plain_language|Plain Language]] · [[#mathematics|Mathematics and statement controls]] · [[#lean|Lean]] · [[#verification|Verification]]
 
-**Original PDF page 5 — complete page.**
+==== 1.2. Strict categories ====
 
-{{:mathematics_learning:synthetic_category_theory:original:p05-categories.png?1000|Moser–Walde original manuscript, PDF page 5, categories}}
+==== Definition 1.5. ====
 
-===== Supplementary iLab explanations =====
+A **strict category** \(\mathcal C\) consists of
 
-The following independent educational content is supplementary to the authors’ original manuscript above. Its verification claims apply only to the specifically mapped Lean declarations.
+  * a large set \(\operatorname{Ob}(\mathcal C)\) of **objects** \(x,y,z,\ldots\);
+  * for all objects \(x,y\in\mathcal C\), a large set \(\mathcal C(x,y)\) of **morphisms** \(f:x\to y\) from \(x\) to \(y\);
+  * for each object \(x\in\mathcal C\), an **identity morphism** \(\operatorname{id}_x:x\to x\);
+  * for all morphisms \(f:x\to y\) and \(g:y\to z\) in \(\mathcal C\), a **composite morphism** \(g\circ f:x\to z\); we also write simply \(gf\) for the composite;
 
-**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §1.2, items 1.5–1.11, p. 5.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Selected ordinary-category declarations audited; see Verification below**.
+satisfying the following axioms:
 
-**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. The authorized original PDF is available in the primary reading above.
+  * composition is unital: for each morphism \(f:x\to y\),
 
-===== Story / Fairy Tale =====
+$$f\circ\operatorname{id}_x=f\quad\text{and}\quad\operatorname{id}_y\circ f=f;$$
 
-Mira gives every town a “remain here” permit. If a permit takes a traveller from the mill to the orchard and another from the orchard to the tower, the route book supplies their composite. She may regroup a chain of permits without changing the resulting entry.
+  * composition is associative: for all morphisms \(f:x\to y\), \(g:y\to z\), and \(h:z\to t\) in \(\mathcal C\),
 
-A golden permit has a partner that undoes it in both directions. If two partners claim to undo the same golden permit, Mira inserts a journey out and back into one partner's route. Regrouping shows that it must agree with the other partner. A golden permit therefore cannot have two different inverses.
+$$(h\circ g)\circ f=h\circ(g\circ f).$$
 
-**Story key:** towns are objects, permits are morphisms, the route book specifies composition, and golden permits are isomorphisms. **Where the analogy stops:** arrows need not be trips, functions or reversible operations. The route-book equations are exact abstract rules, not claims about elapsed time or physical trajectories.
+==== Remark 1.6. ====
 
-===== Plain Language =====
+By convention, a strict category has a large set of objects, which we refer to simply as its **object set**, and large sets of morphisms, which we refer to simply as its **hom sets**.
 
-A category packages compatible kinds of objects and maps. The maps have prescribed sources and targets; composition is available only when those match. Identity maps do nothing under composition, and associativity lets us omit parentheses in a composable chain.
+We will also consider **huge strict categories** with huge sets of objects and of morphisms.
 
-An isomorphism is a map with a two-sided inverse in the same category. What counts as a valid inverse depends on the chosen maps. A bijection is enough in sets, but a continuous bijection need not be a homeomorphism: its inverse might fail to be continuous.
+==== Definition 1.7. ====
 
-An independent counterexample uses the same two-element set twice. Give the source the discrete topology and the target the indiscrete topology. The identity function from source to target is continuous and bijective. Its inverse is not continuous, because a singleton open in the discrete target pulls back to a non-open singleton in the indiscrete source.
+A strict category \(\mathcal C\) is
 
-===== Mathematics =====
+  * **locally small** if, for all objects \(x,y\in\mathcal C\), the hom set \(\mathcal C(x,y)\) is small;
+  * **small** if its object set is small and it is locally small.
 
-==== Definition 1.5 ====
+==== Example 1.8. ====
 
-An ordinary/strict category \(C\) has a large object set, a large set \(C(x,y)\) for each ordered pair of objects, identities \(1_x\in C(x,x)\), and composition
+We have the following examples of strict categories.
 
-$$C(y,z)\times C(x,y)\longrightarrow C(x,z),\quad (g,f)\longmapsto g\circ f.$$
+  * The strict category \(\mathcal{Set}\) of sets and functions.
+  * The strict category \(\mathcal{Set}_{\bullet}\) of pointed sets and basepoint-preserving functions.
+  * For a field \(k\), the strict category \(\mathcal{Vect}_k\) of \(k\)-vector spaces and \(k\)-linear maps.
+  * The strict category \(\mathcal{Top}\) of topological spaces and continuous functions.
 
-For \(f:x\to y\), \(f\circ1_x=f=1_y\circ f\). For a composable triple, \(h\circ(g\circ f)=(h\circ g)\circ f\). Merely drawing arrows does not specify a category: the composites and laws must also be given.
+All these strict categories are locally small, but not small.
 
-==== Remark 1.6 ====
+==== Definition 1.9. ====
 
-By convention the object set and hom sets are large. A huge strict category uses huge object and hom sets instead.
+Let \(\mathcal C\) be a strict category. A morphism \(f:x\to y\) in \(\mathcal C\) is an **isomorphism** if there is a morphism \(g:y\to x\) in \(\mathcal C\) such that \(g\circ f=\operatorname{id}_x\) and \(f\circ g=\operatorname{id}_y\). We write \(f:x\overset{\cong}{\longrightarrow}y\) or \(f:x\cong y\). We call \(g\) an **inverse** of \(f\).
 
-==== Definition 1.7 ====
+We say that two objects \(x\) and \(y\) in \(\mathcal C\) are **isomorphic** if there is an isomorphism \(f:x\overset{\cong}{\longrightarrow}y\) in \(\mathcal C\). We write \(x\cong y\).
 
-Locally small means every \(C(x,y)\) is small. Small means locally small with a small object set. The standard set-based examples below are locally small but not small in the primary's universe convention.
+==== Example 1.10. ====
 
-==== Example 1.8 ====
+The strict categories in Example 1.8 have the following isomorphisms.
 
-^ Category ^ Objects and morphisms ^
-| \(\mathbf{Set}\) | Small sets and functions |
-| \(\mathbf{Set}_*\) | Small pointed sets and basepoint-preserving functions |
-| \(\mathbf{Vect}_k\) | Small vector spaces over a fixed small field \(k\), with linear maps |
-| \(\mathbf{Top}\) | Small topological spaces and continuous maps |
+  * An isomorphism in \(\mathcal{Set}\) is a bijection.
+  * An isomorphism in \(\mathcal{Set}_{\bullet}\) is a basepoint-preserving bijection.
+  * An isomorphism in \(\mathcal{Vect}_k\) is a linear bijection.
+  * An isomorphism in \(\mathcal{Top}\) is a homeomorphism.
 
-Identity maps and ordinary function composition preserve each specified structure. Hom sets are subsets of function sets, which accounts for local smallness in the universe setting. These categories are not small under the source's convention.
+==== Proposition 1.11. ====
 
-==== Definition 1.9 ====
+//Let \(\mathcal C\) be a strict category. An isomorphism \(f:x\to y\) in \(\mathcal C\) has a unique inverse, which we denote by \(f^{-1}:y\to x\).//
 
-For \(f:x\to y\), an inverse is \(g:y\to x\) with \(g f=1_x\) and \(f g=1_y\). If such a map exists, \(f\) is an isomorphism and \(x\cong y\). This asserts sameness of structure, not literal equality of objects.
+//Proof.// Suppose that \(g,h:y\to x\) are two inverses of \(f\) in \(\mathcal C\). Then
 
-==== Example 1.10 ====
+$$g=g\circ\operatorname{id}_y=g\circ(f\circ h)=(g\circ f)\circ h=\operatorname{id}_x\circ h=h.\quad\square$$
 
-^ Category ^ Isomorphisms ^
-| \(\mathbf{Set}\) | Bijections |
-| \(\mathbf{Set}_*\) | Basepoint-preserving bijections |
-| \(\mathbf{Vect}_k\) | Linear bijections |
-| \(\mathbf{Top}\) | Homeomorphisms |
-
-For pointed sets, the inverse of a pointed bijection is pointed; for vector spaces, a bijective linear map has a linear inverse. Continuity of an inverse needs its own hypothesis, as the two-point example shows.
-
-==== Proposition 1.11 ====
-
-In fact a left inverse and a right inverse already agree. If \(g f=1_x\) and \(f h=1_y\), then
-
-$$g=g1_y=g(fh)=(gf)h=1_xh=h.$$
-
-Every expression has domain \(y\) and codomain \(x\). Two two-sided inverses satisfy these hypotheses, so the inverse is unique. A one-sided inverse alone is insufficient: an inclusion of a singleton into a two-element set can be retracted but is not bijective.
-
-**Additional small example.** Three objects \(a\le b\le c\), with exactly one arrow \(x\to y\) when \(x\le y\), form a category. Reflexivity supplies identities, transitivity supplies composition, and uniqueness of any arrow with fixed endpoints proves the laws. Only identity arrows are isomorphisms. Not every arrow in a category is invertible.
-
-===== Lean =====
-
-The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Lean type universes are distinguished from the source’s explicit set-universe assumptions. Higher identity types, univalence and full synthetic foundations are not asserted as Lean theorems. 
-
-===== Verification =====
-
-The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors|Functors]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

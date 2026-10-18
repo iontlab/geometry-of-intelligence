@@ -1,0 +1,27 @@
+[
+  {
+    "layer": "Mathematics",
+    "text": "Faithfully formalized and compiler-verified in the source set-universe representation. Both directions connect the source existential quasi-inverse condition with essential-surjectivity witnesses and bijectivity on every hom set. Original Proof. Next time. remains unchanged in the manuscript. Each referenced signature specifies the precise checked formulation.\n\nTheorem 3.7 (Fundamental Theorem). A functor \n𝐹\n:\n𝐶\n→\n𝐷\n between strict categories is an equivalence if and only if it is essentially surjective on objects and fully faithful.\n\nProof. Next time. \n◻\n\nOriginal manuscript — Lyne Moser and Tashi Walde. Original proofs, partial proofs and exercise markers are retained.",
+    "mathErrors": 0
+  },
+  {
+    "layer": "Plain",
+    "text": "Equivalence iff fully faithful and essentially surjective\n\nThe criterion combines complete control of arrows between image objects with enough objects up to isomorphism.\n\nExact scientific source · pinned edition ↗\n\nFaithfully formalized and compiler-verified in the source set-universe representation. Both directions connect the source existential quasi-inverse condition with essential-surjectivity witnesses and bijectivity on every hom set. Original Proof. Next time. remains unchanged in the manuscript. Each referenced signature specifies the precise checked formulation.\n\nUnderlying formal source · pinned commit ↗",
+    "mathErrors": 0
+  },
+  {
+    "layer": "Story",
+    "text": "Story / Fairy Tale · 3.7\n\nStory analogy\n\nThis story is an analogy, not the mathematical statement or proof.\n\nFern's translation accounts uniquely for every permit between image towns, and every target town has an isomorphic representative. Mira chooses those representatives and uses the unique permit preimages to build a return translator.\n\nStory key\nUnique permit preimages\nFullness and faithfulness\nChosen town representatives\nEssential surjectivity with choices used to construct a quasi-inverse\nWhere the analogy stops\n\nBoth directions connect the source existential quasi-inverse condition with essential-surjectivity witnesses and bijectivity on every hom set. Original Proof. Next time. remains unchanged in the manuscript.\n\nExact scientific source · pinned edition ↗\n\nFaithfully formalized and compiler-verified in the source set-universe representation. Both directions connect the source existential quasi-inverse condition with essential-surjectivity witnesses and bijectivity on every hom set. Original Proof. Next time. remains unchanged in the manuscript. Each referenced signature specifies the precise checked formulation.\n\nUnderlying formal source · pinned commit ↗",
+    "mathErrors": 0
+  },
+  {
+    "layer": "Lean",
+    "text": "Lean signature / statement\n∀ {U : ZFSet.{u}} {C D : ILab.MathematicsLearning.SetCategory U} (F : C.SourceFunctor D),\n  ILab.MathematicsLearning.SetCategory.IsEquivalence F ↔\n    ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective F ∧\n      ILab.MathematicsLearning.SetCategory.IsFullyFaithful F\nSource module\n\nILab.MathematicsLearning.SetCategoryEquivalences\n\nView Lean source · line 60 ↗",
+    "mathErrors": 0
+  },
+  {
+    "layer": "Verification",
+    "text": "Status: Lean-verified\n\nCompiled and axiom-audited in the pinned public project\n\nLean 4.34.0 · Mathlib v4.34.0\n\nMathlib revision: 5ed2965256430c3649e86755f9576b54eca72435\n\nDirect project-local dependencies\nQuasiInverseData\nQuasiInverseData.counitIso\nQuasiInverseData.inverse\nQuasiInverseData.mk\nQuasiInverseData.unitIso\nSetCategory\nSetCategory.IsEquivalence\nSetCategory.IsEssentiallySurjective\nSetCategory.IsFullyFaithful\nSetCategory.IsIsomorphism\nSetCategory.Object\nSetCategory.Object.member\nSetCategory.SourceFunctor\nSetCategory.SourceFunctor.fromMathlib\nSetCategory.SourceFunctor.map\nSetCategory.SourceFunctor.obj\nSetCategory.SourceFunctor.toMathlib\nSetCategory.compose\nSetCategory.essentiallySurjective_agrees\nSetCategory.hom\nSetCategory.identity\nSetCategory.instCategoryObject\nSetCategory.isIsomorphism_iff_isIso\nquasi_inverse_iff_fully_faithful_essSurj\nAxiom dependencies\n\nClassical.choice, Quot.sound, propext\n\nFoundational Lean axioms are not project-added assumptions.\n\nLesson mapping — authored metadata\n\nExact set-coded formulations of 3.1 and 3.4–3.7, including both equivalences of an adjoint equivalence and the adjoint upgrade.\n\nIndependently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper\n\nView Lean source · line 60 ↗",
+    "mathErrors": 0
+  }
+]

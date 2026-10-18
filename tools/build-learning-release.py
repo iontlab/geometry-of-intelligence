@@ -128,7 +128,7 @@ for page,c in captures.items():
         label=(r['kind']+' '+r['key']) if r['kind']!='unnumbered' else r['topic']
         source_tuples[r['key']]={'page_id':page,'revision':c['revision'],'whole_page_sha256':c['raw_sha256'],
             'source_link':r['public_url']+'&rev='+str(c['revision'])+'#'+anchor,
-            'anchor':anchor,'heading_text':expected,'heading_html':markup,
+            'anchor':anchor,'legacy_anchor':headings[r['key']].get('legacy_anchor',anchor),'heading_text':expected,'heading_html':markup,
             'heading_html_by_role':{'anonymous':markup,'editor':editor[0]['html']},
             'item_key':r['key'],'item_label':label,
             'primary_sha256':'5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc',

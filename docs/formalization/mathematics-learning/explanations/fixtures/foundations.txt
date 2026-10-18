@@ -2,94 +2,159 @@
 
 ===== Original lecture notes — primary reading =====
 
-//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The facsimiles below reproduce the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
+//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The native text below reproduces the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
 
 {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Open the complete original 13-page PDF (selectable text and original links)}}
 
-The original text is the primary reading. The iLab Story, Plain Language, Mathematics, Lean and Verification sections below are supplementary. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
+The original text is the primary reading. The Explain controls beside the original passages open the supplementary Story / Fairy Tale, Plain Language, Mathematics, Lean and Verification layers. Mathematics reproduces the exact original statement. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
 
-[[#story_fairy_tale|Story / Fairy Tale]] · [[#plain_language|Plain Language]] · [[#mathematics|Mathematics and statement controls]] · [[#lean|Lean]] · [[#verification|Verification]]
 
-**Original PDF page 1 — complete page.**
+**LECTURE NOTES: SYNTHETIC CATEGORY THEORY**
 
-{{:mathematics_learning:synthetic_category_theory:original:p01-foundations.png?1000|Moser–Walde original manuscript, PDF page 1, foundations}}
+Taught in parallel at Universität Hamburg and Universität Regensburg
 
-**Original PDF page 2 — complete page.**
+LYNE MOSER AND TASHI WALDE
 
-{{:mathematics_learning:synthetic_category_theory:original:p02-foundations.png?1000|Moser–Walde original manuscript, PDF page 2, foundations}}
+**Contents**
 
-**Original PDF page 3 — complete page.**
+| Introduction | 1 |
+| What is an \(\infty\)-category? | 1 |
+| Axiomatic approach to \(\infty\)-categories | 2 |
+| Course overview | 3 |
+| **I. Strict category theory** | 4 |
+| 1. First definitions | 4 |
+| 1.1. Size issues | 4 |
+| 1.2. Strict categories | 5 |
+| 1.3. Functors between strict categories | 6 |
+| 1.4. Natural transformations between functors | 7 |
+| 2. Yoneda lemma | 9 |
+| 3. Adjunctions and equivalences | 11 |
+| 3.1. Adjunctions | 11 |
+| 3.2. Equivalences of strict categories | 12 |
+| References | 13 |
 
-{{:mathematics_learning:synthetic_category_theory:original:p03-foundations.png?1000|Moser–Walde original manuscript, PDF page 3, foundations}}
+==== Introduction ====
 
-**Original PDF page 4 — continues in the next chapter.**
+This course is an introduction to //\(\infty\)-category theory//. \(\infty\)-Categories are homotopical generalisations of ordinary categories. They provide a convenient language for organising mathematical objects and their relationships, and for formulating and proving theorems. Over the past few decades, they have become an important tool in areas of algebraic topology, algebraic geometry, number theory, homological algebra, and mathematical physics.
 
-{{:mathematics_learning:synthetic_category_theory:original:p04-foundations.png?1000|Moser–Walde original manuscript, PDF page 4, foundations}}
+==== What is an ∞-category? ====
 
-===== Supplementary iLab explanations =====
+Informally, an \(\infty\)-category consists of
 
-The following independent educational content is supplementary to the authors’ original manuscript above. Its verification claims apply only to the specifically mapped Lean declarations.
+  * objects \(x,y,\ldots\);
+  * morphisms \(f:x\to y\) between objects;
+  * 2-morphisms
 
-**[Draft] · First lesson · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, introduction pp. 1–3 and ordinary-category motivation p. 4.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Formalization status is item-specific; see Lean and Verification**.
+<tikzjax>
+\begin{document}
+\begin{tikzpicture}[>=stealth,baseline=(x.base)]
+\node (x) at (0,0) {$x$}; \node (y) at (2,0) {$y$};
+\draw[->] (x) to[bend left=30] node[above] {$f$} (y);
+\draw[->] (x) to[bend right=30] node[below] {$g$} (y);
+\node at (1,0) {$\Downarrow\!\alpha$};
+\end{tikzpicture}
+\end{document}
+</tikzjax>
 
-**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. The authorized original PDF is available in the primary reading above.
+between parallel morphisms
 
-===== Story / Fairy Tale =====
+  * 3-morphisms between parallel 2-morphisms;
+  * and so on;
 
-Mira is the keeper of a kingdom's route book. Each town has an entry, each permitted journey has a name, and the book says how two journeys join. For ordinary bookkeeping she treats a three-stage journey as the same composite however she groups its stages.
+such that all \(k\)-morphisms for \(k\geq2\) are invertible, in a suitably weak sense. Composition is associative and unital up to higher invertible morphisms, which themselves satisfy compatibility conditions in all higher dimensions.
 
-The royal mapmaker notices that actual paths contain more information. Two walks may bend around a pond differently. A ribbon stretched between them can describe a deformation from one walk to the other. Two ribbons may themselves be deformed, and the mapmaker can keep a record of those comparisons too.
+==== A motivating example comes from topology. ====
 
-Mira first learns the simpler route-book rules. Later she will learn a language in which comparisons and comparisons between comparisons belong to the description from the beginning. Learning that later language does not mean pretending that every one-way road has a reverse.
+Given a topological space \(X\), consider the \(\infty\)-category whose:
 
-**Story key:** towns stand for objects; journeys for arrows; ribbons suggest higher identifications. **Where the analogy stops:** literal timed paths do not obey strict associativity or strict unit laws under the usual parametrized concatenation. The topological example uses homotopies and coherence; an ordinary category instead has exact equations. Physical transport does not supply a general categorical model automatically.
+  * objects are points of \(X\);
+  * morphisms are paths between points in \(X\);
 
-===== Plain Language =====
+<tikzjax>
+\begin{document}
+\begin{tikzpicture}[>=stealth]
+\fill (0,0) circle (1pt) node[left] {$x$};
+\fill (2,.7) circle (1pt) node[right] {$y$};
+\draw (0,0) .. controls (.5,.6) and (1.3,.15) .. (2,.7);
+\draw[->] (.85,.325) -- (1.18,.36);
+\end{tikzpicture}
+\end{document}
+</tikzjax>
 
-A category begins with things and composable maps between them. A higher category also records comparisons between maps, comparisons between those comparisons, and so on. In this course, an infinity-category means the \((\infty,1)\) kind: dimensions two and above are invertible in an appropriate weak sense; one-dimensional maps need not be.
+  * 2-morphisms are homotopies between paths, fixing the endpoints;
 
-For a space, points can be objects and paths can be arrows. A path can be reversed, but travelling out and back usually gives a path that is deformable to standing still, rather than literally the constant path. This example has invertibility even at dimension one and motivates an infinity-groupoid.
+<tikzjax>
+\begin{document}
+\begin{tikzpicture}[>=stealth]
+\fill[gray!45] (0,0) .. controls (.6,.7) and (1.4,.7) .. (2,0) .. controls (1.4,-.7) and (.6,-.7) .. (0,0);
+\draw (0,0) .. controls (.6,.7) and (1.4,.7) .. (2,0);
+\draw (0,0) .. controls (.6,-.7) and (1.4,-.7) .. (2,0);
+\draw[->] (.85,.52) -- (1.15,.52);
+\draw[->] (.85,-.52) -- (1.15,-.52);
+\fill (0,0) circle (1pt) node[left] {$x$};
+\fill (2,0) circle (1pt) node[right] {$y$};
+\end{tikzpicture}
+\end{document}
+</tikzjax>
 
-There are different ways to make this precise. Quasicategories and complete Segal spaces are concrete models. An axiomatic or synthetic treatment starts from specified operations and principles and asks what follows. Neither approach makes the necessary coherence conditions disappear.
+  * 3-morphisms are homotopies between homotopies, fixing the boundaries;
+  * and so on.
 
-The first installment deliberately starts with ordinary categories. You need not learn fibrations or Kan extensions to begin it. The later course overview mentions those topics, together with localisations, limits and colimits, as future work.
+Composition is given by concatenating paths and homotopies. Concatenation of paths is associative and unital up to homotopy: different ways of composing the same paths need not give exactly the same parametrised path, but they can be continuously deformed into one another. Moreover, reversing a path gives an inverse up to homotopy. Thus, in this example, even the morphisms are invertible in the appropriate sense. Such a structure is called an //\(\infty\)-groupoid//.
 
-===== Mathematics =====
+==== Axiomatic approach to ∞-categories ====
 
-==== Informal higher-dimensional picture ====
+Traditionally, \(\infty\)-categories have been studied through concrete //models//, such as quasi-categories [Joy08, Lur09] and complete Segal spaces [Rez01, Ras23]. These models make the informal description above precise using constructions within set-theoretic foundations. Encoding \(\infty\)-categories in set-theoretic terms can make them difficult to work with: questions about intrinsic categorical properties may become hard combinatorial problems involving the chosen model.
 
- There are objects \(x,y\), arrows \(f:x\to y\), 2-morphisms between parallel arrows, and higher morphisms between parallel lower ones. Composition is unital and associative up to specified invertible higher comparisons, with further coherence. This paragraph is motivation, not a complete definition of an infinity-category.
+In this course, we will take an axiomatic approach to \(\infty\)-category theory. Our approach differs from the model-based one described above in the following aspects: the foundations, including the structure identity principle, and the synthetic approach.
 
-==== Topological motivation ====
+==== Homotopy type theory. ====
 
- For a space \(X\), use points, paths, endpoint-fixing homotopies, and homotopies fixing the preceding boundaries at higher levels. Reversal supplies inverses up to homotopy. Reparametrizing concatenated paths explains why ordinary path concatenation is associative only up to homotopy. These facts motivate the fundamental infinity-groupoid; no full model construction is being proved here.
+The first aspect is a change of foundations. In ordinary set-based mathematics, given a set \(X\) and elements \(x,y\in X\), the expression \(x=y\) is a proposition: it is either true or false, and carries no further structure describing an identification between \(x\) and \(y\).
 
-==== Identity types and transport ====
+In //homotopy type theory//, our basic objects are types. We write \(x:X\) to say that \(x\) is a term, or element, of the type \(X\). Given terms \(x,y:X\), the expression
 
- In homotopy type theory, if \(x,y:X\), the expression \(x=_X y\) is a type. Terms \(p,q:x=_X y\) can themselves have an identity type \(p=q\). A dependent family \(P:X\to\mathcal U\) transports data from \(P(x)\) to \(P(y)\) along an identification. In ordinary set-based mathematics equality does not retain this hierarchy of identification data.
+$$x=y$$
 
-==== Structure Identity Principle ====
+is itself a type, called an //identity type//. Its terms can be thought of as paths identifying \(x\) and \(y\). Given two such terms \(p,q:x=y\), we can form another identity type
 
- In the appropriate univalent setting, identifications of suitably defined structures correspond to their structure-preserving equivalences. For groups, this relates the identity type of groups to group isomorphisms. This principle is not a theorem of arbitrary type theory and is not obtained merely by changing notation from sets to types.
+$$p=q,$$
 
-The primary compares the isomorphic groups \((\{0,1\},+\bmod 2)\) and \((\{1,-1\},\cdot)\). Having an element of order two is invariant under group isomorphism. Having the particular number \(0\) as identity depends on the chosen presentation: it holds for the first group but not the second.
+whose terms can be thought of as homotopies between these paths. This process continues indefinitely.
 
-For an independent example, a two-element group may be presented as the permutations of two tokens or as integers modulo two. The assertion that every element squares to the identity is structural; the assertion that an element's underlying representation is a particular ordered pair is presentation-dependent. The structure must be distinguished from the chosen encoding.
+A type therefore already carries higher-dimensional structure: terms, identifications between terms, identifications between identifications, and so on. These identifications behave like paths and higher homotopies in a space, so types naturally behave as \(\infty\)-groupoids. The higher structure is built into our foundations.
 
-==== Synthetic foundations ====
+==== The structure identity principle. ====
 
- The primary notes propose extending HoTT to speak about noninvertible morphisms. The supplementary September draft instead presents primitives and coherence in ordinary mathematical language: categories, functors, animae and natural isomorphisms. It explicitly describes its foundational language as evolving (PDF pp. 24–25). The primary's planned type-theoretic foundation and the draft's presentation must not be identified without further work.
+When studying mathematical structures in classical foundations, one must distinguish between properties that are invariant under isomorphism and those that depend on the chosen presentation. For example, given a group \(G\), the property “\(G\) contains an element of order 2” is invariant under group isomorphism, whereas “the identity element of \(G\) is the number 0” is not. Indeed, the groups \((\{0,1\},+\text{mod }2)\) and \((\{1,-1\},\cdot)\) are isomorphic, but the latter property holds only for the first. Both properties can be expressed in set-theoretic foundations, but only the first describes the abstract group structure.
 
-==== Boundary of this lesson ====
+An inbuild feature of equality, both in set-theoretic foundations and in homotopy type theory, is the //indiscernibility principle//: if \(x=y\), then any property of \(x\) also holds for \(y\), and any additional structure on \(x\) can be transported to \(y\), and vice-versa.
 
- Objects, paths, identity types and the synthetic motivation are explained here. The actual axioms and later constructions are announced by the source, not developed in these 13 pages. The next lessons use ordinary categories, exact composition equations, and the primary's set-universe assumptions.
+Homotopy type theory allows for an additional feature that is inconceivable in classical foundations: namely the //structure identity principle//. It connects equality with the mathematical notion of having the same structure. For example, given groups \(G\) and \(H\), the terms of the identity type \(G=H\) correspond precisely to group isomorphisms from \(G\) to \(H\). Thus, giving an identification of two groups amounts to giving an isomorphism between them. The identity type records not just whether the groups can be identified, but also how they are identified.
 
-===== Lean =====
+Combined with indiscernibility, this implies that every property or construction of groups expressible in this framework is invariant under isomorphism. Invariance under isomorphism is therefore built into the foundations.
 
-The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Lean type universes are distinguished from the source’s explicit set-universe assumptions. Higher identity types, univalence and full synthetic foundations are not asserted as Lean theorems. 
+==== Synthetic category theory. ====
 
-===== Verification =====
+The second aspect is the synthetic viewpoint itself. Rather than beginning with a concrete construction of an \(\infty\)-category, we will specify axioms describing how \(\infty\)-categories and the relationships between them behave. Our emphasis will therefore shift from the question “What is an \(\infty\)-category?” to “How does the collection of \(\infty\)-categories behave?” This requires a sufficiently rich axiomatic setting, but allows us to develop the theory directly from its structural properties.
 
-The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+To do this, we extend homotopy type theory so that we can also talk about non-invertible morphisms. In this framework, \(\infty\)-categories are basic types, and we retain the core principles of homotopy type theory, such as the structure identity principle.
+
+==== Course overview ====
+
+We will begin with a brief introduction to ordinary category theory, which we will call //strict category theory// throughout these notes. The aim is to become familiar with examples and basic constructions before encountering their \(\infty\)-categorical counterparts. We will then survey the foundations of homotopy type theory, following [Rij25, Uni13]. Next, we will pass to an extension of this type theory, which is inspired from [Riv25] and formulate the axioms of synthetic category theory in this extended type theory. This approach to the foundations differs from the one presented in [CCNW21]. We will then develop category theory in this synthetic setting, following [CCNW21].
+
+We plan to cover adjunctions, localisations, left and cocartesian fibrations, the Yoneda lemma, left and right Kan extensions, and limits and colimits. These names need not be familiar at this stage: the course will introduce them progressively, explaining both their meaning and their role.
+
+//AI-use disclosure.// All mathematical content of these notes is written by the authors. An AI assistant (GPT-6 Astra) was used for proofreading, fixing small errors and typos, and other routine editing tasks.
+
+==== I. Strict category theory ====
+
+In this first part, we introduce or recall various definitions and constructions in ordinary category theory that will later be generalized to the \(\infty\)-setting. Our aim is to build intuition for the kinds of structures and results we will encounter, so that the abstract setting introduced later feels less intimidating. We will also highlight some of the limitations of strict categories and explain why they can be too rigid to do category theory. For instance, working with //sets// of objects and morphisms encourages us to formulate notions in terms of equality of objects, which can lead to constructions that are not invariant under equivalences of strict categories. Understanding this distinction, and the difficulties it creates, will motivate the synthetic approach to category theory developed later in the course.
+
+==== 1. First definitions ====
+
+We start by introducing strict categories, functors, and natural transformations, together with some examples. Throughout the course, we refer to ordinary categories as //strict categories//, reserving the term //categories// for their \(\infty\)-counterparts, namely synthetic categories, which will play a much more central role in this course.
+
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:size|Size and universes]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

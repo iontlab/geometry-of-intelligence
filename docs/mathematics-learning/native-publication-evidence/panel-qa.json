@@ -1,0 +1,2411 @@
+[
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.4",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_34"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.4",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_34"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.4",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_34"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.4",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L38",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsEquivalence&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_34"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.4",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L38",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsEquivalence&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_34"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Every ordinary equivalence can be upgraded to an adjoint equivalence",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Every ordinary equivalence can be upgraded to an adjoint equivalence",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Every ordinary equivalence can be upgraded to an adjoint equivalence",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Every ordinary equivalence can be upgraded to an adjoint equivalence",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L129",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Every ordinary equivalence can be upgraded to an adjoint equivalence",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L129",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Example 3.5",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Example 3.5",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Example 3.5",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Example 3.5",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L94",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L107",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.adjoint_equivalences&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L129",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Example 3.5",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L94",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L107",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.adjoint_equivalences&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L129",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#example_35"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.6",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_36"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.6",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_36"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.6",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_36"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.6",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L175",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L46",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_36"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Definition 3.6",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L175",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L46",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#definition_36"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Theorem 3.7",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#theorem_37_fundamental_theorem"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Theorem 3.7",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#theorem_37_fundamental_theorem"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Theorem 3.7",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#theorem_37_fundamental_theorem"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Theorem 3.7",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L60",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.fundamental_theorem&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#theorem_37_fundamental_theorem"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Theorem 3.7",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L60",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.fundamental_theorem&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#theorem_37_fundamental_theorem"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Construction 3.8",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#construction_38"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Construction 3.8",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#construction_38"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Construction 3.8",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#construction_38"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Construction 3.8",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L48",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingSetCategory&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L53",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingZero&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L56",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingOne&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L59",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_zero_ne_one&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L67",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_objects&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L80",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_hom_singleton&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L85",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingSetIso&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#construction_38"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Construction 3.8",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L48",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingSetCategory&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L53",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingZero&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L56",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingOne&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L59",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_zero_ne_one&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L67",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_objects&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L80",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_hom_singleton&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L85",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingSetIso&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#construction_38"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Proposition 3.9",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#proposition_39"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Proposition 3.9",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#proposition_39"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Proposition 3.9",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#proposition_39"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Proposition 3.9",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L90",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.includeWalkingZero&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L99",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_inclusion_equivalence&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#proposition_39"
+    ]
+  },
+  {
+    "chapter": "equivalences",
+    "control": "Explain Proposition 3.9",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L90",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.includeWalkingZero&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L99",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_inclusion_equivalence&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences&rev=1792321128#proposition_39"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.1",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_11"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.1",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_11"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.1",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_11"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.1",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L14",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetUniverse&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_11"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.1",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L14",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetUniverse&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_11"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Remark 1.2",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#remark_12"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Remark 1.2",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#remark_12"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Remark 1.2",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#remark_12"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Remark 1.2",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L22",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.universe_not_member&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#remark_12"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Remark 1.2",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L22",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.universe_not_member&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#remark_12"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Convention 1.3",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#convention_13"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Convention 1.3",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#convention_13"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Convention 1.3",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#convention_13"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Convention 1.3",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L34",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.UniverseHierarchy&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#convention_13"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Convention 1.3",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L34",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.UniverseHierarchy&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#convention_13"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.4",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_14"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.4",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_14"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.4",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_14"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.4",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L47",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsSmallSet&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L48",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsLargeSet&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L49",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsHugeSet&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_14"
+    ]
+  },
+  {
+    "chapter": "size",
+    "control": "Explain Definition 1.4",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L47",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsSmallSet&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L48",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsLargeSet&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L49",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsHugeSet&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size&rev=1792321131#definition_14"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.5",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_15"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.5",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_15"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.5",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_15"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.5",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L24",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_15"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.5",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L24",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_15"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Remark 1.6",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#remark_16"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Remark 1.6",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#remark_16"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Remark 1.6",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#remark_16"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Remark 1.6",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L24",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#remark_16"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Remark 1.6",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L24",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#remark_16"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.7",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_17"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.7",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_17"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.7",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_17"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.7",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L67",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsLocallySmall&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L71",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsSmall&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_17"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.7",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L67",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsLocallySmall&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L71",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsSmall&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_17"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.8",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_18"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.8",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_18"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.8",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_18"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.8",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SmallSetsCategory.lean#L13",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSetsCategory&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SmallSetsCategory.lean#L32",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_locallySmall&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SmallSetsCategory.lean#L37",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_not_small&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_18"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.8",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SmallSetsCategory.lean#L13",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSetsCategory&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SmallSetsCategory.lean#L32",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_locallySmall&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SmallSetsCategory.lean#L37",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_not_small&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_18"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.9",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_19"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.9",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_19"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.9",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_19"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.9",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L75",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsIsomorphism&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L80",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_19"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Definition 1.9",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L75",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsIsomorphism&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L80",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#definition_19"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.10",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_110"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.10",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_110"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.10",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_110"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.10",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SmallSetsCategory.lean#L48",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_110"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Example 1.10",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SmallSetsCategory.lean#L48",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#example_110"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Proposition 1.11",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#proposition_111"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Proposition 1.11",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#proposition_111"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Proposition 1.11",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#proposition_111"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Proposition 1.11",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L88",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.unique_inverse&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#proposition_111"
+    ]
+  },
+  {
+    "chapter": "categories",
+    "control": "Explain Proposition 1.11",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L88",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.unique_inverse&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories&rev=1792321132#proposition_111"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Definition 1.12",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#definition_112"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Definition 1.12",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#definition_112"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Definition 1.12",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#definition_112"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Definition 1.12",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L98",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceFunctor&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L120",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.functorEquiv&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#definition_112"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Definition 1.12",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L98",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceFunctor&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L120",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.functorEquiv&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#definition_112"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Example 1.13",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#example_113"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Example 1.13",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#example_113"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Example 1.13",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#example_113"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Example 1.13",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#example_113"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Example 1.13",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#example_113"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Proposition 1.14",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#proposition_114"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Proposition 1.14",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#proposition_114"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Proposition 1.14",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#proposition_114"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Proposition 1.14",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#proposition_114"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Proposition 1.14",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#proposition_114"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.15",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_115"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.15",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_115"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.15",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_115"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.15",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_115"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.15",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_115"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.16",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_116"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.16",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_116"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.16",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_116"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.16",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_116"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.16",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_116"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.17",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_117"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.17",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_117"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.17",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_117"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.17",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_117"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.17",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_117"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.18",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_118"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.18",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_118"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.18",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_118"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.18",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L128",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L138",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_118"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Remark 1.18",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L128",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L138",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#remark_118"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.19",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_119"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.19",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_119"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.19",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_119"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.19",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_119"
+    ]
+  },
+  {
+    "chapter": "functors",
+    "control": "Explain Construction 1.19",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors&rev=1792321134#construction_119"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Paths and homotopies fixing endpoints/boundaries",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#a_motivating_example_comes_from_topology"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Paths and homotopies fixing endpoints/boundaries",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#a_motivating_example_comes_from_topology"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Paths and homotopies fixing endpoints/boundaries",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#a_motivating_example_comes_from_topology"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Paths and homotopies fixing endpoints/boundaries",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L17",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathCompositionAssociativity&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L18",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathLeftIdentity&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L19",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathRightIdentity&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L21",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathLeftInverse&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L20",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathRightInverse&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#a_motivating_example_comes_from_topology"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Paths and homotopies fixing endpoints/boundaries",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L17",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathCompositionAssociativity&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L18",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathLeftIdentity&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L19",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathRightIdentity&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L21",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathLeftInverse&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L20",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathRightInverse&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#a_motivating_example_comes_from_topology"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Indiscernibility, transport and Structure Identity Principle",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#the_structure_identity_principle"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Indiscernibility, transport and Structure Identity Principle",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#the_structure_identity_principle"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Indiscernibility, transport and Structure Identity Principle",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#the_structure_identity_principle"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Indiscernibility, transport and Structure Identity Principle",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L62",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.equality_substitution&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L66",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.equality_transport&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L25",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.order_two_invariant&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L34",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.cyclicTwoSigns&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L50",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.cyclic_two_zero_maps_to_one&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L54",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#the_structure_identity_principle"
+    ]
+  },
+  {
+    "chapter": "foundations",
+    "control": "Explain Indiscernibility, transport and Structure Identity Principle",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L62",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.equality_substitution&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetUniverses.lean#L66",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.equality_transport&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L25",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.order_two_invariant&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L34",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.cyclicTwoSigns&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L50",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.cyclic_two_zero_maps_to_one&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/PathAndIdentity.lean#L54",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations&rev=1792321129#the_structure_identity_principle"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.20",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_120"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.20",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_120"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.20",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_120"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.20",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L154",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceTransformation&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L159",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.transformationEquiv&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_120"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.20",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L154",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceTransformation&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L159",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.transformationEquiv&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_120"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.21",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_121"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.21",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_121"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.21",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_121"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.21",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_121"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.21",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_121"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.22",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_122"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.22",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_122"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.22",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_122"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.22",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L167",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_122"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Definition 1.22",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L167",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#definition_122"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.23",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_123"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.23",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_123"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.23",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_123"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.23",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_123"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.23",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_123"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.24",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_124"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.24",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_124"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.24",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_124"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.24",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_124"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.24",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_124"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.25",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_125"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.25",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_125"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.25",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_125"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.25",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L32",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminalSetCategory&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L36",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminalObject&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L39",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminal_object_unique&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L44",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminal_morphism_unique&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_125"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.25",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L32",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminalSetCategory&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L36",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminalObject&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L39",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminal_object_unique&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L44",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminal_morphism_unique&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_125"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.26",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_126"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.26",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_126"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.26",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_126"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.26",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_126"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Proposition 1.26",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#proposition_126"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Remark 1.27",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#remark_127"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Remark 1.27",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#remark_127"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Remark 1.27",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#remark_127"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Remark 1.27",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L115",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.selectSetObject&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L119",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.selectSetObject_unique&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#remark_127"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Remark 1.27",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L115",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.selectSetObject&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/FiniteSetCategories.lean#L119",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.selectSetObject_unique&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#remark_127"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.28",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_128"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.28",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_128"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.28",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_128"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.28",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_128"
+    ]
+  },
+  {
+    "chapter": "natural_transformations",
+    "control": "Explain Construction 1.28",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations&rev=1792321142#construction_128"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Theorem 2.1",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#theorem_21_yoneda_lemma"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Theorem 2.1",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#theorem_21_yoneda_lemma"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Theorem 2.1",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#theorem_21_yoneda_lemma"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Theorem 2.1",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#theorem_21_yoneda_lemma"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Theorem 2.1",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#theorem_21_yoneda_lemma"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Construction 2.2",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#construction_22"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Construction 2.2",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#construction_22"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Construction 2.2",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#construction_22"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Construction 2.2",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#construction_22"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Construction 2.2",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#construction_22"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Definition 2.3",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#definition_23"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Definition 2.3",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#definition_23"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Definition 2.3",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#definition_23"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Definition 2.3",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L171",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsFullyFaithful&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#definition_23"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Definition 2.3",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategories.lean#L171",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsFullyFaithful&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#definition_23"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.4",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_24"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.4",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_24"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.4",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_24"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.4",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_24"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.4",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_24"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Proposition 2.5",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#proposition_25"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Proposition 2.5",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#proposition_25"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Proposition 2.5",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#proposition_25"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Proposition 2.5",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#proposition_25"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Proposition 2.5",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#proposition_25"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.6",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_26"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.6",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_26"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.6",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_26"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.6",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_26"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.6",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_26"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.7",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_27"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.7",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_27"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.7",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_27"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.7",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_27"
+    ]
+  },
+  {
+    "chapter": "yoneda",
+    "control": "Explain Corollary 2.7",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda&rev=1792321143#corollary_27"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Definition 3.1",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#definition_31"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Definition 3.1",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#definition_31"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Definition 3.1",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#definition_31"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Definition 3.1",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L23",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceAdjunction&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L26",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle&layer=lean",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L31",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle&layer=lean",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#definition_31"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Definition 3.1",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L23",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceAdjunction&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L26",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle&layer=verification",
+      "https://github.com/iontlab/geometry-of-intelligence/blob/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88/ILab/MathematicsLearning/SetCategoryEquivalences.lean#L31",
+      "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle&layer=verification",
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#definition_31"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Example 3.2",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#example_32"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Example 3.2",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#example_32"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Example 3.2",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#example_32"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Example 3.2",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#example_32"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Example 3.2",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#example_32"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Theorem 3.3",
+    "layer": "Mathematics",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#theorem_33_adjunctions_representably"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Theorem 3.3",
+    "layer": "Plain",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#theorem_33_adjunctions_representably"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Theorem 3.3",
+    "layer": "Story",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#theorem_33_adjunctions_representably"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Theorem 3.3",
+    "layer": "Lean",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#theorem_33_adjunctions_representably"
+    ]
+  },
+  {
+    "chapter": "adjunctions",
+    "control": "Explain Theorem 3.3",
+    "layer": "Verification",
+    "errors": 0,
+    "links": [
+      "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+      "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#theorem_33_adjunctions_representably"
+    ]
+  }
+]

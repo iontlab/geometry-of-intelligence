@@ -1,0 +1,26 @@
+[
+  {
+    "page": "start",
+    "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:start",
+    "sha256": "dfafab7f11349cef8136b9fa0705f075ec9c2656adad3f5787f5437f5fbdf345",
+    "prepared_bytes_match": true
+  },
+  {
+    "page": "sources",
+    "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:sources",
+    "sha256": "b58f4795f290a1211cbe7886706a13bad0ba4a88a50432fe4f2ff942116ea9d7",
+    "prepared_bytes_match": true
+  },
+  {
+    "page": "coverage",
+    "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:coverage",
+    "sha256": "fa6cd3b4dac0cd6170572716a65780e3e1217905ca04ced302aafc096e4182be",
+    "prepared_bytes_match": true
+  },
+  {
+    "page": "verification",
+    "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:verification",
+    "sha256": "ec0bbd040b05f55568eb48392409255587e20581afa008acecb8c0707109fa61",
+    "prepared_bytes_match": true
+  }
+]

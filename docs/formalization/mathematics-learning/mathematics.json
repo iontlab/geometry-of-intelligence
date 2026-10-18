@@ -14,8 +14,9 @@
       "proof": [
         "The exact Lean statement inserts an identity before f and an identity after g. Apply the left and right identity laws. Associativity identifies the ordinary composition notation."
       ],
-      "limitation": "A small consequence of the category laws supplied by the Category instance; it does not construct every category example in the lesson.",
-      "anchor": "definition_15"
+      "limitation": "This retained declaration is independent supporting mathematics. Complete original-item verification is determined by the source audit and the Source statement selector.",
+      "anchor": "definition_15",
+      "native_key": "1.5"
     },
     "inverse": {
       "label": "Primary 1.11 · inverse uniqueness",
@@ -28,8 +29,9 @@
         "\\[g=1_X\\circ g=(h\\circ f)\\circ g=h\\circ(f\\circ g)=h.\\]",
         "The lesson writes the symmetric choice of left/right-inverse names. Both formulations imply uniqueness of a two-sided inverse."
       ],
-      "limitation": "Arbitrary independent object and hom universes; the hypotheses are inverse equations, not set-universe axioms.",
-      "anchor": "proposition_111"
+      "limitation": "This retained declaration is independent supporting mathematics. Complete original-item verification is determined by the source audit and the Source statement selector.",
+      "anchor": "proposition_111",
+      "native_key": "1.11"
     },
     "walking": {
       "label": "Primary 3.4 / 3.8 / 3.9 · finite equivalence",
@@ -41,8 +43,9 @@
       "proof": [
         "Collapse both rooms to the single room. The composite in the one-room category is the identity. The other composite is naturally isomorphic to the identity by the unique arrow from north to each room. All required equalities hold because hom types are singletons. Mathlib also checks the triangle condition."
       ],
-      "limitation": "This concrete adjoint equivalence does not formalize Theorem 3.7 for arbitrary fully faithful, essentially surjective functors.",
-      "anchor": "proposition_39"
+      "limitation": "This retained declaration is independent supporting mathematics. Complete original-item verification is determined by the source audit and the Source statement selector.",
+      "anchor": "proposition_39",
+      "native_key": "3.9"
     },
     "surjectivity": {
       "label": "Primary 3.6 / 3.9 · essential versus literal surjectivity",
@@ -54,8 +57,9 @@
       "proof": [
         "The image is north. The explicitly defined roomIso north Y gives the required isomorphism, for either target object Y."
       ],
-      "limitation": "The formal essential-surjectivity witness is explicit: Nonempty (includeRoom.obj OneRoom.only ≅ Y). It does not use an unproved general equivalence criterion.",
-      "anchor": "proposition_39"
+      "limitation": "This retained declaration is independent supporting mathematics. Complete original-item verification is determined by the source audit and the Source statement selector.",
+      "anchor": "proposition_39",
+      "native_key": "3.9"
     },
     "cardinality": {
       "label": "Primary 3.8 · two-object example",
@@ -67,8 +71,9 @@
       "proof": [
         "The instance enumerates north and south and proves completeness by cases. The cardinality proposition is checked by Lean’s ordinary decision procedure."
       ],
-      "limitation": "Cardinality of the object type is not an invariant of categorical equivalence.",
-      "anchor": "construction_38"
+      "limitation": "This retained declaration is independent supporting mathematics. Complete original-item verification is determined by the source audit and the Source statement selector.",
+      "anchor": "construction_38",
+      "native_key": "3.8"
     },
     "nonsurjective": {
       "label": "Primary 3.6 / 3.9 · literal surjectivity fails",
@@ -80,12 +85,14 @@
       "proof": [
         "The sole source object maps to north. A putative preimage of south would therefore identify the two distinct constructors; case analysis rules this out."
       ],
-      "limitation": "This is failure of literal object surjectivity. A separate theorem supplies essential-surjectivity witnesses.",
-      "anchor": "proposition_39"
+      "limitation": "This retained declaration is independent supporting mathematics. Complete original-item verification is determined by the source audit and the Source statement selector.",
+      "anchor": "proposition_39",
+      "native_key": "3.9"
     },
     "source.1.1": {
       "label": "Primary 1.1",
       "title": "Set-universe closure: naturals, subsets, powersets, indexed unions",
+      "native_key": "1.1",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
       "anchor": "definition_11",
       "statement": [
@@ -94,11 +101,12 @@
       "proof": [
         "This is a definition. Existence of such universes is a separate assumption."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. The library is a set of sets with exact closure conditions, not an actual physical collection. The charter does not prove that a library satisfying it exists. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Exactly the four closure clauses on ZFC sets. No transitivity clause is added. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.2": {
       "label": "Primary 1.2",
       "title": "Russell argument: a universe is not its own member",
+      "native_key": "1.2",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
       "anchor": "remark_12",
       "statement": [
@@ -107,11 +115,12 @@
       "proof": [
         "Assume U ∈ U. Subset closure gives R ∈ U. Substitute R into the separation condition and derive a contradiction. Only subset closure is used in this argument."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Self-listing represents membership, not ordinary book citation. The argument needs a precise separation set and closure hypothesis. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The source Russell separation argument proves U ∉ U using its stated subset closure. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.3": {
       "label": "Primary 1.3",
       "title": "Three nested set-universes and membership assumptions",
+      "native_key": "1.3",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
       "anchor": "convention_13",
       "statement": [
@@ -120,11 +129,12 @@
       "proof": [
         "The source adopts these conditions as a convention; it does not derive universe existence."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Lean's type-universe hierarchy is not itself this set-membership statement. A faithful set-theoretic encoding must keep the existence assumptions explicit. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Three universes, their subset inclusions and both membership hypotheses are explicit data; existence is assumed. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.4": {
       "label": "Primary 1.4",
       "title": "Small, large and huge sets",
+      "native_key": "1.4",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
       "anchor": "definition_14",
       "statement": [
@@ -133,11 +143,12 @@
       "proof": [
         "Terminology defined by membership; the inclusions imply small ⇒ large ⇒ huge."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. The labels are mathematical universe membership, not numerical bounds or memory limits. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Small, large and huge mean literal membership in the three stipulated universes. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.5": {
       "label": "Primary 1.5",
       "title": "Objects, hom sets, identities, typed composition, unit and associativity laws",
+      "native_key": "1.5",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "anchor": "definition_15",
       "statement": [
@@ -146,11 +157,12 @@
       "proof": [
         "The laws are part of the category structure, not propositions about every arbitrary graph."
       ],
-      "limitation": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed. Arrows need not be functions or journeys. Mathlib categories use type universes; the set-universe existence assumptions remain separate. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Objects and hom sets belong to the stipulated large universe; all identity, composition and associativity data are fields. Membership-type functions correspond to set functions by SetFunction.graphEquiv. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.7": {
       "label": "Primary 1.7",
       "title": "Small versus locally small categories",
+      "native_key": "1.7",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "anchor": "definition_17",
       "statement": [
@@ -159,11 +171,12 @@
       "proof": [
         "These are definitions. Smallness implies local smallness directly."
       ],
-      "limitation": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed. Here small means relative universe size, not finite. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The two source membership predicates are explicit, including the small object set in IsSmall. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.8": {
       "label": "Primary 1.8",
       "title": "Set, pointed Set, vector spaces, Top; locally small but not small",
+      "native_key": "1.8",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "anchor": "example_18",
       "statement": [
@@ -172,11 +185,12 @@
       "proof": [
         "Identities and composition preserve each specified structure. Hom sets are contained in function sets. The size claim is an additional foundational obligation, separate from the category instances."
       ],
-      "limitation": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed. The analogy does not prove closure or the non-smallness claims. These require separate mathematical checks. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Incomplete original source obligation. Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.9": {
       "label": "Primary 1.9",
       "title": "Isomorphism, inverse and isomorphic objects",
+      "native_key": "1.9",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "anchor": "definition_19",
       "statement": [
@@ -185,11 +199,12 @@
       "proof": [
         "Definition; a bundled isomorphism contains the inverse and both equations."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. An isomorphism need not be equality of objects. One certified round trip is insufficient. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Existential two-sided inverse and existential isomorphism between objects, on the original set members. No choice of inverse is required by the predicate. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.10": {
       "label": "Primary 1.10",
       "title": "Bijections, pointed bijections, linear bijections and homeomorphisms",
+      "native_key": "1.10",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "anchor": "example_110",
       "statement": [
@@ -198,11 +213,26 @@
       "proof": [
         "Two inverse morphisms give inverse functions. Conversely, the inverse of a bijection preserves the point or linear structure when the forward map does. For topology, inverse continuity is required and is part of a homeomorphism."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. The story is not a reason to infer inverse continuity. Each category needs its own equivalence between the two descriptions. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Incomplete original source obligation. Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8. Each referenced signature specifies the precise checked formulation."
+    },
+    "source.1.11": {
+      "label": "Primary 1.11",
+      "title": "Uniqueness of the inverse",
+      "native_key": "1.11",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "anchor": "proposition_111",
+      "statement": [
+        "A morphism in a strict category has at most one two-sided inverse."
+      ],
+      "proof": [
+        "If g and h are inverses of f, then g=g∘1ᵧ=g∘(f∘h)=(g∘f)∘h=1ₓ∘h=h."
+      ],
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Given an isomorphism, proves existence and uniqueness of a two-sided inverse. The source identity/composition operations agree definitionally with the represented Mathlib operations. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.12": {
       "label": "Primary 1.12",
       "title": "Functor object/map data and preservation laws",
+      "native_key": "1.12",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "anchor": "definition_112",
       "statement": [
@@ -211,37 +241,12 @@
       "proof": [
         "These equations define functoriality."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. A functor need not be injective, surjective or invertible. Each referenced signature specifies the precise checked formulation."
-    },
-    "source.1.13": {
-      "label": "Primary 1.13",
-      "title": "Forgetful, added basepoint, free vector space, discrete and indiscrete functors",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "anchor": "example_113",
-      "statement": [
-        "There are forgetful functors from pointed sets, vector spaces and topological spaces to sets; a functor adjoining a new basepoint; a free-vector-space functor S↦⊕ₛ k; and discrete and indiscrete topology functors from sets to spaces."
-      ],
-      "proof": [
-        "Each construction specifies its action on functions and preserves identities and composites. Free linear extension sends each basis vector to the basis vector indexed by its image."
-      ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. These are seven distinct functors. Their adjunction properties are additional results in 3.2. Each referenced signature specifies the precise checked formulation."
-    },
-    "source.1.16": {
-      "label": "Primary 1.16",
-      "title": "Size of Cat_s and membership in CAT_s",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "anchor": "remark_116",
-      "statement": [
-        "Catₛ is an object of CATₛ. Catₛ is locally small but not small under the fixed set-universe convention."
-      ],
-      "proof": [
-        "The object and functor collections require the larger universe. Local smallness and non-smallness must be assessed separately."
-      ],
-      "limitation": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed. Type-level universe bounds alone do not establish the source's set-theoretic non-smallness statement. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The object function, every hom function and both laws are explicit; a proved two-way data equivalence relates these to Mathlib functors on the identical object/hom members. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.18": {
       "label": "Primary 1.18",
       "title": "Contravariant functors as functors from the opposite",
+      "native_key": "1.18",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "anchor": "remark_118",
       "statement": [
@@ -250,11 +255,12 @@
       "proof": [
         "Apply ordinary functor laws to Cᵒᵖ and the opposite composition formula."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. The direction change is part of the specified domain; it is not arbitrary reversal by an ordinary covariant functor. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The reversed hom functions and reversed composition law match the source, with a proved two-way data correspondence to functors from the opposite membership-type category. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.20": {
       "label": "Primary 1.20",
       "title": "Component types and naturality square",
+      "native_key": "1.20",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "anchor": "definition_120",
       "statement": [
@@ -263,11 +269,12 @@
       "proof": [
         "The commuting-square equation is the naturality condition."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Components need not be isomorphisms, and one checked square does not replace the condition for every arrow. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The component functions and naturality square are preserved by a proved data equivalence; Lean writes composition in the opposite textual order. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.22": {
       "label": "Primary 1.22",
       "title": "Componentwise natural isomorphism",
+      "native_key": "1.22",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "anchor": "definition_122",
       "statement": [
@@ -276,11 +283,12 @@
       "proof": [
         "This defines the componentwise condition; Proposition 1.24 connects it to invertibility in the functor category."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Having isomorphic image objects does not alone supply a natural family. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Exactly pointwise existence of two-sided inverses. This definition does not export the assigned proof of Proposition 1.24. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.25": {
       "label": "Primary 1.25",
       "title": "Terminal strict category [0]",
+      "native_key": "1.25",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "anchor": "construction_125",
       "statement": [
@@ -289,11 +297,12 @@
       "proof": [
         "The unique possible composition satisfies all category laws."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. A one-object category can have many arrows; [0] specifically has just one. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The object set and every hom set are literal singletons belonging to the source large universe. Each referenced signature specifies the precise checked formulation."
     },
     "source.1.27": {
       "label": "Primary 1.27",
       "title": "Objects as functors from [0]",
+      "native_key": "1.27",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "anchor": "remark_127",
       "statement": [
@@ -302,11 +311,12 @@
       "proof": [
         "The object image is prescribed, and preservation of identity forces the only arrow image."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Uniqueness is for a fixed selected object in a strict presentation. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. For each original object, proves unique existence of a functor from the set-coded singleton category taking its object to that object. Does not construct the assigned functor-category isomorphism in 1.26. Each referenced signature specifies the precise checked formulation."
     },
     "source.2.3": {
       "label": "Primary 2.3",
       "title": "Fully faithful means bijective on each hom set",
+      "native_key": "2.3",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "anchor": "definition_23",
       "statement": [
@@ -315,37 +325,12 @@
       "proof": [
         "Definition; equivalently each map is both injective and surjective."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Full faithfulness controls hom sets, not object surjectivity. Each referenced signature specifies the precise checked formulation."
-    },
-    "source.2.6": {
-      "label": "Primary 2.6",
-      "title": "Detect isomorphisms by all incoming or outgoing hom-set maps",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "anchor": "corollary_26",
-      "statement": [
-        "For f:c→d, the following are equivalent: f is invertible; postcomposition C(x,c)→C(x,d) is bijective for every x; precomposition C(d,x)→C(c,x) is bijective for every x."
-      ],
-      "proof": [
-        "The authors use full faithfulness of Yoneda and Proposition 1.24 for the incoming-map comparison, then pass to the opposite category for the outgoing-map comparison. They explicitly assign the invertibility equivalence for f and f.op as an exercise; that step is withheld."
-      ],
-      "limitation": "Non-exercise hom-bijection criterion checked; embedded opposite-invertibility exercise withheld. The quantifier is over all objects. A few selected probes need not detect invertibility. Each referenced signature specifies the precise checked formulation."
-    },
-    "source.2.7": {
-      "label": "Primary 2.7",
-      "title": "Objects are isomorphic iff their representables are naturally isomorphic",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "anchor": "corollary_27",
-      "statement": [
-        "Objects x,y of a locally small category are isomorphic if and only if h_x and h_y are naturally isomorphic."
-      ],
-      "proof": [
-        "Apply preservation and reflection of object isomorphisms to the fully faithful Yoneda functor, using the componentwise characterization of natural isomorphisms."
-      ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Unstructured bijections between individual hom sets do not suffice; the correspondence must be natural. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Exactly bijectivity of every hom function on the source object and morphism members. Each referenced signature specifies the precise checked formulation."
     },
     "source.3.1": {
       "label": "Primary 3.1",
       "title": "Left/right adjoints, unit, counit and both triangle identities",
+      "native_key": "3.1",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
       "anchor": "definition_31",
       "statement": [
@@ -354,24 +339,12 @@
       "proof": [
         "The two triangle identities are part of the definition, alongside naturality of unit and counit."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Units and counits need not be invertible. An adjunction is generally weaker than an equivalence. Each referenced signature specifies the precise checked formulation."
-    },
-    "source.3.2": {
-      "label": "Primary 3.2",
-      "title": "Added-basepoint/free-vector and discrete/indiscrete adjunctions",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
-      "anchor": "example_32",
-      "statement": [
-        "Adjoining a basepoint is left adjoint to forgetting it. Free vector space is left adjoint to its forgetful functor. Discrete topology is left adjoint to the underlying-set functor, which is left adjoint to indiscrete topology."
-      ],
-      "proof": [
-        "A pointed map from S with a new basepoint is determined by an arbitrary function on S; a linear map from the free space is determined on basis vectors. Every map from a discrete space is continuous, as is every map into an indiscrete space. These correspondences are natural."
-      ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. There are four distinct adjunctions with specified directions. Forgetting structure is not generally invertible. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Mathlib Adjunction has precisely the unit, counit, and two component triangle equations; here it is instantiated only on the faithfully represented set-coded categories and functors. Each referenced signature specifies the precise checked formulation."
     },
     "source.3.4": {
       "label": "Primary 3.4",
       "title": "Equivalence via quasi-inverse and natural isomorphisms",
+      "native_key": "3.4",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "anchor": "definition_34",
       "statement": [
@@ -380,11 +353,12 @@
       "proof": [
         "This is the quasi-inverse definition. Its relation to Mathlib's bundled adjoint equivalence requires the upgrade in 3.5."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Do not silently add triangle identities to the source definition or replace natural isomorphisms by unrelated objectwise ones. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Existential reverse functor and unit/counit natural transformations with pointwise two-sided inverses. No triangle equation is added to the definition. Each referenced signature specifies the precise checked formulation."
     },
     "source.3.5": {
       "label": "Primary 3.5",
       "title": "Strict isomorphisms and adjoint equivalences imply equivalences",
+      "native_key": "3.5",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "anchor": "example_35",
       "statement": [
@@ -393,11 +367,12 @@
       "proof": [
         "Turn equality of composite functors into identity natural isomorphisms. For an adjunction with invertible unit and counit, the two functors are quasi-inverses; reversing the natural isomorphisms gives the opposite direction."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. A general adjunction does not have invertible comparisons. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Both bullets and the final Fact are proved: strict inverses imply equivalence, both functors of an adjoint equivalence are equivalences, and every equivalence admits an adjoint upgrade. Each referenced signature specifies the precise checked formulation."
     },
     "source.3.6": {
       "label": "Primary 3.6",
       "title": "Essential surjectivity up to object isomorphism",
+      "native_key": "3.6",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "anchor": "definition_36",
       "statement": [
@@ -406,24 +381,26 @@
       "proof": [
         "Definition; the witness is an object and an isomorphism, not an equality."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Essential surjectivity is weaker than surjectivity of the object function. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. For every target object, an actual source object and isomorphism from its image are required. The library correspondence is proved on those same objects and morphisms. Each referenced signature specifies the precise checked formulation."
     },
     "source.3.7": {
       "label": "Primary 3.7",
       "title": "Equivalence iff fully faithful and essentially surjective",
+      "native_key": "3.7",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
-      "anchor": "theorem_37",
+      "anchor": "theorem_37_fundamental_theorem",
       "statement": [
         "A functor is an equivalence if and only if it is fully faithful and essentially surjective."
       ],
       "proof": [
         "The source postpones its proof. Independently: an equivalence supplies hom bijections and image representatives. Conversely choose a representative and isomorphism for every target object; full faithfulness uniquely transports arrows between representatives, producing a quasi-inverse and natural isomorphisms. The choice and universe assumptions must remain explicit."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. The converse uses representative choices. This is an ordinary category theorem; the synthetic foundational setting is not formalized by it. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Both directions connect the source existential quasi-inverse condition with essential-surjectivity witnesses and bijectivity on every hom set. Original Proof. Next time. remains unchanged in the manuscript. Each referenced signature specifies the precise checked formulation."
     },
     "source.3.8": {
       "label": "Primary 3.8",
       "title": "Walking isomorphism: two objects, singleton hom sets",
+      "native_key": "3.8",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "anchor": "construction_38",
       "statement": [
@@ -432,11 +409,12 @@
       "proof": [
         "There is exactly one possible composite with any endpoints, so the category laws and inverse equations hold."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. Distinct objects remain distinct in the object set even though they are isomorphic. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. Two distinct ZFC object codes, exactly those two objects, literal singleton hom sets, identities and mutually inverse arrows. Each referenced signature specifies the precise checked formulation."
     },
     "source.3.9": {
       "label": "Primary 3.9",
       "title": "Inclusion of object 0 from [0] into the walking isomorphism is an equivalence",
+      "native_key": "3.9",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "anchor": "proposition_39",
       "statement": [
@@ -445,46 +423,49 @@
       "proof": [
         "Its unique hom map is a bijection. Every target object is isomorphic to 0: use the identity for 0 and the specified isomorphism for 1. Alternatively collapse I to [0] and construct the two natural isomorphisms directly."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. The source proof's printed reference to 0≅0 alone does not account for object 1; the independent explanation explicitly supplies that second case. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Faithfully formalized and compiler-verified in the source set-universe representation. The actual singleton-to-walking-isomorphism inclusion is proved an equivalence in the source definition. The printed 0≅0 in the original prose is retained, not silently corrected. Each referenced signature specifies the precise checked formulation."
     },
     "source.intro.paths": {
       "label": "Primary intro.paths",
       "title": "Paths and homotopies fixing endpoints/boundaries",
+      "native_key": "intro.paths",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
-      "anchor": "topological_motivation",
+      "anchor": "a_motivating_example_comes_from_topology",
       "statement": [
         "For a topological space, points, paths, endpoint-fixing homotopies and higher boundary-fixing homotopies motivate the fundamental infinity-groupoid. Path concatenation is associative and unital up to homotopy; reversal is an inverse up to homotopy."
       ],
       "proof": [
         "The source sketches the construction. The one-dimensional homotopy laws have ordinary topological formalizations; the full infinite construction requires a precise higher model."
       ],
-      "limitation": "Partially checked; higher-foundation obligation remains. A homotopy is a specified continuous deformation. This does not make the parameterized paths literally equal or formalize all higher coherence. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed. A homotopy is a specified continuous deformation. This does not make the parameterized paths literally equal or formalize all higher coherence. Each referenced signature specifies the precise checked formulation."
     },
     "source.intro.sip": {
       "label": "Primary intro.sip",
       "title": "Indiscernibility, transport and Structure Identity Principle",
+      "native_key": "intro.sip",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
-      "anchor": "structure_identity_principle",
+      "anchor": "the_structure_identity_principle",
       "statement": [
         "Equality allows substitution of properties and transport of structures. The intended structure identity principle relates identities of groups to group isomorphisms. Existence of an element of order two is isomorphism-invariant; presentation-specific statements about the identity being the number 0 need not be. The source compares the cyclic group on {0,1} with the multiplicative group {1,−1}."
       ],
       "proof": [
         "Equality transport is available in ordinary dependent type theory. Group isomorphisms preserve multiplication, the identity and element order. The structure identity principle requires the intended univalent/homotopical setting."
       ],
-      "limitation": "Partially checked; higher-foundation obligation remains. Group isomorphism is not automatically equality of Lean's bundled groups. A proof of order invariance does not prove the structure identity principle. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed. Group isomorphism is not automatically equality of Lean's bundled groups. A proof of order invariance does not prove the structure identity principle. Each referenced signature specifies the precise checked formulation."
     },
     "source.equivalences.motivation": {
       "label": "Primary equivalences.motivation",
       "title": "Equality, isomorphism and equivalence-sensitive invariance",
+      "native_key": "equivalences.motivation",
       "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
-      "anchor": "plain_language",
+      "anchor": "equivalences_of_strict_categories",
       "statement": [
         "Equality, isomorphism and equivalence of strict categories are distinct notions. The one-object category and walking isomorphism are equivalent despite having different numbers of objects."
       ],
       "proof": [
         "The explicit functors and natural isomorphisms are given in items 3.8–3.9; the object sets have cardinalities one and two."
       ],
-      "limitation": "Checked definition/hypotheses or proof in the stated Lean formulation. The distinction concerns object presentations and categorical equivalence, not equality of the chosen object sets. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Source passage / supporting ordinary mathematics; no complete higher-foundation verification claimed. The distinction concerns object presentations and categorical equivalence, not equality of the chosen object sets. Each referenced signature specifies the precise checked formulation."
     }
   },
   "declarations": {
@@ -548,327 +529,175 @@
       "result": "source.1.4",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.smallSet_is_large": {
-      "result": "source.1.4",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.largeSet_is_huge": {
-      "result": "source.1.4",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.StrictCategory": {
+    "ILab.MathematicsLearning.SetCategory": {
       "result": "source.1.5",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.categoryLeftIdentity": {
-      "result": "source.1.5",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.categoryRightIdentity": {
-      "result": "source.1.5",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.categoryAssociativity": {
-      "result": "source.1.5",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.LocallySmallCategory": {
+    "ILab.MathematicsLearning.SetCategory.IsLocallySmall": {
       "result": "source.1.7",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.SmallStrictCategory": {
+    "ILab.MathematicsLearning.SetCategory.IsSmall": {
       "result": "source.1.7",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.setsCategory": {
+    "ILab.MathematicsLearning.smallSetsCategory": {
       "result": "source.1.8",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.pointedSetsCategory": {
+    "ILab.MathematicsLearning.smallSets_locallySmall": {
       "result": "source.1.8",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.vectorSpacesCategory": {
+    "ILab.MathematicsLearning.smallSets_not_small": {
       "result": "source.1.8",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.spacesCategory": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.sets_locally_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.pointed_locally_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.vector_spaces_locally_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.spaces_locally_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.sets_not_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.pointed_sets_not_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.vector_spaces_not_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.spaces_not_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.collection_of_small_sets_not_small": {
-      "result": "source.1.8",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.Isomorphism": {
+    "ILab.MathematicsLearning.SetCategory.IsIsomorphism": {
       "result": "source.1.9",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.invertible_iff_two_sided_inverse": {
+    "ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic": {
       "result": "source.1.9",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.ObjectsIsomorphic": {
-      "result": "source.1.9",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.setIsoIffBijective": {
+    "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective": {
       "result": "source.1.10",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.pointed_iso_iff_bijective": {
-      "result": "source.1.10",
-      "role": "supporting"
+    "ILab.MathematicsLearning.SetCategory.unique_inverse": {
+      "result": "source.1.11",
+      "role": "principal"
     },
-    "ILab.MathematicsLearning.vector_iso_iff_bijective": {
-      "result": "source.1.10",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.topIsoIffHomeomorphism": {
-      "result": "source.1.10",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.CategoryFunctor": {
+    "ILab.MathematicsLearning.SetCategory.SourceFunctor": {
       "result": "source.1.12",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.functorIdentityLaw": {
+    "ILab.MathematicsLearning.SetCategory.functorEquiv": {
       "result": "source.1.12",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.functorCompositionLaw": {
-      "result": "source.1.12",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.forgetPoint": {
-      "result": "source.1.13",
-      "role": "principal"
-    },
-    "ILab.MathematicsLearning.forgetVector": {
-      "result": "source.1.13",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.forgetTopology": {
-      "result": "source.1.13",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.addBasepoint": {
-      "result": "source.1.13",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.freeVectorSpace": {
-      "result": "source.1.13",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.freeVectorMapOnBasis": {
-      "result": "source.1.13",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.discreteTopology": {
-      "result": "source.1.13",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.indiscreteTopology": {
-      "result": "source.1.13",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.smallCategoriesAsLargerObject": {
-      "result": "source.1.16",
-      "role": "principal"
-    },
-    "ILab.MathematicsLearning.small_categories_locally_small": {
-      "result": "source.1.16",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.small_categories_not_small": {
-      "result": "source.1.16",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.ContravariantFunctor": {
+    "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor": {
       "result": "source.1.18",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.contravariant_composition": {
+    "ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv": {
       "result": "source.1.18",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.NaturalTransformation": {
+    "ILab.MathematicsLearning.SetCategory.SourceTransformation": {
       "result": "source.1.20",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.naturalityEquation": {
+    "ILab.MathematicsLearning.SetCategory.transformationEquiv": {
       "result": "source.1.20",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.ComponentwiseNaturalIsomorphism": {
+    "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism": {
       "result": "source.1.22",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.TerminalCategory": {
+    "ILab.MathematicsLearning.terminalSetCategory": {
       "result": "source.1.25",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.OneRoom": {
+    "ILab.MathematicsLearning.terminalObject": {
       "result": "source.1.25",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.oneRoomCategory": {
+    "ILab.MathematicsLearning.terminal_object_unique": {
       "result": "source.1.25",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.functorToTerminal": {
+    "ILab.MathematicsLearning.terminal_morphism_unique": {
       "result": "source.1.25",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.functorToTerminal_unique": {
-      "result": "source.1.25",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.selectObject": {
+    "ILab.MathematicsLearning.selectSetObject": {
       "result": "source.1.27",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.terminal_functor_unique": {
+    "ILab.MathematicsLearning.selectSetObject_unique": {
       "result": "source.1.27",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.fullyFaithfulIffBijective": {
+    "ILab.MathematicsLearning.SetCategory.IsFullyFaithful": {
       "result": "source.2.3",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.fullyFaithfulHomEquiv": {
-      "result": "source.2.3",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.isoIffPostcompositionBijective": {
-      "result": "source.2.6",
-      "role": "principal"
-    },
-    "ILab.MathematicsLearning.isoIffPrecompositionBijective": {
-      "result": "source.2.6",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.yoneda_object_iso_iff": {
-      "result": "source.2.7",
-      "role": "principal"
-    },
-    "ILab.MathematicsLearning.adjunctionUnit": {
+    "ILab.MathematicsLearning.SetCategory.SourceAdjunction": {
       "result": "source.3.1",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.adjunctionCounit": {
+    "ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle": {
       "result": "source.3.1",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.adjunction_unit_naturality": {
+    "ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle": {
       "result": "source.3.1",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.adjunction_counit_naturality": {
-      "result": "source.3.1",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.adjunctionLeftTriangle": {
-      "result": "source.3.1",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.adjunctionRightTriangle": {
-      "result": "source.3.1",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.basepointAdjunction": {
-      "result": "source.3.2",
-      "role": "principal"
-    },
-    "ILab.MathematicsLearning.vectorSpaceAdjunction": {
-      "result": "source.3.2",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.discreteAdjunction": {
-      "result": "source.3.2",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.indiscreteAdjunction": {
-      "result": "source.3.2",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.QuasiInverseData": {
+    "ILab.MathematicsLearning.SetCategory.IsEquivalence": {
       "result": "source.3.4",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.equivalenceToQuasiInverse": {
-      "result": "source.3.4",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.quasiInverseToEquivalence": {
-      "result": "source.3.4",
-      "role": "supporting"
-    },
-    "ILab.MathematicsLearning.categoryIsoToEquivalence": {
+    "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence": {
       "result": "source.3.5",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.adjunctionToEquivalence": {
+    "ILab.MathematicsLearning.SetCategory.adjoint_equivalences": {
       "result": "source.3.5",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.EssentiallySurjective": {
+    "ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint": {
+      "result": "source.3.5",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective": {
       "result": "source.3.6",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.essentially_surjective_iff": {
+    "ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees": {
       "result": "source.3.6",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj": {
+    "ILab.MathematicsLearning.SetCategory.fundamental_theorem": {
       "result": "source.3.7",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.Room": {
+    "ILab.MathematicsLearning.walkingSetCategory": {
       "result": "source.3.8",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.roomCategory": {
+    "ILab.MathematicsLearning.walkingZero": {
       "result": "source.3.8",
       "role": "supporting"
     },
-    "ILab.MathematicsLearning.walking_inclusion_full": {
+    "ILab.MathematicsLearning.walkingOne": {
+      "result": "source.3.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.walking_zero_ne_one": {
+      "result": "source.3.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.walking_objects": {
+      "result": "source.3.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.walking_hom_singleton": {
+      "result": "source.3.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.walkingSetIso": {
+      "result": "source.3.8",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.includeWalkingZero": {
       "result": "source.3.9",
       "role": "principal"
     },
-    "ILab.MathematicsLearning.walking_inclusion_faithful": {
+    "ILab.MathematicsLearning.walking_inclusion_equivalence": {
       "result": "source.3.9",
       "role": "supporting"
     },
@@ -924,5 +753,6 @@
       "result": "source.equivalences.motivation",
       "role": "supporting"
     }
-  }
+  },
+  "native_source_sha256": "68998832029dc49021a7e5c08a0c79306f6002ebf4c1729f437178b0f3deb8ae"
 }

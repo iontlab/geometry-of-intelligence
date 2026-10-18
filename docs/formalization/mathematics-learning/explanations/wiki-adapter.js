@@ -13,11 +13,24 @@
   await X.fresh(state,records[0]);
   if(window.MathJax?.startup?.promise)await window.MathJax.startup.promise;
   const page=binding.closest('.page');if(!page)return;
+  // TikZJax replaces each source script with a temporary SVG, then its final SVG.
+  // Wait for that renderer before installing the immutable-content observer.
+  const diagramsPending=()=>page.querySelector('script[type="text/tikz"],svg animate');
+  if(diagramsPending())await new Promise((resolve,reject)=>{
+   const done=()=>{if(!diagramsPending()){clearTimeout(timer);page.removeEventListener('tikzjax-load-finished',done);resolve();}};
+   const timer=setTimeout(()=>{page.removeEventListener('tikzjax-load-finished',done);reject(Error('Diagram rendering did not finish'));},60000);
+   page.addEventListener('tikzjax-load-finished',done);done();
+  });
   const targets=records.map(r=>{
    const hs=page.querySelectorAll('[id="'+r.source.anchor+'"]');
    if(hs.length!==1||hs[0].textContent!==r.source.heading_text)throw Error('Statement anchor changed');return hs[0];
   });
   for(const [i,r] of records.entries()){
+   // Preserve previous links where an original source title replaces an editorial title.
+   const legacy=r.source.legacy_anchor;
+   if(legacy&&legacy!==r.source.anchor&&!page.querySelector('[id="'+legacy+'"]')){
+    const alias=X.element('span');alias.id=legacy;alias.setAttribute('aria-hidden','true');targets[i].before(alias);
+   }
    const wrap=X.element('div');wrap.className='ilab-explain';
    const b=X.element('button','Explain '+r.source.item_label);b.type='button';wrap.append(b);targets[i].after(wrap);controls.push(b);
    b.onclick=async()=>{close();trigger=b;const ticket=++generation;
@@ -27,17 +40,24 @@
      panel.append(bar,exit,body);wrap.after(panel);
      X.tabs(['Mathematics','Plain','Story','Lean','Verification'],bar,async(name,id)=>{
       body.setAttribute('aria-labelledby',id);const selected=++generation;
-      try{await X.fresh(state,r);if(!valid||selected!==generation)return;await S.render(body,r,name,state,()=>valid&&selected===generation&&body.isConnected);}catch{if(selected===generation)revoke();}
+      try{await X.fresh(state,r);if(!valid||selected!==generation)return;await S.render(body,r,name,state,()=>valid&&selected===generation&&body.isConnected);}catch(error){console.warn('Learning explanation could not be verified',error);if(selected===generation)revoke();}
      },'ilab-learning');panel.focus({preventScroll:true});
     }catch{revoke();}
    };
   }
-  new MutationObserver(ms=>{if(ms.some(m=>{
+  new MutationObserver(ms=>{
+   // MathJax can edit a text node and then detach it in the same observer batch.
+   // Its former panel parent remains identifiable in that batch's removal record.
+   const panelRemovals=ms.filter(m=>m.type==='childList'&&m.target.nodeType===1&&m.target.closest('.ilab-explain')).flatMap(m=>[...m.removedNodes]);
+   if(ms.some(m=>{
+   if(!m.target.isConnected&&panelRemovals.some(n=>n===m.target||n.contains(m.target)))return false;
    const e=m.target.nodeType===1?m.target:m.target.parentElement;
    if(e?.closest('.ilab-explain'))return false;
    if(m.type==='attributes'&&e?.closest('#dw__toc')&&['class','style','aria-expanded'].includes(m.attributeName))return false;
    if(e?.closest('#dw__toc h3.toggle'))return false;
-   return m.type!=='childList'||[...m.addedNodes,...m.removedNodes].some(n=>!(n.nodeType===1&&n.matches('.ilab-explain')));
+   const changed=m.type!=='childList'||[...m.addedNodes,...m.removedNodes].some(n=>!(n.nodeType===1&&n.matches('.ilab-explain')));
+   if(changed)console.warn('Learning source changed after verification',m.type,m.attributeName);
+   return changed;
   })){mutated=true;revoke();}}).observe(page,{subtree:true,childList:true,characterData:true,attributes:true});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)revoke();else resume();});window.addEventListener('pageshow',resume);window.addEventListener('focus',resume);window.addEventListener('offline',revoke);
   async function resume(){revoke();try{await X.fresh(state,records[0]);if(mutated)return;valid=true;controls.forEach(c=>c.disabled=false);}catch{}}

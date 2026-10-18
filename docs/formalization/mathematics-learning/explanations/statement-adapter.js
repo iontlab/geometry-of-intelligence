@@ -80,6 +80,7 @@ window.ILabLearningStatement=(()=>{
     link(host,'Open this declaration in the graph ↗',u.href);
    }
    if(view==='Verification'){
+    link(host,'Source-to-Lean fidelity audit ↗',new URL('../source-audit.json',new URL(X.base,location.origin)).href);
     host.append(X.element('p',`Lean ${d.lean} · Mathlib ${d.mathlib} · revision ${d.mathlibRevision}`),X.element('p','Primary PDF SHA-256: '+r.source.primary_sha256),X.element('p','Bound chapter revision: '+r.source.revision),X.element('p','Bound chapter SHA-256: '+r.source.whole_page_sha256));
     for(const obligation of r.obligations||[])host.append(X.element('p',obligation.id+' · '+obligation.status+' · '+obligation.statement));
    }

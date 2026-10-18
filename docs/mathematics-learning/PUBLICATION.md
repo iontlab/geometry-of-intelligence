@@ -1,81 +1,75 @@
-# Mathematics Learning publication — original manuscript and non-exercise explanations
+# Native original manuscript publication — 18 October 2026
 
-## Original manuscript publication — 18 October 2026
+The complete Moser–Walde manuscript is now native DokuWiki text, MathJax mathematics and TikZJax vector diagrams in the existing eight chapters. The original is the sole main reading content. The former independent iLab exposition has been removed from the reading flow; Story / Fairy Tale, Plain Language, Mathematics, Lean and Verification remain interactive supplementary panels beside the original passages.
 
-The site owner explicitly confirmed publication clearance and authorized publication of the original Moser–Walde manuscript. All 13 pages are now reproduced as **primary reading in 17 lossless facsimile excerpts across the existing eight chapters**. This is an image facsimile edition, not a manually retyped HTML transcription. The unchanged original PDF is linked in every chapter and retains selectable text and original hyperlinks. The existing independent iLab material remains supplementary. Copyright remains with the original rights holders; the manuscript is explicitly excluded from the wiki-wide license.
+The original wording, notation, numbering, diagrams, proofs, partial proofs, 17 exercise markers, “Proof. Next time.”, references, affiliations and author AI-use disclosure are retained. Mathematics panels reproduce exact original passages. Statement labels use the established heading style. The eight chapter URLs, navigation and visual design are preserved.
 
-| Existing chapter | Original source included | Live status |
-| --- | --- | --- |
-| [Orientation / Foundations](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations) | pp. 1–3 and the opening of p. 4, through the introduction to First definitions | Published |
-| [Size and Universes](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size) | p. 4, §1.1, items 1.1–1.4 | Published |
-| [Categories and Isomorphisms](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories) | p. 5, §1.2, items 1.5–1.11 | Published |
-| [Functors and Representable Functors](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors) | p. 6 and opening of p. 7, §1.3, items 1.12–1.19 | Published |
-| [Natural Transformations and Functor Categories](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations) | remainder of p. 7, p. 8 and opening of p. 9, §1.4, items 1.20–1.28 | Published |
-| [Yoneda Lemma](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda) | remainder of p. 9 and p. 10, §2, items 2.1–2.7 | Published |
-| [Adjunctions](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions) | p. 11 and opening of p. 12, §3 introduction and §3.1, items 3.1–3.3 | Published |
-| [Equivalences of Categories](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences) | remainder of p. 12 and p. 13, §3.2, items 3.4–3.9, references and author affiliations | Published |
+**The overall formalization goal remains incomplete:** 23 of 44 numbered items are faithfully formalized, 15 are exercise-affected, and six eligible source items require further work. Compilation totals do not establish source fidelity. Independent human review is not claimed.
 
-The title, contents, original author AI-use disclosure, all wording, formulas, diagrams, original proofs and proof outlines, exercise instructions, bibliography and affiliations are preserved. Original source typos or incomplete arguments are not silently corrected. Independently generated assigned-exercise solutions remain excluded from the supplementary material, Lean exports and graphs. Republishing an author-provided proof outline does not supply the checks that the authors left as exercises.
+| Chapter | Native original | Numbered items | Fully formalized | Exercise-affected | Eligible pending |
 
-The [source manifest](original/manifest.json) records the unchanged PDF SHA-256 `5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc`, all 17 excerpt hashes and exact page/pixel intervals. At 144 dpi, reassembling each page from the chapter excerpts gives **zero differing pixels on all 13 pages**. No character crosses a chapter boundary. All 13 source pages were visually reviewed, all 17 excerpts loaded in the live chapters, and public media readback matched every prepared image and the unchanged PDF byte-for-byte.
+|---|---|---:|---:|---:|---:|
 
-Release `learning-original-20261018-r1` refreshes the existing exact-source contract: 58 source records and 37 graph records, including 47 inline controls. Statement anchors, explanation content, proof exclusions, formal mappings, signatures, source commit, mathematical graph data and all 428 compiled edges are unchanged. All 47 controls were exercised through all five tabs; the **235 completed panel renders** were checked against exact statement/proof text, Plain/Story blocks, Lean statuses, chapter hashes/revisions and pinned links. All eight anonymous pages carry valid refreshed binding tokens. The live graph's five layers and Proposition 1.26's withholding message and pinned chapter link were verified. No PHP, plugin, Lean source, dependency or RQ-001 implementation changed. The previous release's 24 non-binding public assets still match their recorded hashes.
+| [Orientation / Foundations](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations) | Complete, verified | 0 | 0 | 0 | 0 |
 
-[Live panel validation](original-publication-evidence/live-validation-summary.json) · [Binding validation](original-publication-evidence/binding-validation.json) · [Public media and binding readback](original-publication-evidence/live-assets.json) · [Anonymous bindings and protected asset regression](original-publication-evidence/regression.json) · [Live original-material images](original-publication-evidence/live-visual-qa.json).
+| [Size and Universes](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size) | Complete, verified | 4 | 4 | 0 | 0 |
 
-## Earlier non-exercise formalization release
+| [Categories and Isomorphisms](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories) | Complete, verified | 7 | 5 | 0 | 2 |
 
-Published through the existing authenticated DokuWiki and Hetzner WebFTP workflow on 18 October 2026. The eight approved lessons are preserved. The public interface now follows the actual deployed RQ-001 five-layer implementation, including Plain and Story. Full formalization of all synthetic/higher claims in the primary is not asserted.
+| [Functors and Representable Functors](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors) | Complete, verified | 8 | 2 | 4 | 2 |
 
-## Public pages and announcement
+| [Natural Transformations and Functor Categories](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations) | Complete, verified | 9 | 4 | 5 | 0 |
 
-The modified learning pages are under `mathematics_learning:higher_category_theory:synthetic_category_theory:`:
+| [Yoneda Lemma](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda) | Complete, verified | 7 | 1 | 5 | 1 |
 
-- `foundations`, `size`, `categories`, `functors`, `natural_transformations`, `yoneda`, `adjunctions`, `equivalences`: source-ordered anchors and 47 inline explanation controls.
-- `coverage`: all 58 source items, individual status links and the complete assigned-exercise exclusions.
-- `verification`: current build, compiler counts, precise scope and public QA evidence.
-- `start`: the preserved eight-chapter reading path and current scoped status.
+| [Adjunctions](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions) | Complete, verified | 3 | 1 | 1 | 1 |
 
-The homepage `start` contains the exact four-linked **New: Mathematics Learning** announcement immediately after **New: Explanation Layers**. Its existing Foundations Map learning link remains. [Browser readback of all four links](expanded-live-home-announcement.json) records the two internal destinations and both official lecturer links. The source/attribution page and the other existing learning landing pages remain available.
+| [Equivalences of Categories](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences) | Complete, verified | 6 | 6 | 0 | 0 |
 
-[Learning project](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:start) · [Coverage](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:coverage) · [Verification](https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:verification) · [Graph](https://iontlab.org/formalization/mathematics-learning/) · [Homepage](https://iontlab.org/doku.php?id=start)
+## Exact source-to-Lean coverage
 
-## Exercise correction
+The [source audit](original/native/source-audit.json) records every exact numbered item, original location and text hash, faithful declarations, correspondence and remaining prerequisites. [All authored signatures and source mappings](../../formalization/mathematics-learning/verification/declaration-mapping.json) are compiler-derived. Fourteen editorial passage groups cover the unnumbered introduction and remarks; they are not additional numbered theorems.
 
-All 13 primary pages were audited, including embedded instructions: **17 assignment markers in 15 numbered items**. Solutions are withheld for **1.14, 1.15, 1.17, 1.19, 1.21, 1.23, 1.24, 1.26, 1.28, 2.1, 2.2, 2.4, 2.5, the embedded opposite-invertibility step of 2.6, and 3.3**. Proposition 1.26's “Proof. Exercise.” is treated as an assignment. The main non-assigned hom-set criterion of 2.6 remains checked.
+Outstanding eligible original items:
 
-The previous public edition required correction: four lesson walkthroughs, six exercise-related authored Lean exports and two generated helpers were withdrawn from the current edition. The prepared expansion excludes 56 identified authored exports. Statements, numbering, lecturer attribution and unrelated foundations are preserved. Historical Git and wiki revisions can still contain withdrawn material; no history erasure is claimed. The emergency correction is merged as [PR #6](https://github.com/iontlab/geometry-of-intelligence/pull/6).
+- **1.8** — Set is complete. Pointed sets, topological spaces and vector spaces still need explicit bounded set codes, operation-preserving Mathlib correspondences, and non-smallness proofs for those exact collections.
 
-[Exclusion manifest](exercise-exclusions.json) · [Executable scope guard](../../tools/check-learning-exercise-scope.py) · [Current wiki snapshots](wiki-current/)
+- **1.10** — Set is complete. The isomorphism characterizations for pointed sets, vector spaces and topological spaces require the pending exact structured-set encodings from 1.8.
 
-## Interaction and source binding
+- **1.13** — The forgetful, added-basepoint, free-vector-space, discrete and indiscrete functors need set-coded object/hom implementations and operation-preserving correspondences. Existing type-universe examples alone do not close this item.
 
-The actual live RQ-001 graph, renderer, registry, binding and release files were inspected and compared with the repository. Deployed enhancements absent from the older tracked version were preserved and reused. The existing plugin extension was explicitly approved by the user. [Isolation evidence](expanded-plugin-isolation.json) confirms that removing the two learning dispatch hooks/methods recovers the original RQ-001 PHP source byte-for-byte.
+- **1.16** — Needs set codes for all small categories and their functors, hom-set membership in the small universe, non-smallness of the exact object collection, and the huge-category inclusion. Construction 1.15 category-law exercise must remain withheld.
 
-All 44 numbered source statements have inline access, with three additional scoped controls. The **Mathematics / Plain / Story / Lean / Verification** tabs resolve to individual source records. All 58 items are also accessible through the graph's source selector. There are 37 principal graph explanations; supporting nodes navigate to their main result, and technical helpers do not receive unrelated stories.
+- **2.7** — The ordinary Mathlib Yoneda result is retained as independent support. Still needs a representation theorem for the actual small-set-valued representables and their natural isomorphisms, preserving the source universe domains without publishing the assigned 1.19/2.1/2.4 solutions.
 
-Exact source tuples include PDF page/item, chapter ID/revision/raw hash, rendered heading/anchor, role-specific server fragment hash, declaration/signature, module hash and pinned source commit. Current-source checks reject stale or inconsistent releases. An editor-only diagnostic publishes only source/fragment digests for binding capture; it exposes no source text or credentials. AI authorship is explicit; user publication authorization does not imply independent human review.
+- **3.2** — The four actual example adjunctions require the pending structured-set categories and functors from 1.8/1.13, including the exact free-vector-space carrier and source universe bounds.
 
-[All 47 live statement checks](expanded-live-all-statement-bindings.json) passed for the displayed statement, proof status and five tabs. [Plain and Story tests in all eight chapters](expanded-live-inline-qa.json) passed. Live checks also covered a non-exercise theorem's Story deep link, Proposition 1.26's withholding message, graph mode counts, module filtering, and a zero-result search for withdrawn proof exports. [Graph QA](expanded-live-graph-qa.json).
+The introduction’s all-dimensional coherence, full fundamental infinity-groupoid, higher identity types and Structure Identity Principle await the intended later foundations. No missing axioms are invented. The existing ordinary path/groupoid and equality results remain explicitly limited supporting work.
 
-## Formalization and audit
+Assigned solutions remain withheld for **1.14, 1.15, 1.17, 1.19, 1.21, 1.23, 1.24, 1.26, 1.28, 2.1, 2.2, 2.4, 2.5, the embedded step of 2.6, and 3.3**. The original supplied portions remain verbatim. Mixed item 2.6 is not counted as fully formalized. [Exercise exclusions](exercise-exclusions.json).
 
-The existing Lean 4.34.0 / Mathlib v4.34.0 project passed a clean build (8937 jobs), followed by compiler auditing of **225 declarations, including 116 authored declarations, in nine learning modules**. Only the existing foundational dependencies `propext`, `Classical.choice`, `Quot.sound` are allowed. Admitted expressions and project-added axioms are rejected.
+## Build and provenance
 
-The inventory tracks **132 obligations across 58 source items**: 112 checked in their precise Lean formulations, 15 assigned-solution withholding records, and five higher-foundation/model obligations. The 112 include definitions and assumed structures as well as proofs; they are not 112 new theorems. Type-universe category-size formulations are explicitly distinguished from literal ZF-set coding. Set-universe existence is assumed, not proved.
+Checked Lean source commit: [`0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88`](https://github.com/iontlab/geometry-of-intelligence/commit/0eb2f85a0ef04f1eda1d91c0c19faeccdb5e4f88). Branch: `codex/source-faithful-native-manuscript`. Lean 4.34.0 and Mathlib revision `5ed2965256430c3649e86755f9576b54eca72435` are unchanged.
 
-New work includes the ZFSet universe predicates and Russell consequence, source-specific category examples and laws, non-smallness formulations, a quasi-inverse equivalence criterion, the finite non-isomorphism distinction, and the cyclic-two/sign-group example. Exact Mathlib reuse includes category/functor/naturality fields, category isomorphism tests, pointed/free-vector/discrete/indiscrete adjunctions, non-exercise Yoneda consequences, equivalence operations, and endpoint-fixed path homotopies. [All authored signatures, source items and dependencies](../../formalization/mathematics-learning/verification/declaration-mapping.json) and [compiler-recorded Mathlib/external references](../../formalization/mathematics-learning/verification/mathlib-reuse.json) give the complete declaration-level record; no reused theorem is presented as an original iLab result.
+The clean build completed with **8943 jobs**. The compiler audit covers **449 declarations in 15 modules**, including **188 authored declarations** and **1686 direct project dependencies**. The allowed foundational dependencies remain `propext`, `Classical.choice`, `Quot.sound`; no admitted expressions or project-added axioms are accepted. The source hierarchy’s existence remains an explicit assumption.
 
-The graph has **428 direct compiled project-local edges**. Blueprint: **109 mapped declarations / 70 visible edges**. Authored view: **116 declarations / 80 visible edges**. Full view: **225 declarations / 428 edges**. There are no invented conceptual or shortcut edges.
+[Clean build log](../../formalization/mathematics-learning/verification/expanded-clean-build.log) · [Compiler audit and source hash lock](../../formalization/mathematics-learning/verification/expanded-audit.json) · [Current audit summary](../../formalization/mathematics-learning/verification/audit-summary.json) · [Reproduction](../../formalization/mathematics-learning/verification/VERIFICATION.md).
 
-Exact checked Lean source commit: `ace59a04225eb98a769edb1943378d33a91aa204`. Branch: `codex/mathematics-learning-parity`. Expanded release: [PR #7](https://github.com/iontlab/geometry-of-intelligence/pull/7). Exact deployed artifact commit: `9ad9b996b547ce205f7e59f5ff55431ebe57c6c4`. [Nine public module readbacks](expanded-public-source-readback.json) match the audited hashes. Release assets and final Git identifiers are recorded in `expanded-release-provenance.json`.
+## Live publication checks
 
-[Clean build](../../formalization/mathematics-learning/verification/expanded-clean-build.log) · [Audit summary](../../formalization/mathematics-learning/verification/audit-summary.json) · [Source hash lock](../../formalization/mathematics-learning/verification/expanded-audit.json) · [Reproduction instructions](../../formalization/mathematics-learning/verification/VERIFICATION.md)
+- Eight public chapter sources exactly match the reviewed native drafts and authenticated editor digests. The original text projection is unchanged by heading formatting.
 
-## Protected RQ-001 and remaining limits
+- **47 controls × five layers = 235 successful panel checks**. All **60 distinct declaration verification deep links** exposed by the chapter panels select the corresponding audited graph entry. The theorem graph’s five layers also pass.
 
-The RQ-001 compiler audit reproduced all **202 declarations byte-for-byte**, and all protected repository paths are unchanged. All **14 protected live graph/explanation assets** match baseline. The existing RQ-001 five-tab inspector and Story were tested in the browser after plugin deployment. [Compiler regression](../../formalization/mathematics-learning/verification/expanded-rq001-regression.json) · [Live UI check](expanded-live-rq001-ui.json) · [Asset readbacks](expanded-live-assets-readback.json).
+- All 18 learning assets match the upload hashes. Current chapter captures show zero MathJax errors and zero facsimile images.
 
-Five source obligations require a specified higher model or different foundations: all-dimensional weak coherence (introduction p. 1); the full fundamental infinity-groupoid (pp. 1–2); types as infinity-groupoids (pp. 2–3); non-proof-irrelevant iterated identities (p. 2); and the Structure Identity Principle (p. 3). The checked path groupoid is an ordinary truncation. These boundaries, the type-universe formulation limits and universe-existence assumptions remain explicit; comprehensive verification of the full 13-page source is not claimed.
+- All 17 obsolete PNG URLs return HTTP 404. The current repository copies are removed. The original PDF remains unchanged at SHA-256 `5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc`.
 
-At the earlier non-exercise release, authorization was unresolved and the chapters contained independent exposition only. The original-manuscript publication above supersedes that presentation and rights status on the basis of the user's explicit clearance confirmation. Supplementary books remain private references. Independent human mathematical review is not claimed.
+- All 14 protected RQ-001 live assets and protected repository paths remain unchanged. Existing compiler-regression evidence retains its 202-declaration baseline.
+
+[Current evidence](native-publication-evidence/) includes source readbacks, native rendering, all panel checks, asset hashes, media removal and RQ-001 regression. [Historical facsimile evidence](original-publication-evidence/) is retained as an explicitly superseded record; it does not describe the current presentation.
+
+## Rights and authorship
+
+Publication of the complete primary manuscript was explicitly authorized by the site owner. Copyright remains with the original rights holders; the repository code license and wiki-wide license do not relicense it. No author endorsement is asserted. Story and Plain Language are independently authored iLab educational explanations with AI assistance. Supplementary books remain private references.

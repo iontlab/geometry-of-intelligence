@@ -1,6 +1,6 @@
 {
   "source_pdf_sha256": "5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc",
-  "status": "prepared; live verification pending",
+  "status": "Native manuscript-only edition published and verified",
   "format": "Native DokuWiki text, MathJax mathematics and TikZJax vector diagrams",
   "authoritative_files": [
     "original/native/foundations.txt",
@@ -17,8 +17,8 @@
       "native_sha256": "fb7875515a5a7fa53f00238bbdbea599f681ed534e2a57f5de3a693b8a0425cc",
       "source_items": [],
       "source_before_sha256": "52bf41a26009bd963257010abb2d6cb535dad2efc03b6cd0efccd4ce19db1905",
-      "transition_sha256": "34e513f365013fe1e0033b9a67d3b16d403d3c78a7d86612cc7882bcfb27f944",
-      "final_sha256": "0d913073ff8884fbd278b5e2b04546ed199115d8b56f0b70930f841da941fdf2",
+      "transition_sha256": "5eff5b697e3a09958ce01d9a0ee4f314d00c5d4822540c703c9628debb15eb17",
+      "final_sha256": "a80b3365917584fb9230353a7539be3ba34d831a6f7f26676d8e02f487e26b36",
       "vector_diagrams": 3
     },
     "size": {
@@ -30,8 +30,8 @@
         "1.4"
       ],
       "source_before_sha256": "03dfaaf51664ebf9cf427fd070cd86ab867985b2b735a210c3a0137c7cb86f47",
-      "transition_sha256": "97b1712046ea8ec59404f7755ab18f4bdd4df82bc64f97fed2a7dbac30e0d2f4",
-      "final_sha256": "dab49e7eb21672cf8f498f43706c541784af40a5f82171ca3d83072439c812a0",
+      "transition_sha256": "ec039c9f45466eb903139781373b945ebe63ef804d023a71e81aeedfe7b42fd7",
+      "final_sha256": "5489d230f204f04596262ccc53ee8b85e63f9e0cb59a7681687c8fce3a139830",
       "vector_diagrams": 0
     },
     "categories": {
@@ -46,8 +46,8 @@
         "1.11"
       ],
       "source_before_sha256": "285db7645bad3494cf46deab437e6a88c35cffda13d6daef8f309c9036275933",
-      "transition_sha256": "a82cc1f13eb3ff7b4d9612b238c5fff9f998b7dd9dad686476ce8d8f434d66f2",
-      "final_sha256": "030df959332961d3f635c2131b705376a490691e6b9aaf5a634be49f62bef6ab",
+      "transition_sha256": "59a9d91bb435e5bd7568e7dff8e733e92e447a6025e6b61c27cd3e3b575a6344",
+      "final_sha256": "2a048f7e3043a447e743f00cd64c170a867689333ba12e78dea95996137b3de0",
       "vector_diagrams": 0
     },
     "functors": {
@@ -63,8 +63,8 @@
         "1.19"
       ],
       "source_before_sha256": "ae64fcef21d7a5971a75d81c4079961c3385a65ed22928d9bbd7ba231b06e025",
-      "transition_sha256": "e29872143bc715b828f9689f673012f3754264b69911ca1d8ebbd2692e659723",
-      "final_sha256": "045a84284b7c58c970d71fc3816fdb39b457865086952bc6398fa057a136018b",
+      "transition_sha256": "dd97f403644b941ea5038f121b570768072110273f0ceceaa8f225b1256bba33",
+      "final_sha256": "927321af0105a66cc29dee97b53a39ec81b73c2634caf117cd237c334647b9f7",
       "vector_diagrams": 0
     },
     "natural_transformations": {
@@ -81,8 +81,8 @@
         "1.28"
       ],
       "source_before_sha256": "1414f66327dbd4e945df829b9d66859213786b98a418963cd5ea4b2c32644102",
-      "transition_sha256": "bb44f88b4a615303935022f8621e6014f75621382e783467ec004077d54f1551",
-      "final_sha256": "d499a90a263f5d8b6a1b97f013795424e8c6d14088dc5423dfd72cf77177e156",
+      "transition_sha256": "d5ee9f6dab7c30050839e9e051f45413fa229b9054bf4bdc847cc3ca1c67664b",
+      "final_sha256": "41e08155cbb69dc0e476f14bdf7d08803df1ea15fdbdc8e62bc5817edcd78984",
       "vector_diagrams": 1
     },
     "yoneda": {
@@ -97,8 +97,8 @@
         "2.7"
       ],
       "source_before_sha256": "753a28080ec782f31572d1b95c06e54c0272d50e4a44fbc5c3497a500e9579f2",
-      "transition_sha256": "61318780521dbeb7eb27279ba06c733288d4a30ca981612b7ccdf2f4a5905229",
-      "final_sha256": "734fc0ec66066fadc820fa9c3b9a15246578782e859461aefd60ac8b5d576f2a",
+      "transition_sha256": "5f8ce1a4570ffe755be9e8ded99e6aed6783ca0e4d0851c0bf3ae5d8fd4cc539",
+      "final_sha256": "f19439164a36ca7575581f6d82a6d6144f1b22ca5bea9f9782d7f6c4e8e3f3ed",
       "vector_diagrams": 0
     },
     "adjunctions": {
@@ -109,8 +109,8 @@
         "3.3"
       ],
       "source_before_sha256": "eb91a95ce8dd5252f33cda5c7ac44686a84ecd282fb145f09fb0facbe71412e1",
-      "transition_sha256": "d630c18d7c469c27c40a57df4091a1ed9b8264dd489ef752dae2301e85e62a37",
-      "final_sha256": "0de5be103ce9d3f400ef04803f486500482c2d39c077196a11aec2443054038a",
+      "transition_sha256": "b3b2d23691ac4981b3232686bbb65ab3bbf9c88ee15d192f7fb652ec00ec992c",
+      "final_sha256": "cfcb5112d5da54bf836e37b27ad83b8d5ed3f8c18ad5be2aa3c0f83065c54f6e",
       "vector_diagrams": 1
     },
     "equivalences": {
@@ -124,13 +124,16 @@
         "3.9"
       ],
       "source_before_sha256": "7f35b84c411576aa5cbff2d83a026ca8ec32d1442e14ff2ec9a7385cae284002",
-      "transition_sha256": "20efa5709eacb0861898b28576dbe244874eae1d0af9ca65f8cba00807ada331",
-      "final_sha256": "726f2b9517a775c26afe214dfb64acd7a704dc9eb8fafb203b90af70be0dad1d",
+      "transition_sha256": "e4426739fdac378b3d7c6ace13a39334526f2495657f1a814853b71ba4df2c4d",
+      "final_sha256": "5c548afd6637e736b3235cae8f4d8aae4a465b4f8316f2e9729942d2b6f5aa5f",
       "vector_diagrams": 0
     }
   },
-  "facsimile_removal_permitted": false,
+  "facsimile_removal_permitted": true,
   "numbered_items": 44,
   "exercise_markers": 17,
-  "exercise_affected_items": 15
+  "exercise_affected_items": 15,
+  "reading_flow": "Original manuscript only; all five supplementary layers are interactive panels.",
+  "original_text_projection_verified": true,
+  "facsimiles_removed": true
 }
