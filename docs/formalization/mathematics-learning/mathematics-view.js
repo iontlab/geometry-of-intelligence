@@ -1,6 +1,6 @@
 'use strict';
 // Authored educational presentations are separate from compiled graph/audit metadata.
-const authoredMathematics = fetch('mathematics.json').then(r => {
+const authoredMathematics = fetch('mathematics.json?release=20261018-exercise-exclusion', {cache:'no-store'}).then(r => {
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
 }).catch(() => null);

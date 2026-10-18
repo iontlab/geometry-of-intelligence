@@ -1,0 +1,59 @@
+====== Yoneda: an object through its maps ======
+
+**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §2, items 2.1–2.7, pp. 9–10.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Not formalized**.
+
+**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. An official public link to this exact primary PDF has not been verified.
+
+**Teaching scope:** Statements and source numbering are retained. Proofs and construction checks assigned as exercises by Lyne Moser and Tashi Walde are intentionally withheld, including Lean solutions and explanatory walkthroughs.
+
+===== Story / Fairy Tale =====
+
+Mira asks a scribe to stamp every permit arriving at the tower. The scribe has a rule for transporting stamps backwards along routes, and every stamp assignment must respect that rule. Mira discovers that one choice determines the whole assignment: the stamp on the tower's remain-here permit. A permit arriving from any other town must receive the stamp obtained by transporting that choice along the permit.
+
+She then compares two towers by comparing all their incoming permits. If those comparisons respect every change of departure town and are reversible, the towers themselves have reversible permits between them. A list of counts alone would not provide that conclusion.
+
+**Story key:** incoming permits form a representable; the stamp system is a presheaf; a compatible assignment is a natural transformation. **Where the analogy stops:** “all relationships” means the full hom-functor with its action on maps, not a finite survey, a numerical similarity score, or just matching cardinalities.
+
+===== Plain Language =====
+
+Yoneda says that a natural rule assigning data to every map into an object is determined by one piece of data at that object. Naturality forces the rest. This turns an apparently enormous family of choices into one element of a set.
+
+For an independent example in sets, let the test object be the two labels \(\{\mathrm{red},\mathrm{blue}\}\), and let the data assigned to a set \(X\) be its subsets. A map \(f:X\to\{\mathrm{red},\mathrm{blue}\}\) colors \(X\). Choosing a subset of the label set determines a natural rule: keep exactly the points whose colors lie in that subset. The four choices give “keep none,” “keep red,” “keep blue,” and “keep all.” Yoneda explains why these exhaust all rules compatible with inverse images along every function.
+
+===== Mathematics =====
+
+Assume \(C\) is locally small, and write \(h_c=C(-,c)\). A presheaf here means a functor \(F:C^{op}\to\mathbf{Set}\). **Theorem 2.1** gives
+
+$$\operatorname{Nat}(h_c,F)\cong F(c).$$
+
+The source specifies evaluation \(\alpha\mapsto\alpha_c(1_c)\) and the candidate inverse with components \(\alpha^u_x(f)=F(f)(u)\). **Two embedded exercise assignments (p. 9) ask for naturality of the candidate and for mutual inverse and naturality checks in \(c,F\). These solutions are withheld.**
+
+The collection of natural transformations may initially be formed in a larger universe when \(C\) is not small. This bijection gives a small-set representative for this particular collection. It does not assert that every hom collection in the whole presheaf category of a large category is small.
+
+**Construction 2.2.** The Yoneda functor \(y_C:C\to\mathrm{Fun}(C^{op},\mathbf{Set})\) sends \(c\) to \(h_c\) and \(q:c\to d\) to the postcomposition transformation \(h_q\). **Its well-definedness is assigned as an exercise (p. 9); the solution is withheld.**
+
+**Definition 2.3.** A functor \(F:C\to D\) is fully faithful when \(C(c,d)\to D(Fc,Fd)\) is bijective for each pair \(c,d\). This does not require injectivity on objects.
+
+**Corollary 2.4.** The Yoneda functor is fully faithful. **Assigned proof (p. 10): solution withheld.**
+
+**Proposition 2.5.** A fully faithful functor reflects isomorphisms: if \(F(f)\) is invertible, so is \(f\). Moreover, \(x\cong y\) if and only if \(Fx\cong Fy\). **Assigned proof (p. 10): solution withheld.**
+
+**Corollary 2.6.** For \(f:c\to d\) in a locally small category, the following are equivalent: \(f\) is invertible; every postcomposition function \(C(x,c)\to C(x,d)\) is bijective; every precomposition function \(C(d,x)\to C(c,x)\) is bijective.
+
+The authors derive the first comparison using full faithfulness of Yoneda and Proposition 1.24. They obtain the outgoing-map comparison by passing to the opposite category. **Inside that argument they assign the equivalence between invertibility of \(f\) and of \(f^{op}\) as an exercise (p. 10). That proof is withheld.** The other stated reasoning remains attributed to the authors; no replacement proof of the assigned step is supplied.
+
+**Corollary 2.7.** Full faithfulness of Yoneda and Proposition 2.5 give
+
+$$c\cong d\quad\Longleftrightarrow\quad h_c\cong h_d\ \text{naturally}.$$
+
+“Naturally” is essential: unrelated bijections at individual test objects are not the hypothesis. More generally \(F\) is representable when there is an object \(c\) and a natural isomorphism \(h_c\cong F\); such a representing object is determined up to isomorphism.
+
+===== Lean =====
+
+Mathlib provides ordinary Yoneda machinery, but a library's existence is not an audit of a lesson. This lesson is **Not formalized**. No checked synthetic Yoneda theorem is asserted, and no illustrative story edge is a proof dependency.
+
+===== Verification =====
+
+The primary's contravariant convention is retained. Riehl §2.2 (Theorem 2.2.4, PDF pp. 81–83) begins with the covariant form and supplies a useful check on variance and naturality. The statement explanations and coloring example are independently written. Exercise solutions formerly included in this lesson have been withdrawn; embedded exercises are distinguished from the non-exercise statements and author-provided reasoning.
+
+Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions|Adjunctions]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

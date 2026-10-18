@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 const root = new URL('../', import.meta.url);
 const modules = ["BasicCategoryTheory", "WalkingIsomorphism"];
-const hashes = ["C50DE7CD6C392746E2861C232398CD9225E48A396AE124AFA9725352F3A5AED1", "306750071687EEC2491400B86E52DD30C734A843C0DF3D88DE4434CFC36CE6CA"];
+const hashes = ["08CF73F17C8C8A3F06BAA4A96B5755BD370ED3D7DD6B8BA4E272A68CDA279C0A", "306750071687EEC2491400B86E52DD30C734A843C0DF3D88DE4434CFC36CE6CA"];
 const metadata = new Map();
 for (const [i,mod] of modules.entries()) {
   const file = `ILab/MathematicsLearning/${mod}.lean`;
@@ -22,7 +22,7 @@ const allowed = new Set(['propext','Classical.choice','Quot.sound']);
 const sourceRef = process.env.SOURCE_REF;
 if (!/^[0-9a-f]{40}$/.test(sourceRef || '')) throw new Error('SOURCE_REF must be the exact verified source commit');
 const mappings = {
-  BasicCategoryTheory:'Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized.',
+  BasicCategoryTheory:'Primary 1.5 and 1.11: non-exercise identity laws and inverse uniqueness. Assigned exercise solutions are withheld.',
   WalkingIsomorphism:'Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion.'
 };
 for(const n of raw) {
@@ -46,7 +46,7 @@ for(const id of metadata.keys()) if(!ids.has(id)) throw new Error(`Authored decl
 const data = {
   schemaVersion:1,
   title:'Mathematics Learning — Ordinary Category Theory',
-  scope:'Selected ordinary-category exercises and a finite example are Lean-verified. The full lecture notes, Synthetic Category Theory, infinity-category theory, HoTT and universe existence are not formalized here.',
+  scope:'Selected non-exercise ordinary-category results and a finite example are Lean-verified. Assigned exercise solutions are withheld. The full lecture notes, Synthetic Category Theory, infinity-category theory, HoTT and universe existence are not formalized here.',
   disclaimer:'The graph displays formal declaration dependencies and verification metadata. Graph position or centrality does not indicate mathematical importance, novelty, or intelligence relevance.',
   lean:'4.34.0',leanCommit:'293d5d0c0c3f3dded4688b3ccd6a33939ac5102b',mathlib:'v4.34.0',mathlibRevision:'5ed2965256430c3649e86755f9576b54eca72435',
   extraction:'Direct constant references in compiled declaration types and values; no transitive reduction, conceptual edges, or bridging across hidden nodes. Generated declarations are hidden by default. Mathlib/external references are excluded.',

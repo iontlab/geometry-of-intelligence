@@ -1,3 +1,5 @@
+> Publication correction, 18 October 2026: assigned exercise solutions are withdrawn. The current release retains 14 authored / 65 compiled declarations. Earlier counts below describe the historical initial release. See [exercise exclusions](exercise-exclusions.json) and the current verification record.
+
 # Mathematics Learning — source and coverage metadata
 
 The public subsection is **Higher Category Theory**. Its first learning project is **Synthetic Category Theory**. The canonical educational exposition is in [DokuWiki](https://iontlab.org/doku.php?id=mathematics_learning:start).
