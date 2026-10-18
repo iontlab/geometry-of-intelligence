@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "publication_authorized": true,
-  "release": "learning-original-20261018-r1",
+  "release": "learning-native-20261018-verified-r7",
   "render_contract": "learning-exact-fragment-1",
-  "registry_sha256": "fe3b44d510b7106ff7d2271f39c1f914a0c18f73244dda68e0367811d7f3cfa2"
+  "registry_sha256": "58e95f74283d28a1338d2534188ef15784ab859a0c4a201f27589eccc6a4524e"
 }

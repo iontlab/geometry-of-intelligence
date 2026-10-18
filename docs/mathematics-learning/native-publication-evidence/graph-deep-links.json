@@ -1,0 +1,695 @@
+[
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathCompositionAssociativity&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathCompositionAssociativity",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathLeftIdentity&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathLeftIdentity",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathRightIdentity&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathRightIdentity",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathLeftInverse&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathLeftInverse",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathRightInverse&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathRightInverse",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.order_two_invariant&layer=verification",
+    "declaration": "ILab.MathematicsLearning.order_two_invariant",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.equality_substitution&layer=verification",
+    "declaration": "ILab.MathematicsLearning.equality_substitution",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.equality_transport&layer=verification",
+    "declaration": "ILab.MathematicsLearning.equality_transport",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.presentationIso&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.presentationIso",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_multiplication&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_multiplication",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.signs_multiplication&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_multiplication",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_identity&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_identity",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity_ne_zero&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity_ne_zero",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetUniverse&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetUniverse",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.universe_not_member&layer=verification",
+    "declaration": "ILab.MathematicsLearning.universe_not_member",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.UniverseHierarchy&layer=verification",
+    "declaration": "ILab.MathematicsLearning.UniverseHierarchy",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsSmallSet&layer=verification",
+    "declaration": "ILab.MathematicsLearning.IsSmallSet",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsLargeSet&layer=verification",
+    "declaration": "ILab.MathematicsLearning.IsLargeSet",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsHugeSet&layer=verification",
+    "declaration": "ILab.MathematicsLearning.IsHugeSet",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsLocallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsLocallySmall",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsSmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsSmall",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSetsCategory&layer=verification",
+    "declaration": "ILab.MathematicsLearning.smallSetsCategory",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.smallSets_locallySmall",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.smallSets_not_small",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.category&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.category",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.locallySmall",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.not_small",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.category&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.category",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.locallySmall",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.not_small",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.category&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.category",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.not_small",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsIsomorphism&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsIsomorphism",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective&layer=verification",
+    "declaration": "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.unique_inverse&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.unique_inverse",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceFunctor&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.functorEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.functorEquiv",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.forget&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.forget",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.forget&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.forget",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.forget&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.forget",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.addPoint&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPoint",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.free&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.free",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.discrete&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetFreeVectors.linearEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetFreeVectors.linearEquiv",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.functorCodeEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.functorCodeEquiv",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceTransformation&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.transformationEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.transformationEquiv",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminalSetCategory&layer=verification",
+    "declaration": "ILab.MathematicsLearning.terminalSetCategory",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminalObject&layer=verification",
+    "declaration": "ILab.MathematicsLearning.terminalObject",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminal_object_unique&layer=verification",
+    "declaration": "ILab.MathematicsLearning.terminal_object_unique",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminal_morphism_unique&layer=verification",
+    "declaration": "ILab.MathematicsLearning.terminal_morphism_unique",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.selectSetObject&layer=verification",
+    "declaration": "ILab.MathematicsLearning.selectSetObject",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.selectSetObject_unique&layer=verification",
+    "declaration": "ILab.MathematicsLearning.selectSetObject_unique",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsFullyFaithful&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsFullyFaithful",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representable_object&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_object",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representable_map&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_map",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representable_model&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_model",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsEquivalence&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEquivalence",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.adjoint_equivalences&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjoint_equivalences",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.fundamental_theorem&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.fundamental_theorem",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingSetCategory&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walkingSetCategory",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingZero&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walkingZero",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingOne&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walkingOne",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_zero_ne_one&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walking_zero_ne_one",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_objects&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walking_objects",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_hom_singleton&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walking_hom_singleton",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingSetIso&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walkingSetIso",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.includeWalkingZero&layer=verification",
+    "declaration": "ILab.MathematicsLearning.includeWalkingZero",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_inclusion_equivalence&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walking_inclusion_equivalence",
+    "selected": true,
+    "auditDisplayed": true,
+    "release": "learning-native-20261018-verified-r7"
+  }
+]

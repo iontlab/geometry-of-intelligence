@@ -1,0 +1,146 @@
+[
+  {
+    "path": "public_html/formalization/mathematics-learning/index.html",
+    "sha256": "91f6770a506f7e1d3bf6dfa3881583fc2a6fb09e48ff358b90f287fb81c403e6",
+    "bytes": 6813,
+    "url": "https://iontlab.org/formalization/mathematics-learning/index.html",
+    "live_sha256": "91f6770a506f7e1d3bf6dfa3881583fc2a6fb09e48ff358b90f287fb81c403e6",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/style.css",
+    "sha256": "9b790769a5685826894abdf808c4eb7245ff8c3c331892b769e3e110ad35aa03",
+    "bytes": 7759,
+    "url": "https://iontlab.org/formalization/mathematics-learning/style.css",
+    "live_sha256": "9b790769a5685826894abdf808c4eb7245ff8c3c331892b769e3e110ad35aa03",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/app.js",
+    "sha256": "11686f3e0900d82a92ef10f022686ccc2ffbcc52a6124af4c9d506f7398e3fce",
+    "bytes": 9859,
+    "url": "https://iontlab.org/formalization/mathematics-learning/app.js",
+    "live_sha256": "11686f3e0900d82a92ef10f022686ccc2ffbcc52a6124af4c9d506f7398e3fce",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/blueprint-view.js",
+    "sha256": "44e1921cda03e6701b7c3a394f2af7c654361b07efe8d916802f43c95627c3eb",
+    "bytes": 2752,
+    "url": "https://iontlab.org/formalization/mathematics-learning/blueprint-view.js",
+    "live_sha256": "44e1921cda03e6701b7c3a394f2af7c654361b07efe8d916802f43c95627c3eb",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/mathematics-view.js",
+    "sha256": "9a1925ba816ba793074f33d8e093d5cf53a4d5b3fd6a12893ebc398c60d7249b",
+    "bytes": 10571,
+    "url": "https://iontlab.org/formalization/mathematics-learning/mathematics-view.js",
+    "live_sha256": "9a1925ba816ba793074f33d8e093d5cf53a4d5b3fd6a12893ebc398c60d7249b",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/data.json",
+    "sha256": "3f3749d51bd3cffbc2010e47528e029cbb7e0c7fda2a045f4c9ca9d97917120c",
+    "bytes": 2371992,
+    "url": "https://iontlab.org/formalization/mathematics-learning/data.json",
+    "live_sha256": "3f3749d51bd3cffbc2010e47528e029cbb7e0c7fda2a045f4c9ca9d97917120c",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/compiled.json",
+    "sha256": "1b1c045f05a06a5f744dfcf7f938979cd6c38b0b9af20c2d5d2befa483bcb285",
+    "bytes": 842846,
+    "url": "https://iontlab.org/formalization/mathematics-learning/compiled.json",
+    "live_sha256": "1b1c045f05a06a5f744dfcf7f938979cd6c38b0b9af20c2d5d2befa483bcb285",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/mathematics.json",
+    "sha256": "9370026f0dbba2c9673faf37558060c00991501846113c0f5e89ef5d00f0288d",
+    "bytes": 54499,
+    "url": "https://iontlab.org/formalization/mathematics-learning/mathematics.json",
+    "live_sha256": "9370026f0dbba2c9673faf37558060c00991501846113c0f5e89ef5d00f0288d",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/source-audit.json",
+    "sha256": "443417e9a475728494b34d9901aae542580030a11e34473a8256973b8e3ebe12",
+    "bytes": 49268,
+    "url": "https://iontlab.org/formalization/mathematics-learning/source-audit.json",
+    "live_sha256": "443417e9a475728494b34d9901aae542580030a11e34473a8256973b8e3ebe12",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/renderer.js",
+    "sha256": "2fc4039fa968257c8d843cc964059c0f4649d2a7d1dbdd6bbfb6c614a49ba79c",
+    "bytes": 7574,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/renderer.js",
+    "live_sha256": "2fc4039fa968257c8d843cc964059c0f4649d2a7d1dbdd6bbfb6c614a49ba79c",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/graph-adapter.js",
+    "sha256": "dc6d563837c3c3f9365d615773312425981580c25d481827fd3931b5b7d742aa",
+    "bytes": 3285,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/graph-adapter.js",
+    "live_sha256": "dc6d563837c3c3f9365d615773312425981580c25d481827fd3931b5b7d742aa",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/statement-adapter.js",
+    "sha256": "cc7b704972b2265490b13178d6d9e6d94ff96a76b8c5924599ef820b20546d31",
+    "bytes": 6340,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/statement-adapter.js",
+    "live_sha256": "cc7b704972b2265490b13178d6d9e6d94ff96a76b8c5924599ef820b20546d31",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/wiki-adapter.js",
+    "sha256": "15687f1f7222b9f47c9732260a1ce7687b120167e101cf91dc0e048849d16102",
+    "bytes": 5451,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/wiki-adapter.js",
+    "live_sha256": "15687f1f7222b9f47c9732260a1ce7687b120167e101cf91dc0e048849d16102",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/explanations.css",
+    "sha256": "d222c02e5d826b1bf110e406f40b09ffcbb0f3ab59ba376de3d1e30c4ed19edf",
+    "bytes": 2484,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/explanations.css",
+    "live_sha256": "d222c02e5d826b1bf110e406f40b09ffcbb0f3ab59ba376de3d1e30c4ed19edf",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/registry.v0.1.json",
+    "sha256": "58e95f74283d28a1338d2534188ef15784ab859a0c4a201f27589eccc6a4524e",
+    "bytes": 323660,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/registry.v0.1.json",
+    "live_sha256": "58e95f74283d28a1338d2534188ef15784ab859a0c4a201f27589eccc6a4524e",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/release.json",
+    "sha256": "862f179952d3dc273fd4ac6a546e5d96ca0ebdff636c66c6d4e5b3fb60455896",
+    "bytes": 248,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/release.json",
+    "live_sha256": "862f179952d3dc273fd4ac6a546e5d96ca0ebdff636c66c6d4e5b3fb60455896",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/binding.json",
+    "sha256": "66f1379871c7bc328c428033fa3e738bbd862816a02ebe16e102c6033ca90db9",
+    "bytes": 3947,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/binding.json",
+    "live_sha256": "66f1379871c7bc328c428033fa3e738bbd862816a02ebe16e102c6033ca90db9",
+    "verified": true
+  },
+  {
+    "path": "public_html/formalization/mathematics-learning/explanations/native-source.json",
+    "sha256": "68998832029dc49021a7e5c08a0c79306f6002ebf4c1729f437178b0f3deb8ae",
+    "bytes": 89131,
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/native-source.json",
+    "live_sha256": "68998832029dc49021a7e5c08a0c79306f6002ebf4c1729f437178b0f3deb8ae",
+    "verified": true
+  }
+]

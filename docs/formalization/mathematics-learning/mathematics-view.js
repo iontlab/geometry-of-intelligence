@@ -8,7 +8,7 @@ let mathRenderer;
 function loadMathRenderer() {
   if (!mathRenderer) mathRenderer = new Promise((resolve, reject) => {
     // Reuse the same MathJax bundle already used by the live iLab Research Note.
-    window.MathJax = {tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']]},
+    window.MathJax = {tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]'], ['$$','$$']]},
       svg: {fontCache: 'local'}, startup: {typeset: false}};
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js';
@@ -105,6 +105,13 @@ async function showDeclaration(n,requestedExplanation=null) {
     if(['Plain','Story'].includes(requestedExplanation))activate(names.indexOf(requestedExplanation));
   }).catch(()=>{});
   if (!result) return;
+  if(result.native_key){
+    const math=panes[0];
+    math.append(html('p',result.limitation||''));
+    try{await window.ILabLearningStatement.renderNative(math,result.native_key,metadata.native_source_sha256,()=>request===detailRequest&&math.isConnected);}
+    catch{if(request===detailRequest)math.append(html('p','The bound original source could not render. Read the linked chapter for the original statement.'));}
+    return;
+  }
   const math = panes[0], loading = html('p','Rendering mathematics…'); loading.setAttribute('role','status');
   const body = html('div'); body.className='mathematics-body'; body.hidden=true;
   math.append(loading,body);

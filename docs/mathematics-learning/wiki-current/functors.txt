@@ -2,96 +2,113 @@
 
 ===== Original lecture notes — primary reading =====
 
-//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The facsimiles below reproduce the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
+//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The native text below reproduces the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
 
 {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Open the complete original 13-page PDF (selectable text and original links)}}
 
-The original text is the primary reading. The iLab Story, Plain Language, Mathematics, Lean and Verification sections below are supplementary. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
+The original text is the primary reading. The Explain controls beside the original passages open the supplementary Story / Fairy Tale, Plain Language, Mathematics, Lean and Verification layers. Mathematics reproduces the exact original statement. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
 
-[[#story_fairy_tale|Story / Fairy Tale]] · [[#plain_language|Plain Language]] · [[#mathematics|Mathematics and statement controls]] · [[#lean|Lean]] · [[#verification|Verification]]
 
-**Original PDF page 6 — complete page.**
+==== 1.3. Functors between strict categories ====
 
-{{:mathematics_learning:synthetic_category_theory:original:p06-functors.png?1000|Moser–Walde original manuscript, PDF page 6, functors}}
+==== Definition 1.12. ====
 
-**Original PDF page 7 — continues in the next chapter.**
+Given strict categories \(\mathcal C\) and \(\mathcal D\), a **functor** \(F:\mathcal C\to\mathcal D\) consists of:
 
-{{:mathematics_learning:synthetic_category_theory:original:p07-functors.png?1000|Moser–Walde original manuscript, PDF page 7, functors}}
+  * a function \(\operatorname{Ob}(\mathcal C)\to\operatorname{Ob}(\mathcal D)\) sending an object \(x\in\mathcal C\) to an object \(Fx\in\mathcal D\);
+  * for all objects \(x,y\in\mathcal C\), a function \(\mathcal C(x,y)\to\mathcal D(Fx,Fy)\) sending a morphism \(f:x\to y\) in \(\mathcal C\) to a morphism \(Ff:Fx\to Fy\) in \(\mathcal D\);
 
-===== Supplementary iLab explanations =====
+satisfying the following axioms:
 
-The following independent educational content is supplementary to the authors’ original manuscript above. Its verification claims apply only to the specifically mapped Lean declarations.
+  * \(F\) preserves identities: for each object \(x\in\mathcal C\),
 
-**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §1.3, items 1.12–1.19, pp. 6–7.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Selected ordinary-category declarations audited; see Verification below**.
+$$F(\operatorname{id}_x)=\operatorname{id}_{Fx};$$
 
-**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. The authorized original PDF is available in the primary reading above.
+  * \(F\) preserves composites: for all morphisms \(f:x\to y\) and \(g:y\to z\) in \(\mathcal C\),
 
-**Teaching scope:** Statements and source numbering are retained. Proofs and construction checks assigned as exercises by Lyne Moser and Tashi Walde are intentionally withheld, including Lean solutions and explanatory walkthroughs.
+$$F(g\circ f)=Fg\circ Ff.$$
 
-===== Story / Fairy Tale =====
+==== Example 1.13. ====
 
-Mira sends the route book to a neighbouring kingdom. The translator assigns every town a destination town and every permit a translated permit. A two-stage route must translate to the composite of its translated stages; a remain-here permit must remain an identity. The translator may merge towns or permits, but cannot ignore these rules.
+We have the following examples of functors.
 
-For a different job, Mira asks what can reach the tower. A route from the orchard to the mill lets her turn every mill-to-tower permit into an orchard-to-tower permit by adding that route first. The direction of this action on collections runs backwards: a route to the mill pulls tower-bound permits back to the orchard.
+  * The forgetful functors \(U:\mathcal{Set}_{\bullet}\to\mathcal{Set}\), \(U:\mathcal{Vect}_k\to\mathcal{Set}\) and \(U:\mathcal{Top}\to\mathcal{Set}\) sending a pointed set, a \(k\)-vector space, or a topological space to its underlying set.
+  * The functor \((-)_+:\mathcal{Set}\to\mathcal{Set}_{\bullet}\) which freely adjoins a basepoint to a set \(S\), namely \(S_+:=(S\amalg\{*\},*)\).
+  * The functor \(\bigoplus_{(-)}k:\mathcal{Set}\to\mathcal{Vect}_k\) which sends a set \(S\) to the \(k\)-vector space with basis \(S\), namely \(\bigoplus_S k\).
+  * The discrete topology functor \(D:\mathcal{Set}\to\mathcal{Top}\) equipping a set \(S\) with the discrete topology, namely \((S,\mathcal P(S))\), where \(\mathcal P(S)\) is the set of subsets of \(S\).
+  * The indiscrete topology functor \(I:\mathcal{Set}\to\mathcal{Top}\) equipping a set \(S\) with the indiscrete topology, namely \((S,\{\emptyset,S\})\).
 
-**Story key:** a coherent translator is a functor; the tower-bound permit collection is a representable functor. **Where the analogy stops:** “translation” need not be reversible, injective or surjective. The backward direction of a representable action reverses a map between collections; it does not conjure an inverse physical journey.
+==== Proposition 1.14. ====
 
-===== Plain Language =====
+//Let \(F:\mathcal C\to\mathcal D\) be a functor between strict categories. Then \(F\) preserves isomorphisms, i.e., if \(f\) is an isomorphism in \(\mathcal C\), then \(Ff\) is an isomorphism in \(\mathcal D\).//
 
-A functor preserves the structure that makes a category a category. It acts on both objects and arrows. Merely giving a function on objects is insufficient, and an arbitrary assignment of arrows can fail to preserve composition.
+//Proof.// Exercise. \(\square\)
 
-Forgetting structure often gives a functor: a linear map still has an underlying function. Adding structure can also be functorial. To add a basepoint, attach a fresh marked element and extend each function by sending the new mark to the new mark. A new element must be genuinely disjoint; choosing an element already in a set would fail for the empty set and would require extra choices.
+==== Construction 1.15. ====
 
-A contravariant functor reverses arrow direction. Representables are the basic example: a map \(x\to y\) converts maps \(y\to c\) into maps \(x\to c\). We keep the target \(c\) fixed and change the place from which it is tested.
+There is a strict category \(\mathcal{Cat}_s\) with
 
-===== Mathematics =====
+  * object set \(\operatorname{Ob}(\mathcal{Cat}_s)\) consisting of the small strict categories;
+  * for all objects \(\mathcal C,\mathcal D\in\mathcal{Cat}_s\), hom set \(\mathcal{Cat}_s(\mathcal C,\mathcal D)\) consisting of the functors \(\mathcal C\to\mathcal D\);
+  * for each object \(\mathcal C\in\mathcal{Cat}_s\), **identity functor** \(\operatorname{id}_{\mathcal C}:\mathcal C\to\mathcal C\) acting as the identity on objects and on morphisms;
+  * for all morphisms \(F:\mathcal C\to\mathcal D\) and \(G:\mathcal D\to\mathcal E\) in \(\mathcal{Cat}_s\), **composite functor** \(GF:\mathcal C\to\mathcal E\) sending
+    * an object \(x\in\mathcal C\) to the object \(G(F(x))\in\mathcal E\);
+    * a morphism \(f:x\to y\) in \(\mathcal C\) to the morphism \(G(F(f)):G(F(x))\to G(F(y))\) in \(\mathcal E\).
 
-==== Definition 1.12 ====
+This is a well-defined strict category (Exercise).
 
-A functor \(F:C\to D\) consists of an object function and functions \(C(x,y)\to D(Fx,Fy)\), denoted \(f\mapsto Ff\). Its laws are \(F1_x=1_{Fx}\) and \(F(gf)=F(g)F(f)\). Both sides of the second equality have source \(Fx\) and target \(Fz\) when \(f:x\to y\), \(g:y\to z\).
+Similarly, there is a huge strict category \(\mathcal{CAT}_s\) of (large) strict categories and functors.
 
-==== Example 1.13 ====
+==== Remark 1.16. ====
 
-* Forgetful functors \(\mathbf{Set}_*\to\mathbf{Set}\), \(\mathbf{Vect}_k\to\mathbf{Set}\), and \(\mathbf{Top}\to\mathbf{Set}\) discard structure on objects and keep the underlying maps. Identity and composition laws follow from the corresponding laws of functions.
-  * \(S\mapsto S_+=S\sqcup\{*\}\) sends \(f:S\to T\) to its extension fixing the new mark. Check the functor laws separately on original elements and the new mark.
-  * \(S\mapsto k^{(S)}=\bigoplus_{s\in S}k\) sends a set to finite formal linear combinations of its elements. A function \(f:S\to T\) sends a basis vector \(e_s\) to \(e_{f(s)}\), extended linearly. Basis vectors verify identities and composition, including when different basis vectors have the same image.
-  * The discrete-space functor \(D\) gives \(S\) all subsets as opens. Every function between discrete spaces is continuous, and underlying composition is unchanged.
-  * The indiscrete-space functor \(I\) gives \(S\) only \(\varnothing,S\) as opens. Every function between such spaces is continuous. Thus these assignments also satisfy the functor laws.
+The strict category \(\mathcal{Cat}_s\) of small strict categories and functors defines an object of \(\mathcal{CAT}_s\). As for the other examples, the strict category \(\mathcal{Cat}_s\) is locally small, but not small.
 
-==== Proposition 1.14 ====
+==== Construction 1.17. ====
 
-A functor between strict categories preserves isomorphisms: if \(f\) is invertible, then \(F(f)\) is invertible. **Assigned proof (p. 6): solution withheld.**
+Given a strict category \(\mathcal C\), there is a strict category \(\mathcal C^{\mathrm{op}}\), called the **opposite strict category** of \(\mathcal C\), with
 
-==== Construction 1.15 ====
+  * object set \(\operatorname{Ob}(\mathcal C)\);
+  * for all objects \(x,y\in\mathcal C\), hom set
 
-Small strict categories are objects of \(\mathrm{Cat}_s\); its arrows are functors. The identity functor fixes objects and arrows. The composite has \((GF)(x)=G(Fx)\) and \((GF)(f)=G(Ff)\). The analogous huge category \(\mathrm{CAT}_s\) has large strict categories as objects. **The well-definedness checks in Construction 1.15 are assigned exercises (p. 6); solutions are withheld.**
+$$\mathcal C^{\mathrm{op}}(x,y):=\mathcal C(y,x);$$
 
-==== Remark 1.16 ====
+given a morphism \(f:y\to x\) in \(\mathcal C\), we write \(f^{\mathrm{op}}:x\to y\) for the corresponding morphism in \(\mathcal C^{\mathrm{op}}\);
 
-In the primary's hierarchy, \(\mathrm{Cat}_s\) is locally small but not small, and is an object of the huge category \(\mathrm{CAT}_s\) of large strict categories. Specifying a functor between two small categories uses small collections of functions subject to equations; collecting every small category requires the larger universe. The collection of all categories is never being placed inside itself.
+  * for each object \(x\in\mathcal C\), identity morphism \((\operatorname{id}_x)^{\mathrm{op}}\);
+  * for all morphisms \(f^{\mathrm{op}}:x\to y\) and \(g^{\mathrm{op}}:y\to z\) in \(\mathcal C^{\mathrm{op}}\), composite morphism
 
-==== Construction 1.17 ====
+$$g^{\mathrm{op}}\circ f^{\mathrm{op}}:=(f\circ g)^{\mathrm{op}}:x\to z.$$
 
-\(C^{op}\) has the same objects and \(C^{op}(x,y)=C(y,x)\). If \(f^{op}:x\to y\) and \(g^{op}:y\to z\), put \(g^{op}f^{op}=(fg)^{op}\). **The category-law checks are assigned as an exercise (p. 7); the solution is withheld.**
+This is a well-defined strict category (Exercise).
 
-==== Remark 1.18 ====
+==== Remark 1.18. ====
 
-A contravariant functor from \(C\) to \(D\) means a covariant functor \(C^{op}\to D\). For arrows in \(C\), \(F(gf)=F(f)F(g)\). An opposite arrow is a relabeling in another category; it is not an inverse in \(C\).
+A **contravariant functor** from \(\mathcal C\) to \(\mathcal D\) is a functor \(F:\mathcal C^{\mathrm{op}}\to\mathcal D\). It consists of
 
-==== Construction 1.19 ====
+  * a function \(\operatorname{Ob}(\mathcal C)\to\operatorname{Ob}(\mathcal D)\) sending an object \(x\in\mathcal C\) to an object \(Fx\in\mathcal D\);
+  * for all objects \(x,y\in\mathcal C\), a function \(\mathcal C(x,y)\to\mathcal D(Fy,Fx)\) sending a morphism \(f:x\to y\) in \(\mathcal C\) to a morphism \(Ff:Fy\to Fx\) in \(\mathcal D\);
 
-If \(C\) is locally small and \(c\in C\), define
+satisfying the following axioms:
 
-$$h_c=C(-,c):C^{op}\to\mathbf{Set},\qquad h_c(x)=C(x,c).$$
+  * \(F\) preserves identities;
+  * \(F\) preserves compositions: for all morphisms \(f:x\to y\) and \(g:y\to z\) in \(\mathcal C\),
 
-For \(f:x\to y\), \(h_c(f):C(y,c)\to C(x,c)\) takes \(g\) to \(gf\). Local smallness ensures that its values are small sets. **The functor-law checks are assigned as an exercise (p. 7); the solution is withheld.** A functor naturally isomorphic to such an \(h_c\) is called representable.
+$$F(g\circ f)=Ff\circ Fg.$$
 
-===== Lean =====
+==== Construction 1.19. ====
 
-The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Lean type universes are distinguished from the source’s explicit set-universe assumptions. Higher identity types, univalence and full synthetic foundations are not asserted as Lean theorems. Assigned solutions are withheld for 1.14, 1.15, 1.17, 1.19. 
+Let \(\mathcal C\) be a locally small strict category and \(c\in\mathcal C\) be an object. There is a functor
 
-===== Verification =====
+$$\mathcal C(-,c):\mathcal C^{\mathrm{op}}\to\mathcal{Set},$$
 
-The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+called the **representable functor** at \(c\), sending:
+
+  * an object \(x\in\mathcal C\) to the (small) set of morphisms \(\mathcal C(x,c)\);
+  * a morphism \(f:x\to y\) in \(\mathcal C\) to the function
+
+$$f^*:\mathcal C(y,c)\to\mathcal C(x,c),\quad(g:y\to c)\mapsto(gf:x\to c).$$
+
+This is a well-defined functor (Exercise).
+
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations|Natural transformations]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

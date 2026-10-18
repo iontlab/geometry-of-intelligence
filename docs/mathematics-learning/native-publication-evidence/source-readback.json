@@ -1,0 +1,58 @@
+[
+  {
+    "chapter": "foundations",
+    "revision": 1792321129,
+    "raw_sha256": "a80b3365917584fb9230353a7539be3ba34d831a6f7f26676d8e02f487e26b36",
+    "anonymous_html_sha256": "bb08518794ed1a88df066180686c8ac7461680ad95b80ed9327c4d9fbedc22f5",
+    "prepared_bytes_match": true
+  },
+  {
+    "chapter": "size",
+    "revision": 1792321131,
+    "raw_sha256": "5489d230f204f04596262ccc53ee8b85e63f9e0cb59a7681687c8fce3a139830",
+    "anonymous_html_sha256": "6c6e91710fe00f00f20aaf279e7d3329678b0fd6dd34509ef411bb3851adc7f0",
+    "prepared_bytes_match": true
+  },
+  {
+    "chapter": "categories",
+    "revision": 1792321132,
+    "raw_sha256": "2a048f7e3043a447e743f00cd64c170a867689333ba12e78dea95996137b3de0",
+    "anonymous_html_sha256": "5d69dbaf81d40615f5d10f24652d0437508d4373748510d5fc4806f350e96d0e",
+    "prepared_bytes_match": true
+  },
+  {
+    "chapter": "functors",
+    "revision": 1792321134,
+    "raw_sha256": "927321af0105a66cc29dee97b53a39ec81b73c2634caf117cd237c334647b9f7",
+    "anonymous_html_sha256": "0b88a0ec19013004c9d849b94408cf498a73fcf78a9f7c35cff4f36ac7d9a27e",
+    "prepared_bytes_match": true
+  },
+  {
+    "chapter": "natural_transformations",
+    "revision": 1792321142,
+    "raw_sha256": "41e08155cbb69dc0e476f14bdf7d08803df1ea15fdbdc8e62bc5817edcd78984",
+    "anonymous_html_sha256": "0f8680f21dc83561aece657ffb7dc396da96781c294cb8ec55d54c536b04c8f1",
+    "prepared_bytes_match": true
+  },
+  {
+    "chapter": "yoneda",
+    "revision": 1792321143,
+    "raw_sha256": "f19439164a36ca7575581f6d82a6d6144f1b22ca5bea9f9782d7f6c4e8e3f3ed",
+    "anonymous_html_sha256": "baa2009e036e1a1f67a2ca20a2ee12d7b36c67d74938936a021a0d95f6adc857",
+    "prepared_bytes_match": true
+  },
+  {
+    "chapter": "adjunctions",
+    "revision": 1792321145,
+    "raw_sha256": "cfcb5112d5da54bf836e37b27ad83b8d5ed3f8c18ad5be2aa3c0f83065c54f6e",
+    "anonymous_html_sha256": "91cecf50ce886df8f4d21a72f9f20ea6d48449835646f643ecafae3fb294ce3c",
+    "prepared_bytes_match": true
+  },
+  {
+    "chapter": "equivalences",
+    "revision": 1792321128,
+    "raw_sha256": "5c548afd6637e736b3235cae8f4d8aae4a465b4f8316f2e9729942d2b6f5aa5f",
+    "anonymous_html_sha256": "15c014d407c1e4b0ea853d299c568b6b5f7bbe2418bd4d8679ff07040416dd37",
+    "prepared_bytes_match": true
+  }
+]

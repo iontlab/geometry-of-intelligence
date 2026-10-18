@@ -1,6 +1,30 @@
 ILab.MathematicsLearning.AdjunctionData: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.CategoryFunctor: (none)
 ILab.MathematicsLearning.ComponentwiseNaturalIsomorphism: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.Signs: (none)
+ILab.MathematicsLearning.ConcreteGroupPresentations.ZeroOne: (none)
+ILab.MathematicsLearning.ConcreteGroupPresentations.order_two_property_agrees: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.presentationIso: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signsGroup: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signsToUnits: Classical.choice, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signsToUnits._proof_1: propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signsToUnits._proof_2: Classical.choice, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signsToUnits._proof_3: Classical.choice, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signsToUnits._proof_4: Classical.choice, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signsToUnits._proof_5: Classical.choice, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signsToUnits._proof_6: Classical.choice, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity_ne_zero: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.signs_multiplication: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOneGroup: Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOneToCyclic: Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOneToCyclic._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOneToCyclic._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOneToCyclic._proof_3: Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOneToCyclic._proof_4: Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOneToCyclic._proof_5: Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_identity: Quot.sound, propext
+ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_multiplication: Quot.sound, propext
 ILab.MathematicsLearning.ContravariantFunctor: propext
 ILab.MathematicsLearning.EssentiallySurjective: (none)
 ILab.MathematicsLearning.InvertibleMorphism: (none)
@@ -62,17 +86,496 @@ ILab.MathematicsLearning.Room.recOn: (none)
 ILab.MathematicsLearning.Room.south: (none)
 ILab.MathematicsLearning.Room.south.elim: (none)
 ILab.MathematicsLearning.Room.south.sizeOf_spec: (none)
+ILab.MathematicsLearning.SetCategory: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.IsEquivalence: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.IsFullyFaithful: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.IsIsomorphism: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.IsLocallySmall: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.IsSmall: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object._sizeOf_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object._sizeOf_inst: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.casesOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.ctorIdx: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.member: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.mk: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.mk._flat_ctor: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.mk.inj: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.mk.injEq: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.mk.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.mk.sizeOf_spec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.noConfusionType: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.rec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.Object.recOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceAdjunction: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor._sizeOf_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor._sizeOf_inst: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.casesOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.ctorIdx: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.map: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.map_composite: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.map_identity: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.mk: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.mk._flat_ctor: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.mk.inj: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.mk.injEq: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.mk.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.mk.sizeOf_spec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.noConfusionType: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.obj: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.rec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor.recOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor._sizeOf_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor._sizeOf_inst: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.casesOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.ctorIdx: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.fromMathlib: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.fromMathlib._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.fromMathlib._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.map: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.map_composite: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.map_identity: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.mk: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.mk._flat_ctor: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.mk.inj: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.mk.injEq: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.mk.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.mk.sizeOf_spec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.noConfusionType: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.obj: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.rec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.recOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceFunctor.toMathlib: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation._sizeOf_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation._sizeOf_inst: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.casesOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.component: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.ctorIdx: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.mk: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.mk._flat_ctor: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.mk.inj: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.mk.injEq: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.mk.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.mk.sizeOf_spec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.naturality: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.noConfusionType: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.rec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.SourceTransformation.recOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory._sizeOf_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory._sizeOf_inst: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.adjoint_equivalences: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.allHoms: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.allHoms._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.allHoms_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.associative: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.casesOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.code: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.codeEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.codeEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.codeEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.code_injective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.code_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.codes: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.codes_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.codes_subset: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.comp_identity: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.compose: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.compositionCode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.composition_agrees: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_10: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_3: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_4: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_5: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_6: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_7: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_8: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv._proof_9: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.ctorIdx: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.enlarge: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.enlarge._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.enlarge._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.enlarge_restrict: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.enlarge_small: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorBound: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorBound_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorCode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorCodeEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorCodeEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorCodeEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorCode_injective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorCode_mem_bound: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorCodes: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorCodes_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorEquiv: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorEquiv._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorEquiv._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorMapCode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.functorObjectCode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.fundamental_theorem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.hom: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.homCode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.hom_mem: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.hom_members: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.hom_subset_allHoms: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.identity: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.identityCode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.identity_agrees: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.identity_comp: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.instCategoryObject: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.instCategoryObject._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.instCategoryObject._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.instCategoryObject._proof_3: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.instCategoryObject.eq_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.isIsomorphism_iff_isIso: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.liftToModel: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.liftToModel._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.liftToModel._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.liftToModel.eq_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.liftToModelIso: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.liftToModelIso._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.mk: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.mk._flat_ctor: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.mk.congr_simp: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.mk.inj: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.mk.injEq: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.mk.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.mk.sizeOf_spec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.modelFullyFaithful: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.modelFullyFaithful._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.modelFullyFaithful._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.modelFunctor: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.modelFunctor._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.modelFunctor._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.modelFunctor_bijective: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.noConfusionType: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.objectEquiv: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.objectEquiv._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.objectEquiv._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.objects: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.objects_mem: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.ofModel: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.ofModel._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.ofModel._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.ofModel._proof_3: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.rec: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.recOn: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.representableInSmallSets: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.representableInSmallSets._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.representable_map: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.representable_model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.representable_object: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.restrict: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.restrict._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.restrict._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.smallOfUniverse: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.sourceFunctor_small: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.transformationEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_3: Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_4: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_5: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.transformationEquiv._proof_6: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetCategory.unique_inverse: Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.basisVector: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.basisVector_injective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.carrier: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.carrier_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.encode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.encode_injective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.equiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.equiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.equiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.linearEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.linearEquiv._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetFreeVectors.vectorStructure: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.evaluate: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.evaluate._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.evaluate._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.evaluate_graph: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.funsEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.funsEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.funsEquiv._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.funsEquiv._proof_3: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.funsEquiv._proof_4: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graph: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graph.eq_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graphEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graphEquiv._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graphEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graphEquiv._proof_3: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graph_evaluate: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graph_isFunc: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.graph_mem_restricted: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.pair_mem_evaluate: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.pair_mem_graph: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.pair_mem_graph._simp_1_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.pair_mem_graph._simp_1_3: Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.restricted: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.restrictedEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.restrictedEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.restrictedEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetFunction.restricted_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetIndexedFamily.graph: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetIndexedFamily.graph_eq_functionGraph: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetIndexedFamily.graph_injective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetIndexedFamily.graph_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetIndexedFamily.graph_mem_funs: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetIndexedFamily.graph_mem_of_values: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.carrier: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.carrier_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.encode: Quot.sound, propext
+ILab.MathematicsLearning.SetOption.encode.match_1: Quot.sound, propext
+ILab.MathematicsLearning.SetOption.encode_injective: Quot.sound, propext
+ILab.MathematicsLearning.SetOption.equiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.equiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.equiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.inclusion: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.inclusion_injective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.inclusion_ne_point: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.point: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.point_or_inclusion: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetOption.singleton_ne_empty: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.encode: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.encode.eq_1: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.encode_empty: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.encode_injective: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.encode_subset: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.encode_univ: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.equiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.equiv._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.equiv._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.equiv._simp_2: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.mem_encode: Quot.sound, propext
+ILab.MathematicsLearning.SetSubset.mem_encode._simp_1: Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse.casesOn: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.empty_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.functions_mem: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse.mk: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse.mk._flat_ctor: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse.naturals: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.orderedPair_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.pair_mem: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse.powersets: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.product_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.range_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.range_mem._simp_1_1: propext
 ILab.MathematicsLearning.SetUniverse.rec: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse.recOn: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.singleton_mem: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse.subsets: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.union_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.union_mem._simp_1_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SetUniverse.union_mem._simp_1_2: Quot.sound, propext
 ILab.MathematicsLearning.SetUniverse.unions: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.category: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.category._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.decode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.decode.eq_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.hom: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.homEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.largeCategories: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.locallySmall: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.not_small: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv._proof_3: Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv._proof_4: Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv._proof_5: Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.toCat: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallCategoryUniverse.toCatFullyFaithful: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.Data: Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addPoint: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addPoint_model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addedPointData: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addedPointData._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addedPointModelIso: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addedPointModelIso._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addedPointModelIso._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addedPointModelIso._proof_3: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.addedPointObject: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.category: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.category._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.data: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.data.eq_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.encode: Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.encode_injective: Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.forget: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.forget._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.forget._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.forget_model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.forget_model._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.hom: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.homEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.homEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.homEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.homEquiv._proof_3: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.homEquiv._proof_4: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.homEquiv._proof_5: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.homEquiv._proof_6: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.hom_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.locallySmall: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.not_small: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.not_small._simp_1_1: Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.objectEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.objectEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.objectEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.objects: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.objects._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.objects_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.toPointed: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.toPointedFullyFaithful: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.toPointedFullyFaithful._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallPointedSets.toPointed_bijective: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.SmallStrictCategory: (none)
+ILab.MathematicsLearning.SmallTopologicalSpaces.Data: Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.category: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.category._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.data: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.data.eq_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.discrete: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.encode: Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.encode_injective: Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.encode_mem_opens: Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.encode_mem_opens._simp_1: Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.forget: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.forget._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.forget._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.forget_model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.forget_model._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.hom: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.homEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.homEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.homEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.homEquiv._proof_3: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.homEquiv._proof_4: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.homEquiv._proof_5: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.homEquiv._proof_6: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.hom_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.not_small: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.objectEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.objectEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.objectEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.objects: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.objects._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.objects_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.opens: Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.opens_injective: Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.opens_subset: Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.toTopCat: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.toTopCatFullyFaithful: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.topologyModelIso: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.topologyModelIso._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.topologyModelIso._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallTopologicalSpaces.topologyObject: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Data: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure._sizeOf_1: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure._sizeOf_inst: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.casesOn: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.ctorIdx: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.group: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.mk: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.mk._flat_ctor: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.mk.inj: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.mk.injEq: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.mk.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.mk.sizeOf_spec: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.module: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.noConfusion: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.noConfusionType: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.rec: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.Structure.recOn: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.addition: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.category: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.category._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.data: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.encode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.encode_injective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.forget: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.forget._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.forget._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.forget_model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.forget_model._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.free: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.freeData: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.freeData._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.freeModelIso: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.freeModelIso._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.freeModelIso._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.freeObject: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.free_model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.hom: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv._proof_3: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv._proof_4: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv._proof_5: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv._proof_6: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv._proof_7: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.homEquiv._proof_8: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.hom_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.locallySmall: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.model: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.not_small: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.objectEquiv: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.objectEquiv._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.objectEquiv._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.objects: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.objects._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.objects_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.operationCode: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.operationCode_injective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.operationCode_mem: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.scalarAction: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.structure_ext: Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.toModuleCat: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.SmallVectorSpaces.toModuleCatFullyFaithful: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.StrictCategory: (none)
 ILab.MathematicsLearning.TerminalCategory: (none)
 ILab.MathematicsLearning.UniverseHierarchy: Classical.choice, Quot.sound, propext
@@ -146,6 +649,9 @@ ILab.MathematicsLearning.identity_padded_composite: (none)
 ILab.MathematicsLearning.includeRoom: (none)
 ILab.MathematicsLearning.includeRoom._proof_1: (none)
 ILab.MathematicsLearning.includeRoom._proof_2: (none)
+ILab.MathematicsLearning.includeWalkingZero: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.includeWalkingZero._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.includeWalkingZero._proof_2: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.inclusion_essentially_surjective: (none)
 ILab.MathematicsLearning.inclusion_not_surjective: (none)
 ILab.MathematicsLearning.indiscreteAdjunction: Classical.choice, Quot.sound, propext
@@ -191,18 +697,51 @@ ILab.MathematicsLearning.roomIso._proof_1: (none)
 ILab.MathematicsLearning.roomIso._proof_2: (none)
 ILab.MathematicsLearning.room_cardinality: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.selectObject: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.selectSetObject: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.selectSetObject_unique: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.setIsoIffBijective: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.setsCategory: (none)
 ILab.MathematicsLearning.sets_locally_small: (none)
 ILab.MathematicsLearning.sets_not_small: Quot.sound, propext
+ILab.MathematicsLearning.singletonArrow: Quot.sound, propext
+ILab.MathematicsLearning.singletonArrow._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.singletonHomCategory: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.singletonHomCategory._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.singletonHomCategory._proof_2: Quot.sound, propext
+ILab.MathematicsLearning.singletonHomCategory.eq_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.singletonMorphism: Quot.sound
+ILab.MathematicsLearning.singletonMorphism_eq: Quot.sound, propext
 ILab.MathematicsLearning.smallCategoriesAsLargerObject: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.smallSet_is_large: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsCategory: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsCategory._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsCategory._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsCategory._proof_3: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsCategory._proof_4: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsCategory.eq_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsToTypes: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsToTypes._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsToTypes._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsToTypesFullyFaithful: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsToTypesFullyFaithful._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSetsToTypesFullyFaithful._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSets_locallySmall: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSets_not_small: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.smallSets_objects: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.small_categories_locally_small: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.small_categories_not_small: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.spacesCategory: (none)
 ILab.MathematicsLearning.spaces_locally_small: (none)
 ILab.MathematicsLearning.spaces_not_small: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.strict_inverse_object_bijective: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.terminalObject: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.terminalSetCategory: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.terminalSetCategory._proof_1: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.terminal_functor_unique: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.terminal_morphism_unique: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.terminal_object_unique: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.terminal_to_walking_not_surjective: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.topIsoIffHomeomorphism: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.universe_not_member: Quot.sound, propext
 ILab.MathematicsLearning.universe_not_member._simp_1_1: Quot.sound, propext
@@ -217,9 +756,26 @@ ILab.MathematicsLearning.walkingEquivalence._proof_2: Classical.choice, Quot.sou
 ILab.MathematicsLearning.walkingEquivalence._proof_3: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.walkingEquivalence._proof_4: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.walkingEquivalence._proof_5: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingOne: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingOne._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.walkingSetCategory: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingSetCategory._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingSetCategory.eq_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingSetIso: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingSetIso._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingSetIso._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingZero: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingZero._proof_1: Quot.sound, propext
+ILab.MathematicsLearning.walking_hom_singleton: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walking_inclusion_equivalence: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.walking_inclusion_faithful: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.walking_inclusion_full: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.walking_not_strictly_isomorphic: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walking_not_strictly_isomorphic_sets: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walking_objects: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walking_objects._simp_1_1: Quot.sound, propext
+ILab.MathematicsLearning.walking_objects._simp_1_2: Quot.sound, propext
+ILab.MathematicsLearning.walking_zero_ne_one: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.yoneda_object_iso_iff: Classical.choice, Quot.sound, propext
 ILab.MathematicsLearning.yoneda_object_iso_iff.match_1_1: (none)
 ILab.MathematicsLearning.yoneda_object_iso_iff.match_1_3: Classical.choice, Quot.sound, propext

@@ -1,0 +1,1012 @@
+{
+  "source_pdf_sha256": "5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc",
+  "review": "Source-first editorial correspondence checked against the manuscript; no independent human review or compiler proof of prose equivalence claimed.",
+  "numbered_items": 44,
+  "fully_formalized": 29,
+  "exercise_affected_items": 15,
+  "pending_eligible_items": 0,
+  "completion": false,
+  "chapter_counts": {
+    "foundations": {
+      "numbered_items": 0,
+      "fully_formalized": 0,
+      "exercise_withheld": 0,
+      "pending": 0
+    },
+    "size": {
+      "numbered_items": 4,
+      "fully_formalized": 4,
+      "exercise_withheld": 0,
+      "pending": 0
+    },
+    "categories": {
+      "numbered_items": 7,
+      "fully_formalized": 7,
+      "exercise_withheld": 0,
+      "pending": 0
+    },
+    "functors": {
+      "numbered_items": 8,
+      "fully_formalized": 4,
+      "exercise_withheld": 4,
+      "pending": 0
+    },
+    "natural_transformations": {
+      "numbered_items": 9,
+      "fully_formalized": 4,
+      "exercise_withheld": 5,
+      "pending": 0
+    },
+    "yoneda": {
+      "numbered_items": 7,
+      "fully_formalized": 2,
+      "exercise_withheld": 5,
+      "pending": 0
+    },
+    "adjunctions": {
+      "numbered_items": 3,
+      "fully_formalized": 2,
+      "exercise_withheld": 1,
+      "pending": 0
+    },
+    "equivalences": {
+      "numbered_items": 6,
+      "fully_formalized": 6,
+      "exercise_withheld": 0,
+      "pending": 0
+    }
+  },
+  "items": [
+    {
+      "key": "1.1",
+      "chapter": "size",
+      "kind": "Definition",
+      "source_pages": [
+        4
+      ],
+      "source_native_file": "original/native/size.txt",
+      "source_line": 5,
+      "source_sha256": "6870ea9d1344b18b885309f61456e0dbdca276c579d9b27f794e904c7ed44fa4",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetUniverse"
+      ],
+      "correspondence": "Exactly the four closure clauses on ZFC sets. No transitivity clause is added.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.SetUniverse"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.2",
+      "chapter": "size",
+      "kind": "Remark",
+      "source_pages": [
+        4
+      ],
+      "source_native_file": "original/native/size.txt",
+      "source_line": 12,
+      "source_sha256": "277e80104ed1824f4561b2b882598f1c6585e98188d1ac436fabfba83414b30b",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.universe_not_member"
+      ],
+      "correspondence": "The source Russell separation argument proves U ∉ U using its stated subset closure.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.universe_not_member"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.3",
+      "chapter": "size",
+      "kind": "Convention",
+      "source_pages": [
+        4
+      ],
+      "source_native_file": "original/native/size.txt",
+      "source_line": 18,
+      "source_sha256": "1a5a0e4e10c5a70cbf733ffb446f4244d29e1435033ac1536e4056b9b45f7d87",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.UniverseHierarchy"
+      ],
+      "correspondence": "Three universes, their subset inclusions and both membership hypotheses are explicit data; existence is assumed.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.UniverseHierarchy"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.4",
+      "chapter": "size",
+      "kind": "Definition",
+      "source_pages": [
+        4
+      ],
+      "source_native_file": "original/native/size.txt",
+      "source_line": 24,
+      "source_sha256": "f4fb54c6f0a2dcdea5af43ca4bc9ae09e57e741b81b3cc0273bb1e57eeb779da",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.IsSmallSet",
+        "ILab.MathematicsLearning.IsLargeSet",
+        "ILab.MathematicsLearning.IsHugeSet"
+      ],
+      "correspondence": "Small, large and huge mean literal membership in the three stipulated universes.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.IsSmallSet",
+        "ILab.MathematicsLearning.IsLargeSet",
+        "ILab.MathematicsLearning.IsHugeSet",
+        "ILab.MathematicsLearning.smallSet_is_large",
+        "ILab.MathematicsLearning.largeSet_is_huge"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.5",
+      "chapter": "categories",
+      "kind": "Definition",
+      "source_pages": [
+        5
+      ],
+      "source_native_file": "original/native/categories.txt",
+      "source_line": 3,
+      "source_sha256": "731a00a2f99130cdaafb1eec71072074f3f699f328a8afdda2fa36ddd601c869",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory"
+      ],
+      "correspondence": "Objects and hom sets belong to the stipulated large universe; all identity, composition and associativity data are fields. Membership-type functions correspond to set functions by SetFunction.graphEquiv.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.StrictCategory",
+        "ILab.MathematicsLearning.categoryLeftIdentity",
+        "ILab.MathematicsLearning.categoryRightIdentity",
+        "ILab.MathematicsLearning.categoryAssociativity"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.6",
+      "chapter": "categories",
+      "kind": "Remark",
+      "source_pages": [
+        5
+      ],
+      "source_native_file": "original/native/categories.txt",
+      "source_line": 20,
+      "source_sha256": "a3ee4eb894f72f49b1dbd12ad63437790af04b4a02bbda3b6a065333c8d9fbed",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory"
+      ],
+      "correspondence": "Use SetCategory H.large for strict categories and SetCategory H.huge for huge strict categories. Both object and hom bounds are literal membership.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.StrictCategory"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.7",
+      "chapter": "categories",
+      "kind": "Definition",
+      "source_pages": [
+        5
+      ],
+      "source_native_file": "original/native/categories.txt",
+      "source_line": 24,
+      "source_sha256": "063971d2c96bda89e98529750a60ee0f1e4c8e5d2b292783540fc862acf37b35",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.IsLocallySmall",
+        "ILab.MathematicsLearning.SetCategory.IsSmall"
+      ],
+      "correspondence": "The two source membership predicates are explicit, including the small object set in IsSmall.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.LocallySmallCategory",
+        "ILab.MathematicsLearning.SmallStrictCategory"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.8",
+      "chapter": "categories",
+      "kind": "Example",
+      "source_pages": [
+        5
+      ],
+      "source_native_file": "original/native/categories.txt",
+      "source_line": 29,
+      "source_sha256": "360d55445914f0307bc424db1822ea64a02337e2ca2bdf6ba4fc82925c6e8042",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.smallSetsCategory",
+        "ILab.MathematicsLearning.smallSets_locallySmall",
+        "ILab.MathematicsLearning.smallSets_not_small",
+        "ILab.MathematicsLearning.SmallPointedSets.category",
+        "ILab.MathematicsLearning.SmallPointedSets.locallySmall",
+        "ILab.MathematicsLearning.SmallPointedSets.not_small",
+        "ILab.MathematicsLearning.SmallVectorSpaces.category",
+        "ILab.MathematicsLearning.SmallVectorSpaces.locallySmall",
+        "ILab.MathematicsLearning.SmallVectorSpaces.not_small",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.category",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.not_small"
+      ],
+      "correspondence": "All four categories use actual small ZFC carriers and structure-preserving function graphs. Injective pointed/topology/vector codes give large object sets; all hom sets belong to the small universe. Proved operation-preserving hom bijections justify the Mathlib models. Every exact object collection is proved not small. The coefficient field is small under the source convention that sets are small unless otherwise specified.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.setsCategory",
+        "ILab.MathematicsLearning.pointedSetsCategory",
+        "ILab.MathematicsLearning.vectorSpacesCategory",
+        "ILab.MathematicsLearning.spacesCategory",
+        "ILab.MathematicsLearning.sets_locally_small",
+        "ILab.MathematicsLearning.pointed_locally_small",
+        "ILab.MathematicsLearning.vector_spaces_locally_small",
+        "ILab.MathematicsLearning.spaces_locally_small",
+        "ILab.MathematicsLearning.sets_not_small",
+        "ILab.MathematicsLearning.pointed_sets_not_small",
+        "ILab.MathematicsLearning.vector_spaces_not_small",
+        "ILab.MathematicsLearning.spaces_not_small",
+        "ILab.MathematicsLearning.collection_of_small_sets_not_small"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.9",
+      "chapter": "categories",
+      "kind": "Definition",
+      "source_pages": [
+        5
+      ],
+      "source_native_file": "original/native/categories.txt",
+      "source_line": 38,
+      "source_sha256": "a42a8520f2abcb32392ca6247b446f005ae550123eef5ee412f495615da14a33",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.IsIsomorphism",
+        "ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic"
+      ],
+      "correspondence": "Existential two-sided inverse and existential isomorphism between objects, on the original set members. No choice of inverse is required by the predicate.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.Isomorphism",
+        "ILab.MathematicsLearning.invertible_iff_two_sided_inverse",
+        "ILab.MathematicsLearning.ObjectsIsomorphic"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.10",
+      "chapter": "categories",
+      "kind": "Example",
+      "source_pages": [
+        5
+      ],
+      "source_native_file": "original/native/categories.txt",
+      "source_line": 42,
+      "source_sha256": "11d90b1c82b9b85fe8542d91628a9a2c57d5d062375aa81f6c1c4ff2dfcdaac6",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism"
+      ],
+      "correspondence": "The four tests apply to the actual Example 1.8 set-coded morphisms: bijections, point-preserving bijections, linear bijections, and homeomorphisms. Fully faithful model bridges preserve the exact underlying functions and inverse equations.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.setIsoIffBijective",
+        "ILab.MathematicsLearning.pointed_iso_iff_bijective",
+        "ILab.MathematicsLearning.vector_iso_iff_bijective",
+        "ILab.MathematicsLearning.topIsoIffHomeomorphism"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.11",
+      "chapter": "categories",
+      "kind": "Proposition",
+      "source_pages": [
+        5
+      ],
+      "source_native_file": "original/native/categories.txt",
+      "source_line": 49,
+      "source_sha256": "b60648b18c629a3c2f1ea69f278dda4f77d8ec27a264fb66ef0c37b756336d55",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.unique_inverse"
+      ],
+      "correspondence": "Given an isomorphism, proves existence and uniqueness of a two-sided inverse. The source identity/composition operations agree definitionally with the represented Mathlib operations.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.inverse_unique"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.12",
+      "chapter": "functors",
+      "kind": "Definition",
+      "source_pages": [
+        6
+      ],
+      "source_native_file": "original/native/functors.txt",
+      "source_line": 3,
+      "source_sha256": "92921e62571697c717e8c65ddbc87d6f07054642c45079dbd1fa010d02fe9ee7",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+        "ILab.MathematicsLearning.SetCategory.functorEquiv"
+      ],
+      "correspondence": "The object function, every hom function and both laws are explicit; a proved two-way data equivalence relates these to Mathlib functors on the identical object/hom members.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.CategoryFunctor",
+        "ILab.MathematicsLearning.functorIdentityLaw",
+        "ILab.MathematicsLearning.functorCompositionLaw"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.13",
+      "chapter": "functors",
+      "kind": "Example",
+      "source_pages": [
+        6
+      ],
+      "source_native_file": "original/native/functors.txt",
+      "source_line": 18,
+      "source_sha256": "8558d934dc1e90aa57caaef2be17d08ddd5d80f4b8e3b7cdaa63ba08d776847f",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SmallPointedSets.forget",
+        "ILab.MathematicsLearning.SmallVectorSpaces.forget",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.forget",
+        "ILab.MathematicsLearning.SmallPointedSets.addPoint",
+        "ILab.MathematicsLearning.SmallVectorSpaces.free",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens",
+        "ILab.MathematicsLearning.SetFreeVectors.linearEquiv"
+      ],
+      "correspondence": "All seven functors operate on the exact set-coded categories. Forgetful functors retain the carrier and graph. The adjoined point is the Option-equivalent disjoint-point set; free vectors are actual graphs of finitely supported coefficient functions with a proved linear equivalence to the direct sum. Discrete and indiscrete open sets are proved exactly P(S) and {empty,S}. Commuting model isomorphisms certify the object and arrow correspondences.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.forgetPoint",
+        "ILab.MathematicsLearning.forgetVector",
+        "ILab.MathematicsLearning.forgetTopology",
+        "ILab.MathematicsLearning.addBasepoint",
+        "ILab.MathematicsLearning.freeVectorSpace",
+        "ILab.MathematicsLearning.freeVectorMapOnBasis",
+        "ILab.MathematicsLearning.discreteTopology",
+        "ILab.MathematicsLearning.indiscreteTopology"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.14",
+      "chapter": "functors",
+      "kind": "Proposition",
+      "source_pages": [
+        6
+      ],
+      "source_native_file": "original/native/functors.txt",
+      "source_line": 26,
+      "source_sha256": "e6f813277252a7c84baa74e4ce6ca72c514918772a24488754886b64d03ca238",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.15",
+      "chapter": "functors",
+      "kind": "Construction",
+      "source_pages": [
+        6
+      ],
+      "source_native_file": "original/native/functors.txt",
+      "source_line": 30,
+      "source_sha256": "1610ade69c34d097fc19a8a4f7e9f68b93589530fdf6a8c1cd21645bf31c2dff",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.16",
+      "chapter": "functors",
+      "kind": "Remark",
+      "source_pages": [
+        6
+      ],
+      "source_native_file": "original/native/functors.txt",
+      "source_line": 43,
+      "source_sha256": "b87f69bedc6d5c13cc0b725fa2534d5d48e06947aa033f03c4da9ec60be6e21d",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv",
+        "ILab.MathematicsLearning.SetCategory.functorCodeEquiv"
+      ],
+      "correspondence": "Injective ZFC codes retain complete category and functor data. A proved bijection includes every source-small strict category, not a skeleton. Functor codes lie in an explicit small function-set bound; the category object collection is large and not small. Its complete code is an object of the huge category of large categories. Existing Mathlib Cat laws are reused internally through the general model bridge; no independent solution of the assigned 1.15 category-law checks is exported.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.smallCategoriesAsLargerObject",
+        "ILab.MathematicsLearning.small_categories_locally_small",
+        "ILab.MathematicsLearning.small_categories_not_small"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.17",
+      "chapter": "functors",
+      "kind": "Construction",
+      "source_pages": [
+        6,
+        7
+      ],
+      "source_native_file": "original/native/functors.txt",
+      "source_line": 45,
+      "source_sha256": "8078078936d0e0c28597208cb9d2b55507a72b652fafb4b51390320623b6380e",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.18",
+      "chapter": "functors",
+      "kind": "Remark",
+      "source_pages": [
+        7
+      ],
+      "source_native_file": "original/native/functors.txt",
+      "source_line": 61,
+      "source_sha256": "f6237a78941ac1cb71dd8fae6cec55de7fed3d190b06bf255109f3803265aaee",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor",
+        "ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv"
+      ],
+      "correspondence": "The reversed hom functions and reversed composition law match the source, with a proved two-way data correspondence to functors from the opposite membership-type category.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.ContravariantFunctor",
+        "ILab.MathematicsLearning.functorIdentityLaw",
+        "ILab.MathematicsLearning.contravariant_composition"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.19",
+      "chapter": "functors",
+      "kind": "Construction",
+      "source_pages": [
+        7
+      ],
+      "source_native_file": "original/native/functors.txt",
+      "source_line": 73,
+      "source_sha256": "e6650638dc599c5467411bdaa3226fe83e2424a087148814272c28dfba4ccab9",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.20",
+      "chapter": "natural_transformations",
+      "kind": "Definition",
+      "source_pages": [
+        7
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 3,
+      "source_sha256": "7f4e908090582b8ba2d17caff1f6f5eee6247529fe40dad179675e0193a24c73",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+        "ILab.MathematicsLearning.SetCategory.transformationEquiv"
+      ],
+      "correspondence": "The component functions and naturality square are preserved by a proved data equivalence; Lean writes composition in the opposite textual order.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.NaturalTransformation",
+        "ILab.MathematicsLearning.naturalityEquation"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.21",
+      "chapter": "natural_transformations",
+      "kind": "Construction",
+      "source_pages": [
+        7,
+        8
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 26,
+      "source_sha256": "a5b1d9961c2a6df6273d46b807c611e11313c2cc83123cd886fb7f39fb4f9495",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.22",
+      "chapter": "natural_transformations",
+      "kind": "Definition",
+      "source_pages": [
+        8
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 36,
+      "source_sha256": "7f4fcbaa77c69c99b810a1ffcdbf669d7c506e626fdf7c1036b1385a80048ece",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism"
+      ],
+      "correspondence": "Exactly pointwise existence of two-sided inverses. This definition does not export the assigned proof of Proposition 1.24.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.ComponentwiseNaturalIsomorphism"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.23",
+      "chapter": "natural_transformations",
+      "kind": "Construction",
+      "source_pages": [
+        8
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 40,
+      "source_sha256": "41bb3e45707871e5f7d977858f9b378c5ac0e75acf02adabbbed35d063ebf069",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.24",
+      "chapter": "natural_transformations",
+      "kind": "Proposition",
+      "source_pages": [
+        8
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 54,
+      "source_sha256": "481f9fd6f4a06d9eb3d49ba2b03c7fc1477e6406c3987934812845e4803357b3",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.25",
+      "chapter": "natural_transformations",
+      "kind": "Construction",
+      "source_pages": [
+        8
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 58,
+      "source_sha256": "b759e9299675f33f1e37e3d1940629633cc93b21fca2d3175d8e6598a7a04ade",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.terminalSetCategory",
+        "ILab.MathematicsLearning.terminalObject",
+        "ILab.MathematicsLearning.terminal_object_unique",
+        "ILab.MathematicsLearning.terminal_morphism_unique"
+      ],
+      "correspondence": "The object set and every hom set are literal singletons belonging to the source large universe.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.TerminalCategory",
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.functorToTerminal",
+        "ILab.MathematicsLearning.functorToTerminal_unique"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.26",
+      "chapter": "natural_transformations",
+      "kind": "Proposition",
+      "source_pages": [
+        8
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 60,
+      "source_sha256": "0f590f982901391f4acaa49b52c31d7b499bd29184f13fa0093bfc560fdae211",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.27",
+      "chapter": "natural_transformations",
+      "kind": "Remark",
+      "source_pages": [
+        8
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 68,
+      "source_sha256": "792f24da5030f600a5e68bd3cd3a05dec40ed2cd7abbafbf8198852eb2a56c17",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.selectSetObject",
+        "ILab.MathematicsLearning.selectSetObject_unique"
+      ],
+      "correspondence": "For each original object, proves unique existence of a functor from the set-coded singleton category taking its object to that object. Does not construct the assigned functor-category isomorphism in 1.26.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.selectObject",
+        "ILab.MathematicsLearning.terminal_functor_unique"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "1.28",
+      "chapter": "natural_transformations",
+      "kind": "Construction",
+      "source_pages": [
+        8,
+        9
+      ],
+      "source_native_file": "original/native/natural_transformations.txt",
+      "source_line": 70,
+      "source_sha256": "f3f17efaf578abbfb305e4776ffb59a9014f5b2f3250e0b280f77424c67f86ea",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "2.1",
+      "chapter": "yoneda",
+      "kind": "Theorem",
+      "source_pages": [
+        9
+      ],
+      "source_native_file": "original/native/yoneda.txt",
+      "source_line": 5,
+      "source_sha256": "35d26a197012e55a997ee80c067d4676a02c82801f89187df28cd7f594c177aa",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "2.2",
+      "chapter": "yoneda",
+      "kind": "Construction",
+      "source_pages": [
+        9
+      ],
+      "source_native_file": "original/native/yoneda.txt",
+      "source_line": 29,
+      "source_sha256": "ce8520b3126b540f7696578bd33c70c5edef935e24b2c02d49ab4075d72b49dd",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "2.3",
+      "chapter": "yoneda",
+      "kind": "Definition",
+      "source_pages": [
+        9
+      ],
+      "source_native_file": "original/native/yoneda.txt",
+      "source_line": 40,
+      "source_sha256": "1b188ecacacd7cc1b86d9a731fdaae96d90f871c9bf96ee10ac8aefb17fee208",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.IsFullyFaithful"
+      ],
+      "correspondence": "Exactly bijectivity of every hom function on the source object and morphism members.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.fullyFaithfulIffBijective",
+        "ILab.MathematicsLearning.fullyFaithfulHomEquiv"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "2.4",
+      "chapter": "yoneda",
+      "kind": "Corollary",
+      "source_pages": [
+        10
+      ],
+      "source_native_file": "original/native/yoneda.txt",
+      "source_line": 46,
+      "source_sha256": "c0509f290bc88e26b0fb9d21a0454657b358b0d7f6b22ffae21a7d505c097cd6",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "2.5",
+      "chapter": "yoneda",
+      "kind": "Proposition",
+      "source_pages": [
+        10
+      ],
+      "source_native_file": "original/native/yoneda.txt",
+      "source_line": 54,
+      "source_sha256": "bd0ebc2cc8ff9a1f733190e05775f9f64dd8d7144264d2fc6cc48085f6ad55ee",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "2.6",
+      "chapter": "yoneda",
+      "kind": "Corollary",
+      "source_pages": [
+        10
+      ],
+      "source_native_file": "original/native/yoneda.txt",
+      "source_line": 60,
+      "source_sha256": "6e99c2600ef1fd7f27ad69e481e1a00b5e91107bf5b14a166307fc812613767d",
+      "status": "mixed_exercise",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism"
+      ],
+      "correspondence": "The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.isoIffPostcompositionBijective",
+        "ILab.MathematicsLearning.isoIffPrecompositionBijective"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "2.7",
+      "chapter": "yoneda",
+      "kind": "Corollary",
+      "source_pages": [
+        10
+      ],
+      "source_native_file": "original/native/yoneda.txt",
+      "source_line": 88,
+      "source_sha256": "b6e137750fe7d5d83c13e0cc0b490b52c1107e559583071d739d3101727060a4",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+        "ILab.MathematicsLearning.SetCategory.representable_object",
+        "ILab.MathematicsLearning.SetCategory.representable_map",
+        "ILab.MathematicsLearning.SetCategory.representable_model"
+      ],
+      "correspondence": "Representables take values in the actual small hom sets and their arrows are literally the graphs of source precomposition. The proved model correspondence transports natural isomorphisms in both directions. The conclusion uses the source componentwise two-sided-inverse definition. Mathlib Yoneda is reused internally for this non-exercise corollary; no independent proofs of the assigned 1.19/2.1/2.4 exercises are supplied.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.yoneda_object_iso_iff"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.1",
+      "chapter": "adjunctions",
+      "kind": "Definition",
+      "source_pages": [
+        11
+      ],
+      "source_native_file": "original/native/adjunctions.txt",
+      "source_line": 13,
+      "source_sha256": "b39e1b24367d11ed97aa9d2f9ca9252dc32d5829f668279ca61ff219283026bf",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+        "ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle",
+        "ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle"
+      ],
+      "correspondence": "Mathlib Adjunction has precisely the unit, counit, and two component triangle equations; here it is instantiated only on the faithfully represented set-coded categories and functors.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.adjunctionUnit",
+        "ILab.MathematicsLearning.adjunctionCounit",
+        "ILab.MathematicsLearning.adjunction_unit_naturality",
+        "ILab.MathematicsLearning.adjunction_counit_naturality",
+        "ILab.MathematicsLearning.adjunctionLeftTriangle",
+        "ILab.MathematicsLearning.adjunctionRightTriangle"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.2",
+      "chapter": "adjunctions",
+      "kind": "Example",
+      "source_pages": [
+        11
+      ],
+      "source_native_file": "original/native/adjunctions.txt",
+      "source_line": 39,
+      "source_sha256": "d86adbb58a516e6044ee9b751500572bc766d6a22bcd81210637e2a0a8f64da4",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+        "ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction",
+        "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction"
+      ],
+      "correspondence": "All four unit/counit adjunctions are on the actual Example 1.8 categories and Example 1.13 functors. The library adjunctions are restricted only after fully faithful hom correspondences and both commuting model squares have been proved. Free-vector, disjoint-point and topology carriers satisfy the source universe bounds. No general assigned 3.3 hom-bijection proof is exported.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.basepointAdjunction",
+        "ILab.MathematicsLearning.vectorSpaceAdjunction",
+        "ILab.MathematicsLearning.discreteAdjunction",
+        "ILab.MathematicsLearning.indiscreteAdjunction"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.3",
+      "chapter": "adjunctions",
+      "kind": "Theorem",
+      "source_pages": [
+        12
+      ],
+      "source_native_file": "original/native/adjunctions.txt",
+      "source_line": 51,
+      "source_sha256": "c8eee41e5b24bf3d97cdfe4f033a2bb3a0e166cd0adba099f8367f16e373e638",
+      "status": "exercise_withheld",
+      "declarations": [],
+      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "prior_independent_declarations": [],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.4",
+      "chapter": "equivalences",
+      "kind": "Definition",
+      "source_pages": [
+        12
+      ],
+      "source_native_file": "original/native/equivalences.txt",
+      "source_line": 7,
+      "source_sha256": "dfeb17af225885738c410a023505527323039c7f0b52a188b9be1c76b0ad7169",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.IsEquivalence"
+      ],
+      "correspondence": "Existential reverse functor and unit/counit natural transformations with pointwise two-sided inverses. No triangle equation is added to the definition.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.QuasiInverseData",
+        "ILab.MathematicsLearning.equivalenceToQuasiInverse",
+        "ILab.MathematicsLearning.quasiInverseToEquivalence"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.5",
+      "chapter": "equivalences",
+      "kind": "Example",
+      "source_pages": [
+        12
+      ],
+      "source_native_file": "original/native/equivalences.txt",
+      "source_line": 9,
+      "source_sha256": "886e50be4fa6b562fcdfc86d52aa05daa83ad00c8dd94e7f0a50383b5f07c99f",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence",
+        "ILab.MathematicsLearning.SetCategory.adjoint_equivalences",
+        "ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint"
+      ],
+      "correspondence": "Both bullets and the final Fact are proved: strict inverses imply equivalence, both functors of an adjoint equivalence are equivalences, and every equivalence admits an adjoint upgrade.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.categoryIsoToEquivalence",
+        "ILab.MathematicsLearning.adjunctionToEquivalence"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.6",
+      "chapter": "equivalences",
+      "kind": "Definition",
+      "source_pages": [
+        12
+      ],
+      "source_native_file": "original/native/equivalences.txt",
+      "source_line": 16,
+      "source_sha256": "995f145d8c44d922da16019726f614dd82e9349928cade4a1891fd92f2c8b641",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective",
+        "ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees"
+      ],
+      "correspondence": "For every target object, an actual source object and isomorphism from its image are required. The library correspondence is proved on those same objects and morphisms.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.EssentiallySurjective",
+        "ILab.MathematicsLearning.essentially_surjective_iff"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.7",
+      "chapter": "equivalences",
+      "kind": "Theorem",
+      "source_pages": [
+        12
+      ],
+      "source_native_file": "original/native/equivalences.txt",
+      "source_line": 18,
+      "source_sha256": "54e120d0b06d74a644366e96ddab66875435bed0a20731b56af58551ae1f5d0a",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.fundamental_theorem"
+      ],
+      "correspondence": "Both directions connect the source existential quasi-inverse condition with essential-surjectivity witnesses and bijectivity on every hom set. Original Proof. Next time. remains unchanged in the manuscript.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.8",
+      "chapter": "equivalences",
+      "kind": "Construction",
+      "source_pages": [
+        13
+      ],
+      "source_native_file": "original/native/equivalences.txt",
+      "source_line": 22,
+      "source_sha256": "ec943ac0e0ccc2647e39ed273d34094617dee55c2713de05408943379f1ccb81",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.walkingSetCategory",
+        "ILab.MathematicsLearning.walkingZero",
+        "ILab.MathematicsLearning.walkingOne",
+        "ILab.MathematicsLearning.walking_zero_ne_one",
+        "ILab.MathematicsLearning.walking_objects",
+        "ILab.MathematicsLearning.walking_hom_singleton",
+        "ILab.MathematicsLearning.walkingSetIso"
+      ],
+      "correspondence": "Two distinct ZFC object codes, exactly those two objects, literal singleton hom sets, identities and mutually inverse arrows.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.roomIso",
+        "ILab.MathematicsLearning.room_cardinality"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    },
+    {
+      "key": "3.9",
+      "chapter": "equivalences",
+      "kind": "Proposition",
+      "source_pages": [
+        13
+      ],
+      "source_native_file": "original/native/equivalences.txt",
+      "source_line": 24,
+      "source_sha256": "6b425b72324bc78e5a5a832d3d27176d80e88da20574a90119a9a4d6b821acb3",
+      "status": "fully_formalized",
+      "declarations": [
+        "ILab.MathematicsLearning.includeWalkingZero",
+        "ILab.MathematicsLearning.walking_inclusion_equivalence"
+      ],
+      "correspondence": "The actual singleton-to-walking-isomorphism inclusion is proved an equivalence in the source definition. The printed 0≅0 in the original prose is retained, not silently corrected.",
+      "prior_independent_declarations": [
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.walking_inclusion_full",
+        "ILab.MathematicsLearning.walking_inclusion_faithful",
+        "ILab.MathematicsLearning.inclusion_essentially_surjective",
+        "ILab.MathematicsLearning.walkingEquivalence",
+        "ILab.MathematicsLearning.inclusion_not_surjective"
+      ],
+      "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
+    }
+  ],
+  "unnumbered": "Fourteen interface passage groups are retained separately. Introductory higher identity types, univalence, all-dimensional coherence and the proposed synthetic extension await the authors’ later axioms. They are not replaced by Lean Eq or ordinary categories."
+}

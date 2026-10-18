@@ -2,100 +2,123 @@
 
 ===== Original lecture notes — primary reading =====
 
-//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The facsimiles below reproduce the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
+//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The native text below reproduces the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
 
 {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Open the complete original 13-page PDF (selectable text and original links)}}
 
-The original text is the primary reading. The iLab Story, Plain Language, Mathematics, Lean and Verification sections below are supplementary. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
+The original text is the primary reading. The Explain controls beside the original passages open the supplementary Story / Fairy Tale, Plain Language, Mathematics, Lean and Verification layers. Mathematics reproduces the exact original statement. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
 
-[[#story_fairy_tale|Story / Fairy Tale]] · [[#plain_language|Plain Language]] · [[#mathematics|Mathematics and statement controls]] · [[#lean|Lean]] · [[#verification|Verification]]
 
-**Original PDF page 7 — continued below the preceding chapter.**
+==== 1.4. Natural transformations between functors ====
 
-{{:mathematics_learning:synthetic_category_theory:original:p07-natural_transformations.png?1000|Moser–Walde original manuscript, PDF page 7, natural transformations}}
+==== Definition 1.20. ====
 
-**Original PDF page 8 — complete page.**
+Given functors \(F,G:\mathcal C\to\mathcal D\) between strict categories, a **natural transformation** \(\alpha:F\Rightarrow G\) consists of:
 
-{{:mathematics_learning:synthetic_category_theory:original:p08-natural_transformations.png?1000|Moser–Walde original manuscript, PDF page 8, natural transformations}}
+  * for each object \(x\in\mathcal C\), a morphism \(\alpha_x:Fx\to Gx\) in \(\mathcal D\), called the **component** of \(\alpha\) at \(x\);
 
-**Original PDF page 9 — continues in the next chapter.**
+satisfying the following axiom:
 
-{{:mathematics_learning:synthetic_category_theory:original:p09-natural_transformations.png?1000|Moser–Walde original manuscript, PDF page 9, natural transformations}}
+  * \(\alpha\) is natural: for each morphism \(f:x\to y\) in \(\mathcal C\), the following square commutes
 
-===== Supplementary iLab explanations =====
+<tikzjax>
+\begin{document}
+\begin{tikzpicture}[>=stealth]
+\node (Fx) at (0,0) {$Fx$}; \node (Gx) at (2,0) {$Gx$};
+\node (Fy) at (0,-1.6) {$Fy$}; \node (Gy) at (2,-1.6) {$Gy$};
+\draw[->] (Fx) -- node[above] {$\alpha_x$} (Gx);
+\draw[->] (Fx) -- node[left] {$Ff$} (Fy);
+\draw[->] (Gx) -- node[right] {$Gf$} (Gy);
+\draw[->] (Fy) -- node[below] {$\alpha_y$} (Gy);
+\end{tikzpicture}
+\end{document}
+</tikzjax>
 
-The following independent educational content is supplementary to the authors’ original manuscript above. Its verification claims apply only to the specifically mapped Lean declarations.
+i.e., \(Gf\circ\alpha_x=\alpha_y\circ Ff\).
 
-**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §1.4, items 1.20–1.28, pp. 7–9.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Selected ordinary-category declarations audited; see Verification below**.
+==== Construction 1.21. ====
 
-**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. The authorized original PDF is available in the primary reading above.
+Let \(\mathcal C\) be a locally small strict category and \(f:c\to d\) be a morphism in \(\mathcal C\). There is a natural transformation
 
-**Teaching scope:** Statements and source numbering are retained. Proofs and construction checks assigned as exercises by Lyne Moser and Tashi Walde are intentionally withheld, including Lean solutions and explanatory walkthroughs.
+$$\mathcal C(-,f):\mathcal C(-,c)\Rightarrow\mathcal C(-,d)$$
 
-===== Story / Fairy Tale =====
+whose component at an object \(x\in\mathcal C\) is the function
 
-Two translators, Fern and Gale, send Mira's route book into the same kingdom. Mira places a comparison permit from Fern's version of each town to Gale's version. She insists on a test for every original route: translating with Fern and then comparing must agree with comparing first and then using Gale's translation.
+$$f_*:\mathcal C(x,c)\to\mathcal C(x,d),\quad(g:x\to c)\mapsto(fg:x\to d).$$
 
-A natural transformation compares two functors through components that satisfy the same compatibility requirement for every arrow. This story explains the definition; the assigned composition and inverse checks are left to the reader.
+This is well-defined (Exercise).
 
-**Story key:** translators are functors; comparison permits are components; the route test is naturality. **Where the analogy stops:** components are generally not invertible. Choosing a comparison independently at every town is insufficient: every arrow must satisfy the square.
+==== Definition 1.22. ====
 
-===== Plain Language =====
+Given functors \(F,G:\mathcal C\to\mathcal D\) between strict categories, a natural transformation \(\alpha:F\Rightarrow G\) is a **natural isomorphism** if, for each object \(x\in\mathcal C\), its component \(\alpha_x:Fx\to Gx\) is an isomorphism in \(\mathcal D\).
 
-Naturality says that a comparison respects all the structure-changing maps in the source category. It is stronger than having similarly shaped objects or an arbitrary component at each object.
+We sometimes say that, for all objects \(x\in\mathcal C\), there is an isomorphism \(Fx\cong Gx\) which is **natural** in \(x\).
 
-For an independent example on sets, fix two marker sets \(A,B\) and a function \(q:A\to B\). The maps \(X\times A\to X\times B\), \((x,a)\mapsto(x,q(a))\), form a natural transformation between product functors. For \(f:X\to Y\), either route sends \((x,a)\) to \((f(x),q(a))\). A transformation need not be invertible: a constant \(q\) can collapse two markers. The essential point is compatibility, not reversibility.
+==== Construction 1.23. ====
 
-===== Mathematics =====
+Given strict categories \(\mathcal C\) and \(\mathcal D\), there is a strict category \(\operatorname{Fun}(\mathcal C,\mathcal D)\), called the **functor strict category**, with
 
-==== Definition 1.20 ====
+  * object set \(\operatorname{Ob}(\operatorname{Fun}(\mathcal C,\mathcal D)):=\mathcal{CAT}_s(\mathcal C,\mathcal D)\) consisting of the functors \(\mathcal C\to\mathcal D\);
+  * for all objects \(F,G\in\operatorname{Fun}(\mathcal C,\mathcal D)\), hom set \(\operatorname{Fun}(\mathcal C,\mathcal D)(F,G)\) consisting of the natural transformations \(F\Rightarrow G\);
+  * for each object \(F\in\operatorname{Fun}(\mathcal C,\mathcal D)\), **identity natural transformation** \(\operatorname{id}_F:F\Rightarrow F\) having component at an object \(c\in\mathcal C\) given by
 
-For \(F,G:C\to D\), a natural transformation \(\alpha:F\Rightarrow G\) assigns \(\alpha_x:Fx\to Gx\) with
+$$(\operatorname{id}_F)_c:=\operatorname{id}_{Fc}:Fc\to Fc;$$
 
-$$G(f)\circ\alpha_x=\alpha_y\circ F(f)\qquad(f:x\to y).$$
+  * for all morphisms \(\alpha:F\to G\) and \(\beta:G\to H\) in \(\operatorname{Fun}(\mathcal C,\mathcal D)\), **composite natural transformation** \(\beta\circ\alpha:F\Rightarrow H\) having component at an object \(c\in\mathcal C\) given by the composite
 
-Both composites have domain \(Fx\) and codomain \(Gy\). The commuting square is
+$$(\beta\circ\alpha)_c:=\beta_c\circ\alpha_c:Fc\to Hc.$$
 
-$$\begin{array}{ccc}Fx&\xrightarrow{\alpha_x}&Gx\\ {\scriptstyle Ff}\downarrow&&\downarrow{\scriptstyle Gf}\\ Fy&\xrightarrow{\alpha_y}&Gy.\end{array}$$
+This is a well-defined strict category (Exercise).
 
-==== Construction 1.21 ====
+==== Proposition 1.24. ====
 
-For \(f:c\to d\), the transformation \(h_f:h_c\Rightarrow h_d\) has component \(C(x,c)\to C(x,d)\), sending \(g\) to \(fg\). **Its well-definedness is assigned as an exercise (p. 8); the solution is withheld.**
+//Given strict categories \(\mathcal C\) and \(\mathcal D\), a natural transformation is an isomorphism in \(\operatorname{Fun}(\mathcal C,\mathcal D)\) if and only if it is a natural isomorphism.//
 
-==== Definition 1.22 ====
+//Proof.// Exercise. \(\square\)
 
-A natural transformation is a natural isomorphism when every component is an isomorphism.
+==== Construction 1.25. ====
 
-==== Construction 1.23 ====
+The **terminal strict category** is the strict category \([0]\) with a single object \(*\) and a single morphism \(\operatorname{id}_*\).
 
-In \(\mathrm{Fun}(C,D)\), objects are functors and arrows are natural transformations. The identity has components \(1_{Fx}\); composition has \((\beta\alpha)_x=\beta_x\alpha_x\). **The well-definedness and category-law checks are assigned as an exercise (p. 8); solutions are withheld.**
+==== Proposition 1.26. ====
 
-==== Proposition 1.24 ====
+//Given a strict category \(\mathcal C\), there is an isomorphism of strict categories//
 
-A natural transformation is an isomorphism in \(\mathrm{Fun}(C,D)\) if and only if it is a natural isomorphism. **Assigned proof (p. 8): solution withheld.**
+$$\operatorname{Fun}([0],\mathcal C)\cong\mathcal C$$
 
-==== Construction 1.25 ====
+//which is natural in \(\mathcal C\).//
 
-The terminal strict category \([0]\) has one object \(*\) and only its identity morphism.
+//Proof.// Exercise. \(\square\)
 
-==== Proposition 1.26 ====
+==== Remark 1.27. ====
 
-For a strict category \(C\), there is an isomorphism of strict categories \(\mathrm{Fun}([0],C)\cong C\), natural in \(C\). **The source says “Proof. Exercise.” (p. 8). The proof, including the naturality check, is intentionally withheld.**
+As a consequence of this result, we have that an object \(c\in\mathcal C\) corresponds to a unique functor \(c:[0]\to\mathcal C\), which we also call \(c\).
 
-==== Remark 1.27 ====
+==== Construction 1.28. ====
 
-As a consequence, an object \(c\in C\) corresponds to a unique functor \(c:[0]\to C\), also denoted \(c\).
+Given a functor \(F:\mathcal C\to\mathcal D\) between strict categories and a strict category \(\mathcal E\), there is a functor
 
-==== Construction 1.28 ====
+$$F^*:\operatorname{Fun}(\mathcal D,\mathcal E)\to\operatorname{Fun}(\mathcal C,\mathcal E),$$
 
-For \(F:C\to D\), precomposition gives \(F^*:\mathrm{Fun}(D,E)\to\mathrm{Fun}(C,E)\), with \(G\mapsto GF\) and components \(\alpha_{Fx}\). Postcomposition gives \(F_*:\mathrm{Fun}(E,C)\to\mathrm{Fun}(E,D)\), with \(G\mapsto FG\) and components \(F(\alpha_x)\). **The checks that these are well-defined functors are assigned as an exercise (p. 9); solutions are withheld.**
+called the **precomposition functor** with \(F\), sending
 
-===== Lean =====
+  * a functor \(G:\mathcal D\to\mathcal E\) to the composite \(GF:\mathcal C\to\mathcal E\);
+  * a natural transformation \(\alpha:G\Rightarrow H\) between functors \(G,H:\mathcal D\to\mathcal E\) to the natural transformation \(\alpha F:GF\Rightarrow HF\) whose component at an object \(x\in\mathcal C\) is the morphism in \(\mathcal E\)
 
-The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Assigned solutions are withheld for 1.21, 1.23, 1.24, 1.26, 1.28. 
+$$\alpha_{Fx}:G(Fx)\to H(Fx).$$
 
-===== Verification =====
+There is also a functor
 
-The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+$$F_*:\operatorname{Fun}(\mathcal E,\mathcal C)\to\operatorname{Fun}(\mathcal E,\mathcal D),$$
+
+called the **postcomposition functor** with \(F\), sending
+
+  * a functor \(G:\mathcal E\to\mathcal C\) to the composite \(FG:\mathcal E\to\mathcal D\);
+  * a natural transformation \(\alpha:G\Rightarrow H\) between functors \(G,H:\mathcal E\to\mathcal C\) to the natural transformation \(F\alpha:FG\Rightarrow FH\) whose component at an object \(x\in\mathcal E\) is the morphism in \(\mathcal D\)
+
+$$F(\alpha_x):F(Gx)\to F(Hx).$$
+
+These are well-defined functors (Exercise).
+
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda|Yoneda]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

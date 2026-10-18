@@ -1,0 +1,74 @@
+[
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+    "revision": 1792321129,
+    "raw_sha256": "a80b3365917584fb9230353a7539be3ba34d831a6f7f26676d8e02f487e26b36",
+    "mathCount": 55,
+    "mathErrors": [],
+    "facsimiles": 0,
+    "vector_diagrams": 3
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+    "revision": 1792321131,
+    "raw_sha256": "5489d230f204f04596262ccc53ee8b85e63f9e0cb59a7681687c8fce3a139830",
+    "mathCount": 24,
+    "mathErrors": [],
+    "facsimiles": 0,
+    "vector_diagrams": 0
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+    "revision": 1792321132,
+    "raw_sha256": "2a048f7e3043a447e743f00cd64c170a867689333ba12e78dea95996137b3de0",
+    "mathCount": 61,
+    "mathErrors": [],
+    "facsimiles": 0,
+    "vector_diagrams": 0
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+    "revision": 1792321134,
+    "raw_sha256": "927321af0105a66cc29dee97b53a39ec81b73c2634caf117cd237c334647b9f7",
+    "mathCount": 111,
+    "mathErrors": [],
+    "facsimiles": 0,
+    "vector_diagrams": 0
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+    "revision": 1792321142,
+    "raw_sha256": "41e08155cbb69dc0e476f14bdf7d08803df1ea15fdbdc8e62bc5817edcd78984",
+    "mathCount": 79,
+    "mathErrors": [],
+    "facsimiles": 0,
+    "vector_diagrams": 1
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+    "revision": 1792321143,
+    "raw_sha256": "f19439164a36ca7575581f6d82a6d6144f1b22ca5bea9f9782d7f6c4e8e3f3ed",
+    "mathCount": 79,
+    "mathErrors": [],
+    "facsimiles": 0,
+    "vector_diagrams": 0
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+    "revision": 1792321145,
+    "raw_sha256": "cfcb5112d5da54bf836e37b27ad83b8d5ed3f8c18ad5be2aa3c0f83065c54f6e",
+    "mathCount": 43,
+    "mathErrors": [],
+    "facsimiles": 0,
+    "vector_diagrams": 1
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+    "revision": 1792321128,
+    "raw_sha256": "5c548afd6637e736b3235cae8f4d8aae4a465b4f8316f2e9729942d2b6f5aa5f",
+    "mathCount": 31,
+    "mathErrors": [],
+    "facsimiles": 0,
+    "vector_diagrams": 0
+  }
+]

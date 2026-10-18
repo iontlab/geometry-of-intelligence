@@ -7,6 +7,14 @@ import ILab.MathematicsLearning.YonedaAdjunction
 import ILab.MathematicsLearning.TerminalCategory
 import ILab.MathematicsLearning.PathAndIdentity
 import ILab.MathematicsLearning.SourceLaws
+import ILab.MathematicsLearning.SmallSetsCategory
+import ILab.MathematicsLearning.FiniteSetCategories
+import ILab.MathematicsLearning.SmallTopologicalAdjunctions
+import ILab.MathematicsLearning.SmallVectorAdjunction
+import ILab.MathematicsLearning.SetRepresentableIsomorphism
+import ILab.MathematicsLearning.SmallCategoryUniverse
+import ILab.MathematicsLearning.ConcreteGroupPresentations
+import ILab.MathematicsLearning.SetCategoryPresentation
 
 open Lean in
 run_cmd do

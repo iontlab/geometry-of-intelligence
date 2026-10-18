@@ -15,9 +15,84 @@
     "paperMapping": "Primary 1.4, 1.8 and 1.16: type-universe size and local smallness. These are explicitly scoped type-theoretic formulations, not a literal ZFSet encoding of all categories."
   },
   {
+    "name": "ILab.MathematicsLearning.ConcreteGroupPresentations",
+    "sha256": "59508DB0D00CA156A3B4E95CF657F04FB9BA076657F5478F264BFB2D6F746383",
+    "paperMapping": "Introduction: actual integer carriers {0,1} and {1,-1}, addition modulo two versus multiplication, isomorphism and unequal numerical identities."
+  },
+  {
+    "name": "ILab.MathematicsLearning.FiniteSetCategories",
+    "sha256": "FF588678555E16E1FEEB29A7811083D36E4AF7E6746191E5A4ED8227AFDC7537",
+    "paperMapping": "Exact finite set-coded terminal category, walking isomorphism, object-selection uniqueness and inclusion equivalence."
+  },
+  {
     "name": "ILab.MathematicsLearning.PathAndIdentity",
     "sha256": "6D001E843AAC2696935BD59B235C1A472F38FA179369DEB2259C9FF8A0B9DAE3",
     "paperMapping": "Introduction: endpoint-fixed path homotopies, their ordinary fundamental groupoid, and group invariants. This does not construct the full infinity-groupoid or prove univalence."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetCategories",
+    "sha256": "D91AAFCEBA1AD0E6AAE96AD256B539C0A3F49431CE153731669A7DBB5AED2A5C",
+    "paperMapping": "Source category, functor, contravariant functor and natural-transformation definitions with literal set-universe membership; proved data-preserving Mathlib correspondences."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetCategoryCodes",
+    "sha256": "A980A432AEA5BC3A78C572A9723A31F50F9BEF47158217A3B3095A3BFDF08D9B",
+    "paperMapping": "Injective complete category codes with actual universe bounds and data-preserving restriction/enlargement."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetCategoryEquivalences",
+    "sha256": "092A2A950E12697BB4DF8DB41E1D5734F27B4CA9782B6996D35532989C40E555",
+    "paperMapping": "Exact set-coded formulations of 3.1 and 3.4–3.7, including both equivalences of an adjoint equivalence and the adjoint upgrade."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetCategoryModels",
+    "sha256": "149B0C68E938A3F645748C10591F8837D55EA5C7A705F957636C95E2AB6977FE",
+    "paperMapping": "General operation-preserving correspondence between specified ZFC object/hom codes and modeled categories; explicit fully faithful functor restrictions."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetCategoryPresentation",
+    "sha256": "921F9551CE344E19E7927EF997A61E37E36B5F87144FACFC5446927BB0E11149",
+    "paperMapping": "Introduction to equivalences: strict inverse functors require an object bijection; the exact singleton and walking-isomorphism categories are not strictly isomorphic."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetFreeVectors",
+    "sha256": "B5AE37A27B84EE9E1BFC5AB96664190C0B93787968A8DEE360F605AB326CAD6A",
+    "paperMapping": "Actual finitely supported coefficient graphs, their source-universe bounds and proved linear correspondence to the direct sum."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetFunctions",
+    "sha256": "7CBC35515EE90538DADEB8C996D2DA2E63666CB672C458E2CBDF3C030D35BBAD",
+    "paperMapping": "Proved correspondence between functions of ZFC membership types and set-coded function graphs."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetFunctorCodes",
+    "sha256": "2D1F6164D5866318C27E7494CC84F49904B3231CC0CE5CEC56FE1F061B1F7F54",
+    "paperMapping": "Injective exact functor codes in an explicit small bounding set."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetIndexedFamilies",
+    "sha256": "5370A589B8ABFF5EDEB7E8A5B22F09444E6BB2C9070A29D5AF03A10D75CE3BA8",
+    "paperMapping": "ZFC graphs of indexed set families, injectivity and closure under the source universe assumptions."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetOption",
+    "sha256": "7EAD5EC16A3D454DCCE108FA8D66F5DBD445F7D16B7FB6B77FB2F1E6256B6C8E",
+    "paperMapping": "Disjoint addition of a distinguished point, with explicit Option equivalence and source-universe bound."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetRepresentableIsomorphism",
+    "sha256": "2F5B8B50A7BAA143D94DC73541CD562B2C75FA54572C9F49FB243AD27700D857",
+    "paperMapping": "Non-exercise Corollary 2.7 with actual small-set-valued representables and componentwise natural isomorphisms; library prerequisites reused internally."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetSubsets",
+    "sha256": "83A47A5DCD490DACDB66D64544BDC5EA5E80DE0FD40BA49195BB98B3EB3442F2",
+    "paperMapping": "Bijective correspondence between subsets of membership types and actual ZFC subsets."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetUniverseClosure",
+    "sha256": "3D6FC789E77372C23AC20695A0CC3964D77BEDD1CB7E320152D8EB49B5CB2903",
+    "paperMapping": "Products and function sets derived from exactly the four stated set-universe assumptions."
   },
   {
     "name": "ILab.MathematicsLearning.SetUniverses",
@@ -25,9 +100,49 @@
     "paperMapping": "Primary 1.1–1.4: ZFSet universe closure assumptions and consequences. Introduction: equality substitution and transport. Universe existence is assumed, not proved."
   },
   {
+    "name": "ILab.MathematicsLearning.SmallCategoryUniverse",
+    "sha256": "06970112C9A3AEE225771EAFC2F12361E268A3E8CA8A87053BCAE9ED9E9B0BCB",
+    "paperMapping": "Remark 1.16: all source-small categories, small functor hom sets, non-small object collection, and exact huge-category inclusion."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SmallPointedAdjunction",
+    "sha256": "0E6DCF034EAFAA8CC57104221F5E7BBBF9BF075EC4E764A6B59B0B0A0A6C9A36",
+    "paperMapping": "The add-basepoint functor and unit/counit adjunction on the actual small-set categories, with proved commuting model squares."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SmallPointedSets",
+    "sha256": "FA39B8A434B822983447AE30ECBA5AD43AB0CAB2CB112E897C8902252ADEBC02",
+    "paperMapping": "Actual pointed small-set category, exact morphism graphs, size bounds, non-smallness, isomorphism test and forgetful functor."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SmallSetsCategory",
+    "sha256": "DF0D4F5874B9A009DF797163D2518EFEBFDE21109A529782258B97805233616A",
+    "paperMapping": "Example 1.8 and 1.10, Set case only: all small ZFC sets, actual function sets, local smallness, non-smallness and bijective isomorphisms."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SmallTopologicalAdjunctions",
+    "sha256": "F838084870A1FB2E9CC4211AFDCA5CAFBCB90E80E6069079CCF19FA67D9D5AEC",
+    "paperMapping": "Exact discrete, forgetful and indiscrete functors; stated open-set families and both source adjunctions."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SmallTopologicalSpaces",
+    "sha256": "857913B5BC4452A53A000A59DF28420E31E5EDF083BE79F0601258945B4904CA",
+    "paperMapping": "All small topological spaces encoded by their carrier and open-set family; continuous graph morphisms, size bounds and homeomorphism test."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SmallVectorAdjunction",
+    "sha256": "746492C40EC6F840D9A223DE527A8BA036BAEEF85299D425CFAD6511F105C0B6",
+    "paperMapping": "Free and forgetful vector functors, their exact adjunction and non-smallness of the vector-space object collection."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SmallVectorSpaces",
+    "sha256": "2950022198616E31C364BA28D096AD95290BB3C1D01A5350754874A6A0CB77FE",
+    "paperMapping": "All vector-space structures on small ZFC sets, injective operation codes, linear graphs and the bijective isomorphism criterion."
+  },
+  {
     "name": "ILab.MathematicsLearning.SourceLaws",
     "sha256": "FDBE2E2D67927B65A4237FDCCD00F0393F679BFA381EC321F45D20A954AFEF57",
-    "paperMapping": "Primary 1.9, 1.18, 3.1 and 3.6: definitions and their supplied laws; no assigned exercise construction checks."
+    "paperMapping": "Ordinary-category supporting results. Exact source coverage is determined by source-audit.json, not by the module label."
   },
   {
     "name": "ILab.MathematicsLearning.TerminalCategory",

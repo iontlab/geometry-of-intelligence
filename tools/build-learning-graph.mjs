@@ -16,9 +16,16 @@ for (const [i,mod] of modules.entries()) {
   // Compiler auditing is authoritative. This additional source check ignores prose comments.
   const code=source.replace(/\/-[\s\S]*?-\//g,'').replace(/--[^\n]*/g,'');
   if(/\b(sorry|admit|axiom|native_decide|sorryAx)\b/.test(code)) throw new Error(`Prohibited token: ${file}`);
-  for(const match of source.matchAll(/^(?:@\[[^\n]*?\]\s*)?(?:noncomputable\s+)?(structure|inductive|def|abbrev|instance|theorem|lemma)\s+(\w+)/gm)) {
-    const name = `ILab.MathematicsLearning.${match[2]}`;
-    metadata.set(name,{source:file,line:source.slice(0,match.index).split('\n').length,sourceKind:match[1]});
+  const scopes=[];
+  for(const [i,line] of source.split('\n').entries()) {
+    const ns=line.match(/^namespace\s+([\w.]+)/);
+    if(ns){scopes.push(ns[1]);continue;}
+    if(/^(?:noncomputable\s+)?section(?:\s|$)/.test(line)){scopes.push('');continue;}
+    if(/^end(?:\s|$)/.test(line)){scopes.pop();continue;}
+    const match=line.match(/^(?:@\[[^\n]*?\]\s*)?(?:noncomputable\s+)?(structure|inductive|def|abbrev|instance|theorem|lemma)\s+([\w.]+)/);
+    if(!match)continue;
+    const name=[...scopes.filter(Boolean),match[2]].join('.');
+    metadata.set(name,{source:file,line:i+1,sourceKind:match[1]});
   }
 }
 const raw = JSON.parse(fs.readFileSync(new URL('docs/formalization/mathematics-learning/compiled.json',root),'utf8'));
@@ -35,7 +42,30 @@ const mappings = {
   YonedaAdjunction:'Primary 2.3, the non-assigned part of 2.6, 2.7, 3.1 and 3.4–3.7: definitions, non-exercise consequences and equivalence criterion. Assigned Yoneda/adjunction correspondence proofs are withheld.',
   TerminalCategory:'Primary 1.25, 1.27, 3.8 and 3.9: terminal category and finite example. The strict evaluation isomorphism assigned in 1.26 is withheld.',
   PathAndIdentity:'Introduction: endpoint-fixed path homotopies, their ordinary fundamental groupoid, and group invariants. This does not construct the full infinity-groupoid or prove univalence.',
-  SourceLaws:'Primary 1.9, 1.18, 3.1 and 3.6: definitions and their supplied laws; no assigned exercise construction checks.'
+  SourceLaws:'Ordinary-category supporting results. Exact source coverage is determined by source-audit.json, not by the module label.',
+  SetFunctions:'Proved correspondence between functions of ZFC membership types and set-coded function graphs.',
+  SetCategories:'Source category, functor, contravariant functor and natural-transformation definitions with literal set-universe membership; proved data-preserving Mathlib correspondences.',
+  SetUniverseClosure:'Products and function sets derived from exactly the four stated set-universe assumptions.',
+  SmallSetsCategory:'Example 1.8 and 1.10, Set case only: all small ZFC sets, actual function sets, local smallness, non-smallness and bijective isomorphisms.',
+  SetCategoryEquivalences:'Exact set-coded formulations of 3.1 and 3.4–3.7, including both equivalences of an adjoint equivalence and the adjoint upgrade.',
+  FiniteSetCategories:'Exact finite set-coded terminal category, walking isomorphism, object-selection uniqueness and inclusion equivalence.',
+  SetCategoryModels:'General operation-preserving correspondence between specified ZFC object/hom codes and modeled categories; explicit fully faithful functor restrictions.',
+  SetOption:'Disjoint addition of a distinguished point, with explicit Option equivalence and source-universe bound.',
+  SmallPointedSets:'Actual pointed small-set category, exact morphism graphs, size bounds, non-smallness, isomorphism test and forgetful functor.',
+  SmallPointedAdjunction:'The add-basepoint functor and unit/counit adjunction on the actual small-set categories, with proved commuting model squares.',
+  SetSubsets:'Bijective correspondence between subsets of membership types and actual ZFC subsets.',
+  SmallTopologicalSpaces:'All small topological spaces encoded by their carrier and open-set family; continuous graph morphisms, size bounds and homeomorphism test.',
+  SmallTopologicalAdjunctions:'Exact discrete, forgetful and indiscrete functors; stated open-set families and both source adjunctions.',
+  SmallVectorSpaces:'All vector-space structures on small ZFC sets, injective operation codes, linear graphs and the bijective isomorphism criterion.',
+  SetFreeVectors:'Actual finitely supported coefficient graphs, their source-universe bounds and proved linear correspondence to the direct sum.',
+  SmallVectorAdjunction:'Free and forgetful vector functors, their exact adjunction and non-smallness of the vector-space object collection.',
+  SetRepresentableIsomorphism:'Non-exercise Corollary 2.7 with actual small-set-valued representables and componentwise natural isomorphisms; library prerequisites reused internally.',
+  SetIndexedFamilies:'ZFC graphs of indexed set families, injectivity and closure under the source universe assumptions.',
+  SetCategoryCodes:'Injective complete category codes with actual universe bounds and data-preserving restriction/enlargement.',
+  SetFunctorCodes:'Injective exact functor codes in an explicit small bounding set.',
+  SmallCategoryUniverse:'Remark 1.16: all source-small categories, small functor hom sets, non-small object collection, and exact huge-category inclusion.',
+  ConcreteGroupPresentations:'Introduction: actual integer carriers {0,1} and {1,-1}, addition modulo two versus multiplication, isomorphism and unequal numerical identities.',
+  SetCategoryPresentation:'Introduction to equivalences: strict inverse functors require an object bijection; the exact singleton and walking-isomorphism categories are not strictly isomorphic.'
 };
 for(const n of raw) {
   if(!n.id.startsWith('ILab.MathematicsLearning.')) throw new Error('Out-of-scope node');

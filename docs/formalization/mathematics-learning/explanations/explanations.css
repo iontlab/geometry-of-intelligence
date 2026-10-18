@@ -23,3 +23,7 @@
 .ilab-explain[hidden] {display:none;}
 @media(max-width:480px){.ilab-explain-panel{padding:.6rem}.ilab-explain dd{margin-left:.4rem}}
 @media print{.ilab-explain{display:none!important}}
+.ilab-native-source {line-height:1.65; overflow-x:auto;}
+.ilab-native-source svg[version="1.1"] {max-width:100%;height:auto;}
+.ilab-native-source svg[version="1.1"] [fill="#000"],.ilab-native-source svg[version="1.1"] [fill="black"] {fill:currentColor;}
+.ilab-native-source svg[version="1.1"] [stroke="#000"],.ilab-native-source svg[version="1.1"] [stroke="black"] {stroke:currentColor;}

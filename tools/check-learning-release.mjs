@@ -14,6 +14,8 @@ assert.equal(context.window.ILabExplain.permitted(reg,release),true);
 assert.equal(sha(bytes('explanations/registry.v0.1.json')),release.registry_sha256);
 assert.equal(sha(bytes('data.json')),reg.graph.data_sha256);
 assert.equal(sha(bytes('mathematics.json')),reg.graph.mathematics_sha256);
+assert.equal(sha(bytes('explanations/native-source.json')),reg.native_source_sha256);
+assert.equal(math.native_source_sha256,reg.native_source_sha256);
 assert.equal(reg.repository.commit,data.sourceRef);
 const source=reg.records.filter(r=>r.kind==='source-item'),graph=reg.records.filter(r=>r.kind==='graph-result');
 assert.equal(source.length,58);assert.equal(new Set(source.map(r=>r.source.item_key)).size,58);

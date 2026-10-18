@@ -2,88 +2,81 @@
 
 ===== Original lecture notes — primary reading =====
 
-//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The facsimiles below reproduce the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
+//Lecture Notes: Synthetic Category Theory// — **Lyne Moser and Tashi Walde**. The native text below reproduces the original manuscript, including its wording, mathematical notation, numbering, proofs, diagrams and exercise designations. Publication clearance was confirmed by the site owner. **Copyright remains with the original rights holders; the wiki-wide license does not apply to this manuscript.**
 
 {{:mathematics_learning:synthetic_category_theory:original:moser-walde-13-pages.pdf|Open the complete original 13-page PDF (selectable text and original links)}}
 
-The original text is the primary reading. The iLab Story, Plain Language, Mathematics, Lean and Verification sections below are supplementary. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
+The original text is the primary reading. The Explain controls beside the original passages open the supplementary Story / Fairy Tale, Plain Language, Mathematics, Lean and Verification layers. Mathematics reproduces the exact original statement. Author-provided proof outlines are reproduced exactly; independently generated solutions to assigned exercises remain withheld.
 
-[[#story_fairy_tale|Story / Fairy Tale]] · [[#plain_language|Plain Language]] · [[#mathematics|Mathematics and statement controls]] · [[#lean|Lean]] · [[#verification|Verification]]
 
-**Original PDF page 12 — continued below the preceding chapter.**
+==== 3.2. Equivalences of strict categories ====
 
-{{:mathematics_learning:synthetic_category_theory:original:p12-equivalences.png?1000|Moser–Walde original manuscript, PDF page 12, equivalences}}
+Recall that a functor \(F:\mathcal C\to\mathcal D\) between strict categories is an isomorphism in \(\mathcal{CAT}_s\) if there is a functor \(G:\mathcal D\to\mathcal C\) such that \(GF=\operatorname{id}_{\mathcal C}\) and \(FG=\operatorname{id}_{\mathcal D}\).
 
-**Original PDF page 13 — complete page.**
+Since we have a notion of morphisms between functors, namely the natural transformations, we can weaken the notion of sameness between strict categories as follows.
 
-{{:mathematics_learning:synthetic_category_theory:original:p13-equivalences.png?1000|Moser–Walde original manuscript, PDF page 13, equivalences}}
+==== Definition 3.4. ====
 
-===== Supplementary iLab explanations =====
+A functor \(F:\mathcal C\to\mathcal D\) between strict categories is an **equivalence** if there is a functor \(G:\mathcal D\to\mathcal C\) and natural isomorphisms \(\eta:\operatorname{id}_{\mathcal C}\overset{\cong}{\Longrightarrow}GF\) and \(\varepsilon:FG\overset{\cong}{\Longrightarrow}\operatorname{id}_{\mathcal D}\).
 
-The following independent educational content is supplementary to the authors’ original manuscript above. Its verification claims apply only to the specifically mapped Lean declarations.
+==== Example 3.5. ====
 
-**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §3 introduction and §3.2, items 3.4–3.9, pp. 11–13.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Selected ordinary-category declarations audited; see Verification below**.
+The following classes of functors give special cases of equivalences.
 
-**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. The authorized original PDF is available in the primary reading above.
+  * Any isomorphism in \(\mathcal{CAT}_s\) is an equivalence of strict categories.
+  * Given an adjunction \(L\dashv R\) such that the unit and the counit are natural isomorphisms, then both \(L\) and \(R\) are equivalences of strict categories; we refer to this as an **adjoint equivalence**.
 
-===== Story / Fairy Tale =====
+Fact: every equivalence of strict categories can be promoted to an adjoint equivalence; see [Rie16, Corollary 4.3.6]. We won’t use this fact in this course.
 
-One royal register has a single room entry. Another records a north room and a south room, with exactly one permit between each ordered pair, including each room and itself. The north-to-south and south-to-north permits undo one another. Every possible route between fixed rooms therefore agrees with the unique permit in the register.
+==== Definition 3.6. ====
 
-Mira keeps only the north room. She loses a name from the object list, but every omitted room can be reached by an invertible permit, and every permit between retained rooms is still represented exactly. The two registers are equivalent even though their object lists have different lengths.
+A functor \(F:\mathcal C\to\mathcal D\) between strict categories is **essentially surjective** if, for all objects \(d\in\mathcal D\), there is an object \(c\in\mathcal C\) and an isomorphism \(\varphi:Fc\overset{\cong}{\longrightarrow}d\) in \(\mathcal D\).
 
-**Story key:** the single-room register is \([0]\); the two-room register is the walking isomorphism; retaining north is the inclusion of object 0. **Where the analogy stops:** this conclusion depends on singleton hom sets. A building with several genuinely different loops or routes would have more structure, so discarding a room would require another argument.
+==== Theorem 3.7 (Fundamental Theorem). ====
 
-===== Plain Language =====
+//A functor \(F:\mathcal C\to\mathcal D\) between strict categories is an equivalence if and only if it is essentially surjective on objects and fully faithful.//
 
-A strict isomorphism of categories must match their object sets bijectively. An equivalence allows redundant isomorphic copies of an object. It needs a functor in the other direction and compatible isomorphisms between the round trips and the identity functors.
+//Proof.// Next time. \(\square\)
 
-Full faithfulness says that each map between two images corresponds to exactly one original map with those endpoints. Essential surjectivity says that every target object is isomorphic to an image. Neither condition alone suffices: the inclusion of one object into a discrete two-object category is fully faithful but misses the other isomorphism class; collapsing a one-object category with a nontrivial group of automorphisms to \([0]\) is essentially surjective but loses maps.
+==== Construction 3.8. ====
 
-These are statements about the specified categories and functors. Equal object names, isomorphic objects, and equivalent categories are different levels of comparison in ordinary foundations. The later synthetic motivation addresses such distinctions in a different foundational setting; it does not justify erasing them here.
+The **walking isomorphism** is the strict category \(\mathcal I:=\{0\cong1\}\) with two objects \(0\) and \(1\), whose only morphisms are the identities and mutually inverse isomorphisms \(f:0\to1\) and \(f^{-1}:1\to0\). Observe that the hom sets of \(\mathcal I\) are all singletons.
 
-===== Mathematics =====
+==== Proposition 3.9. ====
 
-==== Definition 3.4 ====
+//The functor \(0:[0]\to\mathcal I\) is an equivalence of strict categories.//
 
-A functor \(F:C\to D\) is an equivalence when there is \(G:D\to C\) and natural isomorphisms \(\eta:1_C\cong GF\), \(\varepsilon:FG\cong1_D\). In contrast, a strict isomorphism requires \(GF=1_C\) and \(FG=1_D\) as functors.
+//Proof.// It is surjective on objects up to isomorphisms, since \(0\cong0\) in \(\mathcal I\), and it is fully faithful since, for the unique object \(*\in[0]\), we have a bijection
 
-==== Example 3.5 ====
+$$[0](*,*)=\{\operatorname{id}_*\}\overset{\cong}{\longrightarrow}\{\operatorname{id}_0\}=\mathcal I(0,0).\quad\square$$
 
-A strict isomorphism gives an equivalence using identity comparison maps. An adjunction with invertible unit and counit gives an equivalence in each direction; it is an adjoint equivalence. Definition 3.4 does not demand the triangle identities. Arbitrary chosen comparison isomorphisms need not satisfy them.
+==== References ====
 
-The source also cites the fact that every ordinary equivalence can be promoted to an adjoint equivalence, without using or proving that fact in this installment. Riehl Corollary 4.3.6 (supplied edition, printed p. 147, PDF p. 167) permits replacing one comparison isomorphism so the triangles hold. We record this distinction without adding the calculus of adjunctions to the lesson.
+[CCNW21] Bastiaan Cnossen, Denis-Charles Cisinski, Kim Nguyen, and Tashi Walde, //Synthetic category theory//, available [[https://drive.google.com/file/d/1lKaq7watGGl3xvjqw9qHjm6SDPFJ2-0o/view|here]], 2021.
 
-==== Definition 3.6 ====
+[Joy08] André Joyal, //The theory of quasi-categories and its applications//, available [[http://mat.uab.cat/~kock/crm/hocat/advanced-course/Quadern45-2.pdf|here]], 2008.
 
-Essential surjectivity of \(F\) means that for each \(d\in D\) there exist \(c\in C\) and an isomorphism \(Fc\cong d\). It is weaker than literal surjectivity of the object function.
+[Lur09] Jacob Lurie, //Higher topos theory//, Annals of Mathematics Studies, vol. 170, Princeton University Press, Princeton, NJ, 2009. MR 2522659
 
-==== Theorem 3.7 ====
+[Ras23] Nima Rasekh, //Yoneda Lemma for Simplicial Spaces//, Appl. Categ. Structures **31** (2023), no. 4, 27. MR 4616631
 
-An ordinary functor is an equivalence exactly when it is fully faithful and essentially surjective, in the usual classical setting with the required choice available. **The primary states this theorem and defers its proof to a later lecture. The following is an independent supplementary proof sketch, not a proof supplied on its p. 12.** Riehl Theorem 1.5.9 explicitly flags the choice assumption.
+[Rez01] Charles Rezk, //A model for the homotopy theory of homotopy theory//, Trans. Amer. Math. Soc. **353** (2001), no. 3, 973–1007. MR 1804411
 
-For the forward direction, \(\varepsilon_d:FGd\cong d\) gives essential surjectivity. Naturality of \(\eta\) shows that \(Ff=Fg\) implies \(f=g\), so \(F\) is faithful. The same argument with \(\varepsilon\) shows that \(G\) is faithful. Given \(k:Fx\to Fy\), put \(h=\eta_y^{-1}G(k)\eta_x\). Naturality of \(\eta\) at \(h\) and cancellation of \(\eta_x\) give \(GF(h)=G(k)\). Faithfulness of \(G\) gives \(F(h)=k\), proving fullness. This argument does not assume triangle identities for the initially chosen isomorphisms.
+[Rie16] Emily Riehl, //Category theory in context//, Aurora Dover Modern Math Originals, Dover Publications, Inc., Mineola, NY, 2016. MR 4727501
 
-For the reverse direction, choose for each \(d\) an object \(c_d\) and an isomorphism \(\epsilon_d:F(c_d)\to d\). The needed family of choices is where the classical choice assumption enters, at a universe level containing the relevant object collections. Define \(G(d)=c_d\), and for \(k:d\to e\), let \(G(k)\) be the unique arrow whose image under \(F\) is \(\epsilon_e^{-1}k\epsilon_d\). Fullness supplies it and faithfulness proves uniqueness. The identity and composition equations follow by applying \(F\), canceling adjacent \(\epsilon\)'s and then using faithfulness. The \(\epsilon_d\)'s are natural by construction. Lift \(\epsilon_{Fc}^{-1}\) to \(\eta_c:c\to GFc\); full faithfulness makes it an isomorphism, and the same image-and-cancellation calculation proves naturality. This constructs the required equivalence.
+[Rij25] Egbert Rijke, //Introduction to homotopy type theory//, Cambridge Studies in Advanced Mathematics, vol. 219, Cambridge University Press, 2025.
 
-Without choosing such witnesses, the ordinary existential statement does not automatically provide a specified quasi-inverse in a constructive setting. The supplementary synthetic draft's “strongly surjective” supplies section data on groupoid cores (Definition 6.3.1, PDF p. 191). Its theorem must not be substituted for this ordinary theorem without explaining the different data and foundations.
+[Riv25] Michele Riva, //A type theory for synthetic categories//, available [[https://elearning.uni-regensburg.de/pluginfile.php/4742062/course/section/964050/DirectedSyntax.pdf?time=1761054803423|here]], 2025.
 
-==== Construction 3.8 ====
+[Uni13] The Univalent Foundations Program, //Homotopy type theory: Univalent foundations of mathematics//, available [[https://homotopytypetheory.org/book|here]], 2013.
 
-The walking isomorphism \(\mathbb I\) has distinct objects \(0,1\) and exactly one morphism in each hom set. The two nonidentity arrows \(u:0\to1\), \(v:1\to0\) satisfy \(vu=1_0\), \(uv=1_1\). Composition is uniquely determined by its endpoints; this proves the category laws.
+Fachbereich Mathematik, Universität Hamburg, Hamburg, Germany
 
-==== Proposition 3.9 ====
+//Email address:// lyne.moser@uni-hamburg.de
 
-Let \(J:[0]\to\mathbb I\) select 0, and let \(P:\mathbb I\to[0]\) be the unique functor. Then \(PJ=1_{[0]}\). Define \(JP\Rightarrow1_{\mathbb I}\) with components \(1_0\) at 0 and \(u\) at 1. Both are isomorphisms; every naturality square commutes because its endpoints determine a unique arrow. Hence \(J\) is an equivalence, without needing Theorem 3.7.
+Fakultät für Mathematik, Universität Regensburg, Regensburg, Germany
 
-Equivalently, it is fully faithful because the only source hom set and \(\mathbb I(0,0)\) are singletons, and essentially surjective because **both** \(0\cong0\) and \(0\cong1\). The primary's printed proof mentions only \(0\cong0\) on that line; the second case is required and follows from its construction. The object function is not surjective and no strict isomorphism can exist between a one-object and a two-object category.
+//Email address:// tashi.walde@ur.de
 
-===== Lean =====
-
-The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. 
-
-===== Verification =====
-
-The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
 
 Return: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Coverage and proof-status map]]
