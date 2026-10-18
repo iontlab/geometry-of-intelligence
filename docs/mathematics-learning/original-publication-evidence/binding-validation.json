@@ -1,0 +1,15 @@
+{
+  "chapters_exact": 8,
+  "records_rebound": 95,
+  "inline_controls": 47,
+  "all_statement_anchors_preserved": true,
+  "all_explanation_content_and_formal_mappings_unchanged": true,
+  "source_pdf_hash_unchanged": true,
+  "release": {
+    "enabled": true,
+    "publication_authorized": true,
+    "release": "learning-original-20261018-r1",
+    "render_contract": "learning-exact-fragment-1",
+    "registry_sha256": "fe3b44d510b7106ff7d2271f39c1f914a0c18f73244dda68e0367811d7f3cfa2"
+  }
+}

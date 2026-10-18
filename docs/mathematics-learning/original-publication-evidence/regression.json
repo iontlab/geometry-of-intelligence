@@ -1,0 +1,78 @@
+{
+  "unchanged_live_assets": [
+    "https://iontlab.org/formalization/mathematics-learning/app.js",
+    "https://iontlab.org/formalization/mathematics-learning/blueprint-view.js",
+    "https://iontlab.org/formalization/mathematics-learning/compiled.json",
+    "https://iontlab.org/formalization/mathematics-learning/data.json",
+    "https://iontlab.org/formalization/mathematics-learning/index.html",
+    "https://iontlab.org/formalization/mathematics-learning/mathematics-view.js",
+    "https://iontlab.org/formalization/mathematics-learning/mathematics.json",
+    "https://iontlab.org/formalization/mathematics-learning/style.css",
+    "https://iontlab.org/formalization/mathematics-learning/explanations/explanations.css",
+    "https://iontlab.org/formalization/mathematics-learning/explanations/graph-adapter.js",
+    "https://iontlab.org/formalization/mathematics-learning/explanations/renderer.js",
+    "https://iontlab.org/formalization/mathematics-learning/explanations/statement-adapter.js",
+    "https://iontlab.org/formalization/mathematics-learning/explanations/wiki-adapter.js",
+    "https://iontlab.org/formalization/rq001/index.html",
+    "https://iontlab.org/formalization/rq001/app.js",
+    "https://iontlab.org/formalization/rq001/mathematics-view.js",
+    "https://iontlab.org/formalization/rq001/blueprint-view.js",
+    "https://iontlab.org/formalization/rq001/style.css",
+    "https://iontlab.org/formalization/rq001/mathematics.json",
+    "https://iontlab.org/formalization/rq001/data.json",
+    "https://iontlab.org/explanations/rq001/renderer.js",
+    "https://iontlab.org/explanations/rq001/graph-adapter.js",
+    "https://iontlab.org/explanations/rq001/wiki-adapter.js",
+    "https://iontlab.org/explanations/rq001/explanations.css"
+  ],
+  "anonymous_bindings": [
+    {
+      "chapter": "equivalences",
+      "anonymous_bound": true,
+      "revision": 1792316885,
+      "controls": 7
+    },
+    {
+      "chapter": "foundations",
+      "anonymous_bound": true,
+      "revision": 1792316856,
+      "controls": 2
+    },
+    {
+      "chapter": "size",
+      "anonymous_bound": true,
+      "revision": 1792316873,
+      "controls": 4
+    },
+    {
+      "chapter": "categories",
+      "anonymous_bound": true,
+      "revision": 1792316874,
+      "controls": 7
+    },
+    {
+      "chapter": "functors",
+      "anonymous_bound": true,
+      "revision": 1792316876,
+      "controls": 8
+    },
+    {
+      "chapter": "natural_transformations",
+      "anonymous_bound": true,
+      "revision": 1792316872,
+      "controls": 9
+    },
+    {
+      "chapter": "yoneda",
+      "anonymous_bound": true,
+      "revision": 1792316882,
+      "controls": 7
+    },
+    {
+      "chapter": "adjunctions",
+      "anonymous_bound": true,
+      "revision": 1792316883,
+      "controls": 3
+    }
+  ]
+}
