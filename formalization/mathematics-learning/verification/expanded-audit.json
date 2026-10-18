@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "clean_build_command": "lake clean rq001; lake build",
+  "extract_command": "lake env lean tools/ExtractLearningGraph.lean",
+  "compiled_declarations": 225,
+  "compiled_sha256": "29b5e6f30792e410993473f934f5ce36075e763b6d2ec754b52aedc28688b81e",
+  "clean_build_log_sha256": "2c776e7deed4ef49ea0ebceca42eb5426a2b0ac150504150c71584af99be5493",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": "Non-exercise material only; see exercise-exclusions.json and obligations.json.",
+  "modules": [
+    {
+      "name": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "path": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "sha256": "08cf73f17c8c8a3f06baa4a96b5755bd370ed3d7dd6b8ba4e272a68cda279c0a"
+    },
+    {
+      "name": "ILab.MathematicsLearning.CategoryConstructions",
+      "path": "ILab/MathematicsLearning/CategoryConstructions.lean",
+      "sha256": "2423afe7b4156371bc97daccc338811c7b9f9751314002c3f130c4cb438cf7cd"
+    },
+    {
+      "name": "ILab.MathematicsLearning.CategorySize",
+      "path": "ILab/MathematicsLearning/CategorySize.lean",
+      "sha256": "bbeda1ad9497ee2fc1640f0d44b9bd0854df4aaa36e949a7d05943a4aa66e9c4"
+    },
+    {
+      "name": "ILab.MathematicsLearning.PathAndIdentity",
+      "path": "ILab/MathematicsLearning/PathAndIdentity.lean",
+      "sha256": "6d001e843aac2696935bd59b235c1a472f38fa179369deb2259c9ff8a0b9dae3"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SetUniverses",
+      "path": "ILab/MathematicsLearning/SetUniverses.lean",
+      "sha256": "b567608955ba989ebc96b7ee1038c80a06d9f381bd63aa24ddfb2fd6d9c43de4"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SourceLaws",
+      "path": "ILab/MathematicsLearning/SourceLaws.lean",
+      "sha256": "fdbe2e2d67927b65a4237fdccd00f0393f679bfa381ec321f45d20a954afef57"
+    },
+    {
+      "name": "ILab.MathematicsLearning.TerminalCategory",
+      "path": "ILab/MathematicsLearning/TerminalCategory.lean",
+      "sha256": "ebe38e40cd68e4a213f4333e7894e08eef1357f4e274ce2d20895cf3c1c9b7a8"
+    },
+    {
+      "name": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "path": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "sha256": "306750071687eec2491400b86e52dd30c734a843c0df3d88de4434cfc36ce6ca"
+    },
+    {
+      "name": "ILab.MathematicsLearning.YonedaAdjunction",
+      "path": "ILab/MathematicsLearning/YonedaAdjunction.lean",
+      "sha256": "77b6ad9af71da3c1c9c7e0d22dec8e84487a629bdd48084e321eb9f0b2bc4158"
+    }
+  ]
+}

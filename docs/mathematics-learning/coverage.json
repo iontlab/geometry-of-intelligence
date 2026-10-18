@@ -19,12 +19,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.SetUniverse"
+      ]
     },
     {
       "source_section": "1.1 Size issues",
@@ -43,12 +45,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.universe_not_member"
+      ]
     },
     {
       "source_section": "1.1 Size issues",
@@ -67,12 +71,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.UniverseHierarchy"
+      ]
     },
     {
       "source_section": "1.1 Size issues",
@@ -91,12 +97,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.IsSmallSet",
+        "ILab.MathematicsLearning.IsLargeSet",
+        "ILab.MathematicsLearning.IsHugeSet",
+        "ILab.MathematicsLearning.smallSet_is_large",
+        "ILab.MathematicsLearning.largeSet_is_huge"
+      ]
     },
     {
       "source_section": "1.2 Strict categories",
@@ -115,13 +127,16 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "lean_declarations": [
-        "ILab.MathematicsLearning.identity_padded_composite"
+        "ILab.MathematicsLearning.StrictCategory",
+        "ILab.MathematicsLearning.categoryLeftIdentity",
+        "ILab.MathematicsLearning.categoryRightIdentity",
+        "ILab.MathematicsLearning.categoryAssociativity"
       ]
     },
     {
@@ -141,12 +156,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.StrictCategory"
+      ]
     },
     {
       "source_section": "1.2 Strict categories",
@@ -166,12 +183,15 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.LocallySmallCategory",
+        "ILab.MathematicsLearning.SmallStrictCategory"
+      ]
     },
     {
       "source_section": "1.2 Strict categories",
@@ -191,12 +211,26 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.setsCategory",
+        "ILab.MathematicsLearning.pointedSetsCategory",
+        "ILab.MathematicsLearning.vectorSpacesCategory",
+        "ILab.MathematicsLearning.spacesCategory",
+        "ILab.MathematicsLearning.sets_locally_small",
+        "ILab.MathematicsLearning.pointed_locally_small",
+        "ILab.MathematicsLearning.vector_spaces_locally_small",
+        "ILab.MathematicsLearning.spaces_locally_small",
+        "ILab.MathematicsLearning.sets_not_small",
+        "ILab.MathematicsLearning.pointed_sets_not_small",
+        "ILab.MathematicsLearning.vector_spaces_not_small",
+        "ILab.MathematicsLearning.spaces_not_small",
+        "ILab.MathematicsLearning.collection_of_small_sets_not_small"
+      ]
     },
     {
       "source_section": "1.2 Strict categories",
@@ -215,12 +249,16 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.Isomorphism",
+        "ILab.MathematicsLearning.invertible_iff_two_sided_inverse",
+        "ILab.MathematicsLearning.ObjectsIsomorphic"
+      ]
     },
     {
       "source_section": "1.2 Strict categories",
@@ -240,12 +278,17 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.setIsoIffBijective",
+        "ILab.MathematicsLearning.pointed_iso_iff_bijective",
+        "ILab.MathematicsLearning.vector_iso_iff_bijective",
+        "ILab.MathematicsLearning.topIsoIffHomeomorphism"
+      ]
     },
     {
       "source_section": "1.2 Strict categories",
@@ -264,8 +307,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
@@ -290,12 +333,16 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.CategoryFunctor",
+        "ILab.MathematicsLearning.functorIdentityLaw",
+        "ILab.MathematicsLearning.functorCompositionLaw"
+      ]
     },
     {
       "source_section": "1.3 Functors",
@@ -315,12 +362,21 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.forgetPoint",
+        "ILab.MathematicsLearning.forgetVector",
+        "ILab.MathematicsLearning.forgetTopology",
+        "ILab.MathematicsLearning.addBasepoint",
+        "ILab.MathematicsLearning.freeVectorSpace",
+        "ILab.MathematicsLearning.freeVectorMapOnBasis",
+        "ILab.MathematicsLearning.discreteTopology",
+        "ILab.MathematicsLearning.indiscreteTopology"
+      ]
     },
     {
       "source_section": "1.3 Functors",
@@ -340,8 +396,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
@@ -371,8 +427,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
@@ -402,12 +458,16 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked ordinary type-universe formulation; literal set-coded size bridge not claimed",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.smallCategoriesAsLargerObject",
+        "ILab.MathematicsLearning.small_categories_locally_small",
+        "ILab.MathematicsLearning.small_categories_not_small"
+      ]
     },
     {
       "source_section": "1.3 Functors",
@@ -427,8 +487,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
@@ -458,12 +518,16 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.ContravariantFunctor",
+        "ILab.MathematicsLearning.functorIdentityLaw",
+        "ILab.MathematicsLearning.contravariant_composition"
+      ]
     },
     {
       "source_section": "1.3 Functors",
@@ -484,8 +548,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
@@ -514,12 +578,15 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.NaturalTransformation",
+        "ILab.MathematicsLearning.naturalityEquation"
+      ]
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -540,8 +607,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
@@ -571,12 +638,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.ComponentwiseNaturalIsomorphism"
+      ]
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -595,8 +664,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
@@ -626,8 +695,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
@@ -656,14 +725,17 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "lean_declarations": [
+        "ILab.MathematicsLearning.TerminalCategory",
         "ILab.MathematicsLearning.OneRoom",
-        "ILab.MathematicsLearning.oneRoomCategory"
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.functorToTerminal",
+        "ILab.MathematicsLearning.functorToTerminal_unique"
       ]
     },
     {
@@ -684,8 +756,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
@@ -714,12 +786,15 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.selectObject",
+        "ILab.MathematicsLearning.terminal_functor_unique"
+      ]
     },
     {
       "source_section": "1.4 Natural transformations",
@@ -740,8 +815,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
@@ -771,8 +846,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
@@ -802,8 +877,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
@@ -832,12 +907,15 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.fullyFaithfulIffBijective",
+        "ILab.MathematicsLearning.fullyFaithfulHomEquiv"
+      ]
     },
     {
       "source_section": "2 Yoneda lemma",
@@ -858,8 +936,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
@@ -889,8 +967,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
@@ -921,12 +999,15 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Non-exercise hom-bijection criterion checked; embedded opposite-invertibility exercise withheld",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": [],
+      "lean_declarations": [
+        "ILab.MathematicsLearning.isoIffPostcompositionBijective",
+        "ILab.MathematicsLearning.isoIffPrecompositionBijective"
+      ],
       "exercise_exclusion": {
         "item": "2.6",
         "page": 10,
@@ -953,12 +1034,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.yoneda_object_iso_iff"
+      ]
     },
     {
       "source_section": "3.1 Adjunctions",
@@ -978,12 +1061,19 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.adjunctionUnit",
+        "ILab.MathematicsLearning.adjunctionCounit",
+        "ILab.MathematicsLearning.adjunction_unit_naturality",
+        "ILab.MathematicsLearning.adjunction_counit_naturality",
+        "ILab.MathematicsLearning.adjunctionLeftTriangle",
+        "ILab.MathematicsLearning.adjunctionRightTriangle"
+      ]
     },
     {
       "source_section": "3.1 Adjunctions",
@@ -1003,12 +1093,17 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.basepointAdjunction",
+        "ILab.MathematicsLearning.vectorSpaceAdjunction",
+        "ILab.MathematicsLearning.discreteAdjunction",
+        "ILab.MathematicsLearning.indiscreteAdjunction"
+      ]
     },
     {
       "source_section": "3.1 Adjunctions",
@@ -1027,8 +1122,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Assigned exercise solutions withheld; statements retained",
-      "lean_feasibility": "Exercise solution publication is excluded by teaching scope; this is not a mathematical obstruction.",
+      "lean_status": "Assigned exercise solution withheld; source statement retained",
+      "lean_feasibility": "Assigned solutions excluded by teaching scope, independently of formalizability.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
@@ -1058,13 +1153,15 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "lean_declarations": [
-        "ILab.MathematicsLearning.walkingEquivalence"
+        "ILab.MathematicsLearning.QuasiInverseData",
+        "ILab.MathematicsLearning.equivalenceToQuasiInverse",
+        "ILab.MathematicsLearning.quasiInverseToEquivalence"
       ]
     },
     {
@@ -1085,12 +1182,15 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.categoryIsoToEquivalence",
+        "ILab.MathematicsLearning.adjunctionToEquivalence"
+      ]
     },
     {
       "source_section": "3.2 Equivalences",
@@ -1110,14 +1210,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "lean_declarations": [
-        "ILab.MathematicsLearning.inclusion_essentially_surjective",
-        "ILab.MathematicsLearning.inclusion_not_surjective"
+        "ILab.MathematicsLearning.EssentiallySurjective",
+        "ILab.MathematicsLearning.essentially_surjective_iff"
       ]
     },
     {
@@ -1139,12 +1239,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj"
+      ]
     },
     {
       "source_section": "3.2 Equivalences",
@@ -1164,14 +1266,13 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "lean_declarations": [
         "ILab.MathematicsLearning.Room",
-        "ILab.MathematicsLearning.roomFintype",
         "ILab.MathematicsLearning.roomCategory",
         "ILab.MathematicsLearning.roomIso",
         "ILab.MathematicsLearning.room_cardinality"
@@ -1196,16 +1297,17 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "lean_declarations": [
         "ILab.MathematicsLearning.includeRoom",
-        "ILab.MathematicsLearning.collapseRoom",
-        "ILab.MathematicsLearning.walkingEquivalence",
+        "ILab.MathematicsLearning.walking_inclusion_full",
+        "ILab.MathematicsLearning.walking_inclusion_faithful",
         "ILab.MathematicsLearning.inclusion_essentially_surjective",
+        "ILab.MathematicsLearning.walkingEquivalence",
         "ILab.MathematicsLearning.inclusion_not_surjective"
       ]
     },
@@ -1224,8 +1326,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1249,8 +1351,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1273,8 +1375,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Requires the intended higher foundations/model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1297,12 +1399,18 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Partially checked; higher-foundation obligation remains",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.pathCompositionAssociativity",
+        "ILab.MathematicsLearning.pathLeftIdentity",
+        "ILab.MathematicsLearning.pathRightIdentity",
+        "ILab.MathematicsLearning.pathLeftInverse",
+        "ILab.MathematicsLearning.pathRightInverse"
+      ]
     },
     {
       "source_section": "Introduction",
@@ -1321,8 +1429,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1345,8 +1453,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1370,8 +1478,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Requires the intended higher foundations/model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1394,8 +1502,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Requires the intended higher foundations/model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1418,12 +1526,19 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Partially checked; higher-foundation obligation remains",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.equality_substitution",
+        "ILab.MathematicsLearning.equality_transport",
+        "ILab.MathematicsLearning.order_two_invariant",
+        "ILab.MathematicsLearning.cyclicTwoSigns",
+        "ILab.MathematicsLearning.cyclic_two_zero_maps_to_one",
+        "ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one"
+      ]
     },
     {
       "source_section": "Introduction",
@@ -1443,8 +1558,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1467,8 +1582,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1491,8 +1606,8 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Not proof-bearing; source definition or motivation without a supplied formal higher model",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
@@ -1516,12 +1631,15 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.one_room_cardinality",
+        "ILab.MathematicsLearning.walking_not_strictly_isomorphic"
+      ]
     },
     {
       "source_section": "3 Adjunctions and equivalences",
@@ -1540,12 +1658,14 @@
       "mathematics_status": "published in linked grouped lesson",
       "plain_language_status": "published in linked grouped lesson",
       "story_status": "published in linked grouped lesson",
-      "lean_status": "Not formalized",
-      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "lean_status": "Checked definition/hypotheses or proof in the stated Lean formulation",
+      "lean_feasibility": "See obligation-level inventory for exact scope, proof reuse and remaining foundation obligations.",
       "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
       "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
       "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
-      "lean_declarations": []
+      "lean_declarations": [
+        "ILab.MathematicsLearning.quasiInverseToEquivalence"
+      ]
     }
   ],
   "updated_utc": "2026-10-18T06:20:45.994633+00:00",

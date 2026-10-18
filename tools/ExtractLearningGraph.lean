@@ -1,5 +1,12 @@
 import ILab.MathematicsLearning.BasicCategoryTheory
 import ILab.MathematicsLearning.WalkingIsomorphism
+import ILab.MathematicsLearning.SetUniverses
+import ILab.MathematicsLearning.CategoryConstructions
+import ILab.MathematicsLearning.CategorySize
+import ILab.MathematicsLearning.YonedaAdjunction
+import ILab.MathematicsLearning.TerminalCategory
+import ILab.MathematicsLearning.PathAndIdentity
+import ILab.MathematicsLearning.SourceLaws
 
 open Lean in
 run_cmd do
