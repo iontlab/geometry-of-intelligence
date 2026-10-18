@@ -1,0 +1,73 @@
+ILab.MathematicsLearning.OneRoom: none
+ILab.MathematicsLearning.OneRoom._sizeOf_1: none
+ILab.MathematicsLearning.OneRoom._sizeOf_inst: none
+ILab.MathematicsLearning.OneRoom.casesOn: none
+ILab.MathematicsLearning.OneRoom.ctorIdx: none
+ILab.MathematicsLearning.OneRoom.noConfusion: none
+ILab.MathematicsLearning.OneRoom.noConfusionType: none
+ILab.MathematicsLearning.OneRoom.ofNat: none
+ILab.MathematicsLearning.OneRoom.ofNat_ctorIdx: none
+ILab.MathematicsLearning.OneRoom.only: none
+ILab.MathematicsLearning.OneRoom.only.sizeOf_spec: none
+ILab.MathematicsLearning.OneRoom.rec: none
+ILab.MathematicsLearning.OneRoom.recOn: none
+ILab.MathematicsLearning.Room: none
+ILab.MathematicsLearning.Room._sizeOf_1: none
+ILab.MathematicsLearning.Room._sizeOf_inst: none
+ILab.MathematicsLearning.Room.casesOn: none
+ILab.MathematicsLearning.Room.ctorElim: none
+ILab.MathematicsLearning.Room.ctorElimType: none
+ILab.MathematicsLearning.Room.ctorIdx: none
+ILab.MathematicsLearning.Room.noConfusion: none
+ILab.MathematicsLearning.Room.noConfusionType: none
+ILab.MathematicsLearning.Room.north: none
+ILab.MathematicsLearning.Room.north.elim: none
+ILab.MathematicsLearning.Room.north.sizeOf_spec: none
+ILab.MathematicsLearning.Room.ofNat: none
+ILab.MathematicsLearning.Room.ofNat_ctorIdx: none
+ILab.MathematicsLearning.Room.rec: none
+ILab.MathematicsLearning.Room.recOn: none
+ILab.MathematicsLearning.Room.south: none
+ILab.MathematicsLearning.Room.south.elim: none
+ILab.MathematicsLearning.Room.south.sizeOf_spec: none
+ILab.MathematicsLearning.collapseRoom: none
+ILab.MathematicsLearning.collapseRoom._proof_1: none
+ILab.MathematicsLearning.collapseRoom._proof_2: none
+ILab.MathematicsLearning.composite_naturality: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.identity_padded_composite: none
+ILab.MathematicsLearning.includeRoom: none
+ILab.MathematicsLearning.includeRoom._proof_1: none
+ILab.MathematicsLearning.includeRoom._proof_2: none
+ILab.MathematicsLearning.inclusion_essentially_surjective: none
+ILab.MathematicsLearning.inclusion_not_surjective: none
+ILab.MathematicsLearning.instDecidableEqOneRoom: none
+ILab.MathematicsLearning.instDecidableEqOneRoom._proof_1: none
+ILab.MathematicsLearning.instDecidableEqRoom: none
+ILab.MathematicsLearning.instDecidableEqRoom._proof_1: none
+ILab.MathematicsLearning.instDecidableEqRoom._proof_2: none
+ILab.MathematicsLearning.inverse_unique: none
+ILab.MathematicsLearning.mappedIso: none
+ILab.MathematicsLearning.mappedIso._proof_1: none
+ILab.MathematicsLearning.mappedIso._proof_2: none
+ILab.MathematicsLearning.mappedIso_eq_mapIso: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.mapped_inverse_left: none
+ILab.MathematicsLearning.mapped_inverse_right: none
+ILab.MathematicsLearning.oneRoomCategory: none
+ILab.MathematicsLearning.oneRoomCategory._proof_1: none
+ILab.MathematicsLearning.oneRoomCategory._proof_2: none
+ILab.MathematicsLearning.roomCategory: none
+ILab.MathematicsLearning.roomCategory._proof_1: none
+ILab.MathematicsLearning.roomCategory._proof_2: none
+ILab.MathematicsLearning.roomFintype: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.roomFintype._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.roomIso: none
+ILab.MathematicsLearning.roomIso._proof_1: none
+ILab.MathematicsLearning.roomIso._proof_2: none
+ILab.MathematicsLearning.room_cardinality: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.vertical_composite_component: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingEquivalence: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingEquivalence._proof_1: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingEquivalence._proof_2: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingEquivalence._proof_3: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingEquivalence._proof_4: Classical.choice, Quot.sound, propext
+ILab.MathematicsLearning.walkingEquivalence._proof_5: Classical.choice, Quot.sound, propext

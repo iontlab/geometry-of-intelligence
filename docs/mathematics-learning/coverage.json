@@ -1,0 +1,1473 @@
+{
+  "source_sha256": "5d773c2492817fbc366d7fe31fbac096dadadf2c3d24f616684a50b089f144bc",
+  "primary_pdf_pages": 13,
+  "numbered_items": 44,
+  "substantive_unnumbered_items": 14,
+  "records": [
+    {
+      "source_section": "1.1 Size issues",
+      "original_number": "1.1",
+      "kind": "Definition",
+      "source_pages": [
+        4
+      ],
+      "topic": "Set-universe closure: naturals, subsets, powersets, indexed unions",
+      "dependencies": [],
+      "source_proof_status": "definition",
+      "lesson": "size",
+      "key": "1.1",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.1 Size issues",
+      "original_number": "1.2",
+      "kind": "Remark",
+      "source_pages": [
+        4
+      ],
+      "topic": "Russell argument: a universe is not its own member",
+      "dependencies": [
+        "1.1"
+      ],
+      "source_proof_status": "argument supplied",
+      "lesson": "size",
+      "key": "1.2",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.1 Size issues",
+      "original_number": "1.3",
+      "kind": "Convention",
+      "source_pages": [
+        4
+      ],
+      "topic": "Three nested set-universes and membership assumptions",
+      "dependencies": [
+        "1.1"
+      ],
+      "source_proof_status": "assumption",
+      "lesson": "size",
+      "key": "1.3",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.1 Size issues",
+      "original_number": "1.4",
+      "kind": "Definition",
+      "source_pages": [
+        4
+      ],
+      "topic": "Small, large and huge sets",
+      "dependencies": [
+        "1.3"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "size",
+      "key": "1.4",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.5",
+      "kind": "Definition",
+      "source_pages": [
+        5
+      ],
+      "topic": "Objects, hom sets, identities, typed composition, unit and associativity laws",
+      "dependencies": [
+        "1.4"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "categories",
+      "key": "1.5",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.identity_padded_composite"
+      ]
+    },
+    {
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.6",
+      "kind": "Remark",
+      "source_pages": [
+        5
+      ],
+      "topic": "Large object and hom sets; huge strict categories",
+      "dependencies": [
+        "1.5"
+      ],
+      "source_proof_status": "convention",
+      "lesson": "categories",
+      "key": "1.6",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.7",
+      "kind": "Definition",
+      "source_pages": [
+        5
+      ],
+      "topic": "Small versus locally small categories",
+      "dependencies": [
+        "1.4",
+        "1.5"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "categories",
+      "key": "1.7",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.8",
+      "kind": "Example",
+      "source_pages": [
+        5
+      ],
+      "topic": "Set, pointed Set, vector spaces, Top; locally small but not small",
+      "dependencies": [
+        "1.5",
+        "1.7"
+      ],
+      "source_proof_status": "examples",
+      "lesson": "categories",
+      "key": "1.8",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.9",
+      "kind": "Definition",
+      "source_pages": [
+        5
+      ],
+      "topic": "Isomorphism, inverse and isomorphic objects",
+      "dependencies": [
+        "1.5"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "categories",
+      "key": "1.9",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.10",
+      "kind": "Example",
+      "source_pages": [
+        5
+      ],
+      "topic": "Bijections, pointed bijections, linear bijections and homeomorphisms",
+      "dependencies": [
+        "1.8",
+        "1.9"
+      ],
+      "source_proof_status": "examples",
+      "lesson": "categories",
+      "key": "1.10",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.2 Strict categories",
+      "original_number": "1.11",
+      "kind": "Proposition",
+      "source_pages": [
+        5
+      ],
+      "topic": "Uniqueness of the inverse",
+      "dependencies": [
+        "1.9"
+      ],
+      "source_proof_status": "proof supplied",
+      "lesson": "categories",
+      "key": "1.11",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.inverse_unique"
+      ]
+    },
+    {
+      "source_section": "1.3 Functors",
+      "original_number": "1.12",
+      "kind": "Definition",
+      "source_pages": [
+        6
+      ],
+      "topic": "Functor object/map data and preservation laws",
+      "dependencies": [
+        "1.5"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "functors",
+      "key": "1.12",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.3 Functors",
+      "original_number": "1.13",
+      "kind": "Example",
+      "source_pages": [
+        6
+      ],
+      "topic": "Forgetful, added basepoint, free vector space, discrete and indiscrete functors",
+      "dependencies": [
+        "1.8",
+        "1.12"
+      ],
+      "source_proof_status": "examples",
+      "lesson": "functors",
+      "key": "1.13",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.3 Functors",
+      "original_number": "1.14",
+      "kind": "Proposition",
+      "source_pages": [
+        6
+      ],
+      "topic": "Functors preserve isomorphisms",
+      "dependencies": [
+        "1.9",
+        "1.12"
+      ],
+      "source_proof_status": "proof left as exercise",
+      "lesson": "functors",
+      "key": "1.14",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.mapped_inverse_left",
+        "ILab.MathematicsLearning.mapped_inverse_right",
+        "ILab.MathematicsLearning.mappedIso",
+        "ILab.MathematicsLearning.mappedIso_eq_mapIso"
+      ]
+    },
+    {
+      "source_section": "1.3 Functors",
+      "original_number": "1.15",
+      "kind": "Construction",
+      "source_pages": [
+        6
+      ],
+      "topic": "Categories of small and large strict categories; identity/composite functors",
+      "dependencies": [
+        "1.3",
+        "1.12"
+      ],
+      "source_proof_status": "construction; laws left as exercise",
+      "lesson": "functors",
+      "key": "1.15",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.3 Functors",
+      "original_number": "1.16",
+      "kind": "Remark",
+      "source_pages": [
+        6
+      ],
+      "topic": "Size of Cat_s and membership in CAT_s",
+      "dependencies": [
+        "1.7",
+        "1.15"
+      ],
+      "source_proof_status": "remark",
+      "lesson": "functors",
+      "key": "1.16",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.3 Functors",
+      "original_number": "1.17",
+      "kind": "Construction",
+      "source_pages": [
+        6,
+        7
+      ],
+      "topic": "Opposite category and reversed composition",
+      "dependencies": [
+        "1.5"
+      ],
+      "source_proof_status": "construction; laws left as exercise",
+      "lesson": "functors",
+      "key": "1.17",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.3 Functors",
+      "original_number": "1.18",
+      "kind": "Remark",
+      "source_pages": [
+        7
+      ],
+      "topic": "Contravariant functors as functors from the opposite",
+      "dependencies": [
+        "1.12",
+        "1.17"
+      ],
+      "source_proof_status": "remark",
+      "lesson": "functors",
+      "key": "1.18",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.3 Functors",
+      "original_number": "1.19",
+      "kind": "Construction",
+      "source_pages": [
+        7
+      ],
+      "topic": "Contravariant hom functor C(-,c); precomposition",
+      "dependencies": [
+        "1.7",
+        "1.12",
+        "1.17"
+      ],
+      "source_proof_status": "construction; laws left as exercise",
+      "lesson": "functors",
+      "key": "1.19",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.20",
+      "kind": "Definition",
+      "source_pages": [
+        7
+      ],
+      "topic": "Component types and naturality square",
+      "dependencies": [
+        "1.12"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "natural_transformations",
+      "key": "1.20",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.composite_naturality"
+      ]
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.21",
+      "kind": "Construction",
+      "source_pages": [
+        7,
+        8
+      ],
+      "topic": "Postcomposition natural transformation C(-,f)",
+      "dependencies": [
+        "1.19",
+        "1.20"
+      ],
+      "source_proof_status": "construction; naturality left as exercise",
+      "lesson": "natural_transformations",
+      "key": "1.21",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.22",
+      "kind": "Definition",
+      "source_pages": [
+        8
+      ],
+      "topic": "Componentwise natural isomorphism",
+      "dependencies": [
+        "1.9",
+        "1.20"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "natural_transformations",
+      "key": "1.22",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.23",
+      "kind": "Construction",
+      "source_pages": [
+        8
+      ],
+      "topic": "Functor category, identity and vertical composition",
+      "dependencies": [
+        "1.20"
+      ],
+      "source_proof_status": "construction; laws left as exercise",
+      "lesson": "natural_transformations",
+      "key": "1.23",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.composite_naturality",
+        "ILab.MathematicsLearning.vertical_composite_component"
+      ]
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.24",
+      "kind": "Proposition",
+      "source_pages": [
+        8
+      ],
+      "topic": "Componentwise isomorphisms are exactly functor-category isomorphisms",
+      "dependencies": [
+        "1.22",
+        "1.23"
+      ],
+      "source_proof_status": "proof left as exercise",
+      "lesson": "natural_transformations",
+      "key": "1.24",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.25",
+      "kind": "Construction",
+      "source_pages": [
+        8
+      ],
+      "topic": "Terminal strict category [0]",
+      "dependencies": [
+        "1.5"
+      ],
+      "source_proof_status": "construction",
+      "lesson": "natural_transformations",
+      "key": "1.25",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.oneRoomCategory"
+      ]
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.26",
+      "kind": "Proposition",
+      "source_pages": [
+        8
+      ],
+      "topic": "Evaluation isomorphism Fun([0],C) with C; naturality in C",
+      "dependencies": [
+        "1.23",
+        "1.25"
+      ],
+      "source_proof_status": "proof left as exercise",
+      "lesson": "natural_transformations",
+      "key": "1.26",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.27",
+      "kind": "Remark",
+      "source_pages": [
+        8
+      ],
+      "topic": "Objects as functors from [0]",
+      "dependencies": [
+        "1.26"
+      ],
+      "source_proof_status": "remark",
+      "lesson": "natural_transformations",
+      "key": "1.27",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "1.4 Natural transformations",
+      "original_number": "1.28",
+      "kind": "Construction",
+      "source_pages": [
+        8,
+        9
+      ],
+      "topic": "Precomposition and postcomposition functors; whiskering",
+      "dependencies": [
+        "1.20",
+        "1.23"
+      ],
+      "source_proof_status": "construction; laws left as exercise",
+      "lesson": "natural_transformations",
+      "key": "1.28",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.1",
+      "kind": "Theorem",
+      "source_pages": [
+        9
+      ],
+      "topic": "Contravariant Yoneda bijection, evaluation at identity and naturality in c,F",
+      "dependencies": [
+        "1.19",
+        "1.20"
+      ],
+      "source_proof_status": "proof outline; checks left as exercises",
+      "lesson": "yoneda",
+      "key": "2.1",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.2",
+      "kind": "Construction",
+      "source_pages": [
+        9
+      ],
+      "topic": "Yoneda functor on objects and morphisms",
+      "dependencies": [
+        "1.19",
+        "1.21"
+      ],
+      "source_proof_status": "construction; laws left as exercise",
+      "lesson": "yoneda",
+      "key": "2.2",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.3",
+      "kind": "Definition",
+      "source_pages": [
+        9
+      ],
+      "topic": "Fully faithful means bijective on each hom set",
+      "dependencies": [
+        "1.12"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "yoneda",
+      "key": "2.3",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.4",
+      "kind": "Corollary",
+      "source_pages": [
+        10
+      ],
+      "topic": "Yoneda is fully faithful",
+      "dependencies": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ],
+      "source_proof_status": "proof left as exercise",
+      "lesson": "yoneda",
+      "key": "2.4",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.5",
+      "kind": "Proposition",
+      "source_pages": [
+        10
+      ],
+      "topic": "Fully faithful functors reflect isomorphisms and object isomorphism",
+      "dependencies": [
+        "1.14",
+        "2.3"
+      ],
+      "source_proof_status": "proof left as exercise",
+      "lesson": "yoneda",
+      "key": "2.5",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.6",
+      "kind": "Corollary",
+      "source_pages": [
+        10
+      ],
+      "topic": "Detect isomorphisms by all incoming or outgoing hom-set maps",
+      "dependencies": [
+        "1.24",
+        "2.4",
+        "2.5"
+      ],
+      "source_proof_status": "proof supplied; opposite-isomorphism check left as exercise",
+      "lesson": "yoneda",
+      "key": "2.6",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "2 Yoneda lemma",
+      "original_number": "2.7",
+      "kind": "Corollary",
+      "source_pages": [
+        10
+      ],
+      "topic": "Objects are isomorphic iff their representables are naturally isomorphic",
+      "dependencies": [
+        "1.24",
+        "2.4",
+        "2.5"
+      ],
+      "source_proof_status": "proof supplied",
+      "lesson": "yoneda",
+      "key": "2.7",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "3.1 Adjunctions",
+      "original_number": "3.1",
+      "kind": "Definition",
+      "source_pages": [
+        11
+      ],
+      "topic": "Left/right adjoints, unit, counit and both triangle identities",
+      "dependencies": [
+        "1.20",
+        "1.28"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "adjunctions",
+      "key": "3.1",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "3.1 Adjunctions",
+      "original_number": "3.2",
+      "kind": "Example",
+      "source_pages": [
+        11
+      ],
+      "topic": "Added-basepoint/free-vector and discrete/indiscrete adjunctions",
+      "dependencies": [
+        "1.13",
+        "3.1"
+      ],
+      "source_proof_status": "examples",
+      "lesson": "adjunctions",
+      "key": "3.2",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "3.1 Adjunctions",
+      "original_number": "3.3",
+      "kind": "Theorem",
+      "source_pages": [
+        12
+      ],
+      "topic": "Natural hom-set bijections equivalent to unit/counit adjunctions",
+      "dependencies": [
+        "3.1"
+      ],
+      "source_proof_status": "proof outline; inverse/naturality/triangle checks left as exercises",
+      "lesson": "adjunctions",
+      "key": "3.3",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.4",
+      "kind": "Definition",
+      "source_pages": [
+        12
+      ],
+      "topic": "Equivalence via quasi-inverse and natural isomorphisms",
+      "dependencies": [
+        "1.15",
+        "1.22"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "equivalences",
+      "key": "3.4",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.walkingEquivalence"
+      ]
+    },
+    {
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.5",
+      "kind": "Example",
+      "source_pages": [
+        12
+      ],
+      "topic": "Strict isomorphisms and adjoint equivalences imply equivalences",
+      "dependencies": [
+        "3.1",
+        "3.4"
+      ],
+      "source_proof_status": "examples",
+      "lesson": "equivalences",
+      "key": "3.5",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.6",
+      "kind": "Definition",
+      "source_pages": [
+        12
+      ],
+      "topic": "Essential surjectivity up to object isomorphism",
+      "dependencies": [
+        "1.9",
+        "1.12"
+      ],
+      "source_proof_status": "definition",
+      "lesson": "equivalences",
+      "key": "3.6",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.inclusion_essentially_surjective",
+        "ILab.MathematicsLearning.inclusion_not_surjective"
+      ]
+    },
+    {
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.7",
+      "kind": "Theorem",
+      "source_pages": [
+        12
+      ],
+      "topic": "Equivalence iff fully faithful and essentially surjective",
+      "dependencies": [
+        "2.3",
+        "3.4",
+        "3.6"
+      ],
+      "source_proof_status": "statement only; proof deferred to later lecture",
+      "lesson": "equivalences",
+      "key": "3.7",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.8",
+      "kind": "Construction",
+      "source_pages": [
+        13
+      ],
+      "topic": "Walking isomorphism: two objects, singleton hom sets",
+      "dependencies": [
+        "1.5",
+        "1.9"
+      ],
+      "source_proof_status": "construction",
+      "lesson": "equivalences",
+      "key": "3.8",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.roomFintype",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.roomIso",
+        "ILab.MathematicsLearning.room_cardinality"
+      ]
+    },
+    {
+      "source_section": "3.2 Equivalences",
+      "original_number": "3.9",
+      "kind": "Proposition",
+      "source_pages": [
+        13
+      ],
+      "topic": "Inclusion of object 0 from [0] into the walking isomorphism is an equivalence",
+      "dependencies": [
+        "1.25",
+        "3.7",
+        "3.8"
+      ],
+      "source_proof_status": "proof supplied; essential-surjectivity line incomplete as printed",
+      "lesson": "equivalences",
+      "key": "3.9",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Audit passed for listed scoped ordinary-category declarations; not a blanket formalization of the source item",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed; listed Lean declarations compiled and axiom-audited",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "lean_declarations": [
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.collapseRoom",
+        "ILab.MathematicsLearning.walkingEquivalence",
+        "ILab.MathematicsLearning.inclusion_essentially_surjective",
+        "ILab.MathematicsLearning.inclusion_not_surjective"
+      ]
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.what",
+      "kind": "unnumbered",
+      "source_pages": [
+        1
+      ],
+      "topic": "What an infinity-category means informally",
+      "dependencies": [],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.higher_morphisms",
+      "kind": "unnumbered",
+      "source_pages": [
+        1,
+        2
+      ],
+      "topic": "Objects, arrows, higher parallel morphisms",
+      "dependencies": [
+        "intro.what"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.invertibility",
+      "kind": "unnumbered",
+      "source_pages": [
+        2
+      ],
+      "topic": "Weak invertibility above dimension one; coherent unit/associativity",
+      "dependencies": [
+        "intro.higher_morphisms"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.paths",
+      "kind": "unnumbered",
+      "source_pages": [
+        2
+      ],
+      "topic": "Paths and homotopies fixing endpoints/boundaries",
+      "dependencies": [
+        "intro.invertibility"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.groupoids",
+      "kind": "unnumbered",
+      "source_pages": [
+        2
+      ],
+      "topic": "Infinity-groupoids have invertible one-morphisms too",
+      "dependencies": [
+        "intro.paths"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.models",
+      "kind": "unnumbered",
+      "source_pages": [
+        2
+      ],
+      "topic": "Quasicategories and complete Segal spaces versus axiomatic approaches",
+      "dependencies": [
+        "intro.what"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.hott",
+      "kind": "unnumbered",
+      "source_pages": [
+        2,
+        3
+      ],
+      "topic": "Types as infinity-groupoids in homotopy type theory",
+      "dependencies": [
+        "intro.groupoids"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.identity",
+      "kind": "unnumbered",
+      "source_pages": [
+        2
+      ],
+      "topic": "Iterated identity types and identifications",
+      "dependencies": [
+        "intro.hott"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.sip",
+      "kind": "unnumbered",
+      "source_pages": [
+        3
+      ],
+      "topic": "Indiscernibility, transport and Structure Identity Principle",
+      "dependencies": [
+        "intro.identity"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.synthetic",
+      "kind": "unnumbered",
+      "source_pages": [
+        3
+      ],
+      "topic": "Synthetic categories and noninvertible morphisms; distinct foundations",
+      "dependencies": [
+        "intro.sip",
+        "intro.models"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Introduction",
+      "original_number": null,
+      "key": "intro.course",
+      "kind": "unnumbered",
+      "source_pages": [
+        3
+      ],
+      "topic": "Future-only HoTT foundations, localisations, fibrations, Kan extensions, limits/colimits",
+      "dependencies": [
+        "intro.synthetic"
+      ],
+      "source_proof_status": "announced for future lectures",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "Strict category theory",
+      "original_number": null,
+      "key": "strict.motivation",
+      "kind": "unnumbered",
+      "source_pages": [
+        4
+      ],
+      "topic": "Ordinary is called strict; equality-sensitive constructions motivate higher setting",
+      "dependencies": [
+        "intro.synthetic"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "foundations",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "3 Adjunctions and equivalences",
+      "original_number": null,
+      "key": "equivalences.motivation",
+      "kind": "unnumbered",
+      "source_pages": [
+        11
+      ],
+      "topic": "Equality, isomorphism and equivalence-sensitive invariance",
+      "dependencies": [
+        "1.9",
+        "3.4"
+      ],
+      "source_proof_status": "introductory explanation",
+      "lesson": "equivalences",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "lean_declarations": []
+    },
+    {
+      "source_section": "3 Adjunctions and equivalences",
+      "original_number": null,
+      "key": "3.5.adjoint_upgrade",
+      "kind": "unnumbered",
+      "source_pages": [
+        12
+      ],
+      "topic": "Every ordinary equivalence can be upgraded to an adjoint equivalence",
+      "dependencies": [
+        "3.5"
+      ],
+      "source_proof_status": "cited to Riehl 4.3.6; not proved in primary",
+      "lesson": "equivalences",
+      "mathematics_status": "published in linked grouped lesson",
+      "plain_language_status": "published in linked grouped lesson",
+      "story_status": "published in linked grouped lesson",
+      "lean_status": "Not formalized",
+      "lean_feasibility": "Selective ordinary-category results only; no synthetic or HoTT formalization claimed",
+      "audit_status": "source alignment and exposition reviewed by authoring assistant; no independent human review claimed",
+      "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "public_url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+      "lean_declarations": []
+    }
+  ],
+  "updated_utc": "2026-10-18T06:20:45.994633+00:00",
+  "scope_note": "All 58 primary items have educational treatment. Only the explicitly mapped ordinary-category statements and finite examples are formalized. Theorems 2.1, 3.3 and 3.7 are not formalized by these modules."
+}

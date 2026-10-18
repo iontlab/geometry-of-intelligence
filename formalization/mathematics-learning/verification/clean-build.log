@@ -1,0 +1,28 @@
+✔ [8923/8930] Built ILab.MathematicsLearning.BasicCategoryTheory (5.2s)
+✔ [8925/8930] Built ILab.MathematicsLearning.WalkingIsomorphism (5.3s)
+✔ [8926/8930] Built ILab.RQ001.CapabilityOrder (175s)
+⚠ [8927/8930] Built ILab.RQ001.SymmetryObstruction (175s)
+warning: ILab/RQ001/SymmetryObstruction.lean:97:4: Try `simp at hne` instead of `simpa using hne`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8928/8930] Built ILab.RQ001.FourStateQuotient (175s)
+warning: ILab/RQ001/FourStateQuotient.lean:64:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8929/8930] Built ILab.RQ001.TransformationSufficientQuotient (176s)
+warning: ILab/RQ001/TransformationSufficientQuotient.lean:131:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ILab/RQ001/TransformationSufficientQuotient.lean:140:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ILab/RQ001/TransformationSufficientQuotient.lean:194:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ILab/RQ001/TransformationSufficientQuotient.lean:197:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ILab/RQ001/TransformationSufficientQuotient.lean:255:14: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully (8930 jobs).

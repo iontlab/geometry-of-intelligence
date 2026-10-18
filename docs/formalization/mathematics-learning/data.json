@@ -1,0 +1,2950 @@
+{
+  "schemaVersion": 1,
+  "title": "Mathematics Learning — Ordinary Category Theory",
+  "scope": "Selected ordinary-category exercises and a finite example are Lean-verified. The full lecture notes, Synthetic Category Theory, infinity-category theory, HoTT and universe existence are not formalized here.",
+  "disclaimer": "The graph displays formal declaration dependencies and verification metadata. Graph position or centrality does not indicate mathematical importance, novelty, or intelligence relevance.",
+  "lean": "4.34.0",
+  "leanCommit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "mathlib": "v4.34.0",
+  "mathlibRevision": "5ed2965256430c3649e86755f9576b54eca72435",
+  "extraction": "Direct constant references in compiled declaration types and values; no transitive reduction, conceptual edges, or bridging across hidden nodes. Generated declarations are hidden by default. Mathlib/external references are excluded.",
+  "sourceRef": "5f45eee29afa3c7507eb9a56bb132ccb92260e68",
+  "modules": [
+    {
+      "name": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "sha256": "C50DE7CD6C392746E2861C232398CD9225E48A396AE124AFA9725352F3A5AED1",
+      "paperMapping": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+    },
+    {
+      "name": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "sha256": "306750071687EEC2491400B86E52DD30C734A843C0DF3D88DE4434CFC36CE6CA",
+      "paperMapping": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+    }
+  ],
+  "nodes": [
+    {
+      "signature": "Type",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "inductive",
+      "id": "ILab.MathematicsLearning.OneRoom",
+      "dependencies": [],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "inductive",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ILab.MathematicsLearning.OneRoom → ℕ",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.OneRoom._sizeOf_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.rec"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "SizeOf ILab.MathematicsLearning.OneRoom",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.OneRoom._sizeOf_inst",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom._sizeOf_1"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.OneRoom → Sort u} →\n  (t : ILab.MathematicsLearning.OneRoom) → motive ILab.MathematicsLearning.OneRoom.only → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.OneRoom.casesOn",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.only",
+        "ILab.MathematicsLearning.OneRoom.rec"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ILab.MathematicsLearning.OneRoom → ℕ",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.OneRoom.ctorIdx",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{P : Sort v✝} →\n  {x y : ILab.MathematicsLearning.OneRoom} → x = y → ILab.MathematicsLearning.OneRoom.noConfusionType P x y",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.OneRoom.noConfusion",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.noConfusionType"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "Sort v✝ → ILab.MathematicsLearning.OneRoom → ILab.MathematicsLearning.OneRoom → Sort v✝",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.OneRoom.noConfusionType",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ℕ → ILab.MathematicsLearning.OneRoom",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.OneRoom.ofNat",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.only"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (x : ILab.MathematicsLearning.OneRoom), ILab.MathematicsLearning.OneRoom.ofNat x.ctorIdx = x",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.OneRoom.ofNat_ctorIdx",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.casesOn",
+        "ILab.MathematicsLearning.OneRoom.ctorIdx",
+        "ILab.MathematicsLearning.OneRoom.ofNat",
+        "ILab.MathematicsLearning.OneRoom.only"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ILab.MathematicsLearning.OneRoom",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "constructor",
+      "id": "ILab.MathematicsLearning.OneRoom.only",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "sizeOf ILab.MathematicsLearning.OneRoom.only = 1",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.OneRoom.only.sizeOf_spec",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom._sizeOf_inst",
+        "ILab.MathematicsLearning.OneRoom.only"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.OneRoom → Sort u} →\n  motive ILab.MathematicsLearning.OneRoom.only → (t : ILab.MathematicsLearning.OneRoom) → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "recursor",
+      "id": "ILab.MathematicsLearning.OneRoom.rec",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.only"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.OneRoom → Sort u} →\n  (t : ILab.MathematicsLearning.OneRoom) → motive ILab.MathematicsLearning.OneRoom.only → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.OneRoom.recOn",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.only",
+        "ILab.MathematicsLearning.OneRoom.rec"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 25,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "Type",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "inductive",
+      "id": "ILab.MathematicsLearning.Room",
+      "dependencies": [],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "inductive",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ILab.MathematicsLearning.Room → ℕ",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room._sizeOf_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.rec"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "SizeOf ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room._sizeOf_inst",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room._sizeOf_1"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.Room → Sort u} →\n  (t : ILab.MathematicsLearning.Room) →\n    motive ILab.MathematicsLearning.Room.north → motive ILab.MathematicsLearning.Room.south → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.casesOn",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.rec",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.Room → Sort u} →\n  (ctorIdx : ℕ) →\n    (t : ILab.MathematicsLearning.Room) →\n      ctorIdx = t.ctorIdx → ILab.MathematicsLearning.Room.ctorElimType ctorIdx → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.ctorElim",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.casesOn",
+        "ILab.MathematicsLearning.Room.ctorElimType",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.Room → Sort u} → ℕ → Sort (max 1 u)",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.ctorElimType",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ILab.MathematicsLearning.Room → ℕ",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.Room.ctorIdx",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.casesOn"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{P : Sort v✝} → {x y : ILab.MathematicsLearning.Room} → x = y → ILab.MathematicsLearning.Room.noConfusionType P x y",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.noConfusion",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.Room.noConfusionType"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "Sort v✝ → ILab.MathematicsLearning.Room → ILab.MathematicsLearning.Room → Sort v✝",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.noConfusionType",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.ctorIdx"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "constructor",
+      "id": "ILab.MathematicsLearning.Room.north",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.Room → Sort u} →\n  (t : ILab.MathematicsLearning.Room) → t.ctorIdx = 0 → motive ILab.MathematicsLearning.Room.north → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.north.elim",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.ctorElim",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.Room.north"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "sizeOf ILab.MathematicsLearning.Room.north = 1",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.Room.north.sizeOf_spec",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room._sizeOf_inst",
+        "ILab.MathematicsLearning.Room.north"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ℕ → ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.ofNat",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (x : ILab.MathematicsLearning.Room), ILab.MathematicsLearning.Room.ofNat x.ctorIdx = x",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.Room.ofNat_ctorIdx",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.casesOn",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.ofNat",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.Room → Sort u} →\n  motive ILab.MathematicsLearning.Room.north →\n    motive ILab.MathematicsLearning.Room.south → (t : ILab.MathematicsLearning.Room) → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "recursor",
+      "id": "ILab.MathematicsLearning.Room.rec",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.Room → Sort u} →\n  (t : ILab.MathematicsLearning.Room) →\n    motive ILab.MathematicsLearning.Room.north → motive ILab.MathematicsLearning.Room.south → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.recOn",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.rec",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "constructor",
+      "id": "ILab.MathematicsLearning.Room.south",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{motive : ILab.MathematicsLearning.Room → Sort u} →\n  (t : ILab.MathematicsLearning.Room) → t.ctorIdx = 1 → motive ILab.MathematicsLearning.Room.south → motive t",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "abbreviation",
+      "id": "ILab.MathematicsLearning.Room.south.elim",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.ctorElim",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "sizeOf ILab.MathematicsLearning.Room.south = 1",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.Room.south.sizeOf_spec",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room._sizeOf_inst",
+        "ILab.MathematicsLearning.Room.south"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 16,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "CategoryTheory.Functor ILab.MathematicsLearning.Room ILab.MathematicsLearning.OneRoom",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.collapseRoom",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.only",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.collapseRoom._proof_1",
+        "ILab.MathematicsLearning.collapseRoom._proof_2",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 50,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "def",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L50",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (X : ILab.MathematicsLearning.Room),\n  PUnit.unit = CategoryTheory.CategoryStruct.id ILab.MathematicsLearning.OneRoom.only",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.collapseRoom._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.only",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.oneRoomCategory"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 50,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L50",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {X Y Z : ILab.MathematicsLearning.Room} (f : X ⟶ Y) (g : Y ⟶ Z),\n  PUnit.unit = CategoryTheory.CategoryStruct.comp PUnit.unit PUnit.unit",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.collapseRoom._proof_2",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.only",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 50,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L50",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  {F G H : CategoryTheory.Functor C D} (α : F ⟶ G) (β : G ⟶ H) {X Y : C} (f : X ⟶ Y),\n  CategoryTheory.CategoryStruct.comp (F.map f) (CategoryTheory.CategoryStruct.comp (α.app Y) (β.app Y)) =\n    CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp (α.app X) (β.app X)) (H.map f)",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.composite_naturality",
+      "dependencies": [],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 61,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L61",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {X Y Z : C} (f : X ⟶ Y) (g : Y ⟶ Z),\n  CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.id X) f)\n      (CategoryTheory.CategoryStruct.comp g (CategoryTheory.CategoryStruct.id Z)) =\n    CategoryTheory.CategoryStruct.comp f g",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.identity_padded_composite",
+      "dependencies": [],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 22,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L22",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "CategoryTheory.Functor ILab.MathematicsLearning.OneRoom ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.includeRoom",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.includeRoom._proof_1",
+        "ILab.MathematicsLearning.includeRoom._proof_2",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 45,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "def",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L45",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (X : ILab.MathematicsLearning.OneRoom),\n  PUnit.unit = CategoryTheory.CategoryStruct.id ILab.MathematicsLearning.Room.north",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.includeRoom._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 45,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L45",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {X Y Z : ILab.MathematicsLearning.OneRoom} (f : X ⟶ Y) (g : Y ⟶ Z),\n  PUnit.unit = CategoryTheory.CategoryStruct.comp PUnit.unit PUnit.unit",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.includeRoom._proof_2",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 45,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L45",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (Y : ILab.MathematicsLearning.Room),\n  Nonempty (ILab.MathematicsLearning.includeRoom.obj ILab.MathematicsLearning.OneRoom.only ≅ Y)",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.only",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.roomIso"
+      ],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 72,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L72",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "¬Function.Surjective ILab.MathematicsLearning.includeRoom.obj",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.casesOn",
+        "ILab.MathematicsLearning.OneRoom.only",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.south",
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 65,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L65",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "DecidableEq ILab.MathematicsLearning.OneRoom",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.instDecidableEqOneRoom",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.ctorIdx",
+        "ILab.MathematicsLearning.instDecidableEqOneRoom._proof_1"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": null,
+      "lineProvenance": "not available",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (x y : ILab.MathematicsLearning.OneRoom), ¬x.ctorIdx = y.ctorIdx → x = y → False",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.instDecidableEqOneRoom._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.OneRoom.ctorIdx"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": null,
+      "lineProvenance": "not available",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "DecidableEq ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.instDecidableEqRoom",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.instDecidableEqRoom._proof_1",
+        "ILab.MathematicsLearning.instDecidableEqRoom._proof_2"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": null,
+      "lineProvenance": "not available",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (x y : ILab.MathematicsLearning.Room), x.ctorIdx = y.ctorIdx → x = y",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.instDecidableEqRoom._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.Room.ofNat",
+        "ILab.MathematicsLearning.Room.ofNat_ctorIdx"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": null,
+      "lineProvenance": "not available",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (x y : ILab.MathematicsLearning.Room), ¬x.ctorIdx = y.ctorIdx → x = y → False",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.instDecidableEqRoom._proof_2",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.ctorIdx"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": null,
+      "lineProvenance": "not available",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {X Y : C} (f : X ⟶ Y) (g h : Y ⟶ X),\n  CategoryTheory.CategoryStruct.comp g f = CategoryTheory.CategoryStruct.id Y →\n    CategoryTheory.CategoryStruct.comp f h = CategoryTheory.CategoryStruct.id X → g = h",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.inverse_unique",
+      "dependencies": [],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 27,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L27",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "{C : Type u} →\n  [inst : CategoryTheory.Category.{v, u} C] →\n    {D : Type u'} →\n      [inst_1 : CategoryTheory.Category.{v', u'} D] →\n        (F : CategoryTheory.Functor C D) → {X Y : C} → (X ≅ Y) → (F.obj X ≅ F.obj Y)",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.mappedIso",
+      "dependencies": [
+        "ILab.MathematicsLearning.mappedIso._proof_1",
+        "ILab.MathematicsLearning.mappedIso._proof_2"
+      ],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 48,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "def",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L48",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u_4} [inst : CategoryTheory.Category.{u_3, u_4} C] {D : Type u_2}\n  [inst_1 : CategoryTheory.Category.{u_1, u_2} D] (F : CategoryTheory.Functor C D) {X Y : C} (e : X ≅ Y),\n  CategoryTheory.CategoryStruct.comp (F.map e.hom) (F.map e.inv) = CategoryTheory.CategoryStruct.id (F.obj X)",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.mappedIso._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.mapped_inverse_left"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 48,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L48",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u_4} [inst : CategoryTheory.Category.{u_3, u_4} C] {D : Type u_2}\n  [inst_1 : CategoryTheory.Category.{u_1, u_2} D] (F : CategoryTheory.Functor C D) {X Y : C} (e : X ≅ Y),\n  CategoryTheory.CategoryStruct.comp (F.map e.inv) (F.map e.hom) = CategoryTheory.CategoryStruct.id (F.obj Y)",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.mappedIso._proof_2",
+      "dependencies": [
+        "ILab.MathematicsLearning.mapped_inverse_right"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 48,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L48",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  (F : CategoryTheory.Functor C D) {X Y : C} (e : X ≅ Y), ILab.MathematicsLearning.mappedIso F e = F.mapIso e",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.mappedIso_eq_mapIso",
+      "dependencies": [
+        "ILab.MathematicsLearning.mappedIso"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 55,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L55",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  (F : CategoryTheory.Functor C D) {X Y : C} (f : X ⟶ Y) (g : Y ⟶ X),\n  CategoryTheory.CategoryStruct.comp f g = CategoryTheory.CategoryStruct.id X →\n    CategoryTheory.CategoryStruct.comp (F.map f) (F.map g) = CategoryTheory.CategoryStruct.id (F.obj X)",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.mapped_inverse_left",
+      "dependencies": [],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 36,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L36",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  (F : CategoryTheory.Functor C D) {X Y : C} (f : X ⟶ Y) (g : Y ⟶ X),\n  CategoryTheory.CategoryStruct.comp g f = CategoryTheory.CategoryStruct.id Y →\n    CategoryTheory.CategoryStruct.comp (F.map g) (F.map f) = CategoryTheory.CategoryStruct.id (F.obj Y)",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.mapped_inverse_right",
+      "dependencies": [],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 42,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L42",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "CategoryTheory.SmallCategory ILab.MathematicsLearning.OneRoom",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "instance",
+      "id": "ILab.MathematicsLearning.oneRoomCategory",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.oneRoomCategory._proof_1",
+        "ILab.MathematicsLearning.oneRoomCategory._proof_2"
+      ],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 34,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "instance",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L34",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {X Y : ILab.MathematicsLearning.OneRoom} (f : PUnit.{1}), PUnit.unit = f",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.oneRoomCategory._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 34,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L34",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {W X Y Z : ILab.MathematicsLearning.OneRoom} (f g h : PUnit.{1}), PUnit.unit = PUnit.unit",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.oneRoomCategory._proof_2",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 34,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L34",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "CategoryTheory.SmallCategory ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "instance",
+      "id": "ILab.MathematicsLearning.roomCategory",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.roomCategory._proof_1",
+        "ILab.MathematicsLearning.roomCategory._proof_2"
+      ],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 29,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "instance",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L29",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {X Y : ILab.MathematicsLearning.Room} (f : PUnit.{1}), PUnit.unit = f",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.roomCategory._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 29,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L29",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {W X Y Z : ILab.MathematicsLearning.Room} (f g h : PUnit.{1}), PUnit.unit = PUnit.unit",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.roomCategory._proof_2",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 29,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L29",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "Fintype ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "instance",
+      "id": "ILab.MathematicsLearning.roomFintype",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.south",
+        "ILab.MathematicsLearning.instDecidableEqRoom",
+        "ILab.MathematicsLearning.roomFintype._proof_1"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 21,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "instance",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L21",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (X : ILab.MathematicsLearning.Room), X ∈ {ILab.MathematicsLearning.Room.north, ILab.MathematicsLearning.Room.south}",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.roomFintype._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.casesOn",
+        "ILab.MathematicsLearning.Room.ctorIdx",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.Room.south",
+        "ILab.MathematicsLearning.instDecidableEqRoom"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 21,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L21",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "(X Y : ILab.MathematicsLearning.Room) → X ≅ Y",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.roomIso",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.roomIso._proof_1",
+        "ILab.MathematicsLearning.roomIso._proof_2"
+      ],
+      "axioms": [],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 40,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "def",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L40",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (X Y : ILab.MathematicsLearning.Room),\n  CategoryTheory.CategoryStruct.comp PUnit.unit PUnit.unit = CategoryTheory.CategoryStruct.id X",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.roomIso._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 40,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L40",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (X Y : ILab.MathematicsLearning.Room),\n  CategoryTheory.CategoryStruct.comp PUnit.unit PUnit.unit = CategoryTheory.CategoryStruct.id Y",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.roomIso._proof_2",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 40,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L40",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "Fintype.card ILab.MathematicsLearning.Room = 2",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.room_cardinality",
+      "dependencies": [
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.roomFintype"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 76,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L76",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  {F G H : CategoryTheory.Functor C D} (α : F ⟶ G) (β : G ⟶ H) (X : C),\n  (CategoryTheory.CategoryStruct.comp α β).app X = CategoryTheory.CategoryStruct.comp (α.app X) (β.app X)",
+      "module": "ILab.MathematicsLearning.BasicCategoryTheory",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.vertical_composite_component",
+      "dependencies": [],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+      "line": 73,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "theorem",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L73",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.5, 1.11, 1.14, 1.20 and 1.23: selected ordinary category laws, inverse uniqueness, functor preservation and vertical naturality. Not all source items are formalized."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "ILab.MathematicsLearning.OneRoom ≌ ILab.MathematicsLearning.Room",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "definition",
+      "id": "ILab.MathematicsLearning.walkingEquivalence",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.collapseRoom",
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.roomIso",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_5"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": true,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 55,
+      "lineProvenance": "authored declaration start, matched against verified source",
+      "sourceKind": "def",
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (x : ILab.MathematicsLearning.OneRoom),\n  CategoryTheory.CategoryStruct.comp PUnit.unit PUnit.unit =\n    CategoryTheory.CategoryStruct.id ((CategoryTheory.Functor.id ILab.MathematicsLearning.OneRoom).obj x)",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.collapseRoom",
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 55,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (x : ILab.MathematicsLearning.OneRoom),\n  CategoryTheory.CategoryStruct.comp PUnit.unit PUnit.unit =\n    CategoryTheory.CategoryStruct.id\n      ((ILab.MathematicsLearning.includeRoom.comp ILab.MathematicsLearning.collapseRoom).obj x)",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.collapseRoom",
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 55,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {X Y : ILab.MathematicsLearning.OneRoom} (f : X ⟶ Y),\n  CategoryTheory.CategoryStruct.comp ((CategoryTheory.Functor.id ILab.MathematicsLearning.OneRoom).map f)\n      { hom := PUnit.unit, inv := PUnit.unit, hom_inv_id := ⋯, inv_hom_id := ⋯ }.hom =\n    CategoryTheory.CategoryStruct.comp ((CategoryTheory.Functor.id ILab.MathematicsLearning.OneRoom).map f)\n      { hom := PUnit.unit, inv := PUnit.unit, hom_inv_id := ⋯, inv_hom_id := ⋯ }.hom",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.collapseRoom",
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_2"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 55,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ {X Y : ILab.MathematicsLearning.Room} (f : X ⟶ Y),\n  CategoryTheory.CategoryStruct.comp\n      ((ILab.MathematicsLearning.collapseRoom.comp ILab.MathematicsLearning.includeRoom).map f)\n      (ILab.MathematicsLearning.roomIso ILab.MathematicsLearning.Room.north Y).hom =\n    CategoryTheory.CategoryStruct.comp\n      ((ILab.MathematicsLearning.collapseRoom.comp ILab.MathematicsLearning.includeRoom).map f)\n      (ILab.MathematicsLearning.roomIso ILab.MathematicsLearning.Room.north Y).hom",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.collapseRoom",
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.roomIso"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 55,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    },
+    {
+      "signature": "∀ (x : ILab.MathematicsLearning.OneRoom),\n  CategoryTheory.CategoryStruct.comp\n      (ILab.MathematicsLearning.includeRoom.map\n        ((CategoryTheory.NatIso.ofComponents\n                (fun x => { hom := PUnit.unit, inv := PUnit.unit, hom_inv_id := ⋯, inv_hom_id := ⋯ })\n                @ILab.MathematicsLearning.walkingEquivalence._proof_3).hom.app\n          x))\n      ((CategoryTheory.NatIso.ofComponents\n              (fun X => ILab.MathematicsLearning.roomIso ILab.MathematicsLearning.Room.north X)\n              @ILab.MathematicsLearning.walkingEquivalence._proof_4).hom.app\n        (ILab.MathematicsLearning.includeRoom.obj x)) =\n    CategoryTheory.CategoryStruct.comp\n      (ILab.MathematicsLearning.includeRoom.map\n        ((CategoryTheory.NatIso.ofComponents\n                (fun x => { hom := PUnit.unit, inv := PUnit.unit, hom_inv_id := ⋯, inv_hom_id := ⋯ })\n                @ILab.MathematicsLearning.walkingEquivalence._proof_3).hom.app\n          x))\n      ((CategoryTheory.NatIso.ofComponents\n              (fun X => ILab.MathematicsLearning.roomIso ILab.MathematicsLearning.Room.north X)\n              @ILab.MathematicsLearning.walkingEquivalence._proof_4).hom.app\n        (ILab.MathematicsLearning.includeRoom.obj x))",
+      "module": "ILab.MathematicsLearning.WalkingIsomorphism",
+      "kind": "theorem",
+      "id": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "dependencies": [
+        "ILab.MathematicsLearning.OneRoom",
+        "ILab.MathematicsLearning.Room",
+        "ILab.MathematicsLearning.Room.north",
+        "ILab.MathematicsLearning.collapseRoom",
+        "ILab.MathematicsLearning.includeRoom",
+        "ILab.MathematicsLearning.oneRoomCategory",
+        "ILab.MathematicsLearning.roomCategory",
+        "ILab.MathematicsLearning.roomIso",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+        "ILab.MathematicsLearning.walkingEquivalence._proof_4"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "authored": false,
+      "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+      "line": 55,
+      "lineProvenance": "enclosing authored declaration",
+      "sourceKind": null,
+      "sourceUrl": "https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55",
+      "paperMapping": {
+        "provenance": "Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper",
+        "text": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+      },
+      "verification": "Compiled and axiom-audited in the pinned public project"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ILab.MathematicsLearning.OneRoom._sizeOf_1",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom._sizeOf_1",
+      "target": "ILab.MathematicsLearning.OneRoom.rec",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom._sizeOf_inst",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom._sizeOf_inst",
+      "target": "ILab.MathematicsLearning.OneRoom._sizeOf_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.casesOn",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.casesOn",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.casesOn",
+      "target": "ILab.MathematicsLearning.OneRoom.rec",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.ctorIdx",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.noConfusion",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.noConfusion",
+      "target": "ILab.MathematicsLearning.OneRoom.noConfusionType",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.noConfusionType",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.ofNat",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.ofNat",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.OneRoom.casesOn",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.OneRoom.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.OneRoom.ofNat",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.only",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.only.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.only.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.OneRoom._sizeOf_inst",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.only.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.rec",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.rec",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.recOn",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.recOn",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.OneRoom.recOn",
+      "target": "ILab.MathematicsLearning.OneRoom.rec",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room._sizeOf_1",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room._sizeOf_1",
+      "target": "ILab.MathematicsLearning.Room.rec",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room._sizeOf_inst",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room._sizeOf_inst",
+      "target": "ILab.MathematicsLearning.Room._sizeOf_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.casesOn",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.casesOn",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.casesOn",
+      "target": "ILab.MathematicsLearning.Room.rec",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.casesOn",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElim",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElim",
+      "target": "ILab.MathematicsLearning.Room.casesOn",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElim",
+      "target": "ILab.MathematicsLearning.Room.ctorElimType",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElim",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElim",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElim",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElimType",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElimType",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorElimType",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorIdx",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ctorIdx",
+      "target": "ILab.MathematicsLearning.Room.casesOn",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.noConfusion",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.noConfusion",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.noConfusion",
+      "target": "ILab.MathematicsLearning.Room.noConfusionType",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.noConfusionType",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.noConfusionType",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.north",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.north.elim",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.north.elim",
+      "target": "ILab.MathematicsLearning.Room.ctorElim",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.north.elim",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.north.elim",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.north.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.north.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.Room._sizeOf_inst",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.north.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.Room.casesOn",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.Room.ofNat",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.ofNat_ctorIdx",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.rec",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.rec",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.rec",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.recOn",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.recOn",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.recOn",
+      "target": "ILab.MathematicsLearning.Room.rec",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.recOn",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.south",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.south.elim",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.south.elim",
+      "target": "ILab.MathematicsLearning.Room.ctorElim",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.south.elim",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.south.elim",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.south.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.south.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.Room._sizeOf_inst",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.Room.south.sizeOf_spec",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom",
+      "target": "ILab.MathematicsLearning.collapseRoom._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom",
+      "target": "ILab.MathematicsLearning.collapseRoom._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_1",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_1",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_1",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_1",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_2",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_2",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_2",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_2",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.collapseRoom._proof_2",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom",
+      "target": "ILab.MathematicsLearning.includeRoom._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom",
+      "target": "ILab.MathematicsLearning.includeRoom._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_1",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_1",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_1",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_1",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_2",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_2",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_2",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_2",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.includeRoom._proof_2",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "target": "ILab.MathematicsLearning.includeRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+      "target": "ILab.MathematicsLearning.roomIso",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.OneRoom.casesOn",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.OneRoom.only",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.includeRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.inclusion_not_surjective",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqOneRoom",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqOneRoom",
+      "target": "ILab.MathematicsLearning.OneRoom.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqOneRoom",
+      "target": "ILab.MathematicsLearning.instDecidableEqOneRoom._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqOneRoom._proof_1",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqOneRoom._proof_1",
+      "target": "ILab.MathematicsLearning.OneRoom.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom",
+      "target": "ILab.MathematicsLearning.instDecidableEqRoom._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom",
+      "target": "ILab.MathematicsLearning.instDecidableEqRoom._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom._proof_1",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom._proof_1",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom._proof_1",
+      "target": "ILab.MathematicsLearning.Room.ofNat",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom._proof_1",
+      "target": "ILab.MathematicsLearning.Room.ofNat_ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom._proof_2",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.instDecidableEqRoom._proof_2",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.mappedIso",
+      "target": "ILab.MathematicsLearning.mappedIso._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.mappedIso",
+      "target": "ILab.MathematicsLearning.mappedIso._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.mappedIso._proof_1",
+      "target": "ILab.MathematicsLearning.mapped_inverse_left",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.mappedIso._proof_2",
+      "target": "ILab.MathematicsLearning.mapped_inverse_right",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.mappedIso_eq_mapIso",
+      "target": "ILab.MathematicsLearning.mappedIso",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.oneRoomCategory",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.oneRoomCategory",
+      "target": "ILab.MathematicsLearning.oneRoomCategory._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.oneRoomCategory",
+      "target": "ILab.MathematicsLearning.oneRoomCategory._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.oneRoomCategory._proof_1",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.oneRoomCategory._proof_2",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomCategory",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomCategory",
+      "target": "ILab.MathematicsLearning.roomCategory._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomCategory",
+      "target": "ILab.MathematicsLearning.roomCategory._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomCategory._proof_1",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomCategory._proof_2",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype",
+      "target": "ILab.MathematicsLearning.instDecidableEqRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype",
+      "target": "ILab.MathematicsLearning.roomFintype._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype._proof_1",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype._proof_1",
+      "target": "ILab.MathematicsLearning.Room.casesOn",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype._proof_1",
+      "target": "ILab.MathematicsLearning.Room.ctorIdx",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype._proof_1",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype._proof_1",
+      "target": "ILab.MathematicsLearning.Room.south",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomFintype._proof_1",
+      "target": "ILab.MathematicsLearning.instDecidableEqRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomIso",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomIso",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomIso",
+      "target": "ILab.MathematicsLearning.roomIso._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomIso",
+      "target": "ILab.MathematicsLearning.roomIso._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomIso._proof_1",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomIso._proof_1",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomIso._proof_2",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.roomIso._proof_2",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.room_cardinality",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.room_cardinality",
+      "target": "ILab.MathematicsLearning.roomFintype",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.collapseRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.includeRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.roomIso",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "target": "ILab.MathematicsLearning.collapseRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "target": "ILab.MathematicsLearning.includeRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "target": "ILab.MathematicsLearning.collapseRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "target": "ILab.MathematicsLearning.includeRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "target": "ILab.MathematicsLearning.collapseRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "target": "ILab.MathematicsLearning.includeRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "target": "ILab.MathematicsLearning.collapseRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "target": "ILab.MathematicsLearning.includeRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "target": "ILab.MathematicsLearning.roomIso",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.OneRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.Room",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.Room.north",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.collapseRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.includeRoom",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.oneRoomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.roomCategory",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.roomIso",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_1",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_2",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_3",
+      "kind": "direct Lean dependency"
+    },
+    {
+      "source": "ILab.MathematicsLearning.walkingEquivalence._proof_5",
+      "target": "ILab.MathematicsLearning.walkingEquivalence._proof_4",
+      "kind": "direct Lean dependency"
+    }
+  ]
+}
