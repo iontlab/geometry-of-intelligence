@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "compiled_declarations": 202,
+  "compiler_dataset_byte_identical": true,
+  "sha256": "78500e9af72f73193ebc5c3286db35e6686208cc8593165c5c1182094678c29a",
+  "protected_repository_paths_unchanged": [
+    "ILab/RQ001",
+    "formalization/rq001",
+    "docs/formalization/rq001",
+    "tools/ExtractGraph.lean",
+    "tools/build-graph.mjs",
+    "lean-toolchain",
+    "lakefile.toml",
+    "lake-manifest.json"
+  ],
+  "baseline_commit": "0dd880d9c66285133c44d0b3e10be2fd3d00436e"
+}

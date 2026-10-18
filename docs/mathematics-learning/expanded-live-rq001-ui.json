@@ -1,0 +1,11 @@
+{
+  "declaration": "ILab.RQ001.capQuotPartialOrder",
+  "tabs": [
+    "Mathematics",
+    "Plain",
+    "Story",
+    "Lean",
+    "Verification"
+  ],
+  "story": true
+}

@@ -1,0 +1,21 @@
+{
+  "links": [
+    {
+      "href": "https://iontlab.org/doku.php?id=mathematics_learning:start",
+      "text": "Mathematics Learning"
+    },
+    {
+      "href": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:start",
+      "text": "Higher Category Theory"
+    },
+    {
+      "href": "https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html",
+      "text": "Lyne Moser"
+    },
+    {
+      "href": "https://www.uni-regensburg.de/mathematik/fakultaet/personen",
+      "text": "Tashi Walde"
+    }
+  ],
+  "text": "\nNew: Mathematics Learning — Beginning with Higher Category Theory, an interactive exploration of the 13-page Lecture Notes: Synthetic Category Theory by Lyne Moser and Tashi Walde, with Story / Fairy Tale, Plain Language, Mathematics, Lean formalization and verification of checked results.\n"
+}

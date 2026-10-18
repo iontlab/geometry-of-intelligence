@@ -1,0 +1,25 @@
+.ilab-explain {font:inherit; color:inherit; max-width:100%; min-width:0; overflow-wrap:anywhere;}
+.ilab-explain button {font:inherit; font-size:.86rem; padding:.3rem .65rem; margin:.2rem .3rem .2rem 0; border:1px solid #46646e; border-radius:3px; background:#15232d; color:#8cdbe4; cursor:pointer;}
+.ilab-explain button[aria-selected="true"] {background:#24434c; color:#fff;}
+.ilab-explain button:focus-visible,.ilab-explain a:focus-visible {outline:2px solid #8cdbe4; outline-offset:3px;}
+.ilab-explain button:disabled {opacity:.5;cursor:default;}
+.ilab-explain[role="tablist"] {display:flex;flex-wrap:wrap;gap:.25rem;}
+.ilab-explain[role="tablist"] button {white-space:nowrap;overflow-wrap:normal;flex-shrink:0;}
+.ilab-explain-inspector {container-type:inline-size;container-name:ilab-inspector;}
+.ilab-explain.ilab-explain-five[role="tablist"] {justify-content:flex-start;}
+.ilab-explain.ilab-explain-five[role="tablist"] button {flex:0 0 auto;width:auto;max-width:100%;margin:0;min-width:0;white-space:normal;overflow-wrap:anywhere;}
+.ilab-explain.ilab-explain-five[role="tablist"] button:nth-child(n+4) {order:2;}
+.ilab-explain.ilab-explain-five[role="tablist"]::after {content:"";order:1;flex-basis:100%;height:0;}
+@container ilab-inspector (min-width:36em) {.ilab-explain.ilab-explain-five[role="tablist"]::after{display:none}}
+.ilab-explain-context {font-size:.86rem;margin:.6rem 0;border:0;}
+.ilab-explain-context p {margin:.2rem 0;}
+.ilab-explain-panel {box-sizing:border-box; width:100%; margin:.6rem 0 1rem; padding:1rem; border-left:2px solid #6cbcc8; background:#111d26;}
+.ilab-explain h4 {font-size:1.05rem; color:inherit; margin:1rem 0 .5rem;}
+.ilab-explain p {line-height:1.6;}
+.ilab-explain dt {font-weight:600;margin-top:.7rem;}
+.ilab-explain dd {margin:.25rem 0 .8rem 1rem;}
+.ilab-explain a {color:#8cdbe4;}
+.ilab-explain .ilab-explain-notice {font-size:.8rem;color:#b4c3ce;margin:.3rem 0;}
+.ilab-explain[hidden] {display:none;}
+@media(max-width:480px){.ilab-explain-panel{padding:.6rem}.ilab-explain dd{margin-left:.4rem}}
+@media print{.ilab-explain{display:none!important}}

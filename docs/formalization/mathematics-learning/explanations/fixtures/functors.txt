@@ -1,0 +1,75 @@
+====== Functors and representable functors ======
+
+**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §1.3, items 1.12–1.19, pp. 6–7.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Selected ordinary-category declarations audited; see Verification below**.
+
+**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. An official public link to this exact primary PDF has not been verified.
+
+**Teaching scope:** Statements and source numbering are retained. Proofs and construction checks assigned as exercises by Lyne Moser and Tashi Walde are intentionally withheld, including Lean solutions and explanatory walkthroughs.
+
+===== Story / Fairy Tale =====
+
+Mira sends the route book to a neighbouring kingdom. The translator assigns every town a destination town and every permit a translated permit. A two-stage route must translate to the composite of its translated stages; a remain-here permit must remain an identity. The translator may merge towns or permits, but cannot ignore these rules.
+
+For a different job, Mira asks what can reach the tower. A route from the orchard to the mill lets her turn every mill-to-tower permit into an orchard-to-tower permit by adding that route first. The direction of this action on collections runs backwards: a route to the mill pulls tower-bound permits back to the orchard.
+
+**Story key:** a coherent translator is a functor; the tower-bound permit collection is a representable functor. **Where the analogy stops:** “translation” need not be reversible, injective or surjective. The backward direction of a representable action reverses a map between collections; it does not conjure an inverse physical journey.
+
+===== Plain Language =====
+
+A functor preserves the structure that makes a category a category. It acts on both objects and arrows. Merely giving a function on objects is insufficient, and an arbitrary assignment of arrows can fail to preserve composition.
+
+Forgetting structure often gives a functor: a linear map still has an underlying function. Adding structure can also be functorial. To add a basepoint, attach a fresh marked element and extend each function by sending the new mark to the new mark. A new element must be genuinely disjoint; choosing an element already in a set would fail for the empty set and would require extra choices.
+
+A contravariant functor reverses arrow direction. Representables are the basic example: a map \(x\to y\) converts maps \(y\to c\) into maps \(x\to c\). We keep the target \(c\) fixed and change the place from which it is tested.
+
+===== Mathematics =====
+
+==== Definition 1.12 ====
+
+A functor \(F:C\to D\) consists of an object function and functions \(C(x,y)\to D(Fx,Fy)\), denoted \(f\mapsto Ff\). Its laws are \(F1_x=1_{Fx}\) and \(F(gf)=F(g)F(f)\). Both sides of the second equality have source \(Fx\) and target \(Fz\) when \(f:x\to y\), \(g:y\to z\).
+
+==== Example 1.13 ====
+
+* Forgetful functors \(\mathbf{Set}_*\to\mathbf{Set}\), \(\mathbf{Vect}_k\to\mathbf{Set}\), and \(\mathbf{Top}\to\mathbf{Set}\) discard structure on objects and keep the underlying maps. Identity and composition laws follow from the corresponding laws of functions.
+  * \(S\mapsto S_+=S\sqcup\{*\}\) sends \(f:S\to T\) to its extension fixing the new mark. Check the functor laws separately on original elements and the new mark.
+  * \(S\mapsto k^{(S)}=\bigoplus_{s\in S}k\) sends a set to finite formal linear combinations of its elements. A function \(f:S\to T\) sends a basis vector \(e_s\) to \(e_{f(s)}\), extended linearly. Basis vectors verify identities and composition, including when different basis vectors have the same image.
+  * The discrete-space functor \(D\) gives \(S\) all subsets as opens. Every function between discrete spaces is continuous, and underlying composition is unchanged.
+  * The indiscrete-space functor \(I\) gives \(S\) only \(\varnothing,S\) as opens. Every function between such spaces is continuous. Thus these assignments also satisfy the functor laws.
+
+==== Proposition 1.14 ====
+
+A functor between strict categories preserves isomorphisms: if \(f\) is invertible, then \(F(f)\) is invertible. **Assigned proof (p. 6): solution withheld.**
+
+==== Construction 1.15 ====
+
+Small strict categories are objects of \(\mathrm{Cat}_s\); its arrows are functors. The identity functor fixes objects and arrows. The composite has \((GF)(x)=G(Fx)\) and \((GF)(f)=G(Ff)\). The analogous huge category \(\mathrm{CAT}_s\) has large strict categories as objects. **The well-definedness checks in Construction 1.15 are assigned exercises (p. 6); solutions are withheld.**
+
+==== Remark 1.16 ====
+
+In the primary's hierarchy, \(\mathrm{Cat}_s\) is locally small but not small, and is an object of the huge category \(\mathrm{CAT}_s\) of large strict categories. Specifying a functor between two small categories uses small collections of functions subject to equations; collecting every small category requires the larger universe. The collection of all categories is never being placed inside itself.
+
+==== Construction 1.17 ====
+
+\(C^{op}\) has the same objects and \(C^{op}(x,y)=C(y,x)\). If \(f^{op}:x\to y\) and \(g^{op}:y\to z\), put \(g^{op}f^{op}=(fg)^{op}\). **The category-law checks are assigned as an exercise (p. 7); the solution is withheld.**
+
+==== Remark 1.18 ====
+
+A contravariant functor from \(C\) to \(D\) means a covariant functor \(C^{op}\to D\). For arrows in \(C\), \(F(gf)=F(f)F(g)\). An opposite arrow is a relabeling in another category; it is not an inverse in \(C\).
+
+==== Construction 1.19 ====
+
+If \(C\) is locally small and \(c\in C\), define
+
+$$h_c=C(-,c):C^{op}\to\mathbf{Set},\qquad h_c(x)=C(x,c).$$
+
+For \(f:x\to y\), \(h_c(f):C(y,c)\to C(x,c)\) takes \(g\) to \(gf\). Local smallness ensures that its values are small sets. **The functor-law checks are assigned as an exercise (p. 7); the solution is withheld.** A functor naturally isomorphic to such an \(h_c\) is called representable.
+
+===== Lean =====
+
+The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Lean type universes are distinguished from the source’s explicit set-universe assumptions. Higher identity types, univalence and full synthetic foundations are not asserted as Lean theorems. Assigned solutions are withheld for 1.14, 1.15, 1.17, 1.19. 
+
+===== Verification =====
+
+The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+
+Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations|Natural transformations]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

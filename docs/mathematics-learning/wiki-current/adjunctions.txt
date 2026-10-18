@@ -1,6 +1,6 @@
 ====== Adjunctions: a natural correspondence of maps ======
 
-**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §3.1, items 3.1–3.3, pp. 11–12.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Not formalized**.
+**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §3.1, items 3.1–3.3, pp. 11–12.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Formalization status is item-specific; see Lean and Verification**.
 
 **Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. An official public link to this exact primary PDF has not been verified.
 
@@ -22,22 +22,26 @@ Naturality means that reindexing the input or mapping the output commutes with t
 
 ===== Mathematics =====
 
-**Definition 3.1.** An adjunction \(L\dashv R\), with \(L:C\to D\), \(R:D\to C\), includes natural transformations \(\eta:1_C\Rightarrow RL\) and \(\varepsilon:LR\Rightarrow1_D\) satisfying
+==== Definition 3.1 ====
+
+An adjunction \(L\dashv R\), with \(L:C\to D\), \(R:D\to C\), includes natural transformations \(\eta:1_C\Rightarrow RL\) and \(\varepsilon:LR\Rightarrow1_D\) satisfying
 
 $$\varepsilon_{Lx}\circ L(\eta_x)=1_{Lx},\qquad R(\varepsilon_y)\circ\eta_{Ry}=1_{Ry}.$$
 
 The first composite is \(Lx\to LRLx\to Lx\) in \(D\); the second is \(Ry\to RLRy\to Ry\) in \(C\). These triangle identities express that translating a map there and back returns it unchanged.
 
-**Example 3.2: all four adjunctions.**
+==== Example 3.2 ====
 
-  * \((-)_{+}\dashv U:\mathbf{Set}_*\to\mathbf{Set}\): a pointed map \(S\sqcup\{*\}\to(X,x_0)\) is uniquely specified by its values on \(S\); the extra point must go to \(x_0\). The unit includes \(S\) into its enlargement. The counit sends the newly added point to the existing basepoint and keeps the original elements.
+* \((-)_{+}\dashv U:\mathbf{Set}_*\to\mathbf{Set}\): a pointed map \(S\sqcup\{*\}\to(X,x_0)\) is uniquely specified by its values on \(S\); the extra point must go to \(x_0\). The unit includes \(S\) into its enlargement. The counit sends the newly added point to the existing basepoint and keeps the original elements.
   * \(k^{(-)}\dashv U:\mathbf{Vect}_k\to\mathbf{Set}\): a function \(S\to U(V)\) extends uniquely by finite linear combinations. The unit sends \(s\) to \(e_s\); the counit evaluates a formal linear combination of vectors in \(V\).
   * \(D\dashv U:\mathbf{Top}\to\mathbf{Set}\): every function from a discrete space is continuous, so \(\mathbf{Top}(D(S),X)\cong\mathbf{Set}(S,U(X))\).
   * The adjunction \(U\dashv I\), with \(U:\mathbf{Top}\to\mathbf{Set}\) and \(I:\mathbf{Set}\to\mathbf{Top}\): every function into an indiscrete space is continuous, so \(\mathbf{Set}(U(X),S)\cong\mathbf{Top}(X,I(S))\).
 
 Thus the topology examples form \(D\dashv U\dashv I\). For the last two, the hom correspondences leave the underlying functions unchanged, so naturality follows from function composition. In the first two, restriction/extension commutes with reindexing generators and postcomposing structure-preserving maps. These explanations verify why the displayed pairs are adjunctions.
 
-**Theorem 3.3.** An adjunction structure on \((L,R)\) is equivalently a family of bijections
+==== Theorem 3.3 ====
+
+An adjunction structure on \((L,R)\) is equivalently a family of bijections
 
 $$\Phi_{x,y}:D(Lx,y)\cong C(x,Ry)$$
 
@@ -51,10 +55,10 @@ Riehl's Definition 4.1.1 starts from the hom-bijection formulation. The primary 
 
 ===== Lean =====
 
-Status: **Not formalized** for this lesson. Mathlib's ordinary adjunction interfaces are relevant future support, but neither the existence of those interfaces nor the displayed calculation is a completed project audit. No synthetic adjunction result is asserted.
+The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Assigned solutions are withheld for 3.3. 
 
 ===== Verification =====
 
-The definition and four example adjunctions remain in scope. The previously published calculations solving the embedded exercises in 3.3 have been withdrawn. The theorem statement and source-supplied formulas are retained with attribution.
+The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences|Equivalences]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

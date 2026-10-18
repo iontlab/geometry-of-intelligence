@@ -1,0 +1,106 @@
+[
+  {
+    "lesson": "foundations",
+    "controls": 2,
+    "tabs": [
+      "Mathematics",
+      "Plain",
+      "Story",
+      "Lean",
+      "Verification"
+    ],
+    "plain": true,
+    "story": true
+  },
+  {
+    "lesson": "size",
+    "controls": 4,
+    "tabs": [
+      "Mathematics",
+      "Plain",
+      "Story",
+      "Lean",
+      "Verification"
+    ],
+    "plain": true,
+    "story": true
+  },
+  {
+    "lesson": "categories",
+    "controls": 7,
+    "tabs": [
+      "Mathematics",
+      "Plain",
+      "Story",
+      "Lean",
+      "Verification"
+    ],
+    "plain": true,
+    "story": true
+  },
+  {
+    "lesson": "functors",
+    "controls": 8,
+    "tabs": [
+      "Mathematics",
+      "Plain",
+      "Story",
+      "Lean",
+      "Verification"
+    ],
+    "plain": true,
+    "story": true
+  },
+  {
+    "lesson": "natural_transformations",
+    "controls": 9,
+    "tabs": [
+      "Mathematics",
+      "Plain",
+      "Story",
+      "Lean",
+      "Verification"
+    ],
+    "plain": true,
+    "story": true
+  },
+  {
+    "lesson": "yoneda",
+    "controls": 7,
+    "tabs": [
+      "Mathematics",
+      "Plain",
+      "Story",
+      "Lean",
+      "Verification"
+    ],
+    "plain": true,
+    "story": true
+  },
+  {
+    "lesson": "adjunctions",
+    "controls": 3,
+    "tabs": [
+      "Mathematics",
+      "Plain",
+      "Story",
+      "Lean",
+      "Verification"
+    ],
+    "plain": true,
+    "story": true
+  },
+  {
+    "lesson": "equivalences",
+    "controls": 7,
+    "tabs": [
+      "Mathematics",
+      "Plain",
+      "Story",
+      "Lean",
+      "Verification"
+    ],
+    "plain": true,
+    "story": true
+  }
+]

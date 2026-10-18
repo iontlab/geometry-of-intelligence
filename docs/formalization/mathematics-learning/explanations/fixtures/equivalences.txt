@@ -1,0 +1,67 @@
+====== Equivalences and the walking isomorphism ======
+
+**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §3 introduction and §3.2, items 3.4–3.9, pp. 11–13.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Selected ordinary-category declarations audited; see Verification below**.
+
+**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. An official public link to this exact primary PDF has not been verified.
+
+===== Story / Fairy Tale =====
+
+One royal register has a single room entry. Another records a north room and a south room, with exactly one permit between each ordered pair, including each room and itself. The north-to-south and south-to-north permits undo one another. Every possible route between fixed rooms therefore agrees with the unique permit in the register.
+
+Mira keeps only the north room. She loses a name from the object list, but every omitted room can be reached by an invertible permit, and every permit between retained rooms is still represented exactly. The two registers are equivalent even though their object lists have different lengths.
+
+**Story key:** the single-room register is \([0]\); the two-room register is the walking isomorphism; retaining north is the inclusion of object 0. **Where the analogy stops:** this conclusion depends on singleton hom sets. A building with several genuinely different loops or routes would have more structure, so discarding a room would require another argument.
+
+===== Plain Language =====
+
+A strict isomorphism of categories must match their object sets bijectively. An equivalence allows redundant isomorphic copies of an object. It needs a functor in the other direction and compatible isomorphisms between the round trips and the identity functors.
+
+Full faithfulness says that each map between two images corresponds to exactly one original map with those endpoints. Essential surjectivity says that every target object is isomorphic to an image. Neither condition alone suffices: the inclusion of one object into a discrete two-object category is fully faithful but misses the other isomorphism class; collapsing a one-object category with a nontrivial group of automorphisms to \([0]\) is essentially surjective but loses maps.
+
+These are statements about the specified categories and functors. Equal object names, isomorphic objects, and equivalent categories are different levels of comparison in ordinary foundations. The later synthetic motivation addresses such distinctions in a different foundational setting; it does not justify erasing them here.
+
+===== Mathematics =====
+
+==== Definition 3.4 ====
+
+A functor \(F:C\to D\) is an equivalence when there is \(G:D\to C\) and natural isomorphisms \(\eta:1_C\cong GF\), \(\varepsilon:FG\cong1_D\). In contrast, a strict isomorphism requires \(GF=1_C\) and \(FG=1_D\) as functors.
+
+==== Example 3.5 ====
+
+A strict isomorphism gives an equivalence using identity comparison maps. An adjunction with invertible unit and counit gives an equivalence in each direction; it is an adjoint equivalence. Definition 3.4 does not demand the triangle identities. Arbitrary chosen comparison isomorphisms need not satisfy them.
+
+The source also cites the fact that every ordinary equivalence can be promoted to an adjoint equivalence, without using or proving that fact in this installment. Riehl Corollary 4.3.6 (supplied edition, printed p. 147, PDF p. 167) permits replacing one comparison isomorphism so the triangles hold. We record this distinction without adding the calculus of adjunctions to the lesson.
+
+==== Definition 3.6 ====
+
+Essential surjectivity of \(F\) means that for each \(d\in D\) there exist \(c\in C\) and an isomorphism \(Fc\cong d\). It is weaker than literal surjectivity of the object function.
+
+==== Theorem 3.7 ====
+
+An ordinary functor is an equivalence exactly when it is fully faithful and essentially surjective, in the usual classical setting with the required choice available. **The primary states this theorem and defers its proof to a later lecture. The following is an independent supplementary proof sketch, not a proof supplied on its p. 12.** Riehl Theorem 1.5.9 explicitly flags the choice assumption.
+
+For the forward direction, \(\varepsilon_d:FGd\cong d\) gives essential surjectivity. Naturality of \(\eta\) shows that \(Ff=Fg\) implies \(f=g\), so \(F\) is faithful. The same argument with \(\varepsilon\) shows that \(G\) is faithful. Given \(k:Fx\to Fy\), put \(h=\eta_y^{-1}G(k)\eta_x\). Naturality of \(\eta\) at \(h\) and cancellation of \(\eta_x\) give \(GF(h)=G(k)\). Faithfulness of \(G\) gives \(F(h)=k\), proving fullness. This argument does not assume triangle identities for the initially chosen isomorphisms.
+
+For the reverse direction, choose for each \(d\) an object \(c_d\) and an isomorphism \(\epsilon_d:F(c_d)\to d\). The needed family of choices is where the classical choice assumption enters, at a universe level containing the relevant object collections. Define \(G(d)=c_d\), and for \(k:d\to e\), let \(G(k)\) be the unique arrow whose image under \(F\) is \(\epsilon_e^{-1}k\epsilon_d\). Fullness supplies it and faithfulness proves uniqueness. The identity and composition equations follow by applying \(F\), canceling adjacent \(\epsilon\)'s and then using faithfulness. The \(\epsilon_d\)'s are natural by construction. Lift \(\epsilon_{Fc}^{-1}\) to \(\eta_c:c\to GFc\); full faithfulness makes it an isomorphism, and the same image-and-cancellation calculation proves naturality. This constructs the required equivalence.
+
+Without choosing such witnesses, the ordinary existential statement does not automatically provide a specified quasi-inverse in a constructive setting. The supplementary synthetic draft's “strongly surjective” supplies section data on groupoid cores (Definition 6.3.1, PDF p. 191). Its theorem must not be substituted for this ordinary theorem without explaining the different data and foundations.
+
+==== Construction 3.8 ====
+
+The walking isomorphism \(\mathbb I\) has distinct objects \(0,1\) and exactly one morphism in each hom set. The two nonidentity arrows \(u:0\to1\), \(v:1\to0\) satisfy \(vu=1_0\), \(uv=1_1\). Composition is uniquely determined by its endpoints; this proves the category laws.
+
+==== Proposition 3.9 ====
+
+Let \(J:[0]\to\mathbb I\) select 0, and let \(P:\mathbb I\to[0]\) be the unique functor. Then \(PJ=1_{[0]}\). Define \(JP\Rightarrow1_{\mathbb I}\) with components \(1_0\) at 0 and \(u\) at 1. Both are isomorphisms; every naturality square commutes because its endpoints determine a unique arrow. Hence \(J\) is an equivalence, without needing Theorem 3.7.
+
+Equivalently, it is fully faithful because the only source hom set and \(\mathbb I(0,0)\) are singletons, and essentially surjective because **both** \(0\cong0\) and \(0\cong1\). The primary's printed proof mentions only \(0\cong0\) on that line; the second case is required and follows from its construction. The object function is not surjective and no strict isomorphism can exist between a one-object and a two-object category.
+
+===== Lean =====
+
+The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. 
+
+===== Verification =====
+
+The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+
+Return: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Coverage and proof-status map]]

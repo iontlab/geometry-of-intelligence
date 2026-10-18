@@ -1,0 +1,47 @@
+[
+  {
+    "path": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  },
+  {
+    "path": "ILab/MathematicsLearning/CategoryConstructions.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  },
+  {
+    "path": "ILab/MathematicsLearning/CategorySize.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  },
+  {
+    "path": "ILab/MathematicsLearning/PathAndIdentity.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  },
+  {
+    "path": "ILab/MathematicsLearning/SetUniverses.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  },
+  {
+    "path": "ILab/MathematicsLearning/SourceLaws.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  },
+  {
+    "path": "ILab/MathematicsLearning/TerminalCategory.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  },
+  {
+    "path": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  },
+  {
+    "path": "ILab/MathematicsLearning/YonedaAdjunction.lean",
+    "source_ref": "ace59a04225eb98a769edb1943378d33a91aa204",
+    "public_sha256_matches": true
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "rq001_handlers_byte_identical": true,
+  "baseline_action_sha256": "2ea9b27338c67d1474a4dd76a0a459e6b435c5ccdddd59f65aad6e8a5ab99756",
+  "extended_action_sha256": "dfbe659b113f49001751dc340c935a8ee0f9169fbeff12715f4eac3272416b91",
+  "learning_php_sha256": "4612985e2e23acb56d0532eaf2a6b28247e90727034f3d63a366e99558133d91",
+  "scope": "Eight learning chapters only; GET current show, ACL and exact release/source bindings; editor-only inert digest capture."
+}

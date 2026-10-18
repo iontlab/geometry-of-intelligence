@@ -4,7 +4,7 @@
   "extract_command": "lake env lean tools/ExtractLearningGraph.lean",
   "compiled_declarations": 225,
   "compiled_sha256": "29b5e6f30792e410993473f934f5ce36075e763b6d2ec754b52aedc28688b81e",
-  "clean_build_log_sha256": "2c776e7deed4ef49ea0ebceca42eb5426a2b0ac150504150c71584af99be5493",
+  "clean_build_log_sha256": "e9897df3683fc0dc4ac8b0cb136f9c372727e7be7916230520d52e3ae2d6715c",
   "allowed_axioms": [
     "propext",
     "Classical.choice",

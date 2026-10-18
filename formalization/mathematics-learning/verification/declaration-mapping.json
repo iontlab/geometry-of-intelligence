@@ -1,196 +1,2871 @@
 [
   {
-    "declaration": "ILab.MathematicsLearning.identity_padded_composite",
-    "kind": "theorem",
-    "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
-    "line": 22,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/BasicCategoryTheory.lean#L22",
-    "primary_items": "1.5",
-    "mathematical_statement": "A composable pair is unchanged after inserting identities",
-    "lesson": "categories",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
-  },
-  {
-    "declaration": "ILab.MathematicsLearning.inverse_unique",
-    "kind": "theorem",
-    "source": "ILab/MathematicsLearning/BasicCategoryTheory.lean",
-    "line": 27,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/BasicCategoryTheory.lean#L27",
-    "primary_items": "1.11",
-    "mathematical_statement": "A right inverse and a left inverse of the same arrow agree",
-    "lesson": "categories",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
-  },
-  {
-    "declaration": "ILab.MathematicsLearning.Room",
-    "kind": "inductive",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 16,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
-    "primary_items": "3.8",
-    "mathematical_statement": "Inductive object type with north and south constructors",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
-  },
-  {
-    "declaration": "ILab.MathematicsLearning.roomFintype",
-    "kind": "instance",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 21,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L21",
-    "primary_items": "3.8",
-    "mathematical_statement": "Complete finite enumeration of the two objects",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
+    "declaration": "ILab.MathematicsLearning.AdjunctionData",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L31",
+    "primary_items": [],
+    "signature": "{C : Type u_1} →\n  [inst : CategoryTheory.Category.{u_2, u_1} C] →\n    {D : Type u_3} →\n      [inst_1 : CategoryTheory.Category.{u_4, u_3} D] →\n        CategoryTheory.Functor C D → CategoryTheory.Functor D C → Type (max (max (max u_1 u_3) u_2) u_4)",
     "axioms": [
       "Classical.choice",
       "Quot.sound",
       "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Adjunction"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.CategoryFunctor",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L74",
+    "primary_items": [
+      "1.12"
+    ],
+    "signature": "(C : Type u_1) →\n  [CategoryTheory.Category.{u_2, u_1} C] →\n    (D : Type u_3) → [CategoryTheory.Category.{u_4, u_3} D] → Type (max u_2 u_4 u_1 u_3)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.ComponentwiseNaturalIsomorphism",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L95",
+    "primary_items": [
+      "1.22"
+    ],
+    "signature": "{C : Type u} →\n  [inst : CategoryTheory.Category.{v, u} C] →\n    {D : Type u'} → [inst_1 : CategoryTheory.Category.{v', u'} D] → {F G : CategoryTheory.Functor C D} → (F ⟶ G) → Prop",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "CategoryTheory.IsIso",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.NatTrans.app"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.ContravariantFunctor",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L88",
+    "primary_items": [
+      "1.18"
+    ],
+    "signature": "(C : Type u) →\n  [CategoryTheory.Category.{v, u} C] → (D : Type u') → [CategoryTheory.Category.{v', u'} D] → Type (max v v' u u')",
+    "axioms": [
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "Opposite",
+      "CategoryTheory.Category.opposite"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.EssentiallySurjective",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L50",
+    "primary_items": [
+      "3.6"
+    ],
+    "signature": "{C : Type u_1} →\n  {D : Type u_2} →\n    [inst : CategoryTheory.Category.{u_3, u_1} C] →\n      [inst_1 : CategoryTheory.Category.{u_4, u_2} D] → CategoryTheory.Functor C D → Prop",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Functor.EssSurj"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.InvertibleMorphism",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L67",
+    "primary_items": [],
+    "signature": "{C : Type u_1} → [inst : CategoryTheory.Category.{u_2, u_1} C] → {X Y : C} → (X ⟶ Y) → Prop",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.IsIso"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.IsHugeSet",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L49",
+    "primary_items": [
+      "1.4"
+    ],
+    "signature": "ILab.MathematicsLearning.UniverseHierarchy → ZFSet.{u} → Prop",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "ZFSet",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.IsLargeSet",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L48",
+    "primary_items": [
+      "1.4"
+    ],
+    "signature": "ILab.MathematicsLearning.UniverseHierarchy → ZFSet.{u} → Prop",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "ZFSet",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.IsSmallSet",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L47",
+    "primary_items": [
+      "1.4"
+    ],
+    "signature": "ILab.MathematicsLearning.UniverseHierarchy → ZFSet.{u} → Prop",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "ZFSet",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.Isomorphism",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L66",
+    "primary_items": [
+      "1.9"
+    ],
+    "signature": "{C : Type u_1} → [CategoryTheory.Category.{u_2, u_1} C] → C → C → Type u_2",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Iso"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.LocallySmallCategory",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L34",
+    "primary_items": [
+      "1.7"
+    ],
+    "signature": "(C : Type u) → [CategoryTheory.Category.{v, u} C] → Prop",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.LocallySmall"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.NaturalTransformation",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L92",
+    "primary_items": [
+      "1.20"
+    ],
+    "signature": "{C : Type u_1} →\n  [inst : CategoryTheory.Category.{u_2, u_1} C] →\n    {D : Type u_3} →\n      [inst_1 : CategoryTheory.Category.{u_4, u_3} D] →\n        CategoryTheory.Functor C D → CategoryTheory.Functor C D → Type (max u_1 u_4)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.NatTrans"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.ObjectsIsomorphic",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SourceLaws.lean#L14",
+    "primary_items": [
+      "1.9"
+    ],
+    "signature": "{C : Type u} → [CategoryTheory.Category.{v, u} C] → C → C → Prop",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Nonempty",
+      "CategoryTheory.Iso"
     ]
   },
   {
     "declaration": "ILab.MathematicsLearning.OneRoom",
     "kind": "inductive",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 25,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
-    "primary_items": "1.25",
-    "mathematical_statement": "Inductive object type with one constructor",
-    "lesson": "natural_transformations",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25",
+    "primary_items": [
+      "1.25"
+    ],
+    "signature": "Type",
+    "axioms": [],
+    "external_dependencies": []
   },
   {
-    "declaration": "ILab.MathematicsLearning.roomCategory",
-    "kind": "instance",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 29,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L29",
-    "primary_items": "3.8",
-    "mathematical_statement": "Small category with singleton hom types on Room",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
+    "declaration": "ILab.MathematicsLearning.PathGroupoid",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L22",
+    "primary_items": [],
+    "signature": "Type u_1 → Type u_1",
+    "axioms": [],
+    "external_dependencies": [
+      "FundamentalGroupoid"
+    ]
   },
   {
-    "declaration": "ILab.MathematicsLearning.oneRoomCategory",
-    "kind": "instance",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 34,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L34",
-    "primary_items": "1.25",
-    "mathematical_statement": "Small category with singleton hom types on OneRoom",
-    "lesson": "natural_transformations",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
-  },
-  {
-    "declaration": "ILab.MathematicsLearning.roomIso",
-    "kind": "definition",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 40,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L40",
-    "primary_items": "3.8",
-    "mathematical_statement": "Explicit isomorphism between each ordered pair of rooms",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
-  },
-  {
-    "declaration": "ILab.MathematicsLearning.includeRoom",
-    "kind": "definition",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 45,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L45",
-    "primary_items": "3.9",
-    "mathematical_statement": "Functor selecting north from the one-object category",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
-  },
-  {
-    "declaration": "ILab.MathematicsLearning.collapseRoom",
-    "kind": "definition",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 50,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L50",
-    "primary_items": "3.9",
-    "mathematical_statement": "Functor collapsing both rooms to the sole object",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
-  },
-  {
-    "declaration": "ILab.MathematicsLearning.walkingEquivalence",
-    "kind": "definition",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 55,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55",
-    "primary_items": "3.4 / 3.9",
-    "mathematical_statement": "Explicit bundled adjoint equivalence, including a triangle law",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
+    "declaration": "ILab.MathematicsLearning.QuasiInverseData",
+    "kind": "structure",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L35",
+    "primary_items": [
+      "3.4"
+    ],
+    "signature": "{C : Type u} →\n  [inst : CategoryTheory.Category.{v, u} C] →\n    {D : Type u'} →\n      [inst_1 : CategoryTheory.Category.{v', u'} D] → CategoryTheory.Functor C D → Type (max (max (max u u') v) v')",
     "axioms": [
       "Classical.choice",
       "Quot.sound",
       "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.Room",
+    "kind": "inductive",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16",
+    "primary_items": [
+      "3.8"
+    ],
+    "signature": "Type",
+    "axioms": [],
+    "external_dependencies": []
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetUniverse",
+    "kind": "structure",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L14",
+    "primary_items": [
+      "1.1"
+    ],
+    "signature": "ZFSet.{u} → Prop",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "ZFSet"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallStrictCategory",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L25",
+    "primary_items": [
+      "1.7"
+    ],
+    "signature": "Type u → Type (u + 1)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.SmallCategory"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.StrictCategory",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L20",
+    "primary_items": [
+      "1.5",
+      "1.6"
+    ],
+    "signature": "Type u → Type (max u (v + 1))",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.TerminalCategory",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L12",
+    "primary_items": [
+      "1.25"
+    ],
+    "signature": "Type u",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Discrete",
+      "PUnit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.UniverseHierarchy",
+    "kind": "structure",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L34",
+    "primary_items": [
+      "1.3"
+    ],
+    "signature": "Type (u + 1)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": []
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.addBasepoint",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L82",
+    "primary_items": [
+      "1.13"
+    ],
+    "signature": "CategoryTheory.Functor (Type u_1) Pointed",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Functor",
+      "CategoryTheory.types",
+      "Pointed",
+      "Pointed.largeCategory",
+      "typeToPointed"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.adjunctionCounit",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SourceLaws.lean#L18",
+    "primary_items": [
+      "3.1"
+    ],
+    "signature": "{C : Type u_1} →\n  [inst : CategoryTheory.Category.{u_2, u_1} C] →\n    {D : Type u_3} →\n      [inst_1 : CategoryTheory.Category.{u_4, u_3} D] →\n        {F : CategoryTheory.Functor C D} →\n          {G : CategoryTheory.Functor D C} → (F ⊣ G) → (G.comp F ⟶ CategoryTheory.Functor.id D)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Adjunction",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Adjunction.counit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.adjunctionLeftTriangle",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L32",
+    "primary_items": [
+      "3.1"
+    ],
+    "signature": "∀ {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C] {D : Type u_3}\n  [inst_1 : CategoryTheory.Category.{u_4, u_3} D] {F : CategoryTheory.Functor C D} {G : CategoryTheory.Functor D C}\n  (self : F ⊣ G) (X : C),\n  CategoryTheory.CategoryStruct.comp (F.map (self.unit.app X)) (self.counit.app (F.obj X)) =\n    CategoryTheory.CategoryStruct.id (F.obj X)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Adjunction",
+      "Eq",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Adjunction.unit",
+      "CategoryTheory.Adjunction.counit",
+      "CategoryTheory.CategoryStruct.id",
+      "CategoryTheory.Adjunction.left_triangle_components"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.adjunctionRightTriangle",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L33",
+    "primary_items": [
+      "3.1"
+    ],
+    "signature": "∀ {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C] {D : Type u_3}\n  [inst_1 : CategoryTheory.Category.{u_4, u_3} D] {F : CategoryTheory.Functor C D} {G : CategoryTheory.Functor D C}\n  (self : F ⊣ G) (Y : D),\n  CategoryTheory.CategoryStruct.comp (self.unit.app (G.obj Y)) (G.map (self.counit.app Y)) =\n    CategoryTheory.CategoryStruct.id (G.obj Y)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Adjunction",
+      "Eq",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Adjunction.unit",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.Adjunction.counit",
+      "CategoryTheory.CategoryStruct.id",
+      "CategoryTheory.Adjunction.right_triangle_components"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.adjunctionToEquivalence",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L48",
+    "primary_items": [
+      "3.5"
+    ],
+    "signature": "{C : Type u_1} →\n  [inst : CategoryTheory.Category.{u_2, u_1} C] →\n    {D : Type u_3} →\n      [inst_1 : CategoryTheory.Category.{u_4, u_3} D] →\n        {F : CategoryTheory.Functor C D} →\n          {G : CategoryTheory.Functor D C} →\n            (adj : F ⊣ G) →\n              [∀ (X : C), CategoryTheory.IsIso (adj.unit.app X)] →\n                [∀ (Y : D), CategoryTheory.IsIso (adj.counit.app Y)] → C ≌ D",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Adjunction",
+      "CategoryTheory.IsIso",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Adjunction.unit",
+      "CategoryTheory.Adjunction.counit",
+      "CategoryTheory.Equivalence",
+      "CategoryTheory.Adjunction.toEquivalence"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.adjunctionUnit",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SourceLaws.lean#L17",
+    "primary_items": [
+      "3.1"
+    ],
+    "signature": "{C : Type u_1} →\n  [inst : CategoryTheory.Category.{u_2, u_1} C] →\n    {D : Type u_3} →\n      [inst_1 : CategoryTheory.Category.{u_4, u_3} D] →\n        {F : CategoryTheory.Functor C D} →\n          {G : CategoryTheory.Functor D C} → (F ⊣ G) → (CategoryTheory.Functor.id C ⟶ F.comp G)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Adjunction",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Adjunction.unit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.adjunction_counit_naturality",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SourceLaws.lean#L24",
+    "primary_items": [
+      "3.1"
+    ],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  {F : CategoryTheory.Functor C D} {G : CategoryTheory.Functor D C} (a : F ⊣ G) {X Y : D} (f : X ⟶ Y),\n  CategoryTheory.CategoryStruct.comp (F.map (G.map f)) (a.counit.app Y) =\n    CategoryTheory.CategoryStruct.comp (a.counit.app X) f",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Adjunction",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Adjunction.counit",
+      "CategoryTheory.NatTrans.naturality"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.adjunction_unit_naturality",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SourceLaws.lean#L20",
+    "primary_items": [
+      "3.1"
+    ],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  {F : CategoryTheory.Functor C D} {G : CategoryTheory.Functor D C} (a : F ⊣ G) {X Y : C} (f : X ⟶ Y),\n  CategoryTheory.CategoryStruct.comp f (a.unit.app Y) =\n    CategoryTheory.CategoryStruct.comp (a.unit.app X) (G.map (F.map f))",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Adjunction",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Adjunction.unit",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.NatTrans.naturality"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.basepointAdjunction",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L100",
+    "primary_items": [
+      "3.2"
+    ],
+    "signature": "typeToPointed ⊣ CategoryTheory.forget Pointed",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Adjunction",
+      "CategoryTheory.types",
+      "Pointed",
+      "Pointed.largeCategory",
+      "typeToPointed",
+      "CategoryTheory.forget",
+      "Subtype",
+      "Pointed.X",
+      "Eq",
+      "Pointed.point",
+      "Pointed.instFunLikeSubtypeForallXEqPoint",
+      "Pointed.hasForget",
+      "typeToPointedForgetAdjunction"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.categoryAssociativity",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L23",
+    "primary_items": [
+      "1.5"
+    ],
+    "signature": "∀ {obj : Type u_1} [self : CategoryTheory.Category.{u_2, u_1} obj] {W X Y Z : obj} (f : W ⟶ X) (g : X ⟶ Y) (h : Y ⟶ Z),\n  CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp f g) h =\n    CategoryTheory.CategoryStruct.comp f (CategoryTheory.CategoryStruct.comp g h)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.Category.assoc"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.categoryIsoToEquivalence",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L107",
+    "primary_items": [
+      "3.5"
+    ],
+    "signature": "{C D : CategoryTheory.Cat} → (C ≅ D) → (↑C ≌ ↑D)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Cat",
+      "CategoryTheory.Iso",
+      "CategoryTheory.Cat.category",
+      "CategoryTheory.Equivalence",
+      "CategoryTheory.Bundled.α",
+      "CategoryTheory.Category",
+      "CategoryTheory.Cat.str",
+      "CategoryTheory.Cat.equivOfIso"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.categoryLeftIdentity",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L21",
+    "primary_items": [
+      "1.5"
+    ],
+    "signature": "∀ {obj : Type u_1} [self : CategoryTheory.Category.{u_2, u_1} obj] {X Y : obj} (f : X ⟶ Y),\n  CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.id X) f = f",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.CategoryStruct.id",
+      "CategoryTheory.Category.id_comp"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.categoryRightIdentity",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L22",
+    "primary_items": [
+      "1.5"
+    ],
+    "signature": "∀ {obj : Type u_1} [self : CategoryTheory.Category.{u_2, u_1} obj] {X Y : obj} (f : X ⟶ Y),\n  CategoryTheory.CategoryStruct.comp f (CategoryTheory.CategoryStruct.id Y) = f",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.CategoryStruct.id",
+      "CategoryTheory.Category.comp_id"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.collapseRoom",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L50",
+    "primary_items": [],
+    "signature": "CategoryTheory.Functor ILab.MathematicsLearning.Room ILab.MathematicsLearning.OneRoom",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Functor",
+      "CategoryTheory.Functor.mk",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "PUnit.unit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.collection_of_small_sets_not_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L58",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "∀ (H : ILab.MathematicsLearning.UniverseHierarchy), ¬ILab.MathematicsLearning.IsSmallSet H H.small",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Not"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.contravariant_composition",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SourceLaws.lean#L38",
+    "primary_items": [
+      "1.18"
+    ],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  (F : CategoryTheory.Functor Cᵒᵖ D) {X Y Z : C} (f : X ⟶ Y) (g : Y ⟶ Z),\n  F.map (CategoryTheory.CategoryStruct.comp f g).op = CategoryTheory.CategoryStruct.comp (F.map g.op) (F.map f.op)",
+    "axioms": [
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "Opposite",
+      "CategoryTheory.Category.opposite",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "Opposite.op",
+      "CategoryTheory.Functor.map",
+      "Quiver.Hom.op",
+      "CategoryTheory.CategoryStruct.comp",
+      "Eq.mpr",
+      "CategoryTheory.CategoryStruct.opposite",
+      "id",
+      "congrArg",
+      "Quiver.opposite",
+      "CategoryTheory.op_comp",
+      "CategoryTheory.Functor.map_comp",
+      "Eq.refl"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.cyclicTwoSigns",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L34",
+    "primary_items": [
+      "intro.sip"
+    ],
+    "signature": "Multiplicative (ZMod 2) ≃* ℤˣ",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "MulEquiv",
+      "Multiplicative",
+      "ZMod",
+      "OfNat.ofNat",
+      "Nat",
+      "instOfNatNat",
+      "Units",
+      "Int",
+      "Int.instMonoid",
+      "Multiplicative.mul",
+      "Distrib.toAdd",
+      "instDistribOfSemiring",
+      "CommSemiring.toSemiring",
+      "CommRing.toCommSemiring",
+      "ZMod.commRing",
+      "Units.instMul",
+      "MulEquiv.mk",
+      "Equiv.mk",
+      "HPow.hPow",
+      "instHPow",
+      "Int.instUnitsPow",
+      "instModuleZModOfNatNatAdditiveUnitsInt",
+      "Neg.neg",
+      "Units.instNeg",
+      "NonUnitalNonAssocRing.toHasDistribNeg",
+      "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+      "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+      "CommRing.toNonUnitalCommRing",
+      "Int.instCommRing",
+      "One.toOfNat1",
+      "Units.instOne",
+      "DFunLike.coe",
+      "Equiv",
+      "EquivLike.toFunLike",
+      "Equiv.instEquivLike",
+      "Multiplicative.toAdd",
+      "Multiplicative.ofAdd",
+      "ite",
+      "Eq",
+      "Units.instDecidableEq",
+      "Int.instDecidableEq",
+      "Zero.toOfNat0",
+      "MulZeroClass.toZero",
+      "instMulZeroClassOfSemiring",
+      "AddMonoidWithOne.toOne",
+      "AddGroupWithOne.toAddMonoidWithOne",
+      "Ring.toAddGroupWithOne",
+      "CommRing.toRing"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.cyclic_two_one_maps_to_neg_one",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L54",
+    "primary_items": [
+      "intro.sip"
+    ],
+    "signature": "ILab.MathematicsLearning.cyclicTwoSigns (Multiplicative.ofAdd 1) = -1",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Eq",
+      "Units",
+      "Int",
+      "Int.instMonoid",
+      "DFunLike.coe",
+      "MulEquiv",
+      "Multiplicative",
+      "ZMod",
+      "OfNat.ofNat",
+      "Nat",
+      "instOfNatNat",
+      "Multiplicative.mul",
+      "Distrib.toAdd",
+      "instDistribOfSemiring",
+      "CommSemiring.toSemiring",
+      "CommRing.toCommSemiring",
+      "ZMod.commRing",
+      "Units.instMul",
+      "EquivLike.toFunLike",
+      "MulEquiv.instEquivLike",
+      "Equiv",
+      "Equiv.instEquivLike",
+      "Multiplicative.ofAdd",
+      "One.toOfNat1",
+      "AddMonoidWithOne.toOne",
+      "AddGroupWithOne.toAddMonoidWithOne",
+      "Ring.toAddGroupWithOne",
+      "CommRing.toRing",
+      "Neg.neg",
+      "Units.instNeg",
+      "NonUnitalNonAssocRing.toHasDistribNeg",
+      "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+      "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+      "CommRing.toNonUnitalCommRing",
+      "Int.instCommRing",
+      "Units.instOne",
+      "of_eq_true",
+      "Eq.trans",
+      "True",
+      "congrFun'",
+      "congrArg",
+      "uzpow_one",
+      "instModuleZModOfNatNatAdditiveUnitsInt",
+      "eq_self"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.cyclic_two_zero_maps_to_one",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L50",
+    "primary_items": [
+      "intro.sip"
+    ],
+    "signature": "ILab.MathematicsLearning.cyclicTwoSigns (Multiplicative.ofAdd 0) = 1",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Eq",
+      "Units",
+      "Int",
+      "Int.instMonoid",
+      "DFunLike.coe",
+      "MulEquiv",
+      "Multiplicative",
+      "ZMod",
+      "OfNat.ofNat",
+      "Nat",
+      "instOfNatNat",
+      "Multiplicative.mul",
+      "Distrib.toAdd",
+      "instDistribOfSemiring",
+      "CommSemiring.toSemiring",
+      "CommRing.toCommSemiring",
+      "ZMod.commRing",
+      "Units.instMul",
+      "EquivLike.toFunLike",
+      "MulEquiv.instEquivLike",
+      "Equiv",
+      "Equiv.instEquivLike",
+      "Multiplicative.ofAdd",
+      "Zero.toOfNat0",
+      "MulZeroClass.toZero",
+      "instMulZeroClassOfSemiring",
+      "One.toOfNat1",
+      "Units.instOne",
+      "of_eq_true",
+      "Eq.trans",
+      "True",
+      "congrFun'",
+      "congrArg",
+      "uzpow_zero",
+      "instModuleZModOfNatNatAdditiveUnitsInt",
+      "Neg.neg",
+      "Units.instNeg",
+      "NonUnitalNonAssocRing.toHasDistribNeg",
+      "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+      "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+      "CommRing.toNonUnitalCommRing",
+      "Int.instCommRing",
+      "eq_self"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.discreteAdjunction",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L103",
+    "primary_items": [
+      "3.2"
+    ],
+    "signature": "TopCat.discrete ⊣ CategoryTheory.forget TopCat",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Adjunction",
+      "CategoryTheory.types",
+      "TopCat",
+      "TopCat.instCategory",
+      "TopCat.discrete",
+      "CategoryTheory.forget",
+      "ContinuousMap",
+      "TopCat.carrier",
+      "TopCat.str",
+      "ContinuousMap.instFunLike",
+      "TopCat.instConcreteCategoryContinuousMapCarrier",
+      "TopCat.adj₁"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.discreteTopology",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L84",
+    "primary_items": [
+      "1.13"
+    ],
+    "signature": "CategoryTheory.Functor (Type u_1) TopCat",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Functor",
+      "CategoryTheory.types",
+      "TopCat",
+      "TopCat.instCategory",
+      "TopCat.discrete"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.equality_substitution",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L62",
+    "primary_items": [
+      "intro.sip"
+    ],
+    "signature": "∀ {A : Sort u} {x y : A}, x = y → ∀ (P : A → Prop), P x ↔ P y",
+    "axioms": [],
+    "external_dependencies": [
+      "Eq",
+      "Iff",
+      "Eq.casesOn",
+      "HEq",
+      "Eq.ndrec",
+      "Eq.refl",
+      "Iff.rfl",
+      "Eq.symm",
+      "HEq.refl"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.equality_transport",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L66",
+    "primary_items": [
+      "intro.sip"
+    ],
+    "signature": "{A : Sort u} → {x y : A} → x = y → (P : A → Sort u_1) → P x → P y",
+    "axioms": [],
+    "external_dependencies": [
+      "Eq",
+      "Eq.rec",
+      "id"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.equivalenceToQuasiInverse",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L40",
+    "primary_items": [
+      "3.4"
+    ],
+    "signature": "{C : Type u} →\n  [inst : CategoryTheory.Category.{v, u} C] →\n    {D : Type u'} →\n      [inst_1 : CategoryTheory.Category.{v', u'} D] → (e : C ≌ D) → ILab.MathematicsLearning.QuasiInverseData e.functor",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Equivalence",
+      "CategoryTheory.Equivalence.functor",
+      "CategoryTheory.Equivalence.inverse",
+      "CategoryTheory.Equivalence.unitIso",
+      "CategoryTheory.Equivalence.counitIso"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.essentially_surjective_iff",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SourceLaws.lean#L44",
+    "primary_items": [
+      "3.6"
+    ],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  (F : CategoryTheory.Functor C D), F.EssSurj ↔ ∀ (Y : D), ∃ X, Nonempty (F.obj X ≅ Y)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "Iff",
+      "CategoryTheory.Functor.EssSurj",
+      "Exists",
+      "Nonempty",
+      "CategoryTheory.Iso",
+      "CategoryTheory.Functor.obj",
+      "Iff.intro",
+      "CategoryTheory.Functor.EssSurj.mem_essImage",
+      "CategoryTheory.Functor.EssSurj.mk"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.forgetPoint",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L79",
+    "primary_items": [
+      "1.13"
+    ],
+    "signature": "CategoryTheory.Functor Pointed (Type u)",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Functor",
+      "Pointed",
+      "Pointed.largeCategory",
+      "CategoryTheory.types",
+      "CategoryTheory.forget",
+      "Subtype",
+      "Pointed.X",
+      "Eq",
+      "Pointed.point",
+      "Pointed.instFunLikeSubtypeForallXEqPoint",
+      "Pointed.hasForget"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.forgetTopology",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L81",
+    "primary_items": [
+      "1.13"
+    ],
+    "signature": "CategoryTheory.Functor TopCat (Type u)",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Functor",
+      "TopCat",
+      "TopCat.instCategory",
+      "CategoryTheory.types",
+      "CategoryTheory.forget",
+      "ContinuousMap",
+      "TopCat.carrier",
+      "TopCat.str",
+      "ContinuousMap.instFunLike",
+      "TopCat.instConcreteCategoryContinuousMapCarrier"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.forgetVector",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L80",
+    "primary_items": [
+      "1.13"
+    ],
+    "signature": "(k : Type u) → [inst : Field k] → CategoryTheory.Functor (ModuleCat k) (Type u)",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Field",
+      "CategoryTheory.Functor",
+      "ModuleCat",
+      "DivisionRing.toRing",
+      "Field.toDivisionRing",
+      "ModuleCat.moduleCategory",
+      "CategoryTheory.types",
+      "CategoryTheory.forget",
+      "LinearMap",
+      "Ring.toSemiring",
+      "RingHom.id",
+      "Semiring.toNonAssocSemiring",
+      "ModuleCat.carrier",
+      "AddCommGroup.toAddCommMonoid",
+      "ModuleCat.isAddCommGroup",
+      "ModuleCat.isModule",
+      "LinearMap.instFunLike",
+      "ModuleCat.instConcreteCategoryLinearMapIdCarrier"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.freeVectorMapOnBasis",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L86",
+    "primary_items": [
+      "1.13"
+    ],
+    "signature": "∀ {R : Type u_1} [inst : Ring R] {X Y : Type u_1} (f : X ⟶ Y) (x : X),\n  (CategoryTheory.ConcreteCategory.hom ((ModuleCat.free R).map f)) (ModuleCat.freeMk x) =\n    ModuleCat.freeMk ((CategoryTheory.ConcreteCategory.hom f) x)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Ring",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.types",
+      "Eq",
+      "ModuleCat.carrier",
+      "CategoryTheory.Functor.obj",
+      "ModuleCat",
+      "ModuleCat.moduleCategory",
+      "ModuleCat.free",
+      "DFunLike.coe",
+      "LinearMap",
+      "Ring.toSemiring",
+      "RingHom.id",
+      "Semiring.toNonAssocSemiring",
+      "AddCommGroup.toAddCommMonoid",
+      "ModuleCat.isAddCommGroup",
+      "ModuleCat.isModule",
+      "LinearMap.instFunLike",
+      "CategoryTheory.ConcreteCategory.hom",
+      "ModuleCat.instConcreteCategoryLinearMapIdCarrier",
+      "CategoryTheory.Functor.map",
+      "ModuleCat.freeMk",
+      "TypeCat.Fun",
+      "TypeCat.instFunLikeFun",
+      "instConcreteCategoryTypeFun",
+      "ModuleCat.free_map_apply"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.freeVectorSpace",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L83",
+    "primary_items": [
+      "1.13"
+    ],
+    "signature": "(R : Type u_1) → [inst : Ring R] → CategoryTheory.Functor (Type u_1) (ModuleCat R)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Ring",
+      "CategoryTheory.Functor",
+      "CategoryTheory.types",
+      "ModuleCat",
+      "ModuleCat.moduleCategory",
+      "ModuleCat.free"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.fullyFaithfulHomEquiv",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L17",
+    "primary_items": [
+      "2.3"
+    ],
+    "signature": "{C : Type u_1} →\n  [inst : CategoryTheory.Category.{u_2, u_1} C] →\n    {D : Type u_3} →\n      [inst_1 : CategoryTheory.Category.{u_4, u_3} D] →\n        {F : CategoryTheory.Functor C D} → F.FullyFaithful → {X Y : C} → (X ⟶ Y) ≃ (F.obj X ⟶ F.obj Y)",
+    "axioms": [
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Functor.FullyFaithful",
+      "Equiv",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.FullyFaithful.homEquiv"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.fullyFaithfulIffBijective",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L16",
+    "primary_items": [
+      "2.3"
+    ],
+    "signature": "∀ {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C] {D : Type u_3}\n  [inst_1 : CategoryTheory.Category.{u_4, u_3} D] (F : CategoryTheory.Functor C D),\n  Nonempty F.FullyFaithful ↔ ∀ (X Y : C), Function.Bijective F.map",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "Iff",
+      "Nonempty",
+      "CategoryTheory.Functor.FullyFaithful",
+      "Function.Bijective",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.Functor.FullyFaithful.nonempty_iff_map_bijective"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.functorCompositionLaw",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L76",
+    "primary_items": [
+      "1.12"
+    ],
+    "signature": "∀ {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C] {D : Type u_3}\n  [inst_1 : CategoryTheory.Category.{u_4, u_3} D] (self : CategoryTheory.Functor C D) {X Y Z : C} (f : X ⟶ Y)\n  (g : Y ⟶ Z),\n  self.map (CategoryTheory.CategoryStruct.comp f g) = CategoryTheory.CategoryStruct.comp (self.map f) (self.map g)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.Functor.map_comp"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.functorIdentityLaw",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L75",
+    "primary_items": [
+      "1.12",
+      "1.18"
+    ],
+    "signature": "∀ {F : Type u_1 → Type u_2} {α : Type u_1} [inst : Functor F] [LawfulFunctor F], (fun x => id <$> x) = id",
+    "axioms": [
+      "Quot.sound"
+    ],
+    "external_dependencies": [
+      "Functor",
+      "LawfulFunctor",
+      "Eq",
+      "Functor.map",
+      "id",
+      "Functor.map_id"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.functorToTerminal",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L13",
+    "primary_items": [
+      "1.25"
+    ],
+    "signature": "(C : Type u_1) →\n  [inst : CategoryTheory.Category.{u_2, u_1} C] → CategoryTheory.Functor C (CategoryTheory.Discrete PUnit.{u_3 + 1})",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Discrete",
+      "PUnit",
+      "CategoryTheory.discreteCategory",
+      "CategoryTheory.Functor.star"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.functorToTerminal_unique",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L14",
+    "primary_items": [
+      "1.25"
+    ],
+    "signature": "∀ {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C]\n  (F G : CategoryTheory.Functor C (CategoryTheory.Discrete PUnit.{u_3 + 1})), F = G",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Discrete",
+      "PUnit",
+      "CategoryTheory.discreteCategory",
+      "Eq",
+      "CategoryTheory.Functor.punit_ext'"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.identity_padded_composite",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/BasicCategoryTheory.lean#L22",
+    "primary_items": [],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {X Y Z : C} (f : X ⟶ Y) (g : Y ⟶ Z),\n  CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.comp (CategoryTheory.CategoryStruct.id X) f)\n      (CategoryTheory.CategoryStruct.comp g (CategoryTheory.CategoryStruct.id Z)) =\n    CategoryTheory.CategoryStruct.comp f g",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.CategoryStruct.id",
+      "Eq.mpr",
+      "id",
+      "congrArg",
+      "CategoryTheory.Category.id_comp",
+      "CategoryTheory.Category.comp_id",
+      "Eq.refl"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.includeRoom",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L45",
+    "primary_items": [
+      "3.9"
+    ],
+    "signature": "CategoryTheory.Functor ILab.MathematicsLearning.OneRoom ILab.MathematicsLearning.Room",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Functor",
+      "CategoryTheory.Functor.mk",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "PUnit.unit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L72",
+    "primary_items": [
+      "3.9"
+    ],
+    "signature": "∀ (Y : ILab.MathematicsLearning.Room),\n  Nonempty (ILab.MathematicsLearning.includeRoom.obj ILab.MathematicsLearning.OneRoom.only ≅ Y)",
+    "axioms": [],
+    "external_dependencies": [
+      "Nonempty",
+      "CategoryTheory.Iso",
+      "CategoryTheory.Functor.obj",
+      "Nonempty.intro"
     ]
   },
   {
     "declaration": "ILab.MathematicsLearning.inclusion_not_surjective",
     "kind": "theorem",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 65,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L65",
-    "primary_items": "3.6 / 3.9",
-    "mathematical_statement": "The inclusion is not literally surjective on objects",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L65",
+    "primary_items": [
+      "3.9"
+    ],
+    "signature": "¬Function.Surjective ILab.MathematicsLearning.includeRoom.obj",
+    "axioms": [],
+    "external_dependencies": [
+      "Not",
+      "Function.Surjective",
+      "CategoryTheory.Functor.obj",
+      "Exists.casesOn",
+      "Eq",
+      "Exists",
+      "False",
+      "Eq.ndrec",
+      "Eq.casesOn",
+      "HEq",
+      "False.elim",
+      "Eq.refl",
+      "noConfusion_of_Nat",
+      "HEq.refl",
+      "Eq.symm"
+    ]
   },
   {
-    "declaration": "ILab.MathematicsLearning.inclusion_essentially_surjective",
-    "kind": "theorem",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 72,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L72",
-    "primary_items": "3.6 / 3.9",
-    "mathematical_statement": "Every room is isomorphic to the selected image object",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
-    "axioms": []
-  },
-  {
-    "declaration": "ILab.MathematicsLearning.room_cardinality",
-    "kind": "theorem",
-    "source": "ILab/MathematicsLearning/WalkingIsomorphism.lean",
-    "line": 76,
-    "source_url": "https://github.com/iontlab/geometry-of-intelligence/blob/2481cbf1b85e35c29f0f71c5aa4cf5edd353c724/ILab/MathematicsLearning/WalkingIsomorphism.lean#L76",
-    "primary_items": "3.8",
-    "mathematical_statement": "The object type Room has exactly two elements",
-    "lesson": "equivalences",
-    "compilation": "passed",
-    "audit": "passed",
+    "declaration": "ILab.MathematicsLearning.indiscreteAdjunction",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L104",
+    "primary_items": [
+      "3.2"
+    ],
+    "signature": "CategoryTheory.forget TopCat ⊣ TopCat.trivial",
     "axioms": [
       "Classical.choice",
       "Quot.sound",
       "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Adjunction",
+      "TopCat",
+      "TopCat.instCategory",
+      "CategoryTheory.types",
+      "CategoryTheory.forget",
+      "ContinuousMap",
+      "TopCat.carrier",
+      "TopCat.str",
+      "ContinuousMap.instFunLike",
+      "TopCat.instConcreteCategoryContinuousMapCarrier",
+      "TopCat.trivial",
+      "TopCat.adj₂"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.indiscreteTopology",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L85",
+    "primary_items": [
+      "1.13"
+    ],
+    "signature": "CategoryTheory.Functor (Type u_1) TopCat",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Functor",
+      "CategoryTheory.types",
+      "TopCat",
+      "TopCat.instCategory",
+      "TopCat.trivial"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inverse_unique",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/BasicCategoryTheory.lean#L27",
+    "primary_items": [
+      "1.11"
+    ],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {X Y : C} (f : X ⟶ Y) (g h : Y ⟶ X),\n  CategoryTheory.CategoryStruct.comp g f = CategoryTheory.CategoryStruct.id Y →\n    CategoryTheory.CategoryStruct.comp f h = CategoryTheory.CategoryStruct.id X → g = h",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.CategoryStruct.id",
+      "Trans.trans",
+      "instTransEq",
+      "Eq.symm",
+      "CategoryTheory.Category.comp_id",
+      "Eq.mpr",
+      "id",
+      "congrArg",
+      "Eq.refl",
+      "CategoryTheory.Category.assoc",
+      "CategoryTheory.Category.id_comp"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.invertible_iff_two_sided_inverse",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SourceLaws.lean#L29",
+    "primary_items": [
+      "1.9"
+    ],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {X Y : C} (f : X ⟶ Y),\n  CategoryTheory.IsIso f ↔\n    ∃ g,\n      CategoryTheory.CategoryStruct.comp f g = CategoryTheory.CategoryStruct.id X ∧\n        CategoryTheory.CategoryStruct.comp g f = CategoryTheory.CategoryStruct.id Y",
+    "axioms": [
+      "Classical.choice"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Iff",
+      "CategoryTheory.IsIso",
+      "Exists",
+      "And",
+      "Eq",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.CategoryStruct.id",
+      "Iff.intro",
+      "Exists.intro",
+      "CategoryTheory.inv",
+      "And.intro",
+      "CategoryTheory.IsIso.hom_inv_id",
+      "CategoryTheory.IsIso.inv_hom_id",
+      "Exists.casesOn",
+      "And.casesOn",
+      "CategoryTheory.IsIso.mk"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.isoIffPostcompositionBijective",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L19",
+    "primary_items": [
+      "2.6"
+    ],
+    "signature": "∀ {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C] {X Y : C} (f : X ⟶ Y),\n  CategoryTheory.IsIso f ↔ ∀ (T : C), Function.Bijective fun x => CategoryTheory.CategoryStruct.comp x f",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Iff",
+      "CategoryTheory.IsIso",
+      "Function.Bijective",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.isIso_iff_yoneda_map_bijective"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.isoIffPrecompositionBijective",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L20",
+    "primary_items": [
+      "2.6"
+    ],
+    "signature": "∀ {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C] {X Y : C} (f : X ⟶ Y),\n  CategoryTheory.IsIso f ↔ ∀ (T : C), Function.Bijective fun x => CategoryTheory.CategoryStruct.comp f x",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Iff",
+      "CategoryTheory.IsIso",
+      "Function.Bijective",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.isIso_iff_coyoneda_map_bijective"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.largeSet_is_huge",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L54",
+    "primary_items": [
+      "1.4"
+    ],
+    "signature": "∀ (H : ILab.MathematicsLearning.UniverseHierarchy) {A : ZFSet.{u}},\n  ILab.MathematicsLearning.IsLargeSet H A → ILab.MathematicsLearning.IsHugeSet H A",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "ZFSet"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.naturalityEquation",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L93",
+    "primary_items": [
+      "1.20"
+    ],
+    "signature": "∀ {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C] {D : Type u_3}\n  [inst_1 : CategoryTheory.Category.{u_4, u_3} D] {F G : CategoryTheory.Functor C D}\n  (self : CategoryTheory.NatTrans F G) ⦃X Y : C⦄ (f : X ⟶ Y),\n  CategoryTheory.CategoryStruct.comp (F.map f) (self.app Y) = CategoryTheory.CategoryStruct.comp (self.app X) (G.map f)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.NatTrans",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.NatTrans.naturality"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.not_small_of_universal_embedding",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategorySize.lean#L16",
+    "primary_items": [],
+    "signature": "∀ (C : Type v) (carrier : C → Type u), (∀ (X : Type u), ∃ c, Nonempty (X ↪ carrier c)) → ¬Small.{u, v} C",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Exists",
+      "Nonempty",
+      "Function.Embedding",
+      "Not",
+      "Small",
+      "Shrink",
+      "Sigma",
+      "small_sigma",
+      "UnivLE.small",
+      "UnivLE.self",
+      "Exists.casesOn",
+      "Set",
+      "False",
+      "Nonempty.casesOn",
+      "Equiv",
+      "equivShrink",
+      "Function.cantor_injective",
+      "DFunLike.coe",
+      "EquivLike.toFunLike",
+      "Equiv.instEquivLike",
+      "Sigma.mk",
+      "Function.instFunLikeEmbedding",
+      "Eq",
+      "Function.Embedding.injective",
+      "Equiv.injective",
+      "eq_of_heq",
+      "And.right",
+      "HEq",
+      "Sigma.mk.inj"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.oneRoomCategory",
+    "kind": "instance",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L34",
+    "primary_items": [
+      "1.25"
+    ],
+    "signature": "CategoryTheory.SmallCategory ILab.MathematicsLearning.OneRoom",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.SmallCategory",
+      "CategoryTheory.Category.mk",
+      "CategoryTheory.CategoryStruct.mk",
+      "Quiver.mk",
+      "PUnit",
+      "PUnit.unit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.oneRoomFintype",
+    "kind": "instance",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L26",
+    "primary_items": [],
+    "signature": "Fintype ILab.MathematicsLearning.OneRoom",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Fintype",
+      "Fintype.mk",
+      "Singleton.singleton",
+      "Finset",
+      "Finset.instSingleton"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.one_room_cardinality",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L28",
+    "primary_items": [
+      "equivalences.motivation"
+    ],
+    "signature": "Fintype.card ILab.MathematicsLearning.OneRoom = 1",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Eq",
+      "Nat",
+      "Fintype.card",
+      "OfNat.ofNat",
+      "instOfNatNat",
+      "of_decide_eq_true",
+      "instDecidableEqNat",
+      "id",
+      "Bool",
+      "Decidable.decide",
+      "Bool.true",
+      "Eq.refl"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.order_two_invariant",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L25",
+    "primary_items": [
+      "intro.sip"
+    ],
+    "signature": "∀ {G : Type u_1} {H : Type u_2} [inst : Group G] [inst_1 : Group H] (e : G ≃* H),\n  (∃ x, orderOf x = 2) ↔ ∃ y, orderOf y = 2",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Group",
+      "MulEquiv",
+      "MulOne.toMul",
+      "MulOneClass.toMulOne",
+      "Monoid.toMulOneClass",
+      "DivInvMonoid.toMonoid",
+      "Group.toDivInvMonoid",
+      "Iff",
+      "Exists",
+      "Eq",
+      "Nat",
+      "orderOf",
+      "OfNat.ofNat",
+      "instOfNatNat",
+      "Iff.intro",
+      "Exists.casesOn",
+      "Exists.intro",
+      "DFunLike.coe",
+      "EquivLike.toFunLike",
+      "MulEquiv.instEquivLike",
+      "Eq.trans",
+      "MulEquiv.orderOf_eq",
+      "MulEquiv.symm"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathCompositionAssociativity",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L17",
+    "primary_items": [
+      "intro.paths"
+    ],
+    "signature": "{X : Type u_1} →\n  [inst : TopologicalSpace X] →\n    {x₀ x₁ x₂ x₃ : X} →\n      (p : Path x₀ x₁) → (q : Path x₁ x₂) → (r : Path x₂ x₃) → ((p.trans q).trans r).Homotopy (p.trans (q.trans r))",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "TopologicalSpace",
+      "Path",
+      "Path.Homotopy",
+      "Path.trans",
+      "Path.Homotopy.transAssoc"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathLeftIdentity",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L18",
+    "primary_items": [
+      "intro.paths"
+    ],
+    "signature": "{X : Type u_1} → [inst : TopologicalSpace X] → {x₀ x₁ : X} → (p : Path x₀ x₁) → ((Path.refl x₀).trans p).Homotopy p",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "TopologicalSpace",
+      "Path",
+      "Path.Homotopy",
+      "Path.trans",
+      "Path.refl",
+      "Path.Homotopy.reflTrans"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathLeftInverse",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L21",
+    "primary_items": [
+      "intro.paths"
+    ],
+    "signature": "{X : Type u_1} → [inst : TopologicalSpace X] → {x₀ x₁ : X} → (p : Path x₀ x₁) → (Path.refl x₁).Homotopy (p.symm.trans p)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "TopologicalSpace",
+      "Path",
+      "Path.Homotopy",
+      "Path.refl",
+      "Path.trans",
+      "Path.symm",
+      "Path.Homotopy.reflSymmTrans"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathRightIdentity",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L19",
+    "primary_items": [
+      "intro.paths"
+    ],
+    "signature": "{X : Type u_1} → [inst : TopologicalSpace X] → {x₀ x₁ : X} → (p : Path x₀ x₁) → (p.trans (Path.refl x₁)).Homotopy p",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "TopologicalSpace",
+      "Path",
+      "Path.Homotopy",
+      "Path.trans",
+      "Path.refl",
+      "Path.Homotopy.transRefl"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathRightInverse",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/PathAndIdentity.lean#L20",
+    "primary_items": [
+      "intro.paths"
+    ],
+    "signature": "{X : Type u_1} → [inst : TopologicalSpace X] → {x₀ x₁ : X} → (p : Path x₀ x₁) → (Path.refl x₀).Homotopy (p.trans p.symm)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "TopologicalSpace",
+      "Path",
+      "Path.Homotopy",
+      "Path.refl",
+      "Path.trans",
+      "Path.symm",
+      "Path.Homotopy.reflTransSymm"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pointedIsoOfEquiv",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L71",
+    "primary_items": [],
+    "signature": "{α β : Pointed} → (e : α.X ≃ β.X) → e α.point = β.point → (α ≅ β)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Pointed",
+      "Equiv",
+      "Pointed.X",
+      "Eq",
+      "DFunLike.coe",
+      "EquivLike.toFunLike",
+      "Equiv.instEquivLike",
+      "Pointed.point",
+      "CategoryTheory.Iso",
+      "Pointed.largeCategory",
+      "Pointed.Iso.mk"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pointedSetsCategory",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L29",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "CategoryTheory.LargeCategory Pointed",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.LargeCategory",
+      "Pointed",
+      "inferInstance",
+      "Pointed.largeCategory"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pointed_iso_iff_bijective",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L42",
+    "primary_items": [
+      "1.10"
+    ],
+    "signature": "∀ {X Y : Pointed} (f : X ⟶ Y), CategoryTheory.IsIso f ↔ Function.Bijective f.toFun",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Pointed",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Pointed.largeCategory",
+      "Iff",
+      "CategoryTheory.IsIso",
+      "Function.Bijective",
+      "Pointed.X",
+      "Pointed.Hom.toFun",
+      "Iff.intro",
+      "Iff.mp",
+      "CategoryTheory.types",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.forget",
+      "Subtype",
+      "Eq",
+      "Pointed.point",
+      "Pointed.instFunLikeSubtypeForallXEqPoint",
+      "Pointed.hasForget",
+      "CategoryTheory.Functor.map",
+      "DFunLike.coe",
+      "TypeCat.Fun",
+      "TypeCat.instFunLikeFun",
+      "CategoryTheory.ConcreteCategory.hom",
+      "instConcreteCategoryTypeFun",
+      "CategoryTheory.isIso_iff_bijective",
+      "inferInstance",
+      "CategoryTheory.hom_isIso",
+      "CategoryTheory.ToType",
+      "Equiv",
+      "Equiv.ofBijective",
+      "CategoryTheory.Iso",
+      "Pointed.Iso.mk",
+      "Pointed.Hom.map_point",
+      "CategoryTheory.Iso.hom",
+      "rfl",
+      "Eq.mpr",
+      "id",
+      "congrArg",
+      "Eq.symm",
+      "CategoryTheory.Iso.isIso_hom"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pointed_locally_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L36",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "CategoryTheory.LocallySmall.{u, u, u + 1} Pointed",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.LocallySmall",
+      "Pointed",
+      "Pointed.largeCategory",
+      "inferInstance",
+      "CategoryTheory.locallySmall_of_univLE",
+      "UnivLE.self"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pointed_sets_not_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategorySize.lean#L31",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "¬Small.{u, u + 1} Pointed",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Not",
+      "Small",
+      "Pointed",
+      "Pointed.X",
+      "Exists.intro",
+      "Nonempty",
+      "Function.Embedding",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.types",
+      "Pointed.largeCategory",
+      "typeToPointed",
+      "Nonempty.intro",
+      "Function.Embedding.mk",
+      "Option.some",
+      "Option.some_injective"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.quasiInverseToEquivalence",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L44",
+    "primary_items": [
+      "3.4",
+      "3.5.adjoint_upgrade"
+    ],
+    "signature": "{C : Type u} →\n  [inst : CategoryTheory.Category.{v, u} C] →\n    {D : Type u'} →\n      [inst_1 : CategoryTheory.Category.{v', u'} D] →\n        {F : CategoryTheory.Functor C D} → ILab.MathematicsLearning.QuasiInverseData F → (C ≌ D)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Equivalence",
+      "CategoryTheory.Equivalence.mk"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.quasi_inverse_iff_fully_faithful_essSurj",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L53",
+    "primary_items": [
+      "3.7"
+    ],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D]\n  (F : CategoryTheory.Functor C D),\n  Nonempty (ILab.MathematicsLearning.QuasiInverseData F) ↔ F.Full ∧ F.Faithful ∧ F.EssSurj",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "Iff",
+      "Nonempty",
+      "And",
+      "CategoryTheory.Functor.Full",
+      "CategoryTheory.Functor.Faithful",
+      "CategoryTheory.Functor.EssSurj",
+      "Iff.intro",
+      "Nonempty.casesOn",
+      "CategoryTheory.Equivalence",
+      "And.intro",
+      "CategoryTheory.Equivalence.full_functor",
+      "CategoryTheory.Equivalence.faithful_functor",
+      "CategoryTheory.Equivalence.essSurj_functor",
+      "And.casesOn",
+      "CategoryTheory.Functor.IsEquivalence",
+      "CategoryTheory.Functor.IsEquivalence.mk",
+      "inferInstance",
+      "Nonempty.intro",
+      "CategoryTheory.Functor.asEquivalence"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.roomCategory",
+    "kind": "instance",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L29",
+    "primary_items": [
+      "3.8"
+    ],
+    "signature": "CategoryTheory.SmallCategory ILab.MathematicsLearning.Room",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.SmallCategory",
+      "CategoryTheory.Category.mk",
+      "CategoryTheory.CategoryStruct.mk",
+      "Quiver.mk",
+      "PUnit",
+      "PUnit.unit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.roomFintype",
+    "kind": "instance",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L21",
+    "primary_items": [],
+    "signature": "Fintype ILab.MathematicsLearning.Room",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Fintype",
+      "Fintype.mk",
+      "Insert.insert",
+      "Finset",
+      "Finset.instInsert",
+      "Singleton.singleton",
+      "Finset.instSingleton"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.roomIso",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L40",
+    "primary_items": [
+      "3.8"
+    ],
+    "signature": "(X Y : ILab.MathematicsLearning.Room) → X ≅ Y",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.Iso",
+      "CategoryTheory.Iso.mk",
+      "PUnit.unit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.room_cardinality",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L76",
+    "primary_items": [
+      "3.8"
+    ],
+    "signature": "Fintype.card ILab.MathematicsLearning.Room = 2",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Eq",
+      "Nat",
+      "Fintype.card",
+      "OfNat.ofNat",
+      "instOfNatNat",
+      "of_decide_eq_true",
+      "instDecidableEqNat",
+      "id",
+      "Bool",
+      "Decidable.decide",
+      "Bool.true",
+      "Eq.refl"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.selectObject",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L15",
+    "primary_items": [
+      "1.27"
+    ],
+    "signature": "{C : Type u_1} →\n  [inst : CategoryTheory.Category.{u_2, u_1} C] → C → CategoryTheory.Functor (CategoryTheory.Discrete PUnit.{u_3 + 1}) C",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.Discrete",
+      "PUnit",
+      "CategoryTheory.discreteCategory",
+      "CategoryTheory.Functor.fromPUnit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.setIsoIffBijective",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L69",
+    "primary_items": [
+      "1.10"
+    ],
+    "signature": "∀ {X Y : Type u_1} (f : X ⟶ Y), CategoryTheory.IsIso f ↔ Function.Bijective ⇑(CategoryTheory.ConcreteCategory.hom f)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.types",
+      "Iff",
+      "CategoryTheory.IsIso",
+      "Function.Bijective",
+      "DFunLike.coe",
+      "TypeCat.Fun",
+      "TypeCat.instFunLikeFun",
+      "CategoryTheory.ConcreteCategory.hom",
+      "instConcreteCategoryTypeFun",
+      "CategoryTheory.isIso_iff_bijective"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.setsCategory",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L28",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "CategoryTheory.LargeCategory (Type u)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.LargeCategory",
+      "inferInstance",
+      "CategoryTheory.types"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.sets_locally_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L35",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "CategoryTheory.LocallySmall.{u, u, u + 1} (Type u)",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.LocallySmall",
+      "CategoryTheory.types",
+      "inferInstance",
+      "CategoryTheory.locallySmall_of_univLE",
+      "UnivLE.self"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.sets_not_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategorySize.lean#L29",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "¬Small.{u, u + 1} (Type u)",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Not",
+      "Small",
+      "not_small_type"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallCategoriesAsLargerObject",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategorySize.lean#L52",
+    "primary_items": [
+      "1.16"
+    ],
+    "signature": "CategoryTheory.Cat",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Cat",
+      "CategoryTheory.Cat.of",
+      "CategoryTheory.Cat.category"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSet_is_large",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L51",
+    "primary_items": [
+      "1.4"
+    ],
+    "signature": "∀ (H : ILab.MathematicsLearning.UniverseHierarchy) {A : ZFSet.{u}},\n  ILab.MathematicsLearning.IsSmallSet H A → ILab.MathematicsLearning.IsLargeSet H A",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "ZFSet"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.small_categories_locally_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategorySize.lean#L49",
+    "primary_items": [
+      "1.16"
+    ],
+    "signature": "CategoryTheory.LocallySmall.{u, u, u + 1} CategoryTheory.Cat",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.LocallySmall",
+      "CategoryTheory.Cat",
+      "CategoryTheory.Cat.category",
+      "inferInstance",
+      "CategoryTheory.locallySmall_of_univLE",
+      "UnivLE.self"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.small_categories_not_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategorySize.lean#L45",
+    "primary_items": [
+      "1.16"
+    ],
+    "signature": "¬Small.{u, u + 1} CategoryTheory.Cat",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Not",
+      "Small",
+      "CategoryTheory.Cat",
+      "CategoryTheory.Bundled.α",
+      "CategoryTheory.Category",
+      "Exists.intro",
+      "Nonempty",
+      "Function.Embedding",
+      "CategoryTheory.Cat.of",
+      "CategoryTheory.Discrete",
+      "CategoryTheory.discreteCategory",
+      "Nonempty.intro",
+      "Function.Embedding.mk",
+      "CategoryTheory.Discrete.mk",
+      "Eq",
+      "congrArg",
+      "CategoryTheory.Discrete.as"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.spacesCategory",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L32",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "CategoryTheory.LargeCategory TopCat",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.LargeCategory",
+      "TopCat",
+      "inferInstance",
+      "TopCat.instCategory"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.spaces_locally_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L39",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "CategoryTheory.LocallySmall.{u, u, u + 1} TopCat",
+    "axioms": [],
+    "external_dependencies": [
+      "CategoryTheory.LocallySmall",
+      "TopCat",
+      "TopCat.instCategory",
+      "inferInstance",
+      "CategoryTheory.locallySmall_of_univLE",
+      "UnivLE.self"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.spaces_not_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategorySize.lean#L35",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "¬Small.{u, u + 1} TopCat",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Not",
+      "Small",
+      "TopCat",
+      "TopCat.carrier",
+      "Exists.intro",
+      "Nonempty",
+      "Function.Embedding",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.types",
+      "TopCat.instCategory",
+      "TopCat.discrete",
+      "Nonempty.intro",
+      "Function.Embedding.refl"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.terminal_functor_unique",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L18",
+    "primary_items": [
+      "1.27"
+    ],
+    "signature": "∀ (C : Type u) [inst : CategoryTheory.Category.{v, u} C]\n  (F : CategoryTheory.Functor ILab.MathematicsLearning.TerminalCategory C),\n  CategoryTheory.Functor.fromPUnit (F.obj { as := PUnit.unit }) = F",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "CategoryTheory.Functor",
+      "CategoryTheory.discreteCategory",
+      "PUnit",
+      "Eq",
+      "CategoryTheory.Discrete",
+      "CategoryTheory.Functor.fromPUnit",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Discrete.mk",
+      "PUnit.unit",
+      "CategoryTheory.Discrete.functor_ext",
+      "PUnit.casesOn",
+      "Eq.ndrec",
+      "Eq.refl",
+      "Eq.symm"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.topIsoIffHomeomorphism",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L70",
+    "primary_items": [
+      "1.10"
+    ],
+    "signature": "∀ {X Y : TopCat} (f : X ⟶ Y), CategoryTheory.IsIso f ↔ IsHomeomorph ⇑(CategoryTheory.ConcreteCategory.hom f)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "TopCat",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "TopCat.instCategory",
+      "Iff",
+      "CategoryTheory.IsIso",
+      "IsHomeomorph",
+      "TopCat.carrier",
+      "TopCat.str",
+      "DFunLike.coe",
+      "ContinuousMap",
+      "ContinuousMap.instFunLike",
+      "CategoryTheory.ConcreteCategory.hom",
+      "TopCat.instConcreteCategoryContinuousMapCarrier",
+      "TopCat.isIso_iff_isHomeomorph"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.universe_not_member",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/SetUniverses.lean#L22",
+    "primary_items": [
+      "1.2"
+    ],
+    "signature": "∀ (U : ZFSet.{u}), (∀ A ∈ U, ∀ B ⊆ A, B ∈ U) → U ∉ U",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "ZFSet",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike",
+      "LE.le",
+      "Preorder.toLE",
+      "PartialOrder.toPreorder",
+      "ZFSet.instPartialOrder",
+      "Not",
+      "ZFSet.sep",
+      "ZFSet.sep_subset",
+      "Iff",
+      "id",
+      "of_eq_true",
+      "Eq.trans",
+      "True",
+      "congrFun'",
+      "congrArg",
+      "And",
+      "eq_true",
+      "true_and",
+      "iff_self",
+      "Iff.mp",
+      "Iff.mpr"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.vectorSpaceAdjunction",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L101",
+    "primary_items": [
+      "3.2"
+    ],
+    "signature": "(k : Type u) → [inst : Field k] → ModuleCat.free k ⊣ CategoryTheory.forget (ModuleCat k)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Field",
+      "CategoryTheory.Adjunction",
+      "CategoryTheory.types",
+      "ModuleCat",
+      "DivisionRing.toRing",
+      "Field.toDivisionRing",
+      "ModuleCat.moduleCategory",
+      "ModuleCat.free",
+      "CategoryTheory.forget",
+      "LinearMap",
+      "Ring.toSemiring",
+      "RingHom.id",
+      "Semiring.toNonAssocSemiring",
+      "ModuleCat.carrier",
+      "AddCommGroup.toAddCommMonoid",
+      "ModuleCat.isAddCommGroup",
+      "ModuleCat.isModule",
+      "LinearMap.instFunLike",
+      "ModuleCat.instConcreteCategoryLinearMapIdCarrier",
+      "ModuleCat.adj"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.vectorSpacesCategory",
+    "kind": "abbrev",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L30",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "(k : Type u) → [inst : Field k] → CategoryTheory.LargeCategory (ModuleCat k)",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Field",
+      "CategoryTheory.LargeCategory",
+      "ModuleCat",
+      "DivisionRing.toRing",
+      "Field.toDivisionRing",
+      "inferInstance",
+      "ModuleCat.moduleCategory"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.vector_iso_iff_bijective",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L55",
+    "primary_items": [
+      "1.10"
+    ],
+    "signature": "∀ (k : Type u) [inst : Field k] {X Y : ModuleCat k} (f : X ⟶ Y),\n  CategoryTheory.IsIso f ↔ Function.Bijective ⇑(CategoryTheory.ConcreteCategory.hom f)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Field",
+      "ModuleCat",
+      "DivisionRing.toRing",
+      "Field.toDivisionRing",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "ModuleCat.moduleCategory",
+      "Iff",
+      "CategoryTheory.IsIso",
+      "Function.Bijective",
+      "ModuleCat.carrier",
+      "DFunLike.coe",
+      "LinearMap",
+      "Ring.toSemiring",
+      "RingHom.id",
+      "Semiring.toNonAssocSemiring",
+      "AddCommGroup.toAddCommMonoid",
+      "ModuleCat.isAddCommGroup",
+      "ModuleCat.isModule",
+      "LinearMap.instFunLike",
+      "CategoryTheory.ConcreteCategory.hom",
+      "ModuleCat.instConcreteCategoryLinearMapIdCarrier",
+      "Iff.intro",
+      "Iff.mp",
+      "CategoryTheory.types",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.forget",
+      "CategoryTheory.Functor.map",
+      "TypeCat.Fun",
+      "TypeCat.instFunLikeFun",
+      "instConcreteCategoryTypeFun",
+      "CategoryTheory.isIso_iff_bijective",
+      "inferInstance",
+      "CategoryTheory.hom_isIso",
+      "CategoryTheory.ToType",
+      "Iff.mpr",
+      "CategoryTheory.isIso_of_reflects_iso",
+      "ModuleCat.instReflectsIsomorphismsForgetLinearMapIdCarrier"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.vector_spaces_locally_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategoryConstructions.lean#L37",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "∀ (k : Type u) [inst : Field k], CategoryTheory.LocallySmall.{u, u, u + 1} (ModuleCat k)",
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Field",
+      "CategoryTheory.LocallySmall",
+      "ModuleCat",
+      "DivisionRing.toRing",
+      "Field.toDivisionRing",
+      "ModuleCat.moduleCategory",
+      "inferInstance",
+      "CategoryTheory.locallySmall_of_univLE",
+      "UnivLE.self"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.vector_spaces_not_small",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/CategorySize.lean#L39",
+    "primary_items": [
+      "1.8"
+    ],
+    "signature": "∀ (k : Type u) [inst : Field k], ¬Small.{u, u + 1} (ModuleCat k)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Field",
+      "Not",
+      "Small",
+      "ModuleCat",
+      "DivisionRing.toRing",
+      "Field.toDivisionRing",
+      "ModuleCat.carrier",
+      "Exists.intro",
+      "Nonempty",
+      "Function.Embedding",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.types",
+      "ModuleCat.moduleCategory",
+      "ModuleCat.free",
+      "Nonempty.intro",
+      "Function.Embedding.mk",
+      "Finsupp.single",
+      "MulZeroClass.toZero",
+      "instMulZeroClassOfSemiring",
+      "Ring.toSemiring",
+      "OfNat.ofNat",
+      "One.toOfNat1",
+      "AddMonoidWithOne.toOne",
+      "AddGroupWithOne.toAddMonoidWithOne",
+      "Ring.toAddGroupWithOne",
+      "Finsupp.single_left_injective",
+      "one_ne_zero",
+      "NeZero.one",
+      "instMulZeroOneClassOfSemiring",
+      "CommSemiring.toSemiring",
+      "Semifield.toCommSemiring",
+      "Field.toSemifield",
+      "DivisionRing.toNontrivial"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingEquivalence",
+    "kind": "def",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55",
+    "primary_items": [
+      "3.9"
+    ],
+    "signature": "ILab.MathematicsLearning.OneRoom ≌ ILab.MathematicsLearning.Room",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Equivalence",
+      "CategoryTheory.Equivalence.mk'",
+      "CategoryTheory.NatIso.ofComponents",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Iso.mk",
+      "CategoryTheory.Functor.obj",
+      "PUnit.unit"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walking_inclusion_faithful",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L42",
+    "primary_items": [
+      "3.9"
+    ],
+    "signature": "ILab.MathematicsLearning.includeRoom.Faithful",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Functor.Faithful",
+      "CategoryTheory.Equivalence.faithful_functor"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walking_inclusion_full",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L41",
+    "primary_items": [
+      "3.9"
+    ],
+    "signature": "ILab.MathematicsLearning.includeRoom.Full",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Functor.Full",
+      "CategoryTheory.Equivalence.full_functor"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walking_not_strictly_isomorphic",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/TerminalCategory.lean#L31",
+    "primary_items": [
+      "equivalences.motivation"
+    ],
+    "signature": "¬Nonempty (↧ILab.MathematicsLearning.OneRoom ≅ ↧ILab.MathematicsLearning.Room)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "Not",
+      "Nonempty",
+      "CategoryTheory.Iso",
+      "CategoryTheory.Cat",
+      "CategoryTheory.Cat.category",
+      "CategoryTheory.Cat.of",
+      "Nonempty.casesOn",
+      "False",
+      "CategoryTheory.types",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Cat.objects",
+      "CategoryTheory.Functor.mapIso",
+      "Eq",
+      "Nat",
+      "Fintype.card",
+      "Fintype.card_congr",
+      "Equiv",
+      "CategoryTheory.Iso.toEquiv",
+      "absurd",
+      "OfNat.ofNat",
+      "instOfNatNat",
+      "Eq.mp",
+      "congrArg",
+      "of_decide_eq_false",
+      "instDecidableEqNat",
+      "Eq.refl",
+      "Bool",
+      "Decidable.decide"
+    ]
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.yoneda_object_iso_iff",
+    "kind": "theorem",
+    "source": "https://github.com/iontlab/geometry-of-intelligence/blob/ace59a04225eb98a769edb1943378d33a91aa204/ILab/MathematicsLearning/YonedaAdjunction.lean#L25",
+    "primary_items": [
+      "2.7"
+    ],
+    "signature": "∀ {C : Type u} [inst : CategoryTheory.Category.{v, u} C] (X Y : C),\n  Nonempty (X ≅ Y) ↔ Nonempty (CategoryTheory.yoneda.obj X ≅ CategoryTheory.yoneda.obj Y)",
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "external_dependencies": [
+      "CategoryTheory.Category",
+      "Iff",
+      "Nonempty",
+      "CategoryTheory.Iso",
+      "CategoryTheory.Functor",
+      "Opposite",
+      "CategoryTheory.Category.opposite",
+      "CategoryTheory.types",
+      "CategoryTheory.Functor.category",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.yoneda",
+      "Iff.intro",
+      "Nonempty.intro",
+      "CategoryTheory.Functor.mapIso",
+      "CategoryTheory.Functor.FullyFaithful.preimageIso",
+      "CategoryTheory.Functor.FullyFaithful.ofFullyFaithful",
+      "CategoryTheory.Yoneda.yoneda_full",
+      "CategoryTheory.Yoneda.yoneda_faithful"
     ]
   }
 ]

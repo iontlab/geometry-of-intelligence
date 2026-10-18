@@ -5,8 +5,43 @@
     "paperMapping": "Primary 1.5 and 1.11: non-exercise identity laws and inverse uniqueness. Assigned exercise solutions are withheld."
   },
   {
+    "name": "ILab.MathematicsLearning.CategoryConstructions",
+    "sha256": "2423AFE7B4156371BC97DACCC338811C7B9F9751314002C3F130C4CB438CF7CD",
+    "paperMapping": "Primary 1.5–1.13, 1.18, 1.20, 1.22, 3.2 and 3.5: ordinary definitions, examples and supplied laws. Assigned construction checks are withheld."
+  },
+  {
+    "name": "ILab.MathematicsLearning.CategorySize",
+    "sha256": "BBEDA1AD9497EE2FC1640F0D44B9BD0854DF4AAA36E949A7D05943A4AA66E9C4",
+    "paperMapping": "Primary 1.4, 1.8 and 1.16: type-universe size and local smallness. These are explicitly scoped type-theoretic formulations, not a literal ZFSet encoding of all categories."
+  },
+  {
+    "name": "ILab.MathematicsLearning.PathAndIdentity",
+    "sha256": "6D001E843AAC2696935BD59B235C1A472F38FA179369DEB2259C9FF8A0B9DAE3",
+    "paperMapping": "Introduction: endpoint-fixed path homotopies, their ordinary fundamental groupoid, and group invariants. This does not construct the full infinity-groupoid or prove univalence."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SetUniverses",
+    "sha256": "B567608955BA989EBC96B7EE1038C80A06D9F381BD63AA24DDFB2FD6D9C43DE4",
+    "paperMapping": "Primary 1.1–1.4: ZFSet universe closure assumptions and consequences. Introduction: equality substitution and transport. Universe existence is assumed, not proved."
+  },
+  {
+    "name": "ILab.MathematicsLearning.SourceLaws",
+    "sha256": "FDBE2E2D67927B65A4237FDCCD00F0393F679BFA381EC321F45D20A954AFEF57",
+    "paperMapping": "Primary 1.9, 1.18, 3.1 and 3.6: definitions and their supplied laws; no assigned exercise construction checks."
+  },
+  {
+    "name": "ILab.MathematicsLearning.TerminalCategory",
+    "sha256": "EBE38E40CD68E4A213F4333E7894E08EEF1357F4E274CE2D20895CF3C1C9B7A8",
+    "paperMapping": "Primary 1.25, 1.27, 3.8 and 3.9: terminal category and finite example. The strict evaluation isomorphism assigned in 1.26 is withheld."
+  },
+  {
     "name": "ILab.MathematicsLearning.WalkingIsomorphism",
     "sha256": "306750071687EEC2491400B86E52DD30C734A843C0DF3D88DE4434CFC36CE6CA",
-    "paperMapping": "Primary 1.25, 3.4, 3.8 and 3.9: a one-object category and a two-object singleton-hom category, an explicit adjoint equivalence, essential but not literal surjectivity, and two-object cardinality. Not the general equivalence criterion."
+    "paperMapping": "Primary 1.25, 3.4, 3.8 and 3.9: one-object and two-object singleton-hom categories, an explicit adjoint equivalence and two-object cardinality."
+  },
+  {
+    "name": "ILab.MathematicsLearning.YonedaAdjunction",
+    "sha256": "77B6AD9AF71DA3C1C9C7E0D22DEC8E84487A629BDD48084E321EB9F0B2BC4158",
+    "paperMapping": "Primary 2.3, the non-assigned part of 2.6, 2.7, 3.1 and 3.4–3.7: definitions, non-exercise consequences and equivalence criterion. Assigned Yoneda/adjunction correspondence proofs are withheld."
   }
 ]

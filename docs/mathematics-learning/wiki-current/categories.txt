@@ -1,0 +1,83 @@
+====== Categories and isomorphisms ======
+
+**[Draft] · Source: Moser–Walde, //Lecture Notes: Synthetic Category Theory//, §1.2, items 1.5–1.11, p. 5.** [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Authors, affiliations, official links and source conventions]]. Independent iLab exposition with AI assistance; **Selected ordinary-category declarations audited; see Verification below**.
+
+**Source authors:** [[https://www.math.uni-hamburg.de/en/forschung/bereiche/az/hoehere-kat/personen/moser-lyne.html|Lyne Moser (Universität Hamburg)]] and [[https://www.uni-regensburg.de/mathematik/fakultaet/personen|Tashi Walde (Universität Regensburg)]]. An official public link to this exact primary PDF has not been verified.
+
+===== Story / Fairy Tale =====
+
+Mira gives every town a “remain here” permit. If a permit takes a traveller from the mill to the orchard and another from the orchard to the tower, the route book supplies their composite. She may regroup a chain of permits without changing the resulting entry.
+
+A golden permit has a partner that undoes it in both directions. If two partners claim to undo the same golden permit, Mira inserts a journey out and back into one partner's route. Regrouping shows that it must agree with the other partner. A golden permit therefore cannot have two different inverses.
+
+**Story key:** towns are objects, permits are morphisms, the route book specifies composition, and golden permits are isomorphisms. **Where the analogy stops:** arrows need not be trips, functions or reversible operations. The route-book equations are exact abstract rules, not claims about elapsed time or physical trajectories.
+
+===== Plain Language =====
+
+A category packages compatible kinds of objects and maps. The maps have prescribed sources and targets; composition is available only when those match. Identity maps do nothing under composition, and associativity lets us omit parentheses in a composable chain.
+
+An isomorphism is a map with a two-sided inverse in the same category. What counts as a valid inverse depends on the chosen maps. A bijection is enough in sets, but a continuous bijection need not be a homeomorphism: its inverse might fail to be continuous.
+
+An independent counterexample uses the same two-element set twice. Give the source the discrete topology and the target the indiscrete topology. The identity function from source to target is continuous and bijective. Its inverse is not continuous, because a singleton open in the discrete target pulls back to a non-open singleton in the indiscrete source.
+
+===== Mathematics =====
+
+==== Definition 1.5 ====
+
+An ordinary/strict category \(C\) has a large object set, a large set \(C(x,y)\) for each ordered pair of objects, identities \(1_x\in C(x,x)\), and composition
+
+$$C(y,z)\times C(x,y)\longrightarrow C(x,z),\quad (g,f)\longmapsto g\circ f.$$
+
+For \(f:x\to y\), \(f\circ1_x=f=1_y\circ f\). For a composable triple, \(h\circ(g\circ f)=(h\circ g)\circ f\). Merely drawing arrows does not specify a category: the composites and laws must also be given.
+
+==== Remark 1.6 ====
+
+By convention the object set and hom sets are large. A huge strict category uses huge object and hom sets instead.
+
+==== Definition 1.7 ====
+
+Locally small means every \(C(x,y)\) is small. Small means locally small with a small object set. The standard set-based examples below are locally small but not small in the primary's universe convention.
+
+==== Example 1.8 ====
+
+^ Category ^ Objects and morphisms ^
+| \(\mathbf{Set}\) | Small sets and functions |
+| \(\mathbf{Set}_*\) | Small pointed sets and basepoint-preserving functions |
+| \(\mathbf{Vect}_k\) | Small vector spaces over a fixed small field \(k\), with linear maps |
+| \(\mathbf{Top}\) | Small topological spaces and continuous maps |
+
+Identity maps and ordinary function composition preserve each specified structure. Hom sets are subsets of function sets, which accounts for local smallness in the universe setting. These categories are not small under the source's convention.
+
+==== Definition 1.9 ====
+
+For \(f:x\to y\), an inverse is \(g:y\to x\) with \(g f=1_x\) and \(f g=1_y\). If such a map exists, \(f\) is an isomorphism and \(x\cong y\). This asserts sameness of structure, not literal equality of objects.
+
+==== Example 1.10 ====
+
+^ Category ^ Isomorphisms ^
+| \(\mathbf{Set}\) | Bijections |
+| \(\mathbf{Set}_*\) | Basepoint-preserving bijections |
+| \(\mathbf{Vect}_k\) | Linear bijections |
+| \(\mathbf{Top}\) | Homeomorphisms |
+
+For pointed sets, the inverse of a pointed bijection is pointed; for vector spaces, a bijective linear map has a linear inverse. Continuity of an inverse needs its own hypothesis, as the two-point example shows.
+
+==== Proposition 1.11 ====
+
+In fact a left inverse and a right inverse already agree. If \(g f=1_x\) and \(f h=1_y\), then
+
+$$g=g1_y=g(fh)=(gf)h=1_xh=h.$$
+
+Every expression has domain \(y\) and codomain \(x\). Two two-sided inverses satisfy these hypotheses, so the inverse is unique. A one-sided inverse alone is insufficient: an inclusion of a singleton into a two-element set can be retracted but is not bijective.
+
+**Additional small example.** Three objects \(a\le b\le c\), with exactly one arrow \(x\to y\) when \(x\le y\), form a category. Reflexivity supplies identities, transitivity supplies composition, and uniqueness of any arrow with fixed endpoints proves the laws. Only identity arrows are isomorphisms. Not every arrow in a category is invertible.
+
+===== Lean =====
+
+The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Lean type universes are distinguished from the source’s explicit set-universe assumptions. Higher identity types, univalence and full synthetic foundations are not asserted as Lean theorems. 
+
+===== Verification =====
+
+The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
+
+Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:functors|Functors]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]

@@ -1,0 +1,182 @@
+[
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/app.js",
+    "group": "learning",
+    "sha256": "11686f3e0900d82a92ef10f022686ccc2ffbcc52a6124af4c9d506f7398e3fce",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/blueprint-view.js",
+    "group": "learning",
+    "sha256": "44e1921cda03e6701b7c3a394f2af7c654361b07efe8d916802f43c95627c3eb",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/compiled.json",
+    "group": "learning",
+    "sha256": "29b5e6f30792e410993473f934f5ce36075e763b6d2ec754b52aedc28688b81e",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/data.json",
+    "group": "learning",
+    "sha256": "7abaaab0f95a0ca44cdeeff08a676f1330a854da7c677bbe501223dbdb46cc9b",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/index.html",
+    "group": "learning",
+    "sha256": "150a3316f68ecb3a3a3826f95a97f35c4ba3419ee8ec052b55fbd1b4bd8b72df",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/mathematics-view.js",
+    "group": "learning",
+    "sha256": "05dc082a2a425298e2f46e820a1cdf53d47cada3f06275cbb0756a1f20140954",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/mathematics.json",
+    "group": "learning",
+    "sha256": "2e274e20b6d9cbbb10f8a233414f0525f7537ef5099240cdcd6829f868e8b34a",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/style.css",
+    "group": "learning",
+    "sha256": "9b790769a5685826894abdf808c4eb7245ff8c3c331892b769e3e110ad35aa03",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/binding.json",
+    "group": "learning",
+    "sha256": "9dce42135e583cc8fcdd42d4ca9e0b0a788e87dd5be7c9666a912cc4c8f9c056",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/explanations.css",
+    "group": "learning",
+    "sha256": "a70ad76aac0c1191da5fe40837ee205d684d9300a6a7a5fbe8e993958e4d8dd6",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/graph-adapter.js",
+    "group": "learning",
+    "sha256": "dc6d563837c3c3f9365d615773312425981580c25d481827fd3931b5b7d742aa",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/registry.v0.1.json",
+    "group": "learning",
+    "sha256": "d5e513178f4d68e6c62743d0134bf180eb301081223edfab3c1205fce37d9c71",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/release.json",
+    "group": "learning",
+    "sha256": "91c505b1e32e59799055a0c2bd9837fc8f53608d07d96bb9f97501e8da3df63b",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/renderer.js",
+    "group": "learning",
+    "sha256": "2fc4039fa968257c8d843cc964059c0f4649d2a7d1dbdd6bbfb6c614a49ba79c",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/statement-adapter.js",
+    "group": "learning",
+    "sha256": "88d74b5a408d31faae69e9eea94815978d7b10ec19df71d700a8ec71614f7b98",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/explanations/wiki-adapter.js",
+    "group": "learning",
+    "sha256": "d98b6f63fd37b0d95db7effc7fd03f72cbd483458847d54091098fce86bcba13",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/rq001/index.html",
+    "group": "rq001",
+    "sha256": "80c3ada5d3f6445086ca92db50202a218f41e9434efcdccf91ebcb27bfc077db",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/rq001/app.js",
+    "group": "rq001",
+    "sha256": "9b48ffa5314b62203206cd53ba5d1101d2e4921b1ecf30d08c6aa1583f3eb18a",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/rq001/mathematics-view.js",
+    "group": "rq001",
+    "sha256": "2abb425f083d3c43f9752eea65839b18c5fc21388be11697c6d9a27351b91f09",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/rq001/blueprint-view.js",
+    "group": "rq001",
+    "sha256": "7361e84117c3e25c900f75aec9eb828467784623edf74a9fe7b76b09ee1352bc",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/rq001/style.css",
+    "group": "rq001",
+    "sha256": "68d701715daa26680076f2232c5e84d9f5479d88847634bde47fb513cce84cfa",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/rq001/mathematics.json",
+    "group": "rq001",
+    "sha256": "c568abc878bca21441ff6b91caf2aeb0f0728f2f070cae720f9684701a18e009",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/rq001/data.json",
+    "group": "rq001",
+    "sha256": "4f1901870e2e68ab82931bf16655bc4bf90869bd965faf856eb25ff05218c385",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/explanations/rq001/renderer.js",
+    "group": "explanations",
+    "sha256": "bf4a63f4cc608bcc1bcc77203ceb565f7b0f672067763de4d98e72b173079d7b",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/explanations/rq001/graph-adapter.js",
+    "group": "explanations",
+    "sha256": "dfeb1bc9fc7003602961c2c902768d67a6e62d0f31fb263c222f48e76a0e64e0",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/explanations/rq001/wiki-adapter.js",
+    "group": "explanations",
+    "sha256": "b0bf8c448a9c9b82c2ac73c15b1b5eb1b243304975d83dc140adf76aee15d263",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/explanations/rq001/explanations.css",
+    "group": "explanations",
+    "sha256": "a70ad76aac0c1191da5fe40837ee205d684d9300a6a7a5fbe8e993958e4d8dd6",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/explanations/rq001/registry.v0.1.json",
+    "group": "explanations",
+    "sha256": "2a7e63dda2b1c92c4c812881bb10521874228b7d62eaa2d318f23a6b39cd19dd",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/explanations/rq001/binding.json",
+    "group": "explanations",
+    "sha256": "ee52e8f7ec7b798d6429e7732def87f38230b800623f478f14dd7dc33fa15fc9",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/explanations/rq001/release.json",
+    "group": "explanations",
+    "sha256": "0ab9da00e637dad22fbb9d44f9bf95944ac1912c33af89c80d029f9c4b6d8078",
+    "pass": true
+  }
+]

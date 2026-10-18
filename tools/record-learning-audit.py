@@ -16,7 +16,7 @@ for module in modules:
     path = module.replace('.', '/') + '.lean'
     rows.append({'name': module, 'path': path,
                  'sha256': hashlib.sha256((root / path).read_bytes()).hexdigest()})
-log = Path(sys.argv[1]).read_bytes()
+log = Path(sys.argv[1]).read_text(encoding='utf-8-sig').replace('\r\n', '\n').encode('utf-8')
 assert b'Build completed successfully (8937 jobs).' in log
 assert len(modules) == 9 and len(nodes) == 225
 assert all(set(n['axioms']) <= {'propext', 'Classical.choice', 'Quot.sound'} for n in nodes)

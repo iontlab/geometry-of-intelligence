@@ -1,59 +1,52 @@
-====== Selected ordinary-category formalization — verification ======
+====== Non-exercise mathematics — verification ======
 
-**[Draft] · Audit passed / Lean-verified for the specifically named results below.** This is a technical companion to [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Synthetic Category Theory]], the first learning project within [[:mathematics_learning:higher_category_theory:start|Higher Category Theory]].
+**[Draft] · Checked statements have exact, item-specific scope.** The binding source is Lyne Moser (Universität Hamburg) and Tashi Walde (Universität Regensburg), //Lecture Notes: Synthetic Category Theory//, the supplied 13-page installment. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Attribution, official author links and source conventions]]. This is independent iLab exposition with AI assistance, not a verbatim republication or an assertion of author endorsement. Independent human mathematical review is not claimed.
 
-The binding source is Lyne Moser (Universität Hamburg) and Tashi Walde (Universität Regensburg), //Lecture Notes: Synthetic Category Theory//, supplied 13-page installment. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:sources|Full attribution, official author links and source conventions]]. These proofs are independent iLab educational work with AI assistance; source authorship or endorsement is not implied.
+===== Current checked release =====
 
-===== What passed =====
+The existing Lean 4.34.0 / pinned Mathlib v4.34.0 project passed a clean build (8937 jobs), then a compiler audit of **225 declarations in nine learning modules**, including **116 authored declarations**. The graph has **428 direct project-local dependency edges**. Its Mathematical Blueprint has **109 mapped declarations and 70 direct visible edges**; the ordinary authored-declaration view has **80 visible edges**. Compiler-generated declarations are available through the Full Lean Graph toggle.
 
-The original release passed a clean build and compiler audit with Lean 4.34.0 and pinned Mathlib v4.34.0. On 18 October 2026, the current publication was restricted to a **dependency-closed non-exercise subset: 65 compiled declarations, 14 authored declarations and 232 direct local edges**. No proof or dependency was added by that publication filter. The retained declarations keep their original audited signatures and foundational dependencies (only ''propext'', ''Classical.choice'' and ''Quot.sound'' where required).
+The audit rejects admitted expressions, project-added axioms and any foundational dependency outside ''propext'', ''Classical.choice'' and ''Quot.sound''. Exact types, source hashes and transitive axiom dependencies are recorded. Definitions, assumptions and Mathlib wrappers are distinguished from newly written proofs; compilation does not turn a definition or a universe assumption into an existence theorem.
 
-Assigned exercise solutions have been withdrawn from the four affected lessons and the current graph. Four declarations for 1.14, the composition-naturality proof for 1.23, its accompanying component entry, and two generated helpers were removed from publication. Their old source and audit references are no longer presented as current teaching material. Historical Git and wiki revisions may still contain the withdrawn material; removal from the current edition does not erase history.
+The source inventory contains **58 items and 132 individually tracked obligations**: 112 are checked in their stated Lean formulations; 15 records intentionally withhold assigned solutions; five require a specified higher model or different foundations. The 15 withholding records account for all 17 exercise markers across 15 numbered items. Multiple assigned steps within one item remain one explicit withholding record. This is not a claim that all 13 pages are fully Lean-formalized.
 
-The broader non-exercise Lean expansion and five-layer interaction release are still in preparation; their earlier local counts are not published verification claims. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Complete exercise exclusions and source inventory]] · [[https://iontlab.org/formalization/mathematics-learning/|Current graph]].
+===== Teaching boundary =====
 
-===== Checked declarations =====
+Assigned proofs and checks are withheld for **1.14, 1.15, 1.17, 1.19, 1.21, 1.23, 1.24, 1.26, 1.28, 2.1, 2.2, 2.4, 2.5, the embedded opposite-isomorphism exercise in 2.6, and 3.3**. Statements, numbering and attribution remain. Proposition 1.26 is explicitly an assigned proof despite its proposition label. The non-assigned main hom-set criterion in 2.6 remains checked; its assigned opposite-arrow step is not exported as a solution.
 
-Names have the prefix ''ILab.MathematicsLearning.''. Every row is compiler-checked and axiom-audited. Definitions and instances supply checked constructions; they are not additional theorem claims. The linked source gives each full type and assumptions.
+The previous publication needed correction: solution walkthroughs in four lessons and six exercise-related authored exports, with two generated helpers, were withdrawn from the current edition. The expanded release also withholds prepared exercise solutions. Historical Git commits and wiki revisions can still contain withdrawn material; current-edition removal does not erase that history. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Complete source inventory and exclusion table]].
 
-^ Declaration ^ Primary item(s) ^ Exact scope and source ^
-| ''identity_padded_composite'' | 1.5 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L22|A composable pair is unchanged after inserting identities]] |
-| ''inverse_unique'' | 1.11 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/BasicCategoryTheory.lean#L27|A right inverse and a left inverse of the same arrow agree]] |
-| ''Room'' | 3.8 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L16|Inductive object type with north and south constructors]] |
-| ''roomFintype'' | 3.8 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L21|Complete finite enumeration of the two objects]] |
-| ''OneRoom'' | 1.25 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L25|Inductive object type with one constructor]] |
-| ''roomCategory'' | 3.8 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L29|Small category with singleton hom types on Room]] |
-| ''oneRoomCategory'' | 1.25 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L34|Small category with singleton hom types on OneRoom]] |
-| ''roomIso'' | 3.8 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L40|Explicit isomorphism between each ordered pair of rooms]] |
-| ''includeRoom'' | 3.9 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L45|Functor selecting north from the one-object category]] |
-| ''collapseRoom'' | 3.9 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L50|Functor collapsing both rooms to the sole object]] |
-| ''walkingEquivalence'' | 3.4 / 3.9 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L55|Explicit bundled adjoint equivalence, including a triangle law]] |
-| ''inclusion_not_surjective'' | 3.6 / 3.9 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L65|The inclusion is not literally surjective on objects]] |
-| ''inclusion_essentially_surjective'' | 3.6 / 3.9 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L72|Every room is isomorphic to the selected image object]] |
-| ''room_cardinality'' | 3.8 | [[https://github.com/iontlab/geometry-of-intelligence/blob/5f45eee29afa3c7507eb9a56bb132ccb92260e68/ILab/MathematicsLearning/WalkingIsomorphism.lean#L76|The object type Room has exactly two elements]] |
+===== Checked scope and remaining boundaries =====
 
-===== Scope and conventions =====
+The checked ordinary material includes category, functor and natural-transformation definitions; identities and associativity; inverse uniqueness; the four category examples and their isomorphisms; seven functor examples; non-exercise Yoneda consequences; four adjunction examples; quasi-inverse equivalences and the general equivalence criterion; and the finite walking-isomorphism example. Existing Mathlib results are reused explicitly and are not claimed as original iLab theorems.
 
-These are ordinary Mathlib categories. Lean's ''f ≫ g'' means the source's \(g\circ f\). Object and hom universes are independently parameterized; they do not prove the existence of the primary's set universes. The finite ''walkingEquivalence'' includes a triangle law because Mathlib bundles an adjoint equivalence, a stronger data requirement than primary Definition 3.4.
+The set-universe module encodes the stated closure properties in ''ZFSet'' and proves consequences under the supplied hierarchy assumptions. It does not prove that the stipulated universes exist. Category-size examples use explicitly scoped Lean type universes, not a literal ZFSet encoding of every source category. Equality transport and a cyclic-two/sign-group example are checked; these do not prove univalence or the Structure Identity Principle.
 
-The inverse-uniqueness source code exchanges the names of the left and right inverse relative to the written lesson. Its conclusion is the same uniqueness result. The finite example proves essential-surjectivity witnesses and failure of literal surjectivity directly. It does not use an unproved general criterion.
+Five source obligations remain outside the available foundations: introduction p. 1 all-dimensional weak coherence; pp. 1–2 the full fundamental infinity-groupoid; pp. 2–3 types as infinity-groupoids; p. 2 faithful non-proof-irrelevant iterated identities; and p. 3 the Structure Identity Principle. Endpoint-fixed path homotopies and their ordinary fundamental groupoid are checked scoped results, not a solution to those full higher-foundation obligations. The source's future course topics supply no additional proof-bearing statements in this installment.
 
-**Not formalized here:** HoTT, univalence, Synthetic Category Theory, infinity-categories, set-universe existence, the general Yoneda lemma, the adjunction hom-set correspondence, and Theorem 3.7's general equivalence criterion. Assigned exercise solutions are outside the publication scope. Other non-exercise examples remain written mathematics pending the expanded verified release. Complete explanatory coverage does not mean complete Lean coverage.
+===== Working explanation controls =====
 
-===== Reading the graph =====
+The existing eight lessons have 47 inline controls: all 44 numbered statements, plus three scoped introductory/adjoint-upgrade entries. Each opens **Mathematics | Plain | Story | Lean | Verification** for that source item. The graph provides the same five layers for 37 principal results, with supporting declarations linked to their main result. Internal helpers retain only meaningful technical layers. A source selector also gives access to all 58 inventory items without adding fictitious graph nodes.
 
-The viewer reuses the existing RQ-001 graph implementation. Mathematical Blueprint shows 9 curated declaration mappings; these statements and proof explanations are authored educational metadata. Full Lean Graph exposes the compiler-derived data: 65 declarations and 232 direct local edges, with generated declarations initially hidden. Filters show only edges whose endpoints remain visible; no shortcut or story edges are invented. Mathlib's external references are omitted from the drawing, not from the axiom audit.
+The release binds every explanation to an exact chapter revision and raw-source digest, a stable heading, the primary PDF reference and, where applicable, the actual Lean signature, module hash and source commit. The approved extension of the existing ''ilabexplain'' plugin checks exact server-rendered fragments and current source freshness. Stale or unavailable bindings withhold the interactive explanation. AI authorship and the absence of independent human review are stated explicitly.
 
-The four RQ-001 modules, their graph and their historical verification evidence remain separate. [[https://iontlab.org/formalization/rq001/|Existing RQ-001 graph]]. Verification establishes the stated ordinary results under their assumptions, not mathematical novelty or a theory of intelligence.
+Plain and Story were exercised in the live browser in all eight chapters. The public graph's five-layer theorem deep link was also exercised. All 16 deployed learning assets match the staged release, while all 14 protected live RQ-001 graph/explanation assets remain byte-identical. The four RQ-001 source modules and evidence are unchanged; its fresh compiler extraction reproduces all 202 declarations byte-for-byte.
 
 ===== Reproduce and inspect =====
 
-Historical audited source commit for the retained subset: ''5f45eee29afa3c7507eb9a56bb132ccb92260e68''. Lean commit: ''293d5d0c0c3f3dded4688b3ccd6a33939ac5102b''. Mathlib revision: ''5ed2965256430c3649e86755f9576b54eca72435''.
+''ace59a04225eb98a769edb1943378d33a91aa204'' is the exact checked Lean source commit. Lean commit: ''293d5d0c0c3f3dded4688b3ccd6a33939ac5102b''. Mathlib revision: ''5ed2965256430c3649e86755f9576b54eca72435''.
+
+[[https://iontlab.org/formalization/mathematics-learning/|Interactive graph]] · [[https://github.com/iontlab/geometry-of-intelligence/tree/codex/mathematics-learning-parity/formalization/mathematics-learning/verification|Build, audit, source mappings and Mathlib provenance]] · [[https://github.com/iontlab/geometry-of-intelligence/blob/codex/mathematics-learning-parity/docs/mathematics-learning/obligations.json|All source obligations]]
 
 ^ Source module ^ SHA-256 ^
-| ''BasicCategoryTheory.lean'' | ''c50de7cd6c392746e2861c232398cd9225e48a396ae124afa9725352f3a5aed1'' |
-| ''WalkingIsomorphism.lean'' | ''306750071687eec2491400b86e52dd30c734a843c0df3d88de4434cfc36ce6ca'' |
+| BasicCategoryTheory.lean | ''08cf73f17c8c8a3f06baa4a96b5755bd370ed3d7dd6b8ba4e272a68cda279c0a'' |
+| CategoryConstructions.lean | ''2423afe7b4156371bc97daccc338811c7b9f9751314002c3f130c4cb438cf7cd'' |
+| CategorySize.lean | ''bbeda1ad9497ee2fc1640f0d44b9bd0854df4aaa36e949a7d05943a4aa66e9c4'' |
+| PathAndIdentity.lean | ''6d001e843aac2696935bd59b235c1a472f38fa179369deb2259c9ff8a0b9dae3'' |
+| SetUniverses.lean | ''b567608955ba989ebc96b7ee1038c80a06d9f381bd63aa24ddfb2fd6d9c43de4'' |
+| SourceLaws.lean | ''fdbe2e2d67927b65a4237fdccd00f0393f679bfa381ec321f45d20a954afef57'' |
+| TerminalCategory.lean | ''ebe38e40cd68e4a213f4333e7894e08eef1357f4e274ce2d20895cf3c1c9b7a8'' |
+| WalkingIsomorphism.lean | ''306750071687eec2491400b86e52dd30c734a843c0df3d88de4434cfc36ce6ca'' |
+| YonedaAdjunction.lean | ''77b6ad9af71da3c1c9c7e0d22dec8e84487a629bdd48084e321eb9f0b2bc4158'' |
 
-The original audit covered a larger release. Its hashes identify historical build provenance, not a fresh build of the publication subset. The current public graph omits exercise-derived entries; a new source release is being prepared. Editorial/source alignment was reviewed by the authoring assistant; independent human review is not claimed.
-
-Back: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Full source coverage and proof status]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Reading path]]
+Back: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source coverage]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Reading path]]

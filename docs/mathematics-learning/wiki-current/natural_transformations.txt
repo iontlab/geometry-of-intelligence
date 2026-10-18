@@ -22,7 +22,9 @@ For an independent example on sets, fix two marker sets \(A,B\) and a function \
 
 ===== Mathematics =====
 
-**Definition 1.20.** For \(F,G:C\to D\), a natural transformation \(\alpha:F\Rightarrow G\) assigns \(\alpha_x:Fx\to Gx\) with
+==== Definition 1.20 ====
+
+For \(F,G:C\to D\), a natural transformation \(\alpha:F\Rightarrow G\) assigns \(\alpha_x:Fx\to Gx\) with
 
 $$G(f)\circ\alpha_x=\alpha_y\circ F(f)\qquad(f:x\to y).$$
 
@@ -30,28 +32,44 @@ Both composites have domain \(Fx\) and codomain \(Gy\). The commuting square is
 
 $$\begin{array}{ccc}Fx&\xrightarrow{\alpha_x}&Gx\\ {\scriptstyle Ff}\downarrow&&\downarrow{\scriptstyle Gf}\\ Fy&\xrightarrow{\alpha_y}&Gy.\end{array}$$
 
-**Construction 1.21.** For \(f:c\to d\), the transformation \(h_f:h_c\Rightarrow h_d\) has component \(C(x,c)\to C(x,d)\), sending \(g\) to \(fg\). **Its well-definedness is assigned as an exercise (p. 8); the solution is withheld.**
+==== Construction 1.21 ====
 
-**Definition 1.22.** A natural transformation is a natural isomorphism when every component is an isomorphism.
+For \(f:c\to d\), the transformation \(h_f:h_c\Rightarrow h_d\) has component \(C(x,c)\to C(x,d)\), sending \(g\) to \(fg\). **Its well-definedness is assigned as an exercise (p. 8); the solution is withheld.**
 
-**Construction 1.23.** In \(\mathrm{Fun}(C,D)\), objects are functors and arrows are natural transformations. The identity has components \(1_{Fx}\); composition has \((\beta\alpha)_x=\beta_x\alpha_x\). **The well-definedness and category-law checks are assigned as an exercise (p. 8); solutions are withheld.**
+==== Definition 1.22 ====
 
-**Proposition 1.24.** A natural transformation is an isomorphism in \(\mathrm{Fun}(C,D)\) if and only if it is a natural isomorphism. **Assigned proof (p. 8): solution withheld.**
+A natural transformation is a natural isomorphism when every component is an isomorphism.
 
-**Construction 1.25.** The terminal strict category \([0]\) has one object \(*\) and only its identity morphism.
+==== Construction 1.23 ====
 
-**Proposition 1.26.** For a strict category \(C\), there is an isomorphism of strict categories \(\mathrm{Fun}([0],C)\cong C\), natural in \(C\). **The source says “Proof. Exercise.” (p. 8). The proof, including the naturality check, is intentionally withheld.**
+In \(\mathrm{Fun}(C,D)\), objects are functors and arrows are natural transformations. The identity has components \(1_{Fx}\); composition has \((\beta\alpha)_x=\beta_x\alpha_x\). **The well-definedness and category-law checks are assigned as an exercise (p. 8); solutions are withheld.**
 
-**Remark 1.27.** As a consequence, an object \(c\in C\) corresponds to a unique functor \(c:[0]\to C\), also denoted \(c\).
+==== Proposition 1.24 ====
 
-**Construction 1.28.** For \(F:C\to D\), precomposition gives \(F^*:\mathrm{Fun}(D,E)\to\mathrm{Fun}(C,E)\), with \(G\mapsto GF\) and components \(\alpha_{Fx}\). Postcomposition gives \(F_*:\mathrm{Fun}(E,C)\to\mathrm{Fun}(E,D)\), with \(G\mapsto FG\) and components \(F(\alpha_x)\). **The checks that these are well-defined functors are assigned as an exercise (p. 9); solutions are withheld.**
+A natural transformation is an isomorphism in \(\mathrm{Fun}(C,D)\) if and only if it is a natural isomorphism. **Assigned proof (p. 8): solution withheld.**
+
+==== Construction 1.25 ====
+
+The terminal strict category \([0]\) has one object \(*\) and only its identity morphism.
+
+==== Proposition 1.26 ====
+
+For a strict category \(C\), there is an isomorphism of strict categories \(\mathrm{Fun}([0],C)\cong C\), natural in \(C\). **The source says “Proof. Exercise.” (p. 8). The proof, including the naturality check, is intentionally withheld.**
+
+==== Remark 1.27 ====
+
+As a consequence, an object \(c\in C\) corresponds to a unique functor \(c:[0]\to C\), also denoted \(c\).
+
+==== Construction 1.28 ====
+
+For \(F:C\to D\), precomposition gives \(F^*:\mathrm{Fun}(D,E)\to\mathrm{Fun}(C,E)\), with \(G\mapsto GF\) and components \(\alpha_{Fx}\). Postcomposition gives \(F_*:\mathrm{Fun}(E,C)\to\mathrm{Fun}(E,D)\), with \(G\mapsto FG\) and components \(F(\alpha_x)\). **The checks that these are well-defined functors are assigned as an exercise (p. 9); solutions are withheld.**
 
 ===== Lean =====
 
-The ordinary natural-transformation definition and the finite terminal category remain in scope. No Lean solution is provided here for the assigned checks in 1.21, 1.23, 1.24, 1.26 or 1.28.
+The statement controls show the exact checked Lean signatures, source modules and pinned source links for the mapped non-exercise material. Assigned solutions are withheld for 1.21, 1.23, 1.24, 1.26, 1.28. 
 
 ===== Verification =====
 
-The previously published composition proof and exercise walkthroughs have been withdrawn from this lesson. The independent terminal-category construction (1.25) remains valid foundational mathematics. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Verification and publication scope]].
+The controls distinguish checked definitions, exact Mathlib reuse, new Lean proofs, foundation limitations and intentionally withheld exercise solutions. Each mapping states its scope and actual compiler-derived dependencies; none is a claim that every mathematical statement in this chapter is fully formalized. [[:mathematics_learning:higher_category_theory:synthetic_category_theory:verification|Complete verification record]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:coverage|Source inventory and exercise exclusions]].
 
 Next: [[:mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda|Yoneda]] · [[:mathematics_learning:higher_category_theory:synthetic_category_theory:start|Project reading path]]
