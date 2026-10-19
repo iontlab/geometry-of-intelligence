@@ -405,9 +405,19 @@
       "source_native_file": "original/native/functors.txt",
       "source_line": 30,
       "source_sha256": "1610ade69c34d097fc19a8a4f7e9f68b93589530fdf6a8c1cd21645bf31c2dff",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SmallCategoryUniverse.category",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.largeCategories",
+        "ILab.MathematicsLearning.SmallCategoryUniverse.homEquiv",
+        "ILab.MathematicsLearning.SetCategory.functorCodeEquiv",
+        "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+        "ILab.MathematicsLearning.SetCategory.identityFunctor_arrow",
+        "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+        "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow"
+      ],
+      "correspondence": "Existing source category/functor codes and homEquiv are reused. Identity and composite object/arrow formulas are read back on their membership models. Category laws remain inherited infrastructure; the source category-well-definedness exercise is withheld.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },
@@ -449,9 +459,18 @@
       "source_native_file": "original/native/functors.txt",
       "source_line": 45,
       "source_sha256": "8078078936d0e0c28597208cb9d2b55507a72b652fafb4b51390320623b6380e",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+        "ILab.MathematicsLearning.SetCategory.oppositeHomData",
+        "ILab.MathematicsLearning.SetCategory.oppositeIdentityData",
+        "ILab.MathematicsLearning.SetCategory.oppositeComposeData",
+        "ILab.MathematicsLearning.SetCategory.oppositeObjectData_formula",
+        "ILab.MathematicsLearning.SetCategory.oppositeHomData_formula",
+        "ILab.MathematicsLearning.SetCategory.oppositeIdentityData_formula",
+        "ILab.MathematicsLearning.SetCategory.oppositeComposeData_formula"
+      ],
+      "correspondence": "Same object set, reversed hom sets, unchanged identity, and reversed raw composition only. No opposite SetCategory or category-law proof is constructed; well-definedness remains assigned.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },
@@ -488,9 +507,13 @@
       "source_native_file": "original/native/functors.txt",
       "source_line": 73,
       "source_sha256": "e6650638dc599c5467411bdaa3226fe83e2424a087148814272c28dfba4ccab9",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.representableInSmallSets",
+        "ILab.MathematicsLearning.SetCategory.representable_object",
+        "ILab.MathematicsLearning.SetCategory.representable_map"
+      ],
+      "correspondence": "Reuse the existing small hom-set object and precomposition graph formulas from 2.7, retaining its mappings and local-smallness premise. Library functor infrastructure is not a source-authored solution of the assigned functor-well-definedness check.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },
@@ -527,9 +550,12 @@
       "source_native_file": "original/native/natural_transformations.txt",
       "source_line": 26,
       "source_sha256": "a5b1d9961c2a6df6273d46b807c611e11313c2cc83123cd886fb7f39fb4f9495",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+        "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula"
+      ],
+      "correspondence": "For f:c→d the component at x sends g:x→c to g ≫ f. It returns an arrow in the source hom set, not a natural transformation. Naturality/well-definedness remains assigned.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },
@@ -563,9 +589,18 @@
       "source_native_file": "original/native/natural_transformations.txt",
       "source_line": 40,
       "source_sha256": "41bb3e45707871e5f7d977858f9b378c5ac0e75acf02adabbbed35d063ebf069",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+        "ILab.MathematicsLearning.SetCategory.functorEquiv",
+        "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+        "ILab.MathematicsLearning.SetCategory.transformationEquiv",
+        "ILab.MathematicsLearning.SetCategory.identityComponent",
+        "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent",
+        "ILab.MathematicsLearning.SetCategory.identityComponent_formula",
+        "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent_formula"
+      ],
+      "correspondence": "Given functors and transformations, expose only id at F(x) and α_x ≫ β_x. Components are raw arrows; their naturality and the functor-category laws remain assigned.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },
@@ -661,9 +696,16 @@
       "source_native_file": "original/native/natural_transformations.txt",
       "source_line": 70,
       "source_sha256": "f3f17efaf578abbfb305e4776ffb59a9014f5b2f3250e0b280f77424c67f86ea",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+        "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent",
+        "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+        "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow",
+        "ILab.MathematicsLearning.SetCategory.precompositionComponent_formula",
+        "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent_formula"
+      ],
+      "correspondence": "Precomposition sends G to F ⋙ G with component α_(Fx); postcomposition sends G to G ⋙ F with component F(α_x). Existing functor composition supplies the object assignments. Neither whole whiskering functor nor either assigned well-definedness check is exported.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },
@@ -698,9 +740,15 @@
       "source_native_file": "original/native/yoneda.txt",
       "source_line": 29,
       "source_sha256": "ce8520b3126b540f7696578bd33c70c5edef935e24b2c02d49ab4075d72b49dd",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.representableInSmallSets",
+        "ILab.MathematicsLearning.SetCategory.representable_object",
+        "ILab.MathematicsLearning.SetCategory.representable_map",
+        "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+        "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula"
+      ],
+      "correspondence": "Share the representable object/arrow formulas of 1.19 and the raw arrow component of 1.21. The local-smallness premise remains. These assignments are not a completed Yoneda functor; functor well-definedness and full faithfulness remain unproved as source exercises.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },
@@ -769,9 +817,10 @@
       "source_sha256": "6e99c2600ef1fd7f27ad69e481e1a00b5e91107bf5b14a166307fc812613767d",
       "status": "mixed_exercise",
       "declarations": [
-        "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism"
+        "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+        "ILab.MathematicsLearning.SetCategory.oppositePostcomposeReadback"
       ],
-      "correspondence": "The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized.",
+      "correspondence": "Preserve the checked (i)↔(ii). For f:c→d and g:d→x, (g.op ≫ f.op).unop = f ≫ g identifies the induced map. The authors’ further reduction assumes the assigned IsIso f ↔ IsIso f.op. Only the formula is added: no opposite set-coded model or full three-way proof. isoIffPrecompositionBijective is independent Mathlib support.",
       "prior_independent_declarations": [
         "ILab.MathematicsLearning.isoIffPostcompositionBijective",
         "ILab.MathematicsLearning.isoIffPrecompositionBijective"
@@ -864,9 +913,18 @@
       "source_native_file": "original/native/adjunctions.txt",
       "source_line": 51,
       "source_sha256": "c8eee41e5b24bf3d97cdfe4f033a2bb3a0e166cd0adba099f8367f16e373e638",
-      "status": "exercise_withheld",
-      "declarations": [],
-      "correspondence": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+      "status": "partial_construction",
+      "declarations": [
+        "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+        "ILab.MathematicsLearning.SetCategory.adjunctionBackward",
+        "ILab.MathematicsLearning.SetCategory.unitCandidateComponent",
+        "ILab.MathematicsLearning.SetCategory.counitCandidateComponent",
+        "ILab.MathematicsLearning.SetCategory.adjunctionForward_formula",
+        "ILab.MathematicsLearning.SetCategory.adjunctionBackward_formula",
+        "ILab.MathematicsLearning.SetCategory.unitCandidateComponent_formula",
+        "ILab.MathematicsLearning.SetCategory.counitCandidateComponent_formula"
+      ],
+      "correspondence": "From a given adjunction: g↦η_x ≫ R(g) and f↦L(f) ≫ ε_y. Conversely, GIVEN hom-set bijections φ natural in x,y: η_x=φ_(x,Lx)(id), ε_y=φ_(Ry,y)⁻¹(id). The component formulas use underlying bijections only; naturality of φ is source context, not proved. Mutual inverses, naturality of hom maps/candidates, and both triangle checks remain assigned. No complete representable adjunction theorem is verified.",
       "prior_independent_declarations": [],
       "prior_mapping_assessment": "Previous generic/category-type declarations alone were not treated as proof of the source set-universe formulation. Valid independent work is retained."
     },

@@ -140,6 +140,11 @@
     "paperMapping": "All vector-space structures on small ZFC sets, injective operation codes, linear graphs and the bijective isomorphism criterion."
   },
   {
+    "name": "ILab.MathematicsLearning.SourceConstructionData",
+    "sha256": "98FA80A5A52A0C543AF55FEEF2205CF4BEAE529698BBD20E99FED0CBB6AD85F2",
+    "paperMapping": "Approved source data/formulas in 1.15, 1.17, 1.21, 1.23, 1.28, 2.2, 2.6 and 3.3. Only raw components and definitional readbacks; assigned laws, naturality, inverses and triangles remain withheld."
+  },
+  {
     "name": "ILab.MathematicsLearning.SourceLaws",
     "sha256": "FDBE2E2D67927B65A4237FDCCD00F0393F679BFA381EC321F45D20A954AFEF57",
     "paperMapping": "Ordinary-category supporting results. Exact source coverage is determined by source-audit.json, not by the module label."

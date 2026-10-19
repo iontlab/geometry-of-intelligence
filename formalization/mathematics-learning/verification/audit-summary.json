@@ -1,10 +1,10 @@
 {
-  "source_ref": "28baa9ea38c0a6c3c88aa10dc09614cc565ede6c",
+  "source_ref": "ebde0f04b46bc3cfa906d06b749e4954549f545c",
   "lean": "4.34.0",
   "mathlib_revision": "5ed2965256430c3649e86755f9576b54eca72435",
-  "compiled_declarations": 785,
-  "authored_declarations": 396,
-  "direct_edges": 3884,
+  "compiled_declarations": 816,
+  "authored_declarations": 427,
+  "direct_edges": 4030,
   "source_modules": [
     {
       "name": "ILab.MathematicsLearning.BasicCategoryTheory",
@@ -147,6 +147,11 @@
       "paperMapping": "All vector-space structures on small ZFC sets, injective operation codes, linear graphs and the bijective isomorphism criterion."
     },
     {
+      "name": "ILab.MathematicsLearning.SourceConstructionData",
+      "sha256": "98FA80A5A52A0C543AF55FEEF2205CF4BEAE529698BBD20E99FED0CBB6AD85F2",
+      "paperMapping": "Approved source data/formulas in 1.15, 1.17, 1.21, 1.23, 1.28, 2.2, 2.6 and 3.3. Only raw components and definitional readbacks; assigned laws, naturality, inverses and triangles remain withheld."
+    },
+    {
       "name": "ILab.MathematicsLearning.SourceLaws",
       "sha256": "FDBE2E2D67927B65A4237FDCCD00F0393F679BFA381EC321F45D20A954AFEF57",
       "paperMapping": "Ordinary-category supporting results. Exact source coverage is determined by source-audit.json, not by the module label."
@@ -177,15 +182,23 @@
   "exercise_affected_items": 15,
   "pending_eligible_items": 0,
   "partial_construction_items": [
-    "2.1"
+    "1.15",
+    "1.17",
+    "1.19",
+    "1.21",
+    "1.23",
+    "1.28",
+    "2.1",
+    "2.2",
+    "3.3"
   ],
   "foundational_axioms": [
     "propext",
     "Classical.choice",
     "Quot.sound"
   ],
-  "clean_build_jobs": 8961,
-  "build_status": "Clean build succeeded (8961 jobs), followed by compiler extraction and axiom audit.",
+  "clean_build_jobs": 8962,
+  "build_status": "Clean build succeeded (8962 jobs), followed by compiler extraction and axiom audit.",
   "source_fidelity_audit": "../../../docs/mathematics-learning/original/native/source-audit.json",
   "completion": false
 }

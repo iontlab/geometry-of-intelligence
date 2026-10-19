@@ -1,0 +1,10 @@
+{
+  "checks": 17,
+  "registry_bytes": 503551,
+  "capacity_bytes": 5000000,
+  "headroom": 4496449,
+  "synthetic_bytes": 5000000,
+  "synthetic_records": 750,
+  "parse_validate_ms": 45.15270000000001,
+  "note": "Node V8 timing; browser/device/network timing is separate."
+}

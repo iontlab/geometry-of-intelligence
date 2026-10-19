@@ -365,9 +365,9 @@
         "For f:c→d, the following are equivalent: f is invertible; postcomposition C(x,c)→C(x,d) is bijective for every x; precomposition C(d,x)→C(c,x) is bijective for every x."
       ],
       "proof": [
-        "The authors use full faithfulness of Yoneda and Proposition 1.24 for the incoming-map comparison, then pass to the opposite category for the outgoing-map comparison. They explicitly assign the invertibility equivalence for f and f.op as an exercise; that step is withheld."
+        "Preserve the checked (i)↔(ii). For f:c→d and g:d→x, (g.op ≫ f.op).unop = f ≫ g identifies the induced map. The authors’ further reduction assumes the assigned IsIso f ↔ IsIso f.op. Only the formula is added: no opposite set-coded model or full three-way proof. isoIffPrecompositionBijective is independent Mathlib support. Assigned exercise solution withheld."
       ],
-      "limitation": "Author-proved (i) iff (ii) verified; embedded exercise solution withheld. The author-proved (i) iff (ii) portion is verified on the exact source hom members, retaining local smallness. The assigned opposite-invertibility step and a complete three-way proof remain withheld; this item is not counted as fully formalized. Each referenced signature specifies the precise checked formulation."
+      "limitation": "Preserve the checked (i)↔(ii). For f:c→d and g:d→x, (g.op ≫ f.op).unop = f ≫ g identifies the induced map. The authors’ further reduction assumes the assigned IsIso f ↔ IsIso f.op. Only the formula is added: no opposite set-coded model or full three-way proof. isoIffPrecompositionBijective is independent Mathlib support."
     },
     "source.2.7": {
       "label": "Primary 2.7",
@@ -527,8 +527,8 @@
       "label": "Primary equivalences.motivation",
       "title": "Equality, isomorphism and equivalence-sensitive invariance",
       "native_key": "equivalences.motivation",
-      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
-      "anchor": "equivalences_of_strict_categories",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "anchor": "adjunctions_and_equivalences",
       "statement": [
         "Equality, isomorphism and equivalence of strict categories are distinct notions. The one-object category and walking isomorphism are equivalent despite having different numbers of objects."
       ],
@@ -550,6 +550,90 @@
         "The authors explicitly define evaluation alpha maps to alpha_c(id_c), and candidate components (alpha_u)_x(f)=F(f)(u). These functions and their defining formulas are checked on the source small-set carriers. Assigned exercise solution withheld: naturality of the candidate family, mutual inverseness, and naturality in c and F. No completed candidate natural transformation or Yoneda bijection is exported."
       ],
       "limitation": "Verified author-supplied construction steps; complete Yoneda theorem not verified; assigned checks remain open. Verified author-supplied construction steps on the original small-set carriers: evaluation alpha_c(id_c), and the candidate component functions f maps to F(f)(u), with definitional formula readbacks. The candidate is only a family of functions, not a completed natural transformation. Its naturality, mutual inverseness, and naturality in c and F remain assigned exercises; the complete Yoneda theorem is not verified here. The existing representable and set-function bridge are reused as prerequisites, not counted as newly solved exercises."
+    },
+    "source.1.15": {
+      "label": "Primary 1.15 · partial data",
+      "title": "Categories of small and large strict categories; identity/composite functors",
+      "native_key": "1.15",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "anchor": "construction_115",
+      "statement": [
+        "Small strict categories and functors form Catₛ; the corresponding large categories form a huge CATₛ. Identity functors act identically, and (G∘F)(x)=G(Fx), (G∘F)(f)=G(Ff)."
+      ],
+      "proof": [
+        "Existing source category/functor codes and homEquiv are reused. Identity and composite object/arrow formulas are read back on their membership models. Category laws remain inherited infrastructure; the source category-well-definedness exercise is withheld. Assigned exercise solution withheld."
+      ],
+      "limitation": "Existing source category/functor codes and homEquiv are reused. Identity and composite object/arrow formulas are read back on their membership models. Category laws remain inherited infrastructure; the source category-well-definedness exercise is withheld."
+    },
+    "source.1.17": {
+      "label": "Primary 1.17 · partial data",
+      "title": "Opposite category and reversed composition",
+      "native_key": "1.17",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+      "anchor": "construction_117",
+      "statement": [
+        "Cᵒᵖ has the same objects with Cᵒᵖ(x,y)=C(y,x). Identities are unchanged and composition reverses order: gᵒᵖ∘fᵒᵖ=(f∘g)ᵒᵖ."
+      ],
+      "proof": [
+        "Same object set, reversed hom sets, unchanged identity, and reversed raw composition only. No opposite SetCategory or category-law proof is constructed; well-definedness remains assigned. Assigned exercise solution withheld."
+      ],
+      "limitation": "Same object set, reversed hom sets, unchanged identity, and reversed raw composition only. No opposite SetCategory or category-law proof is constructed; well-definedness remains assigned."
+    },
+    "source.1.21": {
+      "label": "Primary 1.21 · partial data",
+      "title": "Postcomposition natural transformation C(-,f)",
+      "native_key": "1.21",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "anchor": "construction_121",
+      "statement": [
+        "For f:c→d, postcomposition defines h_f:h_c⇒h_d with (h_f)ₓ(g)=f∘g."
+      ],
+      "proof": [
+        "For f:c→d the component at x sends g:x→c to g ≫ f. It returns an arrow in the source hom set, not a natural transformation. Naturality/well-definedness remains assigned. Assigned exercise solution withheld."
+      ],
+      "limitation": "For f:c→d the component at x sends g:x→c to g ≫ f. It returns an arrow in the source hom set, not a natural transformation. Naturality/well-definedness remains assigned."
+    },
+    "source.1.23": {
+      "label": "Primary 1.23 · partial data",
+      "title": "Functor category, identity and vertical composition",
+      "native_key": "1.23",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "anchor": "construction_123",
+      "statement": [
+        "Fun(C,D) has functors as objects and natural transformations as arrows. Identity components are identities and (β∘α)ₓ=βₓ∘αₓ."
+      ],
+      "proof": [
+        "Given functors and transformations, expose only id at F(x) and α_x ≫ β_x. Components are raw arrows; their naturality and the functor-category laws remain assigned. Assigned exercise solution withheld."
+      ],
+      "limitation": "Given functors and transformations, expose only id at F(x) and α_x ≫ β_x. Components are raw arrows; their naturality and the functor-category laws remain assigned."
+    },
+    "source.1.28": {
+      "label": "Primary 1.28 · partial data",
+      "title": "Precomposition and postcomposition functors; whiskering",
+      "native_key": "1.28",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+      "anchor": "construction_128",
+      "statement": [
+        "For F:C→D, precomposition gives F*:Fun(D,E)→Fun(C,E), with α mapped to components α_Fx. Postcomposition gives F*:Fun(E,C)→Fun(E,D), with α mapped to components F(αₓ); the source distinguishes these by subscript versus superscript."
+      ],
+      "proof": [
+        "Precomposition sends G to F ⋙ G with component α_(Fx); postcomposition sends G to G ⋙ F with component F(α_x). Existing functor composition supplies the object assignments. Neither whole whiskering functor nor either assigned well-definedness check is exported. Assigned exercise solution withheld."
+      ],
+      "limitation": "Precomposition sends G to F ⋙ G with component α_(Fx); postcomposition sends G to G ⋙ F with component F(α_x). Existing functor composition supplies the object assignments. Neither whole whiskering functor nor either assigned well-definedness check is exported."
+    },
+    "source.3.3": {
+      "label": "Primary 3.3 · partial data",
+      "title": "Natural hom-set bijections equivalent to unit/counit adjunctions",
+      "native_key": "3.3",
+      "source": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+      "anchor": "theorem_33_adjunctions_representably",
+      "statement": [
+        "Functors L:C→D and R:D→C admit an adjunction exactly when there are bijections D(Lx,y)≃C(x,Ry), natural in x and y. Forward transposition sends g to Rg∘ηₓ; inverse transposition sends f to εᵧ∘Lf."
+      ],
+      "proof": [
+        "From a given adjunction: g↦η_x ≫ R(g) and f↦L(f) ≫ ε_y. Conversely, GIVEN hom-set bijections φ natural in x,y: η_x=φ_(x,Lx)(id), ε_y=φ_(Ry,y)⁻¹(id). The component formulas use underlying bijections only; naturality of φ is source context, not proved. Mutual inverses, naturality of hom maps/candidates, and both triangle checks remain assigned. No complete representable adjunction theorem is verified. Assigned exercise solution withheld."
+      ],
+      "limitation": "From a given adjunction: g↦η_x ≫ R(g) and f↦L(f) ≫ ε_y. Conversely, GIVEN hom-set bijections φ natural in x,y: η_x=φ_(x,Lx)(id), ε_y=φ_(Ry,y)⁻¹(id). The component formulas use underlying bijections only; naturality of φ is source context, not proved. Mutual inverses, naturality of hom maps/candidates, and both triangle checks remain assigned. No complete representable adjunction theorem is verified."
     }
   },
   "declarations": {
@@ -1007,6 +1091,150 @@
     },
     "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula": {
       "result": "source.2.1",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.category": {
+      "result": "source.1.15",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories": {
+      "result": "source.1.15",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.largeCategories": {
+      "result": "source.1.15",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SmallCategoryUniverse.homEquiv": {
+      "result": "source.1.15",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.identityFunctor_object": {
+      "result": "source.1.15",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.identityFunctor_arrow": {
+      "result": "source.1.15",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.compositeFunctor_object": {
+      "result": "source.1.15",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow": {
+      "result": "source.1.15",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositeObjectData": {
+      "result": "source.1.17",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositeHomData": {
+      "result": "source.1.17",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositeIdentityData": {
+      "result": "source.1.17",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositeComposeData": {
+      "result": "source.1.17",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositeObjectData_formula": {
+      "result": "source.1.17",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositeHomData_formula": {
+      "result": "source.1.17",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositeIdentityData_formula": {
+      "result": "source.1.17",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositeComposeData_formula": {
+      "result": "source.1.17",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.representableInSmallSets": {
+      "result": "source.2.7",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.postcompositionComponent": {
+      "result": "source.1.21",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula": {
+      "result": "source.1.21",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.identityComponent": {
+      "result": "source.1.23",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent": {
+      "result": "source.1.23",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.identityComponent_formula": {
+      "result": "source.1.23",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent_formula": {
+      "result": "source.1.23",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.precompositionComponent": {
+      "result": "source.1.28",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent": {
+      "result": "source.1.28",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.precompositionComponent_formula": {
+      "result": "source.1.28",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent_formula": {
+      "result": "source.1.28",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.oppositePostcomposeReadback": {
+      "result": "source.2.6",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.adjunctionForward": {
+      "result": "source.3.3",
+      "role": "principal"
+    },
+    "ILab.MathematicsLearning.SetCategory.adjunctionBackward": {
+      "result": "source.3.3",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.unitCandidateComponent": {
+      "result": "source.3.3",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.counitCandidateComponent": {
+      "result": "source.3.3",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.adjunctionForward_formula": {
+      "result": "source.3.3",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.adjunctionBackward_formula": {
+      "result": "source.3.3",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.unitCandidateComponent_formula": {
+      "result": "source.3.3",
+      "role": "supporting"
+    },
+    "ILab.MathematicsLearning.SetCategory.counitCandidateComponent_formula": {
+      "result": "source.3.3",
       "role": "supporting"
     }
   },

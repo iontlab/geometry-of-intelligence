@@ -1,0 +1,843 @@
+[
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C D : ILab.MathematicsLearning.SetCategory U} →\n    {L : C.SourceFunctor D} →\n      {R : D.SourceFunctor C} →\n        ILab.MathematicsLearning.SetCategory.SourceAdjunction L R →\n          (x : C.Object) → (y : D.Object) → (x ⟶ R.obj y) → (L.obj x ⟶ y)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.adjunctionBackward",
+    "externalDependencies": [
+      "ZFSet",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Adjunction.counit"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.map",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.obj",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.toMathlib",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D : ILab.MathematicsLearning.SetCategory U} {L : C.SourceFunctor D} {R : D.SourceFunctor C}\n  (a : ILab.MathematicsLearning.SetCategory.SourceAdjunction L R) (x : C.Object) (y : D.Object) (f : x ⟶ R.obj y),\n  ILab.MathematicsLearning.SetCategory.adjunctionBackward a x y f = D.compose (L.map f) (a.counit.app y)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.adjunctionBackward_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Adjunction.counit",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.Object.member",
+      "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.map",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.obj",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.toMathlib",
+      "ILab.MathematicsLearning.SetCategory.adjunctionBackward",
+      "ILab.MathematicsLearning.SetCategory.compose",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C D : ILab.MathematicsLearning.SetCategory U} →\n    {L : C.SourceFunctor D} →\n      {R : D.SourceFunctor C} →\n        ILab.MathematicsLearning.SetCategory.SourceAdjunction L R →\n          (x : C.Object) → (y : D.Object) → (L.obj x ⟶ y) → (x ⟶ R.obj y)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+    "externalDependencies": [
+      "ZFSet",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Adjunction.unit"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.map",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.obj",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.toMathlib",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D : ILab.MathematicsLearning.SetCategory U} {L : C.SourceFunctor D} {R : D.SourceFunctor C}\n  (a : ILab.MathematicsLearning.SetCategory.SourceAdjunction L R) (x : C.Object) (y : D.Object) (g : L.obj x ⟶ y),\n  ILab.MathematicsLearning.SetCategory.adjunctionForward a x y g = C.compose (a.unit.app x) (R.map g)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.adjunctionForward_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.NatTrans.app",
+      "CategoryTheory.Adjunction.unit",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.Object.member",
+      "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.map",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.obj",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.toMathlib",
+      "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+      "ILab.MathematicsLearning.SetCategory.compose",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D E : ILab.MathematicsLearning.SetCategory U} (F : CategoryTheory.Functor C.Object D.Object)\n  (G : CategoryTheory.Functor D.Object E.Object) {x y : C.Object} (f : x ⟶ y), (F.comp G).map f = G.map (F.map f)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.comp",
+      "CategoryTheory.Functor.map",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D E : ILab.MathematicsLearning.SetCategory U} (F : CategoryTheory.Functor C.Object D.Object)\n  (G : CategoryTheory.Functor D.Object E.Object) (x : C.Object), (F.comp G).obj x = G.obj (F.obj x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.comp",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C D : ILab.MathematicsLearning.SetCategory U} →\n    {L : C.SourceFunctor D} →\n      {R : D.SourceFunctor C} →\n        ((x : C.Object) → (y : D.Object) → (L.obj x ⟶ y) ≃ (x ⟶ R.obj y)) → (y : D.Object) → L.obj (R.obj y) ⟶ y",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.counitCandidateComponent",
+    "externalDependencies": [
+      "ZFSet",
+      "Equiv",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "DFunLike.coe",
+      "EquivLike.toFunLike",
+      "Equiv.instEquivLike",
+      "Equiv.symm",
+      "CategoryTheory.CategoryStruct.id"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.obj",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D : ILab.MathematicsLearning.SetCategory U} {L : C.SourceFunctor D} {R : D.SourceFunctor C}\n  (φ : (x : C.Object) → (y : D.Object) → (L.obj x ⟶ y) ≃ (x ⟶ R.obj y)) (y : D.Object),\n  ILab.MathematicsLearning.SetCategory.counitCandidateComponent φ y =\n    (φ (R.obj y) y).symm (CategoryTheory.CategoryStruct.id (R.obj y))",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.counitCandidateComponent_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Equiv",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "DFunLike.coe",
+      "EquivLike.toFunLike",
+      "Equiv.instEquivLike",
+      "Equiv.symm",
+      "CategoryTheory.CategoryStruct.id",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.obj",
+      "ILab.MathematicsLearning.SetCategory.counitCandidateComponent",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C D : ILab.MathematicsLearning.SetCategory U} →\n    (F : CategoryTheory.Functor C.Object D.Object) → (x : C.Object) → F.obj x ⟶ F.obj x",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.identityComponent",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.CategoryStruct.id"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D : ILab.MathematicsLearning.SetCategory U} (F : CategoryTheory.Functor C.Object D.Object)\n  (x : C.Object), ILab.MathematicsLearning.SetCategory.identityComponent F x = D.identity (F.obj x).member",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.identityComponent_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Eq",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.obj",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.Object.member",
+      "ILab.MathematicsLearning.SetCategory.identity",
+      "ILab.MathematicsLearning.SetCategory.identityComponent",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C : ILab.MathematicsLearning.SetCategory U} {x y : C.Object} (f : x ⟶ y),\n  (CategoryTheory.Functor.id C.Object).map f = f",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.identityFunctor_arrow",
+    "externalDependencies": [
+      "ZFSet",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.id",
+      "CategoryTheory.Functor.map",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C : ILab.MathematicsLearning.SetCategory U} (x : C.Object),\n  (CategoryTheory.Functor.id C.Object).obj x = x",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+    "externalDependencies": [
+      "ZFSet",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.id",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  (C : ILab.MathematicsLearning.SetCategory U) → {x y z : ↥C.objects} → ↥(C.hom y x) → ↥(C.hom z y) → ↥(C.hom z x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositeComposeData",
+    "externalDependencies": [
+      "ZFSet",
+      "Subtype",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.compose",
+      "ILab.MathematicsLearning.SetCategory.hom",
+      "ILab.MathematicsLearning.SetCategory.objects"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C : ILab.MathematicsLearning.SetCategory U} {x y z : ↥C.objects} (f : ↥(C.hom y x))\n  (g : ↥(C.hom z y)), C.oppositeComposeData f g = C.compose g f",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositeComposeData_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Subtype",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike",
+      "Eq",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.compose",
+      "ILab.MathematicsLearning.SetCategory.hom",
+      "ILab.MathematicsLearning.SetCategory.objects",
+      "ILab.MathematicsLearning.SetCategory.oppositeComposeData"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} → (C : ILab.MathematicsLearning.SetCategory U) → ↥C.objects → ↥C.objects → ZFSet.{u}",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositeHomData",
+    "externalDependencies": [
+      "ZFSet",
+      "Subtype",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.hom",
+      "ILab.MathematicsLearning.SetCategory.objects"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C : ILab.MathematicsLearning.SetCategory U} (x y : ↥C.objects), C.oppositeHomData x y = C.hom y x",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositeHomData_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Subtype",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike",
+      "Eq",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.hom",
+      "ILab.MathematicsLearning.SetCategory.objects",
+      "ILab.MathematicsLearning.SetCategory.oppositeHomData"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} → (C : ILab.MathematicsLearning.SetCategory U) → (x : ↥C.objects) → ↥(C.hom x x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositeIdentityData",
+    "externalDependencies": [
+      "ZFSet",
+      "Subtype",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.hom",
+      "ILab.MathematicsLearning.SetCategory.identity",
+      "ILab.MathematicsLearning.SetCategory.objects"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C : ILab.MathematicsLearning.SetCategory U} (x : ↥C.objects), C.oppositeIdentityData x = C.identity x",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositeIdentityData_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Subtype",
+      "Membership.mem",
+      "SetLike.instMembership",
+      "ZFSet.instSetLike",
+      "Eq",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.hom",
+      "ILab.MathematicsLearning.SetCategory.identity",
+      "ILab.MathematicsLearning.SetCategory.objects",
+      "ILab.MathematicsLearning.SetCategory.oppositeIdentityData"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} → ILab.MathematicsLearning.SetCategory U → ZFSet.{u}",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+    "externalDependencies": [
+      "ZFSet"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.objects"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C : ILab.MathematicsLearning.SetCategory U}, C.oppositeObjectData = C.objects",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositeObjectData_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Eq",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.objects",
+      "ILab.MathematicsLearning.SetCategory.oppositeObjectData"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C : ILab.MathematicsLearning.SetCategory U} {c d x : C.Object} (f : c ⟶ d) (g : d ⟶ x),\n  (CategoryTheory.CategoryStruct.comp g.op f.op).unop = CategoryTheory.CategoryStruct.comp f g",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.oppositePostcomposeReadback",
+    "externalDependencies": [
+      "ZFSet",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "Opposite.unop",
+      "Opposite.op",
+      "Quiver.Hom.unop",
+      "CategoryTheory.CategoryStruct.comp",
+      "Opposite",
+      "CategoryTheory.CategoryStruct.opposite",
+      "Quiver.Hom.op",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C : ILab.MathematicsLearning.SetCategory U} → {c d : C.Object} → (c ⟶ d) → (x : C.Object) → (x ⟶ c) → (x ⟶ d)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+    "externalDependencies": [
+      "ZFSet",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.CategoryStruct.comp"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C : ILab.MathematicsLearning.SetCategory U} {c d : C.Object} (f : c ⟶ d) (x : C.Object) (g : x ⟶ c),\n  ILab.MathematicsLearning.SetCategory.postcompositionComponent f x g = C.compose g f",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.Object.member",
+      "ILab.MathematicsLearning.SetCategory.compose",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject",
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C D E : ILab.MathematicsLearning.SetCategory U} →\n    (F : CategoryTheory.Functor C.Object D.Object) →\n      {G K : CategoryTheory.Functor E.Object C.Object} → (G ⟶ K) → (x : E.Object) → F.obj (G.obj x) ⟶ F.obj (K.obj x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.NatTrans.app"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D E : ILab.MathematicsLearning.SetCategory U} (F : CategoryTheory.Functor C.Object D.Object)\n  {G K : CategoryTheory.Functor E.Object C.Object} (α : G ⟶ K) (x : E.Object),\n  ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent F α x = F.map (α.app x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.Functor.map",
+      "CategoryTheory.NatTrans.app",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject",
+      "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C D E : ILab.MathematicsLearning.SetCategory U} →\n    (F : CategoryTheory.Functor C.Object D.Object) →\n      {G K : CategoryTheory.Functor D.Object E.Object} → (G ⟶ K) → (x : C.Object) → G.obj (F.obj x) ⟶ K.obj (F.obj x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.NatTrans.app"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D E : ILab.MathematicsLearning.SetCategory U} (F : CategoryTheory.Functor C.Object D.Object)\n  {G K : CategoryTheory.Functor D.Object E.Object} (α : G ⟶ K) (x : C.Object),\n  ILab.MathematicsLearning.SetCategory.precompositionComponent F α x = α.app (F.obj x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.precompositionComponent_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.NatTrans.app",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject",
+      "ILab.MathematicsLearning.SetCategory.precompositionComponent"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C D : ILab.MathematicsLearning.SetCategory U} →\n    {L : C.SourceFunctor D} →\n      {R : D.SourceFunctor C} →\n        ((x : C.Object) → (y : D.Object) → (L.obj x ⟶ y) ≃ (x ⟶ R.obj y)) → (x : C.Object) → x ⟶ R.obj (L.obj x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.unitCandidateComponent",
+    "externalDependencies": [
+      "ZFSet",
+      "Equiv",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "DFunLike.coe",
+      "EquivLike.toFunLike",
+      "Equiv.instEquivLike",
+      "CategoryTheory.CategoryStruct.id"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.obj",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D : ILab.MathematicsLearning.SetCategory U} {L : C.SourceFunctor D} {R : D.SourceFunctor C}\n  (φ : (x : C.Object) → (y : D.Object) → (L.obj x ⟶ y) ≃ (x ⟶ R.obj y)) (x : C.Object),\n  ILab.MathematicsLearning.SetCategory.unitCandidateComponent φ x =\n    (φ x (L.obj x)) (CategoryTheory.CategoryStruct.id (L.obj x))",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.unitCandidateComponent_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "Equiv",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "Eq",
+      "DFunLike.coe",
+      "EquivLike.toFunLike",
+      "Equiv.instEquivLike",
+      "CategoryTheory.CategoryStruct.id",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor.obj",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject",
+      "ILab.MathematicsLearning.SetCategory.unitCandidateComponent"
+    ],
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "{U : ZFSet.{u}} →\n  {C D : ILab.MathematicsLearning.SetCategory U} →\n    {F G K : CategoryTheory.Functor C.Object D.Object} → (F ⟶ G) → (G ⟶ K) → (x : C.Object) → F.obj x ⟶ K.obj x",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "definition",
+    "id": "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.CategoryStruct.comp",
+      "CategoryTheory.NatTrans.app"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  {
+    "signature": "∀ {U : ZFSet.{u}} {C D : ILab.MathematicsLearning.SetCategory U} {F G K : CategoryTheory.Functor C.Object D.Object}\n  (α : F ⟶ G) (β : G ⟶ K) (x : C.Object),\n  ILab.MathematicsLearning.SetCategory.verticalCompositeComponent α β x = D.compose (α.app x) (β.app x)",
+    "module": "ILab.MathematicsLearning.SourceConstructionData",
+    "kind": "theorem",
+    "id": "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent_formula",
+    "externalDependencies": [
+      "ZFSet",
+      "CategoryTheory.Functor",
+      "Quiver.Hom",
+      "CategoryTheory.CategoryStruct.toQuiver",
+      "CategoryTheory.Category.toCategoryStruct",
+      "CategoryTheory.Functor.category",
+      "Eq",
+      "CategoryTheory.Functor.obj",
+      "CategoryTheory.NatTrans.app",
+      "rfl"
+    ],
+    "dependencies": [
+      "ILab.MathematicsLearning.SetCategory",
+      "ILab.MathematicsLearning.SetCategory.Object",
+      "ILab.MathematicsLearning.SetCategory.Object.member",
+      "ILab.MathematicsLearning.SetCategory.compose",
+      "ILab.MathematicsLearning.SetCategory.instCategoryObject",
+      "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent"
+    ],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+]

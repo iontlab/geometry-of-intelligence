@@ -1,0 +1,1647 @@
+[
+  {
+    "key": "intro.paths",
+    "chapter": "foundations",
+    "view": "Mathematics",
+    "chars": 1003,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "chapter": "foundations",
+    "view": "Plain",
+    "chars": 829,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "chapter": "foundations",
+    "view": "Story",
+    "chars": 1636,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "chapter": "foundations",
+    "view": "Lean",
+    "chars": 1936,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "chapter": "foundations",
+    "view": "Verification",
+    "chars": 2819,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "chapter": "foundations",
+    "view": "Mathematics",
+    "chars": 1930,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "chapter": "foundations",
+    "view": "Plain",
+    "chars": 1094,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "chapter": "foundations",
+    "view": "Story",
+    "chars": 2022,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "chapter": "foundations",
+    "view": "Lean",
+    "chars": 2558,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "chapter": "foundations",
+    "view": "Verification",
+    "chars": 4539,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "chapter": "size",
+    "view": "Mathematics",
+    "chars": 561,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "chapter": "size",
+    "view": "Plain",
+    "chars": 815,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "chapter": "size",
+    "view": "Story",
+    "chars": 1481,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "chapter": "size",
+    "view": "Lean",
+    "chars": 388,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "chapter": "size",
+    "view": "Verification",
+    "chars": 1010,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "chapter": "size",
+    "view": "Mathematics",
+    "chars": 502,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "chapter": "size",
+    "view": "Plain",
+    "chars": 726,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "chapter": "size",
+    "view": "Story",
+    "chars": 1366,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "chapter": "size",
+    "view": "Lean",
+    "chars": 434,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "chapter": "size",
+    "view": "Verification",
+    "chars": 1057,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "chapter": "size",
+    "view": "Mathematics",
+    "chars": 330,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "chapter": "size",
+    "view": "Plain",
+    "chars": 775,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "chapter": "size",
+    "view": "Story",
+    "chars": 1372,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "chapter": "size",
+    "view": "Lean",
+    "chars": 424,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "chapter": "size",
+    "view": "Verification",
+    "chars": 1084,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "chapter": "size",
+    "view": "Mathematics",
+    "chars": 365,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "chapter": "size",
+    "view": "Plain",
+    "chars": 653,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "chapter": "size",
+    "view": "Story",
+    "chars": 1244,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "chapter": "size",
+    "view": "Lean",
+    "chars": 847,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "chapter": "size",
+    "view": "Verification",
+    "chars": 1822,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "chapter": "categories",
+    "view": "Mathematics",
+    "chars": 885,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "chapter": "categories",
+    "view": "Plain",
+    "chars": 819,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "chapter": "categories",
+    "view": "Story",
+    "chars": 1642,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "chapter": "categories",
+    "view": "Lean",
+    "chars": 522,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "chapter": "categories",
+    "view": "Verification",
+    "chars": 1242,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "chapter": "categories",
+    "view": "Mathematics",
+    "chars": 452,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "chapter": "categories",
+    "view": "Plain",
+    "chars": 741,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "chapter": "categories",
+    "view": "Story",
+    "chars": 1247,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "chapter": "categories",
+    "view": "Lean",
+    "chars": 462,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "chapter": "categories",
+    "view": "Verification",
+    "chars": 1126,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "chapter": "categories",
+    "view": "Mathematics",
+    "chars": 368,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "chapter": "categories",
+    "view": "Plain",
+    "chars": 663,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "chapter": "categories",
+    "view": "Story",
+    "chars": 1227,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "chapter": "categories",
+    "view": "Lean",
+    "chars": 709,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "chapter": "categories",
+    "view": "Verification",
+    "chars": 1552,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "chapter": "categories",
+    "view": "Mathematics",
+    "chars": 600,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "chapter": "categories",
+    "view": "Plain",
+    "chars": 728,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "chapter": "categories",
+    "view": "Story",
+    "chars": 1815,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "chapter": "categories",
+    "view": "Lean",
+    "chars": 4405,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "chapter": "categories",
+    "view": "Verification",
+    "chars": 12014,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "chapter": "categories",
+    "view": "Mathematics",
+    "chars": 587,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "chapter": "categories",
+    "view": "Plain",
+    "chars": 655,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "chapter": "categories",
+    "view": "Story",
+    "chars": 1290,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "chapter": "categories",
+    "view": "Lean",
+    "chars": 818,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "chapter": "categories",
+    "view": "Verification",
+    "chars": 1939,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "chapter": "categories",
+    "view": "Mathematics",
+    "chars": 459,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "chapter": "categories",
+    "view": "Plain",
+    "chars": 718,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "chapter": "categories",
+    "view": "Story",
+    "chars": 1433,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "chapter": "categories",
+    "view": "Lean",
+    "chars": 2389,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "chapter": "categories",
+    "view": "Verification",
+    "chars": 4760,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "chapter": "categories",
+    "view": "Mathematics",
+    "chars": 480,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "chapter": "categories",
+    "view": "Plain",
+    "chars": 654,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "chapter": "categories",
+    "view": "Story",
+    "chars": 1379,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "chapter": "categories",
+    "view": "Lean",
+    "chars": 727,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "chapter": "categories",
+    "view": "Verification",
+    "chars": 1631,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "chapter": "functors",
+    "view": "Mathematics",
+    "chars": 773,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "chapter": "functors",
+    "view": "Plain",
+    "chars": 664,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "chapter": "functors",
+    "view": "Story",
+    "chars": 1441,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "chapter": "functors",
+    "view": "Lean",
+    "chars": 884,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "chapter": "functors",
+    "view": "Verification",
+    "chars": 1929,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "chapter": "functors",
+    "view": "Mathematics",
+    "chars": 959,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "chapter": "functors",
+    "view": "Plain",
+    "chars": 871,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "chapter": "functors",
+    "view": "Story",
+    "chars": 1916,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "chapter": "functors",
+    "view": "Lean",
+    "chars": 4131,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "chapter": "functors",
+    "view": "Verification",
+    "chars": 10221,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "chapter": "functors",
+    "view": "Mathematics",
+    "chars": 393,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "chapter": "functors",
+    "view": "Plain",
+    "chars": 657,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "chapter": "functors",
+    "view": "Story",
+    "chars": 1371,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "chapter": "functors",
+    "view": "Lean",
+    "chars": 371,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "chapter": "functors",
+    "view": "Verification",
+    "chars": 890,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "chapter": "functors",
+    "view": "Mathematics",
+    "chars": 965,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "chapter": "functors",
+    "view": "Plain",
+    "chars": 754,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "chapter": "functors",
+    "view": "Story",
+    "chars": 1404,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "chapter": "functors",
+    "view": "Lean",
+    "chars": 3416,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "chapter": "functors",
+    "view": "Verification",
+    "chars": 6702,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "chapter": "functors",
+    "view": "Mathematics",
+    "chars": 377,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "chapter": "functors",
+    "view": "Plain",
+    "chars": 669,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "chapter": "functors",
+    "view": "Story",
+    "chars": 1687,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "chapter": "functors",
+    "view": "Lean",
+    "chars": 2807,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "chapter": "functors",
+    "view": "Verification",
+    "chars": 6566,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "chapter": "functors",
+    "view": "Mathematics",
+    "chars": 780,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "chapter": "functors",
+    "view": "Plain",
+    "chars": 673,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "chapter": "functors",
+    "view": "Story",
+    "chars": 1315,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "chapter": "functors",
+    "view": "Lean",
+    "chars": 2647,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "chapter": "functors",
+    "view": "Verification",
+    "chars": 5184,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "chapter": "functors",
+    "view": "Mathematics",
+    "chars": 724,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "chapter": "functors",
+    "view": "Plain",
+    "chars": 614,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "chapter": "functors",
+    "view": "Story",
+    "chars": 1193,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "chapter": "functors",
+    "view": "Lean",
+    "chars": 924,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "chapter": "functors",
+    "view": "Verification",
+    "chars": 2361,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "chapter": "functors",
+    "view": "Mathematics",
+    "chars": 622,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "chapter": "functors",
+    "view": "Plain",
+    "chars": 666,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "chapter": "functors",
+    "view": "Story",
+    "chars": 1357,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "chapter": "functors",
+    "view": "Lean",
+    "chars": 1859,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "chapter": "functors",
+    "view": "Verification",
+    "chars": 3798,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 613,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 656,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1327,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 946,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 2231,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 540,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 685,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1302,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 1020,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 2163,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 536,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 630,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1153,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 608,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 1467,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 1036,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 674,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1368,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 3080,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 5811,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 366,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 642,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1220,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 371,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 890,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 315,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 585,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1124,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 1486,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 3241,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 346,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 747,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1451,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 371,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 890,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 330,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 619,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1534,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 1035,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 2555,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "chapter": "natural_transformations",
+    "view": "Mathematics",
+    "chars": 1169,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "chapter": "natural_transformations",
+    "view": "Plain",
+    "chars": 668,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "chapter": "natural_transformations",
+    "view": "Story",
+    "chars": 1341,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "chapter": "natural_transformations",
+    "view": "Lean",
+    "chars": 2939,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "chapter": "natural_transformations",
+    "view": "Verification",
+    "chars": 4272,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "chapter": "yoneda",
+    "view": "Mathematics",
+    "chars": 1225,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "chapter": "yoneda",
+    "view": "Plain",
+    "chars": 896,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "chapter": "yoneda",
+    "view": "Story",
+    "chars": 1996,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "chapter": "yoneda",
+    "view": "Lean",
+    "chars": 3105,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "chapter": "yoneda",
+    "view": "Verification",
+    "chars": 5427,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "chapter": "yoneda",
+    "view": "Mathematics",
+    "chars": 560,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "chapter": "yoneda",
+    "view": "Plain",
+    "chars": 700,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "chapter": "yoneda",
+    "view": "Story",
+    "chars": 1310,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "chapter": "yoneda",
+    "view": "Lean",
+    "chars": 2565,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "chapter": "yoneda",
+    "view": "Verification",
+    "chars": 4960,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "chapter": "yoneda",
+    "view": "Mathematics",
+    "chars": 384,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "chapter": "yoneda",
+    "view": "Plain",
+    "chars": 723,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "chapter": "yoneda",
+    "view": "Story",
+    "chars": 1297,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "chapter": "yoneda",
+    "view": "Lean",
+    "chars": 486,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "chapter": "yoneda",
+    "view": "Verification",
+    "chars": 1317,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "chapter": "yoneda",
+    "view": "Mathematics",
+    "chars": 331,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "chapter": "yoneda",
+    "view": "Plain",
+    "chars": 680,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "chapter": "yoneda",
+    "view": "Story",
+    "chars": 1308,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "chapter": "yoneda",
+    "view": "Lean",
+    "chars": 368,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "chapter": "yoneda",
+    "view": "Verification",
+    "chars": 886,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "chapter": "yoneda",
+    "view": "Mathematics",
+    "chars": 534,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "chapter": "yoneda",
+    "view": "Plain",
+    "chars": 743,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "chapter": "yoneda",
+    "view": "Story",
+    "chars": 1406,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "chapter": "yoneda",
+    "view": "Lean",
+    "chars": 370,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "chapter": "yoneda",
+    "view": "Verification",
+    "chars": 888,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "chapter": "yoneda",
+    "view": "Mathematics",
+    "chars": 1624,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "chapter": "yoneda",
+    "view": "Plain",
+    "chars": 815,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "chapter": "yoneda",
+    "view": "Story",
+    "chars": 1508,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "chapter": "yoneda",
+    "view": "Lean",
+    "chars": 1196,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "chapter": "yoneda",
+    "view": "Verification",
+    "chars": 2301,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "chapter": "yoneda",
+    "view": "Mathematics",
+    "chars": 518,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "chapter": "yoneda",
+    "view": "Plain",
+    "chars": 797,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "chapter": "yoneda",
+    "view": "Story",
+    "chars": 1647,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "chapter": "yoneda",
+    "view": "Lean",
+    "chars": 2725,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "chapter": "yoneda",
+    "view": "Verification",
+    "chars": 5488,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "chapter": "adjunctions",
+    "view": "Mathematics",
+    "chars": 772,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "chapter": "adjunctions",
+    "view": "Plain",
+    "chars": 791,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "chapter": "adjunctions",
+    "view": "Story",
+    "chars": 1608,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "chapter": "adjunctions",
+    "view": "Lean",
+    "chars": 1570,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "chapter": "adjunctions",
+    "view": "Verification",
+    "chars": 3299,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "chapter": "adjunctions",
+    "view": "Mathematics",
+    "chars": 530,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "chapter": "adjunctions",
+    "view": "Plain",
+    "chars": 883,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "chapter": "adjunctions",
+    "view": "Story",
+    "chars": 1812,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "chapter": "adjunctions",
+    "view": "Lean",
+    "chars": 1979,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "chapter": "adjunctions",
+    "view": "Verification",
+    "chars": 5557,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "chapter": "adjunctions",
+    "view": "Mathematics",
+    "chars": 1607,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "chapter": "adjunctions",
+    "view": "Plain",
+    "chars": 792,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "chapter": "adjunctions",
+    "view": "Story",
+    "chars": 1450,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "chapter": "adjunctions",
+    "view": "Lean",
+    "chars": 4157,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "chapter": "adjunctions",
+    "view": "Verification",
+    "chars": 7064,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "chapter": "equivalences",
+    "view": "Mathematics",
+    "chars": 376,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "chapter": "equivalences",
+    "view": "Plain",
+    "chars": 794,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "chapter": "equivalences",
+    "view": "Story",
+    "chars": 1420,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "chapter": "equivalences",
+    "view": "Lean",
+    "chars": 561,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "chapter": "equivalences",
+    "view": "Verification",
+    "chars": 1469,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "chapter": "equivalences",
+    "view": "Mathematics",
+    "chars": 682,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "chapter": "equivalences",
+    "view": "Plain",
+    "chars": 732,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "chapter": "equivalences",
+    "view": "Story",
+    "chars": 1499,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "chapter": "equivalences",
+    "view": "Lean",
+    "chars": 2022,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "chapter": "equivalences",
+    "view": "Verification",
+    "chars": 4059,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "chapter": "equivalences",
+    "view": "Mathematics",
+    "chars": 379,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "chapter": "equivalences",
+    "view": "Plain",
+    "chars": 707,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "chapter": "equivalences",
+    "view": "Story",
+    "chars": 1397,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "chapter": "equivalences",
+    "view": "Lean",
+    "chars": 940,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "chapter": "equivalences",
+    "view": "Verification",
+    "chars": 2511,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "chapter": "equivalences",
+    "view": "Mathematics",
+    "chars": 398,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "chapter": "equivalences",
+    "view": "Plain",
+    "chars": 836,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "chapter": "equivalences",
+    "view": "Story",
+    "chars": 1581,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "chapter": "equivalences",
+    "view": "Lean",
+    "chars": 826,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "chapter": "equivalences",
+    "view": "Verification",
+    "chars": 2575,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "chapter": "equivalences",
+    "view": "Mathematics",
+    "chars": 456,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "chapter": "equivalences",
+    "view": "Plain",
+    "chars": 642,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "chapter": "equivalences",
+    "view": "Story",
+    "chars": 1264,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "chapter": "equivalences",
+    "view": "Lean",
+    "chars": 2271,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "chapter": "equivalences",
+    "view": "Verification",
+    "chars": 5405,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "chapter": "equivalences",
+    "view": "Mathematics",
+    "chars": 491,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "chapter": "equivalences",
+    "view": "Plain",
+    "chars": 819,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "chapter": "equivalences",
+    "view": "Story",
+    "chars": 1480,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "chapter": "equivalences",
+    "view": "Lean",
+    "chars": 975,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "chapter": "equivalences",
+    "view": "Verification",
+    "chars": 3197,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "chapter": "equivalences",
+    "view": "Mathematics",
+    "chars": 332,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "chapter": "equivalences",
+    "view": "Plain",
+    "chars": 837,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "chapter": "equivalences",
+    "view": "Story",
+    "chars": 1442,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "chapter": "equivalences",
+    "view": "Lean",
+    "chars": 762,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "chapter": "equivalences",
+    "view": "Verification",
+    "chars": 2072,
+    "pass": true
+  }
+]

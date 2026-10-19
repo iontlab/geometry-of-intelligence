@@ -1,7 +1,8 @@
 {
   "enabled": true,
   "publication_authorized": true,
-  "release": "learning-native-20261018-yoneda-partial-r12",
+  "release": "learning-native-20261019-source-gaps-r13",
   "render_contract": "learning-exact-fragment-1",
-  "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190"
+  "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+  "capacity_sha256": "a10f32226dfc168b7fd52393ac33afd4b87d4eda3a9884bfc303556c604dfe56"
 }

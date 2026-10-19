@@ -1,0 +1,297 @@
+[
+  {
+    "gap": "G1",
+    "source_item": "1.15",
+    "reuse": [
+      "ILab.MathematicsLearning.SmallCategoryUniverse.category",
+      "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories",
+      "ILab.MathematicsLearning.SmallCategoryUniverse.largeCategories",
+      "ILab.MathematicsLearning.SmallCategoryUniverse.homEquiv",
+      "ILab.MathematicsLearning.SetCategory.functorCodeEquiv"
+    ],
+    "raw": [],
+    "formula": [
+      "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+      "ILab.MathematicsLearning.SetCategory.identityFunctor_arrow",
+      "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+      "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow"
+    ],
+    "scope": "Existing source category/functor codes and homEquiv are reused. Identity and composite object/arrow formulas are read back on their membership models. Category laws remain inherited infrastructure; the source category-well-definedness exercise is withheld.",
+    "declarations": [
+      "ILab.MathematicsLearning.SmallCategoryUniverse.category",
+      "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories",
+      "ILab.MathematicsLearning.SmallCategoryUniverse.largeCategories",
+      "ILab.MathematicsLearning.SmallCategoryUniverse.homEquiv",
+      "ILab.MathematicsLearning.SetCategory.functorCodeEquiv",
+      "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+      "ILab.MathematicsLearning.SetCategory.identityFunctor_arrow",
+      "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+      "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "1.15.source",
+        "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+      }
+    ]
+  },
+  {
+    "gap": "G2",
+    "source_item": "1.17",
+    "reuse": [],
+    "raw": [
+      "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+      "ILab.MathematicsLearning.SetCategory.oppositeHomData",
+      "ILab.MathematicsLearning.SetCategory.oppositeIdentityData",
+      "ILab.MathematicsLearning.SetCategory.oppositeComposeData"
+    ],
+    "formula": [
+      "ILab.MathematicsLearning.SetCategory.oppositeObjectData_formula",
+      "ILab.MathematicsLearning.SetCategory.oppositeHomData_formula",
+      "ILab.MathematicsLearning.SetCategory.oppositeIdentityData_formula",
+      "ILab.MathematicsLearning.SetCategory.oppositeComposeData_formula"
+    ],
+    "scope": "Same object set, reversed hom sets, unchanged identity, and reversed raw composition only. No opposite SetCategory or category-law proof is constructed; well-definedness remains assigned.",
+    "declarations": [
+      "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+      "ILab.MathematicsLearning.SetCategory.oppositeHomData",
+      "ILab.MathematicsLearning.SetCategory.oppositeIdentityData",
+      "ILab.MathematicsLearning.SetCategory.oppositeComposeData",
+      "ILab.MathematicsLearning.SetCategory.oppositeObjectData_formula",
+      "ILab.MathematicsLearning.SetCategory.oppositeHomData_formula",
+      "ILab.MathematicsLearning.SetCategory.oppositeIdentityData_formula",
+      "ILab.MathematicsLearning.SetCategory.oppositeComposeData_formula"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "1.17.source",
+        "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+      }
+    ]
+  },
+  {
+    "gap": "G3",
+    "source_item": "1.19",
+    "reuse": [
+      "ILab.MathematicsLearning.SetCategory.representableInSmallSets",
+      "ILab.MathematicsLearning.SetCategory.representable_object",
+      "ILab.MathematicsLearning.SetCategory.representable_map"
+    ],
+    "raw": [],
+    "formula": [],
+    "scope": "Reuse the existing small hom-set object and precomposition graph formulas from 2.7, retaining its mappings and local-smallness premise. Library functor infrastructure is not a source-authored solution of the assigned functor-well-definedness check.",
+    "declarations": [
+      "ILab.MathematicsLearning.SetCategory.representableInSmallSets",
+      "ILab.MathematicsLearning.SetCategory.representable_object",
+      "ILab.MathematicsLearning.SetCategory.representable_map"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "1.19.source",
+        "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+      }
+    ]
+  },
+  {
+    "gap": "G4",
+    "source_item": "1.21",
+    "reuse": [],
+    "raw": [
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent"
+    ],
+    "formula": [
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula"
+    ],
+    "scope": "For f:c→d the component at x sends g:x→c to g ≫ f. It returns an arrow in the source hom set, not a natural transformation. Naturality/well-definedness remains assigned.",
+    "declarations": [
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "1.21.source",
+        "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+      }
+    ]
+  },
+  {
+    "gap": "G5",
+    "source_item": "1.23",
+    "reuse": [
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.functorEquiv",
+      "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+      "ILab.MathematicsLearning.SetCategory.transformationEquiv"
+    ],
+    "raw": [
+      "ILab.MathematicsLearning.SetCategory.identityComponent",
+      "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent"
+    ],
+    "formula": [
+      "ILab.MathematicsLearning.SetCategory.identityComponent_formula",
+      "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent_formula"
+    ],
+    "scope": "Given functors and transformations, expose only id at F(x) and α_x ≫ β_x. Components are raw arrows; their naturality and the functor-category laws remain assigned.",
+    "declarations": [
+      "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+      "ILab.MathematicsLearning.SetCategory.functorEquiv",
+      "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+      "ILab.MathematicsLearning.SetCategory.transformationEquiv",
+      "ILab.MathematicsLearning.SetCategory.identityComponent",
+      "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent",
+      "ILab.MathematicsLearning.SetCategory.identityComponent_formula",
+      "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent_formula"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "1.23.source",
+        "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+      }
+    ]
+  },
+  {
+    "gap": "G6",
+    "source_item": "1.28",
+    "reuse": [],
+    "raw": [
+      "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+      "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent"
+    ],
+    "formula": [
+      "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+      "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow",
+      "ILab.MathematicsLearning.SetCategory.precompositionComponent_formula",
+      "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent_formula"
+    ],
+    "scope": "Precomposition sends G to F ⋙ G with component α_(Fx); postcomposition sends G to G ⋙ F with component F(α_x). Existing functor composition supplies the object assignments. Neither whole whiskering functor nor either assigned well-definedness check is exported.",
+    "declarations": [
+      "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+      "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent",
+      "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+      "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow",
+      "ILab.MathematicsLearning.SetCategory.precompositionComponent_formula",
+      "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent_formula"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "1.28.source",
+        "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+      }
+    ]
+  },
+  {
+    "gap": "G7",
+    "source_item": "2.2",
+    "reuse": [
+      "ILab.MathematicsLearning.SetCategory.representableInSmallSets",
+      "ILab.MathematicsLearning.SetCategory.representable_object",
+      "ILab.MathematicsLearning.SetCategory.representable_map",
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula"
+    ],
+    "raw": [],
+    "formula": [],
+    "scope": "Share the representable object/arrow formulas of 1.19 and the raw arrow component of 1.21. The local-smallness premise remains. These assignments are not a completed Yoneda functor; functor well-definedness and full faithfulness remain unproved as source exercises.",
+    "declarations": [
+      "ILab.MathematicsLearning.SetCategory.representableInSmallSets",
+      "ILab.MathematicsLearning.SetCategory.representable_object",
+      "ILab.MathematicsLearning.SetCategory.representable_map",
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+      "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "2.2.source",
+        "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+      }
+    ]
+  },
+  {
+    "gap": "G8",
+    "source_item": "2.6",
+    "reuse": [
+      "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism"
+    ],
+    "raw": [],
+    "formula": [
+      "ILab.MathematicsLearning.SetCategory.oppositePostcomposeReadback"
+    ],
+    "scope": "Preserve the checked (i)↔(ii). For f:c→d and g:d→x, (g.op ≫ f.op).unop = f ≫ g identifies the induced map. The authors’ further reduction assumes the assigned IsIso f ↔ IsIso f.op. Only the formula is added: no opposite set-coded model or full three-way proof. isoIffPrecompositionBijective is independent Mathlib support.",
+    "declarations": [
+      "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+      "ILab.MathematicsLearning.SetCategory.oppositePostcomposeReadback"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "2.6.exercise",
+        "statement": "The opposite-invertibility step is assigned by the authors.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "No independently generated solution or complete three-way proof is published."
+      }
+    ]
+  },
+  {
+    "gap": "G9",
+    "source_item": "3.3",
+    "reuse": [],
+    "raw": [
+      "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+      "ILab.MathematicsLearning.SetCategory.adjunctionBackward",
+      "ILab.MathematicsLearning.SetCategory.unitCandidateComponent",
+      "ILab.MathematicsLearning.SetCategory.counitCandidateComponent"
+    ],
+    "formula": [
+      "ILab.MathematicsLearning.SetCategory.adjunctionForward_formula",
+      "ILab.MathematicsLearning.SetCategory.adjunctionBackward_formula",
+      "ILab.MathematicsLearning.SetCategory.unitCandidateComponent_formula",
+      "ILab.MathematicsLearning.SetCategory.counitCandidateComponent_formula"
+    ],
+    "scope": "From a given adjunction: g↦η_x ≫ R(g) and f↦L(f) ≫ ε_y. Conversely, GIVEN hom-set bijections φ natural in x,y: η_x=φ_(x,Lx)(id), ε_y=φ_(Ry,y)⁻¹(id). The component formulas use underlying bijections only; naturality of φ is source context, not proved. Mutual inverses, naturality of hom maps/candidates, and both triangle checks remain assigned. No complete representable adjunction theorem is verified.",
+    "declarations": [
+      "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+      "ILab.MathematicsLearning.SetCategory.adjunctionBackward",
+      "ILab.MathematicsLearning.SetCategory.unitCandidateComponent",
+      "ILab.MathematicsLearning.SetCategory.counitCandidateComponent",
+      "ILab.MathematicsLearning.SetCategory.adjunctionForward_formula",
+      "ILab.MathematicsLearning.SetCategory.adjunctionBackward_formula",
+      "ILab.MathematicsLearning.SetCategory.unitCandidateComponent_formula",
+      "ILab.MathematicsLearning.SetCategory.counitCandidateComponent_formula"
+    ],
+    "withheld_obligations": [
+      {
+        "id": "3.3.source",
+        "statement": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published.",
+        "status": "assigned exercise solution withheld",
+        "declarations": [],
+        "scope": "Assigned proof/construction checks are withheld. The complete original statement and every author-written partial proof remain published."
+      }
+    ]
+  },
+  {
+    "gap": "G10",
+    "source_item": "equivalences.motivation",
+    "action": "Section 3 introduction source binding corrected to adjunctions#adjunctions_and_equivalences; three declarations unchanged"
+  }
+]

@@ -4,7 +4,8 @@ This checks known exclusions and exact mapping gates. It supplements, and does
 not replace, the manual audit of the complete 13-page primary source.
 """
 from pathlib import Path
-import json, re
+import json, re, runpy
+REPAIRS=runpy.run_path(str(Path(__file__).with_name("source-construction-repairs.py")))["REPAIRS"]
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / 'docs/mathematics-learning'
@@ -45,10 +46,15 @@ assert not any(forbidden(d) for n in nodes for d in n['dependencies'])
 records = load(DOCS / 'obligations.json')['records']
 assert len(records) == 58
 for r in records:
-    if r['key'] in assigned - {'2.1','2.6'}:
+    if r['key'] in assigned - {'2.1','2.6'} - set(REPAIRS):
         assert not r['lean_declarations'], r['key']
         assert all(o['status'] == 'assigned exercise solution withheld' and not o['declarations'] for o in r['obligations']), r['key']
         assert 'solution withheld' in r['proof'].lower(), r['key']
+    if r['key'] in REPAIRS:
+        assert r['lean_declarations']==REPAIRS[r['key']]['declarations'],r['key']
+        assert r['exercise_checks']=='exercise_checks_withheld'
+        assert any(o['status']=='assigned exercise solution withheld' and not o['declarations'] for o in r['obligations'])
+        assert all(o['status']!='complete_source_theorem_verified' for o in r['obligations'])
     if r['key'] == '2.6':
         assert r['obligations'][-1]['status'] == 'assigned exercise solution withheld'
         assert not r['obligations'][-1]['declarations']

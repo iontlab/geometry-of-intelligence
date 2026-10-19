@@ -1,0 +1,21 @@
+{
+  "anonymous_heading": "<h3 class=\"sectionedit3\" id=\"adjunctions_and_equivalences\">3. Adjunctions and equivalences</h3>",
+  "anonymous_binding": {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+    "revision": 1792321145,
+    "raw_sha256": "cfcb5112d5da54bf836e37b27ad83b8d5ed3f8c18ad5be2aa3c0f83065c54f6e",
+    "fragment_sha256": "225e7d905ad19172a9885de88dc5cd46f3a02531df3ef72e26edd996913da3cb",
+    "role": "anonymous",
+    "registry_sha256": "4d7dd0becfc537fbddd1ae75cec0af2fc2f23ff9b39d673d7c91af3277f3a190",
+    "release": "learning-native-20261018-yoneda-partial-r12",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.3.1",
+      "explain.mathematics-learning.source.3.2",
+      "explain.mathematics-learning.source.3.3"
+    ]
+  },
+  "internal_browser_editor_heading": "<h3 class=\"sectionedit3\" id=\"adjunctions_and_equivalences\">3. Adjunctions and equivalences</h3>",
+  "internal_browser_editor_revision": 1792321145,
+  "internal_browser_editor_fragment_sha256": "2b3b6cf1351c57e581c8548c31738b1eec5f9dcf2d78bd401645b76fd0ff1ef9"
+}

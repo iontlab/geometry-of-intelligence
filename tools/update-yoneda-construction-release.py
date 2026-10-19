@@ -4,6 +4,8 @@ Keep the existing 96 expanded narratives and all original manuscript bindings.
 The new graph record mirrors the existing 2.1 narrative, with a partial scope.
 """
 from pathlib import Path
+import runpy
+CAP=runpy.run_path(str(Path(__file__).with_name('learning-capacity.py')))
 import copy, hashlib, json
 
 R=Path(__file__).resolve().parents[1]
@@ -53,9 +55,9 @@ for x in reg['records']:
         mathematics_json_sha256=reg['graph']['mathematics_sha256'],
         pinned_source_link=n['sourceUrl'],scope_note=math['results'][f['result_key']]['limitation'])
 save(E/'registry.v0.1.json',reg,compact=True)
-assert (E/'registry.v0.1.json').stat().st_size<500000
+CAP['check_registry']((E/'registry.v0.1.json').read_bytes())
 release=read(E/'release.json')
-release.update(release='learning-native-20261018-yoneda-partial-r12',registry_sha256=sha(E/'registry.v0.1.json'))
+release.update(release='learning-native-20261018-yoneda-partial-r12',capacity_sha256=CAP['capacity_hash'](),registry_sha256=sha(E/'registry.v0.1.json'))
 save(E/'release.json',release)
 save(G/'source-audit.json',read(D/'original/native/source-audit.json'))
 for a in old['records']:

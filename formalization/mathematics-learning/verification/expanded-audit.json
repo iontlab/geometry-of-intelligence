@@ -2,9 +2,9 @@
   "schema_version": 1,
   "clean_build_command": "lake clean rq001; lake build",
   "extract_command": "lake env lean tools/ExtractLearningGraph.lean",
-  "compiled_declarations": 785,
-  "compiled_sha256": "6eb6876e7de22eae8042207e9b2589bd4a7c01c1110c6ba97110a44f2d18c463",
-  "clean_build_log_sha256": "ef8e9f2bfc02caf530f1f3940f22cbceb564576f1d24971249728e62ced9a353",
+  "compiled_declarations": 816,
+  "compiled_sha256": "a4923153901eb2e8af4bbedfc35473855b0da96cc9b3a66d7cd88828e0c12a9d",
+  "clean_build_log_sha256": "70ee5572863573cf7ec92ca326a2c73363b25cfeee299742b2c1565795af385a",
   "allowed_axioms": [
     "propext",
     "Classical.choice",
@@ -151,6 +151,11 @@
       "name": "ILab.MathematicsLearning.SmallVectorSpaces",
       "path": "ILab/MathematicsLearning/SmallVectorSpaces.lean",
       "sha256": "2950022198616e31c364ba28d096ad95290bb3c1d01a5350754874a6a0cb77fe"
+    },
+    {
+      "name": "ILab.MathematicsLearning.SourceConstructionData",
+      "path": "ILab/MathematicsLearning/SourceConstructionData.lean",
+      "sha256": "98fa80a5a52a0c543af55feef2205cf4beae529698bbd20e99fed0cbb6ad85f2"
     },
     {
       "name": "ILab.MathematicsLearning.SourceLaws",
