@@ -1,0 +1,68 @@
+{
+  "pr": 16,
+  "head": "e1dfad4c0fc4f7aadb25c75fef875e1565772ea9",
+  "base": "1cd4fe15b242ed59a7dc2c5d3e155405355b49df",
+  "checks": [
+    {
+      "command": [
+        "-X",
+        "utf8",
+        "tools/check-source-construction-repairs.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS: 785 existing declarations unchanged; 31 raw/formula additions; only ten authorized source records; all open obligations, 97 existing narrative contents, manuscript, pins, RQ-001 and shared plugin entry point protected; registry 503551 bytes.\n"
+    },
+    {
+      "command": [
+        "-X",
+        "utf8",
+        "tools/check-learning-exercise-scope.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS: all 13 pages tracked; 17 assignments / 15 items; 56 withheld authored exports absent; 816 compiled declarations and 58 source records respect the exercise boundary.\n"
+    },
+    {
+      "command": [
+        "-X",
+        "utf8",
+        "tools/check-yoneda-construction.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS: PR14 source module, four declarations, partial 2.1 mappings, narratives and three open obligations unchanged.\n"
+    },
+    {
+      "command": [
+        "tools/check-learning-release.mjs"
+      ],
+      "exit_code": 0,
+      "output": "PASS: 58 unique source bindings, 45 exact graph bindings, 47 inline controls, release hashes and all 4030 compiled edges.\n"
+    },
+    {
+      "command": [
+        "tools/test-learning-inline-links.mjs"
+      ],
+      "exit_code": 0,
+      "output": "PASS fresh URL selects Plain\nPASS fresh URL selects Story\nPASS fresh URL selects Mathematics\nPASS fresh URL selects Lean\nPASS fresh URL selects Verification\nPASS manual button keeps the existing Mathematics default\nPASS reject invalid selector ilab_explain=missing&view=plain\nPASS reject invalid selector ilab_explain=1.1&view=unknown\nPASS reject invalid selector ilab_explain=1.1&view=__proto__\nPASS reject invalid selector ilab_explain=1.1\nPASS reject invalid selector view=story\nPASS reject attestation mismatch revision\nPASS reject attestation mismatch raw_sha256\nPASS reject attestation mismatch fragment_sha256\nPASS reject attestation mismatch registry_sha256\nPASS reject attestation mismatch release\nPASS reject attestation mismatch render_contract\nPASS reject attestation mismatch role\nPASS reject attestation mismatch keys\nPASS wait for MathJax and TikZ before initialization\nPASS wait for selected layer rendering before scrolling\nPASS stale freshness fails closed\nPASS later stale binding revokes the panel and disables controls\nPASS history navigation selects an existing layer\nPASS anchor navigation reopens the requested inline panel\nPASS unrelated chapter anchors keep normal navigation\nPASS returning to the page rechecks the binding and restores a deep link\nPASS source mutation permanently revokes auto and manual opening\n28 inline-navigation and fail-closed checks passed.\n"
+    },
+    {
+      "command": [
+        "tools/test-learning-capacity.mjs"
+      ],
+      "exit_code": 0,
+      "output": "PASS: shared policy accepts 5 MB\nPASS: invalid configuration fails closed\nPASS: invalid configuration fails closed\nPASS: invalid configuration fails closed\nPASS: invalid configuration fails closed\nPASS: invalid configuration fails closed\nPASS: invalid configuration fails closed\nPASS: current complete registry validates\nPASS: oversized stream is cancelled despite misleading content length\nPASS: record limit remains enforced\nPASS: per-record depth limit remains enforced\n{\"checks\":17,\"registry_bytes\":503551,\"capacity_bytes\":5000000,\"headroom\":4496449,\"synthetic_bytes\":5000000,\"synthetic_records\":750,\"parse_validate_ms\":44.89750000000001,\"note\":\"Node V8 timing; browser/device/network timing is separate.\"}\n"
+    },
+    {
+      "command": [
+        "tools/test-learning-plugin.php"
+      ],
+      "exit_code": 0,
+      "output": "41 source-binding and isolation checks passed\n"
+    }
+  ],
+  "clean_build_evidence_source_hashes_match": true,
+  "deployment_zip_files_match": 10,
+  "prior_browser_checks": 750,
+  "registry_bytes": 503551,
+  "blocking_findings": [],
+  "independent_human_review_claimed": false
+}

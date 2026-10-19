@@ -1,0 +1,20 @@
+{
+  "verification": {
+    "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:verification&do=export_raw",
+    "sha256": "e6cc3eb4ef862edcca4307e89668ef3da78e853637ba7271b940ca67af5c0f76",
+    "pass": true
+  },
+  "coverage": {
+    "url": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:coverage&do=export_raw",
+    "sha256": "789cb759fe6dbde79d9cfc8a09efbcde59c09a454b34a94278c8d15efd53eb4e",
+    "pass": true
+  },
+  "editor_bindings": {
+    "checked": 8,
+    "pass": true
+  },
+  "g10": {
+    "source_link": "https://iontlab.org/doku.php?id=mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions&rev=1792321145#adjunctions_and_equivalences",
+    "pass": true
+  }
+}

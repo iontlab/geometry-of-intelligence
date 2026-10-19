@@ -1,0 +1,1352 @@
+[
+  {
+    "declaration": "ILab.MathematicsLearning.identity_padded_composite",
+    "view": "Mathematics",
+    "chars": 995,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.identity_padded_composite",
+    "view": "Plain",
+    "chars": 1002,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.identity_padded_composite",
+    "view": "Story",
+    "chars": 1850,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.identity_padded_composite",
+    "view": "Lean",
+    "chars": 450,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.identity_padded_composite",
+    "view": "Verification",
+    "chars": 606,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inverse_unique",
+    "view": "Mathematics",
+    "chars": 588,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inverse_unique",
+    "view": "Plain",
+    "chars": 824,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inverse_unique",
+    "view": "Story",
+    "chars": 1845,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inverse_unique",
+    "view": "Lean",
+    "chars": 378,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inverse_unique",
+    "view": "Verification",
+    "chars": 606,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingEquivalence",
+    "view": "Mathematics",
+    "chars": 600,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingEquivalence",
+    "view": "Plain",
+    "chars": 1192,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingEquivalence",
+    "view": "Story",
+    "chars": 2040,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingEquivalence",
+    "view": "Lean",
+    "chars": 180,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingEquivalence",
+    "view": "Verification",
+    "chars": 885,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_not_surjective",
+    "view": "Mathematics",
+    "chars": 600,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_not_surjective",
+    "view": "Plain",
+    "chars": 913,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_not_surjective",
+    "view": "Story",
+    "chars": 1553,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_not_surjective",
+    "view": "Lean",
+    "chars": 177,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_not_surjective",
+    "view": "Verification",
+    "chars": 745,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+    "view": "Mathematics",
+    "chars": 600,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+    "view": "Plain",
+    "chars": 1011,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+    "view": "Story",
+    "chars": 1638,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+    "view": "Lean",
+    "chars": 250,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.inclusion_essentially_surjective",
+    "view": "Verification",
+    "chars": 713,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.room_cardinality",
+    "view": "Mathematics",
+    "chars": 564,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.room_cardinality",
+    "view": "Plain",
+    "chars": 984,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.room_cardinality",
+    "view": "Story",
+    "chars": 1669,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.room_cardinality",
+    "view": "Lean",
+    "chars": 162,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.room_cardinality",
+    "view": "Verification",
+    "chars": 676,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetUniverse",
+    "view": "Mathematics",
+    "chars": 736,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetUniverse",
+    "view": "Plain",
+    "chars": 1095,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetUniverse",
+    "view": "Story",
+    "chars": 1761,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetUniverse",
+    "view": "Lean",
+    "chars": 126,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetUniverse",
+    "view": "Verification",
+    "chars": 687,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.universe_not_member",
+    "view": "Mathematics",
+    "chars": 687,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.universe_not_member",
+    "view": "Plain",
+    "chars": 1012,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.universe_not_member",
+    "view": "Story",
+    "chars": 1652,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.universe_not_member",
+    "view": "Lean",
+    "chars": 162,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.universe_not_member",
+    "view": "Verification",
+    "chars": 691,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.UniverseHierarchy",
+    "view": "Mathematics",
+    "chars": 539,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.UniverseHierarchy",
+    "view": "Plain",
+    "chars": 1089,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.UniverseHierarchy",
+    "view": "Story",
+    "chars": 1686,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.UniverseHierarchy",
+    "view": "Lean",
+    "chars": 122,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.UniverseHierarchy",
+    "view": "Verification",
+    "chars": 687,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.IsSmallSet",
+    "view": "Mathematics",
+    "chars": 542,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.IsSmallSet",
+    "view": "Plain",
+    "chars": 935,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.IsSmallSet",
+    "view": "Story",
+    "chars": 1526,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.IsSmallSet",
+    "view": "Lean",
+    "chars": 171,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.IsSmallSet",
+    "view": "Verification",
+    "chars": 721,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory",
+    "view": "Mathematics",
+    "chars": 1185,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory",
+    "view": "Plain",
+    "chars": 1224,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory",
+    "view": "Story",
+    "chars": 2047,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory",
+    "view": "Lean",
+    "chars": 135,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory",
+    "view": "Verification",
+    "chars": 678,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsLocallySmall",
+    "view": "Mathematics",
+    "chars": 558,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsLocallySmall",
+    "view": "Plain",
+    "chars": 958,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsLocallySmall",
+    "view": "Story",
+    "chars": 1522,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsLocallySmall",
+    "view": "Lean",
+    "chars": 186,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsLocallySmall",
+    "view": "Verification",
+    "chars": 718,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSetsCategory",
+    "view": "Mathematics",
+    "chars": 1127,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSetsCategory",
+    "view": "Plain",
+    "chars": 1357,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSetsCategory",
+    "view": "Story",
+    "chars": 2444,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSetsCategory",
+    "view": "Lean",
+    "chars": 210,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSetsCategory",
+    "view": "Verification",
+    "chars": 910,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsIsomorphism",
+    "view": "Mathematics",
+    "chars": 838,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsIsomorphism",
+    "view": "Plain",
+    "chars": 1011,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsIsomorphism",
+    "view": "Story",
+    "chars": 1646,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsIsomorphism",
+    "view": "Lean",
+    "chars": 209,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsIsomorphism",
+    "view": "Verification",
+    "chars": 815,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+    "view": "Mathematics",
+    "chars": 797,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+    "view": "Plain",
+    "chars": 1159,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+    "view": "Story",
+    "chars": 1874,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+    "view": "Lean",
+    "chars": 400,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+    "view": "Verification",
+    "chars": 1095,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.unique_inverse",
+    "view": "Mathematics",
+    "chars": 757,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.unique_inverse",
+    "view": "Plain",
+    "chars": 1038,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.unique_inverse",
+    "view": "Story",
+    "chars": 1763,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.unique_inverse",
+    "view": "Lean",
+    "chars": 344,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.unique_inverse",
+    "view": "Verification",
+    "chars": 856,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+    "view": "Mathematics",
+    "chars": 1041,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+    "view": "Plain",
+    "chars": 1038,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+    "view": "Story",
+    "chars": 1815,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+    "view": "Lean",
+    "chars": 223,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+    "view": "Verification",
+    "chars": 682,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.forget",
+    "view": "Mathematics",
+    "chars": 1507,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.forget",
+    "view": "Plain",
+    "chars": 1522,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.forget",
+    "view": "Story",
+    "chars": 2567,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.forget",
+    "view": "Lean",
+    "chars": 310,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.forget",
+    "view": "Verification",
+    "chars": 987,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+    "view": "Mathematics",
+    "chars": 966,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+    "view": "Plain",
+    "chars": 1360,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+    "view": "Story",
+    "chars": 2378,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+    "view": "Lean",
+    "chars": 245,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+    "view": "Verification",
+    "chars": 912,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor",
+    "view": "Mathematics",
+    "chars": 995,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor",
+    "view": "Plain",
+    "chars": 987,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor",
+    "view": "Story",
+    "chars": 1566,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor",
+    "view": "Lean",
+    "chars": 224,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor",
+    "view": "Verification",
+    "chars": 683,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+    "view": "Mathematics",
+    "chars": 853,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+    "view": "Plain",
+    "chars": 1002,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+    "view": "Story",
+    "chars": 1673,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+    "view": "Lean",
+    "chars": 231,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+    "view": "Verification",
+    "chars": 709,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism",
+    "view": "Mathematics",
+    "chars": 754,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism",
+    "view": "Plain",
+    "chars": 954,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism",
+    "view": "Story",
+    "chars": 1477,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism",
+    "view": "Lean",
+    "chars": 281,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism",
+    "view": "Verification",
+    "chars": 860,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.terminalSetCategory",
+    "view": "Mathematics",
+    "chars": 504,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.terminalSetCategory",
+    "view": "Plain",
+    "chars": 882,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.terminalSetCategory",
+    "view": "Story",
+    "chars": 1421,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.terminalSetCategory",
+    "view": "Lean",
+    "chars": 212,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.terminalSetCategory",
+    "view": "Verification",
+    "chars": 770,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.selectSetObject",
+    "view": "Mathematics",
+    "chars": 634,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.selectSetObject",
+    "view": "Plain",
+    "chars": 1025,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.selectSetObject",
+    "view": "Story",
+    "chars": 1940,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.selectSetObject",
+    "view": "Lean",
+    "chars": 303,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.selectSetObject",
+    "view": "Verification",
+    "chars": 822,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsFullyFaithful",
+    "view": "Mathematics",
+    "chars": 565,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsFullyFaithful",
+    "view": "Plain",
+    "chars": 1009,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsFullyFaithful",
+    "view": "Story",
+    "chars": 1583,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsFullyFaithful",
+    "view": "Lean",
+    "chars": 203,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsFullyFaithful",
+    "view": "Verification",
+    "chars": 819,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+    "view": "Mathematics",
+    "chars": 1888,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+    "view": "Plain",
+    "chars": 1183,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+    "view": "Story",
+    "chars": 1876,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+    "view": "Lean",
+    "chars": 450,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+    "view": "Verification",
+    "chars": 946,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+    "view": "Mathematics",
+    "chars": 1042,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+    "view": "Plain",
+    "chars": 1425,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+    "view": "Story",
+    "chars": 2275,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+    "view": "Lean",
+    "chars": 429,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+    "view": "Verification",
+    "chars": 1070,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+    "view": "Mathematics",
+    "chars": 1051,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+    "view": "Plain",
+    "chars": 1175,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+    "view": "Story",
+    "chars": 1992,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+    "view": "Lean",
+    "chars": 240,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+    "view": "Verification",
+    "chars": 767,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+    "view": "Mathematics",
+    "chars": 1009,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+    "view": "Plain",
+    "chars": 1464,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+    "view": "Story",
+    "chars": 2393,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+    "view": "Lean",
+    "chars": 278,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+    "view": "Verification",
+    "chars": 1003,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEquivalence",
+    "view": "Mathematics",
+    "chars": 624,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEquivalence",
+    "view": "Plain",
+    "chars": 1147,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEquivalence",
+    "view": "Story",
+    "chars": 1773,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEquivalence",
+    "view": "Lean",
+    "chars": 212,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEquivalence",
+    "view": "Verification",
+    "chars": 793,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence",
+    "view": "Mathematics",
+    "chars": 967,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence",
+    "view": "Plain",
+    "chars": 1119,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence",
+    "view": "Story",
+    "chars": 1886,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence",
+    "view": "Lean",
+    "chars": 435,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence",
+    "view": "Verification",
+    "chars": 902,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective",
+    "view": "Mathematics",
+    "chars": 643,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective",
+    "view": "Plain",
+    "chars": 1076,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective",
+    "view": "Story",
+    "chars": 1766,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective",
+    "view": "Lean",
+    "chars": 203,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective",
+    "view": "Verification",
+    "chars": 815,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.fundamental_theorem",
+    "view": "Mathematics",
+    "chars": 682,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.fundamental_theorem",
+    "view": "Plain",
+    "chars": 1244,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.fundamental_theorem",
+    "view": "Story",
+    "chars": 1989,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.fundamental_theorem",
+    "view": "Lean",
+    "chars": 397,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.fundamental_theorem",
+    "view": "Verification",
+    "chars": 1296,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingSetCategory",
+    "view": "Mathematics",
+    "chars": 676,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingSetCategory",
+    "view": "Plain",
+    "chars": 969,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingSetCategory",
+    "view": "Story",
+    "chars": 1591,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingSetCategory",
+    "view": "Lean",
+    "chars": 212,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.walkingSetCategory",
+    "view": "Verification",
+    "chars": 769,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.includeWalkingZero",
+    "view": "Mathematics",
+    "chars": 766,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.includeWalkingZero",
+    "view": "Plain",
+    "chars": 1200,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.includeWalkingZero",
+    "view": "Story",
+    "chars": 1861,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.includeWalkingZero",
+    "view": "Lean",
+    "chars": 280,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.includeWalkingZero",
+    "view": "Verification",
+    "chars": 902,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathCompositionAssociativity",
+    "view": "Mathematics",
+    "chars": 1232,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathCompositionAssociativity",
+    "view": "Plain",
+    "chars": 1189,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathCompositionAssociativity",
+    "view": "Story",
+    "chars": 1996,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathCompositionAssociativity",
+    "view": "Lean",
+    "chars": 301,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.pathCompositionAssociativity",
+    "view": "Verification",
+    "chars": 700,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.order_two_invariant",
+    "view": "Mathematics",
+    "chars": 2322,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.order_two_invariant",
+    "view": "Plain",
+    "chars": 1609,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.order_two_invariant",
+    "view": "Story",
+    "chars": 2537,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.order_two_invariant",
+    "view": "Lean",
+    "chars": 238,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.order_two_invariant",
+    "view": "Verification",
+    "chars": 700,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.strict_inverse_object_bijective",
+    "view": "Mathematics",
+    "chars": 2178,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.strict_inverse_object_bijective",
+    "view": "Plain",
+    "chars": 1295,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.strict_inverse_object_bijective",
+    "view": "Story",
+    "chars": 2033,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.strict_inverse_object_bijective",
+    "view": "Lean",
+    "chars": 400,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.strict_inverse_object_bijective",
+    "view": "Verification",
+    "chars": 835,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+    "view": "Mathematics",
+    "chars": 1808,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+    "view": "Plain",
+    "chars": 1596,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+    "view": "Story",
+    "chars": 2696,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+    "view": "Lean",
+    "chars": 557,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+    "view": "Verification",
+    "chars": 1241,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+    "view": "Mathematics",
+    "chars": 1159,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+    "view": "Plain",
+    "chars": 622,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+    "view": "Story",
+    "chars": 1044,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+    "view": "Lean",
+    "chars": 247,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+    "view": "Verification",
+    "chars": 837,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+    "view": "Mathematics",
+    "chars": 905,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+    "view": "Plain",
+    "chars": 546,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+    "view": "Story",
+    "chars": 927,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+    "view": "Lean",
+    "chars": 188,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+    "view": "Verification",
+    "chars": 807,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+    "view": "Mathematics",
+    "chars": 647,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+    "view": "Plain",
+    "chars": 481,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+    "view": "Story",
+    "chars": 919,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+    "view": "Lean",
+    "chars": 250,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+    "view": "Verification",
+    "chars": 837,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent",
+    "view": "Mathematics",
+    "chars": 1138,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent",
+    "view": "Plain",
+    "chars": 519,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent",
+    "view": "Story",
+    "chars": 954,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent",
+    "view": "Lean",
+    "chars": 276,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent",
+    "view": "Verification",
+    "chars": 837,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+    "view": "Mathematics",
+    "chars": 1368,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+    "view": "Plain",
+    "chars": 622,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+    "view": "Story",
+    "chars": 1114,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+    "view": "Lean",
+    "chars": 361,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+    "view": "Verification",
+    "chars": 855,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+    "view": "Mathematics",
+    "chars": 1925,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+    "view": "Plain",
+    "chars": 831,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+    "view": "Story",
+    "chars": 1268,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+    "view": "Lean",
+    "chars": 392,
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+    "view": "Verification",
+    "chars": 1006,
+    "pass": true
+  }
+]

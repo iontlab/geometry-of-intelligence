@@ -1,0 +1,126 @@
+[
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionBackward",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionBackward_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.counitCandidateComponent",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.counitCandidateComponent_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_arrow",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeComposeData",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeComposeData_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeHomData",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeHomData_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeIdentityData",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeIdentityData_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositePostcomposeReadback",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.unitCandidateComponent",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.unitCandidateComponent_formula",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent",
+    "pass": true
+  },
+  {
+    "declaration": "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent_formula",
+    "pass": true
+  }
+]

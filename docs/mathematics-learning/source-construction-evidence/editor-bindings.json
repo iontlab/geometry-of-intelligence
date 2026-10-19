@@ -1,0 +1,145 @@
+[
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:foundations",
+    "revision": 1792334056,
+    "raw_sha256": "02bf962ea2ff21ee20f974478a21553f2dfd86c97281d03f575d4c0c4558a2e4",
+    "fragment_sha256": "01cbcfd2b84696f5953a2da0a9727addecfca3417618526cf2b444a81dde85f7",
+    "role": "editor",
+    "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+    "release": "learning-native-20261019-source-gaps-r13",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.intro.paths",
+      "explain.mathematics-learning.source.intro.sip"
+    ]
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:size",
+    "revision": 1792321131,
+    "raw_sha256": "5489d230f204f04596262ccc53ee8b85e63f9e0cb59a7681687c8fce3a139830",
+    "fragment_sha256": "27b883c62102f4c30abcbfc3a44a9398839118e9e08ab1168166ac671a5d5c17",
+    "role": "editor",
+    "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+    "release": "learning-native-20261019-source-gaps-r13",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.1.1",
+      "explain.mathematics-learning.source.1.2",
+      "explain.mathematics-learning.source.1.3",
+      "explain.mathematics-learning.source.1.4"
+    ]
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:categories",
+    "revision": 1792321132,
+    "raw_sha256": "2a048f7e3043a447e743f00cd64c170a867689333ba12e78dea95996137b3de0",
+    "fragment_sha256": "573a4c84168944f0c18c71548e6d3ebce0cb8a03ba6415d8adcfab43a935855d",
+    "role": "editor",
+    "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+    "release": "learning-native-20261019-source-gaps-r13",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.1.5",
+      "explain.mathematics-learning.source.1.6",
+      "explain.mathematics-learning.source.1.7",
+      "explain.mathematics-learning.source.1.8",
+      "explain.mathematics-learning.source.1.9",
+      "explain.mathematics-learning.source.1.10",
+      "explain.mathematics-learning.source.1.11"
+    ]
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:functors",
+    "revision": 1792321134,
+    "raw_sha256": "927321af0105a66cc29dee97b53a39ec81b73c2634caf117cd237c334647b9f7",
+    "fragment_sha256": "81397b6dd995898c9cb0b7529f1d26aac578be26b2cf2a1990db57bb79163052",
+    "role": "editor",
+    "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+    "release": "learning-native-20261019-source-gaps-r13",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.1.12",
+      "explain.mathematics-learning.source.1.13",
+      "explain.mathematics-learning.source.1.14",
+      "explain.mathematics-learning.source.1.15",
+      "explain.mathematics-learning.source.1.16",
+      "explain.mathematics-learning.source.1.17",
+      "explain.mathematics-learning.source.1.18",
+      "explain.mathematics-learning.source.1.19"
+    ]
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:natural_transformations",
+    "revision": 1792321142,
+    "raw_sha256": "41e08155cbb69dc0e476f14bdf7d08803df1ea15fdbdc8e62bc5817edcd78984",
+    "fragment_sha256": "d676e1f637c2807bb1c7f3525a07a255cc47d19df8b1bc5f8ebe528073f8dd14",
+    "role": "editor",
+    "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+    "release": "learning-native-20261019-source-gaps-r13",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.1.20",
+      "explain.mathematics-learning.source.1.21",
+      "explain.mathematics-learning.source.1.22",
+      "explain.mathematics-learning.source.1.23",
+      "explain.mathematics-learning.source.1.24",
+      "explain.mathematics-learning.source.1.25",
+      "explain.mathematics-learning.source.1.26",
+      "explain.mathematics-learning.source.1.27",
+      "explain.mathematics-learning.source.1.28"
+    ]
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:yoneda",
+    "revision": 1792321143,
+    "raw_sha256": "f19439164a36ca7575581f6d82a6d6144f1b22ca5bea9f9782d7f6c4e8e3f3ed",
+    "fragment_sha256": "095584a8ab412e1699574d2efc45bd1210bf9ae3c064911dfb48cefe873f5a04",
+    "role": "editor",
+    "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+    "release": "learning-native-20261019-source-gaps-r13",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.2.1",
+      "explain.mathematics-learning.source.2.2",
+      "explain.mathematics-learning.source.2.3",
+      "explain.mathematics-learning.source.2.4",
+      "explain.mathematics-learning.source.2.5",
+      "explain.mathematics-learning.source.2.6",
+      "explain.mathematics-learning.source.2.7"
+    ]
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions",
+    "revision": 1792321145,
+    "raw_sha256": "cfcb5112d5da54bf836e37b27ad83b8d5ed3f8c18ad5be2aa3c0f83065c54f6e",
+    "fragment_sha256": "2b3b6cf1351c57e581c8548c31738b1eec5f9dcf2d78bd401645b76fd0ff1ef9",
+    "role": "editor",
+    "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+    "release": "learning-native-20261019-source-gaps-r13",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.3.1",
+      "explain.mathematics-learning.source.3.2",
+      "explain.mathematics-learning.source.3.3"
+    ]
+  },
+  {
+    "page_id": "mathematics_learning:higher_category_theory:synthetic_category_theory:equivalences",
+    "revision": 1792321128,
+    "raw_sha256": "5c548afd6637e736b3235cae8f4d8aae4a465b4f8316f2e9729942d2b6f5aa5f",
+    "fragment_sha256": "3e776b5d612ceada2997353f60599a58471b409b7d753d6b78dec0330c28e9da",
+    "role": "editor",
+    "registry_sha256": "113d18391c7e3b368b9bcd1f695b7818ed514a49d598d74ac6b2ed17b61aa5b6",
+    "release": "learning-native-20261019-source-gaps-r13",
+    "render_contract": "learning-exact-fragment-1",
+    "keys": [
+      "explain.mathematics-learning.source.3.4",
+      "explain.mathematics-learning.source.3.5",
+      "explain.mathematics-learning.source.3.6",
+      "explain.mathematics-learning.source.3.7",
+      "explain.mathematics-learning.source.3.8",
+      "explain.mathematics-learning.source.3.9",
+      "explain.mathematics-learning.source.3.5.adjoint_upgrade"
+    ]
+  }
+]

@@ -66,3 +66,8 @@ Release r12 passed the clean compiler audit (8961 jobs), source-fidelity and exe
 See publication.json for exact commits and counts, release-checks.log for offline checks, live-integrity.json for deployed hashes, and the panel/graph JSON and screenshot for browser evidence. The previous release evidence remains historical and unchanged.
 
 [Current release evidence](yoneda-construction-evidence/README.md).
+
+
+## Source-record repairs release r13
+
+PR #16 is merged and release `learning-native-20261019-source-gaps-r13` is live verified. The ten approved repairs preserve all assigned boundaries, existing mathematics and narratives. All 750 live panel checks, 139 declaration links, 31 new scope checks, 46 public asset hashes, deployed PHP readback and eight chapter bindings passed. The complete 503,551-byte registry uses the approved configurable 5,000,000-byte capacity. [Full publication report and evidence](source-construction-evidence/PUBLICATION-REPORT.md).

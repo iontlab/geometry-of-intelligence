@@ -1,0 +1,1742 @@
+[
+  {
+    "key": "1.1",
+    "view": "Mathematics",
+    "chars": 561,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "view": "Plain",
+    "chars": 815,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "view": "Story",
+    "chars": 1481,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "view": "Lean",
+    "chars": 388,
+    "pass": true
+  },
+  {
+    "key": "1.1",
+    "view": "Verification",
+    "chars": 1010,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "view": "Mathematics",
+    "chars": 502,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "view": "Plain",
+    "chars": 726,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "view": "Story",
+    "chars": 1366,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "view": "Lean",
+    "chars": 434,
+    "pass": true
+  },
+  {
+    "key": "1.2",
+    "view": "Verification",
+    "chars": 1057,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "view": "Mathematics",
+    "chars": 330,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "view": "Plain",
+    "chars": 775,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "view": "Story",
+    "chars": 1372,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "view": "Lean",
+    "chars": 424,
+    "pass": true
+  },
+  {
+    "key": "1.3",
+    "view": "Verification",
+    "chars": 1084,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "view": "Mathematics",
+    "chars": 365,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "view": "Plain",
+    "chars": 653,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "view": "Story",
+    "chars": 1244,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "view": "Lean",
+    "chars": 847,
+    "pass": true
+  },
+  {
+    "key": "1.4",
+    "view": "Verification",
+    "chars": 1822,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "view": "Mathematics",
+    "chars": 885,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "view": "Plain",
+    "chars": 819,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "view": "Story",
+    "chars": 1642,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "view": "Lean",
+    "chars": 522,
+    "pass": true
+  },
+  {
+    "key": "1.5",
+    "view": "Verification",
+    "chars": 1242,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "view": "Mathematics",
+    "chars": 452,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "view": "Plain",
+    "chars": 741,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "view": "Story",
+    "chars": 1247,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "view": "Lean",
+    "chars": 462,
+    "pass": true
+  },
+  {
+    "key": "1.6",
+    "view": "Verification",
+    "chars": 1126,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "view": "Mathematics",
+    "chars": 368,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "view": "Plain",
+    "chars": 663,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "view": "Story",
+    "chars": 1227,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "view": "Lean",
+    "chars": 709,
+    "pass": true
+  },
+  {
+    "key": "1.7",
+    "view": "Verification",
+    "chars": 1552,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "view": "Mathematics",
+    "chars": 600,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "view": "Plain",
+    "chars": 728,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "view": "Story",
+    "chars": 1815,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "view": "Lean",
+    "chars": 4405,
+    "pass": true
+  },
+  {
+    "key": "1.8",
+    "view": "Verification",
+    "chars": 12014,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "view": "Mathematics",
+    "chars": 587,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "view": "Plain",
+    "chars": 655,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "view": "Story",
+    "chars": 1290,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "view": "Lean",
+    "chars": 818,
+    "pass": true
+  },
+  {
+    "key": "1.9",
+    "view": "Verification",
+    "chars": 1939,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "view": "Mathematics",
+    "chars": 459,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "view": "Plain",
+    "chars": 718,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "view": "Story",
+    "chars": 1433,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "view": "Lean",
+    "chars": 2389,
+    "pass": true
+  },
+  {
+    "key": "1.10",
+    "view": "Verification",
+    "chars": 4760,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "view": "Mathematics",
+    "chars": 480,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "view": "Plain",
+    "chars": 654,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "view": "Story",
+    "chars": 1379,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "view": "Lean",
+    "chars": 727,
+    "pass": true
+  },
+  {
+    "key": "1.11",
+    "view": "Verification",
+    "chars": 1631,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "view": "Mathematics",
+    "chars": 773,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "view": "Plain",
+    "chars": 664,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "view": "Story",
+    "chars": 1441,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "view": "Lean",
+    "chars": 884,
+    "pass": true
+  },
+  {
+    "key": "1.12",
+    "view": "Verification",
+    "chars": 1929,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "view": "Mathematics",
+    "chars": 959,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "view": "Plain",
+    "chars": 871,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "view": "Story",
+    "chars": 1916,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "view": "Lean",
+    "chars": 4131,
+    "pass": true
+  },
+  {
+    "key": "1.13",
+    "view": "Verification",
+    "chars": 10221,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "view": "Mathematics",
+    "chars": 393,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "view": "Plain",
+    "chars": 657,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "view": "Story",
+    "chars": 1371,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "view": "Lean",
+    "chars": 371,
+    "pass": true
+  },
+  {
+    "key": "1.14",
+    "view": "Verification",
+    "chars": 890,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "view": "Mathematics",
+    "chars": 965,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "view": "Plain",
+    "chars": 754,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "view": "Story",
+    "chars": 1404,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "view": "Lean",
+    "chars": 3416,
+    "pass": true
+  },
+  {
+    "key": "1.15",
+    "view": "Verification",
+    "chars": 6702,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "view": "Mathematics",
+    "chars": 377,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "view": "Plain",
+    "chars": 669,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "view": "Story",
+    "chars": 1687,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "view": "Lean",
+    "chars": 2807,
+    "pass": true
+  },
+  {
+    "key": "1.16",
+    "view": "Verification",
+    "chars": 6566,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "view": "Mathematics",
+    "chars": 780,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "view": "Plain",
+    "chars": 673,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "view": "Story",
+    "chars": 1315,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "view": "Lean",
+    "chars": 2647,
+    "pass": true
+  },
+  {
+    "key": "1.17",
+    "view": "Verification",
+    "chars": 5184,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "view": "Mathematics",
+    "chars": 724,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "view": "Plain",
+    "chars": 614,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "view": "Story",
+    "chars": 1193,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "view": "Lean",
+    "chars": 924,
+    "pass": true
+  },
+  {
+    "key": "1.18",
+    "view": "Verification",
+    "chars": 2361,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "view": "Mathematics",
+    "chars": 622,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "view": "Plain",
+    "chars": 666,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "view": "Story",
+    "chars": 1357,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "view": "Lean",
+    "chars": 1859,
+    "pass": true
+  },
+  {
+    "key": "1.19",
+    "view": "Verification",
+    "chars": 3798,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "view": "Mathematics",
+    "chars": 613,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "view": "Plain",
+    "chars": 656,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "view": "Story",
+    "chars": 1327,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "view": "Lean",
+    "chars": 946,
+    "pass": true
+  },
+  {
+    "key": "1.20",
+    "view": "Verification",
+    "chars": 2231,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "view": "Mathematics",
+    "chars": 540,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "view": "Plain",
+    "chars": 685,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "view": "Story",
+    "chars": 1302,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "view": "Lean",
+    "chars": 1020,
+    "pass": true
+  },
+  {
+    "key": "1.21",
+    "view": "Verification",
+    "chars": 2163,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "view": "Mathematics",
+    "chars": 536,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "view": "Plain",
+    "chars": 630,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "view": "Story",
+    "chars": 1153,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "view": "Lean",
+    "chars": 608,
+    "pass": true
+  },
+  {
+    "key": "1.22",
+    "view": "Verification",
+    "chars": 1467,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "view": "Mathematics",
+    "chars": 1036,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "view": "Plain",
+    "chars": 674,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "view": "Story",
+    "chars": 1368,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "view": "Lean",
+    "chars": 3080,
+    "pass": true
+  },
+  {
+    "key": "1.23",
+    "view": "Verification",
+    "chars": 5811,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "view": "Mathematics",
+    "chars": 366,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "view": "Plain",
+    "chars": 642,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "view": "Story",
+    "chars": 1220,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "view": "Lean",
+    "chars": 371,
+    "pass": true
+  },
+  {
+    "key": "1.24",
+    "view": "Verification",
+    "chars": 890,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "view": "Mathematics",
+    "chars": 315,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "view": "Plain",
+    "chars": 585,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "view": "Story",
+    "chars": 1124,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "view": "Lean",
+    "chars": 1486,
+    "pass": true
+  },
+  {
+    "key": "1.25",
+    "view": "Verification",
+    "chars": 3241,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "view": "Mathematics",
+    "chars": 346,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "view": "Plain",
+    "chars": 747,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "view": "Story",
+    "chars": 1451,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "view": "Lean",
+    "chars": 371,
+    "pass": true
+  },
+  {
+    "key": "1.26",
+    "view": "Verification",
+    "chars": 890,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "view": "Mathematics",
+    "chars": 330,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "view": "Plain",
+    "chars": 619,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "view": "Story",
+    "chars": 1534,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "view": "Lean",
+    "chars": 1035,
+    "pass": true
+  },
+  {
+    "key": "1.27",
+    "view": "Verification",
+    "chars": 2555,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "view": "Mathematics",
+    "chars": 1169,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "view": "Plain",
+    "chars": 668,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "view": "Story",
+    "chars": 1341,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "view": "Lean",
+    "chars": 2939,
+    "pass": true
+  },
+  {
+    "key": "1.28",
+    "view": "Verification",
+    "chars": 4272,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "view": "Mathematics",
+    "chars": 1225,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "view": "Plain",
+    "chars": 896,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "view": "Story",
+    "chars": 1996,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "view": "Lean",
+    "chars": 3105,
+    "pass": true
+  },
+  {
+    "key": "2.1",
+    "view": "Verification",
+    "chars": 5427,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "view": "Mathematics",
+    "chars": 560,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "view": "Plain",
+    "chars": 700,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "view": "Story",
+    "chars": 1310,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "view": "Lean",
+    "chars": 2565,
+    "pass": true
+  },
+  {
+    "key": "2.2",
+    "view": "Verification",
+    "chars": 4960,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "view": "Mathematics",
+    "chars": 384,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "view": "Plain",
+    "chars": 723,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "view": "Story",
+    "chars": 1297,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "view": "Lean",
+    "chars": 486,
+    "pass": true
+  },
+  {
+    "key": "2.3",
+    "view": "Verification",
+    "chars": 1317,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "view": "Mathematics",
+    "chars": 331,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "view": "Plain",
+    "chars": 680,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "view": "Story",
+    "chars": 1308,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "view": "Lean",
+    "chars": 368,
+    "pass": true
+  },
+  {
+    "key": "2.4",
+    "view": "Verification",
+    "chars": 886,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "view": "Mathematics",
+    "chars": 534,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "view": "Plain",
+    "chars": 743,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "view": "Story",
+    "chars": 1406,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "view": "Lean",
+    "chars": 370,
+    "pass": true
+  },
+  {
+    "key": "2.5",
+    "view": "Verification",
+    "chars": 888,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "view": "Mathematics",
+    "chars": 1624,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "view": "Plain",
+    "chars": 815,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "view": "Story",
+    "chars": 1508,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "view": "Lean",
+    "chars": 1196,
+    "pass": true
+  },
+  {
+    "key": "2.6",
+    "view": "Verification",
+    "chars": 2301,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "view": "Mathematics",
+    "chars": 518,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "view": "Plain",
+    "chars": 797,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "view": "Story",
+    "chars": 1647,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "view": "Lean",
+    "chars": 2725,
+    "pass": true
+  },
+  {
+    "key": "2.7",
+    "view": "Verification",
+    "chars": 5488,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "view": "Mathematics",
+    "chars": 772,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "view": "Plain",
+    "chars": 791,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "view": "Story",
+    "chars": 1608,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "view": "Lean",
+    "chars": 1570,
+    "pass": true
+  },
+  {
+    "key": "3.1",
+    "view": "Verification",
+    "chars": 3299,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "view": "Mathematics",
+    "chars": 530,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "view": "Plain",
+    "chars": 883,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "view": "Story",
+    "chars": 1812,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "view": "Lean",
+    "chars": 1979,
+    "pass": true
+  },
+  {
+    "key": "3.2",
+    "view": "Verification",
+    "chars": 5557,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "view": "Mathematics",
+    "chars": 1607,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "view": "Plain",
+    "chars": 792,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "view": "Story",
+    "chars": 1450,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "view": "Lean",
+    "chars": 4157,
+    "pass": true
+  },
+  {
+    "key": "3.3",
+    "view": "Verification",
+    "chars": 7064,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "view": "Mathematics",
+    "chars": 376,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "view": "Plain",
+    "chars": 794,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "view": "Story",
+    "chars": 1420,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "view": "Lean",
+    "chars": 561,
+    "pass": true
+  },
+  {
+    "key": "3.4",
+    "view": "Verification",
+    "chars": 1469,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "view": "Mathematics",
+    "chars": 682,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "view": "Plain",
+    "chars": 732,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "view": "Story",
+    "chars": 1499,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "view": "Lean",
+    "chars": 2022,
+    "pass": true
+  },
+  {
+    "key": "3.5",
+    "view": "Verification",
+    "chars": 4059,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "view": "Mathematics",
+    "chars": 379,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "view": "Plain",
+    "chars": 707,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "view": "Story",
+    "chars": 1397,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "view": "Lean",
+    "chars": 940,
+    "pass": true
+  },
+  {
+    "key": "3.6",
+    "view": "Verification",
+    "chars": 2511,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "view": "Mathematics",
+    "chars": 398,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "view": "Plain",
+    "chars": 836,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "view": "Story",
+    "chars": 1581,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "view": "Lean",
+    "chars": 826,
+    "pass": true
+  },
+  {
+    "key": "3.7",
+    "view": "Verification",
+    "chars": 2575,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "view": "Mathematics",
+    "chars": 456,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "view": "Plain",
+    "chars": 642,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "view": "Story",
+    "chars": 1264,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "view": "Lean",
+    "chars": 2271,
+    "pass": true
+  },
+  {
+    "key": "3.8",
+    "view": "Verification",
+    "chars": 5405,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "view": "Mathematics",
+    "chars": 491,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "view": "Plain",
+    "chars": 819,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "view": "Story",
+    "chars": 1480,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "view": "Lean",
+    "chars": 975,
+    "pass": true
+  },
+  {
+    "key": "3.9",
+    "view": "Verification",
+    "chars": 3197,
+    "pass": true
+  },
+  {
+    "key": "intro.what",
+    "view": "Mathematics",
+    "chars": 632,
+    "pass": true
+  },
+  {
+    "key": "intro.what",
+    "view": "Plain",
+    "chars": 799,
+    "pass": true
+  },
+  {
+    "key": "intro.what",
+    "view": "Story",
+    "chars": 1349,
+    "pass": true
+  },
+  {
+    "key": "intro.what",
+    "view": "Lean",
+    "chars": 278,
+    "pass": true
+  },
+  {
+    "key": "intro.what",
+    "view": "Verification",
+    "chars": 606,
+    "pass": true
+  },
+  {
+    "key": "intro.higher_morphisms",
+    "view": "Mathematics",
+    "chars": 632,
+    "pass": true
+  },
+  {
+    "key": "intro.higher_morphisms",
+    "view": "Plain",
+    "chars": 707,
+    "pass": true
+  },
+  {
+    "key": "intro.higher_morphisms",
+    "view": "Story",
+    "chars": 1272,
+    "pass": true
+  },
+  {
+    "key": "intro.higher_morphisms",
+    "view": "Lean",
+    "chars": 278,
+    "pass": true
+  },
+  {
+    "key": "intro.higher_morphisms",
+    "view": "Verification",
+    "chars": 606,
+    "pass": true
+  },
+  {
+    "key": "intro.invertibility",
+    "view": "Mathematics",
+    "chars": 632,
+    "pass": true
+  },
+  {
+    "key": "intro.invertibility",
+    "view": "Plain",
+    "chars": 914,
+    "pass": true
+  },
+  {
+    "key": "intro.invertibility",
+    "view": "Story",
+    "chars": 1561,
+    "pass": true
+  },
+  {
+    "key": "intro.invertibility",
+    "view": "Lean",
+    "chars": 427,
+    "pass": true
+  },
+  {
+    "key": "intro.invertibility",
+    "view": "Verification",
+    "chars": 930,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "view": "Mathematics",
+    "chars": 1003,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "view": "Plain",
+    "chars": 829,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "view": "Story",
+    "chars": 1636,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "view": "Lean",
+    "chars": 1936,
+    "pass": true
+  },
+  {
+    "key": "intro.paths",
+    "view": "Verification",
+    "chars": 2819,
+    "pass": true
+  },
+  {
+    "key": "intro.groupoids",
+    "view": "Mathematics",
+    "chars": 1003,
+    "pass": true
+  },
+  {
+    "key": "intro.groupoids",
+    "view": "Plain",
+    "chars": 780,
+    "pass": true
+  },
+  {
+    "key": "intro.groupoids",
+    "view": "Story",
+    "chars": 1358,
+    "pass": true
+  },
+  {
+    "key": "intro.groupoids",
+    "view": "Lean",
+    "chars": 297,
+    "pass": true
+  },
+  {
+    "key": "intro.groupoids",
+    "view": "Verification",
+    "chars": 625,
+    "pass": true
+  },
+  {
+    "key": "intro.models",
+    "view": "Mathematics",
+    "chars": 917,
+    "pass": true
+  },
+  {
+    "key": "intro.models",
+    "view": "Plain",
+    "chars": 792,
+    "pass": true
+  },
+  {
+    "key": "intro.models",
+    "view": "Story",
+    "chars": 1296,
+    "pass": true
+  },
+  {
+    "key": "intro.models",
+    "view": "Lean",
+    "chars": 290,
+    "pass": true
+  },
+  {
+    "key": "intro.models",
+    "view": "Verification",
+    "chars": 618,
+    "pass": true
+  },
+  {
+    "key": "intro.hott",
+    "view": "Mathematics",
+    "chars": 1294,
+    "pass": true
+  },
+  {
+    "key": "intro.hott",
+    "view": "Plain",
+    "chars": 856,
+    "pass": true
+  },
+  {
+    "key": "intro.hott",
+    "view": "Story",
+    "chars": 1327,
+    "pass": true
+  },
+  {
+    "key": "intro.hott",
+    "view": "Lean",
+    "chars": 426,
+    "pass": true
+  },
+  {
+    "key": "intro.hott",
+    "view": "Verification",
+    "chars": 918,
+    "pass": true
+  },
+  {
+    "key": "intro.identity",
+    "view": "Mathematics",
+    "chars": 1294,
+    "pass": true
+  },
+  {
+    "key": "intro.identity",
+    "view": "Plain",
+    "chars": 790,
+    "pass": true
+  },
+  {
+    "key": "intro.identity",
+    "view": "Story",
+    "chars": 1312,
+    "pass": true
+  },
+  {
+    "key": "intro.identity",
+    "view": "Lean",
+    "chars": 426,
+    "pass": true
+  },
+  {
+    "key": "intro.identity",
+    "view": "Verification",
+    "chars": 902,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "view": "Mathematics",
+    "chars": 1930,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "view": "Plain",
+    "chars": 1094,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "view": "Story",
+    "chars": 2022,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "view": "Lean",
+    "chars": 2558,
+    "pass": true
+  },
+  {
+    "key": "intro.sip",
+    "view": "Verification",
+    "chars": 4539,
+    "pass": true
+  },
+  {
+    "key": "intro.synthetic",
+    "view": "Mathematics",
+    "chars": 953,
+    "pass": true
+  },
+  {
+    "key": "intro.synthetic",
+    "view": "Plain",
+    "chars": 833,
+    "pass": true
+  },
+  {
+    "key": "intro.synthetic",
+    "view": "Story",
+    "chars": 1328,
+    "pass": true
+  },
+  {
+    "key": "intro.synthetic",
+    "view": "Lean",
+    "chars": 282,
+    "pass": true
+  },
+  {
+    "key": "intro.synthetic",
+    "view": "Verification",
+    "chars": 610,
+    "pass": true
+  },
+  {
+    "key": "intro.course",
+    "view": "Mathematics",
+    "chars": 1149,
+    "pass": true
+  },
+  {
+    "key": "intro.course",
+    "view": "Plain",
+    "chars": 798,
+    "pass": true
+  },
+  {
+    "key": "intro.course",
+    "view": "Story",
+    "chars": 1349,
+    "pass": true
+  },
+  {
+    "key": "intro.course",
+    "view": "Lean",
+    "chars": 271,
+    "pass": true
+  },
+  {
+    "key": "intro.course",
+    "view": "Verification",
+    "chars": 599,
+    "pass": true
+  },
+  {
+    "key": "strict.motivation",
+    "view": "Mathematics",
+    "chars": 1010,
+    "pass": true
+  },
+  {
+    "key": "strict.motivation",
+    "view": "Plain",
+    "chars": 886,
+    "pass": true
+  },
+  {
+    "key": "strict.motivation",
+    "view": "Story",
+    "chars": 1361,
+    "pass": true
+  },
+  {
+    "key": "strict.motivation",
+    "view": "Lean",
+    "chars": 281,
+    "pass": true
+  },
+  {
+    "key": "strict.motivation",
+    "view": "Verification",
+    "chars": 609,
+    "pass": true
+  },
+  {
+    "key": "equivalences.motivation",
+    "view": "Mathematics",
+    "chars": 1847,
+    "pass": true
+  },
+  {
+    "key": "equivalences.motivation",
+    "view": "Plain",
+    "chars": 844,
+    "pass": true
+  },
+  {
+    "key": "equivalences.motivation",
+    "view": "Story",
+    "chars": 1582,
+    "pass": true
+  },
+  {
+    "key": "equivalences.motivation",
+    "view": "Lean",
+    "chars": 1727,
+    "pass": true
+  },
+  {
+    "key": "equivalences.motivation",
+    "view": "Verification",
+    "chars": 4003,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "view": "Mathematics",
+    "chars": 332,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "view": "Plain",
+    "chars": 837,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "view": "Story",
+    "chars": 1442,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "view": "Lean",
+    "chars": 762,
+    "pass": true
+  },
+  {
+    "key": "3.5.adjoint_upgrade",
+    "view": "Verification",
+    "chars": 2072,
+    "pass": true
+  }
+]

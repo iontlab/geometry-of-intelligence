@@ -1,0 +1,697 @@
+[
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathCompositionAssociativity&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathCompositionAssociativity",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathLeftIdentity&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathLeftIdentity",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathRightIdentity&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathRightIdentity",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathLeftInverse&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathLeftInverse",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.pathRightInverse&layer=verification",
+    "declaration": "ILab.MathematicsLearning.pathRightInverse",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.order_two_invariant&layer=verification",
+    "declaration": "ILab.MathematicsLearning.order_two_invariant",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.equality_substitution&layer=verification",
+    "declaration": "ILab.MathematicsLearning.equality_substitution",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.equality_transport&layer=verification",
+    "declaration": "ILab.MathematicsLearning.equality_transport",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.presentationIso&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.presentationIso",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_multiplication&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_multiplication",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.signs_multiplication&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_multiplication",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_identity&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.zeroOne_identity",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity_ne_zero&layer=verification",
+    "declaration": "ILab.MathematicsLearning.ConcreteGroupPresentations.signs_identity_ne_zero",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetUniverse&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetUniverse",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.universe_not_member&layer=verification",
+    "declaration": "ILab.MathematicsLearning.universe_not_member",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.UniverseHierarchy&layer=verification",
+    "declaration": "ILab.MathematicsLearning.UniverseHierarchy",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsSmallSet&layer=verification",
+    "declaration": "ILab.MathematicsLearning.IsSmallSet",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsLargeSet&layer=verification",
+    "declaration": "ILab.MathematicsLearning.IsLargeSet",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.IsHugeSet&layer=verification",
+    "declaration": "ILab.MathematicsLearning.IsHugeSet",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsLocallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsLocallySmall",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsSmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsSmall",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSetsCategory&layer=verification",
+    "declaration": "ILab.MathematicsLearning.smallSetsCategory",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.smallSets_locallySmall",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.smallSets_not_small",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.category&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.category",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.locallySmall",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.not_small",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.category&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.category",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.locallySmall",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.not_small",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.category&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.category",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.locallySmall",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.not_small",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsIsomorphism&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsIsomorphism",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.ObjectsIsomorphic",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective&layer=verification",
+    "declaration": "ILab.MathematicsLearning.smallSets_isomorphism_iff_bijective",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.isomorphism_iff_bijective",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.isomorphism_iff_bijective",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.isomorphism_iff_homeomorphism",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.unique_inverse&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.unique_inverse",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceFunctor&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceFunctor",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.functorEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.functorEquiv",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.forget&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.forget",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.forget&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.forget",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.forget&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.forget",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.addPoint&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPoint",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.free&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.free",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.discrete&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.discrete_opens",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscrete_opens",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetFreeVectors.linearEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetFreeVectors.linearEquiv",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.category&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.category",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.largeCategories&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.largeCategories",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.homEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.homEquiv",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.functorCodeEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.functorCodeEquiv",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.identityFunctor_object&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_object",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.identityFunctor_arrow&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityFunctor_arrow",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.compositeFunctor_object&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.compositeFunctor_object",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.compositeFunctor_arrow",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategoriesAsHugeObject",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.hugeObject_decodes",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_locallySmall",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallCategories_not_small",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallCategoryUniverse.smallObjectEquiv",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositeObjectData&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositeHomData&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeHomData",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositeIdentityData&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeIdentityData",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositeComposeData&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeComposeData",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositeObjectData_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeObjectData_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositeHomData_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeHomData_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositeIdentityData_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeIdentityData_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositeComposeData_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositeComposeData_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceContravariantFunctor",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.contravariantFunctorEquiv",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representableInSmallSets&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representableInSmallSets",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representable_object&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_object",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representable_map&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_map",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceTransformation&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceTransformation",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.transformationEquiv&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.transformationEquiv",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.postcompositionComponent&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionComponent_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsNaturalIsomorphism",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.identityComponent&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.verticalCompositeComponent&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.identityComponent_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.identityComponent_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.verticalCompositeComponent_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.verticalCompositeComponent_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminalSetCategory&layer=verification",
+    "declaration": "ILab.MathematicsLearning.terminalSetCategory",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminalObject&layer=verification",
+    "declaration": "ILab.MathematicsLearning.terminalObject",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminal_object_unique&layer=verification",
+    "declaration": "ILab.MathematicsLearning.terminal_object_unique",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.terminal_morphism_unique&layer=verification",
+    "declaration": "ILab.MathematicsLearning.terminal_morphism_unique",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.selectSetObject&layer=verification",
+    "declaration": "ILab.MathematicsLearning.selectSetObject",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.selectSetObject_unique&layer=verification",
+    "declaration": "ILab.MathematicsLearning.selectSetObject_unique",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.precompositionComponent&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.precompositionComponent_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.precompositionComponent_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcompositionTransformationComponent_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.yonedaEvaluation&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaEvaluation",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaEvaluation_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.yonedaCandidateComponent_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsFullyFaithful&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsFullyFaithful",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.postcomposition_bijections_detect_isomorphism",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.oppositePostcomposeReadback&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.oppositePostcomposeReadback",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_objects_isomorphic_iff",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.representable_model&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.representable_model",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.SourceAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.SourceAdjunction",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.sourceAdjunction_left_triangle",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.sourceAdjunction_right_triangle",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallPointedSets.addPointAdjunction",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallVectorSpaces.freeAdjunction",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.discreteAdjunction",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SmallTopologicalSpaces.indiscreteAdjunction",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.adjunctionForward&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.adjunctionBackward&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionBackward",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.unitCandidateComponent&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.unitCandidateComponent",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.counitCandidateComponent&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.counitCandidateComponent",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.adjunctionForward_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionForward_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.adjunctionBackward_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjunctionBackward_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.unitCandidateComponent_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.unitCandidateComponent_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.counitCandidateComponent_formula&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.counitCandidateComponent_formula",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsEquivalence&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEquivalence",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.strict_inverse_is_equivalence",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.adjoint_equivalences&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.adjoint_equivalences",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.equivalence_promotes_to_adjoint",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.IsEssentiallySurjective",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.essentiallySurjective_agrees",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.SetCategory.fundamental_theorem&layer=verification",
+    "declaration": "ILab.MathematicsLearning.SetCategory.fundamental_theorem",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingSetCategory&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walkingSetCategory",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingZero&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walkingZero",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingOne&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walkingOne",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_zero_ne_one&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walking_zero_ne_one",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_objects&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walking_objects",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_hom_singleton&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walking_hom_singleton",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walkingSetIso&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walkingSetIso",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.includeWalkingZero&layer=verification",
+    "declaration": "ILab.MathematicsLearning.includeWalkingZero",
+    "pass": true
+  },
+  {
+    "url": "https://iontlab.org/formalization/mathematics-learning/?declaration=ILab.MathematicsLearning.walking_inclusion_equivalence&layer=verification",
+    "declaration": "ILab.MathematicsLearning.walking_inclusion_equivalence",
+    "pass": true
+  }
+]

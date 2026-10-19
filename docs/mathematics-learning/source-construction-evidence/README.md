@@ -9,3 +9,6 @@ The clean build passed 8962 jobs; compiler extraction records 816 declarations, 
 The serialized registry is 503551 bytes, including all signatures, bindings and scope metadata. The shared `capacity.json` starts at 5000000 UTF-8 bytes and 5000 records; headroom is 4496449 bytes. Its digest is bound to the release. Browser streaming and PHP bounded reads reject oversized payloads; schema depth, per-record limits, source freshness, ACL and hash checks remain enforced. No mathematics or existing narrative was shortened for capacity.
 
 Capacity is configured once for the learning registry rather than edited separately in browser, server and build tools. Ordinary additions within this headroom need no limit adjustment. At sustained growth near 70% of the budget, measure transfer/parse time and memory on target devices; propose chapter-indexed, hash-bound on-demand records before further large increases. Such a loading change requires separate approval and is not implemented here. The existing architecture is retained. The synthetic 5 MB / 750-record Node V8 parse-and-validation measurement is recorded in `capacity-tests.json`; it is not a browser or network timing claim.
+
+
+Publication is complete. See [the final live publication report](PUBLICATION-REPORT.md) and `publication.json` for merge provenance and complete verification results.
