@@ -1,0 +1,87 @@
+{
+  "live_assets": [
+    {
+      "url": "https://iontlab.org/formalization/rq001/index.html",
+      "sha256": "80c3ada5d3f6445086ca92db50202a218f41e9434efcdccf91ebcb27bfc077db",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/app.js",
+      "sha256": "9b48ffa5314b62203206cd53ba5d1101d2e4921b1ecf30d08c6aa1583f3eb18a",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/mathematics-view.js",
+      "sha256": "2abb425f083d3c43f9752eea65839b18c5fc21388be11697c6d9a27351b91f09",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/blueprint-view.js",
+      "sha256": "7361e84117c3e25c900f75aec9eb828467784623edf74a9fe7b76b09ee1352bc",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/style.css",
+      "sha256": "68d701715daa26680076f2232c5e84d9f5479d88847634bde47fb513cce84cfa",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/mathematics.json",
+      "sha256": "c568abc878bca21441ff6b91caf2aeb0f0728f2f070cae720f9684701a18e009",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/formalization/rq001/data.json",
+      "sha256": "4f1901870e2e68ab82931bf16655bc4bf90869bd965faf856eb25ff05218c385",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/renderer.js",
+      "sha256": "bf4a63f4cc608bcc1bcc77203ceb565f7b0f672067763de4d98e72b173079d7b",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/graph-adapter.js",
+      "sha256": "dfeb1bc9fc7003602961c2c902768d67a6e62d0f31fb263c222f48e76a0e64e0",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/wiki-adapter.js",
+      "sha256": "b0bf8c448a9c9b82c2ac73c15b1b5eb1b243304975d83dc140adf76aee15d263",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/explanations.css",
+      "sha256": "a70ad76aac0c1191da5fe40837ee205d684d9300a6a7a5fbe8e993958e4d8dd6",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/registry.v0.1.json",
+      "sha256": "2a7e63dda2b1c92c4c812881bb10521874228b7d62eaa2d318f23a6b39cd19dd",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/binding.json",
+      "sha256": "ee52e8f7ec7b798d6429e7732def87f38230b800623f478f14dd7dc33fa15fc9",
+      "unchanged": true
+    },
+    {
+      "url": "https://iontlab.org/explanations/rq001/release.json",
+      "sha256": "0ab9da00e637dad22fbb9d44f9bf95944ac1912c33af89c80d029f9c4b6d8078",
+      "unchanged": true
+    }
+  ],
+  "protected_repository_paths_unchanged": [
+    "ILab/RQ001",
+    "formalization/rq001",
+    "docs/formalization/rq001",
+    "tools/ExtractGraph.lean",
+    "tools/build-graph.mjs",
+    "lean-toolchain",
+    "lakefile.toml",
+    "lake-manifest.json",
+    "integrations/dokuwiki/ilabexplain/action.php"
+  ],
+  "baseline_commit": "cdad0de",
+  "compiler_baseline": "../../formalization/mathematics-learning/verification/expanded-rq001-regression.json"
+}

@@ -3,10 +3,26 @@
 if (!defined('DOKU_INC')) die();
 final class ILabLearningExplanation {
     private const BASE='formalization/mathematics-learning/explanations/';
-    private static function json($name) {
+    private static function bytes($name,$limit) {
         $path=DOKU_INC.self::BASE.$name;
-        if (!is_file($path)||!is_readable($path)||filesize($path)>500000) throw new \RuntimeException('Unavailable');
-        return json_decode(file_get_contents($path),true,32,JSON_THROW_ON_ERROR);
+        clearstatcache(true,$path);
+        if (!is_file($path)||!is_readable($path)||filesize($path)>$limit) throw new \RuntimeException('Unavailable');
+        $bytes=file_get_contents($path,false,null,0,$limit+1);
+        if (!is_string($bytes)||strlen($bytes)>$limit) throw new \RuntimeException('Unavailable');
+        return $bytes;
+    }
+    private static function json($name) {
+        return json_decode(self::bytes($name,500000),true,32,JSON_THROW_ON_ERROR);
+    }
+    private static function capacity($release) {
+        $bytes=self::bytes('capacity.json',4096);
+        if (hash('sha256',$bytes)!==($release['capacity_sha256']??null)) throw new \RuntimeException('Capacity integrity');
+        $c=json_decode($bytes,true,8,JSON_THROW_ON_ERROR);
+        if (($c['schema_version']??null)!=='learning-capacity-1') throw new \RuntimeException('Capacity schema');
+        foreach (['registry_bytes'=>[500000,50000000],'registry_records'=>[200,100000]] as $key=>$range) {
+            if (!is_int($c[$key]??null)||$c[$key]<$range[0]||$c[$key]>$range[1]) throw new \RuntimeException('Capacity bounds');
+        }
+        return $c;
     }
     public static function matches($source,$fragment,$binding,$role) {
         return is_array($source)&&is_string($fragment)&&is_array($binding)
@@ -18,10 +34,11 @@ final class ILabLearningExplanation {
         $id=$_GET['id']??null;$nonce=$_GET['nonce']??null;
         if (($_SERVER['REQUEST_METHOD']??'')!=='GET'||!is_string($id)||!preg_match('/^mathematics_learning:higher_category_theory:synthetic_category_theory:(foundations|size|categories|functors|natural_transformations|yoneda|adjunctions|equivalences)$/D',$id)||!is_string($nonce)||!preg_match('/^[a-f0-9]{32}$/D',$nonce)||auth_quickaclcheck($id)<AUTH_READ) return ['available'=>false];
         $release=self::json('release.json');$contract=self::json('binding.json');$binding=$contract['pages'][$id]??null;
+        $capacity=self::capacity($release);
         $file=wikiFN($id);
         $source=action_plugin_ilabexplain::snapshot(function()use($file){clearstatcache(true,$file);return @filemtime($file);},fn()=>@file_get_contents($file));
         $registry=DOKU_INC.self::BASE.'registry.v0.1.json';
-        $ok=($release['enabled']??false)===true&&($release['publication_authorized']??false)===true&&is_array($binding)&&is_array($source)&&$source['revision']===$binding['revision']&&$source['raw_sha256']===$binding['raw_sha256']&&is_file($registry)&&filesize($registry)<=500000&&hash_file('sha256',$registry)===($release['registry_sha256']??null);
+        $ok=($release['enabled']??false)===true&&($release['publication_authorized']??false)===true&&is_array($binding)&&is_array($source)&&$source['revision']===$binding['revision']&&$source['raw_sha256']===$binding['raw_sha256']&&hash('sha256',self::bytes('registry.v0.1.json',$capacity['registry_bytes']))===($release['registry_sha256']??null);
         return ['available'=>$ok,'nonce'=>$nonce,'page_id'=>$id,'revision'=>$source['revision']??null,'raw_sha256'=>$source['raw_sha256']??null,'release'=>$release['release']??null,'registry_sha256'=>$release['registry_sha256']??null];
     }
     public static function display($event) {
@@ -40,11 +57,11 @@ final class ILabLearningExplanation {
         }
         $release=self::json('release.json');$contract=self::json('binding.json');
         if (($release['enabled']??false)!==true||($release['publication_authorized']??false)!==true||($release['render_contract']??null)!==($contract['render_contract']??null)) return;
-        $path=DOKU_INC.self::BASE.'registry.v0.1.json';
-        if (!is_file($path)||filesize($path)>500000) return;
-        $bytes=file_get_contents($path);
+        $capacity=self::capacity($release);
+        $bytes=self::bytes('registry.v0.1.json',$capacity['registry_bytes']);
         if (!is_string($bytes)||hash('sha256',$bytes)!==($release['registry_sha256']??null)) return;
         $reg=json_decode($bytes,true,32,JSON_THROW_ON_ERROR);
+        if (!is_array($reg['records']??null)||count($reg['records'])>$capacity['registry_records']) return;
         if (($reg['release']['enabled']??false)!==true||($reg['release']['publication_authorized']??false)!==true) return;
         $records=array_values(array_filter($reg['records']??[],fn($r)=>($r['source']['page_id']??null)===$ID&&($r['wiki']??false)===true));
         if (!$records) return;

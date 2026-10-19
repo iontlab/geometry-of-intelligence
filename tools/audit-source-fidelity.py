@@ -5,7 +5,9 @@ compiler proof of the correspondence. Every mapped declaration must exist
 in the independently extracted compiler inventory. Pending items stay pending.
 """
 from pathlib import Path
-import hashlib, json
+import hashlib, json, runpy
+REPAIR_TOOLS=runpy.run_path(str(Path(__file__).with_name("source-construction-repairs.py")))
+REPAIRS=REPAIR_TOOLS["REPAIRS"]
 R=Path(__file__).resolve().parents[1]
 D=R/'docs/mathematics-learning'
 G=R/'docs/formalization/mathematics-learning'
@@ -77,6 +79,9 @@ for item in source:
         names,reason=full[key];status='fully_formalized'
     else:
         names,reason=pending[key];status='pending'
+    if key in REPAIRS:
+        spec=REPAIRS[key]; names=' '.join(n.removeprefix(P) for n in spec['declarations'])
+        reason=spec['scope']; status='mixed_exercise' if key=='2.6' else 'partial_construction'
     declarations=[P+n for n in names.split()]
     assert all(n in nodes for n in declarations),(key,declarations)
     rows.append({'key':key,'chapter':item['chapter'],'kind':item['kind'],
@@ -132,10 +137,15 @@ for prev in old['records']:
             r['obligations']=[{'id':key+'.concrete','statement':'The two printed integer-carrier groups are isomorphic, but only the first has numerical identity zero; order-two existence is invariant under group isomorphism. Equality transports predicates and structures.','status':'Precisely specified ordinary mathematical assertions verified','declarations':r['lean_declarations'],'scope':r['limit']},
               {'id':key+'.higher','statement':'Group identifications correspond to group isomorphisms in the intended higher identity types.','status':'Awaits later source definitions and univalent foundations','declarations':[],'scope':'No ordinary Lean equality replacement or invented axiom is used.'}]
         if key=='equivalences.motivation':
+            r['lesson']='adjunctions'
+            r['page_id']='mathematics_learning:higher_category_theory:synthetic_category_theory:adjunctions'
+            r['public_url']='https://iontlab.org/doku.php?id='+r['page_id']
             r['lean_declarations']=[P+n for n in ('walking_inclusion_equivalence strict_inverse_object_bijective walking_not_strictly_isomorphic_sets').split()]
             r['limit']='The exact set-coded one-object and two-object categories are equivalent but have no strictly inverse functors; strict inverses imply an actual object bijection. Prospective synthetic equality-isomorphism principles await later axioms.'
             r['obligations']=[{'id':key+'.strict','statement':'Strict inverse functors give a bijection of object sets; equivalent categories need not have one.','status':'Verified on the exact set-coded categories','declarations':r['lean_declarations'],'scope':r['limit']},
               {'id':key+'.synthetic','statement':'The intended synthetic foundation builds in invariance under isomorphism.','status':'Prospective source description; later axioms awaited','declarations':[],'scope':'No missing synthetic foundations are invented.'}]
+    if key in REPAIRS:
+        REPAIR_TOOLS['apply_record'](r,prev)
     assert all(n in nodes for n in r['lean_declarations']), (key,r['lean_declarations'])
     current.append(r)
 save(D/'obligations.json',{**old,'records':current,'source_fidelity_audit':'original/native/source-audit.json'})

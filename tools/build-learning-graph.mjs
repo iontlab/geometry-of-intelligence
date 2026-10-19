@@ -34,6 +34,7 @@ const allowed = new Set(['propext','Classical.choice','Quot.sound']);
 const sourceRef = process.env.SOURCE_REF;
 if (!/^[0-9a-f]{40}$/.test(sourceRef || '')) throw new Error('SOURCE_REF must be the exact verified source commit');
 const mappings = {
+  SourceConstructionData:'Approved source data/formulas in 1.15, 1.17, 1.21, 1.23, 1.28, 2.2, 2.6 and 3.3. Only raw components and definitional readbacks; assigned laws, naturality, inverses and triangles remain withheld.',
   YonedaConstruction:'Theorem 2.1, page 9: author-supplied evaluation at identity and candidate component functions on exact small-set carriers. Only defining formulas are checked; candidate naturality, mutual inverseness and naturality in c,F remain assigned. The complete Yoneda theorem is not verified here.',
   BasicCategoryTheory:'Primary 1.5 and 1.11: non-exercise identity laws and inverse uniqueness. Assigned exercise solutions are withheld.',
   WalkingIsomorphism:'Primary 1.25, 3.4, 3.8 and 3.9: one-object and two-object singleton-hom categories, an explicit adjoint equivalence and two-object cardinality.',
@@ -83,7 +84,9 @@ for(const n of raw) {
   n.sourceKind=meta?.sourceKind || null;
   n.sourceUrl=`https://github.com/iontlab/geometry-of-intelligence/blob/${sourceRef}/${n.source}${n.line?'#L'+n.line:''}`;
   n.paperMapping={provenance:'Independently authored module-level educational mapping, not a formal dependency or a separate proof claim for every helper',text:mappings[n.module.split('.').at(-1)] || 'No authored lesson mapping'};
+  if(n.id==='ILab.MathematicsLearning.isoIffPrecompositionBijective') n.paperMapping.text='Independent Mathlib-backed outgoing hom criterion. Not an author-written completion of source Corollary 2.6; its opposite-invertibility exercise remains open.';
   n.verification='Compiled and axiom-audited in the pinned public project';
+  if(n.module==='ILab.MathematicsLearning.SourceConstructionData') n.verification='Compiled authored raw data or definitional formula only; no assigned category/functor, naturality, inverse or triangle checks are solved.';
   if(n.module==='ILab.MathematicsLearning.YonedaConstruction') n.verification='Verified author-supplied construction step only. The complete Yoneda theorem is not verified here. Candidate naturality, mutual inverseness, and naturality in c and F remain assigned exercises.';
 }
 for(const id of metadata.keys()) if(!ids.has(id)) throw new Error(`Authored declaration absent from environment: ${id}`);

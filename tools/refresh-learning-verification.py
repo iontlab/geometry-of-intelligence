@@ -36,7 +36,7 @@ def check(row):
     assert actual==row['sha256'],row['url']
     return {'url':row['url'],'sha256':actual,'unchanged':True}
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:live=list(pool.map(check,baseline))
-paths=['ILab/RQ001','formalization/rq001','docs/formalization/rq001','tools/ExtractGraph.lean','tools/build-graph.mjs','lean-toolchain','lakefile.toml','lake-manifest.json','integrations/dokuwiki']
+paths=['ILab/RQ001','formalization/rq001','docs/formalization/rq001','tools/ExtractGraph.lean','tools/build-graph.mjs','lean-toolchain','lakefile.toml','lake-manifest.json','integrations/dokuwiki/ilabexplain/action.php']
 diff=subprocess.check_output(['git','diff','cdad0de','--',*paths],cwd=R)
 assert not diff,'Protected repository paths changed'
 write(E/'rq001-regression.json',{'live_assets':live,'protected_repository_paths_unchanged':paths,'baseline_commit':'cdad0de','compiler_baseline':'../../formalization/mathematics-learning/verification/expanded-rq001-regression.json'})

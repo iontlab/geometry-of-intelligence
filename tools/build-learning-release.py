@@ -4,6 +4,8 @@ The capture directory is private deployment evidence. This tool reads it; it
 performs no network write. Publish the resulting assets through WebFTP.
 """
 from pathlib import Path
+import runpy
+CAP=runpy.run_path(str(Path(__file__).with_name('learning-capacity.py')))
 import argparse, copy, datetime, hashlib, html, json, re
 
 p=argparse.ArgumentParser()
@@ -197,9 +199,9 @@ reg={'schema_version':'explanation-content-draft-1','content_format':{'version':
     'graph':{'data_sha256':digest((GRAPH/'data.json').read_bytes()),'mathematics_sha256':math_hash},
     'release':{'enabled':True,'publication_authorized':True},'records':records}
 write(EX/'registry.v0.1.json',reg,compact=True)
-assert (EX/'registry.v0.1.json').stat().st_size<500000
+CAP['check_registry']((EX/'registry.v0.1.json').read_bytes())
 write(EX/'binding.json',contract)
 write(EX/'release.json',{'enabled':True,'publication_authorized':True,'release':a.release,
-    'render_contract':contract['render_contract'],'registry_sha256':digest((EX/'registry.v0.1.json').read_bytes())})
+    'render_contract':contract['render_contract'],'capacity_sha256':CAP['capacity_hash'](),'registry_sha256':digest((EX/'registry.v0.1.json').read_bytes())})
 assert len(source_tuples)==58
 print(f'{len(records)} bound records: 58 source items, {len(records)-58} graph explanations; {sum(r["wiki"] for r in records)} inline controls; {len(math["declarations"])} Blueprint declarations; registry {(EX/"registry.v0.1.json").stat().st_size} bytes.')

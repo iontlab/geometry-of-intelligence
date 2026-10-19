@@ -15,9 +15,10 @@ $source=['revision'=>$revision,'raw_sha256'=>hash('sha256',$raw)];
 $binding=$source+['fragments'=>['anonymous'=>[hash('sha256',$fragment)]]];
 $records=[['object_key'=>'explain.mathematics-learning.1.11','wiki'=>true,'source'=>['page_id'=>$id,'revision'=>$revision,'whole_page_sha256'=>$source['raw_sha256'],'anchor'=>'mw_1_11','heading_html'=>'<h4 id="mw_1_11">Proposition 1.11</h4>'],'release_ready'=>true,'review'=>['status'=>'AI-authored; independent human review not claimed']]];
 $base=DOKU_INC.'formalization/mathematics-learning/explanations/';
+copy($repo.'docs/formalization/mathematics-learning/explanations/capacity.json',$base.'capacity.json');
 $reg=['records'=>$records,'release'=>['enabled'=>true,'publication_authorized'=>true]];
 $bytes=json_encode($reg);file_put_contents($base.'registry.v0.1.json',$bytes);
-$release=['enabled'=>true,'publication_authorized'=>true,'release'=>'fixture-1','registry_sha256'=>hash('sha256',$bytes),'render_contract'=>'fixture-exact-1'];
+$release=['capacity_sha256'=>hash_file('sha256',$base.'capacity.json'),'enabled'=>true,'publication_authorized'=>true,'release'=>'fixture-1','registry_sha256'=>hash('sha256',$bytes),'render_contract'=>'fixture-exact-1'];
 file_put_contents($base.'release.json',json_encode($release));
 $contract=['render_contract'=>'fixture-exact-1','pages'=>[$id=>$binding]];
 file_put_contents($base.'binding.json',json_encode($contract));
@@ -54,4 +55,23 @@ check('editor capture contains exact server fragment digest',str_contains($captu
 check('editor capture contains no source text or explanation loader',!str_contains($captured,$raw)&&!str_contains($captured,'renderer.js'));
 $INFO['perm']=AUTH_READ;check('reader cannot request editor capture',!str_contains(display($fragment),'ilab-learning-capture'));
 $ID='research:rq001_phase_i';$INFO['perm']=AUTH_EDIT;check('capture remains outside RQ-001',display($fragment)===$fragment);
+// Capacity tests use the same source-binding fixture and production handler.
+$ID=$id;$INFO=['perm'=>1];unset($_SERVER['REMOTE_USER']);unset($_GET['ilab_learning_capture']);
+$capacity=json_decode(file_get_contents($base.'capacity.json'),true);
+$large=$bytes.str_repeat(' ',5000000-strlen($bytes));
+file_put_contents($base.'registry.v0.1.json',$large);$release['registry_sha256']=hash('sha256',$large);file_put_contents($base.'release.json',json_encode($release));
+check('exact 5 MB registry remains source bound',str_contains(display($fragment),'ilab-learning-binding'));
+check('exact 5 MB registry passes freshness',ILabLearningExplanation::status()['available']);
+file_put_contents($base.'registry.v0.1.json',$large.' ');
+check('5 MB plus one byte is withheld',display($fragment)===$fragment);
+file_put_contents($base.'registry.v0.1.json',$bytes);$release['registry_sha256']=hash('sha256',$bytes);
+file_put_contents($base.'release.json',json_encode($release));
+file_put_contents($base.'capacity.json',json_encode($capacity));
+check('changed capacity digest is withheld',display($fragment)===$fragment);
+foreach ([['registry_bytes',50000001],['registry_bytes','5000000'],['registry_records',199]] as [$key,$value]) {
+ $bad=$capacity;$bad[$key]=$value;file_put_contents($base.'capacity.json',json_encode($bad));$release['capacity_sha256']=hash_file('sha256',$base.'capacity.json');file_put_contents($base.'release.json',json_encode($release));
+ check('invalid capacity '.$key.' '.strval($value).' is withheld',display($fragment)===$fragment);
+}
+copy($repo.'docs/formalization/mathematics-learning/explanations/capacity.json',$base.'capacity.json');$release['capacity_sha256']=hash_file('sha256',$base.'capacity.json');file_put_contents($base.'release.json',json_encode($release));
+check('restored capacity restores source-bound display',str_contains(display($fragment),'ilab-learning-binding'));
 if(isset($argv[1]))file_put_contents($argv[1],json_encode($results,JSON_PRETTY_PRINT));echo count($results)." source-binding and isolation checks passed\n";

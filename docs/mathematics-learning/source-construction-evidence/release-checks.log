@@ -1,0 +1,59 @@
+> -X utf8 tools/check-learning-exercise-scope.py
+PASS: all 13 pages tracked; 17 assignments / 15 items; 56 withheld authored exports absent; 816 compiled declarations and 58 source records respect the exercise boundary.
+
+> -X utf8 tools/check-yoneda-construction.py
+PASS: PR14 source module, four declarations, partial 2.1 mappings, narratives and three open obligations unchanged.
+
+> -X utf8 tools/check-source-construction-repairs.py
+PASS: 785 existing declarations unchanged; 31 raw/formula additions; only ten authorized source records; all open obligations, 97 existing narrative contents, manuscript, pins, RQ-001 and shared plugin entry point protected; registry 503551 bytes.
+
+> tools/check-learning-release.mjs
+PASS: 58 unique source bindings, 45 exact graph bindings, 47 inline controls, release hashes and all 4030 compiled edges.
+
+> tools/test-learning-inline-links.mjs
+PASS fresh URL selects Plain
+PASS fresh URL selects Story
+PASS fresh URL selects Mathematics
+PASS fresh URL selects Lean
+PASS fresh URL selects Verification
+PASS manual button keeps the existing Mathematics default
+PASS reject invalid selector ilab_explain=missing&view=plain
+PASS reject invalid selector ilab_explain=1.1&view=unknown
+PASS reject invalid selector ilab_explain=1.1&view=__proto__
+PASS reject invalid selector ilab_explain=1.1
+PASS reject invalid selector view=story
+PASS reject attestation mismatch revision
+PASS reject attestation mismatch raw_sha256
+PASS reject attestation mismatch fragment_sha256
+PASS reject attestation mismatch registry_sha256
+PASS reject attestation mismatch release
+PASS reject attestation mismatch render_contract
+PASS reject attestation mismatch role
+PASS reject attestation mismatch keys
+PASS wait for MathJax and TikZ before initialization
+PASS wait for selected layer rendering before scrolling
+PASS stale freshness fails closed
+PASS later stale binding revokes the panel and disables controls
+PASS history navigation selects an existing layer
+PASS anchor navigation reopens the requested inline panel
+PASS unrelated chapter anchors keep normal navigation
+PASS returning to the page rechecks the binding and restores a deep link
+PASS source mutation permanently revokes auto and manual opening
+28 inline-navigation and fail-closed checks passed.
+
+> tools/test-learning-capacity.mjs C:\Users\roman\Documents\ChatGPT\iLab\sct-ten-gaps-20261018\capacity-tests.json
+PASS: shared policy accepts 5 MB
+PASS: invalid configuration fails closed
+PASS: invalid configuration fails closed
+PASS: invalid configuration fails closed
+PASS: invalid configuration fails closed
+PASS: invalid configuration fails closed
+PASS: invalid configuration fails closed
+PASS: current complete registry validates
+PASS: oversized stream is cancelled despite misleading content length
+PASS: record limit remains enforced
+PASS: per-record depth limit remains enforced
+{"checks":17,"registry_bytes":503551,"capacity_bytes":5000000,"headroom":4496449,"synthetic_bytes":5000000,"synthetic_records":750,"parse_validate_ms":45.15270000000001,"note":"Node V8 timing; browser/device/network timing is separate."}
+
+> tools/test-learning-plugin.php C:\Users\roman\Documents\ChatGPT\iLab\sct-ten-gaps-20261018\plugin-tests.json
+41 source-binding and isolation checks passed

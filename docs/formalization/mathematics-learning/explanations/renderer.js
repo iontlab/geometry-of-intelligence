@@ -12,9 +12,10 @@ window.ILabExplain = (() => {
     if(u.hostname==='github.com'&&!/^\/iontlab\/geometry-of-intelligence\/blob\/[a-f0-9]{40}\/ILab\/MathematicsLearning\/[A-Za-z]+\.lean$/.test(u.pathname))throw Error('Unpinned formal source');
     return u.href;
   }
-  function validate(reg) {
-    function depth(x,n=0){if(n>16)throw Error('Depth');if(typeof x==='string'&&x.length>20000)throw Error('Length');if(x&&typeof x==='object'){if(Object.keys(x).length>200)throw Error('Size');Object.values(x).forEach(v=>depth(v,n+1));}}depth(reg);
-    if(reg.schema_version!=='explanation-content-draft-1'||reg.content_format?.version!=='plain-text-blocks-1'||!Array.isArray(reg.records)||reg.records.length<1||reg.records.length>200)throw Error('Schema');
+  function validate(reg,capacity) {
+    capacity=validateCapacity(capacity);
+    function depth(x,n=0){if(n>16)throw Error('Depth');if(typeof x==='string'&&x.length>20000)throw Error('Length');if(x&&typeof x==='object'){if(Object.keys(x).length>(x===reg.records?capacity.registry_records:200))throw Error('Size');Object.values(x).forEach(v=>depth(v,n+1));}}depth(reg);
+    if(reg.schema_version!=='explanation-content-draft-1'||reg.content_format?.version!=='plain-text-blocks-1'||!Array.isArray(reg.records)||reg.records.length<1||reg.records.length>capacity.registry_records)throw Error('Schema');
     const keys=new Set(); const blocks=b=>Array.isArray(b)&&b.length>0&&b.length<=50&&b.every(x=>x.type==='paragraph'&&text(x.text)&&Object.keys(x).length===2);
     const prefix='explain.mathematics-learning.';
     for(const r of reg.records){const c=r.content;
@@ -22,21 +23,38 @@ window.ILabExplain = (() => {
       sourceURL(r.source.source_link);if(r.formal_mapping.declaration)sourceURL(r.formal_mapping.pinned_source_link);keys.add(r.object_key);
     }return reg;
   }
-  async function json(path){const r=await fetch(path,{cache:'no-store',signal:AbortSignal.timeout(5000)});if(!r.ok)throw Error('Asset unavailable');const b=await r.arrayBuffer();if(b.byteLength>500000)throw Error('Asset size');return {value:JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(b)),hash:await sha(b)};}
+  function validateCapacity(c) {
+    if(c?.schema_version!=='learning-capacity-1')throw Error('Capacity schema');
+    for(const [key,lo,hi] of [['registry_bytes',500000,50000000],['registry_records',200,100000]])
+      if(!Number.isSafeInteger(c[key])||c[key]<lo||c[key]>hi)throw Error('Capacity bounds');
+    return c;
+  }
+  async function boundedBytes(response,limit) {
+    if(!response.ok)throw Error('Asset unavailable');
+    const reader=response.body?.getReader();if(!reader)throw Error('Streaming unavailable');
+    const chunks=[];let size=0;
+    try {while(true){const {done,value}=await reader.read();if(done)break;
+      size+=value.byteLength;if(size>limit)throw Error('Asset size');chunks.push(value);
+    }}catch(error){await reader.cancel();throw error;}finally{reader.releaseLock();}
+    const bytes=new Uint8Array(size);let offset=0;for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}return bytes;
+  }
+  async function json(path,limit=500000){const r=await fetch(path,{cache:'no-store',signal:AbortSignal.timeout(15000)});const b=await boundedBytes(r,limit);return {value:JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(b)),hash:await sha(b)};}
   // User-authorized publication is distinct from independent editorial review.
   function permitted(reg,release){return release.enabled===true&&release.publication_authorized===true&&reg.release.enabled===true&&reg.release.publication_authorized===true&&reg.records.every(r=>r.release_ready===true&&r.review.status==='AI-authored; independent human review not claimed');}
   let statePromise;
   async function load(){if(!statePromise)statePromise=(async()=>{
-    const [a,b,c]=await Promise.all([json(base+'registry.v0.1.json'),json(base+'release.json'),json(base+'binding.json')]);
-    const reg=validate(a.value),release=b.value,contract=c.value;
+    const [b,c,d]=await Promise.all([json(base+'release.json'),json(base+'binding.json'),json(base+'capacity.json',4096)]);
+    const release=b.value,contract=c.value,capacity=validateCapacity(d.value);
+    if(d.hash!==release.capacity_sha256)throw Error('Capacity integrity');
+    const a=await json(base+'registry.v0.1.json',capacity.registry_bytes),reg=validate(a.value,capacity);
     if(a.hash!==release.registry_sha256||!permitted(reg,release)||contract.render_contract!==release.render_contract)throw Error('Release unavailable');
     if(!reg.records.every(r=>{const p=contract.pages[r.source.page_id];return p&&r.source.revision===p.revision&&r.source.whole_page_sha256===p.raw_sha256;}))throw Error('Source tuple mismatch');
-    return {reg,release,contract,preview:false};
+    return {reg,release,contract,capacity,preview:false};
   })();return statePromise;}
   async function fresh(state,record){
     if(!record)throw Error('Missing source binding');
     const {value:release}=await json(base+'release.json');
-    if(!permitted(state.reg,release)||release.registry_sha256!==state.release.registry_sha256||release.release!==state.release.release)throw Error('Release changed');
+    if(!permitted(state.reg,release)||release.registry_sha256!==state.release.registry_sha256||release.release!==state.release.release||release.capacity_sha256!==state.release.capacity_sha256)throw Error('Release changed');
     const page=record.source.page_id, binding=state.contract.pages[page];
     const local=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
     if(!local){
@@ -71,5 +89,5 @@ window.ILabExplain = (() => {
     const bs=names.map((name,i)=>{const b=element('button',name);b.type='button';b.id=prefix+'-tab-'+i;b.setAttribute('role','tab');b.setAttribute('aria-controls',prefix+'-pane');b.onclick=()=>choose(i);b.onkeydown=e=>{let n={ArrowRight:(i+1)%names.length,ArrowLeft:(i+names.length-1)%names.length,Home:0,End:names.length-1}[e.key];if(n!==undefined){e.preventDefault();choose(n);bs[n].focus();}};container.append(b);return b;});
     function choose(i){bs.forEach((b,j)=>{b.tabIndex=i===j?0:-1;b.setAttribute('aria-selected',String(i===j));});activate(names[i],bs[i].id);}choose(0);return bs;
   }
-  return {base,notice,sha,element,validate,sourceURL,permitted,load,fresh,render,tabs};
+  return {base,notice,sha,element,validate,validateCapacity,boundedBytes,sourceURL,permitted,load,fresh,render,tabs};
 })();
