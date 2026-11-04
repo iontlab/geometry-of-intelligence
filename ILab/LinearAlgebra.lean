@@ -3,3 +3,4 @@ import ILab.LinearAlgebra.BasisMaps
 import ILab.LinearAlgebra.MatrixAlgebra
 import ILab.LinearAlgebra.Rotations
 import ILab.LinearAlgebra.Preparation
+import ILab.LinearAlgebra.LinearSystems

@@ -38,7 +38,8 @@ run_cmd do
     `midpoint, `midpoint_eq_smul_add, `smul_add, `add_smul, `smul_smul,
     `zero_smul, `one_smul, `div_mul_cancel₀, `Fintype.linearCombination,
     `Fintype.linearCombination_apply, `LinearIndependent.fintypeLinearCombination_injective,
-    `Fin.sum_univ_two]
+    `Fin.sum_univ_two, `Finset.sum_add_distrib, `Finset.mul_sum, `Equiv.swap,
+    `Matrix.mulVec_zero, `mul_left_cancel₀]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
