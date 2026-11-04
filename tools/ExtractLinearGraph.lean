@@ -39,7 +39,15 @@ run_cmd do
     `zero_smul, `one_smul, `div_mul_cancel₀, `Fintype.linearCombination,
     `Fintype.linearCombination_apply, `LinearIndependent.fintypeLinearCombination_injective,
     `Fin.sum_univ_two, `Finset.sum_add_distrib, `Finset.mul_sum, `Equiv.swap,
-    `Matrix.mulVec_zero, `mul_left_cancel₀]
+    `Matrix.mulVec_zero, `mul_left_cancel₀,
+    `And, `Or, `Not, `Iff, `Exists, `True, `False,
+    `And.intro, `And.left, `And.right, `Iff.intro, `Iff.mp, `Iff.mpr,
+    `Exists.intro, `False.elim, `Classical.em, `Classical.not_not,
+    `Classical.not_forall, `Classical.byContradiction, `Classical.choice,
+    `not_and_or, `not_or, `imp_iff_not_or, `and_comm, `or_comm,
+    `and_assoc, `or_assoc, `and_or_left, `or_and_left, `not_exists,
+    `forall_comm, `exists_comm, `forall_and, `exists_or,
+    `Nat.lt_succ_self, `Nat.lt_irrefl]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
