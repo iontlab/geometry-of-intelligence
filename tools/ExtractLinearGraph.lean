@@ -34,7 +34,11 @@ run_cmd do
     `LinearMap.toMatrix', `LinearMap.toMatrix'_mulVec,
     `LinearMap.toMatrix'_toLin', `Matrix.toLin', `Matrix.toLin'_toMatrix',
     `Matrix.toLin'_mul, `LinearMap.toMatrix'_comp, `LinearMap.comp,
-    `LinearMap.comp_assoc, `Real.sin, `Real.cos, `Real.sin_add, `Real.cos_add]
+    `LinearMap.comp_assoc, `Real.sin, `Real.cos, `Real.sin_add, `Real.cos_add,
+    `midpoint, `midpoint_eq_smul_add, `smul_add, `add_smul, `smul_smul,
+    `zero_smul, `one_smul, `div_mul_cancel₀, `Fintype.linearCombination,
+    `Fintype.linearCombination_apply, `LinearIndependent.fintypeLinearCombination_injective,
+    `Fin.sum_univ_two]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
