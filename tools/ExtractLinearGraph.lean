@@ -80,7 +80,14 @@ run_cmd do
     `Equiv.permCongrHom, `Subgroup.closure, `Subgroup.subset_closure,
     `Int.eq_one_or_neg_one_of_mul_eq_one, `ZMod.intCast_surjective,
     `Real.exp, `Real.exp_add, `Real.exp_pos, `Real.log,
-    `Real.log_exp, `Real.exp_log, `Real.log_mul, `Units.mk0]
+    `Real.log_exp, `Real.exp_log, `Real.log_mul, `Units.mk0,
+    `add_mul, `mul_add, `add_assoc, `add_comm, `add_neg_cancel,
+    `mul_inv_cancel₀, `inv_mul_cancel₀, `mul_eq_zero, `neg_mul,
+    `Complex, `Complex.normSq, `Complex.normSq_apply, `Complex.I_mul_I,
+    `Complex.ofReal_injective, `Complex.arg, `Complex.arg_le_pi,
+    `Complex.neg_pi_lt_arg, `Complex.norm_mul_cos_add_sin_mul_I,
+    `Complex.normSq_eq_norm_sq, `norm_mul, `norm_add_le,
+    `Real.cos_add_two_pi, `Real.sin_add_two_pi]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
