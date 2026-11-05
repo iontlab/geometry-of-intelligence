@@ -40,6 +40,16 @@ theorem relationClassesEqualOrDisjoint {A : Type*} (s : Setoid A) (a b : A) :
     intro x hxa hxb
     exact h (s.trans (s.symm hxa) hxb)
 
+theorem sourceClassIsCanonical {A : Type*} (s : Setoid A) (C : Set A)
+    (hn : C.Nonempty) (hc : ∀ x ∈ C, ∀ y ∈ C, s.r x y)
+    (hclosed : ∀ x ∈ C, ∀ y, s.r x y → y ∈ C) :
+    ∃ a, C = relationClass s a := by
+  obtain ⟨a,ha⟩ := hn
+  refine ⟨a, ?_⟩
+  apply setExtensionality
+  intro x
+  exact ⟨fun hx => hc x hx a ha, fun hx => hclosed a ha x (s.symm hx)⟩
+
 theorem quotientProjectionSurjective {A : Type*} (s : Setoid A) :
     Function.Surjective (Quotient.mk s) := Quotient.mk_surjective
 

@@ -1,8 +1,8 @@
 LA-P005 — Holstein §1.6 Relationen und Abbildungen, printed25–30/PDF27–32.
 Lean 4.34.0; unchanged Mathlib5ed2965256430c3649e86755f9576b54eca72435.
-38 authored declarations:35 theorems,3 definitions; no new compiler auxiliaries.
+39 authored declarations:36 theorems,3 definitions; no new compiler auxiliaries.
 
-Typed products, Setoid equivalence classes and quotient projection; function
+Typed products, Setoid equivalence classes (including all three source conditions) and quotient projection; function
 graphs, image/preimage; composition/identities/restriction; bijectivity,
 finite endomap equivalences; existence and uniqueness of a two-sided inverse;
 finite cardinality and empty bijection; full curry/uncurry equivalence.
