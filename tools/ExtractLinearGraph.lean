@@ -87,7 +87,14 @@ run_cmd do
     `Complex.ofReal_injective, `Complex.arg, `Complex.arg_le_pi,
     `Complex.neg_pi_lt_arg, `Complex.norm_mul_cos_add_sin_mul_I,
     `Complex.normSq_eq_norm_sq, `norm_mul, `norm_add_le,
-    `Real.cos_add_two_pi, `Real.sin_add_two_pi]
+    `Real.cos_add_two_pi, `Real.sin_add_two_pi,
+    `Ring, `CommRing, `NonUnitalRing, `RingHom, `IsUnit, `IsField,
+    `IsField.toField, `Field.toIsField, `CharP.char_is_prime_or_zero,
+    `ringChar, `ringChar.eq, `Int.castRingHom,
+    `Polynomial, `Polynomial.coeff, `Polynomial.coeff_add, `Polynomial.coeff_mul,
+    `Polynomial.eval, `Polynomial.evalRingHom, `Polynomial.eval_add,
+    `Polynomial.eval_mul, `Polynomial.eval_X, `Polynomial.eval_X_pow,
+    `Polynomial.degree_zero, `Finset.Nat.sum_antidiagonal_eq_sum_range_succ]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort

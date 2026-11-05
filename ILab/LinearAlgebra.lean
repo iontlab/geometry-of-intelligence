@@ -12,3 +12,5 @@ import ILab.LinearAlgebra.Groups
 import ILab.LinearAlgebra.Homomorphisms
 
 import ILab.LinearAlgebra.FieldsComplex
+
+import ILab.LinearAlgebra.RingsPolynomials
