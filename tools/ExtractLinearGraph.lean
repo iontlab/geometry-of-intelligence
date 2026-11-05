@@ -47,7 +47,15 @@ run_cmd do
     `not_and_or, `not_or, `imp_iff_not_or, `and_comm, `or_comm,
     `and_assoc, `or_assoc, `and_or_left, `or_and_left, `not_exists,
     `forall_comm, `exists_comm, `forall_and, `exists_or,
-    `Nat.lt_succ_self, `Nat.lt_irrefl]
+    `Nat.lt_succ_self, `Nat.lt_irrefl,
+    `Set, `Set.ext, `Set.Subset.antisymm, `Set.empty_subset,
+    `Set.singleton_subset_iff, `Set.mem_powerset_iff, `Set.mem_iInter, `Set.mem_iUnion,
+    `Finset.card_powerset, `Finset.sum_range_succ,
+    `Nat.rec, `Nat.succ_ne_zero, `Nat.succ.inj, `Nat.factorial, `Nat.factorial_succ,
+    `Nat.mul_succ, `Nat.strong_induction_on, `Nat.find, `Nat.find_spec, `Nat.find_min,
+    `Nat.Prime, `Nat.primeFactorsList, `Nat.prod_primeFactorsList,
+    `Nat.prime_of_mem_primeFactorsList, `Nat.not_prime_iff_exists_mul_eq,
+    `List.mem_append, `List.prod_append, `List.prod_pos, `Nat.Prime.pos]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
