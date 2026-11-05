@@ -73,7 +73,14 @@ run_cmd do
     `QuotientGroup.quotientRightRelEquivQuotientLeftRel,
     `Subgroup.card_eq_card_quotient_mul_card_subgroup,
     `Subgroup.groupEquivQuotientProdSubgroup, `Subgroup.rightCosetEquivSubgroup,
-    `Nat.card_congr, `Nat.card_prod, `dvd_mul_left]
+    `Nat.card_congr, `Nat.card_prod, `dvd_mul_left,
+    `MonoidHom, `AddMonoidHom, `MulEquiv, `MonoidHom.ker, `MonoidHom.range,
+    `MonoidHom.ker_eq_bot_iff, `MonoidHom.range_eq_top,
+    `MulEquiv.ofBijective, `MulEquiv.symm, `MulEquiv.trans, `MulEquiv.refl,
+    `Equiv.permCongrHom, `Subgroup.closure, `Subgroup.subset_closure,
+    `Int.eq_one_or_neg_one_of_mul_eq_one, `ZMod.intCast_surjective,
+    `Real.exp, `Real.exp_add, `Real.exp_pos, `Real.log,
+    `Real.log_exp, `Real.exp_log, `Real.log_mul, `Units.mk0]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
