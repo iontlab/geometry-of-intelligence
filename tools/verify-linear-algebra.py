@@ -52,7 +52,7 @@ audit=dict(lean=version,mathlib_revision=actual,steps=steps,
            selected_library_declarations=sum(not n['project'] for n in raw),
            compiled_sha256=sha((OUT/'compiled.json').read_bytes()),
            log_sha256=sha((OUT/'clean-compilation.log').read_bytes()),
-           source_fidelity='Separate authored audit against Holstein pp. 2–30 (before chapter 2) and 71–77.',
+           source_fidelity='Separate authored audit against Holstein pp. 2–36 (before section 2.2) and 71–77.',
            dependencies='Direct constants in compiled types and values; no didactic edges.',
            allowed_axioms=['propext','Classical.choice','Quot.sound'],
            sorry_free=True,additional_project_axioms=False)
