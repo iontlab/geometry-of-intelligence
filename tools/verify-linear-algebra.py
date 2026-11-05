@@ -15,7 +15,7 @@ if not lean:raise SystemExit('Use lake env python tools/verify-linear-algebra.py
 sha=lambda b:hashlib.sha256(b).hexdigest()
 sources=['ILab/LinearAlgebra/Dimensions.lean','ILab/LinearAlgebra/MatrixAlgebra.lean',
          'ILab/LinearAlgebra/BasisMaps.lean','ILab/LinearAlgebra/Rotations.lean',
-         'ILab/LinearAlgebra/Preparation.lean','ILab/LinearAlgebra/LinearSystems.lean','ILab/LinearAlgebra/Logic.lean','ILab/LinearAlgebra/SetsInduction.lean','ILab/LinearAlgebra/RelationsFunctions.lean','ILab/LinearAlgebra.lean']
+         'ILab/LinearAlgebra/Preparation.lean','ILab/LinearAlgebra/LinearSystems.lean','ILab/LinearAlgebra/Logic.lean','ILab/LinearAlgebra/SetsInduction.lean','ILab/LinearAlgebra/RelationsFunctions.lean','ILab/LinearAlgebra/Groups.lean','ILab/LinearAlgebra.lean']
 version=subprocess.check_output([lean,'--version'],cwd=ROOT,text=True,encoding='utf-8').strip()
 if 'version 4.34.0,' not in version:raise SystemExit('Unexpected Lean toolchain')
 manifest=json.loads((ROOT/'lake-manifest.json').read_text(encoding='utf-8'))

@@ -63,7 +63,17 @@ run_cmd do
     `Equiv.ofBijective, `Equiv.curry, `Equiv.bijective,
     `Equiv.symm_apply_apply, `Equiv.apply_symm_apply,
     `Fintype.card_congr, `Fintype.bijective_iff_injective_and_card,
-    `Fintype.bijective_iff_surjective_and_card, `Subtype.val_injective, `Prod.mk.injEq]
+    `Fintype.bijective_iff_surjective_and_card, `Subtype.val_injective, `Prod.mk.injEq,
+    `Group, `CommGroup, `Subgroup, `mul_assoc, `one_mul, `mul_one,
+    `inv_mul_cancel, `mul_inv_cancel, `mul_right_cancel, `zpow_add,
+    `Subgroup.one_mem, `Subgroup.mul_mem, `Subgroup.inv_mem, `Subgroup.map,
+    `Subgroup.zpowers, `Subgroup.mem_zpowers_iff,
+    `ZMod, `ZMod.card, `Fintype.card_perm, `Equiv.Perm,
+    `QuotientGroup.rightRel, `QuotientGroup.rightRel_apply,
+    `QuotientGroup.quotientRightRelEquivQuotientLeftRel,
+    `Subgroup.card_eq_card_quotient_mul_card_subgroup,
+    `Subgroup.groupEquivQuotientProdSubgroup, `Subgroup.rightCosetEquivSubgroup,
+    `Nat.card_congr, `Nat.card_prod, `dvd_mul_left]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
