@@ -55,7 +55,15 @@ run_cmd do
     `Nat.mul_succ, `Nat.strong_induction_on, `Nat.find, `Nat.find_spec, `Nat.find_min,
     `Nat.Prime, `Nat.primeFactorsList, `Nat.prod_primeFactorsList,
     `Nat.prime_of_mem_primeFactorsList, `Nat.not_prime_iff_exists_mul_eq,
-    `List.mem_append, `List.prod_append, `List.prod_pos, `Nat.Prime.pos]
+    `List.mem_append, `List.prod_append, `List.prod_pos, `Nat.Prime.pos,
+    `Setoid, `Quotient.mk_surjective, `Quotient.eq_iff_equiv,
+    `Set.disjoint_left, `Set.image, `Set.preimage, `Function.comp,
+    `Function.Injective, `Function.Surjective, `Function.Bijective,
+    `Function.LeftInverse.injective, `Function.RightInverse.surjective,
+    `Equiv.ofBijective, `Equiv.curry, `Equiv.bijective,
+    `Equiv.symm_apply_apply, `Equiv.apply_symm_apply,
+    `Fintype.card_congr, `Fintype.bijective_iff_injective_and_card,
+    `Fintype.bijective_iff_surjective_and_card, `Subtype.val_injective, `Prod.mk.injEq]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
