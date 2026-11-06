@@ -106,7 +106,14 @@ run_cmd do
     `LinearMap.codRestrict, `LinearEquiv.symm, `LinearEquiv.trans,
     `Polynomial.toFinsuppIsoLinear, `AddMonoidAlgebra.coeffLinearEquiv,
     `finsuppLEquivDirectSum, `DFinsupp.finite_support, `Finsupp,
-    `Module.Basis.ext]
+    `Module.Basis.ext,
+    `Submodule.quotientRel, `Submodule.quotientRel_def, `Submodule.Quotient.eq,
+    `Submodule.Quotient.mk_eq_zero, `Submodule.Quotient.mk_add, `Submodule.Quotient.mk_smul,
+    `Submodule.mkQ, `Submodule.ker_mkQ, `Submodule.mkQ_surjective,
+    `Submodule.liftQ, `Submodule.liftQ_mkQ, `LinearMap.quotKerEquivRange_apply_mk,
+    `LinearMap.quotKerEquivOfSurjective, `LinearMap.proj, `LinearMap.snd,
+    `Filter.Tendsto, `tendsto_nhds_unique, `Filter.Tendsto.add,
+    `Filter.Tendsto.const_smul, `tendsto_const_nhds]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort

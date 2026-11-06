@@ -18,3 +18,5 @@ import ILab.LinearAlgebra.RingsPolynomials
 import ILab.LinearAlgebra.VectorSpacesSubspaces
 
 import ILab.LinearAlgebra.LinearMapsFamilies
+
+import ILab.LinearAlgebra.QuotientSpaces
