@@ -28,3 +28,5 @@ import ILab.LinearAlgebra.MoreMatrices
 import ILab.LinearAlgebra.ElementaryMatrices
 
 import ILab.LinearAlgebra.CoordinateChanges
+
+import ILab.LinearAlgebra.MatrixEquivalence
