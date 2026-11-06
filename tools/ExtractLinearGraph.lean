@@ -94,7 +94,13 @@ run_cmd do
     `Polynomial, `Polynomial.coeff, `Polynomial.coeff_add, `Polynomial.coeff_mul,
     `Polynomial.eval, `Polynomial.evalRingHom, `Polynomial.eval_add,
     `Polynomial.eval_mul, `Polynomial.eval_X, `Polynomial.eval_X_pow,
-    `Polynomial.degree_zero, `Finset.Nat.sum_antidiagonal_eq_sum_range_succ]
+    `Polynomial.degree_zero, `Finset.Nat.sum_antidiagonal_eq_sum_range_succ,
+    `Submodule.mem_sup, `Submodule.mem_inf, `Submodule.mem_iInf,
+    `Submodule.eq_bot_iff, `Submodule.mem_iSup_of_mem, `Submodule.sum_mem,
+    `Submodule.disjoint_def, `LinearEquiv.ofBijective,
+    `DirectSum, `DirectSum.linearEquivFunOnFintype,
+    `Complex.real_smul, `Complex.smul_re, `Complex.smul_im,
+    `inv_smul_smul₀, `Finset.smul_sum]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
