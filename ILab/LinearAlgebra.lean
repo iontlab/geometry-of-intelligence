@@ -16,3 +16,5 @@ import ILab.LinearAlgebra.FieldsComplex
 import ILab.LinearAlgebra.RingsPolynomials
 
 import ILab.LinearAlgebra.VectorSpacesSubspaces
+
+import ILab.LinearAlgebra.LinearMapsFamilies

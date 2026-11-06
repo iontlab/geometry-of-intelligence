@@ -100,7 +100,13 @@ run_cmd do
     `Submodule.disjoint_def, `LinearEquiv.ofBijective,
     `DirectSum, `DirectSum.linearEquivFunOnFintype,
     `Complex.real_smul, `Complex.smul_re, `Complex.smul_im,
-    `inv_smul_smul₀, `Finset.smul_sum]
+    `inv_smul_smul₀, `Finset.smul_sum,
+    `LinearMap.map_add, `LinearMap.map_smul, `LinearMap.map_sub,
+    `Submodule.map, `Submodule.comap, `Submodule.mem_map, `Submodule.mem_comap,
+    `LinearMap.codRestrict, `LinearEquiv.symm, `LinearEquiv.trans,
+    `Polynomial.toFinsuppIsoLinear, `AddMonoidAlgebra.coeffLinearEquiv,
+    `finsuppLEquivDirectSum, `DFinsupp.finite_support, `Finsupp,
+    `Module.Basis.ext]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort
