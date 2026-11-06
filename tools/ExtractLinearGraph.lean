@@ -113,7 +113,7 @@ run_cmd do
     `Submodule.liftQ, `Submodule.liftQ_mkQ, `LinearMap.quotKerEquivRange_apply_mk,
     `LinearMap.quotKerEquivOfSurjective, `LinearMap.proj, `LinearMap.snd,
     `Filter.Tendsto, `tendsto_nhds_unique, `Filter.Tendsto.add,
-    `Filter.Tendsto.const_smul, `tendsto_const_nhds]
+    `Filter.Tendsto.const_smul, `tendsto_const_nhds, `Submodule.mem_span_set', `Submodule.span_empty, `Submodule.subset_span, `Submodule.span_le, `Submodule.span_iUnion, `Submodule.span_eq, `Finsupp.linearCombination, `Finsupp.range_linearCombination, `Fintype.linearCombination, `Fintype.range_linearCombination, `linearIndependent_iff, `linearIndependent_iff_finset_linearIndependent, `linearIndependent_empty_type, `linearIndependent_unique_iff, `LinearIndependent.injective, `linearIndependent_iff_injective_fintypeLinearCombination, `Fintype.linearCombination_apply, `Fintype.linearCombination_apply_single]
   for name in library do
     unless (env.find? name).isSome do throwError "Missing selected library declaration: {name}"
   let names := (localNames ++ library.toList).eraseDups.toArray.qsort

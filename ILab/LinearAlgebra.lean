@@ -20,3 +20,5 @@ import ILab.LinearAlgebra.VectorSpacesSubspaces
 import ILab.LinearAlgebra.LinearMapsFamilies
 
 import ILab.LinearAlgebra.QuotientSpaces
+
+import ILab.LinearAlgebra.LinearCombinations
