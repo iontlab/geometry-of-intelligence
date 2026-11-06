@@ -14,6 +14,13 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `dotProduct_comm, `crossProduct, `cross_apply, `cross_anticomm, `cross_self,
+    `dot_self_cross, `dot_cross_self, `triple_product_permutation,
+    `triple_product_eq_det, `EuclideanSpace.norm_eq, `EuclideanSpace.inner_eq_star_dotProduct,
+    `InnerProductGeometry.norm_toLp_symm_crossProduct, `Matrix.det_updateRow_add, `Matrix.det_updateRow_smul,
+    `Matrix.det_zero_of_row_eq, `Matrix.det_eq_zero_of_row_eq_zero, `Matrix.det_updateRow_add_smul_self,
+    `Matrix.det_of_isUpperTriangular, `Matrix.det_fin_two, `Matrix.det_fin_three,
+    `AlternatingMap.eq_smul_basis_det, `Matrix.det_smul, `Matrix.det_permute,
     `zorn_subset, `zorn_le, `IsChain, `IsMax, `PartialOrder, `upperBounds,
     `linearIndepOn_sUnion_of_directed, `IsChain.directedOn,
     `Polynomial.basisMonomials, `Polynomial.coe_basisMonomials,
