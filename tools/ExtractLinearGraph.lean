@@ -14,6 +14,12 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `Module.Basis.equivFun, `Module.Basis.equivFun_symm_apply,
+    `LinearMap.toMatrix_comp, `LinearMap.toMatrix_mulVec_repr,
+    `LinearMap.toMatrix_id_eq_basis_toMatrix, `Module.Basis.toMatrix,
+    `Module.Basis.toMatrix_apply, `Module.Basis.toMatrix_mul_toMatrix_flip,
+    `Matrix.inv_eq_left_inv,
+
     `Field, `Module, `Module.Free, `Module.Finite, `Module.finrank, `Module.rank,
     `Module.Basis, `Module.Basis.linearIndependent, `Module.Basis.span_eq,
     `Module.Basis.mk, `Module.finBasis, `LinearIndependent, `Submodule,

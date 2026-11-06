@@ -26,3 +26,5 @@ import ILab.LinearAlgebra.BasisDimension
 import ILab.LinearAlgebra.MoreMatrices
 
 import ILab.LinearAlgebra.ElementaryMatrices
+
+import ILab.LinearAlgebra.CoordinateChanges
