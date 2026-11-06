@@ -24,3 +24,5 @@ import ILab.LinearAlgebra.QuotientSpaces
 import ILab.LinearAlgebra.LinearCombinations
 import ILab.LinearAlgebra.BasisDimension
 import ILab.LinearAlgebra.MoreMatrices
+
+import ILab.LinearAlgebra.ElementaryMatrices
