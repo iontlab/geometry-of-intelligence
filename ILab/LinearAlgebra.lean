@@ -30,3 +30,5 @@ import ILab.LinearAlgebra.ElementaryMatrices
 import ILab.LinearAlgebra.CoordinateChanges
 
 import ILab.LinearAlgebra.MatrixEquivalence
+
+import ILab.LinearAlgebra.ArbitraryBases

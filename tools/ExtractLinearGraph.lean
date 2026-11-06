@@ -14,6 +14,11 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `zorn_subset, `zorn_le, `IsChain, `IsMax, `PartialOrder, `upperBounds,
+    `linearIndepOn_sUnion_of_directed, `IsChain.directedOn,
+    `Polynomial.basisMonomials, `Polynomial.coe_basisMonomials,
+    `Module.Basis.extendLe, `Module.Basis.range_extendLe,
+
     `Matrix.rank, `Matrix.rank_transpose, `Matrix.rank_eq_finrank_span_cols,
     `Matrix.rank_eq_finrank_span_row, `Matrix.rank_eq_finrank_range_toLin,
     `Matrix.rank_mul_eq_left_of_isUnit_det, `Matrix.rank_mul_eq_right_of_isUnit_det,
