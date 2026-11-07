@@ -14,6 +14,7 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `Matrix.permMatrixHom, `Matrix.det_permutation, `Equiv.swap_inv, `Equiv.Perm.swapFactors, `Equiv.Perm.sign_mul, `Equiv.Perm.sign_inv, `Equiv.Perm.sign_swap, `Equiv.Perm.sign_prod_list_swap, `alternatingGroup, `alternatingGroup_eq_sign_ker, `card_alternatingGroup, `nat_card_alternatingGroup, `Equiv.Perm.sign_eq_prod_prod_Ioi, `Matrix.det_apply', `Matrix.det_fromBlocks_zero₂₁, `Equiv.Perm.sign_sumCongr, `Fintype.card_perm, `Matrix.permMatrix_mul, `Equiv.Perm.permMatrix,
     `Matrix.det_mul, `Matrix.det_transvection_of_ne, `Matrix.det_diagonal,
     `Matrix.det_nonsing_inv, `Matrix.GeneralLinearGroup.det,
     `Matrix.adjugate_fin_succ_eq_det_submatrix, `Matrix.mul_adjugate, `Matrix.adjugate_mul,
