@@ -35,3 +35,5 @@ import ILab.LinearAlgebra.ArbitraryBases
 
 import ILab.LinearAlgebra.VolumesDeterminants
 import ILab.LinearAlgebra.LaplaceDeterminants
+
+import ILab.LinearAlgebra.DeterminantProperties
