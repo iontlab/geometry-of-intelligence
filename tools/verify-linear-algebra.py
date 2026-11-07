@@ -15,7 +15,7 @@ if not lean:raise SystemExit('Use lake env python tools/verify-linear-algebra.py
 sha=lambda b:hashlib.sha256(b).hexdigest()
 sources=['ILab/LinearAlgebra/Dimensions.lean','ILab/LinearAlgebra/MatrixAlgebra.lean',
          'ILab/LinearAlgebra/BasisMaps.lean','ILab/LinearAlgebra/Rotations.lean',
-         'ILab/LinearAlgebra/Preparation.lean','ILab/LinearAlgebra/LinearSystems.lean','ILab/LinearAlgebra/Logic.lean','ILab/LinearAlgebra/SetsInduction.lean','ILab/LinearAlgebra/RelationsFunctions.lean','ILab/LinearAlgebra/Groups.lean','ILab/LinearAlgebra/Homomorphisms.lean','ILab/LinearAlgebra/FieldsComplex.lean','ILab/LinearAlgebra/RingsPolynomials.lean','ILab/LinearAlgebra/VectorSpacesSubspaces.lean','ILab/LinearAlgebra/LinearMapsFamilies.lean','ILab/LinearAlgebra/QuotientSpaces.lean','ILab/LinearAlgebra/LinearCombinations.lean','ILab/LinearAlgebra/BasisDimension.lean','ILab/LinearAlgebra/MoreMatrices.lean','ILab/LinearAlgebra/ElementaryMatrices.lean','ILab/LinearAlgebra/CoordinateChanges.lean','ILab/LinearAlgebra/MatrixEquivalence.lean','ILab/LinearAlgebra/ArbitraryBases.lean','ILab/LinearAlgebra/VolumesDeterminants.lean','ILab/LinearAlgebra.lean']
+         'ILab/LinearAlgebra/Preparation.lean','ILab/LinearAlgebra/LinearSystems.lean','ILab/LinearAlgebra/Logic.lean','ILab/LinearAlgebra/SetsInduction.lean','ILab/LinearAlgebra/RelationsFunctions.lean','ILab/LinearAlgebra/Groups.lean','ILab/LinearAlgebra/Homomorphisms.lean','ILab/LinearAlgebra/FieldsComplex.lean','ILab/LinearAlgebra/RingsPolynomials.lean','ILab/LinearAlgebra/VectorSpacesSubspaces.lean','ILab/LinearAlgebra/LinearMapsFamilies.lean','ILab/LinearAlgebra/QuotientSpaces.lean','ILab/LinearAlgebra/LinearCombinations.lean','ILab/LinearAlgebra/BasisDimension.lean','ILab/LinearAlgebra/MoreMatrices.lean','ILab/LinearAlgebra/ElementaryMatrices.lean','ILab/LinearAlgebra/CoordinateChanges.lean','ILab/LinearAlgebra/MatrixEquivalence.lean','ILab/LinearAlgebra/ArbitraryBases.lean','ILab/LinearAlgebra/VolumesDeterminants.lean','ILab/LinearAlgebra/LaplaceDeterminants.lean','ILab/LinearAlgebra.lean']
 version=subprocess.check_output([lean,'--version'],cwd=ROOT,text=True,encoding='utf-8').strip()
 if 'version 4.34.0,' not in version:raise SystemExit('Unexpected Lean toolchain')
 manifest=json.loads((ROOT/'lake-manifest.json').read_text(encoding='utf-8'))
@@ -52,7 +52,7 @@ audit=dict(lean=version,mathlib_revision=actual,steps=steps,
            selected_library_declarations=sum(not n['project'] for n in raw),
            compiled_sha256=sha((OUT/'compiled.json').read_bytes()),
            log_sha256=sha((OUT/'clean-compilation.log').read_bytes()),
-           source_fidelity='Separate authored audit against Holstein pp. 2–105 (through §§7.1–7.2, before §7.3).',
+           source_fidelity='Separate authored audit against Holstein pp. 2–110 (through §7.3).',
            dependencies='Direct constants in compiled types and values; no didactic edges.',
            allowed_axioms=['propext','Classical.choice','Quot.sound'],
            sorry_free=True,additional_project_axioms=False)

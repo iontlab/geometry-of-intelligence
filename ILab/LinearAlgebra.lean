@@ -34,3 +34,4 @@ import ILab.LinearAlgebra.MatrixEquivalence
 import ILab.LinearAlgebra.ArbitraryBases
 
 import ILab.LinearAlgebra.VolumesDeterminants
+import ILab.LinearAlgebra.LaplaceDeterminants

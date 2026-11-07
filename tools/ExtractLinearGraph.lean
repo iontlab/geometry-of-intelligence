@@ -14,6 +14,9 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `Matrix.det_succ_column, `Matrix.det_succ_row, `Matrix.det_updateCol_add, `Matrix.det_updateCol_smul,
+    `Matrix.det_transpose, `Matrix.rank_of_det_ne_zero, `Matrix.exists_mulVec_eq_zero_iff,
+    `Matrix.isUnit_iff_isUnit_det, `Matrix.rank_transpose, `Matrix.det_permute',
     `dotProduct_comm, `crossProduct, `cross_apply, `cross_anticomm, `cross_self,
     `dot_self_cross, `dot_cross_self, `triple_product_permutation,
     `triple_product_eq_det, `EuclideanSpace.norm_eq, `EuclideanSpace.inner_eq_star_dotProduct,
