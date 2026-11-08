@@ -39,3 +39,5 @@ import ILab.LinearAlgebra.LaplaceDeterminants
 import ILab.LinearAlgebra.DeterminantProperties
 
 import ILab.LinearAlgebra.PermutationsDeterminants
+
+import ILab.LinearAlgebra.OrientationsMinorsTrace
