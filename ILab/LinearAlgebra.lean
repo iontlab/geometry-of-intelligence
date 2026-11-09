@@ -51,3 +51,5 @@ import ILab.LinearAlgebra.PolynomialTheory
 import ILab.LinearAlgebra.Diagonalizability
 
 import ILab.LinearAlgebra.Triangularizability
+
+import ILab.LinearAlgebra.MinimalPolynomial
