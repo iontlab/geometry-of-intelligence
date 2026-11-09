@@ -41,3 +41,5 @@ import ILab.LinearAlgebra.DeterminantProperties
 import ILab.LinearAlgebra.PermutationsDeterminants
 
 import ILab.LinearAlgebra.OrientationsMinorsTrace
+
+import ILab.LinearAlgebra.CodingTheory
