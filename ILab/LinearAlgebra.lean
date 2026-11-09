@@ -49,3 +49,5 @@ import ILab.LinearAlgebra.EigenvaluesDiagonalization
 import ILab.LinearAlgebra.PolynomialTheory
 
 import ILab.LinearAlgebra.Diagonalizability
+
+import ILab.LinearAlgebra.Triangularizability
