@@ -13,7 +13,7 @@ noncomputable section
 namespace ILab.LinearAlgebra
 open Module Polynomial
 variable {K V : Type*} [Field K] [AddCommGroup V] [Module K V]
-local instance : DecidableEq K := Classical.decEq K
+local instance diagonalizabilityDecidableEq : DecidableEq K := Classical.decEq K
 
 def HolsteinDiagonalizable (f : Module.End K V) : Prop :=
   ∃ n : ℕ, ∃ b : Basis (Fin n) K V, IsEigenbasis f b
