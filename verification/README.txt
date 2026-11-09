@@ -1,0 +1,1 @@
+Current combined verification through LA-P033 (Holstein §§10.1–10.2). See P033-README.txt for exact statement-level formal limits and reproduction. All previous source files and package notes retained.
