@@ -45,3 +45,5 @@ import ILab.LinearAlgebra.OrientationsMinorsTrace
 import ILab.LinearAlgebra.CodingTheory
 
 import ILab.LinearAlgebra.EigenvaluesDiagonalization
+
+import ILab.LinearAlgebra.PolynomialTheory
