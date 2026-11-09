@@ -47,3 +47,5 @@ import ILab.LinearAlgebra.CodingTheory
 import ILab.LinearAlgebra.EigenvaluesDiagonalization
 
 import ILab.LinearAlgebra.PolynomialTheory
+
+import ILab.LinearAlgebra.Diagonalizability
