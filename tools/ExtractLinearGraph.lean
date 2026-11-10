@@ -14,6 +14,17 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `LinearMap.IsSymmetric.conj_eigenvalue_eq_self,
+    `LinearMap.IsSymmetric.eigenvectorBasis, `LinearMap.IsSymmetric.apply_eigenvectorBasis,
+    `LinearMap.IsSymmetric.charpoly_eq, `LinearMap.IsSymmetric.direct_sum_isInternal,
+    `LinearMap.isSymmetric_iff_isSelfAdjoint,
+    `DirectSum.IsInternal.subordinateOrthonormalBasis,
+    `DirectSum.IsInternal.subordinateOrthonormalBasis_subordinate,
+    `Polynomial.Splits.eq_prod_roots_of_monic, `LinearMap.aeval_self_charpoly,
+    `Matrix.IsHermitian.eigenvectorUnitary,
+    `Matrix.IsHermitian.conjStarAlgAut_star_eigenvectorUnitary,
+    `Matrix.charpoly_map,
+
     `LinearMap.adjoint, `LinearMap.adjoint_inner_left, `LinearMap.adjoint_inner_right, `LinearMap.adjoint_adjoint, `LinearMap.adjoint_comp, `LinearMap.eq_adjoint_iff, `LinearMap.orthogonal_ker, `LinearMap.orthogonal_range, `LinearMap.finrank_range_adjoint, `LinearMap.toMatrix_adjoint, `LinearMap.toMatrix_transpose, `Matrix.conjTranspose_conjTranspose, `Matrix.conjTranspose_smul,
     `inner_smul_left, `inner_smul_right, `inner_conj_symm, `norm_inner_le_norm, `norm_inner_eq_norm_tfae, `Orthonormal.linearIndependent, `OrthonormalBasis.sum_repr, `stdOrthonormalBasis, `Submodule.mem_orthogonal, `Submodule.isCompl_orthogonal, `Submodule.finrank_add_finrank_orthogonal, `Submodule.starProjection, `Submodule.isIdempotentElem_starProjection, `Submodule.starProjection_add_starProjection_orthogonal, `Submodule.starProjection_unit_singleton, `Submodule.starProjection_minimal, `Submodule.inner_starProjection_left_eq_right, `InnerProductSpace.gramSchmidt, `InnerProductSpace.gramSchmidt_def'', `InnerProductSpace.gramSchmidt_ne_zero, `InnerProductSpace.gramSchmidt_orthogonal, `InnerProductSpace.span_gramSchmidt, `InnerProductSpace.gramSchmidtNormed, `InnerProductSpace.gramSchmidtNormed_orthonormal, `InnerProductSpace.span_gramSchmidtNormed_range, `InnerProductSpace.toDual, `LinearMap.toContinuousLinearMap, `EuclideanSpace.inner_eq_star_dotProduct, `integral_sin_mul_cos₁,
     `QuadraticMap, `QuadraticMap.ofPolar, `QuadraticMap.polarBilin, `QuadraticMap.map_smul, `QuadraticMap.polar_self, `QuadraticMap.associated, `QuadraticMap.associated_left_inverse, `LinearMap.BilinForm.exists_orthogonal_basis, `QuadraticForm.equivalent_weightedSumSquares, `QuadraticForm.isometryEquivSumSquares, `QuadraticForm.equivalent_one_zero_neg_one_weighted_sum_squared, `QuadraticMap.radical, `QuadraticForm.radical_weightedSumSquares, `QuadraticForm.finrank_radical_of_equiv_weightedSumSquares, `sigPos, `sigNeg, `sigPos_isGreatest, `sigNeg_isGreatest, `QuadraticMap.Equivalent.sigPos_eq, `QuadraticMap.Equivalent.sigNeg_eq, `QuadraticMap.Equivalent.rank_radical_eq, `QuadraticForm.sigPos_of_equiv_weightedSumSquares, `QuadraticForm.sigNeg_of_equiv_weightedSumSquares, `QuadraticForm.sigPos_add_sigNeg_add_radical, `QuadraticMap.PosDef,

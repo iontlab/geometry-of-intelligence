@@ -73,3 +73,5 @@ import ILab.LinearAlgebra.QuadraticForms
 import ILab.LinearAlgebra.InnerProducts
 
 import ILab.LinearAlgebra.Adjoints
+
+import ILab.LinearAlgebra.SpectralTheorem
