@@ -14,6 +14,7 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `IsGLB, `Nat.dvd_gcd, `Nat.gcd_dvd_left, `DirectSum.toModule, `DirectSum.linearMap_ext, `DirectSum.toModule_lof, `LinearMap.pi, `LinearEquiv.ofLinearMap, `Polynomial.algHom_ext, `AlgEquiv.ofAlgHom,
     `LinearMap.ker_noncommProd_eq_of_supIndep_ker, `Finset.map_noncommProd, `Matrix.charpoly_mul_comm, `Real.hasDerivAt_exp, `HasDerivAt.mul,
     `Submodule.exists_isCompl, `LinearMap.ker_eq_bot, `LinearMap.ker_eq_top, `Submodule.span_induction, `Finset.sum_range_succ,
     `Module.End.genEigenspace_nat, `Module.End.maxGenEigenspace_eq_genEigenspace_finrank, `Module.End.mapsTo_genEigenspace_of_comm, `Module.End.disjoint_genEigenspace, `Module.End.independent_maxGenEigenspace, `Module.End.iSup_maxGenEigenspace_eq_top, `Module.End.isNilpotent_restrict_sub_algebraMap, `Module.End.exists_ker_pow_eq_ker_pow_succ, `Module.End.ker_pow_constant, `Module.End.ker_pow_eq_ker_pow_finrank_of_le, `Submodule.isCompl_iff_disjoint, `LinearMap.charpoly_prodMap, `Module.End.exists_isNilpotent_isSemisimple, `Module.End.isNilpotent_isSemisimple_unique, `Algebra.commute_of_mem_adjoin_singleton_of_commute,
