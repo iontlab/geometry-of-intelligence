@@ -57,3 +57,5 @@ import ILab.LinearAlgebra.MinimalPolynomial
 import ILab.LinearAlgebra.PrimaryDecomposition
 
 import ILab.LinearAlgebra.NilpotentJordan
+
+import ILab.LinearAlgebra.JordanApplications
