@@ -71,3 +71,5 @@ import ILab.LinearAlgebra.SymplecticForms
 import ILab.LinearAlgebra.QuadraticForms
 
 import ILab.LinearAlgebra.InnerProducts
+
+import ILab.LinearAlgebra.Adjoints
