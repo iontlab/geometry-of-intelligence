@@ -67,3 +67,5 @@ import ILab.LinearAlgebra.DualSpaces
 import ILab.LinearAlgebra.BilinearForms
 
 import ILab.LinearAlgebra.SymplecticForms
+
+import ILab.LinearAlgebra.QuadraticForms
