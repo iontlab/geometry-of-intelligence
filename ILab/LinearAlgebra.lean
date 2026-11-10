@@ -61,3 +61,5 @@ import ILab.LinearAlgebra.NilpotentJordan
 import ILab.LinearAlgebra.JordanApplications
 
 import ILab.LinearAlgebra.UniversalProperties
+
+import ILab.LinearAlgebra.DualSpaces

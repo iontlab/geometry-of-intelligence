@@ -14,6 +14,7 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `Module.Dual.eval, `Module.Dual.eval_naturality, `Module.eval_apply_injective, `Module.bijective_dual_eval, `Module.evalEquiv, `Basis.dualBasis, `Basis.dualBasis_apply_self, `Basis.dualBasis_repr, `Basis.toDualEquiv, `Subspace.dualLift, `Subspace.dualLift_of_subtype, `Subspace.dual_finrank_eq, `Subspace.finrank_add_finrank_dualAnnihilator_eq, `Submodule.dualAnnihilator, `LinearMap.dualMap, `LinearMap.dualMap_comp_dualMap, `LinearMap.toMatrix_transpose, `LinearMap.finrank_range_dualMap_eq_finrank_range, `LinearMap.ker_dualMap_eq_dualAnnihilator_range, `LinearMap.range_dualMap_eq_dualAnnihilator_ker, `Module.Projective.exists_dual_eq_one,
     `IsGLB, `Nat.dvd_gcd, `Nat.gcd_dvd_left, `DirectSum.toModule, `DirectSum.linearMap_ext, `DirectSum.toModule_lof, `LinearMap.pi, `LinearEquiv.ofLinearMap, `Polynomial.algHom_ext, `AlgEquiv.ofAlgHom,
     `LinearMap.ker_noncommProd_eq_of_supIndep_ker, `Finset.map_noncommProd, `Matrix.charpoly_mul_comm, `Real.hasDerivAt_exp, `HasDerivAt.mul,
     `Submodule.exists_isCompl, `LinearMap.ker_eq_bot, `LinearMap.ker_eq_top, `Submodule.span_induction, `Finset.sum_range_succ,
