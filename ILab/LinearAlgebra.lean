@@ -65,3 +65,5 @@ import ILab.LinearAlgebra.UniversalProperties
 import ILab.LinearAlgebra.DualSpaces
 
 import ILab.LinearAlgebra.BilinearForms
+
+import ILab.LinearAlgebra.SymplecticForms
