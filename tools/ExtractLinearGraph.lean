@@ -14,6 +14,13 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `LinearIsometryEquiv.reflections_generate_dim, `Submodule.reflection_sub,
+    `Submodule.reflection_singleton_apply, `LinearMap.isometryOfInner,
+    `LinearMap.norm_map_iff_inner_map_map, `Matrix.mem_unitaryGroup_iff,
+    `Matrix.mem_unitaryGroup_iff', `Matrix.mem_specialUnitaryGroup_iff,
+    `Matrix.mem_specialOrthogonalGroup_iff, `Matrix.of_mem_specialOrthogonalGroup_fin_two_iff,
+    `Matrix.UnitaryGroup.embeddingGL, `Submodule.reflection,
+
     `LinearMap.IsSymmetric.conj_eigenvalue_eq_self,
     `LinearMap.IsSymmetric.eigenvectorBasis, `LinearMap.IsSymmetric.apply_eigenvectorBasis,
     `LinearMap.IsSymmetric.charpoly_eq, `LinearMap.IsSymmetric.direct_sum_isInternal,
