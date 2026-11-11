@@ -79,3 +79,5 @@ import ILab.LinearAlgebra.SpectralTheorem
 import ILab.LinearAlgebra.Isometries
 
 import ILab.LinearAlgebra.TensorProducts
+
+import ILab.LinearAlgebra.Appendices

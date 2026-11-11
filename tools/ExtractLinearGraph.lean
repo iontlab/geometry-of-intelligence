@@ -14,6 +14,8 @@ run_cmd do
   let localNames := (env.constants.toList.map Prod.fst).filter
     (fun n => `ILab.LinearAlgebra |>.isPrefixOf n)
   let library : Array Name := #[
+    `Finset.sum_empty, `Finset.prod_empty, `Finset.sum_union, `Finset.prod_union, `Submodule.span_empty, `LinearIndependent.fintype_card_le_finrank, `Matrix.charpoly_fin_two,
+
     `TensorProduct.lift.equiv, `TensorProduct.lift.unique, `TensorProduct.ext', `TensorProduct.mk, `Module.Basis.tensorProduct, `Module.Basis.tensorProduct_repr_tmul_apply, `Module.finrank_tensorProduct, `TensorProduct.prodLeft, `TensorProduct.prodLeft_tmul, `TensorProduct.assoc, `TensorProduct.map_comp, `TensorProduct.map_add_left, `TensorProduct.map_smul_left, `dualTensorHomEquiv, `dualTensorHom_apply, `PiTensorProduct.reindex, `PiTensorProduct.reindex_tprod, `PiTensorProduct.reindex_reindex, `exteriorPower.ιMulti, `exteriorPower.finrank_eq, `exteriorPower.map, `exteriorPower.linearMap_ext, `exteriorPower.map_apply_ιMulti, `Module.Basis.ext_alternating, `Module.Basis.det_comp, `AlternatingMap.map_perm, `AlternatingMap.smulRight, `MvPolynomial.tensorEquivSum, `MvPolynomial.uniqueAlgEquiv,
 
     `LinearIsometryEquiv.reflections_generate_dim, `Submodule.reflection_sub,
