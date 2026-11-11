@@ -77,3 +77,5 @@ import ILab.LinearAlgebra.Adjoints
 import ILab.LinearAlgebra.SpectralTheorem
 
 import ILab.LinearAlgebra.Isometries
+
+import ILab.LinearAlgebra.TensorProducts
